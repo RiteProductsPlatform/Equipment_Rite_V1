@@ -1,0 +1,122 @@
+{
+    "items": [
+        {
+            "template_name": "Equipment",
+            "template_id": 1044
+        },
+        {
+            "template_name": "Equipment-1",
+            "template_id": 1048
+        },
+        {
+            "template_name": "Equipment-11",
+            "template_id": 1062
+        },
+        {
+            "template_name": "Equipment-1111",
+            "template_id": 1117
+        },
+        {
+            "template_name": "Excavator Template",
+            "template_id": 1001
+        },
+        {
+            "template_name": "Excavator Template Test",
+            "template_id": 1011
+        },
+        {
+            "template_name": "Excavator Template Test1",
+            "template_id": 1012
+        },
+        {
+            "template_name": "Excavator Template Test2",
+            "template_id": 1023
+        },
+        {
+            "template_name": "Excavator Test",
+            "template_id": 1014
+        },
+        {
+            "template_name": "Excavator Test2",
+            "template_id": 1061
+        },
+        {
+            "template_name": "TRUCK",
+            "template_id": 1025
+        },
+        {
+            "template_name": "Test1234",
+            "template_id": 1029
+        },
+        {
+            "template_name": "crew",
+            "template_id": 1053
+        },
+        {
+            "template_name": "crew1",
+            "template_id": 1056
+        },
+        {
+            "template_name": "crew11",
+            "template_id": 1057
+        },
+        {
+            "template_name": "crew3",
+            "template_id": 1118
+        },
+        {
+            "template_name": "creww",
+            "template_id": 1093
+        },
+        {
+            "template_name": "gh",
+            "template_id": 1121
+        },
+        {
+            "template_name": "ght",
+            "template_id": 1122
+        },
+        {
+            "template_name": "ghtr",
+            "template_id": 1123
+        },
+        {
+            "template_name": "ritecrewtemplate",
+            "template_id": 1124
+        },
+        {
+            "template_name": "rt",
+            "template_id": 1113
+        },
+        {
+            "template_name": "truck",
+            "template_id": 1041
+        },
+        {
+            "template_name": "truckvan",
+            "template_id": 1067
+        },
+        {
+            "template_name": "truckvehicle1",
+            "template_id": 1089
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_CRTemplateDetails"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_CRTemplateDetails"
+        }
+    ]
+}

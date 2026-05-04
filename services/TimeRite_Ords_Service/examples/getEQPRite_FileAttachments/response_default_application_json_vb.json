@@ -1,0 +1,40 @@
+{
+    "items": [
+        {
+            "file_id": 764,
+            "equipment_request_id": 1933,
+            "equipment_request_number": "1721",
+            "page_name": "crew-time-entry-start",
+            "file_name": "application.pdf",
+            "file_type": "application/pdf",
+            "file_content": "data:application/pdf;base64,WSbxnzuJH+8PcvUXGmDVA/DgKzq5zgW6NRjN1mP6r1nJPDlVf4xPjor1hjPEheUd6KT8XebDNDWAxJAPd80vdWpogDyH2ryroKTjzlLSg2/FimKoWkFOc81Xdo79j0XizVI5P9wBk4dupzJHJKfeittgqQJ6dYrrpLL9ePmXNBb9Cv6KhA0ZVTTlcxMJsFQxWcrStXT0RU6qsk+U3PruzCVR1PiaMaKgY1toB+cUcJLOIMeuyfvWNWIF/Gsc6ZaK4AbTKn6Gg/oLpRIFwd+ev3orua26Oh7nr3x67Rw8qwve8/7htRXMLt5tTWzjZGIP9Vlto4P7Pa4XbAGfvdHk121leutjr8MutqvRatyoLm0wzpqVhNMdnFZbfjYpat5vdTHys05WMF120anSVAy2N/7U3NNewzvyMe/yDxB2Duw7UNA6eVOcUoXALm8Dzbiv6YhPdjn1Viry8fx7NUQX3A==",
+            "file_attachment": null,
+            "creation_date": "2026-02-09T10:55:59Z",
+            "created_by": "nikhil.kolisetty@rite.digital",
+            "last_update_date": "2026-02-09T10:55:59Z",
+            "last_updated_by": "nikhil.kolisetty@rite.digital"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_FileAttachments?p_equipment_request_id=1933"
+        },
+        {
+            "rel": "edit",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_FileAttachments?p_equipment_request_id=1933"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_FileAttachments?p_equipment_request_id=1933"
+        }
+    ]
+}

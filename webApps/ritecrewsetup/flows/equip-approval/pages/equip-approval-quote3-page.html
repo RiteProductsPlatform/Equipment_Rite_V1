@@ -1,0 +1,299 @@
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Equipment Rental Estimate Summary"
+  description-text='[[ "Reservation Number: " + $flow.variables.selectedReservationNumber ]]'
+  background-color="dark-pebble" primary-action.label="Back"
+  on-sp-primary-action="[[$listeners.ojSpWp1SpPrimaryAction]]">
+  <oj-dialog dialog-title="" id="loadingDialog" class="myloader" style="width: 350px">
+    <div slot="body">
+      <div class="oj-flex-item">
+        <span style="font-size:20px;color:#006AA2;font-weight:600;margin-top:-2vh">Loading .....</span>
+        <br />
+        <oj-progress-bar value="-1" class="oj-sm-margin-3x-top"></oj-progress-bar>
+      </div>
+    </div>
+  </oj-dialog>
+  <div class="oj-flex oj-sm-flex-wrap-nowrap " style="height:100vh;  overflow-y: auto;">
+    <div class="oj-md-margin-3x oj-flex-item oj-sm-12 oj-md-7">
+      <div class="oj-panel oj-panel-shadow-lg oj-md-margin-3x" style="flex:1; overflow-y:auto;">
+        <div
+          style="background: linear-gradient(145deg, #0f2027, #203a43, #2c5364); padding: 12px 16px; border-radius: 6px; font-weight: bold; font-size: 1.25em; margin-bottom: 16px;"
+          class="oj-color-invert">Customer Information</div>
+        <!-- <span>
+            <h6 style="margin-left:30px">Existing customer</h6>
+          </span> -->
+        <!-- <oj-form-layout class="oj-formlayout-full-width oj-md-margin-3x" max-columns="2" columns="2">
+          <oj-select-single label-hint="Customer Number" class="oj-md-padding-3x"></oj-select-single>
+          <oj-select-single label-hint="Customer Name" class="oj-md-padding-3x"></oj-select-single>
+        </oj-form-layout> -->
+        <!-- <div class="oj-flex">
+          <div class="oj-divider-top oj-flex-item oj-sm-12 oj-md-12"></div>
+        </div> -->
+        <div style="margin-left:20px">
+          <b>Customer Request Details</b>
+        </div>
+        <div class="oj-flex">
+          <div class="oj-flex-item oj-sm-12 oj-md-12">
+            <oj-form-layout columns="2" max-columns="2">
+              <oj-input-text class="oj-md-padding-3x" label-hint="Company Name" clear-icon="always"
+                value="{{ $variables.customerObject.org_name }}" readonly="true"></oj-input-text>
+              <oj-input-text label-hint="Contact Name" class="oj-md-padding-3x" clear-icon="always"
+                value="{{ $variables.customerObject.contact_name }}" readonly="true"></oj-input-text>
+              <oj-input-text label-hint="Email Address" class="oj-md-padding-3x" clear-icon="always"
+                value="{{ $variables.customerObject.contact_email }}" readonly="true"></oj-input-text>
+              <oj-input-text label-hint="Mobile" class="oj-md-padding-3x"
+                value="{{ $variables.customerObject.mobile_number }}"></oj-input-text>
+            </oj-form-layout>
+          </div>
+        </div>
+        <div class="oj-flex">
+          <div class="oj-flex-item oj-sm-12 oj-md-12">
+            <oj-form-layout class="oj-formlayout-full-width">
+              <oj-input-text label-hint="Street Address" clear-icon="always" class="oj-md-padding-3x"
+                value="{{ $variables.customerObject.s_address_line_1 + ',' + $variables.customerObject.s_address_line_2 }}"
+                readonly="true"></oj-input-text>
+            </oj-form-layout>
+          </div>
+        </div>
+        <div class="oj-flex">
+          <div class="oj-flex-item oj-sm-12 oj-md-12">
+            <oj-form-layout columns="3" max-columns="3" class="oj-formlayout-full-width">
+              <oj-input-text label-hint="City" class="oj-md-padding-3x" value="{{ $variables.customerObject.s_city }}"
+                readonly="true"></oj-input-text>
+              <oj-input-text label-hint="State" class="oj-md-padding-3x" value="{{ $variables.customerObject.s_state }}"
+                readonly="true"></oj-input-text>
+              <oj-input-text label-hint="Zip" class="oj-md-padding-3x"
+                value="{{ $variables.customerObject.s_postal_code }}" readonly="true"></oj-input-text>
+            </oj-form-layout>
+          </div>
+        </div>
+        <!-- <span>
+         <b>Note:</b> If existing customer details are not selected, new customer will be created with customer request details
+        </span> -->
+      </div>
+      <div class="oj-panel oj-flex-item oj-md-margin-3x  " style="flex:1; overflow-y:auto;">
+        <div
+          style="background: linear-gradient(145deg, #0f2027, #203a43, #2c5364); padding: 12px 16px; border-radius: 6px; font-weight: bold; font-size: 1.25em; margin-bottom: 16px;"
+          class="oj-color-invert">Equipments Reserved</div>
+
+        <oj-bind-for-each data="[[ $variables.reserverdEquipmentDetails.data ]]">
+          <template>
+            <!-- Responsive flex item: full width on phones, 4-col on desktop -->
+            <div class="oj-flex-item oj-sm-12 oj-md-12 oj-lg-12" style="border-bottom:1px solid black;">
+              <oj-card class="oj-bg-neutral-0 oj-rounded-2xl oj-shadow-md oj-sm-padding-3x">
+
+                <!-- Header -->
+                <div class="oj-flex oj-sm-justify-content-between">
+                  <h3 class="oj-typography-subheading-sm">
+                    <oj-bind-text value="[[ $current.data.equipment_name ]]"></oj-bind-text>
+                  </h3>
+                  <oj-chip chroming="borderless" size="sm" style="background-color:#e8f4ff;">
+                    <oj-bind-text value="[[ $current.data.status ]]"></oj-bind-text>
+                  </oj-chip>
+                </div>
+
+                <!-- Body -->
+                <p class="oj-typography-body-sm oj-text-color-secondary">
+                  <b>#</b>
+                  <oj-bind-text value="[[ $current.data.equipment_number ]]"></oj-bind-text>
+                  &nbsp;|&nbsp;
+                  <b>Class:</b>
+                  <oj-bind-text value="[[ $current.data.equipment_class ]]"></oj-bind-text>
+                </p>
+
+                <p class="oj-typography-body-sm">
+                  <b>Type:</b>
+                  <oj-bind-text value="[[ $current.data.equipment_type ]]"></oj-bind-text><br/>
+                </p>
+
+                <!-- Footer Dates -->
+                <div>
+                  <span class="oj-typography-caption" style="padding:0; margin-left:15px;">
+        <b>Start Date: </b>
+        <oj-bind-text value="[[ $current.data.start_date ]]"></oj-bind-text>
+      </span>
+                  <span style="margin-left:15px;">
+        <b>End Date: </b>
+        <oj-bind-text value="[[ $current.data.end_date ]]"></oj-bind-text>
+      </span>
+                </div>
+
+                <!-- Quote & Billing Section -->
+                <div style="margin-top:8px;">
+                  <span class="oj-typography-caption" style="padding:0; margin-left:15px;">
+        <b>Rental Estimate Amount: </b>
+        <oj-bind-text value='[[ "$"+$current.data.quote_amount+".00" ]]'></oj-bind-text>
+      </span>
+                  <span style="margin-left:15px;">
+        <b>Billing Frequency: </b>
+        <oj-bind-text value="[[ $current.data.bill_rate ]]"></oj-bind-text>
+      </span>
+                </div>
+
+              </oj-card>
+            </div>
+
+          </template>
+        </oj-bind-for-each>
+      </div>
+
+    </div>
+    <div class="oj-panel oj-flex-item oj-sm-12 oj-panel-shadow-lg oj-md-margin-3x oj-md-4"
+      style="width:320px; position:sticky; top:20px; align-self:flex-start;">
+      <div
+        style="background: linear-gradient(145deg, #0f2027, #203a43, #2c5364); padding: 12px 16px; border-radius: 6px; font-weight: bold; font-size: 1.25em; margin-bottom: 16px;"
+        class="oj-color-invert">Rental Estimate Summary</div>
+      <div>
+        <oj-bind-for-each data="[[ $variables.updateQuote ]]">
+          <template>
+            <div style="   border-bottom: 2px solid #e0e0e0;
+    padding: 16px 24px 20px 24px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;">
+              <div class="oj-flex" style="margin-bottom: 14px; align-items: center; font-weight: 600;""
+ 
+  ">
+                <oj-highlight-text text='[[ "Equipment Number: " + $current.data.equipment_number ]]'
+                  match-text="Highlight" class="oj-flex-item oj-sm-12 oj-md-7"
+                  style="font-size: 1.1rem; color: #2c3e50;">
+                </oj-highlight-text>
+                <div class="oj-flex-item oj-sm-12 oj-md-5"
+                  style="font-size: 1.1rem; color: #27ae60; font-weight: 700; text-align: right;">
+                  <oj-bind-text value='[[ "Amount: $ " + $current.data.quoteAmount ]]'></oj-bind-text>
+                </div>
+              </div>
+              <div class="oj-flex" style="align-items: center;">
+                <div class="oj-flex-item oj-sm-12 oj-md-5" style="font-size: 0.95rem; color: #555;">
+                  <oj-bind-text value='[[ "Billing Frequency: " + $current.data.billFrequency ]]'></oj-bind-text>
+                </div>
+                <!-- <div class="oj-flex-item oj-sm-12 oj-md-3"></div>
+                <div class="oj-flex-item oj-sm-12 oj-md-4" style="font-size: 0.95rem; color: #555; text-align: right;">
+                  <oj-bind-text value='[[ "Tax: $ " + $current.data.taxAmount ]]'></oj-bind-text>
+                </div>
+              </div> -->
+              </div>
+          </template>
+        </oj-bind-for-each>
+
+      </div>
+      <div style="
+      margin-top: 24px;
+      padding: 16px 20px;
+      background-color: #e8f5e9;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(39, 174, 96, 0.3);
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: #27ae60;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    ">
+        <div>Total Rental Estimate Amount:</div>
+        <div>
+          <oj-bind-text value='[[ "$"+$variables.totalquoteAmount+".00" ]]'></oj-bind-text>
+        </div>
+      </div>
+      <!-- <div >
+  <oj-button chroming="callToAction" label="Accept" class="oj-button-sm">
+  </oj-button>
+      </div> -->
+      <!-- <div style="
+      margin-top: 8px;
+      padding: 12px 20px;
+      background-color: #f1f8e9;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(180, 212, 90, 0.3);
+      font-weight: 600;
+      font-size: 1rem;
+      color: #7cb342;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    ">
+        <div>Total Tax Amount:</div>
+        <div>
+          <oj-bind-text value='[[
+        "$ " + $variables.updateQuote.reduce((acc, item) => acc + item.taxAmount, 0).toFixed(2)
+      ]]'></oj-bind-text>
+        </div>
+      </div> -->
+      <div class="oj-flex oj-sm-justify-content-flex-end" style="margin-top: 28px; gap: 16px;">
+
+        <oj-button chroming="callToAction" class="oj-button-sm"
+          disabled='[[ $variables.selectedrow.status!="Quote Generated" ]]' on-oj-action="[[$listeners.buttonAction5]]">
+          Accept Rental Estimate</oj-button>
+        <oj-button label="Need Clarification" chroming="callToAction" class="oj-button-sm"
+          on-oj-action="[[$listeners.buttonAction6]]">
+        </oj-button>
+
+
+      </div>
+      <oj-toolbar>
+  <div class="oj-flex oj-sm-align-items-center oj-sm-flex-direction-row">
+
+    <!-- Switch -->
+    <div class="oj-flex-item oj-sm-margin-2x-end">
+      <oj-switch label-hint="Enable Trace"
+        value="[[$application.variables.enableTrace]]"
+        on-value-changed="[[$listeners.switchValue]]">
+      </oj-switch>
+    </div>
+
+    <!-- Trace Label -->
+    <div class="oj-flex-item oj-sm-margin-1x-end">
+      <oj-label>Trace ID:</oj-label>
+    </div>
+
+    <!-- Trace Value -->
+    <div class="oj-flex-item">
+      <oj-bind-text value="[[$application.variables.traceIdDisplay]]"></oj-bind-text>
+    </div>
+
+  </div>
+</oj-toolbar>
+
+    </div>
+  </div>
+  </div>
+  <oj-dialog dialog-title="Dialog" id="oj-dialog--559326508-1">
+    <div slot="body" style="border-bottom:2px solid black;">
+      <div class="oj-flex">
+        <h5 class="oj-header oj-flex-item oj-sm-12 oj-md-12">Enter Quote Amounts</h5>
+      </div>
+    </div>
+    <div style="padding-top: 12px;">
+      <h6 class="oj-header">
+        <oj-bind-text value='[[ "Equipment Number: " + $variables.selectedEquipmentNumber ]]'></oj-bind-text>
+      </h6>
+      <oj-form-layout columns="3" max-columns="2" label-edge="top">
+        <oj-input-number label-hint="Quote Amount"
+          converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'
+          on-value-changed="[[$listeners.inputNumberValue]]"
+          value="{{ $variables.selectedEqpQuoteAmount?$variables.selectedEqpQuoteAmount:0 }}" min="0"></oj-input-number>
+        <!-- <oj-input-number label-hint="Tax" readonly="true"
+          value="{{ $variables.selectedEqpTaxAmount?$variables.selectedEqpTaxAmount:0 }}"
+          converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'></oj-input-number> -->
+        <oj-select-single label-hint="Billing Frequency" data="[[$variables.billingFrequencyListSDP]]"
+          item-text="billFreq" on-value-item-changed="[[$listeners.selectValueItem]]"
+          value="{{ $variables.selectedEqpBillFreq?$variables.selectedEqpBillFreq:'' }}"></oj-select-single>
+      </oj-form-layout>
+    </div>
+    <div class="oj-flex" slot="footer">
+      <div class="oj-flex-item oj-sm-12 oj-md-6"></div>
+      <div class="oj-flex-item oj-sm-12 oj-md-4">
+        <oj-button label="Save Details" chroming="callToAction" on-oj-action="[[$listeners.buttonAction2]]"
+          class="oj-button-sm"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-2">
+        <oj-button label="Close" on-oj-action="[[$listeners.buttonAction4]]" class="oj-button-sm"></oj-button>
+      </div>
+    </div>
+  </oj-dialog>
+</oj-sp-welcome-page>

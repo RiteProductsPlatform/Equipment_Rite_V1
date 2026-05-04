@@ -1,0 +1,324 @@
+{
+    "items": [
+        {
+            "AssetSubinventory": 1,
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "DefaultLocStatusId": null,
+            "Depreciable": 2,
+            "Description": "Completion Subinventory",
+            "DisableDate": null,
+            "LocationId": null,
+            "LocatorControl": "1",
+            "LocatorControlMeaning": "None",
+            "LPNControl": null,
+            "OrganizationId": 300001690872060,
+            "PickingOrder": null,
+            "ParLocation": 2,
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "QuantityTracked": 1,
+            "SecondaryInventoryName": "COM_SUBINV",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourcingType": null,
+            "SourcingTypeMeaning": null,
+            "MaterialStatusId": 1,
+            "LocatorStructure": 534,
+            "LocatorStructureMeaning": "Four-Segment Locator Structure Instance",
+            "SubinventoryId": 300001690863912,
+            "SubinventoryType": "1",
+            "SubinventoryTypeMeaning": "Storage",
+            "OrganizationCode": "OAK_PPM",
+            "SourceOrganizationCode": null,
+            "SourceOrganizationName": null,
+            "MaterialStatusCode": "Active",
+            "LocationCode": null,
+            "DefaultLocStatusCode": null,
+            "FillKillToLookup": "NEXT_LEVEL",
+            "FillKillToLookupMeaning": "Default to next level in hierarchy",
+            "CountMethod": "COUNT",
+            "CountMethodMeaning": "Count",
+            "SubinventoryGroup": null,
+            "CreationDate": "2024-12-10T07:01:45.855+00:00",
+            "OracleHealthLocation": "N",
+            "UsePackingUnitForProductCompletionAndReturnCode": "2",
+            "UseSubinventoryForManufacturingAndMaintenanceInWmsCode": "2",
+            "UsePackingUnitForProductCompletionAndReturn": "No",
+            "UseSubinventoryForManufacturingAndMaintenanceInWms": "No",
+            "SubinventoryLevelLocatorAllowed": "1",
+            "OfflineCounting": null,
+            "OfflineCountingMeaning": null,
+            "AutoCreateDelivery": null,
+            "FullLPNFlag": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56",
+                    "name": "subinventories",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56",
+                    "name": "subinventories",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/lov/SubinventoryTypeLov",
+                    "name": "SubinventoryTypeLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/lov/MaterialStatusLov",
+                    "name": "MaterialStatusLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/lov/SourceTypeLov",
+                    "name": "SourceTypeLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/lov/DefaultLocStatusLov",
+                    "name": "DefaultLocStatusLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/lov/ParLocationLov",
+                    "name": "ParLocationLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/lov/KeyFlexfieldStructureInstanceVA",
+                    "name": "KeyFlexfieldStructureInstanceVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/lov/DefaultCountTypeLov",
+                    "name": "DefaultCountTypeLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/lov/LocatorTypeLov",
+                    "name": "LocatorTypeLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/lov/QuantityTrackedLov",
+                    "name": "QuantityTrackedLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/lov/DepreciableLov",
+                    "name": "DepreciableLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/lov/AssetSubinventoryLov",
+                    "name": "AssetSubinventoryLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/child/itemSubinventories",
+                    "name": "itemSubinventories",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/child/locators",
+                    "name": "locators",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A434F4D5F535542494E56/child/subinventoriesDFF",
+                    "name": "subinventoriesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "AssetSubinventory": 1,
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "DefaultLocStatusId": null,
+            "Depreciable": 2,
+            "Description": "Supply Subinventory",
+            "DisableDate": null,
+            "LocationId": null,
+            "LocatorControl": "1",
+            "LocatorControlMeaning": "None",
+            "LPNControl": null,
+            "OrganizationId": 300001690872060,
+            "PickingOrder": null,
+            "ParLocation": 2,
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "QuantityTracked": 1,
+            "SecondaryInventoryName": "SUP_SUBINV",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourcingType": null,
+            "SourcingTypeMeaning": null,
+            "MaterialStatusId": 1,
+            "LocatorStructure": 534,
+            "LocatorStructureMeaning": "Four-Segment Locator Structure Instance",
+            "SubinventoryId": 300001690863909,
+            "SubinventoryType": "1",
+            "SubinventoryTypeMeaning": "Storage",
+            "OrganizationCode": "OAK_PPM",
+            "SourceOrganizationCode": null,
+            "SourceOrganizationName": null,
+            "MaterialStatusCode": "Active",
+            "LocationCode": null,
+            "DefaultLocStatusCode": null,
+            "FillKillToLookup": "NEXT_LEVEL",
+            "FillKillToLookupMeaning": "Default to next level in hierarchy",
+            "CountMethod": "COUNT",
+            "CountMethodMeaning": "Count",
+            "SubinventoryGroup": null,
+            "CreationDate": "2024-12-10T07:01:05.001+00:00",
+            "OracleHealthLocation": "N",
+            "UsePackingUnitForProductCompletionAndReturnCode": "2",
+            "UseSubinventoryForManufacturingAndMaintenanceInWmsCode": "2",
+            "UsePackingUnitForProductCompletionAndReturn": "No",
+            "UseSubinventoryForManufacturingAndMaintenanceInWms": "No",
+            "SubinventoryLevelLocatorAllowed": "1",
+            "OfflineCounting": null,
+            "OfflineCountingMeaning": null,
+            "AutoCreateDelivery": null,
+            "FullLPNFlag": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56",
+                    "name": "subinventories",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56",
+                    "name": "subinventories",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/lov/SubinventoryTypeLov",
+                    "name": "SubinventoryTypeLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/lov/MaterialStatusLov",
+                    "name": "MaterialStatusLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/lov/SourceTypeLov",
+                    "name": "SourceTypeLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/lov/DefaultLocStatusLov",
+                    "name": "DefaultLocStatusLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/lov/ParLocationLov",
+                    "name": "ParLocationLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/lov/KeyFlexfieldStructureInstanceVA",
+                    "name": "KeyFlexfieldStructureInstanceVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/lov/DefaultCountTypeLov",
+                    "name": "DefaultCountTypeLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/lov/LocatorTypeLov",
+                    "name": "LocatorTypeLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/lov/QuantityTrackedLov",
+                    "name": "QuantityTrackedLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/lov/DepreciableLov",
+                    "name": "DepreciableLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/lov/AssetSubinventoryLov",
+                    "name": "AssetSubinventoryLov",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/child/itemSubinventories",
+                    "name": "itemSubinventories",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/child/locators",
+                    "name": "locators",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories/00020000000EACED00057708000110D9963768FC0000000A5355505F535542494E56/child/subinventoriesDFF",
+                    "name": "subinventoriesDFF",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 2,
+    "hasMore": false,
+    "limit": 500,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventories",
+            "name": "subinventories",
+            "kind": "collection"
+        }
+    ]
+}

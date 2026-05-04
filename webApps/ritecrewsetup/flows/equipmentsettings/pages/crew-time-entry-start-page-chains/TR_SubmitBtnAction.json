@@ -1,0 +1,160 @@
+{
+  "root": "forEachInFilteredData",
+  "description": "",
+  "actions": {
+    "forEachInFilteredData": {
+      "module": "vb/action/builtin/forEachAction",
+      "parameters": {
+        "items": "{{ $page.variables.FilteredData }}",
+        "actionId": "callFunctionDateFormatter"
+      },
+      "outcomes": {
+        "success": "assignVariablesIsAdd"
+      }
+    },
+    "callRestPostSubmitTimeSheet": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/postSubmitTimeSheet",
+        "body": "{{ $chain.results.callFunctionPayloadGenerator }}"
+      },
+      "outcomes": {
+        "failure": "callFunctionGetsysdate",
+        "success": "assignVariablesSuccessVar"
+
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Time Sheet submitted Successfully",
+        "displayMode": "transient",
+        "type": "confirmation"
+      },
+      "outcomes": {
+        "success": "callRestGetGetTimeweekId"
+      }
+    },
+    "callFunctionGetsysdate": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "getsysdate"
+      }
+    },
+    "assignVariablesSuccessVar": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.SuccessVar": {
+          "source": "{{ $page.variables.SuccessVar + 1 }}"
+        }
+      }
+    },
+    "callFunctionDateFormatter": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dateFormatter",
+        "params": [
+          "{{ $page.variables.FilteredData[0].week_start_date }}",
+          "{{ $page.variables.FilteredData[0].week_end_date }}",
+          "{{ $page.variables.searchobj.crewdate }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callFunctionPayloadGenerator"
+      }
+    },
+    "callFunctionPayloadGenerator": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "payloadGenerator",
+        "params": [
+          "{{ $page.variables.FilteredData[$current.index] }}",
+          "{{ $application.user.email }}",
+          "{{ $chain.results.callFunctionDateFormatter.startDate }}",
+          "{{ $chain.results.callFunctionDateFormatter.endDate }}",
+          "{{ $page.variables.searchobj.dateRange }}",
+          "{{ $chain.results.callFunctionDateFormatter.crewDate }}",
+          "{{ $page.variables.searchobj.specific }}",
+          "{{ $page.variables.maxweekid }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPostSubmitTimeSheet"
+      }
+    },
+    "assignVariablesIsAdd": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.isAdd": {
+          "source": false
+        },
+        "$page.variables.IsApprove": {
+          "source": true
+        }
+      },
+      "outcomes": {
+        "success": "resetVariablesUpdateTimeSheet"
+      }
+    },
+    "resetVariablesUpdateTimeSheet": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.updateTimeSheet"
+        ]
+      },
+      "outcomes": {
+        "success": "fireNotification"
+      }
+    },
+    "callChainSearchBtnAction": {
+      "module": "vb/action/builtin/callChainAction",
+      "parameters": {
+        "id": "TR_fetchSearchSheetData"
+      }
+    },
+    "ifIsAdd": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $page.variables.isAdd ]]"
+      },
+      "outcomes": {
+        "false": "callChainSearchBtnAction",
+        "true": "callChainTRFetchTimeSheetData"
+      }
+    },
+    "callChainTRFetchTimeSheetData": {
+      "module": "vb/action/builtin/callChainAction",
+      "parameters": {
+        "id": "TR_FetchTimeSheetData"
+      }
+    },
+    "callRestGetGetTimeweekId": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getGetTimeweekId",
+        "uriParams": {
+          "crewsetup_id": "{{ $page.variables.searchobj.crewSetup_id }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesTimeWeekId"
+      }
+    },
+    "assignVariablesTimeWeekId": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.time_week_id": {
+          "source": "{{ $chain.results.callRestGetGetTimeweekId.body.items[0].timesheet_week_id }}"
+        }
+      },
+      "outcomes": {
+        "success": "ifIsAdd"
+      }
+    }
+  }
+}

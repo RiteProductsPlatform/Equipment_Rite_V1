@@ -1,0 +1,93 @@
+{
+  "root": "callFunctionDateFormatter",
+  "description": "",
+  "actions": {
+    "assignVariablesIsEdit": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.IsEdit": {
+          "source": false
+        },
+        "$page.variables.IsSearch": {
+          "source": true
+        }
+      },
+      "outcomes": {
+        "success": "fireNotification3"
+      }
+    },
+    "callFunctionDateFormatter": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dateFormatter",
+        "params": [
+          "{{ $page.variables.crewSetupHeaderObj.start_date }}",
+          "{{ $page.variables.crewSetupHeaderObj.end_date }}",
+          "{{ $page.variables.crewSetupHeaderObj.start_date }}",
+          "{{ $page.variables.crewSetupHeaderObj.end_date }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesCrewSetupHeaderObj"
+      }
+    },
+    "assignVariablesCrewSetupHeaderObj": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.crewSetupHeaderObj": {
+          "source": {
+            "last_updated_by": "{{ $application.user.email }}",
+            "last_update_date": "{{ $chain.results.callFunctionDateFormatter.sysdate }}",
+            "end_date": "{{ $chain.results.callFunctionDateFormatter.endDate }}",
+            "start_date": "{{ $chain.results.callFunctionDateFormatter.startDate }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      },
+      "outcomes": {
+        "success": "callRestPutGetCrewSetupHeader"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Failed to update Headers",
+        "type": "error",
+        "displayMode": "transient"
+      }
+    },
+    "callRestPutGetCrewSetupHeader": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/putGetCrewSetupHeader",
+        "body": "{{ $page.variables.crewSetupHeaderObj }}"
+      },
+      "outcomes": {
+        "success": "assignVariablesIsEdit",
+        "failure": "fireNotification"
+      }
+    },
+    "callChainFetchHeadersLines": {
+      "module": "vb/action/builtin/callChainAction",
+      "parameters": {
+        "id": "TR_FetchHeadersLines"
+      },
+      "outcomes": {}
+    },
+    "fireNotification3": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Details Updated Successfully",
+        "type": "confirmation",
+        "displayMode": "transient"
+      },
+      "outcomes": {
+        "success": "callChainFetchHeadersLines"
+      }
+    }
+  }
+}

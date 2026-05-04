@@ -1,0 +1,765 @@
+{
+  "title": "CrewTime Schedule",
+  "description": "",
+  "variables": {
+    "Assign": {
+      "type": "boolean",
+      "defaultValue": false
+    },
+    "columns": {
+      "type": "object[]"
+    },
+    "crewSetupId": {
+      "type": "any",
+      "defaultValue": " "
+    },
+    "DetailsTableADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "FetchScheduleDetailsType",
+        "keyAttributes": "@index"
+      }
+    },
+    "distinctProjDetailsSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+
+        "responseType": "get11_13_18_05Projects",
+        "itemsPath": "items",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "ProjectName"
+          ]
+        },
+        "keyAttributes": "ProjectId",
+        "fetchChain": "get11_13_18_05ProjectsFetch"
+      }
+    },
+    "eqClassListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "businessObjects/getall_EqClass",
+        "responseType": "getall_EqClass",
+        "itemsPath": "items",
+        "keyAttributes": "eqClass",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "eqClass"
+          ]
+        }
+      }
+    },
+    "getEqpReqApproverPrjListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEqpReqApproverPrj",
+        "keyAttributes": "project_id",
+        "itemsPath": "items",
+        "responseType": "getEqpReqApproverPrjResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "project_id"
+          ]
+        }
+      }
+    },
+    "getEqpReqApproverPrjListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEqpReqApproverPrj",
+        "keyAttributes": "project_name",
+        "itemsPath": "items",
+        "responseType": "getEqpReqApproverPrjResponse2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "project_name"
+          ]
+        }
+      }
+    },
+    "getEquipmentNamesSchedule": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentNames",
+        "responseType": "getGetEquipmentNames",
+        "itemsPath": "items",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_name"
+          ]
+        },
+        "keyAttributes": "equipment_id"
+      }
+    },
+    "getGetCrewNameLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetCrewNameLOV",
+        "keyAttributes": "crewsetup_id",
+        "itemsPath": "items",
+        "responseType": "getGetCrewNameLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "crew_name"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentClassesListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentClasses",
+        "keyAttributes": "eqp_class_details",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentClassesResponse",
+        "uriParameters": {
+          "page_name": "{{ $application.currentPage.id }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "eqp_class_details"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentLOV",
+        "keyAttributes": "lkpvalue",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentLOVResponse",
+        "uriParameters": {
+          "pClass": "{{ $variables.selectedEquipmentClass || null }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "lkpvalue"
+          ]
+        }
+      }
+    },
+    "getRequesterNamesSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEqpRequestorName",
+        "responseType": "getEqpRequestorName",
+        "itemsPath": "items",
+        "keyAttributes": "requestor_name",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "requestor_name"
+          ]
+        }
+      }
+    },
+    "getTasksListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "projectNameList/get11_13_18_05ProjectsProjectIdChildTasks2",
+        "responseType": "get11_13_18_05ProjectsProjectIdChildTasks2",
+        "itemsPath": "items",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "TaskName"
+          ]
+        },
+        "uriParameters": {
+          "ProjectId": "{{ $variables.selectedParams.projectNameId }}"
+        },
+        "keyAttributes": "TaskId"
+      }
+    },
+    "IsEquipmentChanged": {
+      "type": "boolean"
+    },
+    "IsSchedulerOnOff": {
+      "type": "boolean"
+    },
+    "MonthADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "weekObj",
+        "keyAttributes": "weekid"
+      }
+    },
+    "requestor_name": {
+      "type": "string",
+      "defaultValue": "  "
+    },
+    "resourceNamebyCrewIdListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/ResourceNamebyCrewId",
+        "itemsPath": "items",
+        "responseType": "resourceNamebyCrewIdResponse2",
+        "uriParameters": {
+          "crewsetup_id": "{{ $variables.selectedCrewId ? $variables.selectedCrewId : \"\" }}"
+        },
+        "keyAttributes": "resource_number"
+      }
+    },
+    "resourceobj": {
+      "type": {
+        "crewName": "string",
+        "date": "string",
+        "fulldate": "string",
+        "id": "string",
+        "resource": "string"
+
+      }
+    },
+    "scheduleMainADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getEqpSchEquipmentSearch",
+        "keyAttributes": "equipment_id",
+        "textFilterAttributes": [
+          "equipment_name"
+        ]
+      }
+    },
+    "selectedbadge": {
+      "type": "string"
+    },
+    "selectedCrewId": {
+      "type": "number"
+    },
+    "selectedCrewName": {
+      "type": "any",
+      "defaultValue": " "
+    },
+    "SelectedDate": {
+      "type": "string"
+    },
+    "selectedEquipmentClass": {
+      "type": "string",
+      "defaultValue": "  "
+    },
+    "selectedEquipmentName": {
+      "type": "any",
+      "defaultValue": " "
+    },
+    "selectedMonth": {
+      "type": "string"
+    },
+    "selectedParams": {
+      "type": {
+        "crewNameId": "any",
+        "projectNameId": "any",
+        "taskNameId": "any"
+      },
+      "defaultValue": {
+        "crewNameId": " ",
+        "projectNameId": " ",
+        "taskNameId": " "
+      }
+    },
+    "selectedResource": {
+      "type": "string"
+    },
+    "showSearchParams": {
+      "type": "boolean",
+      "defaultValue": false
+    },
+    "url_access_type": {
+      "type": "any",
+      "defaultValue": "REQUEST_FORM",
+      "input": "fromCaller"
+    },
+    "viewFlagBoolean": {
+      "type": "boolean",
+      "defaultValue": true
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.FetchScheduleDetailsType": {
+      "endpoint": "FetchScheduleDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.get11_13_18_05Projects": {
+      "endpoint": "get11_13_18_05Projects",
+      "service": "projectNameList",
+      "path": "response"
+    },
+    "@decorators.get11_13_18_05ProjectsProjectIdChildTasks2": {
+      "endpoint": "get11_13_18_05ProjectsProjectIdChildTasks2",
+      "service": "projectNameList",
+      "path": "response"
+    },
+    "@decorators.getall_EqClass": {
+      "endpoint": "getall_EqClass",
+      "service": "businessObjects",
+      "path": "response"
+    },
+    "@decorators.getEqpReqApproverPrjResponse": {
+      "endpoint": "getEqpReqApproverPrj",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEqpReqApproverPrjResponse2": {
+      "endpoint": "getEqpReqApproverPrj",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEqpRequestorName": {
+      "endpoint": "getEqpRequestorName",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEqpSchEquipmentSearch": {
+      "endpoint": "getEqpSchEquipmentSearch",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getGetCrewNameLOVResponse": {
+      "endpoint": "getGetCrewNameLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentClassesResponse": {
+      "endpoint": "getGetEquipmentClasses",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentLOVResponse": {
+      "endpoint": "getGetEquipmentLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentNames": {
+      "endpoint": "getGetEquipmentNames",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.resourceNamebyCrewIdResponse2": {
+      "endpoint": "ResourceNamebyCrewId",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "FetchScheduleDetailsType": {
+      "bill_rate": "string",
+      "customer_name": "string",
+      "effective_end_date": "string",
+      "effective_start_date": "string",
+      "ot_rate": "string",
+      "pay_rate": "string",
+      "project_number": "string",
+      "resource_name": "string",
+      "resource_number": "string",
+      "task": "string"
+
+    },
+    "get11_13_18_05Projects": {
+      "items": [
+        {
+          "ProjectId": "number",
+          "ProjectName": "string",
+          "ProjectNumber": "string"
+        }
+      ]
+    },
+    "get11_13_18_05ProjectsProjectIdChildTasks2": {
+      "items": [
+        {
+          "TaskId": "number",
+          "TaskName": "string",
+          "TaskNumber": "string"
+        }
+      ]
+    },
+    "getall_EqClass": {
+      "items": [
+        {
+          "eqClass": "string"
+        }
+      ]
+    },
+    "getEqpReqApproverPrjResponse": {
+      "items": [
+        {
+          "project_id": "number",
+          "project_name": "string"
+        }
+      ]
+    },
+    "getEqpReqApproverPrjResponse2": {
+      "items": [
+        {
+          "project_id": "number",
+          "project_name": "string"
+        }
+      ]
+    },
+    "getEqpRequestorName": {
+      "items": [
+        {
+          "requestor_name": "string"
+        }
+      ]
+    },
+    "getEqpSchEquipmentSearch": {
+      "addressline1": "any",
+      "addressline2": "any",
+      "bill_rate": "string",
+      "city": "any",
+      "cost_rate": "string",
+      "country": "any",
+      "county": "any",
+      "crew_end_date": "string",
+      "crew_start_date": "string",
+      "crewsetup_id": "any",
+      "equipment_class": "string",
+      "equipment_end_date": "string",
+      "equipment_id": "number",
+      "equipment_name": "string",
+      "equipment_request_id": "any",
+      "equipment_start_date": "string",
+      "fri_quantity": "string",
+      "latitude": "any",
+      "location": "string",
+      "longitude": "any",
+      "maintenance_end_date": "any",
+      "maintenance_start_date": "any",
+      "mon_quantity": "string",
+      "project_id": "number",
+      "project_name": "string",
+      "project_number": "string",
+      "sat_quantity": "string",
+      "sun_quantity": "string",
+      "task_id": "number",
+      "task_name": "string",
+      "thu_quantity": "string",
+      "tue_quantity": "string",
+      "type": "string",
+      "wed_quantity": "string",
+      "zipcode": "any",
+      "equipment_resource_class": "string"
+
+    },
+    "getGetCrewNameLOVResponse": {
+      "items": [
+        {
+          "crew_name": "string",
+          "crewsetup_id": "number"
+        }
+      ]
+    },
+    "getGetEquipmentClassesResponse": {
+      "items": [
+        {
+          "eqp_class_details": "string"
+        }
+      ]
+    },
+    "getGetEquipmentLOVResponse": {
+      "items": [
+        {
+          "default_location": "string",
+          "equipment_class": "string",
+          "equipment_name": "string",
+          "equipment_number": "string",
+          "equipment_type": "string",
+          "lkpid": "number",
+          "lkpvalue": "string"
+        }
+      ]
+    },
+    "getGetEquipmentNames": {
+      "items": [
+        {
+          "equipment_id": "number",
+          "equipment_name": "string"
+        }
+      ]
+    },
+    "resourceNamebyCrewIdResponse2": {
+      "items": [
+        {
+
+          "resource_name": "string",
+          "resource_number": "string"
+        }
+      ]
+    },
+    "scheduleSearchTYpe": "object",
+    "weekObj": {
+      "Friday": "string",
+      "Monday": "string",
+      "Saturday": "string",
+      "Sunday": "string",
+      "Thursday": "string",
+      "Tuesday": "string",
+      "Wednesday": "string"
+    }
+
+  },
+  "eventListeners": {
+    "badgeClick": {
+      "chains": [
+        {
+          "chain": "BadgeClickChain",
+          "parameters": {
+            "Current": "[[ $current.data ]]",
+            "currendIndex": "[[ \"MYID\"+$current.index ]]"
+          }
+        }
+      ]
+    },
+    "buttonAction": {
+      "chains": [
+        {
+          "chainId": "Tr_SearchBtnAction"
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chainId": "TR_ResetBtnAction"
+        }
+      ]
+    },
+    "buttonAction3": {
+      "chains": [
+        {
+          "chainId": "AssignTaskClickAction"
+        }
+      ]
+    },
+    "buttonAction4": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain1",
+          "parameters": {
+            "selectedCrewId": "[[ $variables.selectedCrewName ]]"
+          }
+        }
+      ]
+    },
+    "buttonAction5": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain2"
+        }
+      ]
+    },
+    "crewNameValue": {
+      "chains": [
+        {
+          "chain": "SelectValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "crewNameValueItem": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "crewNameValueItem2": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain1",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "resetbtnAction": {
+      "chains": [
+        {
+          "chainId": "pagerefresh"
+        }
+      ]
+    },
+    "resetbtnAction2": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain4"
+        }
+      ]
+    },
+    "resetbtnAction3": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain5"
+        }
+      ]
+    },
+    "searchbtnAction": {
+      "chains": [
+        {
+          "chainId": "searchActionChain"
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "TR_CrewValueChangeAction",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem2": {
+      "chains": [
+        {
+          "chain": "equipmentNameSelectValueItemChangeChain2",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{$event.detail.value}}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}",
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "valueItem": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "switchValue": {
+      "chains": [
+        {
+          "chain": "SwitchValueChangeChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}"
+          }
+        }
+      ]
+    },
+    "switchValue2": {
+      "chains": [
+        {
+          "chain": "SwitchValueChangeChain1",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}"
+          }
+        }
+      ]
+    },
+    "toggleDrawer": {
+      "chains": [
+        {
+          "chain": "application:toggleDrawerHandler"
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+{
+          "parameters": {},
+          "chainId": "newContrainerLoad"
+        },
+        {
+          "parameters": {},
+          "chain": "vbEnterChangeListener"
+        }
+      ]
+    },
+    "viewFlagClick": {
+      "chains": [
+        {
+          "chain": "divClickChain",
+          "parameters": {
+            "current": "[[ $event.detail ]]"
+          }
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-collapsible": {
+        "path": "ojs/ojcollapsible"
+      },
+      "oj-combobox-one": {
+        "path": "ojs/ojselectcombobox"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-date": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-input-search": {
+        "path": "ojs/ojinputsearch"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-label": {
+        "path": "ojs/ojlabel"
+      },
+      "oj-list-item-layout": {
+        "path": "ojs/ojlistitemlayout"
+      },
+      "oj-list-view": {
+        "path": "ojs/ojlistview"
+      },
+      "oj-navigation-list": {
+        "path": "ojs/ojnavigationlist"
+      },
+      "oj-rating-gauge": {
+        "path": "ojs/ojgauge"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-status-meter-gauge": {
+        "path": "ojs/ojgauge"
+      },
+      "oj-switch": {
+        "path": "ojs/ojswitch"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      },
+      "oj-validation-group": {
+        "path": "ojs/ojvalidationgroup"
+      }
+
+    },
+    "modules": {
+      "ojValidationDateTime": {
+        "path": "ojs/ojvalidation-datetime"
+      }
+    }
+  }
+}

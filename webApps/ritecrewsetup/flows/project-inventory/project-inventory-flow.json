@@ -1,0 +1,83 @@
+{
+  "id": "project-inventory",
+  "description": "Flow main",
+  "defaultPage": "project-inventory-start",
+  "services": {},
+  "types": {
+    "@decorators.getAllUOM": {
+      "endpoint": "getAllUOM",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getFscmRestApiResources11_13_18_05GenericLookups": {
+      "endpoint": "getFscmRestApiResources11_13_18_05GenericLookups",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]-_-lookupCodes[0]"
+    },
+    "getAllUOM": {
+      "BaseUnitFlag": "boolean",
+      "CreatedBy": "string",
+      "CreationDate": "string",
+      "DerivedUnitParentCode": "any",
+      "Description": "string",
+      "DisableDate": "any",
+      "GlobalAttributeCategory": "any",
+      "LastUpdateDate": "string",
+      "LastUpdatedBy": "string",
+      "OkeiCode": "any",
+      "StandardConversion": "number",
+      "StandardConversionEndDate": "any",
+      "UOM": "string",
+      "UOMClass": "string",
+      "UOMClassCode": "string",
+      "UOMClassName": "string",
+      "UOMCode": "string",
+      "UOMId": "number",
+      "UOMPluralDescription": "any",
+      "UOMReciprocalDescription": "any"
+    },
+    "getFscmRestApiResources11_13_18_05GenericLookups": {
+      "Description": "string",
+      "LookupCode": "string",
+      "Meaning": "string"
+    }
+
+  },
+  "variables": {
+    "eqpClassAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getFscmRestApiResources11_13_18_05GenericLookups",
+        "keyAttributes": "Meaning",
+        "textFilterAttributes": [
+          "Meaning"
+        ]
+      }
+    },
+    "selectedReservationNumber": {
+      "type": "string",
+      "input": "fromCaller"
+    },
+    "uomAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getAllUOM",
+        "keyAttributes": "UOM",
+        "textFilterAttributes": [
+          "UOM"
+        ]
+      }
+    }
+
+  },
+  "eventListeners": {
+    "vbEnter": {
+      "chains": [
+        {
+          "parameters": {},
+          "chain": "vbEnterListener"
+        }
+      ]
+    }
+  }
+}

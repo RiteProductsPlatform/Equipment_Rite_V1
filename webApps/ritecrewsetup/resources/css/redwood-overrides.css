@@ -1,0 +1,46 @@
+/**
+ * To theme your application, just override the variable values you want to change. To find which variables can be changed,
+ * see the JET documentation at https://www.oracle.com/webfolder/technetwork/jet/jsdocs/CssVariablesOverview.html
+ * In general, we recommend using the Stable theme, as it reduces the chances of being impacted by changes over time.
+ */
+
+:root {
+  /* --oj-button-borderless-chrome-text-color:#006AA2;
+  --oj-button-call-to-action-chrome-bg-color:var(--oj-button-borderless-chrome-text-color);
+--oj-button-border-radius:.50rem; */
+
+  /* --oj-navigation-list-item-label-color: white; */
+
+  /* --oj-html-font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; */
+  /* --oj-html-font-size:   1em; */
+  /* --oj-body-bg-color: white; */
+  /* --oj-private-icon-color-default:#8ABFDC; */
+  /* --oj-button-borderless-chrome-text-color:#006AA2;
+  --oj-heading-text-color:var(--oj-button-borderless-chrome-text-color);
+
+
+--oj-button-call-to-action-chrome-bg-color:var(--oj-button-borderless-chrome-text-color);
+--oj-button-border-radius:.50rem;
+--oj-dialog-title-text-color:var(--oj-button-borderless-chrome-text-color); */
+}
+
+
+.oj-avatar {
+  background-color: var(--oj-private-icon-color-default);
+}
+
+/* .oj-navigationlist-item.oj-selected {
+  --oj-navigation-list-item-bg-color-selected: #E6F1F7;
+} */
+
+/* .oj-navigationlist-item.oj-hover {
+  --oj-navigation-list-item-bg-color-hover: transparent !important;
+  --oj-navigation-list-item-bg-color-hover: white !important;
+  
+} */
+
+
+
+fieldset {
+  border-color: #8ABFDC;
+}

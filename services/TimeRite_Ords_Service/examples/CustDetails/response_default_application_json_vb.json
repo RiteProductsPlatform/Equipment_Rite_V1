@@ -1,0 +1,58 @@
+{
+    "items": [
+        {
+            "customer_id": 100000000395792,
+            "customer_number": "10010",
+            "customer_name": "Conifer International",
+            "start_time": null,
+            "end_time": null,
+            "customer_email_address": "contact_etao-dev20@oraclepdemos.com",
+            "customer_mobile_number": "859-1476",
+            "po_number": null,
+            "po_start_date": null,
+            "po_end_date": null,
+            "quantity": null,
+            "equipment_module": "1",
+            "material_usage": "1",
+            "cus_wrkweek_start_date": null,
+            "cus_wrkweek_end_date": null,
+            "week_start_day": "Monday",
+            "week_end_day": "Friday",
+            "no_of_days": 5,
+            "ot_allowed": "1",
+            "ot_threshold_measure": "Week",
+            "ot_threshold_limit": "40",
+            "time_card_apr_req_flag": "1",
+            "billing_frequency": "Day",
+            "active_flag": null,
+            "timecard_collation": "1",
+            "client_erp_system": "Fusion",
+            "timecard_balancing": null,
+            "client_ers_enabled": "1",
+            "effective_start_date": "2024-03-01",
+            "effective_end_date": "2024-05-31",
+            "per_diem": "Yes",
+            "per_diem_hours": null,
+            "bonus": "5",
+            "safety_bonus": null
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/custDetails?customer_number=10010"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/custDetails?customer_number=10010"
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+  "root": "callFunctionValidateGroup",
+  "description": "",
+  "actions": {
+    "callFunctionValidateGroup": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "validateGroup",
+        "params": [
+          "updateformvalidation"
+        ]
+      },
+      "outcomes": {
+        "success": "if"
+      }
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callFunctionValidateGroup ==='valid' ]]"
+      },
+      "outcomes": {
+        "true": "callFunctionTimeValidator"
+      }
+    },
+    "callFunctionTimeValidator": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "timeValidator",
+        "params": [
+          "{{ $page.variables.updateTimeSheet }}"
+        ]
+      },
+      "outcomes": {
+        "success": "if3"
+      }
+    },
+    "if3": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callFunctionTimeValidator.isValid ]]"
+      },
+      "outcomes": {
+        "true": "callRestUpdatetimeSheetTime",
+        "false": "fireNotification4"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Failed to Update TimeSheet",
+        "type": "error",
+        "displayMode": "transient"
+      }
+    },
+    "callRestUpdatetimeSheetTime": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/UpdatetimeSheetTime",
+        "body": "{{ $page.variables.AddRowData }}"
+      },
+      "outcomes": {
+        "success": "callComponentTimesDialogClose",
+        "failure": "fireNotification"
+      }
+    },
+    "fireNotification3": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "TimeSheet Updated Successfully",
+        "displayMode": "transient",
+        "type": "confirmation"
+      },
+      "outcomes": {
+        "success": "resetVariablesAddRowData"
+      }
+    },
+    "callChainFetchTimeSheetData": {
+      "module": "vb/action/builtin/callChainAction",
+      "parameters": {
+        "id": "TR_FetchTimeSheetData"
+      },
+      "outcomes": {
+        "success": "fireNotification3"
+      }
+    },
+    "fireNotification4": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callFunctionTimeValidator.msg ]]",
+        "displayMode": "transient"
+      }
+    },
+    "resetVariablesAddRowData": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.AddRowData"
+        ]
+      }
+    },
+    "callComponentTimesDialogClose": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('timesDialog') }}",
+        "method": "close"
+      },
+      "outcomes": {
+        "success": "callChainFetchTimeSheetData"
+      }
+    }
+  }
+}

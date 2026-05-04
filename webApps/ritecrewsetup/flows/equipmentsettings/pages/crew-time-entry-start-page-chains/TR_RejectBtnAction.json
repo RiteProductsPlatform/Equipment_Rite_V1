@@ -1,0 +1,73 @@
+{
+  "root": "ifSearchobj",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "TimeSheet Rejected Successfully",
+        "displayMode": "transient",
+        "type": "confirmation"
+      }
+    },
+    "callRestGetTimeEntryId": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/GetTimeEntryId",
+        "uriParams": {
+          "crew_week": "{{ $page.variables.searchobj.dateRange ? $page.variables.searchobj.dateRange :\"\" }}",
+          "crewsetup_id": "{{ $page.variables.searchobj.crewSetup_id }}",
+          "crew_date": "{{ $chain.results.callFunctionDateFormatter.crewDate? $chain.results.callFunctionDateFormatter.crewDate : \"\" }}"
+        }
+      },
+      "outcomes": {
+        "success": "forEach"
+      }
+    },
+    "forEach": {
+      "module": "vb/action/builtin/forEachAction",
+      "parameters": {
+        "actionId": "callRestUpdateRejected",
+        "items": "{{ $chain.results.callRestGetTimeEntryId.body.items }}"
+      },
+      "outcomes": {
+        "success": "fireNotification"
+      }
+    },
+    "callRestUpdateRejected": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/UpdateRejected",
+        "uriParams": {
+          "time_entry_id": "{{ $chain.results.callRestGetTimeEntryId.body.items[$current.index].time_entry_id }}"
+        }
+      }
+    },
+    "callFunctionDateFormatter": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dateFormatter",
+        "params": [
+          null,
+          null,
+          "{{ $page.variables.searchobj.crewdate }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestGetTimeEntryId"
+      }
+    },
+    "ifSearchobj": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $page.variables.searchobj.specific === \"DAY\" ]]"
+      },
+      "outcomes": {
+        "true": "callFunctionDateFormatter",
+        "false": "callRestGetTimeEntryId"
+      }
+    }
+  }
+}

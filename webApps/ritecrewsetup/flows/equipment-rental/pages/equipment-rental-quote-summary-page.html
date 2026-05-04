@@ -1,0 +1,67 @@
+<div>
+  <oj-sp-simple-create-edit id="oj_ssce1" page-title="Equipment Rentals" page-subtitle="Quote Summary"
+    primary-action.disabled="{{!($page.variables.primaryAlwaysOn || ($page.variables.dirtyDataFlag ? true : $page.variables.isSaved))}}"
+    display-options.save="{{$page.variables.saveOption!=='off'?$page.variables.dirtyDataFlag?'on':'disabled':'off'}}"
+    display-options.go-to-parent="{{$page.variables.goToParentOption }}"
+    display-options.contextual-info-label="{{$page.variables.contextualInfoLabelVisible}}"
+    display-options.responsive-padding="on" on-sp-cancel="[[$listeners.ojSpCancel]]"
+    on-sp-save="[[$listeners.ojSpSave]]" on-sp-go-to-parent="[[$listeners.ojSpGoToParent]]"
+    on-sp-primary-action="[[$listeners.ojSpSubmit]]" 
+  >
+    <div class="oj-flex" slot="main">
+      <div class="oj-panel oj-panel-shadow-lg oj-md-margin-3x oj-flex-item oj-sm-12 oj-md-7">
+         <div
+           style="background-color: blue; padding: 12px 16px; border-radius: 6px; font-weight: bold; font-size: 1.25em; margin-bottom: 16px;"
+           class="oj-color-invert">Customer Information</div>
+        <oj-form-layout>
+          <h6 class="oj-header">Existing Customer</h6>
+        </oj-form-layout>
+           
+        <oj-form-layout class="oj-formlayout-full-width oj-md-margin-3x" max-columns="2" columns="2">
+          
+          
+          <oj-select-single label-hint="Customer Number" class="oj-md-padding-3x"></oj-select-single>
+          <oj-select-single label-hint="Customer Name" class="oj-md-padding-3x"></oj-select-single>
+        </oj-form-layout>
+        <div class="oj-flex">
+          <div class="oj-divider-top oj-flex-item oj-sm-12 oj-md-12"></div>
+        </div>
+        <div class="oj-flex">
+          <div class="oj-flex-item oj-sm-12 oj-md-12">
+            <oj-form-layout columns="2" max-columns="2">
+              <oj-input-text class="oj-md-padding-3x"
+                label-hint="Company Name" required="true" clear-icon="always"></oj-input-text>
+              <oj-input-text label-hint="Contact Name" class="oj-md-padding-3x" required="true" clear-icon="always"></oj-input-text>
+              <oj-input-text label-hint="Email Address" class="oj-md-padding-3x" required="true" clear-icon="always"></oj-input-text>
+              <oj-input-text label-hint="Mobile" class="oj-md-padding-3x" required="true" clear-icon="always"></oj-input-text>
+            </oj-form-layout>
+          </div>
+        </div>
+        <div class="oj-flex">
+          <div class="oj-flex-item oj-sm-12 oj-md-12">
+            <oj-form-layout class="oj-formlayout-full-width">
+              <oj-input-text label-hint="Street Address" clear-icon="always" class="oj-md-padding-3x"></oj-input-text>
+            </oj-form-layout>
+          </div>
+        </div>
+        <div class="oj-flex">
+          <div class="oj-flex-item oj-sm-12 oj-md-12">
+            <oj-form-layout columns="3" max-columns="3" class="oj-formlayout-full-width">
+              <oj-input-text label-hint="City" class="oj-md-padding-3x"></oj-input-text>
+              <oj-input-text label-hint="State" class="oj-md-padding-3x"></oj-input-text>
+              <oj-input-text label-hint="Zip" class="oj-md-padding-3x"></oj-input-text>
+            </oj-form-layout>
+          </div>
+        </div>
+      </div>
+      <div class="oj-panel oj-flex-item oj-sm-12 oj-panel-shadow-lg oj-md-margin-3x oj-md-4">
+                 <div
+           style="background-color: #ea580c; padding: 12px 16px; border-radius: 6px; font-weight: bold; font-size: 1.25em; margin-bottom: 16px;"
+           class="oj-color-invert">Quote Summary</div>
+        <div class="oj-flex"></div>
+      </div>
+    </div>
+  </oj-sp-simple-create-edit>
+  <oj-sp-message-unsaved-changes id="dirtyDataWarningDialog" open-dialog="[[ $page.variables.dirtyDialogOpen ]]"
+    on-oj-sp-discard-changes="[[ $listeners.confirmYesOjAction ]]" on-oj-sp-cancel="[[ $listeners.confirmNoOjAction ]]"></oj-sp-message-unsaved-changes>
+</div>

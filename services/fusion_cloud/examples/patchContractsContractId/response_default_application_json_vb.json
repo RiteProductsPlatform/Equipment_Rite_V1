@@ -1,0 +1,1915 @@
+{
+    "Id": 300001766003982,
+    "MajorVersion": 1,
+    "ExternalSource": "FUSION",
+    "ExternalKey": "300001766003982",
+    "InvConvRateTypeName": "Corporate",
+    "InvConvRateDateTypeName": "Transaction date",
+    "OrgName": "Oak USA BU1",
+    "OrgId": 300000301911646,
+    "ContractTypeName": "Equipment Rental ContracT Type",
+    "ContractClass": "CONTRACT",
+    "ContractTypeId": 300001765952731,
+    "ContractNumber": "TESTER05",
+    "ContractNumberModifier": null,
+    "Cognomen": "Eqp Rent Test05",
+    "BuyOrSell": "S",
+    "PartyId": 300001765935338,
+    "PartyName": "Tulsa Engineering",
+    "InvOrganizationId": null,
+    "StsCode": "DRAFT",
+    "CurrencyCode": "USD",
+    "StartDate": "2025-06-01",
+    "EndDate": "2025-12-01",
+    "TrnCode": null,
+    "SupplierId": null,
+    "SupplierSiteId": null,
+    "InvConvRateType": "Corporate",
+    "InvConvRateDateType": "TRANSACTION",
+    "InvConvRateDate": null,
+    "InvTrxTypeId": null,
+    "InvTrxTypeName": null,
+    "InvPrepayTrxTypeId": null,
+    "InvPrepayTrxTypeName": null,
+    "BillToAccountId": null,
+    "BillToAccount": null,
+    "BillToAccountNumber": null,
+    "BillToSiteUseId": null,
+    "BillToSiteUseLocation": null,
+    "BillToAddress": null,
+    "ShipToAccountId": null,
+    "ShipToAccount": null,
+    "ShipToAccountNumber": null,
+    "ShipToSiteUseId": null,
+    "ShipToSiteUseLocation": null,
+    "ShipToAddress": null,
+    "ShipToAccountDescription": null,
+    "SoldToAccountId": null,
+    "SoldToAccount": null,
+    "SoldToAccountNumber": null,
+    "SoldToSiteId": null,
+    "SoldToNumber": null,
+    "SoldToAddress": null,
+    "SoldToAccountDescription": null,
+    "ShipInvOrgId": null,
+    "RecvInvOrgId": null,
+    "LegalEntityId": 300000299231310,
+    "OutputTaxClassificationCode": null,
+    "DateApproved": null,
+    "DatetimeCancelled": null,
+    "DateSigned": null,
+    "DateTerminated": null,
+    "TerminateCancelSource": null,
+    "ContributionPercent": null,
+    "BillSequence": null,
+    "OverallRiskCode": null,
+    "ShortDescription": null,
+    "Description": null,
+    "HoldReasonCode": null,
+    "HoldUntilDate": null,
+    "AmendmentEffectiveDate": null,
+    "TaxExemptionControl": "S",
+    "ExemptCertificateNumber": null,
+    "ExemptReasonCode": null,
+    "ProjectEnabledFlag": true,
+    "OutputTaxSetId": 0,
+    "PartyObjectType": "OKX_PARTY",
+    "PrimaryLedgerId": 300000299231287,
+    "CustomerPartyId": null,
+    "CustomerPartySiteId": null,
+    "GeneratedInvoiceStatus": null,
+    "OwningOrgId": null,
+    "NetInvoiceFlag": null,
+    "VersionType": "C",
+    "OwningOrgName": null,
+    "TaxClassificationMeaning": null,
+    "ExemptionReasonMeaning": null,
+    "FreightTerms": null,
+    "FOB": null,
+    "ApTermsId": null,
+    "ShipToLocationId": null,
+    "ServiceEnabledFlag": "false",
+    "EstimatedAmount": 60000,
+    "TaxAmount": null,
+    "LastUpdateDate": "2025-07-21T18:52:24.201+00:00",
+    "LastUpdateLogin": "39CBF3BBB29EF26BE0635661F00A3705",
+    "LastUpdatedBy": "JOHN.DUNBAR",
+    "CreatedBy": "JOHN.DUNBAR",
+    "CreationDate": "2025-07-21T18:52:23.002+00:00",
+    "LedgerCurrency": "USD",
+    "BilltoLocationId": null,
+    "AgreedAmount": null,
+    "AgreementAmountLimit": null,
+    "MinimumReleaseAmount": null,
+    "EncumbranceLevel": null,
+    "CarrierId": null,
+    "CarrierName": null,
+    "CloseReason": null,
+    "CancelReason": null,
+    "AuthoringPartyCode": "INTERNAL",
+    "HoldReasonMeaning": null,
+    "PrimaryPartyId": 300001765935338,
+    "OrigSystemId": null,
+    "OrigSystemReference": null,
+    "OrigSystemSourceCode": null,
+    "ItemSourceCode": "PRODUCT_MASTER",
+    "StateTransitionFlowName": null,
+    "StateTransitionFlowState": "DRAFT",
+    "UserStatusCode": null,
+    "AssigneeType": null,
+    "AssigneeId": null,
+    "Assignee": null,
+    "CustomerPONumber": null,
+    "AccessLevel": "READ",
+    "TemplateFlag": false,
+    "BillingSalesrepId": null,
+    "BillingSalesrepName": null,
+    "VersionDescription": null,
+    "PriceList": null,
+    "AdjustmentBasis": null,
+    "CommitmentAmount": 0,
+    "DiscountPercent": null,
+    "PriceListName": null,
+    "TrnCodeSetId": null,
+    "HoldReasonCodeSetId": null,
+    "WebServiceFlag": null,
+    "TermsTemplateId": null,
+    "ContractOwnerId": null,
+    "Status": "Draft",
+    "AuthoringPartyMeaning": "Internal",
+    "InvOrgName": null,
+    "Supplier": null,
+    "SupplierSite": null,
+    "ShipInvOrg": null,
+    "RecvInvOrg": null,
+    "Currency": "US Dollar",
+    "UserStatusMeaning": null,
+    "LegalEntityName": "Oak RealEstate",
+    "ShipToOrgLocation": null,
+    "BillToLocation": null,
+    "EnableElectronicSignFlag": false,
+    "ContractTrueValue": null,
+    "ShipToPartyId": null,
+    "PricingStrategyId": null,
+    "PricingSegmentCode": null,
+    "PricingEffectivityDate": "2025-07-21T00:00:00+00:00",
+    "ShipToPartyName": null,
+    "ShipToPartySiteLocation": null,
+    "CustomerPartyName": null,
+    "TrxnExtensionId": null,
+    "BillToAccountPartyId": null,
+    "RenewalType": null,
+    "UnderMigrationFlag": null,
+    "TargetLineName": null,
+    "TargetLineId": null,
+    "TargetLineMajorVer": null,
+    "ContractId": 300001766003983,
+    "CorpCurrencyCode": "USD",
+    "CurcyConvRateType": "Corporate",
+    "PrimarySalesrepId": null,
+    "AutoSendForSignature": "N",
+    "PriceApplicationRule": "APPLY_TO_ALL_PRICE_LIST",
+    "EsignTemplateId": null,
+    "SignContract": null,
+    "SendForSignature": null,
+    "NonStandardClauseCount": "0",
+    "CancelReasonSetCode": null,
+    "CloseReasonSetCode": null,
+    "HoldReasonSetCode": null,
+    "ContractPuid": "KHDR-209147",
+    "EncumbranceLevelMeaning": null,
+    "FOBMeaning": null,
+    "FreightTermsMeaning": null,
+    "TaxExemptionControlMeaning": "Standard",
+    "SourceDocumentId": null,
+    "SourceDocumentSystemCode": null,
+    "ApTermsName": null,
+    "RunContractExpertFlag": null,
+    "ShareWithExternalPartyYn": "N",
+    "BaseContractYN": "N",
+    "SkipPDPFlag": null,
+    "InterCompanyFlag": false,
+    "InterProjectFlag": false,
+    "LineClassCode": "PROJECT",
+    "Risk_c": "RISK_LOW",
+    "ContractLine": [
+        {
+            "LineNumber": "1",
+            "Id": 300001766003987,
+            "LineId": 300001766003988,
+            "MajorVersion": 1,
+            "LineTypeId": 300000000099381,
+            "LineTypeName": "Free-form, project",
+            "StsCode": "DRAFT",
+            "LineStatus": "Draft",
+            "Object1Id1": null,
+            "Object1Id2": null,
+            "ItemName": "Equipment Rental Line",
+            "ItemNameTxt": "Equipment Rental Line",
+            "ItemDescription": "Equipment Rental Line",
+            "StartDate": "2025-06-01",
+            "EndDate": "2025-12-01",
+            "PriceListId": null,
+            "PriceList": null,
+            "UOMCode": null,
+            "UnitOfMeasure": null,
+            "FixedPriceServiceYn": "N",
+            "ItemQuantity": null,
+            "UnitPrice": null,
+            "LineValueAmount": 20000,
+            "LineAmount": 20000,
+            "Comments": null,
+            "AgreedQuantity": null,
+            "AgreedAmount": null,
+            "AgreementQuantityLimit": null,
+            "AgreementAmountLimit": null,
+            "MinimumReleaseQuantity": null,
+            "MinimumReleaseAmount": null,
+            "CommitLevelCode": "ESTIMATED",
+            "CommitLevel": "Estimated",
+            "PriceBookId": null,
+            "PriceBook": null,
+            "AllowPricelistOverrideYn": null,
+            "ListPrice": null,
+            "FloorPrice": null,
+            "AgreementPriceLimit": null,
+            "AgreementUnitPrice": null,
+            "AdjustmentTypeCode": null,
+            "AdjustmentType": null,
+            "AdjustmentBasisId": null,
+            "AdjustmentBasisCode": null,
+            "AdjustmentAmount": null,
+            "AllowCustomAdjustmentsFlag": null,
+            "DateTerminated": null,
+            "HoldUntilDate": null,
+            "TrnCodeSetId": null,
+            "TrnCode": null,
+            "CloseReason": null,
+            "HoldReasonCodeSetId": null,
+            "HoldReasonCode": null,
+            "HoldReason": null,
+            "AtRiskYn": "N",
+            "PercentComplete": null,
+            "ShipToAccountId": null,
+            "ShipToAccount": null,
+            "ShipToAccountNumber": null,
+            "ShipToSiteUseId": null,
+            "ShipToSite": null,
+            "ShipInvOrgId": null,
+            "WareHouse": null,
+            "BillPlanId": 300001766003984,
+            "BillPlan": "Eqp Test05",
+            "RevenuePlanId": 300001766003986,
+            "RevenuePlan": "ER_Revenue_PlanTEST05",
+            "RevenueAmount": "0",
+            "OutputTaxClassificationCode": null,
+            "OutputTaxClassMeaning": null,
+            "TaxExemptionControl": null,
+            "TaxExemptionControlMeaning": null,
+            "ExemptCertificateNumber": null,
+            "ExemptReasonCode": null,
+            "ExemptReason": null,
+            "LastRevenueRecogDate": null,
+            "CustomerPONumber": null,
+            "DeliveryDate": null,
+            "SupplierId": null,
+            "Supplier": null,
+            "SupplierSiteId": null,
+            "SupplierSiteName": null,
+            "RecvInvOrgId": null,
+            "RecInvOrgName": null,
+            "RecvLocationId": null,
+            "ShipToOrgLocation": null,
+            "AgreementPriceOverAllwdYn": "N",
+            "FOBCode": null,
+            "FOB": null,
+            "FreightTermsCode": null,
+            "FreightTerms": null,
+            "PaymentTermsId": null,
+            "PaymentTerms": null,
+            "PurchasingCategoryId": null,
+            "PurchasingCategory": null,
+            "CarrierId": null,
+            "CarrierName": null,
+            "VendorSiteId": null,
+            "OrigSystemReference": null,
+            "OrigSystemSourceCode": null,
+            "Cognomen": null,
+            "TaxAmount": null,
+            "ExternalSource": "FUSION",
+            "ExternalKey": "300001766003987",
+            "AllowPromotionsYn": "N",
+            "PricingEffectivityDate": "2025-07-21T00:00:00+00:00",
+            "DateCancelled": null,
+            "CancelReason": null,
+            "PriceAsOf": null,
+            "EstimatedVariableConsiderationAmount": 0,
+            "StandaloneSellingPrice": 0,
+            "PriceApplicationRule": null,
+            "AutoApplyStrategyPriceAdjustmentFlag": null,
+            "LinePuid": "KHDR-209147-LINE-129174",
+            "SourceDocumentId": null,
+            "SourceDocumentLineId": null,
+            "SourceDocumentSystemCode": null,
+            "BillPlanExternalSource": null,
+            "BillPlanExternalKey": null,
+            "RevenuePlanExternalSource": null,
+            "RevenuePlanExternalKey": null,
+            "TrnSetCode": null,
+            "HoldReasonSetCode": null,
+            "ContractPuid": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988",
+                    "name": "ContractLine",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988",
+                    "name": "ContractLine",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983",
+                    "name": "contracts",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/TaxExemptCertificatePVO1",
+                    "name": "TaxExemptCertificatePVO1",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/SupplierSiteLOVVA",
+                    "name": "SupplierSiteLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/ShipToOrgLocationLOVVA",
+                    "name": "ShipToOrgLocationLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/FobLOVVA",
+                    "name": "FobLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/ItemCategoryLOVVA",
+                    "name": "ItemCategoryLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/FreightTermsLOVVA",
+                    "name": "FreightTermsLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/ExemptionControlVA",
+                    "name": "ExemptionControlVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/CustomerSiteUseVA",
+                    "name": "CustomerSiteUseVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/PriceApplicationRuleVA",
+                    "name": "PriceApplicationRuleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/BillPlanVVO",
+                    "name": "BillPlanVVO",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/OutputTaxClassificationsCodeLOVVA",
+                    "name": "OutputTaxClassificationsCodeLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/FreeFormUnitOfMeasureVVO",
+                    "name": "FreeFormUnitOfMeasureVVO",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/SsaAdjustmentTypeVA",
+                    "name": "SsaAdjustmentTypeVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/QpAdjustmentBasisVA",
+                    "name": "QpAdjustmentBasisVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/RevenuePlanVVO",
+                    "name": "RevenuePlanVVO",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/CarrierLOVVA",
+                    "name": "CarrierLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/QpPriceListsLOVVA",
+                    "name": "QpPriceListsLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/CommitLevelVA",
+                    "name": "CommitLevelVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/PaymentTermLOVVA",
+                    "name": "PaymentTermLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/LineTypeVA",
+                    "name": "LineTypeVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/SsaPriceListLOVVA",
+                    "name": "SsaPriceListLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/SsaAdjustmentBasisVA",
+                    "name": "SsaAdjustmentBasisVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/RecvInvOrgVO",
+                    "name": "RecvInvOrgVO",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/SupplierLOVVA",
+                    "name": "SupplierLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/ShipRecvInvOrgVA",
+                    "name": "ShipRecvInvOrgVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/CustomerAccountsVA",
+                    "name": "CustomerAccountsVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/ItemLOVVA",
+                    "name": "ItemLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/lov/SourceDocumentSystemVA",
+                    "name": "SourceDocumentSystemVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/child/AssociatedProject",
+                    "name": "AssociatedProject",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/child/BillingControl",
+                    "name": "BillingControl",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/child/ContractAllLineDesFlexVA",
+                    "name": "ContractAllLineDesFlexVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/child/ContractLineTranslation",
+                    "name": "ContractLineTranslation",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/child/Milestone",
+                    "name": "Milestone",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/child/PricingTerm",
+                    "name": "PricingTerm",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/child/ProjectContractLineInternalAttributes",
+                    "name": "ProjectContractLineInternalAttributes",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/child/SalesCredit",
+                    "name": "SalesCredit",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/action/refreshPricingTerms",
+                    "name": "refreshPricingTerms",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/action/removeTieredAdjustment",
+                    "name": "removeTieredAdjustment",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/action/applyHold",
+                    "name": "applyHold",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/action/removeHold",
+                    "name": "removeHold",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/action/close",
+                    "name": "close",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/action/cancel",
+                    "name": "cancel",
+                    "kind": "other"
+                },
+                {
+                    "rel": "enclosure",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003988/enclosure/SourceSystemAttributes",
+                    "name": "SourceSystemAttributes",
+                    "kind": "other"
+                }
+            ]
+        },
+        {
+            "LineNumber": "2",
+            "Id": 300001766003989,
+            "LineId": 300001766003990,
+            "MajorVersion": 1,
+            "LineTypeId": 300000000099381,
+            "LineTypeName": "Free-form, project",
+            "StsCode": "DRAFT",
+            "LineStatus": "Draft",
+            "Object1Id1": null,
+            "Object1Id2": null,
+            "ItemName": "Small Tools",
+            "ItemNameTxt": "Small Tools",
+            "ItemDescription": "Small Tools",
+            "StartDate": "2025-06-01",
+            "EndDate": "2025-12-01",
+            "PriceListId": null,
+            "PriceList": null,
+            "UOMCode": null,
+            "UnitOfMeasure": null,
+            "FixedPriceServiceYn": "N",
+            "ItemQuantity": null,
+            "UnitPrice": null,
+            "LineValueAmount": 10000,
+            "LineAmount": 10000,
+            "Comments": null,
+            "AgreedQuantity": null,
+            "AgreedAmount": null,
+            "AgreementQuantityLimit": null,
+            "AgreementAmountLimit": null,
+            "MinimumReleaseQuantity": null,
+            "MinimumReleaseAmount": null,
+            "CommitLevelCode": "ESTIMATED",
+            "CommitLevel": "Estimated",
+            "PriceBookId": null,
+            "PriceBook": null,
+            "AllowPricelistOverrideYn": null,
+            "ListPrice": null,
+            "FloorPrice": null,
+            "AgreementPriceLimit": null,
+            "AgreementUnitPrice": null,
+            "AdjustmentTypeCode": null,
+            "AdjustmentType": null,
+            "AdjustmentBasisId": null,
+            "AdjustmentBasisCode": null,
+            "AdjustmentAmount": null,
+            "AllowCustomAdjustmentsFlag": null,
+            "DateTerminated": null,
+            "HoldUntilDate": null,
+            "TrnCodeSetId": null,
+            "TrnCode": null,
+            "CloseReason": null,
+            "HoldReasonCodeSetId": null,
+            "HoldReasonCode": null,
+            "HoldReason": null,
+            "AtRiskYn": "N",
+            "PercentComplete": null,
+            "ShipToAccountId": null,
+            "ShipToAccount": null,
+            "ShipToAccountNumber": null,
+            "ShipToSiteUseId": null,
+            "ShipToSite": null,
+            "ShipInvOrgId": null,
+            "WareHouse": null,
+            "BillPlanId": 300001766003984,
+            "BillPlan": "Eqp Test05",
+            "RevenuePlanId": 300001766003986,
+            "RevenuePlan": "ER_Revenue_PlanTEST05",
+            "RevenueAmount": "0",
+            "OutputTaxClassificationCode": null,
+            "OutputTaxClassMeaning": null,
+            "TaxExemptionControl": null,
+            "TaxExemptionControlMeaning": null,
+            "ExemptCertificateNumber": null,
+            "ExemptReasonCode": null,
+            "ExemptReason": null,
+            "LastRevenueRecogDate": null,
+            "CustomerPONumber": null,
+            "DeliveryDate": null,
+            "SupplierId": null,
+            "Supplier": null,
+            "SupplierSiteId": null,
+            "SupplierSiteName": null,
+            "RecvInvOrgId": null,
+            "RecInvOrgName": null,
+            "RecvLocationId": null,
+            "ShipToOrgLocation": null,
+            "AgreementPriceOverAllwdYn": "N",
+            "FOBCode": null,
+            "FOB": null,
+            "FreightTermsCode": null,
+            "FreightTerms": null,
+            "PaymentTermsId": null,
+            "PaymentTerms": null,
+            "PurchasingCategoryId": null,
+            "PurchasingCategory": null,
+            "CarrierId": null,
+            "CarrierName": null,
+            "VendorSiteId": null,
+            "OrigSystemReference": null,
+            "OrigSystemSourceCode": null,
+            "Cognomen": null,
+            "TaxAmount": null,
+            "ExternalSource": "FUSION",
+            "ExternalKey": "300001766003989",
+            "AllowPromotionsYn": "N",
+            "PricingEffectivityDate": "2025-07-21T00:00:00+00:00",
+            "DateCancelled": null,
+            "CancelReason": null,
+            "PriceAsOf": null,
+            "EstimatedVariableConsiderationAmount": 0,
+            "StandaloneSellingPrice": 0,
+            "PriceApplicationRule": null,
+            "AutoApplyStrategyPriceAdjustmentFlag": null,
+            "LinePuid": "KHDR-209147-LINE-129175",
+            "SourceDocumentId": null,
+            "SourceDocumentLineId": null,
+            "SourceDocumentSystemCode": null,
+            "BillPlanExternalSource": null,
+            "BillPlanExternalKey": null,
+            "RevenuePlanExternalSource": null,
+            "RevenuePlanExternalKey": null,
+            "TrnSetCode": null,
+            "HoldReasonSetCode": null,
+            "ContractPuid": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990",
+                    "name": "ContractLine",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990",
+                    "name": "ContractLine",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983",
+                    "name": "contracts",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/TaxExemptCertificatePVO1",
+                    "name": "TaxExemptCertificatePVO1",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/SupplierSiteLOVVA",
+                    "name": "SupplierSiteLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/ShipToOrgLocationLOVVA",
+                    "name": "ShipToOrgLocationLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/FobLOVVA",
+                    "name": "FobLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/ItemCategoryLOVVA",
+                    "name": "ItemCategoryLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/FreightTermsLOVVA",
+                    "name": "FreightTermsLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/ExemptionControlVA",
+                    "name": "ExemptionControlVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/CustomerSiteUseVA",
+                    "name": "CustomerSiteUseVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/PriceApplicationRuleVA",
+                    "name": "PriceApplicationRuleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/BillPlanVVO",
+                    "name": "BillPlanVVO",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/OutputTaxClassificationsCodeLOVVA",
+                    "name": "OutputTaxClassificationsCodeLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/FreeFormUnitOfMeasureVVO",
+                    "name": "FreeFormUnitOfMeasureVVO",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/SsaAdjustmentTypeVA",
+                    "name": "SsaAdjustmentTypeVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/QpAdjustmentBasisVA",
+                    "name": "QpAdjustmentBasisVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/RevenuePlanVVO",
+                    "name": "RevenuePlanVVO",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/CarrierLOVVA",
+                    "name": "CarrierLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/QpPriceListsLOVVA",
+                    "name": "QpPriceListsLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/CommitLevelVA",
+                    "name": "CommitLevelVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/PaymentTermLOVVA",
+                    "name": "PaymentTermLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/LineTypeVA",
+                    "name": "LineTypeVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/SsaPriceListLOVVA",
+                    "name": "SsaPriceListLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/SsaAdjustmentBasisVA",
+                    "name": "SsaAdjustmentBasisVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/RecvInvOrgVO",
+                    "name": "RecvInvOrgVO",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/SupplierLOVVA",
+                    "name": "SupplierLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/ShipRecvInvOrgVA",
+                    "name": "ShipRecvInvOrgVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/CustomerAccountsVA",
+                    "name": "CustomerAccountsVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/ItemLOVVA",
+                    "name": "ItemLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/lov/SourceDocumentSystemVA",
+                    "name": "SourceDocumentSystemVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/child/AssociatedProject",
+                    "name": "AssociatedProject",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/child/BillingControl",
+                    "name": "BillingControl",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/child/ContractAllLineDesFlexVA",
+                    "name": "ContractAllLineDesFlexVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/child/ContractLineTranslation",
+                    "name": "ContractLineTranslation",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/child/Milestone",
+                    "name": "Milestone",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/child/PricingTerm",
+                    "name": "PricingTerm",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/child/ProjectContractLineInternalAttributes",
+                    "name": "ProjectContractLineInternalAttributes",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/child/SalesCredit",
+                    "name": "SalesCredit",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/action/refreshPricingTerms",
+                    "name": "refreshPricingTerms",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/action/removeTieredAdjustment",
+                    "name": "removeTieredAdjustment",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/action/applyHold",
+                    "name": "applyHold",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/action/removeHold",
+                    "name": "removeHold",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/action/close",
+                    "name": "close",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/action/cancel",
+                    "name": "cancel",
+                    "kind": "other"
+                },
+                {
+                    "rel": "enclosure",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003990/enclosure/SourceSystemAttributes",
+                    "name": "SourceSystemAttributes",
+                    "kind": "other"
+                }
+            ]
+        },
+        {
+            "LineNumber": "3",
+            "Id": 300001766003991,
+            "LineId": 300001766003992,
+            "MajorVersion": 1,
+            "LineTypeId": 300000000099381,
+            "LineTypeName": "Free-form, project",
+            "StsCode": "DRAFT",
+            "LineStatus": "Draft",
+            "Object1Id1": null,
+            "Object1Id2": null,
+            "ItemName": "Bulk",
+            "ItemNameTxt": "Bulk",
+            "ItemDescription": "Bulk",
+            "StartDate": "2025-06-01",
+            "EndDate": "2025-12-01",
+            "PriceListId": null,
+            "PriceList": null,
+            "UOMCode": null,
+            "UnitOfMeasure": null,
+            "FixedPriceServiceYn": "N",
+            "ItemQuantity": null,
+            "UnitPrice": null,
+            "LineValueAmount": 30000,
+            "LineAmount": 30000,
+            "Comments": null,
+            "AgreedQuantity": null,
+            "AgreedAmount": null,
+            "AgreementQuantityLimit": null,
+            "AgreementAmountLimit": null,
+            "MinimumReleaseQuantity": null,
+            "MinimumReleaseAmount": null,
+            "CommitLevelCode": "ESTIMATED",
+            "CommitLevel": "Estimated",
+            "PriceBookId": null,
+            "PriceBook": null,
+            "AllowPricelistOverrideYn": null,
+            "ListPrice": null,
+            "FloorPrice": null,
+            "AgreementPriceLimit": null,
+            "AgreementUnitPrice": null,
+            "AdjustmentTypeCode": null,
+            "AdjustmentType": null,
+            "AdjustmentBasisId": null,
+            "AdjustmentBasisCode": null,
+            "AdjustmentAmount": null,
+            "AllowCustomAdjustmentsFlag": null,
+            "DateTerminated": null,
+            "HoldUntilDate": null,
+            "TrnCodeSetId": null,
+            "TrnCode": null,
+            "CloseReason": null,
+            "HoldReasonCodeSetId": null,
+            "HoldReasonCode": null,
+            "HoldReason": null,
+            "AtRiskYn": "N",
+            "PercentComplete": null,
+            "ShipToAccountId": null,
+            "ShipToAccount": null,
+            "ShipToAccountNumber": null,
+            "ShipToSiteUseId": null,
+            "ShipToSite": null,
+            "ShipInvOrgId": null,
+            "WareHouse": null,
+            "BillPlanId": 300001766003984,
+            "BillPlan": "Eqp Test05",
+            "RevenuePlanId": 300001766003986,
+            "RevenuePlan": "ER_Revenue_PlanTEST05",
+            "RevenueAmount": "0",
+            "OutputTaxClassificationCode": null,
+            "OutputTaxClassMeaning": null,
+            "TaxExemptionControl": null,
+            "TaxExemptionControlMeaning": null,
+            "ExemptCertificateNumber": null,
+            "ExemptReasonCode": null,
+            "ExemptReason": null,
+            "LastRevenueRecogDate": null,
+            "CustomerPONumber": null,
+            "DeliveryDate": null,
+            "SupplierId": null,
+            "Supplier": null,
+            "SupplierSiteId": null,
+            "SupplierSiteName": null,
+            "RecvInvOrgId": null,
+            "RecInvOrgName": null,
+            "RecvLocationId": null,
+            "ShipToOrgLocation": null,
+            "AgreementPriceOverAllwdYn": "N",
+            "FOBCode": null,
+            "FOB": null,
+            "FreightTermsCode": null,
+            "FreightTerms": null,
+            "PaymentTermsId": null,
+            "PaymentTerms": null,
+            "PurchasingCategoryId": null,
+            "PurchasingCategory": null,
+            "CarrierId": null,
+            "CarrierName": null,
+            "VendorSiteId": null,
+            "OrigSystemReference": null,
+            "OrigSystemSourceCode": null,
+            "Cognomen": null,
+            "TaxAmount": null,
+            "ExternalSource": "FUSION",
+            "ExternalKey": "300001766003991",
+            "AllowPromotionsYn": "N",
+            "PricingEffectivityDate": "2025-07-21T00:00:00+00:00",
+            "DateCancelled": null,
+            "CancelReason": null,
+            "PriceAsOf": null,
+            "EstimatedVariableConsiderationAmount": 0,
+            "StandaloneSellingPrice": 0,
+            "PriceApplicationRule": null,
+            "AutoApplyStrategyPriceAdjustmentFlag": null,
+            "LinePuid": "KHDR-209147-LINE-129176",
+            "SourceDocumentId": null,
+            "SourceDocumentLineId": null,
+            "SourceDocumentSystemCode": null,
+            "BillPlanExternalSource": null,
+            "BillPlanExternalKey": null,
+            "RevenuePlanExternalSource": null,
+            "RevenuePlanExternalKey": null,
+            "TrnSetCode": null,
+            "HoldReasonSetCode": null,
+            "ContractPuid": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992",
+                    "name": "ContractLine",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992",
+                    "name": "ContractLine",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983",
+                    "name": "contracts",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/TaxExemptCertificatePVO1",
+                    "name": "TaxExemptCertificatePVO1",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/SupplierSiteLOVVA",
+                    "name": "SupplierSiteLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/ShipToOrgLocationLOVVA",
+                    "name": "ShipToOrgLocationLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/FobLOVVA",
+                    "name": "FobLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/ItemCategoryLOVVA",
+                    "name": "ItemCategoryLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/FreightTermsLOVVA",
+                    "name": "FreightTermsLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/ExemptionControlVA",
+                    "name": "ExemptionControlVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/CustomerSiteUseVA",
+                    "name": "CustomerSiteUseVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/PriceApplicationRuleVA",
+                    "name": "PriceApplicationRuleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/BillPlanVVO",
+                    "name": "BillPlanVVO",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/OutputTaxClassificationsCodeLOVVA",
+                    "name": "OutputTaxClassificationsCodeLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/FreeFormUnitOfMeasureVVO",
+                    "name": "FreeFormUnitOfMeasureVVO",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/SsaAdjustmentTypeVA",
+                    "name": "SsaAdjustmentTypeVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/QpAdjustmentBasisVA",
+                    "name": "QpAdjustmentBasisVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/RevenuePlanVVO",
+                    "name": "RevenuePlanVVO",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/CarrierLOVVA",
+                    "name": "CarrierLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/QpPriceListsLOVVA",
+                    "name": "QpPriceListsLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/CommitLevelVA",
+                    "name": "CommitLevelVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/PaymentTermLOVVA",
+                    "name": "PaymentTermLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/LineTypeVA",
+                    "name": "LineTypeVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/SsaPriceListLOVVA",
+                    "name": "SsaPriceListLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/SsaAdjustmentBasisVA",
+                    "name": "SsaAdjustmentBasisVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/RecvInvOrgVO",
+                    "name": "RecvInvOrgVO",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/SupplierLOVVA",
+                    "name": "SupplierLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/ShipRecvInvOrgVA",
+                    "name": "ShipRecvInvOrgVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/CustomerAccountsVA",
+                    "name": "CustomerAccountsVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/ItemLOVVA",
+                    "name": "ItemLOVVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/lov/SourceDocumentSystemVA",
+                    "name": "SourceDocumentSystemVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/child/AssociatedProject",
+                    "name": "AssociatedProject",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/child/BillingControl",
+                    "name": "BillingControl",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/child/ContractAllLineDesFlexVA",
+                    "name": "ContractAllLineDesFlexVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/child/ContractLineTranslation",
+                    "name": "ContractLineTranslation",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/child/Milestone",
+                    "name": "Milestone",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/child/PricingTerm",
+                    "name": "PricingTerm",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/child/ProjectContractLineInternalAttributes",
+                    "name": "ProjectContractLineInternalAttributes",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/child/SalesCredit",
+                    "name": "SalesCredit",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/action/refreshPricingTerms",
+                    "name": "refreshPricingTerms",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/action/removeTieredAdjustment",
+                    "name": "removeTieredAdjustment",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/action/applyHold",
+                    "name": "applyHold",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/action/removeHold",
+                    "name": "removeHold",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/action/close",
+                    "name": "close",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/action/cancel",
+                    "name": "cancel",
+                    "kind": "other"
+                },
+                {
+                    "rel": "enclosure",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine/300001766003992/enclosure/SourceSystemAttributes",
+                    "name": "SourceSystemAttributes",
+                    "kind": "other"
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983",
+            "name": "contracts",
+            "kind": "item",
+            "properties": {
+                "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+            }
+        },
+        {
+            "rel": "canonical",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983",
+            "name": "contracts",
+            "kind": "item"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/GeneratedInvoiceStatusVA",
+            "name": "GeneratedInvoiceStatusVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/InvConvRateTypeLOVVA",
+            "name": "InvConvRateTypeLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/BillToAccountLOVVA",
+            "name": "BillToAccountLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/ApTermsLOVVA",
+            "name": "ApTermsLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/TaxExemptCertificatePVO1",
+            "name": "TaxExemptCertificatePVO1",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/ShipToAcctNumberLOVVA",
+            "name": "ShipToAcctNumberLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/PriceApplicationRuleVA",
+            "name": "PriceApplicationRuleVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/LookupPVA",
+            "name": "LookupPVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/RecvInvOrgLOVVA",
+            "name": "RecvInvOrgLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/BillToAcctNumberLOVVA",
+            "name": "BillToAcctNumberLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/CarrierLOVVA",
+            "name": "CarrierLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/FOBPVA",
+            "name": "FOBPVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/InvPrepayTransactionTypeVA",
+            "name": "InvPrepayTransactionTypeVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/InvOrgNameLOVVA",
+            "name": "InvOrgNameLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/ContractSetIdLookUpVA",
+            "name": "ContractSetIdLookUpVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/BillToLocationExtLOVVA",
+            "name": "BillToLocationExtLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/OwningOrgLOVVA",
+            "name": "OwningOrgLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/ShipToPartyVA",
+            "name": "ShipToPartyVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/SourceDocumentSystemVA",
+            "name": "SourceDocumentSystemVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/ExemptionHandlingVA1",
+            "name": "ExemptionHandlingVA1",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/AdjustmentBasisVA",
+            "name": "AdjustmentBasisVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/SoldToAccountLOVVA",
+            "name": "SoldToAccountLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/ContractTypeWithBusFuncLOVVA",
+            "name": "ContractTypeWithBusFuncLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/ShipToSiteUseLocationLOVVA",
+            "name": "ShipToSiteUseLocationLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/SalesrepRaPVOLOVVA",
+            "name": "SalesrepRaPVOLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/LegalEntityAllVA",
+            "name": "LegalEntityAllVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/MergeParentLineLOVVO1",
+            "name": "MergeParentLineLOVVO1",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/SupplierSiteLOVVA",
+            "name": "SupplierSiteLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/CurrencyPVO1",
+            "name": "CurrencyPVO1",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/BillToSiteUseLocationLOVVA",
+            "name": "BillToSiteUseLocationLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/LOVVA_For_Risk_c",
+            "name": "LOVVA_For_Risk_c",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/ShipInvOrgLOVVA",
+            "name": "ShipInvOrgLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/ShipToOrgLocationExtLOVVA",
+            "name": "ShipToOrgLocationExtLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/VPartyVO2",
+            "name": "VPartyVO2",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/SoldToAcctNumberLOVVA",
+            "name": "SoldToAcctNumberLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/PriceListLOVVA",
+            "name": "PriceListLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/ShipToAccountLOVVA",
+            "name": "ShipToAccountLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/SoldToSiteUseLOVVA",
+            "name": "SoldToSiteUseLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/AuthoringPartyLOVVA",
+            "name": "AuthoringPartyLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/ShipToPartySiteVA",
+            "name": "ShipToPartySiteVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/EncumbranceLevelPVA",
+            "name": "EncumbranceLevelPVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/YesNoLookup1",
+            "name": "YesNoLookup1",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/InvTransactionTypeVA",
+            "name": "InvTransactionTypeVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/RenewalTypeLookupPVA",
+            "name": "RenewalTypeLookupPVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/UserBusinessUnitsPVA",
+            "name": "UserBusinessUnitsPVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/OutputTaxClassificationsLOVVA",
+            "name": "OutputTaxClassificationsLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/FreightTermsPVA",
+            "name": "FreightTermsPVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/SupplierLOVVA",
+            "name": "SupplierLOVVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/ContractStatusLookupVA",
+            "name": "ContractStatusLookupVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/lov/InvConvRateDateTypeVA",
+            "name": "InvConvRateDateTypeVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/BillPlan",
+            "name": "BillPlan",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/BillingControl",
+            "name": "BillingControl",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractDocuments",
+            "name": "ContractDocuments",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractHeaderFlexfieldVA",
+            "name": "ContractHeaderFlexfieldVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractHeaderTranslation",
+            "name": "ContractHeaderTranslation",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractLine",
+            "name": "ContractLine",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ContractParty",
+            "name": "ContractParty",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/ExternalSharedDocuments",
+            "name": "ExternalSharedDocuments",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/InternalSharedDocuments",
+            "name": "InternalSharedDocuments",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/RelatedDocument",
+            "name": "RelatedDocument",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/RevenuePlan",
+            "name": "RevenuePlan",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/SalesCredit",
+            "name": "SalesCredit",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/Section",
+            "name": "Section",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/SupportingDocuments",
+            "name": "SupportingDocuments",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/child/contractKeyTermExtracts",
+            "name": "contractKeyTermExtracts",
+            "kind": "collection"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/validateContract",
+            "name": "validateContract",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/createVersion",
+            "name": "createVersion",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/revertContract",
+            "name": "revertContract",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/sign",
+            "name": "sign",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/submitForApproval",
+            "name": "submitForApproval",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/downloadLatestContractDocument",
+            "name": "downloadLatestContractDocument",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/classifyKeyTerms",
+            "name": "classifyKeyTerms",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/applyHold",
+            "name": "applyHold",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/removeHold",
+            "name": "removeHold",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/cancel",
+            "name": "cancel",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/duplicate",
+            "name": "duplicate",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/preview",
+            "name": "preview",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/close",
+            "name": "close",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/amend",
+            "name": "amend",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/300001766003983/action/extractKeyTermValues",
+            "name": "extractKeyTermValues",
+            "kind": "other"
+        }
+    ]
+}

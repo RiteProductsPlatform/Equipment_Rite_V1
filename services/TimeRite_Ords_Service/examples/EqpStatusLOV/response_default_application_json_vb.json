@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "eqp_status": "REQUESTED"
+        },
+        {
+            "eqp_status": "DEMOBILIZATION REQUESTED"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 2,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpStatusLOV?page_name=equip-approval"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpStatusLOV?page_name=equip-approval"
+        }
+    ]
+}

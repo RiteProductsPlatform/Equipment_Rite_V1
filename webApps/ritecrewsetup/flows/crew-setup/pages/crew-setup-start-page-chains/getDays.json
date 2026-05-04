@@ -1,0 +1,68 @@
+{
+  "root": "if",
+  "description": "",
+  "actions": {
+    "callFunctionDayValuesDefault": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dayValuesDefault",
+        "params": [
+          "{{ $page.variables.crewSetupHeaderObj.start_date }}",
+          "{{ $page.variables.crewSetupHeaderObj.end_date }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesCrewSetupHeaderObj"
+      }
+    },
+    "assignVariablesCrewSetupHeaderObj": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.crewSetupHeaderObj": {
+          "source": {
+            "crew_start_week": "{{ $chain.results.callFunctionDayValuesDefault.startDay }}",
+            "crew_end_week": "{{ $chain.results.callFunctionDayValuesDefault.endDay }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      },
+      "outcomes": {
+        "success": "callFunctionGetDaysOfWeek"
+      }
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $page.variables.crewSetupHeaderObj.start_date && $page.variables.crewSetupHeaderObj.end_date ]]"
+      },
+      "outcomes": {
+        "true": "callFunctionDayValuesDefault"
+      }
+    },
+    "callFunctionGetDaysOfWeek": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "getDaysOfWeek",
+        "params": [
+          "{{ $chain.results.callFunctionDayValuesDefault.startDay }}",
+          "{{ $chain.results.callFunctionDayValuesDefault.endDay }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesHeaderweekObj"
+      }
+    },
+    "assignVariablesHeaderweekObj": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.headerweekObj": {
+          "source": "{{ $chain.results.callFunctionGetDaysOfWeek }}",
+          "auto": "always"
+        }
+      }
+    }
+  }
+}

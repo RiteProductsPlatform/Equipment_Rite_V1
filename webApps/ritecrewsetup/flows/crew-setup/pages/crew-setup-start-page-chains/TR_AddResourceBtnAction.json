@@ -1,0 +1,82 @@
+{
+  "root": "resetVariablesResourcesArray",
+  "description": "",
+  "actions": {
+    "callComponentResourceDialogOpen": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('resourceDialog') }}",
+        "method": "open"
+      }
+    },
+    "assignVariablesLinesObj": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.linesObj": {
+          "source": {
+            "customer_id": "{{ $page.variables.crewSetupHeaderObj.customer_id }}",
+            "crewsetup_id": "{{ $page.variables.crewSetupHeaderObj.crewsetup_id }}",
+            "contract_id": "{{ $page.variables.crewSetupHeaderObj.contract_id }}",
+            "project_number": "{{ $page.variables.crewSetupHeaderObj.project_number ? $page.variables.crewSetupHeaderObj.project_number : \"\" }}",
+            "project_id": "{{ $page.variables.crewSetupHeaderObj.project_id ? $page.variables.crewSetupHeaderObj.project_id:\"\" }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        },
+        "$page.variables.minEffeDate": {
+          "source": "{{ $chain.results.callFunctionEffectiveDate }}"
+        }
+      },
+      "outcomes": {
+        "success": "callRestGetResourcesDetails"
+      }
+    },
+    "callFunctionEffectiveDate": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "effectiveDate",
+        "params": [
+          "{{ $page.variables.crewSetupHeaderObj.start_date }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesLinesObj"
+      }
+    },
+    "callRestGetResourcesDetails": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getResourcesDetails",
+        "uriParams": {
+          "project_id": "{{ $page.variables.crewSetupHeaderObj.crew_specific === \"PROJECT SPECIFIC\"? $page.variables.linesObj.project_id :\"\" }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesResourcesArray"
+      }
+    },
+    "resetVariablesResourcesArray": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.ResourcesArray"
+        ]
+      },
+      "outcomes": {
+        "success": "callFunctionEffectiveDate"
+      }
+    },
+    "assignVariablesResourcesArray": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.ResourcesArray": {
+          "source": "{{ $chain.results.callRestGetResourcesDetails.body.items }}"
+        }
+      },
+      "outcomes": {
+        "success": "callComponentResourceDialogOpen"
+      }
+    }
+  }
+}

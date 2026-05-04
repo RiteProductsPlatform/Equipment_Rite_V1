@@ -1,0 +1,64 @@
+{
+    "items": [
+        {
+            "project_id": 300000322436882,
+            "projec_number": "RS-999",
+            "project_name": "RS-PPM-Testing",
+            "customer_id": 100000000395803,
+            "customer_number": "16080",
+            "contract_id": 100002510075445,
+            "contract_number": "PHW42",
+            "cost_rate": null,
+            "bill_rate_source_type": null,
+            "bill_rate_source": null,
+            "contract_start_date": null,
+            "contract_end_date": null,
+            "shift_enabled": null,
+            "po_number": null,
+            "quantity": null,
+            "week_start_day": null,
+            "week_end_day": null,
+            "no_of_days": 2,
+            "ot_allowed": null,
+            "ot_threshold_measure": null,
+            "ot_threshold_limit": null,
+            "active_flag": null,
+            "billing_frequency": null,
+            "ot_shift_name": null,
+            "time_entry_method": null,
+            "effective_start_date": null,
+            "effective_end_date": null,
+            "per_diem": null,
+            "bonus": "500",
+            "safety_bonus": "200",
+            "task_id": 100002471920509,
+            "task_number": "2.1",
+            "task_name": "Permits and Purchases",
+            "resource_number": null,
+            "resource_name": null,
+            "project_unit_id": null,
+            "expenditure_type_id": null,
+            "expenditure_type_name": "Airfare",
+            "customer_link": null,
+            "contract_link": null
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getProjectDetails?contract_number=PHW42"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getProjectDetails?contract_number=PHW42"
+        }
+    ]
+}

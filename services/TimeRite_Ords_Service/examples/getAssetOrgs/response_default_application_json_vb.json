@@ -1,0 +1,91 @@
+{
+    "items": [
+        {
+            "organization": "Consulting East US"
+        },
+        {
+            "organization": "Consulting South UK"
+        },
+        {
+            "organization": "Consulting East FR"
+        },
+        {
+            "organization": "Research HE US"
+        },
+        {
+            "organization": "Applications and Services"
+        },
+        {
+            "organization": "Facility Management HC US"
+        },
+        {
+            "organization": "Consulting East UK"
+        },
+        {
+            "organization": "Consulting North FR"
+        },
+        {
+            "organization": "OAK PPM"
+        },
+        {
+            "organization": "Global Networks"
+        },
+        {
+            "organization": "Consulting South FR"
+        },
+        {
+            "organization": "Consulting West FR"
+        },
+        {
+            "organization": "Consulting US"
+        },
+        {
+            "organization": "Consulting South US"
+        },
+        {
+            "organization": "Data Center Operations"
+        },
+        {
+            "organization": "Engineering Prg US"
+        },
+        {
+            "organization": "Consulting North UK"
+        },
+        {
+            "organization": "Consulting North US"
+        },
+        {
+            "organization": "Research & Development Prg US"
+        },
+        {
+            "organization": "Biology HE US"
+        },
+        {
+            "organization": "Consulting West US"
+        },
+        {
+            "organization": "Consulting West UK"
+        },
+        {
+            "organization": "Maintenance Prg US"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 23,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getAssetOrgs"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getAssetOrgs"
+        }
+    ]
+}

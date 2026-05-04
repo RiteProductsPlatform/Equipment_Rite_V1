@@ -1,0 +1,8 @@
+{
+  "id": "equipment-requisition_new1",
+  "description": "Flow main",
+  "defaultPage": "equipment-requisition-start",
+  "services": {},
+  "types": {},
+  "variables": {}
+}

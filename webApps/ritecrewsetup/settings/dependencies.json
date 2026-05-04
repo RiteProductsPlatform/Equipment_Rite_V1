@@ -1,0 +1,45 @@
+{
+  "component-dependencies": {
+    "oj-sp": {
+      "version": "2410.0.3",
+      "components": {
+        "messages-banner": "2410.0.3",
+        "messages-toast": "2410.0.3",
+        "welcome-page": "2410.0.3",
+        "card": "2410.0.3",
+        "smart-search-page": "2410.0.3",
+        "collection-container": "2410.0.3",
+        "list-item-template": "2410.0.3",
+        "empty-state": "2410.0.3",
+        "foldout-layout": "2410.0.3",
+        "horizontal-overview": "2410.0.3",
+        "foldout-panel-summarizing": "2410.0.3",
+        "smart-search": "2410.0.3",
+        "profile-card": "2410.0.3",
+        "general-overview-page": "2410.0.3",
+        "data-management-page": "2410.0.3",
+        "collection-container-advanced": "2410.0.3",
+        "general-drawer-template": "2410.0.3",
+        "bottom-drawer-template": "2410.0.3",
+        "message-unsaved-changes": "2410.0.3",
+        "section": "2410.0.3",
+        "advanced-create-edit": "2410.0.3",
+        "vertical-anchor-navigator": "2410.0.3",
+        "simple-create-edit": "2410.0.3",
+        "group-list-item-header": "2410.0.3"
+      }
+    },
+    "oj-dyn": {
+      "version": "16.1.6",
+      "components": {
+        "container": "16.1.6"
+      }
+    },
+    "oj-dynamic": {
+      "version": "16.1.6",
+      "components": {
+        "form": "16.1.6"
+      }
+    }
+  }
+ }

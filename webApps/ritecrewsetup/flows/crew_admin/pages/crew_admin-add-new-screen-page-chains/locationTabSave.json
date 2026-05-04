@@ -1,0 +1,39 @@
+{
+  "root": "callFunctionCreateLocationReq",
+  "description": "",
+  "actions": {
+    "callFunctionCreateLocationReq": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "createLocationReq",
+        "params": [
+          "{{ $page.variables.LocationTabObj }}",
+          "{{ $page.variables.createdEquipID }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPutLocationDetails"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPutLocationDetails.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestPutLocationDetails": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/PutLocationDetails",
+        "body": "{{ $chain.results.callFunctionCreateLocationReq }}"
+      },
+      "outcomes": {
+        "failure": "fireNotification"
+      }
+    }
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "root": "callFunctionValidateGroup",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Failed to fetch Details",
+        "type": "error",
+        "displayMode": "transient"
+      }
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callFunctionValidateGroup === 'valid' ]]"
+      },
+      "outcomes": {
+        "true": "callRestGetMaxWeekid"
+      }
+    },
+    "callFunctionValidateGroup": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "validateGroup",
+        "params": [
+          "SearchValidationgroup"
+        ]
+      },
+      "outcomes": {
+        "success": "if"
+      }
+    },
+    "callRestGetSearchTimeEntryTbl": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getSearchTimeEntryTbl",
+        "uriParams": {
+          "crewsetup_id": "{{ $page.variables.searchobj.crewSetup_id }}",
+          "crew_date": "{{ $page.variables.searchobj.specific === \"DAY\" ? $chain.results.callFunctionDateFormatter.crewDate : \"\" }}",
+          "timesheet_week_id": "{{ $page.variables.time_week_id ? $page.variables.time_week_id : \"\" }}",
+          "crew_week": "{{ $page.variables.searchobj.specific === \"WEEK\" ? $page.variables.searchobj.dateRange :\"\" }}"
+        }
+      },
+      "outcomes": {
+        "success": "if3",
+        "failure": "fireNotification"
+      }
+    },
+    "if3": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callRestGetSearchTimeEntryTbl.body.items.length > 0 ]]"
+      },
+      "outcomes": {
+        "true": "assignVariablesSearchTimeSheetADP",
+        "false": "resetVariablesSearchTimeSheetADP"
+      }
+    },
+    "assignVariablesIsAdd2": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.isAdd": {
+          "source": true
+        }
+      },
+      "outcomes": {
+        "success": "fireNotification2"
+      }
+    },
+    "fireNotification2": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "You dont have data for the selected Crew. Please ADD",
+        "displayMode": "transient"
+      }
+    },
+    "resetVariablesFilteredData": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.FilteredData",
+          "$page.variables.SearchTimeSheetADP.data",
+          "$page.variables.AddTimeSheetADP.data"
+        ]
+      },
+      "outcomes": {
+        "success": "ifSearchobj"
+      }
+    },
+    "resetVariablesSearchTimeSheetADP": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.SearchTimeSheetADP.data"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesIsAdd2"
+      }
+    },
+    "callFunctionDateFormatter": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dateFormatter",
+        "params": [
+          null,
+          null,
+          "{{ $page.variables.searchobj.crewdate }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callFunctionGetDay"
+      }
+    },
+    "ifSearchobj": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $page.variables.searchobj.specific === \"DAY\" ]]"
+      },
+      "outcomes": {
+        "true": "callFunctionDateFormatter",
+        "false": "assignVariablesColumns3"
+      }
+    },
+    "assignVariablesSearchTimeSheetADP": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.SearchTimeSheetADP": {
+          "source": {
+            "data": "{{ $chain.results.callRestGetSearchTimeEntryTbl.body.items }}"
+          },
+          "reset": "none",
+          "auto": "always",
+          "mapping": {
+            "$target.data": {
+              "source": "$source.data",
+              "reset": "empty"
+            }
+          }
+        }
+      }
+    },
+    "callFunctionGetDay": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "getDay",
+        "params": [
+          "{{ $page.variables.searchobj.crewdate }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesColumns"
+      }
+    },
+    "assignVariablesColumns": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.Columns": {
+          "source": "{{ $chain.results.callFunctionGetDay.columns }}"
+        },
+        "$page.variables.columnOptions": {
+          "source": "{{ $chain.results.callFunctionGetDay.columns }}"
+        }
+      },
+      "outcomes": {
+        "success": "callRestGetGetTimeweekId"
+      }
+    },
+    "callRestGetMaxWeekid": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/GetMaxWeekid",
+        "uriParams": {
+          "crewsetup_id": "{{ $page.variables.searchobj.crewSetup_id }}",
+          "crew_week": "{{ $page.variables.searchobj.dateRange }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesMaxweekid"
+      }
+    },
+    "assignVariablesMaxweekid": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.maxweekid": {
+          "source": "{{ $chain.results.callRestGetMaxWeekid.body.items[0].weekid === null || typeof $chain.results.callRestGetMaxWeekid.body.items[0].weekid === \"undefined\" ? 1 : $chain.results.callRestGetMaxWeekid.body.items[0].weekid }}"
+        }
+      },
+      "outcomes": {
+        "success": "resetVariablesFilteredData"
+      }
+    },
+    "callRestGetGetTimeweekId": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getGetTimeweekId",
+        "uriParams": {
+          "crew_date": "{{ $page.variables.searchobj.specific === \"DAY\" ? $chain.results.callFunctionDateFormatter.crewDate : \"\" }}",
+          "crewsetup_id": "{{ $page.variables.searchobj.crewSetup_id }}",
+          "week": "{{ $page.variables.searchobj.dateRange ? $page.variables.searchobj.dateRange : \"\" }}"
+        }
+      },
+      "outcomes": {
+        "success": "if4"
+      }
+    },
+    "if4": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callRestGetGetTimeweekId.body.items.length > 0 ]]"
+      },
+      "outcomes": {
+        "true": "assignVariablesTimeWeekId",
+        "false": "callRestGetSearchTimeEntryTbl"
+      }
+    },
+    "assignVariablesTimeWeekId": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.time_week_id": {
+          "source": "{{ $chain.results.callRestGetGetTimeweekId.body.items[0].timesheet_week_id }}"
+        }
+      },
+      "outcomes": {
+        "success": "callRestGetSearchTimeEntryTbl"
+      }
+    },
+    "assignVariablesColumns3": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.Columns": {
+          "source": [
+            {
+              "headerText": "",
+              "field": "",
+              "frozenEdge": "start",
+              "template": "action",
+              "sortable": "disabled"
+            },
+            {
+              "headerText": "Resource Name",
+              "field": "resource_name",
+              "frozenEdge": "start",
+              "classname": "oj-read-only"
+            },
+            {
+              "headerText": "Project Number",
+              "field": "project_number",
+              "frozenEdge": "start",
+              "classname": "oj-read-only"
+            },
+            {
+              "headerText": "Task Name",
+              "field": "task_name",
+              "frozenEdge": "start",
+              "classname": "oj-read-only"
+            },
+            {
+              "headerText": "OT Rate",
+              "field": "ot_rate",
+              "frozenEdge": "start"
+            },
+            {
+              "headerText": "Mon In Time",
+              "field": "mon_in_time"
+            },
+            {
+              "headerText": "Mon Out Time",
+              "field": "mon_out_time"
+            },
+            {
+              "headerText": "Mon Total Hours",
+              "field": "mon_total_hours"
+            },
+            {
+              "headerText": "Tue In Time",
+              "field": "tue_in_time"
+            },
+            {
+              "headerText": "Tue Out Time",
+              "field": "tue_out_time"
+            },
+            {
+              "headerText": "Tue Total Hours",
+              "field": "tue_total_hours"
+            },
+            {
+              "headerText": "Wed In Time",
+              "field": "wed_in_time"
+            },
+            {
+              "headerText": "Wed Out Time",
+              "field": "wed_out_time"
+            },
+            {
+              "headerText": "Wed Total Hours",
+              "field": "wed_total_hours"
+            },
+            {
+              "headerText": "Thu In Time",
+              "field": "thu_in_time"
+            },
+            {
+              "headerText": "Thu Out Time",
+              "field": "thu_out_time"
+            },
+            {
+              "headerText": "Thu Total Hours",
+              "field": "thu_total_hours"
+            },
+            {
+              "headerText": "Fri In Time",
+              "field": "fri_in_time"
+            },
+            {
+              "headerText": "Fri Out Time",
+              "field": "fri_out_time"
+            },
+            {
+              "headerText": "Fri Total Hours",
+              "field": "fri_total_hours"
+            },
+            {
+              "headerText": "Sat In Time",
+              "field": "sat_in_time"
+            },
+            {
+              "headerText": "Sat Out Time",
+              "field": "sat_out_time"
+            },
+            {
+              "headerText": "Sat Total Hours",
+              "field": "sat_total_hours"
+            },
+            {
+              "headerText": "Sun In Time",
+              "field": "sun_in_time"
+            },
+            {
+              "headerText": "Sun Out Time",
+              "field": "sun_out_time"
+            },
+            {
+              "headerText": "Sun Total Hours",
+              "field": "sun_total_hours"
+            },
+            {
+              "headerText": "Total Hours",
+              "field": "total_hours"
+            },
+            {
+              "headerText": "Status",
+              "field": "status"
+            }
+          ]
+        },
+        "$page.variables.columnOptions": {
+          "source": [
+            {
+              "headerText": "",
+              "field": "",
+              "frozenEdge": "start",
+              "template": "action",
+              "sortable": "disabled"
+            },
+            {
+              "headerText": "Resource Name",
+              "field": "resource_name",
+              "frozenEdge": "start",
+              "classname": "oj-read-only"
+            },
+            {
+              "headerText": "Project Number",
+              "field": "project_number",
+              "frozenEdge": "start",
+              "classname": "oj-read-only"
+            },
+            {
+              "headerText": "Task Name",
+              "field": "task_name",
+              "frozenEdge": "start",
+              "classname": "oj-read-only"
+            },
+            {
+              "headerText": "OT Rate",
+              "field": "ot_rate",
+              "frozenEdge": "start"
+            },
+            {
+              "headerText": "Mon In Time",
+              "field": "mon_in_time"
+            },
+            {
+              "headerText": "Mon Out Time",
+              "field": "mon_out_time"
+            },
+            {
+              "headerText": "Mon Total Hours",
+              "field": "mon_total_hours"
+            },
+            {
+              "headerText": "Tue In Time",
+              "field": "tue_in_time"
+            },
+            {
+              "headerText": "Tue Out Time",
+              "field": "tue_out_time"
+            },
+            {
+              "headerText": "Tue Total Hours",
+              "field": "tue_total_hours"
+            },
+            {
+              "headerText": "Wed In Time",
+              "field": "wed_in_time"
+            },
+            {
+              "headerText": "Wed Out Time",
+              "field": "wed_out_time"
+            },
+            {
+              "headerText": "Wed Total Hours",
+              "field": "wed_total_hours"
+            },
+            {
+              "headerText": "Thu In Time",
+              "field": "thu_in_time"
+            },
+            {
+              "headerText": "Thu Out Time",
+              "field": "thu_out_time"
+            },
+            {
+              "headerText": "Thu Total Hours",
+              "field": "thu_total_hours"
+            },
+            {
+              "headerText": "Fri In Time",
+              "field": "fri_in_time"
+            },
+            {
+              "headerText": "Fri Out Time",
+              "field": "fri_out_time"
+            },
+            {
+              "headerText": "Fri Total Hours",
+              "field": "fri_total_hours"
+            },
+            {
+              "headerText": "Sat In Time",
+              "field": "sat_in_time"
+            },
+            {
+              "headerText": "Sat Out Time",
+              "field": "sat_out_time"
+            },
+            {
+              "headerText": "Sat Total Hours",
+              "field": "sat_total_hours"
+            },
+            {
+              "headerText": "Sun In Time",
+              "field": "sun_in_time"
+            },
+            {
+              "headerText": "Sun Out Time",
+              "field": "sun_out_time"
+            },
+            {
+              "headerText": "Sun Total Hours",
+              "field": "sun_total_hours"
+            },
+            {
+              "headerText": "Total Hours",
+              "field": "total_hours"
+            },
+            {
+              "headerText": "Status",
+              "field": "status"
+            }
+          ]
+        }
+      },
+      "outcomes": {
+        "success": "callRestGetGetTimeweekId"
+      }
+    }
+  }
+}

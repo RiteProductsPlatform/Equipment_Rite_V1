@@ -1,0 +1,23 @@
+{
+  "p_customer_id": 1,
+  "p_rental_start_date": "12-AUG-2025",
+  "p_rental_end_date": "16-AUG-2025",
+  "p_return_date": "16-AUG-2025",
+  "p_status": "OK",
+  "p_total_amount": "10",
+  "p_currency_code": "USD",
+  "p_equipment_id": 12,
+  "p_quantity": 4,
+  "p_unit_price": 3,
+  "p_duration_days": 3,
+  "p_project_id": 1,
+  "p_asset_id": 1,
+  "p_location": "A",
+  "p_addressline1": "",
+  "p_addressline2": "",
+  "p_city": "",
+  "p_country": "",
+  "p_zipcode": "",
+  "p_latitude": "",
+  "p_longitude": ""
+}

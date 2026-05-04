@@ -1,0 +1,271 @@
+{
+  "title": "equipment rental search",
+  "description": "",
+  "variables": {
+    "currentPage": {
+      "type": "string"
+    },
+    "FACostArray": {
+      "type": "object[]"
+    },
+    "illustrationBackground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-bg-01.png"
+    },
+    "illustrationForeground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-fg-01.png"
+    },
+    "imageStretch": {
+      "type": "string",
+      "defaultValue": "none"
+    },
+    "isEdit": {
+      "type": "boolean",
+      "defaultValue": false
+    },
+    "mobileImage": {
+      "type": "string",
+      "defaultValue": "on"
+    },
+    "pagetype": {
+      "type": "string",
+      "input": "fromCaller"
+    },
+    "ProjectsADP": {
+      "type": "vb/ArrayDataProvider2"
+    },
+    "RowData": {
+      "type": "getGetEquipmentMasterDetail"
+    },
+    "TaskSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "responseType": "get11_13_18_05ProjectsProjectIdChildTasks2",
+        "fetchChain": "get11_13_18_05ProjectsProjectIdChildTasks2Fetch",
+        "keyAttributes": "TaskName",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "TaskName"
+          ]
+        },
+        "itemsPath": "items"
+      }
+    },
+    "workordercostArray": {
+      "type": "object[]"
+    }
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.get11_13_18_05ProjectsProjectIdChildTasks2": {
+      "endpoint": "get11_13_18_05ProjectsProjectIdChildTasks2",
+      "service": "projectNameList",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getGetEquipmentMasterDetail": {
+      "endpoint": "getGetEquipmentMasterDetail",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "get11_13_18_05ProjectsProjectIdChildTasks2": {
+      "TaskId": "number",
+      "TaskName": "string",
+      "TaskNumber": "string"
+    },
+    "getGetEquipmentMasterDetail": {
+      "address_line1": "any",
+      "address_line2": "any",
+      "asset_id": "any",
+      "asset_number": "string",
+      "asset_organization": "string",
+      "ast_date_in_service": "string",
+      "ast_insured_by": "string",
+      "ast_insured_policy": "string",
+      "ast_retired_date": "string",
+      "auto_costing_flag": "string",
+      "bill_rate": "string",
+      "billing_category": "string",
+      "city": "string",
+      "cost_rate": "string",
+      "cost_rate1": "string",
+      "country": "string",
+      "county": "any",
+      "created_by": "any",
+      "creation_date": "string",
+      "default_location": "string",
+      "equipment_class": "string",
+      "equipment_description": "string",
+      "equipment_id": "number",
+      "equipment_name": "string",
+      "equipment_number": "string",
+      "equipment_sub_class": "string",
+      "equipment_type": "string",
+      "expenditure_org_id": "any",
+      "expenditure_org_name": "string",
+      "file_attachment": "any",
+      "file_content": "string",
+      "file_name": "string",
+      "file_type": "string",
+      "include_in_pm": "any",
+      "inventory_item": "string",
+      "inventory_item_id": "any",
+      "last_update_date": "string",
+      "last_updated_by": "any",
+      "lease_end": "string",
+      "lease_rate": "any",
+      "lease_start": "string",
+      "legacy_equipment_num": "any",
+      "manufacturer": "string",
+      "manufacturer_id": "any",
+      "margin": "string",
+      "mf_color": "any",
+      "mf_fuel_type": "string",
+      "mf_license_expiry": "string",
+      "mf_license_number": "any",
+      "mf_license_state": "string",
+      "mf_model_number": "any",
+      "mf_model_year": "number",
+      "mf_serial_number": "string",
+      "mf_warranty_code": "string",
+      "mf_weight": "number",
+      "non_labor_resource": "string",
+      "non_labor_resource_org": "string",
+      "organization_id": "any",
+      "organization_name": "any",
+      "owning_status": "any",
+      "person_first_name": "any",
+      "person_id": "any",
+      "person_last_name": "any",
+      "person_middle_name": "any",
+      "person_number": "string",
+      "pm_basis": "any",
+      "po_header_id": "any",
+      "project_id": "number",
+      "project_name": "string",
+      "project_number": "any",
+      "purchase_order": "string",
+      "record_mode": "any",
+      "request_id": "any",
+      "state": "any",
+      "status": "string",
+      "task_id": "number",
+      "task_name": "string",
+      "task_number": "any",
+      "total_capacity_perday": "any",
+      "utilization_percentage": "string",
+      "vendor_id": "any",
+      "vendor_name": "string",
+      "zip": "any"
+
+    }
+
+  },
+  "eventListeners": {
+    "cameraFilePickerSelect": {
+      "chains": [
+        {
+          "chain": "CameraFilePickerSelectChain",
+          "parameters": {
+            "files": "[[ Array.prototype.slice.call($event.detail.files) ]]"
+          }
+        }
+      ]
+    },
+    "iconClick": {
+      "chains": [
+        {
+          "chain": "IconClickChain"
+        }
+      ]
+    },
+    "ojSpWp1SpPrimaryAction": {
+      "chains": [
+        {
+          "chain": "WelcomePageTemplateSpPrimaryActionChain"
+        }
+      ]
+    },
+    "ojSpWp1SpSecondaryAction": {
+      "chains": [
+        {
+          "chain": "WelcomePageTemplateSpSecondaryActionChain",
+          "parameters": {
+            "actionId": "{{$event.detail.secondaryItem}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem2": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain1",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "chain": "PageVbEnterChain"
+        },
+{
+          "chain": "PageVbEnterChain1"
+        },
+        {
+          "chain": "PageVbEnterChain2"
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-avatar": {
+        "path": "ojs/ojavatar"
+      },
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-file-picker": {
+        "path": "ojs/ojfilepicker"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-date": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      }
+   },
+    "modules": {
+      "ojValidationDateTime": {
+        "path": "ojs/ojvalidation-datetime"
+      }
+    }
+  }
+}

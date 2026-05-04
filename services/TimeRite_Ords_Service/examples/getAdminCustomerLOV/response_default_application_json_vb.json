@@ -1,0 +1,151 @@
+{
+    "items": [
+        {
+            "party_id": 300000177639444,
+            "party_number": "90090",
+            "party_name": "New Start Gyms"
+        },
+        {
+            "party_id": 100000000395792,
+            "party_number": "10010",
+            "party_name": "Conifer International"
+        },
+        {
+            "party_id": 100000000398188,
+            "party_number": "80050",
+            "party_name": "Orion Managed Services Ltd"
+        },
+        {
+            "party_id": 100000000395780,
+            "party_number": "10000",
+            "party_name": "Owens & Minor"
+        },
+        {
+            "party_id": 100000000395836,
+            "party_number": "10040",
+            "party_name": "Hilman and Associates"
+        },
+        {
+            "party_id": 100000000395803,
+            "party_number": "16080",
+            "party_name": "Business World"
+        },
+        {
+            "party_id": 100000000395795,
+            "party_number": "26360",
+            "party_name": "ABC Application Software"
+        },
+        {
+            "party_id": 300000313534740,
+            "party_number": "1463621",
+            "party_name": "OAK_NEW_CUSTOMER"
+        },
+        {
+            "party_id": 300000079084612,
+            "party_number": "60600",
+            "party_name": "Department of Homeland Security"
+        },
+        {
+            "party_id": 300000076330598,
+            "party_number": "60500",
+            "party_name": "Environmental Protection Agency"
+        },
+        {
+            "party_id": 100000000395818,
+            "party_number": "59300",
+            "party_name": "Dixon Industries"
+        },
+        {
+            "party_id": 300000079084561,
+            "party_number": "60800",
+            "party_name": "Department of Education"
+        },
+        {
+            "party_id": 100000000395841,
+            "party_number": "90040",
+            "party_name": "Intercompany"
+        },
+        {
+            "party_id": 100000000395799,
+            "party_number": "25750",
+            "party_name": "ABC Corporation Worldwide"
+        },
+        {
+            "party_id": 300000156558811,
+            "party_number": "71010",
+            "party_name": "MerLabs and Co"
+        },
+        {
+            "party_id": 100000000398172,
+            "party_number": "80060",
+            "party_name": "Quest Automation Ltd"
+        },
+        {
+            "party_id": 300000180480298,
+            "party_number": "24109",
+            "party_name": "Steel Fitness"
+        },
+        {
+            "party_id": 100000000395778,
+            "party_number": "65670",
+            "party_name": "McNally Products"
+        },
+        {
+            "party_id": 300000094333249,
+            "party_number": "70090",
+            "party_name": "National Science Foundation"
+        },
+        {
+            "party_id": 300000079084663,
+            "party_number": "60300",
+            "party_name": "National Institute of Health"
+        },
+        {
+            "party_id": 300000094333307,
+            "party_number": "70075",
+            "party_name": "American Heart Association"
+        },
+        {
+            "party_id": 100000000395847,
+            "party_number": "64901",
+            "party_name": "LAF Enterprises"
+        },
+        {
+            "party_id": 300000184962556,
+            "party_number": "27115",
+            "party_name": "New Gurgoan Enterprises"
+        },
+        {
+            "party_id": 300000079084590,
+            "party_number": "60100",
+            "party_name": "Department of Health and Human Services"
+        },
+        {
+            "party_id": 300000184947117,
+            "party_number": "27111",
+            "party_name": "Hyderabad Industries Ltd"
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/adminCustomerLOV"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/adminCustomerLOV"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/adminCustomerLOV?offset=25"
+        }
+    ]
+}

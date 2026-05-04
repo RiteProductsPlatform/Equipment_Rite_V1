@@ -1,0 +1,309 @@
+<oj-sp-welcome-page id="oj-sp-wp1"
+  illustration-background="[[ require.toUrl($application.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($application.variables.illustrationForeground) ]]"
+  display-options.responsive-padding="on" page-title="Create Rental Agreement" background-color="dark-pebble">
+  <oj-form-layout slot="search" max-columns="3" columns="3" label-edge="top">
+    <oj-button label="Back to Agreements" chroming="callToAction" class="oj-button-sm"
+      on-oj-action="[[$listeners.buttonAction]]">
+      <span class="oj-ux-ico-arrow-left" slot="startIcon"></span>
+    </oj-button>
+     <oj-button label="Create Rental Agreement" chroming="callToAction" class="oj-button-sm"
+       on-oj-action="[[$listeners.buttonAction3]]">
+    </oj-button>
+  </oj-form-layout>
+  <div class="oj-panel" style="margin-top:-48px">
+    <!-- <div>
+      <h6>
+        Create Rental Agreement
+      </h6>
+    </div> -->
+    <div class=" oj-panel">
+      <b>
+    Agreement Details
+  </b>
+      <div>
+        <br>
+        <oj-validation-group id="agreement">
+        <oj-form-layout max-columns="4" columns="4" label-edge="top">
+           <oj-select-single label-hint="Agreement Type" value="{{ $variables.headerObj.AgreementType }}" required="true"
+            item-text="data" data="[[ $variables.agreementTypeLovAdp ]]">
+          </oj-select-single>
+          <oj-input-text label-hint="Agreement Number" value="{{ $variables.headerObj.AgreementNumber }}"
+            required="true" readonly="true">
+          </oj-input-text>
+         
+          <oj-select-single label-hint="Owner Business Unit" value="{{ $variables.headerObj.OwnerBusinessUnit }}"
+            data="[[ $variables.businessUnitAdp ]]" item-text="BusinessUnitName"
+            on-value-item-changed="[[$listeners.selectValueItem5]]">
+          </oj-select-single>
+          <oj-input-text label-hint="Status" readonly="true" value="{{ $variables.headerObj.Status }}">
+          </oj-input-text>
+        </oj-form-layout>
+        </oj-validation-group>
+      </div>
+          <b>
+    Customer Information
+  </b>
+      <div>
+         <br>
+         <oj-validation-group id="customer">
+         <oj-form-layout max-columns="4" columns="4" label-edge="top">
+          <!-- <oj-select-single label-hint="Customer" value="{{ $variables.headerObj.Customer }}" required="true"
+            item-text="Customer" on-value-item-changed="[[$listeners.selectValueItem3]]"
+            data="[[ $variables.customerAdp ]]">
+          </oj-select-single> -->
+           <oj-select-single label-hint="Customer" value="{{ $variables.headerObj.Customer }}" required="true"
+             item-text="name" on-value-item-changed="[[$listeners.selectValueItem3]]"
+             data="[[$variables.getEQUIPMENTRITEEQPCUSTOMERDETAILS1GetCustomerDetailsListSDP2]]"
+            >
+          </oj-select-single>
+          <oj-input-text label-hint="Customer Number" readonly="true"
+            value="{{ $variables.headerObj.CustomerNumber }}" required="true">
+          </oj-input-text>
+          <oj-select-single label-hint="Customer Site" value="{{ $variables.headerObj.CustomerSite }}" required="true"
+            item-text="party_site_number" data="[[ $variables.customerSiteAdp ]]"
+            on-value-item-changed="[[$listeners.selectValueItem4]]">
+          </oj-select-single>
+          <oj-select-single label-hint="Bill-to Address" value="{{ $variables.headerObj.billtoAddress }}"
+            data="[[ $variables.billtoAddressAdp ]]" item-text="location">
+          </oj-select-single>
+        </oj-form-layout>
+         </oj-validation-group>
+      </div>
+           <b>
+    Agreement Terms
+  </b>
+    
+    <div>
+      <br>
+      <oj-validation-group id="agreementterms">
+      <oj-form-layout max-columns="4" columns="4" label-edge="top">
+          <oj-input-date label-hint="Start Date" value="{{ $variables.headerObj.StartDate }}" required="true">
+          </oj-input-date>
+          <oj-input-date label-hint="End Date" value="{{ $variables.headerObj.EndDate }}" required="true">
+          </oj-input-date>
+          <oj-select-single label-hint="Payment Terms" value="{{ $variables.headerObj.PaymentTerms }}"
+            data="[[$variables.getCrmRestApiResources1113185PaymentTerms2ListSDP]]" item-text="Name">
+          </oj-select-single>
+          <oj-select-single label-hint="Currency" value="{{ $variables.headerObj.Currency }}" required="true"
+            data="[[ $application.variables.currencyADP ]]" item-text="CurrencyCode"
+            on-value-item-changed="[[$listeners.selectValueItem2]]">
+          </oj-select-single>
+           <!-- <oj-select-single label-hint="Warehouse" value="{{ $variables.headerObj.Warehouse }}">
+          </oj-select-single> -->
+          <oj-text-area label-hint="Description" value="{{ $variables.headerObj.Description }}">
+          </oj-text-area>
+          <div style="margin-top:20px">
+            <oj-button chroming="callToAction" class="oj-button-sm" label="Reset"
+              on-oj-action="[[$listeners.buttonAction4]]">
+              <span class="oj-ux-ico-reset-variable" slot="startIcon"></span>
+            </oj-button>
+          <oj-button label="Add Agreement Line" chroming="callToAction" class="oj-button-sm"
+            on-oj-action="[[$listeners.buttonAction2]]">
+              <span class="oj-ux-ico-plus" slot="startIcon"></span>
+          </oj-button>
+          </div>
+        </oj-form-layout>
+        </oj-validation-group>
+    </div>
+   <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-top">
+        <oj-table scroll-policy="loadMoreOnScroll" display="grid" style="width:92vw;max-height:40vh"
+          columns-default.resizable="enabled"
+          columns='[{"headerText":"Equipment Class","field":"eqp_class"},{"headerText":"Equipment Name","field":"eqp_name"},{"headerText":"Lot Number","field":"lot_number"},{"headerText":"Quantity","field":"quantity"},{"headerText":"UOM","field":"uom"},{"headerText":"Action","field":"","template":"act"}]'
+          data="[[ $variables.linesAdp ]]">
+
+          <template slot="act">
+            <div>
+            <oj-button chroming="borderless" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction6]]">
+            <span class="oj-ux-ico-trash" slot="startIcon" style="color:red"></span>
+            </oj-button>
+
+            <oj-button chroming="borderless" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction7]]">
+            <span class="oj-ux-ico-edit" slot="startIcon"></span>
+            </oj-button>
+            
+            </div>
+          </template>
+      </oj-table>
+    </div>
+  
+</div>
+  </div>
+  <oj-popup id="pop" modality="modal" tail="none" auto-dismiss="focusLoss"
+  initial-focus="none"
+  position='{"my":{"horizontal":"right","vertical":"top"}, "at":{"horizontal":"right","vertical":"top"}, "of":"window"}'
+  style="width:560px; max-width:90vw; max-height:100vh; background: var(--oj-core-bg-color, #fff); box-shadow: 0 8px 24px rgba(0,0,0,.18); border-radius: 12px 0 0 12px;display:flex; flex-direction:column;">
+
+  <!-- HEADER - FIXED -->
+  <div style="position:sticky; top:0; z-index:1;display:flex; align-items:center; justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--oj-core-divider-color, #e6e6e6);background:inherit; flex:0 0 auto;">
+    <h3 style="margin:0; font-size:18px; font-weight:600;">Add Agreement Line</h3>
+    <oj-button id="closeAddLineBtn" chroming="borderless" display="icons" title="Close"
+      on-oj-action="[[$listeners.closeAddLineBtnAction]]">
+      <span slot="startIcon" class="oj-ux-ico-close"></span>
+    </oj-button>
+  </div>
+
+  <!-- MIDDLE CONTENT - ONLY THIS WILL SCROLL -->
+  <div style="flex:1 1 auto; min-height:0; overflow-y:auto; padding:16px 20px;">
+
+    <oj-form-layout columns="2" max-columns="2" label-edge="top">
+
+      <!-- <oj-select-single label-hint="Item Number" value="{{ $variables.lineObj.item_number }}" item-text="ItemNumber"
+        data="[[ $variables.itemLovAdp ]]" on-value-item-changed="[[$listeners.selectValueItem]]">
+        <template slot="itemTemplate" data-oj-as="data">
+          <span><oj-bind-text value='[[ data.data.ItemNumber+"-"+data.data.OrganizationCode ]]'></oj-bind-text>
+          </span>
+        </template>
+        </oj-select-single> -->
+<oj-select-single label-hint="Project" item-text="name" on-value-item-changed="[[$listeners.selectValueItem7]]"
+  value="{{ $variables.lineObj.prjnamenumber }}" data="[[$variables.getEQUIPMENTRITEPROJECTSLOV1GetProjects2ListSDP2]]">
+</oj-select-single>
+<oj-select-single label-hint="Task" item-text="TaskNumber" data="[[ $variables.tasksAdp ]]"
+  value="{{ $variables.lineObj.tasknumber }}" on-value-item-changed="[[$listeners.selectValueItem8]]">
+
+</oj-select-single>
+        <oj-select-single label-hint="Equipment Class" data="[[$variables.getGetEquipmentClassesListSDP]]"
+          item-text="eqp_class_details" value="{{ $variables.lineObj.eqp_class }}">
+        </oj-select-single>
+
+        <oj-select-single label-hint="Equipment Name" data="[[$variables.getGetEquipmentLOVListSDP]]"
+          item-text="lkpvalue" value="{{ $variables.lineObj.eqp_namenumber }}"
+          on-value-item-changed="[[$listeners.selectValueItem6]]">
+        </oj-select-single>
+        
+      <!-- <oj-input-text label-hint="Item Description" value="{{ $variables.lineObj.item_desc }}" readonly="true"></oj-input-text> -->
+
+      <oj-input-text label-hint="Lot / Serial Number" value="{{ $variables.lineObj.lot_number }}" readonly="true"></oj-input-text>
+      <oj-input-number label-hint="Quantity" min="1" value="{{ $variables.lineObj.quantity }}"></oj-input-number>
+
+      <!-- <oj-select-single label-hint="UOM" value="{{ $variables.lineObj.uom }}" item-text="UOM"
+        data="[[ $application.variables.uomAdp ]]"></oj-select-single> -->
+      <!-- <oj-select-single label-hint="Warehouse" value="{{ $variables.lineObj.ware_house }}"></oj-select-single> -->
+
+      <!-- <oj-select-single label-hint="Rental Type" value="{{ $variables.lineObj.rental_type }}"></oj-select-single>
+      <oj-select-single label-hint="Rate Basis" value="{{ $variables.lineObj.rate_basis }}"></oj-select-single>
+
+      <oj-input-text label-hint="Rate Amount" value="{{ $variables.lineObj.rate_amount }}"></oj-input-text> -->
+      <!-- <oj-input-text label-hint="Currency" readonly="true" value="{{ $variables.lineObj.currency }}"></oj-input-text> -->
+
+       <oj-select-single label-hint="Currency" value="{{ $variables.lineObj.currency }}"
+         data="[[ $application.variables.currencyADP ]]" item-text="CurrencyCode"
+            >
+       </oj-select-single>
+
+<!-- 
+      <oj-input-date label-hint="Valid From" value="{{ $variables.lineObj.valid_from }}"></oj-input-date>
+      <oj-input-date label-hint="Valid To" value="{{ $variables.lineObj.valid_to }}"></oj-input-date> -->
+
+    </oj-form-layout>
+
+    <b>Additional Information</b>
+
+    <oj-form-layout label-edge="top" class="oj-formlayout-full-width">
+      <oj-text-area label-hint="Notes" value="{{ $variables.lineObj.notes }}"></oj-text-area>
+    </oj-form-layout>
+
+  </div>
+
+  <!-- FOOTER - FIXED -->
+  <div style="position:sticky; bottom:0; z-index:1;display:flex; gap:12px; justify-content:flex-end;padding:12px 16px;border-top:1px solid var(--oj-core-divider-color, #e6e6e6);background:inherit; flex:0 0 auto;">
+
+     <oj-button label="Reset" chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction5]]">
+      <span class="oj-ux-ico-reset-variable" slot="startIcon"></span>
+    </oj-button>
+    <oj-button id="cancelBtn" chroming="callToAction" 
+      on-oj-action="[[$listeners.cancelBtnAction]]"
+      label="Close" class="oj-button-sm">
+      <span class="oj-ux-ico-close" slot="startIcon"></span>
+    </oj-button>
+<oj-bind-if test="[[ $variables.iscreate ]]">
+    <oj-button id="addLineBtn" chroming="callToAction" 
+      on-oj-action="[[$listeners.addLineBtnAction]]"
+      label="Add Line" class="oj-button-sm">
+      <span class="oj-ux-ico-check" slot="startIcon"></span>
+    </oj-button>
+</oj-bind-if>
+<oj-bind-if test="[[ !$variables.iscreate ]]">
+  <oj-button label="Update" chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction8]]">
+      <span class="oj-ux-ico-save-as" slot="startIcon"></span>
+  </oj-button>
+</oj-bind-if>
+
+
+
+  </div>
+
+</oj-popup>
+
+
+<!-- <oj-popup id="pop" modality="modal" tail="none" auto-dismiss="focusLoss" initial-focus="none"
+  position='{"my":{"horizontal":"right","vertical":"top"}, "at":{"horizontal":"right","vertical":"top"}, "of":"window"}'
+  style="width:560px; max-width:90vw;height:100vh; max-height:100vh;background: var(--oj-core-bg-color, #fff);box-shadow: 0 8px 24px rgba(0,0,0,.18);border-radius: 12px 0 0 12px;display:flex; flex-direction:column;overflow:hidden;">
+  <div style="position:sticky; top:0; z-index:2;display:flex; align-items:center; justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--oj-core-divider-color, #e6e6e6);
+ background:inherit;flex:0 0 auto;">
+    <h3 style="margin:0; font-size:18px; font-weight:600;">Add Agreement Line</h3>
+    <oj-button id="closeAddLineBtn" chroming="borderless" display="icons" title="Close"
+      on-oj-action="[[$listeners.closeAddLineBtnAction]]">
+      <span slot="startIcon" class="oj-ux-ico-close"></span>
+    </oj-button>
+  </div>
+  <div class="pop-body" style="flex:1 1 auto;min-height:0;overflow:y;padding:16px 20px;padding-bottom:84px;scrollbar-gutter: stable;">
+    <oj-form-layout columns="2" max-columns="2" label-edge="top">
+      <oj-select-single label-hint="Item Number"></oj-select-single>
+      <oj-input-text label-hint="Item Description"></oj-input-text>
+
+      <oj-input-text label-hint="Lot / Serial Number"></oj-input-text>
+      <oj-input-number label-hint="Quantity" min="1"></oj-input-number>
+
+      <oj-select-single label-hint="UOM"></oj-select-single>
+      <oj-select-single label-hint="Warehouse"></oj-select-single>
+
+      <oj-select-single label-hint="Rental Type"></oj-select-single>
+      <oj-select-single label-hint="Rate Basis"></oj-select-single>
+
+      <oj-input-text label-hint="Rate Amount"></oj-input-text>
+      <oj-input-text label-hint="Currency" readonly="true"></oj-input-text>
+
+      <oj-input-date label-hint="Valid From"></oj-input-date>
+      <oj-input-date label-hint="Valid To"></oj-input-date>
+    </oj-form-layout>
+
+    <div style="margin-top:12px;">
+      <b>Additional Information</b>
+      <oj-form-layout label-edge="top" class="oj-formlayout-full-width">
+        <oj-text-area label-hint="Notes"></oj-text-area>
+      </oj-form-layout>
+    </div>
+  </div>
+
+  <div style="position:sticky; bottom:0; z-index:3;display:flex; gap:12px; justify-content:flex-end;padding:12px 16px;border-top:1px solid var(--oj-core-divider-color, #e6e6e6);background:inherit;flex:0 0 auto;backdrop-filter: blur(2px);">
+    <oj-button label="Reset" chroming="callToAction" class="oj-button-sm">
+      <span class="oj-ux-ico-reset-variable" slot="startIcon"></span>
+    </oj-button>
+
+    <oj-button id="cancelBtn" chroming="callToAction"
+      on-oj-action="[[$listeners.cancelBtnAction]]" label="Close"
+      class="oj-button-sm">
+      <span class="oj-ux-ico-close" slot="startIcon"></span>
+    </oj-button>
+
+    <oj-button id="addLineBtn" chroming="callToAction"
+      on-oj-action="[[$listeners.addLineBtnAction]]" label="Add Line"
+      class="oj-button-sm">
+      <span class="oj-ux-ico-check" slot="startIcon"></span>
+    </oj-button>
+  </div>
+</oj-popup> -->
+ <oj-dialog dialog-title="" id="createagrLoading" class="myloader" style="width: 350px">
+      <div slot="body">
+        <div class="oj-flex-item">
+          <span style="font-size:20px;color:#006AA2;font-weight:600;margin-top:-2vh">Creating Rental Agreement.....</span>
+          <br />
+          <oj-progress-bar value="-1" class="oj-sm-margin-3x-top"></oj-progress-bar>
+        </div>
+      </div>
+    </oj-dialog>
+
+    <!-- <oj-drawer-popup edge="end" id="drawer">
+    </oj-drawer-popup> -->
+</oj-sp-welcome-page>

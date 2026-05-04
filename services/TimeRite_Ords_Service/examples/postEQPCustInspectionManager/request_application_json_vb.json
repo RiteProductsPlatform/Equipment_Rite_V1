@@ -1,0 +1,21 @@
+{
+"p_inspection_date": "09-Jan-2025",
+  "p_inspector_name": "John Doe",
+  "p_inspector_id": 12345,
+  "p_reservation_number": "RES67890",
+  "p_inspection_type": "Routine Check",
+  "p_inspection_location": "Hyderabad Plant",
+  "p_equipment_class": "Heavy Machinery",
+  "p_equipmnet_name": "Hydraulic Press",
+  "p_equipment_number": "EQP-00123",
+  "p_equipment_id": 45678,
+  "p_over_all_equp_condition": "Good",
+  "p_save_draft_flag": true,
+  "p_created_by": "admin_user",
+  "p_last_updated_by": "inspector_user",
+  "p_check_list_name": "Safety Checklist",
+  "p_check_list_id": 78901,
+  "p_section_name": "Maintenance",
+  "p_notes": "All parameters within safe limits",
+  "o_cust_inspection_hdr_id": 2507914
+}

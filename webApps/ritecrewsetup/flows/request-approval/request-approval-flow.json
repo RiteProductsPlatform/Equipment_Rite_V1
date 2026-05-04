@@ -1,0 +1,45 @@
+{
+  "id": "request-approval",
+  "description": "Flow main",
+  "defaultPage": "request-approval-start_copy",
+  "services": {},
+  "types": {
+    "@decorators.getFscmRestApiResources11_13_18_05GenericLookups": {
+      "endpoint": "getFscmRestApiResources11_13_18_05GenericLookups",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]-_-lookupCodes[0]"
+    },
+    "getFscmRestApiResources11_13_18_05GenericLookups": {
+      "Description": "string",
+      "LookupCode": "string",
+      "Meaning": "string"
+    }
+  },
+  "variables": {
+    "eqpClassAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getFscmRestApiResources11_13_18_05GenericLookups",
+        "keyAttributes": "Meaning",
+        "textFilterAttributes": [
+          "Meaning"
+        ]
+      }
+    },
+    "selectedReservationNumber": {
+      "type": "string",
+      "input": "fromCaller"
+    }
+
+  },
+  "eventListeners": {
+    "vbEnter": {
+      "chains": [
+        {
+          "parameters": {},
+          "chain": "vbEnterListener"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+    "items": [
+        {
+            "bill_plan_name": "std bill",
+            "bill_plan_id": 300000085609183
+        },
+        {
+            "bill_plan_name": "std bill",
+            "bill_plan_id": 300000142134788
+        },
+        {
+            "bill_plan_name": "std bill",
+            "bill_plan_id": 300000185706398
+        },
+        {
+            "bill_plan_name": "std bill",
+            "bill_plan_id": 300000230523029
+        },
+        {
+            "bill_plan_name": "Volks RP Amount Based",
+            "bill_plan_id": 300001515025805
+        },
+        {
+            "bill_plan_name": "VOLKS_REV_PER_COMPLETE",
+            "bill_plan_id": 300001564776516
+        },
+        {
+            "bill_plan_name": "VOLKS_RATE_BASED_REVENUE",
+            "bill_plan_id": 300001548127549
+        },
+        {
+            "bill_plan_name": "VOLKS_RATE_BASED",
+            "bill_plan_id": 300001548127538
+        },
+        {
+            "bill_plan_name": "VOLKS_PER_COM_BILL_PLAN",
+            "bill_plan_id": 300001564776513
+        },
+        {
+            "bill_plan_name": "VOLKS BP Amount Based",
+            "bill_plan_id": 300001515025804
+        },
+        {
+            "bill_plan_name": "Time rite Amount Based",
+            "bill_plan_id": 300000333920142
+        },
+        {
+            "bill_plan_name": "Time Rite Revenue method",
+            "bill_plan_id": 300000333920168
+        },
+        {
+            "bill_plan_name": "Time & Material",
+            "bill_plan_id": 300001550010464
+        },
+        {
+            "bill_plan_name": "Summit Bill",
+            "bill_plan_id": 300001517595764
+        },
+        {
+            "bill_plan_name": "Std Revenue Plan",
+            "bill_plan_id": 100002543075326
+        },
+        {
+            "bill_plan_name": "Std Revenue Plan",
+            "bill_plan_id": 300000060778403
+        },
+        {
+            "bill_plan_name": "Std Revenue Plan",
+            "bill_plan_id": 300000060778417
+        },
+        {
+            "bill_plan_name": "Std Revenue Plan",
+            "bill_plan_id": 300000060778432
+        },
+        {
+            "bill_plan_name": "Std Revenue Plan",
+            "bill_plan_id": 300000060803403
+        },
+        {
+            "bill_plan_name": "Std Revenue Plan",
+            "bill_plan_id": 300000060803416
+        },
+        {
+            "bill_plan_name": "Std Revenue Plan",
+            "bill_plan_id": 300000060803429
+        },
+        {
+            "bill_plan_name": "Std Revenue Plan",
+            "bill_plan_id": 300000062728584
+        },
+        {
+            "bill_plan_name": "Std Revenue Plan",
+            "bill_plan_id": 300000062728604
+        },
+        {
+            "bill_plan_name": "Std Revenue Plan",
+            "bill_plan_id": 300000062728624
+        },
+        {
+            "bill_plan_name": "Std Revenue Plan",
+            "bill_plan_id": 300000062728635
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpBillPlanDetails"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpBillPlanDetails"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpBillPlanDetails?offset=25"
+        }
+    ]
+}

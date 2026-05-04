@@ -1,0 +1,1075 @@
+{
+  "title": "create rental agreement add",
+  "description": "",
+  "variables": {
+    "agreementTypeLov": {
+      "type": "data[]",
+      "defaultValue": [
+        {
+          "data": "Inter Company Rental"
+        },
+        {
+          "data": "External Company Rental"
+        }
+      ]
+    },
+    "agreementTypeLovAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "{{ $variables.agreementTypeLov }}",
+        "itemType": "data",
+        "keyAttributes": "data",
+        "textFilterAttributes": [
+          "data"
+        ]
+      }
+    },
+    "backgroundColor": {
+      "type": "string",
+      "defaultValue": "dark-ocean"
+    },
+    "billtoAddressAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getEQUIPMENT_RITEEQP_RENTAL_CUSTOMER_DETAILS1_0GetCustomerDetails",
+        "keyAttributes": "location",
+        "textFilterAttributes": [
+          "location"
+        ]
+      }
+    },
+    "businessUnitAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getFscmRestApiResources11_13_18_05FinBusinessUnitsLOV",
+        "keyAttributes": "BusinessUnitName",
+        "textFilterAttributes": [
+          "BusinessUnitName"
+        ]
+      }
+    },
+    "customerAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getFscmRestApiResources11_13_18_05ShippingCustomersLOV",
+        "textFilterAttributes": [
+          "Customer"
+        ],
+        "keyAttributes": "Customer"
+      }
+    },
+    "customerSiteAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getEQUIPMENT_RITEEQP_RENTAL_CUSTOMER_DETAILS1_0GetCustomerDetails",
+        "keyAttributes": "party_site_number",
+        "textFilterAttributes": [
+          "party_site_number"
+        ]
+      }
+    },
+    "getAllUOMListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "fusion_cloud/getAllUOM",
+        "keyAttributes": "UOM",
+        "itemsPath": "items",
+        "responseType": "getAllUOMResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "UOM"
+          ]
+        }
+      }
+    },
+    "getCrmRestApiResources1113185HubPersons2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "fusion_cloud/getCrmRestApiResources11_13_18_05HubPersons2",
+        "keyAttributes": "PersonName",
+        "itemsPath": "items",
+        "responseType": "getCrmRestApiResources1113185HubPersons2Response",
+        "uriParameters": {
+          "limit": "500"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "PersonName"
+          ]
+        }
+      }
+    },
+    "getCrmRestApiResources1113185PaymentTerms2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "fusion_cloud/getCrmRestApiResources11_13_18_05PaymentTerms2",
+        "keyAttributes": "Name",
+        "itemsPath": "items",
+        "responseType": "getCrmRestApiResources1113185PaymentTerms2Response",
+        "uriParameters": {
+          "limit": "500"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "Name"
+          ]
+        }
+      }
+    },
+    "getCurrenciesLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "fusion_cloud/getCurrenciesLOV",
+        "keyAttributes": "CurrencyCode",
+        "itemsPath": "items",
+        "responseType": "getCurrenciesLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "CurrencyCode"
+          ]
+        }
+      }
+    },
+    "getEQUIPMENTRITEEQPCUSTOMERDETAILS1GetCustomerDetailsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+
+        "keyAttributes": "name",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITEEQPCUSTOMERDETAILS1GetCustomerDetailsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "name"
+          ]
+        },
+        "fetchChain": "getEQUIPMENT_RITEEQP_CUSTOMER_DETAILS1_0GetCustomerDetailsFetch"
+      }
+    },
+    "getEQUIPMENTRITEEQPCUSTOMERDETAILS1GetCustomerDetailsListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "EQUIPMENT_RITE_OIC/getEQUIPMENT_RITEEQP_CUSTOMER_DETAILS1_0GetCustomerDetails",
+        "keyAttributes": "name",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITEEQPCUSTOMERDETAILS1GetCustomerDetailsResponse2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "name"
+          ]
+        }
+      }
+    },
+    "getEQUIPMENTRITEEQPRENTALCUSTOMERDETAILS1GetCustomerDetailsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "getContractSummary/getEQUIPMENT_RITEEQP_RENTAL_CUSTOMER_DETAILS1_0GetCustomerDetails",
+        "keyAttributes": "name",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITEEQPRENTALCUSTOMERDETAILS1GetCustomerDetailsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "name"
+          ]
+        }
+      }
+    },
+    "getEQUIPMENTRITEPROJECTSLOV1GetProjects2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+
+        "keyAttributes": "name",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "name"
+          ]
+        },
+        "fetchChain": "getEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects2Fetch"
+      }
+    },
+    "getEQUIPMENTRITEPROJECTSLOV1GetProjects2ListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "EQUIPMENT_RITE_OIC/getEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects2",
+        "keyAttributes": "name",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "name"
+          ]
+        }
+      }
+    },
+    "getFscmRestApiResources1113185CustomerAccountSitesLOV2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "fusion_cloud/getFscmRestApiResources11_13_18_05CustomerAccountSitesLOV2",
+        "keyAttributes": "SiteName",
+        "itemsPath": "items",
+        "responseType": "getFscmRestApiResources1113185CustomerAccountSitesLOV2Response",
+        "uriParameters": {
+          "limit": "500"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "SiteName"
+          ]
+        }
+      }
+    },
+    "getFscmRestApiResources1113185ItemsLOV2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "fusion_cloud/getFscmRestApiResources11_13_18_05ItemsLOV2",
+        "keyAttributes": "ItemNumber",
+        "itemsPath": "items",
+        "responseType": "getFscmRestApiResources1113185ItemsLOV2Response",
+        "uriParameters": {
+          "q": "{{ \"ItemNumber!=\"+\"'@@@'\" }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "ItemNumber"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentClassesListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentClasses",
+        "keyAttributes": "eqp_class_details",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentClassesResponse",
+        "uriParameters": {
+          "page_name": "{{ \"equipment-requisition-start\" }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "eqp_class_details"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentLOV",
+        "keyAttributes": "lkpvalue",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentLOVResponse",
+        "uriParameters": {
+          "pClass": "{{ $variables.lineObj.eqp_class }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "lkpvalue"
+          ]
+        }
+      }
+    },
+    "headerObj": {
+      "type": {
+        "AgreementNumber": "string",
+        "AgreementType": "string",
+        "billtoAddress": "string",
+        "buid": "number",
+        "Currency": "string",
+        "Customer": "string",
+        "CustomerAccountNumber": "string",
+        "Customerid": "any",
+        "CustomerNumber": "string",
+        "CustomerSite": "string",
+        "customersiteid": "string",
+        "Description": "string",
+        "EndDate": "string",
+        "OwnerBusinessUnit": "string",
+        "PaymentTerms": "string",
+        "StartDate": "string",
+        "Status": "string",
+        "Warehouse": "string"
+
+      },
+      "defaultValue": {
+        "Status": "DRAFT",
+        "Currency": "USD"
+      }
+    },
+    "illustrationBackground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-bg-01.png"
+    },
+    "illustrationForeground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-fg-01.png"
+    },
+    "imageStretch": {
+      "type": "string",
+      "defaultValue": "none"
+    },
+    "iscreate": {
+      "type": "boolean",
+      "defaultValue": true
+    },
+    "itemLovAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "ItemLov"
+      }
+    },
+    "lineObj": {
+      "type": "lineObj",
+      "input": "none",
+      "defaultValue": {
+        "currency": "USD"
+      }
+    },
+    "linesAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "lineObj",
+        "keyAttributes": "id"
+      }
+    },
+    "mobileImage": {
+      "type": "string",
+      "defaultValue": "on"
+    },
+    "selectedRow": {
+      "type": "object"
+    },
+    "tasksAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getFscmRestApiResources11_13_18_05ProjectsProjectIdChildTasks2",
+        "keyAttributes": "TaskNumber",
+        "textFilterAttributes": [
+          "TaskNumber"
+        ]
+      }
+    },
+    "variable1": {
+      "type": "string"
+    },
+    "variable2": {
+      "type": "string"
+    },
+    "variable3": {
+      "type": "string"
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getAllUOMResponse": {
+      "endpoint": "getAllUOM",
+      "service": "fusion_cloud",
+      "path": "response"
+    },
+    "@decorators.getCrmRestApiResources1113185HubPersons2Response": {
+      "endpoint": "getCrmRestApiResources11_13_18_05HubPersons2",
+      "service": "fusion_cloud",
+      "path": "response"
+    },
+    "@decorators.getCrmRestApiResources1113185PaymentTerms2Response": {
+      "endpoint": "getCrmRestApiResources11_13_18_05PaymentTerms2",
+      "service": "fusion_cloud",
+      "path": "response"
+    },
+    "@decorators.getCurrenciesLOVResponse": {
+      "endpoint": "getCurrenciesLOV",
+      "service": "fusion_cloud",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENT_RITEEQP_RENTAL_CUSTOMER_DETAILS1_0GetCustomerDetails": {
+      "endpoint": "getEQUIPMENT_RITEEQP_RENTAL_CUSTOMER_DETAILS1_0GetCustomerDetails",
+      "service": "getContractSummary",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getEQUIPMENTRITEEQPCUSTOMERDETAILS1GetCustomerDetailsResponse": {
+      "endpoint": "getEQUIPMENT_RITEEQP_CUSTOMER_DETAILS1_0GetCustomerDetails",
+      "service": "getContractSummary",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENTRITEEQPCUSTOMERDETAILS1GetCustomerDetailsResponse2": {
+      "endpoint": "getEQUIPMENT_RITEEQP_CUSTOMER_DETAILS1_0GetCustomerDetails",
+      "service": "EQUIPMENT_RITE_OIC",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENTRITEEQPRENTALCUSTOMERDETAILS1GetCustomerDetailsResponse": {
+      "endpoint": "getEQUIPMENT_RITEEQP_RENTAL_CUSTOMER_DETAILS1_0GetCustomerDetails",
+      "service": "getContractSummary",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response": {
+      "endpoint": "getEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects2",
+      "service": "getContractSummary",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response2": {
+      "endpoint": "getEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects2",
+      "service": "EQUIPMENT_RITE_OIC",
+      "path": "response"
+    },
+    "@decorators.getFscmRestApiResources11_13_18_05CollaborationCustomersLOVCustidChildSitesLOV": {
+      "endpoint": "getFscmRestApiResources11_13_18_05CollaborationCustomersLOVCustidChildSitesLOV",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getFscmRestApiResources11_13_18_05CustomerAccountSitesLOV2": {
+      "endpoint": "getFscmRestApiResources11_13_18_05CustomerAccountSitesLOV2",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getFscmRestApiResources11_13_18_05FinBusinessUnitsLOV": {
+      "endpoint": "getFscmRestApiResources11_13_18_05FinBusinessUnitsLOV",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getFscmRestApiResources11_13_18_05ProjectsProjectIdChildTasks2": {
+      "endpoint": "getFscmRestApiResources11_13_18_05ProjectsProjectIdChildTasks2",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getFscmRestApiResources11_13_18_05ShippingCustomersLOV": {
+      "endpoint": "getFscmRestApiResources11_13_18_05ShippingCustomersLOV",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getFscmRestApiResources1113185CustomerAccountSitesLOV2Response": {
+      "endpoint": "getFscmRestApiResources11_13_18_05CustomerAccountSitesLOV2",
+      "service": "fusion_cloud",
+      "path": "response"
+    },
+    "@decorators.getFscmRestApiResources1113185ItemsLOV2Response": {
+      "endpoint": "getFscmRestApiResources11_13_18_05ItemsLOV2",
+      "service": "fusion_cloud",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentClassesResponse": {
+      "endpoint": "getGetEquipmentClasses",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentLOVResponse": {
+      "endpoint": "getGetEquipmentLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.ItemLov": {
+      "endpoint": "getFscmRestApiResources11_13_18_05ItemsLOV2",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]"
+    },
+    "data": {
+      "data": "string"
+    },
+    "getAllUOMResponse": {
+      "items": [
+        {
+          "UOM": "string"
+        }
+      ]
+    },
+    "getEQUIPMENT_RITEEQP_RENTAL_CUSTOMER_DETAILS1_0GetCustomerDetails": {
+      "account_number": "string",
+      "address1": "string",
+      "address2": "string",
+      "address3": "string",
+      "address4": "string",
+      "city": "string",
+      "country": "string",
+      "customer_id": "string",
+      "customer_name": "string",
+      "customer_number": "string",
+      "location": "string",
+      "name": "string",
+      "party_site_id": "string",
+      "party_site_number": "string",
+      "postal_code": "string",
+      "primary_flag": "string",
+      "site_status": "string",
+      "site_use_code": "string",
+      "state": "string"
+
+    },
+    "getEQUIPMENTRITEEQPCUSTOMERDETAILS1GetCustomerDetailsResponse": {
+      "items": [
+        {
+          "customer_type": "string",
+          "name": "string",
+          "party_id": "string",
+          "party_number": "string"
+        }
+      ]
+    },
+    "getEQUIPMENTRITEEQPCUSTOMERDETAILS1GetCustomerDetailsResponse2": {
+      "items": [
+        {
+          "customer_type": "string",
+          "name": "string",
+          "party_id": "string",
+          "party_number": "string"
+        }
+      ]
+    },
+    "getEQUIPMENTRITEEQPRENTALCUSTOMERDETAILS1GetCustomerDetailsResponse": {
+      "items": [
+        {
+          "account_name": "string",
+          "account_number": "string",
+          "bill_to_address": "string",
+          "bu_id": "string",
+          "bu_name": "string",
+          "cust_account_id": "string",
+          "location": "string",
+          "name": "string",
+          "party_id": "string",
+          "party_number": "string",
+          "party_site_id": "string",
+          "party_site_name": "string",
+          "party_site_number": "string"
+        }
+      ]
+    },
+    "getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response": {
+      "items": [
+        {
+          "businessUnitName": "string",
+          "completionDate": "string",
+          "enabledFlag": "string",
+          "name": "string",
+          "number": "string",
+          "orgId": "string",
+          "projectId": "string",
+          "projectName": "string",
+          "projectStatusCode": "string",
+          "projectTypeId": "string",
+          "startDate": "string"
+        }
+      ]
+    },
+    "getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response2": {
+      "items": [
+        {
+          "businessUnitName": "string",
+          "completionDate": "string",
+          "enabledFlag": "string",
+          "name": "string",
+          "number": "string",
+          "orgId": "string",
+          "projectId": "string",
+          "projectName": "string",
+          "projectStatusCode": "string",
+          "projectTypeId": "string",
+          "startDate": "string"
+        }
+      ]
+    },
+    "getFscmRestApiResources11_13_18_05CollaborationCustomersLOVCustidChildSitesLOV": {
+      "CustomerSiteId": "number",
+      "CustomerSiteLocation": "string",
+      "CustomerSiteNumber": "string"
+    },
+    "getFscmRestApiResources11_13_18_05CustomerAccountSitesLOV2": {
+      "AccountDescription": "string",
+      "AccountNumber": "string",
+      "CustomerAccountId": "number",
+      "CustomerName": "string",
+      "PartyNumber": "string",
+      "PrimarySite": "string",
+      "SetName": "string",
+      "SiteName": "string",
+      "SiteUseId": "number",
+      "TaxpayerIdentificationNumber": "string",
+      "TaxRegistrationNumber": "any"
+    },
+    "getFscmRestApiResources11_13_18_05FinBusinessUnitsLOV": {
+      "ActiveFlag": "boolean",
+      "BusinessUnitId": "number",
+      "BusinessUnitName": "string",
+      "LegalEntityId": "string",
+      "LocationId": "number",
+      "ManagerId": "any",
+      "PrimaryLedgerId": "string",
+      "ProfitCenterFlag": "boolean"
+    },
+    "getFscmRestApiResources11_13_18_05ProjectsProjectIdChildTasks2": {
+      "TaskId": "number",
+      "TaskName": "string",
+      "TaskNumber": "string"
+    },
+    "getFscmRestApiResources11_13_18_05ShippingCustomersLOV": {
+      "Customer": "string",
+      "CustomerId": "number",
+      "CustomerNumber": "string"
+    },
+    "getFscmRestApiResources1113185ItemsLOV2Response": {
+      "items": [
+        {
+          "ItemClass": "string",
+          "ItemClassId": "number",
+          "ItemDescription": "string",
+          "ItemId": "number",
+          "ItemNumber": "string",
+          "ItemStatusValue": "string",
+          "ItemType": "string",
+          "OrganizationCode": "string",
+          "OrganizationId": "number"
+        }
+      ]
+    },
+    "getGetEquipmentClassesResponse": {
+      "items": [
+        {
+          "eqp_class_details": "string"
+        }
+      ]
+    },
+    "getGetEquipmentLOVResponse": {
+      "items": [
+        {
+          "default_location": "string",
+          "equipment_class": "string",
+          "equipment_name": "string",
+          "equipment_number": "string",
+          "equipment_type": "string",
+          "lkpid": "number",
+          "lkpvalue": "string",
+          "mf_serial_number": "string"
+        }
+      ]
+    },
+    "ItemLov": {
+      "ItemClass": "string",
+      "ItemClassId": "number",
+      "ItemDefinitionOrgId": "number",
+      "ItemDescription": "string",
+      "ItemId": "number",
+      "ItemNumber": "string",
+      "ItemStatusValue": "string",
+      "ItemType": "string",
+      "OrganizationCode": "string",
+      "OrganizationId": "number"
+    },
+    "lineObj": {
+      "currency": "string",
+      "eqp_class": "string",
+      "eqp_id": "string",
+      "eqp_name": "string",
+      "eqp_namenumber": "string",
+      "eqp_number": "string",
+      "id": "number",
+      "item_desc": "string",
+      "item_number": "string",
+      "lot_number": "string",
+      "notes": "string",
+      "prjnamenumber": "string",
+      "projectid": "string",
+      "projectname": "string",
+      "projectnumber": "string",
+      "quantity": "number",
+      "rate_amount": "string",
+      "rate_basis": "string",
+      "rental_type": "string",
+      "taskid": "number",
+      "taskname": "string",
+      "tasknumber": "string",
+      "uom": "string",
+      "valid_from": "string",
+      "valid_to": "string",
+      "ware_house": "string"
+    },
+    "customerName": {
+    "FirstName": "string",
+    "OrganizationPartyId": "number",
+    "OrganizationPartyName": "string",
+    "OrganizationPartyNumber": "string",
+    "OrganizationSourceSystem": "string",
+    "OrganizationSourceSystemReferenceValue": "string",
+    "PartyId": "number",
+    "PartyNumber": "string",
+    "PartyUsageCode": "string",
+    "PersonName": "string"
+  },
+  "getCrmRestApiResources1113185HubPersons2Response": {
+    "items": [
+      {
+        "FirstName": "string",
+        "OrganizationPartyId": "number",
+        "OrganizationPartyName": "string",
+        "OrganizationPartyNumber": "string",
+        "OrganizationSourceSystem": "string",
+        "OrganizationSourceSystemReferenceValue": "string",
+        "PartyId": "number",
+        "PartyNumber": "string",
+        "PartyUsageCode": "string",
+        "PersonName": "string"
+      }
+    ]
+  },
+  "getCrmRestApiResources1113185PaymentTerms2Response": {
+    "items": [
+      {
+        "Description": "string",
+        "EndDateActive": "any",
+        "Name": "string",
+        "SetId": "number",
+        "TermId": "number"
+      }
+    ]
+  },
+  "getCurrenciesLOVResponse": {
+    "items": [
+      {
+        "CurrencyCode": "string"
+      }
+    ]
+  },
+  "getFscmRestApiResources1113185CustomerAccountSitesLOV2Response": {
+    "items": [
+      {
+        "AccountDescription": "string",
+        "AccountNumber": "string",
+        "CustomerAccountId": "number",
+        "CustomerName": "string",
+        "PartyNumber": "string",
+        "PrimarySite": "string",
+        "SetName": "string",
+        "SiteName": "string",
+        "SiteUseId": "number",
+        "TaxpayerIdentificationNumber": "string",
+        "TaxRegistrationNumber": "any"
+      }
+    ]
+  }
+
+},
+"eventListeners": {
+  "addLineBtnAction": {
+    "chains": [
+      {
+        "chain": "addlineButtonActionChain1",
+        "parameters": {
+          "event": "{{$event}}",
+          "originalEvent": "{{$event.detail.originalEvent}}"
+        }
+      }
+    ]
+  },
+  "buttonAction": {
+    "chains": [
+      {
+        "chain": "backButtonActionChain",
+        "parameters": {
+          "event": "{{$event}}",
+          "originalEvent": "{{$event.detail.originalEvent}}"
+        }
+      }
+    ]
+  },
+  "buttonAction2": {
+    "chains": [
+      {
+        "chain": "addAgrementLineButtonActionChain",
+        "parameters": {
+          "event": "{{$event}}",
+          "originalEvent": "{{$event.detail.originalEvent}}"
+        }
+      }
+    ]
+  },
+  "buttonAction3": {
+    "chains": [
+      {
+        "chain": "createAgrButtonActionChain",
+        "parameters": {
+          "event": "{{$event}}",
+          "originalEvent": "{{$event.detail.originalEvent}}"
+        }
+      }
+    ]
+  },
+  "buttonAction4": {
+    "chains": [
+      {
+        "chain": "resetButtonActionChain",
+        "parameters": {
+          "event": "{{$event}}",
+          "originalEvent": "{{$event.detail.originalEvent}}"
+        }
+      }
+    ]
+  },
+  "buttonAction5": {
+    "chains": [
+      {
+        "chain": "resetlinesButtonActionChain",
+        "parameters": {
+          "event": "{{$event}}",
+          "originalEvent": "{{$event.detail.originalEvent}}"
+        }
+      }
+    ]
+  },
+  "buttonAction6": {
+    "chains": [
+      {
+        "chain": "rowDeleteButtonActionChain",
+        "parameters": {
+          "event": "{{$event}}",
+          "originalEvent": "{{$event.detail.originalEvent}}",
+          "key": "{{ $current.key }}",
+          "index": "{{ $current.index }}",
+          "current": "{{ $current }}"
+        }
+      }
+    ]
+  },
+    "buttonAction7": {
+      "chains": [
+        {
+          "chain": "editrowButtonActionChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}",
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "buttonAction8": {
+      "chains": [
+        {
+          "chain": "UpdateButtonActionChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}"
+          }
+        }
+      ]
+    },
+    "cancelBtnAction": {
+    "chains": [
+      {
+        "chain": "closelineButtonActionChain1",
+        "parameters": {
+          "event": "{{$event}}",
+          "originalEvent": "{{$event.detail.originalEvent}}"
+        }
+      }
+    ]
+  },
+  "closeAddLineBtnAction": {
+    "chains": [
+      {
+        "chain": "closelineButtonActionChain",
+        "parameters": {
+          "event": "{{$event}}",
+          "originalEvent": "{{$event.detail.originalEvent}}"
+        }
+      }
+    ]
+  },
+  "selectValueItem": {
+    "chains": [
+      {
+        "chain": "SelectValueItemChangeChain",
+        "parameters": {
+          "event": "{{$event}}",
+          "previousValue": "{{$event.detail.previousValue}}",
+          "value": "{{$event.detail.value}}",
+          "updatedFrom": "{{$event.detail.updatedFrom}}",
+          "key": "{{$event.detail.value.key}}",
+          "data": "{{$event.detail.value.data}}",
+          "metadata": "{{$event.detail.value.metadata}}",
+          "valueItem": "{{ $event.detail.value }}"
+        }
+      }
+    ]
+  },
+  "selectValueItem2": {
+    "chains": [
+      {
+        "chain": "currencySelectValueItemChangeChain",
+        "parameters": {
+          "event": "{{$event}}",
+          "previousValue": "{{$event.detail.previousValue}}",
+          "value": "{{$event.detail.value}}",
+          "updatedFrom": "{{$event.detail.updatedFrom}}",
+          "key": "{{$event.detail.value.key}}",
+          "data": "{{$event.detail.value.data}}",
+          "metadata": "{{$event.detail.value.metadata}}",
+          "valueItem": "{{ $event.detail.value }}"
+        }
+      }
+    ]
+  },
+    "selectValueItem3": {
+      "chains": [
+        {
+          "chain": "CustomerSelectValueItemChangeChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{$event.detail.value}}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}",
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "valueItem": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem4": {
+      "chains": [
+        {
+          "chain": "CustomersiteSelectValueItemChangeChain1",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{$event.detail.value}}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}",
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "valueItem": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem5": {
+      "chains": [
+        {
+          "chain": "buSelectValueItemChangeChain2",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{$event.detail.value}}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}",
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "valueItem": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem6": {
+      "chains": [
+        {
+          "chain": "equipmentSelectValueItemChangeChain2",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{$event.detail.value}}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}",
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "valueItem": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem7": {
+      "chains": [
+        {
+          "chain": "projectSelectValueItemChangeChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{$event.detail.value}}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}",
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "valueItem": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem8": {
+      "chains": [
+        {
+          "chain": "taskSelectValueItemChangeChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{$event.detail.value}}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}",
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "valueItem": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+    "chains": [
+      {
+        "chain": "PageVbEnterChain",
+        "parameters": {
+          "event": "{{$event}}"
+        }
+      }
+    ]
+  }
+
+},
+"imports": {
+  "components": {
+    "oj-button": {
+      "path": "ojs/ojbutton"
+    },
+    "oj-dialog": {
+      "path": "ojs/ojdialog"
+    },
+    "oj-drawer-popup": {
+      "path": "ojs/ojdrawerpopup"
+    },
+    "oj-form-layout": {
+      "path": "ojs/ojformlayout"
+    },
+    "oj-input-date": {
+      "path": "ojs/ojdatetimepicker"
+    },
+    "oj-input-number": {
+      "path": "ojs/ojinputnumber"
+    },
+    "oj-input-text": {
+      "path": "ojs/ojinputtext"
+    },
+    "oj-popup": {
+      "path": "ojs/ojpopup"
+    },
+    "oj-progress-bar": {
+      "path": "ojs/ojprogress-bar"
+    },
+    "oj-select-single": {
+      "path": "ojs/ojselectsingle"
+    },
+    "oj-sp-welcome-page": {
+      "path": "oj-sp/welcome-page/loader"
+    },
+    "oj-table": {
+      "path": "ojs/ojtable"
+    },
+    "oj-text-area": {
+      "path": "ojs/ojinputtext"
+    },
+    "oj-validation-group": {
+      "path": "ojs/ojvalidationgroup"
+    }
+  }
+},
+"@dt": {
+  "iconClass": "vbdt-dynamic-icon-15-icoWelcomePageTemplate48Svg"
+}
+}

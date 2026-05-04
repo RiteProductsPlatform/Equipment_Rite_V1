@@ -1,0 +1,75 @@
+{
+  "root": "if",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestGetEquipmentMaster.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestGetEquipmentMaster": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getEquipmentMaster",
+        "uriParams": {
+
+          "p_eqp_class": "{{ $page.variables.eqpClass?$page.variables.eqpClass:'' }}",
+          "p_asset_org": "{{ $page.variables.assetOrg?$page.variables.assetOrg:'' }}",
+          "p_maintenance_asset_number": "{{ $page.variables.asset?$page.variables.asset:\"\" }}",
+          "p_equipment_name": "{{ $page.variables.eqpName || \"\" }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesEquipmentMasterTable",
+        "failure": "fireNotification"
+      }
+    },
+    "assignVariablesEquipmentMasterTable": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.equipmentMasterTable": {
+          "source": {
+            "data": "{{ $chain.results.callRestGetEquipmentMaster.body.items }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      }
+    },
+    "resetVariablesEquipmentMasterTable": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.equipmentMasterTable"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestGetEquipmentMaster"
+      }
+    },
+    "fireNotification3": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Please Select Equipment Name to Proceed",
+        "displayMode": "transient",
+        "type": "error"
+      }
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "1 == 1"
+      },
+      "outcomes": {
+        "true": "resetVariablesEquipmentMasterTable",
+        "false": "fireNotification3"
+      },
+      "description": "[[ $page.variables.masterSearchObj.equipmentNameVal ]]"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+    "items": [
+        {
+            "ExpenditureTypeId": 300000020204453,
+            "ExpenditureTypeName": "OII_Project_Equip_Miscellaneous_Charge",
+            "ExpenditureTypeDescription": "OII_Project_Equip_Miscellaneous_Charge",
+            "RevenueCategory": "Revenue - Equipment",
+            "RevenueCategoryCode": "Revenue - Equipment",
+            "UnitOfMeasure": "Currency",
+            "UnitOfMeasureCode": "DOLLARS",
+            "ExpenditureCategoryId": 300000007550387,
+            "ExpenditureCategory": "Equipment",
+            "ExpenditureTypeStartDate": "2020-01-01",
+            "ExpenditureTypeEndDate": null,
+            "ExpenditureTypeClassesLOV": [
+                {
+                    "ExpenditureTypeId": 300000020204453,
+                    "ExpenditureTypeClassId": 300000020204454,
+                    "ExpTypeClassName": "Miscellaneous Transaction",
+                    "ExpTypeClassCode": "PJ",
+                    "ExpTypeClassStartDate": "2020-01-01",
+                    "ExpTypeClassEndDate": null,
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypesLOV/300000020204453/child/ExpenditureTypeClassesLOV/300000020204454",
+                            "name": "ExpenditureTypeClassesLOV",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "canonical",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypesLOV/300000020204453/child/ExpenditureTypeClassesLOV/300000020204454",
+                            "name": "ExpenditureTypeClassesLOV",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "parent",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypesLOV/300000020204453",
+                            "name": "expenditureTypesLOV",
+                            "kind": "item"
+                        }
+                    ]
+                }
+            ],
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypesLOV/300000020204453",
+                    "name": "expenditureTypesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypesLOV/300000020204453",
+                    "name": "expenditureTypesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypesLOV/300000020204453/child/ExpenditureTypeClassesLOV",
+                    "name": "ExpenditureTypeClassesLOV",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 1,
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypesLOV",
+            "name": "expenditureTypesLOV",
+            "kind": "collection"
+        }
+    ]
+}

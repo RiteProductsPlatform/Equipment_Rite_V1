@@ -1,0 +1,39 @@
+{
+    "items": [
+        {
+            "role_id": "300000018639511",
+            "role_name": "OII Equipment Administrator",
+            "role_common_name": "OII_RT_EQP_ADMINISTRATOR",
+            "name": "DNeredu@oceaneering.com",
+            "userjobroles_pk": "DNeredu@oceaneering.com_OII_RT_EQP_ADMINISTRATOR"
+        },
+        {
+            "role_id": "300000018639521",
+            "role_name": "OII Equipment Manager",
+            "role_common_name": "OII_RT_EQP_MANAGER",
+            "name": "DNeredu@oceaneering.com",
+            "userjobroles_pk": "DNeredu@oceaneering.com_OII_RT_EQP_MANAGER"
+        },
+        {
+            "role_id": "300000018639531",
+            "role_name": "OII Equipment Requestor",
+            "role_common_name": "OII_RT_EQP_REQUESTOR",
+            "name": "DNeredu@oceaneering.com",
+            "userjobroles_pk": "DNeredu@oceaneering.com_OII_RT_EQP_REQUESTOR"
+        },
+        {
+            "role_id": "300000018639552",
+            "role_name": "OII Equipment Time Entry Approver",
+            "role_common_name": "OII_RT_EQP_TIME_APPROVER",
+            "name": "DNeredu@oceaneering.com",
+            "userjobroles_pk": "DNeredu@oceaneering.com_OII_RT_EQP_TIME_APPROVER"
+        },
+        {
+            "role_id": "300000018639541",
+            "role_name": "OII Equipment Timekeeper",
+            "role_common_name": "OII_RT_EQP_TIMEKEEPER",
+            "name": "DNeredu@oceaneering.com",
+            "userjobroles_pk": "DNeredu@oceaneering.com_OII_RT_EQP_TIMEKEEPER"
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "items": [
+        {
+            "material_req_id": 4,
+            "project_id": 12345,
+            "project_number": "PN-2025-001",
+            "project_name": null,
+            "task_id": null,
+            "task_number": null,
+            "task_name": "Foundation Work",
+            "item_number": null,
+            "item_description": "Cement Bag",
+            "quantity": 10,
+            "uom": "Each",
+            "po_number": "701836",
+            "supplier": "Lee Supplies",
+            "workorder_number": "OAK1169",
+            "comments": "Mark as Planned"
+        },
+        {
+            "material_req_id": 1,
+            "project_id": 12345,
+            "project_number": "PN-2025-001",
+            "project_name": "New Manufacturing Plant",
+            "task_id": 67890,
+            "task_number": "T-001",
+            "task_name": "Foundation Work",
+            "item_number": "ITEM98765",
+            "item_description": "High-strength Concrete Mix",
+            "quantity": 100,
+            "uom": "Cubic Meters",
+            "po_number": "PO-456789",
+            "supplier": "ABC Construction Supplies Ltd.",
+            "workorder_number": "WO-2025-321",
+            "comments": "Urgent delivery required before end of July"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 2,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_MaterialProject?p_project_id=12345"
+        },
+        {
+            "rel": "edit",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_MaterialProject?p_project_id=12345"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_MaterialProject?p_project_id=12345"
+        }
+    ]
+}

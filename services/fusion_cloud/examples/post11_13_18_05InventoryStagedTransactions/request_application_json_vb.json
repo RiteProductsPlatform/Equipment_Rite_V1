@@ -1,0 +1,26 @@
+{      
+    "OrganizationName": "MMX INDIA MANUFACTURING",
+    "ItemNumber": "Battery LIION",
+    "TransactionTypeName":"Project Material  Issue",
+    "TransactionQuantity": "-3",
+    "TransactionUnitOfMeasure": "Ea",
+    "TransactionDate": "2025-07-31",
+    "SubinventoryCode": "STORES",
+    "AccountCombination":"5002.000.000.1000.60540.P0000.5001.5002.0000",
+    "UseCurrentCostFlag":"Y",
+    "TransactionMode":"2",
+    "SourceCode":"201",
+    "SourceLineId":"201",
+    "SourceHeaderId":"201",
+    "projectCostingDFFs":[
+    {
+    "__FLEX_Context": "INV_Misc_Transactions",
+    "__FLEX_Context_DisplayValue": "INV: Misc. Transactions",
+    "_PROJECT_ID_Display": "10025",
+    "_TASK_ID_Display": "2",
+    "_EXPENDITURE_ITEM_DATE": "2025-07-31",
+    "_EXPENDITURE_TYPE_ID_Display": "1003 - Engineering Services OT",
+    "_ORGANIZATION_ID_Display": "MMX-Operational Services"
+    }
+]
+}

@@ -1,0 +1,49 @@
+{
+    "roleMapping": {
+        "idcsHostUrl": "https://idcs-7fbc55daef0342fd8c0a302c5afb14f9.identity.oraclecloud.com:443",
+        "roles": {
+            "Equipment_Manager": {
+                "base_configuration": {
+                    "users": [ ],
+                    "groups": [ ]
+                }
+            },
+            "Administrator": {
+                "base_configuration": {
+                    "users": [ ],
+                    "groups": [ ]
+                }
+            },
+            "Project_Reviewer": {
+                "base_configuration": {
+                    "users": [ ],
+                    "groups": [ ]
+                }
+            },
+            "Approver": {
+                "base_configuration": {
+                    "users": [ ],
+                    "groups": [ ]
+                }
+            },
+            "Timekeeper": {
+                "base_configuration": {
+                    "users": [ ],
+                    "groups": [ ]
+                }
+            },
+            "AdminRole": {
+                "base_configuration": {
+                    "users": [ ],
+                    "groups": [ ]
+                }
+            },
+            "Requestor": {
+                "base_configuration": {
+                    "users": [ ],
+                    "groups": [ ]
+                }
+            }
+        }
+    }
+}

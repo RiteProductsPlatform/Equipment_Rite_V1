@@ -1,0 +1,126 @@
+{
+  "success"   : true,
+  "resources" : {
+    "rows" : [
+      {
+        "id"         : "a",
+        "name"       : "JCB 1B240",       
+        "eventColor" : "blue"
+      },
+      {
+        "id"         : "b",
+        "name"       : "Forklift 2A30004",     
+        "eventColor" : "blue"
+      },
+      {
+        "id"         : "c",
+        "name"       : "Telehandler 9B4005 ",      
+        "eventColor" : "orange"
+      },
+      {
+        "id"         : "d",
+        "name"       : "Bulldozer 5CV005",  
+        "eventColor" : "green"
+      },
+      {
+        "id"         : "e",
+        "name"       : "Skid Steer Loader 1B4007",      
+        "eventColor" : "orange"
+      },
+      {
+        "id"         : "f",
+        "name"       : "Backhoe Loader  78B008 ",       
+        "eventColor" : "blue"
+      },
+      {
+        "id"         : "g",
+        "name"       : "Excavator 5000AC",       
+        "eventColor" : "green"
+      },
+      {
+        "id"         : "h",
+        "name"       : "Feller Buncher 45BAL3",       
+        "eventColor" : "blue"
+      },
+      {
+        "id"         : "i",
+        "name"       : "Trencher AD0098",       
+        "eventColor" : "orange"
+      },
+        {
+        "id"         : "j",
+        "name"       : "Off-Highway Truck BA900A",       
+        "eventColor" : "green"
+      }
+    ]
+  },
+  "events" : {
+    "rows" : [
+      {
+        "id"         : 1,
+        "resourceId" : "a",
+        "hours"       : "8",
+        "startDate"  : "2024-01-01 00:00",
+        "endDate"    : "2024-01-01 24:00"
+      },
+      {
+        "id"         : 2,
+        "resourceId" : "a",
+        "hours"       : "8",
+        "startDate"  : "2024-01-02 00:00",
+        "endDate"    : "2024-01-02 24:00"
+      },
+     {
+        "id"         : 3,
+        "resourceId" : "a",
+        "hours"       : "8",
+        "startDate"  : "2024-01-03 00:00",
+        "endDate"    : "2024-01-03 24:00"
+      },
+      {
+        "id"         : 4,
+        "resourceId" : "a",
+        "hours"       : "8",
+        "startDate"  : "2024-01-04 00:00",
+        "endDate"    : "2024-01-04 24:00"
+      },
+        {
+        "id"         : 5,
+        "resourceId" : "b",
+        "hours"       : "8",
+        "startDate"  : "2024-01-01 00:00",
+        "endDate"    : "2024-01-01 24:00"
+      },
+      {
+        "id"         : 6,
+        "resourceId" : "b",
+        "hours"       : "8",
+        "startDate"  : "2024-01-02 00:00",
+        "endDate"    : "2024-01-02 24:00"
+      },
+     {
+        "id"         : 7,
+        "resourceId" : "b",
+        "hours"       : "8",
+        "startDate"  : "2024-01-03 00:00",
+        "endDate"    : "2024-01-03 24:00"
+      },
+      {
+        "id"         : 8,
+        "resourceId" : "b",
+        "hours"       : "8",
+        "startDate"  : "2024-01-04 00:00",
+        "endDate"    : "2024-01-04 24:00"
+      }
+    ]
+  },
+  "timeRanges" : {
+    "rows" : [
+      {
+        "id"        : 1,
+        "startDate" : "2017-02-07 11:00",
+        "endDate"   : "2017-02-07 12:00"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "customer-workbench",
+  "description": "Flow main",
+  "defaultPage": "customer-workbench-start",
+  "services": {},
+  "types": {},
+  "variables": {}
+}

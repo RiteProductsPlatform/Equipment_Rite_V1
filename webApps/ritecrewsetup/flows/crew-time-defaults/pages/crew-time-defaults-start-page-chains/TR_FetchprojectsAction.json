@@ -1,0 +1,88 @@
+{
+  "root": "callRestGetGetProjectDetails",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "failed to fetch Projects",
+        "type": "error",
+        "displayMode": "transient"
+      }
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callRestGetGetProjectDetails.body.items.length >0 ]]"
+      },
+      "outcomes": {
+        "true": "resetVariablesProjectsTblADP",
+        "false": "fireNotification3"
+      }
+    },
+    "assignVariablesProjectsTblADP": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.ProjectsTblADP": {
+          "source": {
+            "data": "{{ $chain.results.callRestGetGetProjectDetails.body.items }}"
+          },
+          "reset": "none",
+          "auto": "always",
+          "mapping": {
+            "$target.data": {
+              "source": "$source.data",
+              "reset": "empty"
+            }
+          }
+        },
+        "$page.variables.varTabSelection": {
+          "source": "Projects"
+        }
+      }
+    },
+    "fireNotification3": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "No projects Details found",
+        "displayMode": "transient"
+      }
+    },
+    "callRestGetGetProjectDetails": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getGetProjectDetails",
+        "uriParams": {
+          "contract_id": "{{ $page.variables.RowData.contract_id }}"
+        }
+      },
+      "outcomes": {
+        "success": "if",
+        "failure": "fireNotification"
+      }
+    },
+    "resetVariablesProjectsTblADP": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.ProjectsTblADP"
+        ]
+      },
+      "outcomes": {
+        "success": "callComponentProjectDetailsRefresh"
+      }
+    },
+    "callComponentProjectDetailsRefresh": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('project_details') }}",
+        "method": "refresh"
+      },
+      "outcomes": {
+        "success": "assignVariablesProjectsTblADP"
+      }
+    }
+  }
+}

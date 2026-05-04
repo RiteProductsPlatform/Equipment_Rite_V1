@@ -1,0 +1,148 @@
+{
+    "items": [
+        {
+            "eqp_app_maintenance_id": 1,
+            "code": "EQP_CLASS",
+            "meaning": "CONSUMABLES",
+            "description": "CONSUMABLES",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T00:00:00Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T00:00:00Z"
+        },
+        {
+            "eqp_app_maintenance_id": 2,
+            "code": "EQP_CLASS",
+            "meaning": "BULK ITEMS",
+            "description": "BULK ITEMS",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T00:00:00Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T00:00:00Z"
+        },
+        {
+            "eqp_app_maintenance_id": 3,
+            "code": "EQP_CLASS",
+            "meaning": "ROV",
+            "description": "ROV",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T00:00:00Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T00:00:00Z"
+        },
+        {
+            "eqp_app_maintenance_id": 4,
+            "code": "EQP_CLASS",
+            "meaning": "FLEET TRUCK",
+            "description": "FLEET TRUCK",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T00:00:00Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T00:00:00Z"
+        },
+        {
+            "eqp_app_maintenance_id": 5,
+            "code": "EQP_CLASS",
+            "meaning": "CONSTRUCTION",
+            "description": "CONSTRUCTION",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T00:00:00Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T00:00:00Z"
+        },
+        {
+            "eqp_app_maintenance_id": 6,
+            "code": "EQP_CLASS",
+            "meaning": "SMALL TOOLS",
+            "description": "SMALL TOOLS",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T00:00:00Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T00:00:00Z"
+        },
+        {
+            "eqp_app_maintenance_id": 7,
+            "code": "EQP_CLASS",
+            "meaning": "CRAWLER CRANE",
+            "description": "CRAWLER CRANE",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T00:00:00Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T00:00:00Z"
+        },
+        {
+            "eqp_app_maintenance_id": 8,
+            "code": "EQP_CLASS",
+            "meaning": "EXCAVATOR",
+            "description": "EXCAVATOR",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T00:00:00Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T00:00:00Z"
+        },
+        {
+            "eqp_app_maintenance_id": 9,
+            "code": "EQP_CLASS",
+            "meaning": "HEAVY HAULING",
+            "description": "HEAVY HAULING",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T00:00:00Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T00:00:00Z"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 9,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.153.205.79:8080/ords/xxeq_oii/EquipmentRite/EqpRite_EqpClass"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.153.205.79:8080/ords/xxeq_oii/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.153.205.79:8080/ords/xxeq_oii/EquipmentRite/EqpRite_EqpClass"
+        }
+    ]
+}

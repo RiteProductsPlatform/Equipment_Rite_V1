@@ -1,0 +1,268 @@
+{
+    "items": [
+        {
+            "equipment_name": "Welding Lead 50' ",
+            "non_labor_resource": "Welding Machine-1123",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 2
+        },
+        {
+            "equipment_name": "Ford F250 Super Duty",
+            "non_labor_resource": "Fleet Truck-2 Ton",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "eNovus ROV",
+            "non_labor_resource": "eNovus ROV",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Scaffolding Pipes",
+            "non_labor_resource": "Bulk Items",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "ROV",
+            "non_labor_resource": "51",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Caterpillar 1 ton Rack Truck 725",
+            "non_labor_resource": "Heavy Hauling",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Magnum Plus ROV",
+            "non_labor_resource": "Magnum Plus ROV",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Manitowoc Crawler Crane MLC80A-1",
+            "non_labor_resource": "Crawler Crane",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Manitowoc Crawler Crane MLC90A-1",
+            "non_labor_resource": "Crawler Crane",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Timber Mats 8 inch",
+            "non_labor_resource": "Timber Mats",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Crawler Crane Counterweights",
+            "non_labor_resource": "Crawler Crane",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Ryobi 18 V Battery Operated Brushless Drill ONE+",
+            "non_labor_resource": "Screw Driver-1678",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Mack Bucket Truck #25501",
+            "non_labor_resource": "Construction",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Isurus ROV",
+            "non_labor_resource": "Isurus ROV",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Mack Cement Mixer #9901",
+            "non_labor_resource": "Construction",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Torque Wrenches",
+            "non_labor_resource": "Small Tools",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "1366x768 STD Resolution Monitor",
+            "non_labor_resource": "Nexxus ROV",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Duct Tape 3M",
+            "non_labor_resource": "Construction",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Green Server 2000",
+            "non_labor_resource": "Lab Equipment",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Pickaxe-12CP",
+            "non_labor_resource": "Small Tools",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Extension Cords 50' Heavy Duty",
+            "non_labor_resource": "Electric Tools-1446",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 2
+        },
+        {
+            "equipment_name": "Protective Gloves (US)",
+            "non_labor_resource": "Bulk Items",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Caterpillar Excavator 336 Two Bucket",
+            "non_labor_resource": "Excavator",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Nexxus ROV",
+            "non_labor_resource": "Nexxus ROV",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Isuzu Giga 20CBM Dump Truck",
+            "non_labor_resource": "Heavy Hauling",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Ultra Z17 Laptop",
+            "non_labor_resource": "Heavy Vehicles",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Ultra TEST000",
+            "non_labor_resource": "Heavy Vehicles",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Manitowac Crawler Crane MLC80A-1",
+            "non_labor_resource": "Crawler Crane",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Ford F150 Crew Cab",
+            "non_labor_resource": "Fleet Truck-2 Ton",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 4
+        },
+        {
+            "equipment_name": "Timber Mats 12 inch",
+            "non_labor_resource": "Timber Mats",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Manitowac Crawler Crane MLC90A-1",
+            "non_labor_resource": "Crawler Crane",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 3
+        },
+        {
+            "equipment_name": "Mack Truck #25502",
+            "non_labor_resource": "Construction",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Stringing Hydraulic Puller tensioner",
+            "non_labor_resource": "Construction",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Cargo Truck #44734",
+            "non_labor_resource": "Construction",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Ryobi 18 V Battery Operated Brushless Drill ONE+",
+            "non_labor_resource": "Electric Tools-1446",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Caterpillar Excavator 336-2 Two Bucket",
+            "non_labor_resource": "Excavator",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Freedom ROV",
+            "non_labor_resource": "Freedom ROV",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Mack Bucket Truck #25503",
+            "non_labor_resource": "Construction",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Pickup Truck #11887",
+            "non_labor_resource": "Construction",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Aluminium Fence",
+            "non_labor_resource": "Bulk Items",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        },
+        {
+            "equipment_name": "Ultra TEST123",
+            "non_labor_resource": "Heavy Vehicles",
+            "non_labor_resource_org": "OAK_PPM",
+            "equipment_count": 1
+        }
+    ],
+    "hasMore": false,
+    "limit": 500,
+    "offset": 0,
+    "count": 41,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/requestNamesLOV"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/requestNamesLOV"
+        }
+    ]
+}

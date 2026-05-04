@@ -1,0 +1,601 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value="CrewTime Default"></oj-vb-fragment-param>
+</oj-vb-fragment>
+<header role="banner" class="oj-sm-flex-initial vb-web-applayout-header oj-md-hide">
+  <div role="image" class="vb-web-applayout-header-image-stripe"></div>
+  <div class="oj-flex-bar oj-sm-align-items-center vb-web-applayout-header-content">
+    <oj-bind-if test="[[ document.querySelector('oj-vb-fragment[name=\'shell-drawer\']') ]]">
+      <div class="oj-flex-bar">
+        <oj-button on-oj-action="[[$listeners.toggleDrawer]]" chroming="borderless" display="icons">
+          <span slot="startIcon" class="oj-ux-ico-menu"></span>
+          <span><oj-bind-text value="[[$application.translations.app.app_title_navigation_drawer]]"></oj-bind-text></span>
+        </oj-button>
+      </div>
+    </oj-bind-if>
+    <div class="oj-sm-margin-2x-horizontal oj-sm-align-items-center oj-md-hide oj-sm-flex-1">
+      <div class="vb-content-header oj-flex oj-sm-flex-items-initial oj-sm-align-items-center">
+        <div class="oj-flex-item">
+          <div class="oj-typography-body-lg oj-typography-semi-bold">
+            <oj-bind-text value="Project-Contract Setup"></oj-bind-text>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="oj-flex">
+  <div class="oj-panel oj-flex-item oj-sm-12 oj-md-12 oj-panel-shadow-lg">
+    <!-- <div class="oj-flex-item oj-flex oj-sm-justify-content-center" style="width:100%">
+      <span class="mainheadingclass">CrewTime Default</span>
+    </div> -->
+    <div class="oj-flex-item oj-flex oj-sm-margin-3x-top " style="width:100%">
+      <div class="oj-flex-item oj-sm-flex-items-initial">
+        <oj-form-layout max-columns="6" direction="row" label-edge="top" columns="6">
+          <oj-select-single label-hint="Customer Names" data="[[$variables.getSetUpCustomerDetailsListSDP]]"
+            item-text="customer_name" value="{{ $variables.searchCustomer }}"
+            on-value-item-changed="[[$listeners.selectValueItem3]]">
+          </oj-select-single>
+          <oj-input-text label-hint="Customer Number" disabled="true"
+            value="{{ $variables.custDetailsObj.customer_number }}">
+          </oj-input-text>
+          <div class="oj-flex-item oj-flex oj-sm-margin-4x-top oj-sm-flex-direction-row">
+            <div class="oj-flex-item oj-sm-margin-2x-end oj-sm-flex-initial">
+              <oj-button class="oj-button-sm" chroming="callToAction" on-oj-action="[[$listeners.buttonAction]]">
+                <span class="oj-ux-ico-information-s" slot="startIcon"></span>
+              </oj-button>
+            </div>
+
+          </div>
+        </oj-form-layout>
+      </div>
+    </div>
+    <div class="oj-flex-item oj-flex" style="width:100%">
+      <div class="oj-flex-item oj-sm-align-self-center">
+        <span class="subheadings">Customer Work Week Details</span>
+      </div>
+      <div class="oj-flex-item oj-flex oj-sm-justify-content-flex-end">
+        <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-end">
+          <oj-button label="Submit" chroming="callToAction" class="oj-button-sm"
+            on-oj-action="[[$listeners.buttonAction15]]">
+          </oj-button>
+        </div>
+        <div class="oj-flex-item oj-sm-flex-initial">
+          <oj-button label="Cancel" chroming="callToAction" class="oj-button-sm">
+          </oj-button>
+        </div>
+      </div>
+    </div>
+    <oj-validation-group id="defaultvalidation">
+      <div class="oj-flex-item oj-sm-margin-2x-top" style="width:100%">
+        <oj-form-layout class="oj-formlayout-full-width" max-columns="6" direction="row" label-edge="top" columns="6">
+
+          <oj-select-single label-hint="Week Start Day" value="{{ $variables.custDetailsObj.week_start_day }}" :title='[[ $application.variables.HelpEnabled ? "Select Week Start Day" : "" ]]'
+            data="[[ $variables.WeekdaysADP ]]" item-text="day" on-value-item-changed="[[$listeners.selectValueItem6]]">
+          </oj-select-single>
+          <oj-select-single label-hint="Week End Day" data="[[ $variables.WeekdaysADP ]]" item-text="day" :title='[[ $application.variables.HelpEnabled ? "Select Week End Day" : "" ]]'
+            value="{{ $variables.custDetailsObj.week_end_day }}"
+            disabled="[[ !$variables.custDetailsObj.week_start_day ]]"
+            on-value-item-changed="[[$listeners.selectValueItem5]]"></oj-select-single>
+          <oj-input-number label-hint="No of Days" value="{{ $variables.custDetailsObj.no_of_days }}" :title='[[ $application.variables.HelpEnabled ? "Enter Number Days" : "" ]]'>
+          </oj-input-number>
+          <oj-input-text label-hint="Start Time" aria-label="monin" value="{{ $variables.custDetailsObj.start_time }}" :title='[[ $application.variables.HelpEnabled ? "Enter Start Time" : "" ]]'
+            validators="{{ $application.functions.validateText() }}" required="true">
+          </oj-input-text>
+          <oj-input-text label-hint="End Time" aria-label="monin" value="{{ $variables.custDetailsObj.end_time }}" :title='[[ $application.variables.HelpEnabled ? "Enter End time" : "" ]]'
+            validators="{{ $application.functions.validateText() }}" required="true">
+          </oj-input-text>
+          <div class="oj-flex-item oj-flex">
+            <div class="oj-flex-item oj-sm-margin-2x-end">
+              <oj-label>Equipment Module</oj-label>
+              <oj-switch label-hint="Equipment Module" value="{{ $variables.custDetailsObj.equipment_module}}" :title='[[ $application.variables.HelpEnabled ? "Check Equipment module" : "" ]]'>
+              </oj-switch>
+            </div>
+            <div class="oj-flex-item oj-sm-margin-2x-end">
+              <oj-label>Material Usage</oj-label>
+              <oj-switch label-hint="Material Usage" value="{{ $variables.custDetailsObj.material_usage }}" :title='[[ $application.variables.HelpEnabled ? "Check Material Usage" : "" ]]'></oj-switch>
+            </div>
+          </div>
+        </oj-form-layout>
+      </div>
+      <div class="oj-flex-item" style="width:100%">
+        <span class="subheadings">Customer Work Schedule Details</span>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top" style="width:100%">
+        <oj-form-layout class="oj-formlayout-full-width" max-columns="6" direction="row" label-edge="top" columns="6">
+          <oj-select-single label-hint="OT Threshold Measure" :title='[[ $application.variables.HelpEnabled ? "Select threshold Measure" : "" ]]'
+            value="{{ $variables.custDetailsObj.ot_threshold_measure }}" data="[[ $variables.threshholdMeasureADP ]]"
+            item-text="measure" required="true" on-value-item-changed="[[$listeners.selectValueItem4]]">
+          </oj-select-single>
+
+          <oj-input-text label-hint="OT Threshold Limit" value="{{ $variables.custDetailsObj.ot_threshold_limit }}" :title='[[ $application.variables.HelpEnabled ? "Enter Ot threshold limit" : "" ]]'
+            required="true">
+          </oj-input-text>
+          <oj-select-single label-hint='Billing Frequency' value="{{ $variables.custDetailsObj.billing_frequency }}" :title='[[ $application.variables.HelpEnabled ? "Select biling Frequency" : "" ]]'
+            data="[[ $variables.billingFrequencyADP ]]" item-text="frequency" required="true">
+          </oj-select-single>
+
+          <oj-select-single label-hint="Client ERP System" value="{{ $variables.custDetailsObj.client_erp_system }}"
+            item-text="value" data="[[ $variables.ERPSystemADP ]]" required="true" :title='[[ $application.variables.HelpEnabled ? "Select Client ERP System" : "" ]]'>
+          </oj-select-single>
+
+          <oj-input-date label-hint="Effective Start Date" value="{{ $variables.custDetailsObj.effective_start_date }}" :title='[[ $application.variables.HelpEnabled ? "Select Effective Start Date" : "" ]]'
+            converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}' required="true"
+            max="[[ $variables.custDetailsObj.effective_end_date ]]" >
+          </oj-input-date>
+          <oj-input-date label-hint="Effective End Date" value="{{ $variables.custDetailsObj.effective_end_date }}" :title='[[ $application.variables.HelpEnabled ? "Select Effective End Date" : "" ]]'
+            converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}' required="true"  min="[[ $variables.custDetailsObj.effective_start_date ]]" >
+          </oj-input-date>
+          <oj-switch label-hint="OT Allowed" value="{{ $variables.custDetailsObj.ot_allowed }}" :title='[[ $application.variables.HelpEnabled ? "Chjeck Ot Allowed" : "" ]]'></oj-switch>
+          <oj-switch label-hint="Time card Approval Flag"
+            value="{{ $variables.custDetailsObj.time_card_apr_req_flag }}">
+          </oj-switch>
+          <oj-switch label-hint="Timecard Collation (for Invoicing)" :title='[[ $application.variables.HelpEnabled ? "Check TimeCard Collation" : "" ]]'
+            value="{{ $variables.custDetailsObj.timecard_collation }}">
+          </oj-switch>
+          <oj-switch label-hint="Timecard Balancing" value="{{ $variables.custDetailsObj.timecard_balancing }}" :title='[[ $application.variables.HelpEnabled ? "Check time card Balancing" : "" ]]'>
+          </oj-switch>
+          <oj-switch label-hint="Active Flag" value="{{ $variables.custDetailsObj.active_flag }}" :title='[[ $application.variables.HelpEnabled ? "Check Active Flag" : "" ]]'></oj-switch>
+          <oj-switch label-hint="Client ERS Enabled" value="{{ $variables.custDetailsObj.client_ers_enabled }}" :title='[[ $application.variables.HelpEnabled ? "Select C;lient ERS Enable" : "" ]]'>
+          </oj-switch>
+        </oj-form-layout>
+      </div>
+      <!-- 
+    </oj-collapsible>
+    <oj-collapsible class="oj-flex-item oj-sm-12 oj-md-12" expanded="true">
+      <h6 class="oj-header" slot="header">Customer Additional Info</h6> -->
+      <div class="oj-flex-item" style="width:100%">
+        <span class="subheadings">Customer Additional Info</span>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top" style="width:100%">
+        <oj-form-layout class="oj-formlayout-full-width" max-columns="6" direction="row" label-edge="top" columns="6">
+
+          <oj-select-single label-hint="Per Diem" value="{{ $variables.custDetailsObj.per_diem }}" item-text="value" :title='[[ $application.variables.HelpEnabled ? "Select Per Diem" : "" ]]'
+            data="[[ $variables.YesorNoADP ]]" required="true">
+          </oj-select-single>
+          <oj-input-number label-hint="Per Diem hours" value="{{ $variables.custDetailsObj.per_diem_hours }}" min="4" :title='[[ $application.variables.HelpEnabled ? "Enter per Deim Hours" : "" ]]'
+            max="8" required="true">
+          </oj-input-number>
+
+          <oj-select-single label-hint="Bonus" value="{{ $variables.custDetailsObj.bonus }}" item-text="value" :title='[[ $application.variables.HelpEnabled ? "Select Bonus" : "" ]]'
+            data="[[ $variables.YesorNoADP ]]" required="true">
+          </oj-select-single>
+          <oj-select-single label-hint="Safety Bonus" value="{{ $variables.custDetailsObj.safety_bonus }}" :title='[[ $application.variables.HelpEnabled ? "Select Safety Bonmus" : "" ]]'
+            item-text="value" data="[[ $variables.YesorNoADP ]]" required="true">
+          </oj-select-single>
+
+        </oj-form-layout>
+      </div>
+    </oj-validation-group>
+
+    <!-- </oj-collapsible> -->
+
+    <div class="oj-flex oj-sm-margin-2x-top">
+      <oj-button chroming="borderless" class="oj-button-sm"><a href="#" on-click="[[$listeners.hyperlinkClick2]]"
+          :class='[[ $variables.varTabSelection === "Contracts" ? "anchoreselect" : "anchore" ]]'>Contracts</a>
+      </oj-button>
+      <oj-button chroming="borderless" class="oj-button-sm"><a href="#"
+          :class='[[ $variables.varTabSelection === "Projects" ? "anchoreselect" : "anchore" ]]'>Projects</a>
+      </oj-button>
+    </div>
+
+
+    <oj-switcher value="[[$variables.varTabSelection]]" id="oj-switcher--1896815765-2">
+
+
+      <div slot="Contracts" id="Contracts-tabbar" aria-labelledby="oj-tab-bar--1896815765-2-tab-1-tab" role="tabpanel">
+        <div class="oj-flex">
+          <oj-table scroll-policy="loadMoreOnScroll" display="grid" style="width:92vw"
+            class="oj-flex-item oj-sm-flex-initial" data="[[ $variables.contractsADP ]]" display="grid"
+            columns-default.sortable="disabled" id="contract_details" columns='[
+                        {"headerText":"Contract Number","field":"contract_number","template":"Contract Number"},
+                        {"headerText":"Contract ID","field":"contract_id"},
+                        {"headerText":"Week Start Day","field":"week_start_day"},
+                        {"headerText":"Week End Day","field":"week_end_day"},
+                        {"headerText":"Days","field":"no_of_days"},
+                        {"headerText":"OT Allowed","field":"ot_allowed","template":"SwitchTemplate"},
+                        {"headerText":"OT Threshold Measure","field":"ot_threshold_measure"},
+                        {"headerText":"OT Threshold Limit","field":"ot_threshold_limit"},
+                        {"headerText":"Active","field":"active_flag","template":"SwitchTemplate"},
+                        {"headerText":"OT Shift Name","field":"ot_shift_name"},
+                                   {"headerText":"Effective Start Date","field":"effective_start_date","template":"dateformattor"},
+                        {"headerText":"Effective End Date","field":"effective_end_date","template":"dateformattor"},
+                        {"headerText":"Per Diem","field":"per_diem"},
+                        {"headerText":"Bonus","field":"bonus"},
+                        {"headerText":"Safety Bonus","field":"safety_bonus"},
+                        {"headerText":"Edit","template":"customTemplate1"},
+			                  {"headerText":"Default","template":"customTemplate"}]'>
+            <template slot="Contract Number">
+              <a target="_blank" class="oj-link" on-click="[[$listeners.hyperlinkClick]]">
+                <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+              </a>
+            </template>
+            <template slot="dateformattor">
+              <oj-input-date value='[[typeof $current.data === "string" ? $current.data : null]]' readonly="true"
+                style="margin-bottom: -5px;" converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}'>
+              </oj-input-date>
+            </template>
+            <template slot="customTemplate1">
+              <span  aria-label="Other Info" class="oj-ux-ico-edit" style="font-size:18px;font-weight:bold;margin-left:8px"  on-click="[[$listeners.iconClick]]"></span>
+
+            </template>
+            <template slot="customTemplate">
+              <span aria-label="Default from Customer" class="oj-ux-ico-default-view"
+                style="font-size:18px;font-weight:bold;margin-left:8px" on-click="[[$listeners.iconClick2]]"></span>
+            </template>
+
+
+            <template slot="SwitchTemplate">
+              <oj-bind-if test="[[ $current.data === true ]]">
+                <span class="oj-ux-ico-check" style="color:green;font-size:18px;font-weight:bold;margin-left:8px"></span>
+              </oj-bind-if>
+              <oj-bind-if test="[[ $current.data === false || $current.data === null ]]">
+                <span class="oj-ux-ico-cancel-square" style="color:red;font-size:18px;font-weight:bold;margin-left:8px"></span>
+              </oj-bind-if>
+            </template>
+          </oj-table>
+        </div>
+      </div>
+
+
+      <div slot="Projects" id="Projects-tabbar" aria-labelledby="oj-tab-bar--1896815765-2-tab-2-tab" role="tabpanel">
+        <div class="oj-flex">
+
+          <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-flex-initial"
+            data="[[ $variables.ProjectsTblADP ]]" display="grid" columns-default.sortable="disabled" columns='[
+                        {"headerText":"Project Name","field":"project_name"},
+                        {"headerText":"Project Number","field":"projec_number"},
+                        {"headerText":"Week Start Day","field":"week_start_day"},
+                        {"headerText":"Week End Day","field":"week_end_day"},
+                        {"headerText":"No Of Days","field":"no_of_days"},
+                        {"headerText":"OT Allowed","field":"ot_allowed","template":"otallowed"},
+                        {"headerText":"OT Threshold Measure","field":"ot_threshold_measure"},
+                        {"headerText":"OT Threshold Limit","field":"ot_threshold_limit"},
+                        {"headerText":"Active","field":"active_flag","template":"otallowed"},
+                        {"headerText":"OT Shift Name","field":"ot_shift_name"},
+                               {"headerText":"PER_DIEM","field":"per_diem"},
+                        {"headerText":"Bonus","field":"bonus"},
+                        {"headerText":"Safety Bonus","field":"safety_bonus"},
+                        {"headerText":"Effective Start Date","field":"effective_start_date","template":"dateformattor"},
+                        {"headerText":"Effective End Date","field":"effective_end_date","template":"dateformattor"},
+                        {"headerText":"Edit","template":"customTemplate1","sortable":"disbled"},
+                        {"headerText":"Default","template":"customTemplate"}]' id="project_details">
+            <template slot="customTemplate1">
+              <!-- <oj-button class="oj-button-sm" display="icons" aria-label="Other Info"
+                on-oj-action="[[$listeners.buttonAction10]]">
+                <span class="oj-ux-ico-edit" slot="startIcon" aria-label="Other Info"></span>
+              </oj-button> -->
+              <span class="oj-ux-ico-edit" style="font-size:18px;font-weight:bold" aria-label="Other Info"
+                on-click="[[$listeners.iconClick3]]"></span>
+            </template>
+            <template slot="dateformattor">
+              <oj-input-date value='[[typeof $current.data === "string" ? $current.data : null]]' readonly="true"
+                style="margin-bottom: -5px;" class="comp"
+                converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}'></oj-input-date>
+            </template>
+            <template slot="otallowed">
+              <oj-bind-if test="[[ $current.data === true ]]">
+                <span class="oj-ux-ico-check" style="color:green;font-size:18px;font-weight:bold;margin-left:8px"></span>
+              </oj-bind-if>
+              <oj-bind-if test="[[ $current.data === false || $current.data === null ]]">
+                <span class="oj-ux-ico-cancel-square" style="color:red;font-size:18px;font-weight:bold;margin-left:8px"></span>
+              </oj-bind-if>
+            </template>
+            <template slot="customTemplate">
+              <!-- <oj-button label="Default from Customer" class="oj-button-sm" display="icons"
+                aria-label="Default from Customer" on-oj-action="[[$listeners.buttonAction18]]">
+                <span slot="startIcon" aria-label="Default from Customer" class="oj-ux-ico-default-view"></span>
+              </oj-button> -->
+              <span aria-label="Default from Customer" style="font-size:18px;font-weight:bold"
+                class="oj-ux-ico-default-view" on-click="[[$listeners.iconClick4]]"></span>
+            </template>
+          </oj-table>
+        </div>
+      </div>
+    </oj-switcher>
+
+
+  </div>
+</div>
+
+
+
+
+<oj-dialog dialog-title="Customer Details" id="custdetails" style="width: 30vw; height:55vh;" cancel-behavior="icon">
+  <div slot="body">
+    <div class="oj-flex oj-sm-flex-direction-column">
+      <div class="oj-flex-item  oj-sm-margin-5x-top" style="">
+        <span class="subheadings">Customer Details</span>
+      </div>
+    </div>
+    <div class="oj-flex-item  oj-sm-margin-5x-top">
+      <oj-form-layout class="oj-formlayout-full-width" max-columns="2" label-edge="top" columns="2">
+
+        <oj-input-text label-hint="Number" class="oj-flex-item" value="{{ $variables.custDetailsObj.customer_number }}" :title='[[ $application.variables.HelpEnabled ? "Enter Customer number" : "" ]]'
+          readonly="true"></oj-input-text>
+        <oj-input-text label-hint="Name" class="oj-flex-item" value="{{ $variables.custDetailsObj.customer_name }}" :title='[[ $application.variables.HelpEnabled ? "Enter Customer Name" : "" ]]'
+          readonly="true"></oj-input-text>
+        <oj-input-text label-hint="Email" class="oj-flex-item"  :title='[[ $application.variables.HelpEnabled ? "Enter Email" : "" ]]'
+          value="{{ $variables.custDetailsObj.customer_email_address }}" readonly="true"></oj-input-text>
+        <oj-input-text label-hint="Mobile" class="oj-flex-item" :title='[[ $application.variables.HelpEnabled ? "Enter Mobile Number" : "" ]]'
+          value="{{ $variables.custDetailsObj.customer_mobile_number }}" readonly="true"></oj-input-text>
+        <oj-input-text label-hint="PO Number" class="oj-flex-item" value="{{ $variables.custDetailsObj.po_number }}" :title='[[ $application.variables.HelpEnabled ? "Enter po Number" : "" ]]'
+          readonly="true"></oj-input-text>
+        <oj-input-number label-hint="Quantity" class="oj-flex-item" value="{{ $variables.custDetailsObj.quantity }}" :title='[[ $application.variables.HelpEnabled ? "Enter Quantity" : "" ]]'
+          readonly="true"></oj-input-number>
+        <oj-input-text label-hint="PO Start Date" class="oj-flex-item" :title='[[ $application.variables.HelpEnabled ? "Enter Po Start Date" : "" ]]'
+          value="{{ $variables.custDetailsObj.po_start_date }}" readonly="true"></oj-input-text>
+        <oj-input-text label-hint="PO End Date" class="oj-flex-item" value="{{ $variables.custDetailsObj.po_end_date }}" :title='[[ $application.variables.HelpEnabled ? "Enter Po End Date" : "" ]]'
+          readonly="true"></oj-input-text>
+      </oj-form-layout>
+    </div>
+    <div class="oj-flex-item oj-flex oj-sm-justify-content-flex-end">
+      <oj-button label="Close" on-oj-action="[[$listeners.buttonAction14]]" chroming="callToAction"
+        class="oj-button-sm"></oj-button>
+    </div>
+  </div>
+
+
+
+
+</oj-dialog>
+
+<oj-dialog dialog-title="Customer List" id="custSearch" style="width: 30vw; height: 30vh;" cancel-behavior="icon">
+  <div slot="body">
+    <div class="oj-flex oj-sm-flex-direction-column ">
+      <div class="oj-flex-item oj-sm-margin-5x-top">
+        <span style="font-size:18px;color:#006AA2;font-weight:600">Customer List</span>
+      </div>
+
+      <div class="oj-flex-item oj-sm-margin-2x-top">
+        <oj-table scroll-policy="loadMoreOnScroll" data="[[ $variables.varCustomerADP ]]" columns='[{"headerText":"Customer Number","field":"CUSTOMER_NUMBER"},
+          {"headerText":"Customer Name","field":"CUSTOMER_NAME"}]' class="" display="grid"
+          on-first-selected-row-changed="[[$listeners.tableFirstSelectedRow]]" selection-mode.row="single"></oj-table>
+      </div>
+    </div>
+  </div>
+  <div class="oj-flex oj-sm-flex-direction-row">
+    <div class="oj-flex-item oj-flex oj-sm-justify-content-flex-end">
+      <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-end">
+        <oj-button label="Select" class="oj-button-sm" chroming="callToAction"
+          on-oj-action="[[$listeners.buttonAction3]]">
+        </oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-flex-initial">
+        <oj-button label="Cancel" class="oj-button-sm" chroming="callToAction"
+          on-oj-action="[[$listeners.buttonAction6]]">
+        </oj-button>
+      </div>
+    </div>
+  </div>
+
+
+</oj-dialog>
+<oj-dialog dialog-title="Loading.." id="loadingDialog" class="" style="width: 230px; height: 80px;"
+  cancel-behavior="icon">
+  <div slot="body">
+    <div class="oj-flex-item oj-sm-margin-5x-top">
+      <span style="font-size:18px;color:#006AA2;font-weight:600">Loading</span>
+      <br/>
+      <oj-progress-bar value="-1"></oj-progress-bar>
+    </div>
+  </div>
+</oj-dialog>
+
+<oj-dialog dialog-title="" id="editContractDetails" style="width: 70vw; height:45vh;" cancel-behavior="icon">
+  <div slot="body">
+    <div class="oj-flex-item oj-sm-margin-5x-top">
+      <span style="font-size:18px;color:#006AA2;font-weight:600">
+        <span><oj-bind-text value="[[ $variables.dialogLabel ]]"></oj-bind-text></span> Contract Details</span>
+    </div>
+
+    <div class="oj-flex-item oj-sm-margin-5x-top">
+      <oj-validation-group id="contractsValidgroup">
+        <oj-form-layout class="oj-formlayout-full-width" max-columns="6" direction="row" label-edge="top" columns="6">
+          <oj-input-text label-hint="Contract Name" value="{{ $variables.updateContracts.contract_number }}" :title='[[ $application.variables.HelpEnabled ? "Enter COntract Number" : "" ]]'
+            readonly="true"></oj-input-text>
+          <oj-select-single label-hint="Week Start Day" data="[[ $variables.WeekdaysADP ]]" item-text="day" :title='[[ $application.variables.HelpEnabled ? "Select Week Start Day" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.week_start_day:$variables.updateContracts.week_start_day }}"
+            disabled="[[ $variables.defaultCheck ]]" on-value-item-changed="[[$listeners.selectValueItem8]]">
+          </oj-select-single>
+          <oj-select-single label-hint="Week End Day" data="[[ $variables.WeekdaysADP ]]" item-text="day" :title='[[ $application.variables.HelpEnabled ? "Select Week End Day" : "" ]]'
+            disabled="[[ $variables.defaultCheck ]]"
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.week_end_day:$variables.updateContracts.week_end_day }}"
+            on-value-item-changed="[[$listeners.selectValueItem7]]">
+          </oj-select-single>
+          <oj-input-text label-hint="No of Days" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Enter number Days" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.no_of_days:$variables.updateContracts.no_of_days }}">
+          </oj-input-text>
+          <oj-switch label-hint="OT Allowed" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Check Ot Allowed" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.ot_allowed:$variables.updateContracts.ot_allowed }}">
+          </oj-switch>
+          <oj-switch label-hint="Active Flag" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Check Active" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.active_flag:$variables.updateContracts.active_flag }}">
+          </oj-switch>
+          <oj-select-single label-hint="OT Threshold Measure" disabled="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select OT threshold Measure" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.ot_threshold_measure:$variables.updateContracts.ot_threshold_measure }}"
+            data="[[ $variables.threshholdMeasureADP ]]" item-text="measure"
+            on-value-item-changed="[[$listeners.selectValueItem9]]">
+          </oj-select-single>
+
+          <oj-input-text label-hint="OT Threshold Limit" disabled="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Enter OT threshold Limit": "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.ot_threshold_limit:$variables.updateContracts.ot_threshold_limit }}">
+          </oj-input-text>
+
+          <!-- <oj-select-single label-hint="OT Threshold Limit" disabled="[[ $variables.defaultCheck ]]"
+          value="{{ $variables.defaultCheck?$variables.defaultContracts.ot_threshold_limit:$variables.updateContracts.ot_threshold_limit }}"
+          data="[[ $variables.threshholdLimitADP ]]" item-text="limit">
+        </oj-select-single> -->
+          <oj-select-single label-hint='Billing Frequency' disabled="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select billing Frequency" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.billing_frequency:$variables.updateContracts.billing_frequency }}"
+            data="[[ $variables.billingFrequencyADP ]]" item-text="frequency">
+          </oj-select-single>
+
+          <oj-input-text label-hint="OT Shift Name" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Enter OT Shift Time" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.ot_shift_name:$variables.updateContracts.ot_shift_name }}">
+          </oj-input-text>
+<!-- 
+          <oj-input-text label-hint="Time Entry Method" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Enter time Entry Method" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.time_entry_method:$variables.updateContracts.time_entry_method }}">
+          </oj-input-text> -->
+          <oj-input-date label-hint="Effective Start Date" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Enter Effective Start Date" : "" ]]'
+            converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.effective_start_date:$variables.updateContracts.effective_start_date }}">
+          </oj-input-date>
+          <oj-input-date label-hint="Effective End Date" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Enter Effective End Date" : "" ]]'
+            converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.effective_end_date:$variables.updateContracts.effective_end_date }}">
+          </oj-input-date>
+
+
+          <oj-select-single label-hint="Per Diem" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select Per Diem" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.per_diem:$variables.updateContracts.per_diem }}"
+            item-text="value" data="[[ $variables.YesorNoADP ]]">
+          </oj-select-single>
+
+          <oj-input-number label-hint="Per Diem hours" :title='[[ $application.variables.HelpEnabled ? "Enter Per Diem hours" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.per_diem_hours:$variables.updateContracts.per_diem_hours }}"
+            min="4" max="8">
+          </oj-input-number>
+
+          <oj-select-single label-hint="Bonus" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select Bonus" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.bonus:$variables.updateContracts.bonus }}"
+            item-text="value" data="[[ $variables.YesorNoADP ]]">
+          </oj-select-single>
+
+          <oj-select-single label-hint="Safety Bonus" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select Safety Bonus" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultContracts.safety_bonus:$variables.updateContracts.safety_bonus }}"
+            item-text="value" data="[[ $variables.YesorNoADP ]]">
+          </oj-select-single>
+
+        </oj-form-layout>
+      </oj-validation-group>
+    </div>
+  </div>
+  <div slot="footer">
+    <oj-bind-if test="[[ !$variables.defaultCheck ]]">
+      <oj-button chroming="callToAction" on-oj-action="[[$listeners.buttonAction9]]" class="oj-button-sm">Update
+      </oj-button>
+    </oj-bind-if>
+    <oj-bind-if test="[[ $variables.defaultCheck ]]">
+      <oj-button chroming="callToAction" on-oj-action="[[$listeners.buttonAction17]]" class="oj-button-sm">Default
+        Update</oj-button>
+    </oj-bind-if>
+
+    <oj-button chroming="callToAction" on-oj-action="[[$listeners.buttonAction8]]" class="oj-button-sm">Cancel
+    </oj-button>
+  </div>
+</oj-dialog>
+
+
+
+
+<oj-dialog dialog-title="" id="editProjectDetails" style="width: 70vw; height:48vh;" cancel-behavior="icon">
+  <div slot="body">
+    <div class="oj-flex-item oj-sm-margin-5x-top">
+      <span style="font-size:18px;color:#006AA2;font-weight:600">
+        <span><oj-bind-text value="[[ $variables.dialogLabel ]]"></oj-bind-text></span> Project Details</span>
+    </div>
+
+    <div class="oj-flex-item oj-sm-margin-5x-top">
+      <oj-validation-group id="projectvalidgroup">
+
+        <oj-form-layout class="oj-formlayout-full-width" max-columns="6" direction="row" label-edge="top" columns="6">
+          <oj-input-text label-hint="Project Name" value="{{ $variables.updateProjects.project_name }}" readonly="true" :title='[[ $application.variables.HelpEnabled ? "Enter project Name" : "" ]]'>
+          </oj-input-text>
+
+          <oj-select-single label-hint="Week Start Day" disabled="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select Week Start Day" : "" ]]'
+            data="[[ $variables.WeekdaysADP ]]" item-text="day"
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.week_start_day:$variables.updateProjects.week_start_day }}"
+            on-value-item-changed="[[$listeners.selectValueItem12]]">
+          </oj-select-single>
+          <oj-select-single label-hint="Week End Day" disabled="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select Week End Day" : "" ]]'
+            data="[[ $variables.WeekdaysADP ]]" item-text="day"
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.week_end_day:$variables.updateProjects.week_end_day }}"
+            on-value-item-changed="[[$listeners.selectValueItem11]]">
+          </oj-select-single>
+          <oj-input-text label-hint="No of Days" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Enter number of Days" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.no_of_days:$variables.updateProjects.no_of_days }}">
+          </oj-input-text>
+          <oj-switch label-hint="OT Allowed" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select OT Allowed" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.ot_allowed:$variables.updateProjects.ot_allowed }}">
+          </oj-switch>
+          <oj-switch label-hint="Active Flag" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select Active Flag" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.active_flag:$variables.updateProjects.active_flag }}">
+          </oj-switch>
+          <oj-select-single label-hint="OT Threshold Measure" disabled="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select OT Threshold Measure" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.ot_threshold_measure:$variables.updateProjects.ot_threshold_measure }}"
+            data="[[ $variables.threshholdMeasureADP ]]" item-text="measure"
+            on-value-item-changed="[[$listeners.selectValueItem10]]">
+          </oj-select-single>
+
+          <oj-input-text label-hint="OT Threshold Limit" disabled="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Enter OT threshold Limit" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.ot_threshold_limit:$variables.updateProjects.ot_threshold_limit }}">
+          </oj-input-text>
+
+          <!-- <oj-select-single label-hint="OT Threshold Limit" disabled="[[ $variables.defaultCheck ]]"
+          value="{{ $variables.defaultCheck?$variables.defaultProjects.ot_threshold_limit:$variables.updateProjects.ot_threshold_limit }}"
+          data="[[ $variables.threshholdLimitADP ]]" item-text="limit">
+        </oj-select-single> -->
+          <oj-select-single label-hint='Billing Frequency' disabled="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select Billing Frequency" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.billing_frequency:$variables.updateProjects.billing_frequency }}"
+            data="[[ $variables.billingFrequencyADP ]]" item-text="frequency">
+          </oj-select-single>
+
+          <oj-input-text label-hint="OT Shift Name" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Enter OT Shift Name" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.ot_shift_name:$variables.updateProjects.ot_shift_name }}">
+          </oj-input-text>
+
+          <!-- <oj-input-text label-hint="Time Entry Method" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Enter Time Entry Method" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.time_entry_method:$variables.updateProjects.time_entry_method }}"
+            required="true">
+          </oj-input-text> -->
+          <oj-input-date label-hint="Effective Start Date" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select Effective Strat Date" : "" ]]'
+            converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.effective_start_date:$variables.updateProjects.effective_start_date }}"
+            required="true">
+          </oj-input-date>
+          <oj-input-date label-hint="Effective End Date" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Enter Effective End Date" : "" ]]'
+            converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.effective_end_date:$variables.updateProjects.effective_end_date }}"
+            required="true">
+          </oj-input-date>
+
+          <oj-select-single label-hint="Per Diem" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select per Diem" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.per_diem:$variables.updateProjects.per_diem }}"
+            item-text="value" data="[[ $variables.YesorNoADP ]]">
+          </oj-select-single>
+
+          <oj-input-number label-hint="Per Diem hours" :title='[[ $application.variables.HelpEnabled ? "Enter per Dioem Hours" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.per_diem_hours:$variables.updateProjects.per_diem_hours }}"
+            min="4" max="8" required="true">
+          </oj-input-number>
+
+          <oj-select-single label-hint="Bonus" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select Bonus" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.bonus:$variables.updateProjects.bonus }}"
+            item-text="value" data="[[ $variables.YesorNoADP ]]">
+          </oj-select-single>
+
+          <oj-select-single label-hint="Safety Bonus" readonly="[[ $variables.defaultCheck ]]" :title='[[ $application.variables.HelpEnabled ? "Select Bonus" : "" ]]'
+            value="{{ $variables.defaultCheck?$variables.defaultProjects.safety_bonus:$variables.updateProjects.safety_bonus }}"
+            item-text="value" data="[[ $variables.YesorNoADP ]]">
+          </oj-select-single>
+
+        </oj-form-layout>
+      </oj-validation-group>
+
+    </div>
+  </div>
+  <div slot="footer">
+    <oj-bind-if test="[[ !$variables.defaultCheck ]]">
+      <oj-button chroming="callToAction" on-oj-action="[[$listeners.buttonAction12]]" class="oj-button-sm">Update
+      </oj-button>
+    </oj-bind-if>
+    <oj-bind-if test="[[ $variables.defaultCheck ]]">
+      <oj-button chroming="callToAction" on-oj-action="[[$listeners.buttonAction19]]" class="oj-button-sm">Default
+        Update</oj-button>
+    </oj-bind-if>
+    <oj-button chroming="callToAction" on-oj-action="[[$listeners.buttonAction11]]" class="oj-button-sm">Cancel
+    </oj-button>
+  </div>
+</oj-dialog>

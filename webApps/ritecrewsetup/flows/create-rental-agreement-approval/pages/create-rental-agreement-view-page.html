@@ -1,0 +1,191 @@
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Rental Agreement Details" background-color="dark-pebble">
+
+  <oj-form-layout max-columns="3" columns="3" label-edge="top" direction="row" slot="search">
+    <oj-button label="Back" chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction]]">
+        <span class="oj-ux-ico-arrow-left-alt" slot="startIcon"></span>
+    </oj-button>
+  </oj-form-layout>
+<div class="oj-panel" style="margin-top:-48px"> 
+<oj-form-layout columns="4" max-columns="4" label-edge="top">
+  <oj-input-text label-hint="Agreement Type" readonly="true" value="{{ $variables.selectedRow.agreement_type }}">
+</oj-input-text>
+<oj-input-text label-hint="Agreement Number" value="{{ $variables.selectedRow.agreement_number }}" readonly="true">
+</oj-input-text>
+<oj-input-text label-hint="Customer Name" readonly="true" value="{{ $variables.selectedRow.customer_name }}">>
+</oj-input-text>
+
+<oj-input-text label-hint="Customer Account Number" readonly="true" value="{{ $variables.selectedRow.account_number }}">
+</oj-input-text>
+<oj-input-text label-hint="Bill To Address" readonly="true" value="{{ $variables.selectedRow.bill_to_address }}">
+</oj-input-text>
+
+<oj-input-text label-hint="Payment Terms Code" readonly="true" value="{{ $variables.selectedRow.payment_terms_code }}">
+</oj-input-text>
+
+<oj-input-text label-hint="Currency Code" readonly="true" value="{{ $variables.selectedRow.currency_code }}">
+</oj-input-text>
+
+
+
+
+<oj-input-text label-hint="Status" readonly="true" value="{{ $variables.selectedRow.status_code }}">
+</oj-input-text>
+
+
+
+</oj-form-layout>
+ 
+<!-- <div class="oj-button-sm oj-helper-text-align-end">
+    <oj-button label="Create Request" chroming="callToAction" class="oj-button-sm"
+      on-oj-action="[[$listeners.buttonAction2]]">
+  </oj-button>
+</div> -->
+<div style="width:100%">
+
+
+
+        <oj-table scroll-policy="loadMoreOnScroll" display="grid" style="width:92vw;max-height:70vh"
+          columns-default.resizable="enabled" data="[[ $variables.linesAdp ]]"
+          columns='[{"headerText":"Equipment Class","field":"equipment_class","template":"eqpclass"},{"headerText":"Equipment Name","field":"equipment_name","template":"eqpname"},{"headerText":"Quantity","field":"quantity","template":"quan"},{"headerText":"Currency","field":"currency","template":"currency"},{"headerText":"Status","field":"status_code","template":"status"},{"headerText":"Update","field":"","template":"act"}]'
+           on-selected-changed="[[$listeners.tableSelected]]" edit-mode="rowEdit"
+          on-oj-before-row-edit-end="[[$listeners.tableBeforeRowEditEnd]]"
+          on-oj-before-row-edit="[[$listeners.tableBeforeRowEdit]]"> 
+          
+          <template slot="act">
+            <oj-button class="oj-button-sm" chroming="borderless" on-oj-action="[[$listeners.buttonAction3]]">
+              <span class="oj-ux-ico-save-as" slot="startIcon"></span>
+            </oj-button>
+ </template>
+            <template slot="eqpclass">
+              <oj-bind-if test='[[$current.mode=="navigation"]]'>
+                <oj-input-text readonly="true" value="{{ $current.data }}">
+                </oj-input-text>
+              </oj-bind-if>
+              <oj-bind-if test='[[$current.mode=="edit"]]'>
+                <oj-select-single value="{{ $variables.lineObj.equipment_class }}"
+                  data="[[$variables.getGetEquipmentClassesListSDP]]" item-text="eqp_class_details">
+                </oj-select-single>
+              </oj-bind-if>
+            </template>
+            <template slot="eqpname">
+              <oj-bind-if test='[[$current.mode=="navigation"]]'>
+                <oj-input-text readonly="true" value="{{ $current.data }}">
+                </oj-input-text>
+              </oj-bind-if>
+              <oj-select-single data="[[$variables.getGetEquipmentLOVListSDP]]" item-text="lkpvalue"
+                value="{{ $variables.lineObj.equipment_name }}">
+              </oj-select-single>
+            </template>
+
+         
+</oj-table>
+</div>
+
+</div>
+ <oj-dialog dialog-title="" id="loadingDialog" class="myloader" style="width: 350px">
+      <div slot="body">
+        <div class="oj-flex-item">
+          <span style="font-size:20px;color:#006AA2;font-weight:600;margin-top:-2vh">Loading .....</span>
+          <br />
+          <oj-progress-bar value="-1" class="oj-sm-margin-3x-top"></oj-progress-bar>
+        </div>
+      </div>
+    </oj-dialog>
+     <oj-popup id="editline" modality="modal" tail="none" auto-dismiss="focusLoss"
+  initial-focus="none"
+  position='{"my":{"horizontal":"right","vertical":"top"}, "at":{"horizontal":"right","vertical":"top"}, "of":"window"}'
+  style="width:560px; max-width:90vw; max-height:100vh; background: var(--oj-core-bg-color, #fff); box-shadow: 0 8px 24px rgba(0,0,0,.18); border-radius: 12px 0 0 12px;display:flex; flex-direction:column;">
+
+  <!-- HEADER - FIXED -->
+  <div style="position:sticky; top:0; z-index:1;display:flex; align-items:center; justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--oj-core-divider-color, #e6e6e6);background:inherit; flex:0 0 auto;">
+    <h3 style="margin:0; font-size:18px; font-weight:600;">Add Agreement Line</h3>
+    <oj-button id="closeAddLineBtn" chroming="borderless" display="icons" title="Close"
+     >
+      <span slot="startIcon" class="oj-ux-ico-close"></span>
+    </oj-button>
+  </div>
+
+  <!-- MIDDLE CONTENT - ONLY THIS WILL SCROLL -->
+  <div style="flex:1 1 auto; min-height:0; overflow-y:auto; padding:16px 20px;">
+
+    <oj-form-layout columns="2" max-columns="2" label-edge="top">
+
+      
+<oj-select-single label-hint="Project" 
+  item-text="name" 
+  value="{{ $variables.rowdata.project_number }}">
+</oj-select-single>
+<oj-select-single label-hint="Task" item-text="TaskNumber" 
+  value="{{ $variables.rowdata.task_number }}" >
+
+</oj-select-single>
+        <oj-select-single label-hint="Equipment Class"
+          item-text="eqp_class_details" value="{{ $variables.rowdata.equipment_class }}">
+        </oj-select-single>
+
+        <oj-select-single label-hint="Equipment Name"
+          item-text="lkpvalue" value="{{ $variables.rowdata.equipment_name }}"
+          >
+        </oj-select-single>
+        
+    
+
+      <!-- <oj-input-text label-hint="Lot / Serial Number" value="{{ $variables.rowdata.lot_number }}"></oj-input-text> -->
+      <oj-input-number label-hint="Quantity" min="1" value="{{ $variables.rowdata.quantity }}"></oj-input-number>
+
+      <!-- <oj-select-single label-hint="UOM" value="{{ $variables.rowdata.uom }}" item-text="UOM"
+        ></oj-select-single> -->
+     
+
+   
+
+      
+     
+
+       <oj-select-single label-hint="Currency" value="{{ $variables.rowdata.currency }}"
+         item-text="CurrencyCode"
+            >
+       </oj-select-single>
+
+
+      <oj-input-date label-hint="Valid From" value="{{ $variables.rowdata.valid_from }}"></oj-input-date>
+      <oj-input-date label-hint="Valid To" value="{{ $variables.rowdata.valid_to }}"></oj-input-date>
+
+    </oj-form-layout>
+
+    <b>Additional Information</b>
+
+    <oj-form-layout label-edge="top" class="oj-formlayout-full-width">
+      <!-- <oj-text-area label-hint="Notes" value="{{ $variables.rowdata.notes }}"></oj-text-area> -->
+    </oj-form-layout>
+
+  </div>
+
+  <!-- FOOTER - FIXED -->
+  <div style="position:sticky; bottom:0; z-index:1;display:flex; gap:12px; justify-content:flex-end;padding:12px 16px;border-top:1px solid var(--oj-core-divider-color, #e6e6e6);background:inherit; flex:0 0 auto;">
+
+     <oj-button label="Reset" chroming="callToAction" class="oj-button-sm" >
+      <span class="oj-ux-ico-reset-variable" slot="startIcon"></span>
+    </oj-button>
+    <oj-button id="cancelBtn" chroming="callToAction" 
+     
+      label="Close" class="oj-button-sm">
+      <span class="oj-ux-ico-close" slot="startIcon"></span>
+    </oj-button>
+
+  <oj-button label="Update" chroming="callToAction" class="oj-button-sm">
+      <span class="oj-ux-ico-save-as" slot="startIcon"></span>
+  </oj-button>
+
+
+
+
+  </div>
+
+</oj-popup>
+
+</oj-sp-welcome-page>

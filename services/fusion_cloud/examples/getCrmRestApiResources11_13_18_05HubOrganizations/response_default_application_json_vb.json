@@ -1,0 +1,153 @@
+{
+    "items": [
+        {
+            "PartyNumber": "65670",
+            "OrganizationName": "McNally Products",
+            "PartyId": 100000000395778
+        },
+        {
+            "PartyNumber": "55110",
+            "OrganizationName": "Specialty Distribution",
+            "PartyId": 100000000395783
+        },
+        {
+            "PartyNumber": "80010",
+            "OrganizationName": "Stark Industries",
+            "PartyId": 100000000395788
+        },
+        {
+            "PartyNumber": "10010",
+            "OrganizationName": "J B Hunt",
+            "PartyId": 100000000395792
+        },
+        {
+            "PartyNumber": "26360",
+            "OrganizationName": "ABC Application Software",
+            "PartyId": 100000000395795
+        },
+        {
+            "PartyNumber": "26370",
+            "OrganizationName": "ABC Corporation Americas",
+            "PartyId": 100000000395797
+        },
+        {
+            "PartyNumber": "25750",
+            "OrganizationName": "ABC Corporation Worldwide",
+            "PartyId": 100000000395799
+        },
+        {
+            "PartyNumber": "26160",
+            "OrganizationName": "ABC Telecommunications",
+            "PartyId": 100000000395801
+        },
+        {
+            "PartyNumber": "16080",
+            "OrganizationName": "Business World",
+            "PartyId": 100000000395803
+        },
+        {
+            "PartyNumber": "80020",
+            "OrganizationName": "CDS Inc",
+            "PartyId": 100000000395809
+        },
+        {
+            "PartyNumber": "10060",
+            "OrganizationName": "Computer Service and Rentals",
+            "PartyId": 100000000395811
+        },
+        {
+            "PartyNumber": "70010",
+            "OrganizationName": "Consolidated Services",
+            "PartyId": 100000000395816
+        },
+        {
+            "PartyNumber": "59300",
+            "OrganizationName": "Dixon Industries",
+            "PartyId": 100000000395818
+        },
+        {
+            "PartyNumber": "42420",
+            "OrganizationName": "DJ Manufacturing",
+            "PartyId": 100000000395826
+        },
+        {
+            "PartyNumber": "10020",
+            "OrganizationName": "TNT",
+            "PartyId": 100000000395829
+        },
+        {
+            "PartyNumber": "70050",
+            "OrganizationName": "Ellis Cable",
+            "PartyId": 100000000395831
+        },
+        {
+            "PartyNumber": "80030",
+            "OrganizationName": "Fox Stores",
+            "PartyId": 100000000395833
+        },
+        {
+            "PartyNumber": "10040",
+            "OrganizationName": "Hilman and Associates",
+            "PartyId": 100000000395836
+        },
+        {
+            "PartyNumber": "90040",
+            "OrganizationName": "Intercompany",
+            "PartyId": 100000000395841
+        },
+        {
+            "PartyNumber": "70030",
+            "OrganizationName": "J&H Pharmacy",
+            "PartyId": 100000000395845
+        },
+        {
+            "PartyNumber": "64901",
+            "OrganizationName": "LAF Enterprises",
+            "PartyId": 100000000395847
+        },
+        {
+            "PartyNumber": "80060",
+            "OrganizationName": "Quest Automation Ltd",
+            "PartyId": 100000000398172
+        },
+        {
+            "PartyNumber": "32640",
+            "OrganizationName": "Chen  Limited",
+            "PartyId": 100000000398175
+        },
+        {
+            "PartyNumber": "50010",
+            "OrganizationName": "Laboratoires Montague",
+            "PartyId": 100000000398177
+        },
+        {
+            "PartyNumber": "50020",
+            "OrganizationName": "Crédit France",
+            "PartyId": 100000000398179
+        }
+    ],
+    "count": 25,
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/hubOrganizations",
+            "name": "hubOrganizations",
+            "kind": "collection"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/hubOrganizations/action/findDuplicates",
+            "name": "findDuplicates",
+            "kind": "other"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/hubOrganizations/action/promoteDuplicateParty",
+            "name": "promoteDuplicateParty",
+            "kind": "other"
+        }
+    ]
+}

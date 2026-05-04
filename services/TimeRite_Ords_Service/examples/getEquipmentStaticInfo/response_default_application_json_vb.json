@@ -1,0 +1,63 @@
+{
+    "items": [
+        {
+            "equipment_row_id": 74,
+            "equipment_id": 300000047429637,
+            "equipment_name": "Fax",
+            "expenditure_type_id": 300000047429455,
+            "expenditure_type_name": "Administrative Costs",
+            "equipment_resource_flag": "N",
+            "equipment_resource_class": null,
+            "start_date_active": "2001-01-01T00:00:00Z",
+            "to_date": null,
+            "business_unit": null,
+            "non_labor_resource": null,
+            "organization": "Consulting East US",
+            "organization_id": 300000047013630,
+            "rate_require": null,
+            "unit_of_measure": "zzu",
+            "rate_unit": "0.5",
+            "mark_up_percentage": null,
+            "expenditure_type_class": null,
+            "project_id": 300000052496705,
+            "project_name": "US East Billable no burden",
+            "project_number": "TCS10002",
+            "task_id": 300000052496733,
+            "task_name": "Project Plan",
+            "task_number": "2.1",
+            "asset_number": null,
+            "schedule_type": "NON-LABOR",
+            "currency_code": "GBP",
+            "decal_number": null,
+            "inventory_item": null,
+            "inclusion_date": null,
+            "last_service_date": null,
+            "creation_date": null,
+            "created_by": null,
+            "last_update_date": null,
+            "last_updated_by": null
+        }
+    ],
+    "hasMore": true,
+    "limit": 1,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EquipmentStaticInfo?p_equipment_name=Fax"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EquipmentStaticInfo?p_equipment_name=Fax"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EquipmentStaticInfo?p_equipment_name=Fax&offset=1"
+        }
+    ]
+}

@@ -1,0 +1,421 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value=""></oj-vb-fragment-param>
+</oj-vb-fragment>
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Timesheet Approvals" background-color="dark-pebble">
+  <div class="oj-flex oj-panel oj-panel-shadow-md" style="margin-top:-48px">
+    <div class="oj-flex-item oj-flex oj-sm-margin-3x-top oj-sm-flex-direction-column">
+
+      <div class="oj-flex-item oj-flex oj-sm-flex-direction-column">
+        <div class="oj-flex-item oj-sm-margin-5x-top">
+          <oj-validation-group id="SearchValidationgroup">
+            <oj-form-layout class="" max-columns="5" label-edge="top" columns="5">
+              <oj-select-single label-hint="Request Number" value="{{ $variables.searchobj.requestNumber }}"
+                data="[[$variables.getEQPRiteFilterHeadersListSDP]]" item-text="eqp_filter_headers_obj">
+              </oj-select-single>
+              <oj-select-single label-hint="Equipment Class" value="{{ $variables.searchobj.equipmentType }}"
+                data="[[$variables.getGetEquipmentClassesListSDP]]" item-text="eqp_class_details">
+              </oj-select-single>
+              <oj-select-single label-hint="Equipment Name" value="{{ $variables.searchobj.equipmentName }}"
+                item-text="equipment_name" data="[[$variables.getGetEquipmentNamesListSDP]]">
+              </oj-select-single>
+
+
+              <!-- <oj-combobox-one label-hint="Project/Customer" value="{{ $variables.searchobj.request_type }}"
+                required="true">
+                <oj-option value="Customer">Customer</oj-option>
+                <oj-option value="Project">Project</oj-option>
+              </oj-combobox-one> -->
+
+
+              <!-- <oj-select-single label-hint="Specification" item-text="value" id="specification"
+              :title='[[ $application.variables.HelpEnabled ? "Select Specification" : "" ]]'
+              data="[[ $variables.specificADP ]]" value="{{ $variables.searchobj.specific }}"
+              on-value-item-changed="[[$listeners.specificationValueItem]]">
+            </oj-select-single> -->
+              <oj-bind-if test="[[ $variables.searchobj.request_type === 'Project' ]]">
+                <oj-select-single label-hint="Project Name" value="{{ $variables.searchobj.project }}"
+                  item-text="project_name" data="[[$variables.distinctProjectNames]]">
+                </oj-select-single>
+              </oj-bind-if>
+              <oj-bind-if test="[[ $variables.searchobj.request_type === 'Customer' ]]">
+                <oj-select-single label-hint="Customer" value="{{ $variables.searchobj.customerval}}"
+                  item-text="customer" data="[[ $variables.GetEquCustomerLOV ]]" required="true"></oj-select-single>
+              </oj-bind-if>
+              <oj-bind-if test='[[ $variables.searchobj.specific === "DAY" ]]'>
+                <oj-input-date label-hint="Crew Date" value="{{ $variables.searchobj.crewdate }}"
+                  :title='[[ $application.variables.HelpEnabled ? "Select Crew Date" : "" ]]'
+                  converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}'
+                  on-value-changed="[[$listeners.inputDateValue]]"></oj-input-date>
+              </oj-bind-if>
+
+              <oj-bind-if test='[[ $variables.searchobj.specific === "WEEK" ]]'>
+                <oj-select-single label-hint="Week" item-text="range" id="dateRange"
+                  :title='[[ $application.variables.HelpEnabled ? "Select Crew Week" : "" ]]'
+                  data="[[ $application.variables.dateRangeADP ]]" value="{{ $variables.searchobj.dateRange }}"
+                  on-value-item-changed="[[$listeners.dateRangeValueItem]]">
+                </oj-select-single>
+              </oj-bind-if>
+            </oj-form-layout>
+          </oj-validation-group>
+        </div>
+        <div class="oj-flex">
+          <!-- <div class="oj-flex-item oj-flex">
+          <oj-bind-if test="[[ $application.user.roles.AdminRole && !$variables.isPayRollLock ]]">
+            <oj-button label="Payroll Lockdown" chroming="callToAction" class="oj-button-sm"
+              on-oj-action="[[$listeners.buttonAction3]]"></oj-button>
+          </oj-bind-if>
+          <oj-bind-if test="[[ $application.user.roles.AdminRole && $variables.isPayRollLock ]]">
+            <oj-button label="Payroll Unlock" chroming="callToAction" class="oj-button-sm"
+              on-oj-action="[[$listeners.buttonAction5]]"></oj-button>
+          </oj-bind-if>
+          <oj-bind-if test="[[ $application.user.roles.AdminRole && !$variables.isPayRollLock ]]">
+
+            <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-end oj-sm-margin-2x-start">
+              <oj-button label="Approve" chroming="callToAction" class="oj-button-sm"
+                on-click="[[$listeners.buttonClick]]"></oj-button>
+            </div>
+            <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-end">
+              <oj-button label="Reject" chroming="callToAction" class="oj-button-sm"
+                on-oj-action="[[$listeners.buttonAction12]]"></oj-button>
+            </div>
+          </oj-bind-if>
+        </div> -->
+
+
+          <div class="oj-flex-item oj-flex oj-sm-justify-content-flex-end oj-sm-flex-items-initial">
+            <div class="oj-flex oj-sm-align-items-center">
+
+          <div class="oj-flex-item">
+            <oj-switch label-hint="Enable Trace" value="[[$application.variables.enableTrace]]"
+              on-value-changed="[[$listeners.switchValue]]"
+             >
+              
+            </oj-switch>
+          </div>
+
+          <div>
+            <oj-label>Trace ID:</oj-label>
+          </div>
+
+          <div class="oj-flex-item oj-sm-margin-1x-start oj-sm-margin-2x-end">
+            <oj-bind-text value="[[$application.variables.traceIdDisplay]]"></oj-bind-text>
+          </div>
+
+        </div>
+            <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-1x-end">
+              <oj-button label="Search" chroming="callToAction" class="oj-button-sm"
+                on-oj-action="[[$listeners.buttonAction9]]"></oj-button>
+              <!-- <oj-button label="Search" chroming="callToAction" class="oj-button-sm"
+              on-oj-action="[[$listeners.buttonAction11]]"></oj-button> -->
+            </div>
+            <!-- <oj-bind-if test="[[ !$variables.isPayRollLock ]]">
+            <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-1x-end">
+              <oj-button label="Add" chroming="callToAction" class="oj-button-sm"
+                on-oj-action="[[$listeners.buttonAction2]]"></oj-button>
+            </div>
+          </oj-bind-if> -->
+
+            <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-1x-end">
+              <oj-button label="Reset" chroming="callToAction" class="oj-button-sm"
+                on-oj-action="[[$listeners.buttonAction]]"></oj-button>
+            </div>
+            <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-1x-end">
+              <oj-button label="Approve" chroming="callToAction" class="oj-button-sm"
+                disabled="[[ !$variables.FilteredData.length > 0 ]]" id="approve-btn"
+                on-oj-action="[[$listeners.approveBtnAction]]"></oj-button>
+            </div>
+            <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-1x-end">
+              <oj-button label="Reject" chroming="callToAction" class="oj-button-sm"
+                disabled="[[ !$variables.FilteredData.length > 0 ]]" id="reject-btn"
+                on-oj-action="[[$listeners.rejectBtnAction]]">
+              </oj-button>
+            </div>
+            <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-1x-end">
+              <oj-button label="Post" chroming="callToAction" class="oj-button-sm"
+                disabled="[[ !$variables.FilteredData.length > 0 ]]" id="post-btn"
+                on-oj-action="[[$listeners.postBtnAction]]">
+              </oj-button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="oj-flex-item oj-sm-flex-initial">
+        <oj-table scroll-policy="loadMoreOnScroll" display="grid" style="width:92vw;height:50vh"
+          columns='[[ [{"headerText":"Actions","field":"","template":"action"},{"headerText":"Request Number","field":"eqp_request_number","classname":"oj-read-only","className":"oj-helper-text-align-end"},{"headerText":"Project Name","field":"project_name","template":"project_name","classname":"oj-read-only"},{"headerText":"Task Name","field":"task_name","template":"task_name"},{"headerText":"Equipment Name","field":"equipment_name","template":"equipment_name"},{"headerText":"Status","field":"status","template":"status"},{"headerText":"Effective Start Date","field":"req_start_date","template":"dateformattor"},{"headerText":"Effective End Date","field":"req_end_date","template":"dateformattor"},{"headerText":$variables.datesArray && $variables.datesArray.length > 0 && $variables.datesArray[0].date ?    $variables.datesArray[0].date + " Hours" :    "Mon Hours","field":"mon_quantity","className":"oj-helper-text-align-end","width":140},{"headerText":$variables.datesArray && $variables.datesArray.length > 0 && $variables.datesArray[1].date ?    $variables.datesArray[1].date + " Hours" :    "Tue Hours","field":"tue_quantity","className":"oj-helper-text-align-end","width":140},{"headerText":$variables.datesArray && $variables.datesArray.length > 0 && $variables.datesArray[2].date ?    $variables.datesArray[2].date + " Hours" :    "Wed Hours","field":"wed_quantity","className":"oj-helper-text-align-end","width":140},{"headerText":$variables.datesArray && $variables.datesArray.length > 0 && $variables.datesArray[3].date ?    $variables.datesArray[3].date + " Hours" :    "Thu Hours","field":"thu_quantity","className":"oj-helper-text-align-end","width":140},{"headerText":$variables.datesArray && $variables.datesArray.length > 0 && $variables.datesArray[4].date ?    $variables.datesArray[4].date + " Hours" :    "Fri Hours","field":"fri_quantity","className":"oj-helper-text-align-end","width":140},{"headerText":$variables.datesArray && $variables.datesArray.length > 0 && $variables.datesArray[5].date ?    $variables.datesArray[5].date + " Hours" :    "Sat Hours","field":"sat_quantity","className":"oj-helper-text-align-end","width":140},{"headerText":$variables.datesArray && $variables.datesArray.length > 0 && $variables.datesArray[6].date ?    $variables.datesArray[6].date + " Hours" :    "Sun Hours","field":"sun_quantity","className":"oj-helper-text-align-end","width":140}] ]]'
+          display="grid" data="[[ $variables.approverMainTableADP ]]" selection-mode.row="multiple"
+          edit-row="{{ $variables.editRow }}" on-selected-changed="[[$listeners.tableSelected3]]"
+          on-first-selected-row-changed="[[$listeners.tableFirstSelectedRow3]]">
+          <template slot="dateformattor">
+            <oj-input-date value='[[typeof $current.data === "string" ? $current.data : null]]' readonly="true"
+              converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}'></oj-input-date>
+          </template>
+           <template slot="status">
+        <oj-bind-if test='[[ $current.row.status==="ERROR" ]]'>
+          <a style="color:red" on-click="[[$listeners.hyperlinkClick]]">
+            <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+          </a>
+        </oj-bind-if>
+        <oj-bind-if test='[[ $current.row.status!=="ERROR" ]]'>
+          
+            <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+          
+        </oj-bind-if>
+       </template>
+          <!-- <template slot="action"> -->
+          <!-- <span class="oj-ux-ico-edit" style="cursor:pointer;font-size:18px" on-click="[[$listeners.iconClick3]]"></span> -->
+          <!-- </template> -->
+          <!-- <template slot="selectIcon">
+            <oj-checkboxset on-value-changed="[[$listeners.checkboxSetValue2]]">
+              <oj-option value="[[ $current.row.selected ]]"></oj-option>
+           </oj-checkboxset>
+       </template>
+        <template slot="selectAll">
+           <oj-checkboxset on-value-changed="[[$listeners.checkboxSetValue]]">
+              <oj-option value="[[ $variables.selectedFlag ]]"></oj-option>
+           </oj-checkboxset>
+       </template> -->
+          <template slot="action">
+            <oj-button chroming="borderless" on-oj-action="[[$listeners.buttonAction16]]"
+              disabled='[[ $current.row.status!="APPROVED" ]]'>
+              <span class="oj-ux-ico-action" slot="startIcon"></span>
+            </oj-button>
+          </template>
+          <template slot="equipment_name">
+
+            <span :title="[[ $current.data ]]">
+  <oj-bind-text value="[[ $current.data ]]"></oj-bind-text>
+</span>
+
+          </template>
+          <template slot="project_name">
+
+            <span :title="[[ $current.data ]]">
+  <oj-bind-text value="[[ $current.data ]]"></oj-bind-text>
+</span>
+
+          </template>
+          <template slot="task_name">
+
+            <span :title="[[ $current.data ]]">
+  <oj-bind-text value="[[ $current.data ]]"></oj-bind-text>
+</span>
+
+          </template>
+
+
+        </oj-table>
+      </div>
+    </div>
+
+    <oj-dialog dialog-title="" id="timesDialog" class="" style="width: 62vw; height:47vh;" cancel-behavior="icon">
+
+      <div slot="body">
+
+        <div class="oj-flex-item oj-flex oj-flex-item oj-sm-12 oj-md-12 ">
+          <div class="oj-flex-item oj-sm-margin-5x-top" style="width:100%">
+            <span style="font-size:18px;font-weight:600">Edit Quantity</span>
+          </div>
+
+          <oj-bind-if test="[[ $variables.EditType === 'SEARCH' ]]">
+            <div class="oj-flex-item oj-sm-margin-3x-top">
+              <oj-validation-group id="updateSearchformvalidation" style="width:72%">
+                <oj-form-layout columns="8" max-columns="8" class="oj-formlayout-full-width">
+                  <div class="oj-flex-item oj-sm-margin-2x-bottom">
+                    <span></span>
+                  </div>
+                  <div class="oj-flex-item oj-sm-margin-2x-bottom">
+                    <span>Monday</span>
+                  </div>
+                  <div class="oj-flex-item oj-sm-margin-2x-bottom">
+                    <span>Tuesday</span>
+                  </div>
+                  <div class="oj-flex-item oj-sm-margin-2x-bottom">
+                    <span>Wednesday</span>
+                  </div>
+                  <div class="oj-flex-item oj-sm-margin-2x-bottom">
+                    <span>Thursday</span>
+                  </div>
+                  <div class="oj-flex-item oj-sm-margin-2x-bottom">
+                    <span>Friday</span>
+                  </div>
+                  <div class="oj-flex-item oj-sm-margin-2x-bottom">
+                    <span>Saturday</span>
+                  </div>
+                  <div class="oj-flex-item oj-sm-margin-2x-bottom">
+                    <span>Sunday</span>
+                  </div>
+                  <div class="oj-flex-item">
+                    <span>Quantity</span>
+                  </div>
+                  <div class="oj-flex-item">
+                    <oj-input-text class="formclass" aria-label="monQty"
+                      value="{{ $variables.projectBasedRowData.mon_quantity }}" required="true">
+                    </oj-input-text>
+                  </div>
+                  <div class="oj-flex-item">
+                    <oj-input-text class="formclass" aria-label="tueQty"
+                      value="{{ $variables.projectBasedRowData.tue_quantity }}" required="true">
+                    </oj-input-text>
+                  </div>
+                  <div class="oj-flex-item">
+                    <oj-input-text class="formclass" aria-label="wedQty"
+                      value="{{ $variables.projectBasedRowData.wed_quantity }}" required="true">
+                    </oj-input-text>
+                  </div>
+                  <div class="oj-flex-item">
+                    <oj-input-text class="formclass" aria-label="thuQty"
+                      value="{{ $variables.projectBasedRowData.thu_quantity }}" required="true">
+                    </oj-input-text>
+                  </div>
+                  <div class="oj-flex-item">
+                    <oj-input-text class="formclass" aria-label="friQty"
+                      value="{{ $variables.projectBasedRowData.fri_quantity }}" required="true">
+                    </oj-input-text>
+                  </div>
+                  <div class="oj-flex-item">
+                    <oj-input-text class="formclass" aria-label="satQty"
+                      value="{{ $variables.projectBasedRowData.sat_quantity }}" required="true">
+                    </oj-input-text>
+                  </div>
+                  <div class="oj-flex-item">
+                    <oj-input-text class="formclass" aria-label="sunQty"
+                      value="{{ $variables.projectBasedRowData.sun_quantity }}" required="true">
+                    </oj-input-text>
+                  </div>
+
+
+                </oj-form-layout>
+              </oj-validation-group>
+            </div>
+            <div class="oj-flex-item oj-sm-margin-14x-start">
+              <oj-bind-if test='[[ $application.user.roles.AdminRole && !$variables.isAdd]]'>
+                <oj-text-area label-hint="Comments" value="{{ $variables.SearchRowdata.comments }}" rows="10"
+                  style="width:18vw;margin-left:7.5vw" resize-behavior="both"></oj-text-area>
+              </oj-bind-if>
+            </div>
+            <div class="oj-flex-item oj-sm-margin-2x-top" style="width:100%">
+              <div class="oj-flex">
+                <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-end">
+                  <oj-button chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction4]]">
+                    Update
+                  </oj-button>
+                </div>
+                <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-end">
+                  <oj-button chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction13]]">
+                    Cancel
+                  </oj-button>
+                </div>
+              </div>
+            </div>
+          </oj-bind-if>
+
+
+        </div>
+      </div>
+    </oj-dialog>
+
+    <oj-dialog dialog-title="" id="progressDialog" class="" style="width:30vw">
+      <div slot="header" style="display:none">
+      </div>
+      <div slot="body">
+
+        <div class="oj-flex oj-sm-flex-direction-column">
+          <div class="oj-flex-item oj-flex oj-sm-justify-content-center" style="margin-top:-5px">
+            <span style="font-size:18px;font-weight:600">Processing .....</span>
+          </div>
+          <div class="oj-flex-item oj-sm-margin-2x-top">
+            <oj-progress-bar value="-1"></oj-progress-bar>
+          </div>
+        </div>
+      </div>
+    </oj-dialog>
+
+  </div>
+
+  <oj-dialog dialog-title="Dialog" id="revisionDialog" style="width:50%">
+    <div slot="body">
+      <br>
+      <oj-table data="[[ $variables.revisionAdp ]]" columns-default.resizable="enabled" style="width:100%"
+        columns='[{"headerText":"Expenditure Batch","field":"expenditure_batch"},{"headerText":"Expenditure Item Date","field":"expenditure_item_date","template":"expdate"},{"headerText":"Quantity","field":"quantity","template":"quantity"},{"headerText":"Revision","field":"","template":"update"}]'
+        selection-mode.column="none" selection-mode.row="none" edit-mode="rowEdit"
+        on-oj-before-row-edit="[[$listeners.tableBeforeRowEdit]]"
+        on-oj-before-row-edit-end="[[$listeners.tableBeforeRowEditEnd]]"
+        on-selected-changed="[[$listeners.tableSelected4]]">
+        <template slot="expdate">
+          <oj-bind-text value="[[ $functions.formatDate($current.data) ]]"></oj-bind-text>
+        </template>
+        <template slot="quantity">
+          <oj-bind-if test='[[$current.mode=="navigation"]]'>
+            <oj-bind-text value="[[$current.data ]]"></oj-bind-text>
+          </oj-bind-if>
+          <oj-bind-if test='[[$current.mode=="edit"]]'>
+            <oj-input-text value="{{ $variables.revisionobj.quantity }}">
+            </oj-input-text>
+          </oj-bind-if>
+        </template>
+        <template slot="update">
+          <oj-button chroming="borderless" class="" on-oj-action="[[$listeners.buttonAction18]]">
+            <span class="oj-ux-ico-refresh-circle" slot="startIcon"></span>
+          </oj-button>
+        </template>
+      </oj-table>
+    </div>
+    <div slot="footer">
+      <!-- <oj-button label="Update" chroming="callToAction" class="oj-button-sm">
+      </oj-button> -->
+      <oj-button label="Close" on-oj-action="[[$listeners.buttonAction17]]" chroming="callToAction"
+        class="oj-button-sm"></oj-button>
+    </div>
+  </oj-dialog>
+
+ <oj-dialog dialog-title="" id="loadingDialog" class="myloader" style="width: 350px">
+      <div slot="body">
+        <div class="oj-flex-item">
+          <span style="font-size:20px;color:#006AA2;font-weight:600;margin-top:-2vh">Loading .....</span>
+          <br />
+          <oj-progress-bar value="-1" class="oj-sm-margin-3x-top"></oj-progress-bar>
+        </div>
+      </div>
+    </oj-dialog>
+ 
+  <oj-popup id="revision" tail="simple">
+    <oj-form-layout label-edge="top" columns="1">
+      <oj-bind-if test="[[ $variables.rowData.status==='APPROVED' ]]">
+      <oj-button chroming="callToAction" class="oj-button-sm" label="Revision"
+        on-oj-action="[[$listeners.buttonAction15]]">
+      </oj-button>
+      </oj-bind-if>
+    </oj-form-layout>
+  </oj-popup>
+
+
+  <oj-dialog id="errorDilaog" style="width:50%;height:80vh">
+  <div class="oj-panel" style="height:100%;width:100%">
+      <oj-sp-welcome-page id="oj-sp-wp1"
+        illustration-background="[[ require.toUrl($variables.illustrationBackground) ]]"
+        illustration-foreground="[[ require.toUrl($variables.illustrationForeground) ]]"
+        display-options.responsive-padding="on" background-color="dark-pebble"
+        page-title='[[ "Request Number: "+$variables.selectedRowObj.eqp_request_number ]]'>
+        <oj-table data="[[ $variables.errorTableAdp ]]" 
+          columns='[{"headerText":"Error Details","field":"error","style":"white-space:normal;word-wrap:break-word;"}]'
+          style="width:100%;margin-top:-47px;height:100%">
+        </oj-table>
+      </oj-sp-welcome-page>
+  </div>
+  <div slot="footer">
+      <oj-button label="Close" chroming="callToAction" class="oj-button-sm"
+        on-oj-action="[[$listeners.buttonAction20]]">
+        <span class="oj-ux-ico-close" slot="endIcon"></span>
+      </oj-button>
+      </div>
+  </oj-dialog>
+
+  
+</oj-sp-welcome-page>

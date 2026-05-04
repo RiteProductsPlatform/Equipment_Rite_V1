@@ -1,0 +1,13 @@
+{
+"p_rate_schedule_name":"rite_org",
+"p_non_labor_resource":"JCB",
+"p_location":"Houston",
+"p_uom":"HOURS",
+"p_rounding_threshold":"",
+"p_rate_types":"Usage",
+"p_cost_rate":"110",
+"p_bill_rate":"140",
+"p_currency":"USD",
+"p_rate_type_start_date":"01-JAN-2024",
+"p_rate_type_end_date":"31-DEC-2024"
+}

@@ -1,0 +1,86 @@
+{
+    "items": [
+        {
+            "project_id": 300000325079167,
+            "projec_number": "900R-55EJOHN",
+            "project_name": "1012184780",
+            "customer_id": 100000000395792,
+            "customer_number": "10010",
+            "contract_id": 300000391217183,
+            "contract_number": "3456789",
+            "cost_rate": null,
+            "contract_start_date": null,
+            "contract_end_date": null,
+            "shift_enabled": null,
+            "po_number": null,
+            "quantity": null,
+            "week_start_day": "Monday",
+            "week_end_day": "Friday",
+            "no_of_days": 5,
+            "ot_allowed": "1",
+            "ot_threshold_measure": "Week",
+            "ot_threshold_limit": "40",
+            "active_flag": null,
+            "billing_frequency": "Day",
+            "ot_shift_name": null,
+            "time_entry_method": null,
+            "effective_start_date": "2024-03-01",
+            "effective_end_date": "2024-05-31",
+            "per_diem": "YES",
+            "per_diem_hours": 4,
+            "bonus": "YES",
+            "safety_bonus": "YES",
+            "project_unit_id": 300000047370493
+        },
+        {
+            "project_id": 300000325079289,
+            "projec_number": "900R-111DUNN",
+            "project_name": "1018921921",
+            "customer_id": 100000000395792,
+            "customer_number": "10010",
+            "contract_id": 300000391217183,
+            "contract_number": "3456789",
+            "cost_rate": null,
+            "contract_start_date": null,
+            "contract_end_date": null,
+            "shift_enabled": null,
+            "po_number": null,
+            "quantity": null,
+            "week_start_day": "Monday",
+            "week_end_day": "Friday",
+            "no_of_days": 5,
+            "ot_allowed": "1",
+            "ot_threshold_measure": "Week",
+            "ot_threshold_limit": "40",
+            "active_flag": null,
+            "billing_frequency": "Day",
+            "ot_shift_name": null,
+            "time_entry_method": null,
+            "effective_start_date": "2024-03-01",
+            "effective_end_date": "2024-05-31",
+            "per_diem": "YES",
+            "per_diem_hours": 4,
+            "bonus": "YES",
+            "safety_bonus": "YES",
+            "project_unit_id": 300000047370493
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 2,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getProjectDetails?contract_id=300000391217183"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getProjectDetails?contract_id=300000391217183"
+        }
+    ]
+}

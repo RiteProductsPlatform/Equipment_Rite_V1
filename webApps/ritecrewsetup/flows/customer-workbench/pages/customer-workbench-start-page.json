@@ -1,0 +1,783 @@
+{
+  "title": "customer workbench",
+  "description": "",
+  "variables": {
+    "currencyCodeADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getCurrenciesLOV",
+        "textFilterAttributes": [
+          "CurrencyCode"
+        ],
+        "keyAttributes": "CurrencyCode"
+      }
+    },
+    "currentRow": {
+      "type": {
+        "rowData": "object",
+        "rowindex": "any",
+        "rowKey": "any"
+      }
+    },
+    "cutomernameADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "rentalRecord",
+        "textFilterAttributes": [
+          "customer_name"
+        ],
+        "keyAttributes": "customer_name"
+      }
+    },
+    "data": {
+      "type": {
+        "resnumber": "any"
+      }
+    },
+    "getCurrenciesLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "Procurement_Module/getCurrenciesLOV",
+        "keyAttributes": "CurrencyCode",
+        "itemsPath": "items",
+        "responseType": "getCurrenciesLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "CurrencyCode"
+          ]
+        }
+      }
+    },
+    "getGetManagerQuoteDetailsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetManagerQuoteDetails",
+        "keyAttributes": "rental_reservation_number",
+        "itemsPath": "items",
+        "responseType": "getGetManagerQuoteDetailsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "rental_reservation_number"
+          ]
+        }
+      }
+    },
+    "getGetManagerQuoteDetailsListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetManagerQuoteDetails",
+        "keyAttributes": "customer_name",
+        "itemsPath": "items",
+        "responseType": "getGetManagerQuoteDetailsResponse2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "customer_name"
+          ]
+        }
+      }
+    },
+    "getLegalEntitiesLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "Procurement_Module/getLegalEntitiesLOV",
+        "keyAttributes": "Name",
+        "itemsPath": "items",
+        "responseType": "getLegalEntitiesLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "Name"
+          ]
+        }
+      }
+    },
+    "getManagerApprovedQuotesListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getManagerApprovedQuotes",
+        "keyAttributes": "equipment_number",
+        "itemsPath": "items",
+        "responseType": "getManagerApprovedQuotesResponse",
+        "uriParameters": {
+          "p_res_number": "{{ $variables.data.resnumber }}"
+        }
+      }
+    },
+    "getOrganizationsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "keyAttributes": "Name",
+        "itemsPath": "items",
+        "responseType": "getOrganizationsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "Name"
+          ]
+        },
+        "fetchChain": "getOrganizationsFetch"
+      }
+    },
+    "headerobj": {
+      "type": {
+        "customer": "any",
+        "endDate": "any",
+        "reservation": "any",
+        "startDate": "any"
+      }
+    },
+    "illustrationBackground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-bg-01.png"
+    },
+    "illustrationForeground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-fg-01.png"
+    },
+    "imageStretch": {
+      "type": "string",
+      "defaultValue": "none"
+    },
+    "inventoryorgADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getInventoryOrganizations",
+        "textFilterAttributes": [
+          "OrganizationName"
+        ]
+      }
+    },
+    "legalentityADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getLegalEntitiesLOV",
+        "textFilterAttributes": [
+          "Name"
+        ]
+      }
+    },
+    "mobileImage": {
+      "type": "string",
+      "defaultValue": "on"
+    },
+    "orgADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getOrganizations",
+        "textFilterAttributes": [
+          "Name"
+        ]
+      }
+    },
+    "reservationADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "rentalRecord",
+        "textFilterAttributes": [
+          "rental_reservation_number"
+        ],
+        "keyAttributes": "rental_reservation_number"
+      }
+    },
+    "salescontractobj": {
+      "type": {
+        "Cognomen": "string",
+        "ContractNumber": "string",
+        "ContractTypeId": "number",
+        "ContractTypeName": "string",
+        "CurrencyCode": "string",
+        "InvOrganizationId": "number",
+        "InvOrgName": "string",
+        "ItemDescription": "string",
+        "ItemName": "string",
+        "ItemNameTxt": "string",
+        "LegalEntityId": "number",
+        "LegalEntityName": "string",
+        "LineNumber": "string",
+        "LineTypeName": "string",
+        "OrgId": "number",
+        "OrgName": "string"
+      }
+    },
+    "workbenchADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "rentalRecord"
+      }
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.get1113185HubOrganizationsResponse": {
+      "endpoint": "get11_13_18_05HubOrganizations",
+      "service": "CRMRestAPI",
+      "path": "response"
+    },
+    "@decorators.getCurrenciesLOV": {
+      "endpoint": "getCurrenciesLOV",
+      "service": "Procurement_Module",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getCurrenciesLOVResponse": {
+      "endpoint": "getCurrenciesLOV",
+      "service": "Procurement_Module",
+      "path": "response"
+    },
+    "@decorators.getGetManagerQuoteDetailsResponse": {
+      "endpoint": "getGetManagerQuoteDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetManagerQuoteDetailsResponse2": {
+      "endpoint": "getGetManagerQuoteDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getHcmBusinessUnitsLOV": {
+      "endpoint": "getHcmBusinessUnitsLOV",
+      "service": "Hcm_Module_RestApi",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getInventoryOrganizations": {
+      "endpoint": "getInventoryOrganizations",
+      "service": "Procurement_Module",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getLegalEntitiesLOV": {
+      "endpoint": "getLegalEntitiesLOV",
+      "service": "Procurement_Module",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getLegalEntitiesLOVResponse": {
+      "endpoint": "getLegalEntitiesLOV",
+      "service": "Procurement_Module",
+      "path": "response"
+    },
+    "@decorators.getManagerApprovedQuotesResponse": {
+      "endpoint": "getManagerApprovedQuotes",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getOrganizations": {
+      "endpoint": "getOrganizations",
+      "service": "Hcm_Latest",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getOrganizationsResponse": {
+      "endpoint": "getOrganizations",
+      "service": "Hcm_Latest",
+      "path": "response"
+    },
+    "getCurrenciesLOV": {
+      "CurrencyCode": "string"
+    },
+    "getCurrenciesLOVResponse": {
+      "items": [
+        {
+          "CurrencyCode": "string"
+        }
+      ]
+    },
+    "getGetManagerQuoteDetailsResponse": {
+      "items": [
+        {
+          "customer_name": "string",
+          "end_date": "string",
+          "rental_reservation_number": "string",
+          "requestor_name": "string",
+          "start_date": "string",
+          "status": "string"
+        }
+      ]
+    },
+    "getGetManagerQuoteDetailsResponse2": {
+      "items": [
+        {
+          "customer_name": "string",
+          "end_date": "string",
+          "rental_reservation_number": "string",
+          "requestor_name": "string",
+          "start_date": "string",
+          "status": "string"
+        }
+      ]
+    },
+    "getHcmBusinessUnitsLOV": {
+      "BusinessUnitId": "number",
+      "Name": "string",
+      "Status": "string"
+    },
+    "getInventoryOrganizations": {
+      "ContractManufacturingFlag": "boolean",
+      "CreatedBy": "string",
+      "CreationDate": "string",
+      "FixedAssetCorporateBookTypeCode": "any",
+      "IntegratedSystemType": "string",
+      "InventoryFlag": "boolean",
+      "ItemDefinitionOrganizationCode": "string",
+      "ItemDefinitionOrganizationId": "number",
+      "ItemDefinitionOrganizationName": "string",
+      "ItemGroupingCode": "string",
+      "LastUpdateDate": "string",
+      "LastUpdatedBy": "string",
+      "LegalEntityId": "number",
+      "LegalEntityName": "string",
+      "LocationCode": "string",
+      "LocationId": "number",
+      "MaintenanceEnabledFlag": "boolean",
+      "ManagementBusinessUnitId": "number",
+      "ManagementBusinessUnitName": "string",
+      "ManufacturingParametersExistFlag": "string",
+      "ManufacturingPlantFlag": "boolean",
+      "MasterOrganizationCode": "string",
+      "MasterOrganizationId": "number",
+      "MasterOrganizationName": "string",
+      "OrganizationCode": "string",
+      "OrganizationId": "number",
+      "OrganizationName": "string",
+      "ProfitCenterBusinessUnitId": "number",
+      "ProfitCenterBusinessUnitName": "string",
+      "Status": "string"
+    },
+    "getLegalEntitiesLOV": {
+      "EffectiveFrom": "string",
+      "EffectiveTo": "any",
+      "LegalEntityId": "number",
+      "LegalEntityIdentifier": "string",
+      "Name": "string",
+      "PartyId": "number"
+    },
+    "getLegalEntitiesLOVResponse": {
+      "items": [
+        {
+          "EffectiveFrom": "string",
+          "EffectiveTo": "any",
+          "LegalEntityId": "number",
+          "LegalEntityIdentifier": "string",
+          "Name": "string",
+          "PartyId": "number"
+        }
+      ]
+    },
+    "getManagerApprovedQuotesResponse": {
+      "items": [
+        {
+          "customer_name": "string",
+          "equipment_class": "string",
+          "equipment_number": "string",
+          "equipment_type": "string",
+          "quote_amount": "number",
+          "rental_reservation_number": "string",
+          "requestor_name": "string",
+          "tax_amount": "number"
+        }
+      ]
+    },
+    "getOrganizations": {
+      "ClassificationCode": "string",
+      "CreationDate": "string",
+      "EffectiveEndDate": "string",
+      "EffectiveStartDate": "string",
+      "InternalAddressLine": "any",
+      "LastUpdateDate": "string",
+      "LocationId": "any",
+      "Name": "string",
+      "OrganizationCode": "string",
+      "OrganizationId": "number",
+      "OrgCode": "any",
+      "Status": "string",
+      "Title": "any"
+    },
+    "getOrganizationsResponse": {
+      "items": [
+        {
+          "ClassificationCode": "string",
+          "CreationDate": "string",
+          "EffectiveEndDate": "string",
+          "EffectiveStartDate": "string",
+          "InternalAddressLine": "any",
+          "LastUpdateDate": "string",
+          "LocationId": "number",
+          "Name": "string",
+          "OrganizationCode": "string",
+          "OrganizationId": "number",
+          "OrgCode": "any",
+          "Status": "string",
+          "Title": "any"
+        }
+      ]
+    },
+    "rentalRecord": {
+      "contractnumber": "string",
+      "customer_contract": "string",
+      "customer_name": "string",
+      "customer_site": "string",
+      "end_date": "string",
+      "equipment_class": "string",
+      "equipment_id": "string",
+      "equipment_name": "string",
+      "equipment_number": "string",
+      "equipment_type": "string",
+      "insurance_end_date": "string",
+      "insurance_issue_agent": "string",
+      "insurance_policy": "string",
+      "insurance_start_date": "string",
+      "rental_reservation_number": "string",
+      "requestor_name": "string",
+      "start_date": "string",
+      "status": "string"
+
+    },
+    "get1113185HubOrganizationsResponse": {
+      "items": [
+        {
+          "AccountScore": "number",
+          "AccountScoringTier": "any",
+          "Address1": "string",
+          "Address2": "any",
+          "Address3": "any",
+          "Address4": "any",
+          "AddressElementAttribute1": "any",
+          "AddressElementAttribute2": "any",
+          "AddressElementAttribute3": "any",
+          "AddressElementAttribute4": "any",
+          "AddressElementAttribute5": "any",
+          "AddressLinesPhonetic": "any",
+          "AddressNumber": "string",
+          "AddressType": "string",
+          "AnalysisFiscalYear": "any",
+          "BankCode": "any",
+          "BankOrBranchNumber": "any",
+          "BranchCode": "any",
+          "BranchFlag": "any",
+          "Building": "any",
+          "BusinessScope": "any",
+          "CEOName": "any",
+          "CEOTitle": "any",
+          "CertificationLevel": "any",
+          "CertificationReasonCode": "any",
+          "City": "string",
+          "CleanlinessScore": "any",
+          "Comments": "any",
+          "CompletenessScore": "any",
+          "CongressionalDistrictCode": "any",
+          "ControlYear": "any",
+          "CorpCurrencyCode": "string",
+          "CorporationClass": "any",
+          "Country": "string",
+          "County": "string",
+          "CreatedBy": "string",
+          "CreatedByModule": "string",
+          "CreationDate": "string",
+          "CurcyConvRateType": "string",
+          "CurrencyCode": "string",
+          "CurrentFiscalYearPotentialRevenueAmount": "number",
+          "DataCloudStatus": "string",
+          "DataConfidenceScore": "any",
+          "DatafoxCompanyId": "string",
+          "Description": "string",
+          "DisadvantageIndicator": "any",
+          "DisplayedDUNSPartyId": "any",
+          "DomesticUltimateDUNSNumber": "any",
+          "DoNotConfuseWith": "any",
+          "DUNSCreditRating": "any",
+          "DUNSNumber": "string",
+          "DuplicateIndicator": "any",
+          "DuplicateScore": "any",
+          "EmailAddress": "string",
+          "EmailVerificationDate": "any",
+          "EmailVerificationStatus": "any",
+          "EmployeesAtPrimaryAddress": "any",
+          "EmployeesAtPrimaryAddressEstimation": "any",
+          "EmployeesAtPrimaryAddressMinimum": "any",
+          "EmployeesAtPrimaryAddressText": "any",
+          "EmployeesTotal": "number",
+          "EnquiryDUNS": "any",
+          "EnrichmentScore": "any",
+          "ExportIndicator": "any",
+          "FiscalYearendMonth": "string",
+          "FloorNumber": "any",
+          "FormattedAddress": "string",
+          "GeneralServicesAdministrationFlag": "any",
+          "GlobalUltimateDUNSNumber": "any",
+          "GrowthStrategyDescription": "any",
+          "HomeCountry": "any",
+          "HQBranchIndicator": "any",
+          "ImportIndicator": "any",
+          "Keywords": "string",
+          "LaborSurplusIndicator": "any",
+          "LastEnrichmentDate": "string",
+          "LastScoreUpdateDate": "any",
+          "LastUpdateDate": "string",
+          "LastUpdatedBy": "string",
+          "LegalStatus": "any",
+          "LineOfBusiness": "any",
+          "LocalActivityCode": "any",
+          "LocalActivityCodeType": "any",
+          "LocalBusinessIdentifier": "any",
+          "LocalBusinessIdentifierType": "any",
+          "Mailstop": "any",
+          "MinorityOwnedIndicator": "any",
+          "MinorityOwnedType": "any",
+          "MissionStatement": "any",
+          "NextFiscalYearPotentialRevenueAmount": "number",
+          "OrganizationDEO_AccountPlanStatus_c": "any",
+          "OrganizationDEO_AccountPlanStatus_cMeaning": "any",
+          "OrganizationDEO_AccountScore_c": "string",
+          "OrganizationDEO_AccountTier_c": "string",
+          "OrganizationDEO_CurrentlyReferring_c": "any",
+          "OrganizationDEO_CurrentSatisfactionLevel_c": "any",
+          "OrganizationDEO_CustomerType_c": "any",
+          "OrganizationDEO_CustomerType_cMeaning": "any",
+          "OrganizationDEO_DaaSFacebookProfileURL_c": "any",
+          "OrganizationDEO_DaaSFaceBookURL_c": "any",
+          "OrganizationDEO_DaaSTwitterFollowers_c": "any",
+          "OrganizationDEO_DaaSTwitterProfileURL_c": "any",
+          "OrganizationDEO_DaaSYouTubeURL_c": "any",
+          "OrganizationDEO_DaaSYouTubeViews_c": "any",
+          "OrganizationDEO_DatafoxCompanyId_c": "any",
+          "OrganizationDEO_DatafoxCompanyLegalName_c": "string",
+          "OrganizationDEO_DatafoxCompanyURL_c": "string",
+          "OrganizationDEO_DatafoxKeywords_c": "any",
+          "OrganizationDEO_ExtnZcmFuseEditCustomerContainerLayout_AccountBusinessPlanLayout_1515002954905Expr": "string",
+          "OrganizationDEO_ExtnZcmFuseEditCustomerContainerLayout_BPAccountLayout_1513292945122Expr": "string",
+          "OrganizationDEO_Industry_c": "string",
+          "OrganizationDEO_InstitutionType_c": "any",
+          "OrganizationDEO_InstitutionType_cMeaning": "any",
+          "OrganizationDEO_Latitude_c": "number",
+          "OrganizationDEO_Longitude_c": "number",
+          "OrganizationDEO_LSAccountType_c": "any",
+          "OrganizationDEO_LSAccountType_cMeaning": "any",
+          "OrganizationDEO_LSCallFrequency_c": "any",
+          "OrganizationDEO_LSNumberOfBeds_c": "any",
+          "OrganizationDEO_LSNumberOfPhysicians_c": "any",
+          "OrganizationDEO_LSRoute_c": "any",
+          "OrganizationDEO_LSRoute_cMeaning": "any",
+          "OrganizationDEO_PlanManagerCalc_c": "any",
+          "OrganizationDEO_Score_c": "any",
+          "OrganizationDEO_StrategicContact_c": "any",
+          "OrganizationDEO_StrategicContact_Id_c": "any",
+          "OrganizationDEO_StrategicPlan_c": "any",
+          "OrganizationDEO_StrategicPlan_Id_c": "any",
+          "OrganizationDEO_XSD_c": "any",
+          "OrganizationName": "string",
+          "OrganizationSize": "string",
+          "OrganizationType": "any",
+          "OutOfBusinessIndicator": "any",
+          "ParentDUNSNumber": "any",
+          "ParentOrSubsidiaryIndicator": "any",
+          "PartyId": "number",
+          "PartyNumber": "string",
+          "PartyUsageCode": "string",
+          "PhoneVerificationDate": "any",
+          "PhoneVerificationStatus": "any",
+          "PostalCode": "string",
+          "PostalPlus4Code": "string",
+          "PreferredContactMethod": "any",
+          "PreferredFunctionalCurrency": "string",
+          "PrincipalName": "any",
+          "PrincipalTitle": "any",
+          "Province": "string",
+          "PublicPrivateOwnershipFlag": "boolean",
+          "RawPhoneNumber": "string",
+          "RecencyScore": "any",
+          "RegistrationType": "any",
+          "RentOrOwnIndicator": "any",
+          "SmallBusinessIndicator": "any",
+          "SourceSystem": "string",
+          "SourceSystemReferenceValue": "string",
+          "State": "string",
+          "Status": "string",
+          "StockSymbol": "string",
+          "TaxpayerIdentificationNumber": "string",
+          "ThirdPartyFlag": "any",
+          "TotalEmployeesEstimatedIndicator": "any",
+          "TotalEmployeesIndicator": "any",
+          "TotalEmployeesMinimumIndicator": "any",
+          "TotalEmployeesText": "any",
+          "TotalPaymentAmount": "any",
+          "TradingPartnerIdentifier": "any",
+          "UniqueNameAlias": "string",
+          "UniqueNameSuffix": "any",
+          "URL": "string",
+          "ValidatedFlag": "boolean",
+          "ValidityScore": "any",
+          "WomanOwnedIndicator": "any",
+          "YearEstablished": "number",
+          "YearIncorporated": "any"
+        }
+      ]
+    }
+
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain1"
+        }
+      ]
+    },
+    "buttonAction3": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain2",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "buttonAction4": {
+      "chains": [
+        {
+          "chain": "quoteActionButtonChain"
+        }
+      ]
+    },
+    "buttonAction5": {
+      "chains": [
+        {
+          "chain": "SearchButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction6": {
+      "chains": [
+        {
+          "chain": "InspectionBtnAction"
+        }
+      ]
+    },
+    "buttonAction7": {
+      "chains": [
+        {
+          "chain": "resetactionChain"
+        }
+      ]
+    },
+    "buttonAction8": {
+      "chains": [
+        {
+          "chain": "salescontractButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction9": {
+      "chains": [
+        {
+          "chain": "salescontractCloseButtonActionChain"
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "switchValue": {
+      "chains": [
+        {
+          "chain": "SwitchValueChangeChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}"
+          }
+        }
+      ]
+    },
+    "tableFirstSelectedRow": {
+      "chains": [
+        {
+          "chain": "TableFirstSelectedRowChangeChain",
+          "parameters": {
+            "rowKey": "{{$event.detail.value.key}}",
+            "rowData": "{{$event.detail.value.data}}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "chain": "PageVbEnterChain"
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-date": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-input-number": {
+        "path": "ojs/ojinputnumber"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-label": {
+        "path": "ojs/ojlabel"
+      },
+      "oj-popup": {
+        "path": "ojs/ojpopup"
+      },
+      "oj-progress-bar": {
+        "path": "ojs/ojprogress-bar"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      },
+      "oj-switch": {
+        "path": "ojs/ojswitch"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      }
+
+    },
+    "modules": {
+      "ojValidationNumber": {
+        "path": "ojs/ojvalidation-number"
+      }
+    }
+  }
+}

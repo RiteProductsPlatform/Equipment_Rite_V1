@@ -1,0 +1,11 @@
+{
+  "p_res_number": "RES12345",
+  "p_org_name": "Acme Corporation",
+  "p_contact_name": "Jane Doe",
+  "p_contact_email": "jane.doe@acmecorp.com",
+  "p_s_address_line_1": "123 Main Street",
+  "p_s_address_line_2": "Suite 100",
+  "p_s_city": "Los Angeles",
+  "p_s_state": "CA",
+  "p_s_postal_code": 90001
+}

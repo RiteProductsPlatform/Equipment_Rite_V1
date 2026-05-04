@@ -1,0 +1,75 @@
+{
+  "root": "ifSearchobj",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPayrollLockUnlock.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestPayrollLockUnlock": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/PayrollLockUnlock"
+      },
+      "outcomes": {
+        "success": "fireNotificationIsPayRollLock",
+        "failure": "fireNotification"
+      }
+    },
+    "fireNotificationIsPayRollLock": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $page.variables.isPayRollLock ? \"Payroll Lock initiated Successfully\" : \"Payroll Lock initiated Successfully\" ]]"
+      }
+    },
+    "ifSearchobj": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $page.variables.searchobj.specific === \"DAY\" ]]"
+      },
+      "outcomes": {
+        "true": "callFunctionDateFormatter",
+        "false": "assignVariablesPayrolLock"
+      }
+    },
+    "callFunctionDateFormatter": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dateFormatter",
+        "params": [
+          null,
+          null,
+          "{{ $page.variables.searchobj.crewdate }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesPayrolLock"
+      }
+    },
+    "assignVariablesPayrolLock": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.PayrolLock": {
+          "source": {
+            "lock_status": "{{ $page.variables.isPayRollLock ? \"Y\" : \"N\" }}",
+            "crew_week": "{{ $page.variables.searchobj.specific === \"WEEK\" ? $page.variables.searchobj.dateRange : \"\" }}",
+            "crew_setup_id": "{{ $page.variables.searchobj.crewSetup_id }}",
+            "crew_date": "{{ $page.variables.searchobj.specific === \"DAY\" ? $chain.results.callFunctionDateFormatter.crewDate : \"\" }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      },
+      "outcomes": {
+        "success": "callRestPayrollLockUnlock"
+      }
+    }
+  }
+}

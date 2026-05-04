@@ -1,0 +1,8 @@
+{
+  "id": "eqp-rental",
+  "description": "Flow main",
+  "defaultPage": "eqp-rental-start",
+  "services": {},
+  "types": {},
+  "variables": {}
+}

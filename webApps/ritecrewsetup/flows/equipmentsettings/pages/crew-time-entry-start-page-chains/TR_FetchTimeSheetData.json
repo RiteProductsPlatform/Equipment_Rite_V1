@@ -1,0 +1,394 @@
+{
+  "root": "callFunctionValidateGroup",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Failed to fetch Data",
+        "type": "error",
+        "displayMode": "transient"
+      }
+    },
+    "callRestGetGetTimeSheetTbl": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getGetTimeSheetTbl",
+        "uriParams": {
+
+          "project_number": "{{ $page.variables.searchobj.project ? $page.variables.searchobj.project : \"\" }}",
+          "crew_name": "{{ $page.variables.searchobj.timecrew ? $page.variables.searchobj.timecrew : \"\" }}",
+          "customer_name": "{{ \"\" }}",
+          "contract_number": "{{ $page.variables.searchobj.contract ? $page.variables.searchobj.contract : \"\" }}",
+          "search_date": "{{ $page.variables.searchobj.specific === \"DAY\" ? $chain.results.callFunctionDateFormatter.crewDate : \"\" }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesAddTimeSheetADP",
+        "failure": "fireNotification"
+      }
+    },
+    "assignVariablesAddTimeSheetADP": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.AddTimeSheetADP": {
+          "source": {
+            "data": "{{ $chain.results.callRestGetGetTimeSheetTbl.body.items }}"
+          },
+          "reset": "none",
+          "auto": "always",
+          "mapping": {
+            "$target.data": {
+              "source": "$source.data",
+              "reset": "empty"
+            }
+          }
+        }
+      },
+      "outcomes": {}
+    },
+    "callFunctionValidateGroup": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "validateGroup",
+        "params": [
+          "SearchValidationgroup"
+        ]
+      },
+      "outcomes": {
+        "success": "if"
+      }
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callFunctionValidateGroup === 'valid' ]]"
+      },
+      "outcomes": {
+        "true": "callChainFetchMaxWeekId"
+      }
+    },
+    "resetVariablesFilteredData": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.FilteredData",
+          "$page.variables.AddTimeSheetADP.data",
+          "$page.variables.SearchTimeSheetADP.data"
+        ]
+      },
+      "outcomes": {
+        "success": "ifSearchobj"
+      }
+    },
+    "callFunctionDateFormatter": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dateFormatter",
+        "params": [
+          null,
+          null,
+          "{{ $page.variables.searchobj.crewdate }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callFunctionGetDay"
+      }
+    },
+    "callChainFetchMaxWeekId": {
+      "module": "vb/action/builtin/callChainAction",
+      "parameters": {
+        "id": "fetchMaxWeekId"
+      },
+      "outcomes": {
+        "success": "resetVariablesFilteredData"
+      }
+    },
+    "callFunctionGetDay": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "getDay",
+        "params": [
+          "{{ $page.variables.searchobj.crewdate }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesColumns"
+      }
+    },
+    "assignVariablesColumns": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.Columns": {
+          "source": "{{ $chain.results.callFunctionGetDay.columns }}"
+        },
+        "$page.variables.columnOptions": {
+          "source": "{{ $chain.results.callFunctionGetDay.columns }}"
+        }
+      },
+      "outcomes": {
+        "success": "callRestGetGetTimeSheetTbl"
+      }
+    },
+    "ifSearchobj": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $page.variables.searchobj.specific === \"DAY\" ]]"
+      },
+      "outcomes": {
+        "true": "callFunctionDateFormatter",
+        "false": "assignVariablesColumns3"
+      }
+    },
+    "assignVariablesColumns3": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.Columns": {
+          "source": [
+            {
+              "headerText": "Resource Name",
+              "field": "resource_name",
+              "frozenEdge": "start",
+              "classname": "oj-read-only"
+            },
+            {
+              "headerText": "Project Number",
+              "field": "project_number",
+              "frozenEdge": "start",
+              "classname": "oj-read-only"
+            },
+            {
+              "headerText": "Task Name",
+              "field": "task_name",
+              "frozenEdge": "start",
+              "classname": "oj-read-only"
+            },
+            {
+              "headerText": "OT Rate",
+              "field": "ot_rate",
+              "frozenEdge": "start"
+            },
+            {
+              "headerText": "Mon In Time",
+              "field": "mon_in_time"
+            },
+            {
+              "headerText": "Mon Out Time",
+              "field": "mon_out_time"
+            },
+            {
+              "headerText": "Mon Total Hours",
+              "field": "mon_total_hours"
+            },
+            {
+              "headerText": "Tue In Time",
+              "field": "tue_in_time"
+            },
+            {
+              "headerText": "Tue Out Time",
+              "field": "tue_out_time"
+            },
+            {
+              "headerText": "Tue Total Hours",
+              "field": "tue_total_hours"
+            },
+            {
+              "headerText": "Wed In Time",
+              "field": "wed_in_time"
+            },
+            {
+              "headerText": "Wed Out Time",
+              "field": "wed_out_time"
+            },
+            {
+              "headerText": "Wed Total Hours",
+              "field": "wed_total_hours"
+            },
+            {
+              "headerText": "Thu In Time",
+              "field": "thu_in_time"
+            },
+            {
+              "headerText": "Thu Out Time",
+              "field": "thu_out_time"
+            },
+            {
+              "headerText": "Thu Total Hours",
+              "field": "thu_total_hours"
+            },
+            {
+              "headerText": "Fri In Time",
+              "field": "fri_in_time"
+            },
+            {
+              "headerText": "Fri Out Time",
+              "field": "fri_out_time"
+            },
+            {
+              "headerText": "Fri Total Hours",
+              "field": "fri_total_hours"
+            },
+            {
+              "headerText": "Sat In Time",
+              "field": "sat_in_time"
+            },
+            {
+              "headerText": "Sat Out Time",
+              "field": "sat_out_time"
+            },
+            {
+              "headerText": "Sat Total Hours",
+              "field": "sat_total_hours"
+            },
+            {
+              "headerText": "Sun In Time",
+              "field": "sun_in_time"
+            },
+            {
+              "headerText": "Sun Out Time",
+              "field": "sun_out_time"
+            },
+            {
+              "headerText": "Sun Total Hours",
+              "field": "sun_total_hours"
+            },
+            {
+              "headerText": "Total Hours",
+              "field": "total_hours"
+            },
+            {
+              "headerText": "Status",
+              "field": "status"
+            }
+          ]
+        },
+        "$page.variables.columnOptions": {
+          "source": [
+            {
+              "headerText": "Resource Name",
+              "field": "resource_name",
+              "frozenEdge": "start",
+              "classname": "oj-read-only"
+            },
+            {
+              "headerText": "Project Number",
+              "field": "project_number",
+              "frozenEdge": "start",
+              "classname": "oj-read-only"
+            },
+            {
+              "headerText": "Task Name",
+              "field": "task_name",
+              "frozenEdge": "start",
+              "classname": "oj-read-only"
+            },
+            {
+              "headerText": "OT Rate",
+              "field": "ot_rate",
+              "frozenEdge": "start"
+            },
+            {
+              "headerText": "Mon In Time",
+              "field": "mon_in_time"
+            },
+            {
+              "headerText": "Mon Out Time",
+              "field": "mon_out_time"
+            },
+            {
+              "headerText": "Mon Total Hours",
+              "field": "mon_total_hours"
+            },
+            {
+              "headerText": "Tue In Time",
+              "field": "tue_in_time"
+            },
+            {
+              "headerText": "Tue Out Time",
+              "field": "tue_out_time"
+            },
+            {
+              "headerText": "Tue Total Hours",
+              "field": "tue_total_hours"
+            },
+            {
+              "headerText": "Wed In Time",
+              "field": "wed_in_time"
+            },
+            {
+              "headerText": "Wed Out Time",
+              "field": "wed_out_time"
+            },
+            {
+              "headerText": "Wed Total Hours",
+              "field": "wed_total_hours"
+            },
+            {
+              "headerText": "Thu In Time",
+              "field": "thu_in_time"
+            },
+            {
+              "headerText": "Thu Out Time",
+              "field": "thu_out_time"
+            },
+            {
+              "headerText": "Thu Total Hours",
+              "field": "thu_total_hours"
+            },
+            {
+              "headerText": "Fri In Time",
+              "field": "fri_in_time"
+            },
+            {
+              "headerText": "Fri Out Time",
+              "field": "fri_out_time"
+            },
+            {
+              "headerText": "Fri Total Hours",
+              "field": "fri_total_hours"
+            },
+            {
+              "headerText": "Sat In Time",
+              "field": "sat_in_time"
+            },
+            {
+              "headerText": "Sat Out Time",
+              "field": "sat_out_time"
+            },
+            {
+              "headerText": "Sat Total Hours",
+              "field": "sat_total_hours"
+            },
+            {
+              "headerText": "Sun In Time",
+              "field": "sun_in_time"
+            },
+            {
+              "headerText": "Sun Out Time",
+              "field": "sun_out_time"
+            },
+            {
+              "headerText": "Sun Total Hours",
+              "field": "sun_total_hours"
+            },
+            {
+              "headerText": "Total Hours",
+              "field": "total_hours"
+            },
+            {
+              "headerText": "Status",
+              "field": "status"
+            }
+          ]
+        }
+      },
+      "outcomes": {
+        "success": "callRestGetGetTimeSheetTbl"
+      }
+    }
+  }
+}

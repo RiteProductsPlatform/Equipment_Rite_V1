@@ -1,0 +1,675 @@
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Equipment Rental Details" primary-action.label="Back"
+  on-sp-primary-action="[[$listeners.ojSpWp1SpPrimaryAction]]" secondary-actions='[{"label":"Rentals Home"}]'
+  on-sp-secondary-action="[[$listeners.ojSpWp1SpSecondaryAction]]" background-color="dark-pebble"
+  primary-action.display='[[ $variables.iscart ? "on":"off" ]]'>
+  <oj-form-layout max-columns="4" columns="4" label-edge="top" slot="search">
+    <!-- <oj-bind-if test='[[ $variables.iscart ? "on":"off" ]]'>
+    <oj-button label="Back" class="oj-button-sm" chroming="outlined">
+    </oj-button>
+    </oj-bind-if> -->
+
+
+    <!-- <div style="marging-left:-30px"> -->
+    <oj-input-text label-hint="Location" readonly="true" value="{{ $flow.variables.headerobj.location }}">
+    </oj-input-text>
+    <oj-input-date label-hint="Requested Start Date" readonly="true" value="{{ $flow.variables.headerobj.fromDate }}">
+    </oj-input-date>
+    <oj-input-date label-hint="Requested End Date" readonly="true" value="{{ $flow.variables.headerobj.todate }}">
+    </oj-input-date>
+    <oj-button label="Rentals Home" chroming="outlined" class="oj-button-sm"
+      on-oj-action="[[$listeners.buttonAction11]]" style="margin-top:20px">
+    </oj-button>
+    <!-- </div> -->
+   
+  </oj-form-layout>
+  
+  <div class="oj-panel oj-flex" style="margin-top:-47px">
+    <div class="oj-flex-item oj-flex oj-sm-justify-content-flex-end" style="width:100%;margin-right:15px">
+      <!-- <oj-bind-if test="[[ !$variables.iscart ]]"> -->
+      <div class="cart-container" style="position: relative; display: inline-block;">
+        <!-- <oj-button display="icons" chroming="borderless"> -->
+        <span class="oj-ux-ico-cart" style="color:green;font-size:43px;cursor:pointer"
+          on-click="[[$listeners.iconClick]]"
+       ></span>
+        <!-- </oj-button> -->
+        <span class="cart-count"
+      style="position: absolute; top: -5px; right: -10px; font-size: 20px; color: white; background-color: red; border-radius: 50%; padding: 2px; text-align: center; min-width: 20px; height: 20px; line-height: 20px;"
+      ><oj-bind-text value="[[ $variables.CartArray.length ]]"></oj-bind-text>
+        </span>
+      </div>
+      <!-- </oj-bind-if> -->
+      <oj-bind-if test="[[ $variables.iscart ]]">
+        <oj-toolbar chroming="solid" style="margin-left:10px">
+          <oj-button label="Submit" chroming="callToAction" class="oj-button-sm"
+            on-oj-action="[[$listeners.buttonAction4]]" disabled="[[ $flow.variables.syncCartArray.length<=0 ]]">
+          </oj-button>
+          <!-- <oj-button label="Back" chroming="callToAction" class="oj-button-sm"
+            on-oj-action="[[$listeners.buttonAction2]]"></oj-button> -->
+        </oj-toolbar>
+
+      </oj-bind-if>
+
+    </div>
+    <oj-bind-if test="[[! $variables.iscart ]]">
+      <oj-form-layout>
+
+        <oj-select-single label-hint="Equipment Class" item-text="equipment_class"
+          value="{{ $variables.equipmentName }}" data="[[$variables.getGetEquipmentClassLOVListSDP]]"
+          on-value-item-changed="[[$listeners.selectValueItem]]"></oj-select-single>
+
+      </oj-form-layout>
+    </oj-bind-if>
+    <oj-dialog dialog-title="Dialog" id="termsDlg" style="width:70vw">
+      <div slot="body">
+        <div class="oj-flex oj-sm-margin-10x-top">
+          <oj-collapsible class="oj-flex-item oj-sm-flex-initial" id="rentals" expanded="true">
+            <h6 slot="header">Terms</h6>
+
+            <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; max-width: 600px;">
+
+              <span style="text-align: center; font-size: 1.8rem; margin-bottom: 1rem;">Rental Terms and Conditions</span>
+
+              <p style="margin-bottom: 1rem;">
+                These terms and conditions form part of the rental contract between "RITE SOFTWARE SOLUTIONS" and
+                customer to be entered below, and apply to all the equipment (the
+                “Equipment”) rented by you. These terms and conditions constitute additional provisions of, and guides
+                to
+                interpretation of the Rental Contract. In the event of a conflict between these terms and conditions
+                hereof and the Rental Contract, the terms of the Rental Contract shall prevail.
+              </p>
+
+
+              <p style="margin-bottom: 1rem;"> <span style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">YOU ARE CONSIDERED TO HAVE TAKEN
+              DELIVERY OF THE EQUIPMENT</span>
+                and therefore assume all risk of loss from the time that the Equipment is picked up or delivered–when
+                you
+                take possession of the equipment. You are responsible for any damage you cause to equipment, property or
+                person(s), during testing. After completing your tests you must notify the Rental Company of any
+                defective
+                or inoperable equipment immediately upon discovering the defect. Unless you notify the Rental Company of
+                a
+                defect or problem with the equipment supplied, you agree that the Equipment is in good working order and
+                that the Equipment is acceptable to you.
+              </p>
+
+              <span style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">TRANSPORTING EQUIPMENT – PICK UP &
+              DELIVERY</span>
+              <p style="margin-bottom: 1rem;">
+                YOU PICK UP AND RETURN THE EQUIPMENT at ASL IN ORLANDO 9am-5pm Monday through Friday.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                IF YOU DO NOT PICK UP AND/OR RETURN THE EQUIPMENT TO ASL YOU ARE RESPONSIBLE FOR TRANSPORTATION TO
+                AND/OR
+                FROM ANY LOCATION. At your request and expense, the Rental Company may arrange shipment of the Equipment
+                to your designated location. You are responsible for all costs (transportation charges, taxes, duties,
+                brokers fees, bonds, insurance and any other costs) incurred during transit. The Rental Company is not
+                responsible for shipping delays once the Equipment is delivered to your carrier. The Rental Company will
+                not accept collect shipments from you.
+              </p>
+
+              <span style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">YOUR RESPONSIBILITIES WITH REGARD TO
+              THE EQUIPMENT</span>
+              <p style="margin-bottom: 1rem;">
+                YOU ASSUME ALL RISKS OF LOSS. Once you have taken delivery of the Equipment, your responsibility
+                includes,
+                but is not limited to, risks while in transit, at all locations named and unnamed, at all studios, while
+                on your own premises and while in use.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                YOUR RESPONSIBILITY ENDS WHEN THE EQUIPMENT IS RETURNED AND THE RENTAL TERM HAS EXPIRED. Equipment will
+                not be deemed to have been returned until all of the following conditions have been met:
+              </p>
+              <ul style="margin: 0 0 1rem 1.2rem; padding: 0;">
+                <li>Property has been brought back to the premises during normal business hours;</li>
+                <li>An inventory has been completed and a missing and damaged list has been compiled, if needed;</li>
+                <li>The term of the Rental Contract has expired.</li>
+              </ul>
+
+              <span style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">RESTRICTIONS UPON THE USE OF THE
+              EQUIPMENT</span>
+              <p style="margin-bottom: 1rem;">USE BY QUALIFIED TECHNICIANS ONLY. The Equipment may be used only by your
+                duly qualified employees and/or agents and in strict accordance with the use contemplated in the Rental
+                Contract. You shall keep the Equipment in your sole custody and shall not permit the Equipment to be
+                used
+                in violation of any laws.</p>
+              <p style="margin-bottom: 1rem;">NO SUBLEASE BY YOU IS PERMITTED. You may not sublease any part of the ASL
+                equipment.</p>
+              <p style="margin-bottom: 1rem;">DO NOT REMOVE SERIAL NUMBERS OR COVER COMPANY LOGOS. You may not remove or
+                cover over any serial numbers, tags, nameplates, or identifying logos on the Equipment showing ownership
+                by the Rental Company.</p>
+              <p style="margin-bottom: 1rem;">NO WARRANTY OR GUARANTY Except as provided by the law, Equipment is rented
+                to you without warranty or guaranty of any kind, expressed or implied, and the Rental Company assumes no
+                responsibility unless agreed to in writing.</p>
+
+              <span style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">EQUIPMENT DAMAGED OR DESTROYED WHILE
+              IN THE FIELD</span>
+              <p style="margin-bottom: 1rem;">AS SOON AS YOU DISCOVER THAT EQUIPMENT IN THE FIELD IS DEFECTIVE, you
+                should
+                notify the Rental Company of the problem and if necessary return the Equipment to the Rental Company,
+                freight pre-paid, for evaluation. The Rental Company will make a reasonable effort to repair or replace
+                the Equipment in the shortest amount of time.</p>
+              <p style="margin-bottom: 1rem;">
+                LOSS AND DAMAGES. Upon return of damaged equipment, the Rental Company will make a determination of the
+                extent of the damage and the required repairs. You and/or your representative(s), will have a reasonable
+                amount of time to inspect the damage. In determining whether equipment shall be replaced or repaired,
+                the
+                Rental Company’s judgment shall be conclusive upon you. Should the Rental Company determine that the
+                equipment must be replaced, you will be responsible for the cost to replace the same item or the closest
+                comparably equipped model, at current retail prices less any discounts available, without deduction for
+                depreciation.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                LOST, STOLEN OR DESTROYED EQUIPMENT. In the event that after delivery to you, any of the Equipment is
+                lost, stolen, damaged beyond repair, destroyed or otherwise disappears or is not returned for any
+                reason,
+                you will be responsible for the cost to replace the same item or the closest comparably equipped model,
+                at
+                current retail prices less any discounts available, without deduction for depreciation.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                AS SOON AS YOU REALIZE THAT EQUIPMENT IS MISSING, NOTIFY THE RENTAL COMPANY, AND FILE A POLICE REPORT.
+                In
+                all instances immediately report any missing, lost, or stolen equipment to the Rental Company and file a
+                report with the local authorities.
+              </p>
+
+              <span style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">RENTAL CHARGES AND LATE CHARGES</span>
+              <p style="margin-bottom: 1rem;">
+                YOU MUST RETURN THE EQUIPMENT ON THE DATE SPECIFIED in the Rental Contract or be subject to additional
+                charges. The last rental day shall be the day specified in the Rental Contract or up until 12 Noon of
+                the
+                next business day. A full additional day’s rental will be charged for any Equipment not returned by 12
+                Noon. Full daily rates shall be charged for each day Equipment is not returned after the date specified
+                for the return of the Equipment.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                IF YOU RETURN THE EQUIPMENT IN DAMAGED OR NON-WORKING CONDITION, the lease period will be extended by
+                the
+                shortest reasonable time necessary to repair such damage or replace non-repairable equipment and return
+                the item(s) to the Rental Company’s general inventory. The extended rental period shall apply only to
+                the
+                damaged or non working item(s), unless the item(s) forms a part of other equipment. There may be delays
+                in
+                repair or replacement attributable to causes beyond the Rental Company’s control. The acceptance of the
+                return of the Equipment by the Rental Company is not a waiver by the Rental Company of any claims that
+                it
+                may have against you.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                RENTAL CHARGES FOR THE DAMAGED OR NON-WORKING ITEM(S) due to customers use shall accrue at full rental
+                rate for the item(s) irrespective of any package discounts or other discounts agreed to at the inception
+                of the Rental Contract, until the item(s) is repaired and/or replaced and the invoice for damages has
+                been
+                paid in full to the Rental Company. If requested you shall advance the money in order to allow the
+                Rental
+                Company to repair or replace the equipment.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                WEEKENDS AND HOLIDAYS. When on a daily schedule, you will be charged the daily rental rate for weekend
+                days and Holidays if the Equipment is used.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                MINIMUM CHARGES. There may be minimum rental periods and/or special minimums applicable to Equipment to
+                be
+                used other than locally.
+              </p>
+
+              <span style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">CREDIT INFORMATION AND PAYMENT TERMS
+            </span>
+              <p style="margin-bottom: 1rem;">
+                THE TERMS OF PAYMENT are based upon credit information you supply at the time of rental. Should there be
+                any change in such information, you agree that the Rental Company may demand immediate payment without
+                prior notice.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                PAYMENT TERMS. Rental invoices and loss and damage invoices are payable upon receipt of invoice and not
+                later than net 10 days. Payments due for 30 days or more shall be considered past due. For each month or
+                part of a month thereafter, a past due or late charge may be assessed, which you are expected to pay. If
+                the company places the account in the hands of an attorney or other agency for collection, you agree to
+                pay reasonable collection costs, attorney fees and court costs. You agree to pay the rental house
+                directly
+                or as directed by the rental house or its agent.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                RENTAL PAYMENTS DO NOT APPLY TO PURCHASE PRICE. Rental payments may not be applied to the purchase price
+                of any equipment.
+              </p>
+
+              <span style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">CANCELLATION POLICIES</span>
+              <p style="margin-bottom: 0.5rem;">
+                In the event of cancellation, charges may apply in consideration of the rental company’s preparing,
+                holding in reserve or sub-renting equipment, on your behalf. By keeping the rental company informed of
+                you
+                can either minimize or avoid cancellation fees.
+              </p>
+
+              <span style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">INSURANCE REQUIREMENTS</span>
+              <p style="margin-bottom: 1rem;">
+                YOU MUST INSURE ALL THE EQUIPMENT. You shall, at your expense, and at all times during the rental,
+                maintain in full force and effect insurance covering all equipment rented, from all sources, for full
+                replacement cost, except vehicles which are at actual cash value, and for loss of use (rents) of the
+                equipment. Coverage must begin from the time you or your agents accept delivery of the equipment and
+                continue until the time the equipment is returned. You shall deliver to the Rental Company, upon
+                request,
+                evidence of the insurance coverage, typically a Certificate of Insurance satisfactory to the Rental
+                Company, showing Liability Coverage, Property Insurance and Workers Compensation Insurance, prior to
+                taking possession of equipment. Such insurance shall be written by reputable insurers acceptable to the
+                Rental Company; your insurers shall agree to be the primary insurers of such Equipment during the rental
+                period. Notwithstanding this paragraph, you shall remain primarily liable to the Rental Company for full
+                performance under the terms and conditions of the Rental Contract. The Rental Company may enforce its
+                remedies directly against you without resort to your insurance.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                PROPERTY INSURANCE. Your insurance should be on a worldwide basis; shall name the Rental Company as Loss
+                Payee for loss or damage to the property rented; shall cover “All Risks” of loss or damage for
+                equipment;
+                vehicles physical damage coverage shall include the perils of “Comprehensive” and “Collision”; and all
+                policies shall provide for 10 days written notice to the rental company before any policy shall be
+                modified or canceled. Limits shall be sufficient to encompass all property at risk, regardless of
+                source,
+                but in no event less than $1,000,000.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                LIABILITY INSURANCE. You shall name the Rental Company as an additional insured on your liability
+                insurance and your liability insurance shall be deemed primary and non-contributory insurance in the
+                event
+                of any claim or suit. Liability insurance shall meet the following minimums:
+              </p>
+              <ul style="margin: 0 0 1rem 1.2rem; padding: 0;">
+                <li>Commercial General Liability: $1,000,000 per occurrence &amp; annual aggregate.</li>
+                <li>Automobile Liability: $1,000,000 combined single limit</li>
+                <li>Foreign Liability, if filming outside the U.S.A. or Canada: $1,000,000 per occurrence limit.</li>
+              </ul>
+              <p style="margin-bottom: 1rem;">
+                THE RIGHTS OF THE RENTAL COMPANY ARE NOT AFFECTED BY YOUR NON-PERFORMANCE. Your insurers shall agree
+                that
+                the rights of the Rental Company under the insurance coverage as described in the preceding paragraphs
+                shall not be affected by any act or neglect or breach of condition by you, other than non-payments of
+                insurance premiums.
+              </p>
+              <p style="margin-bottom: 0.5rem;">
+                Should you fail to procure or pay the cost of maintaining in force the insurance specified in the Rental
+                Contract or to provide the Rental Company upon request with satisfactory evidence of the insurance, the
+                Rental Company may, but shall not be obligated to, procure the insurance and you shall reimburse the
+                Rental Company on demand for its cost. Lapse or cancellation of the required insurance shall be an
+                immediate and automatic default of this agreement.
+              </p>
+
+              <span style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">TITLE AND OWNERSHIP</span>
+              <p style="margin-bottom: 1rem;">
+                You specifically acknowledge the Rental Company’s superior title and ownership of the Equipment and must
+                keep the Equipment free of all liens, levies and encumbrances. You may not assign or pledge the
+                Equipment.
+              </p>
+
+              <span style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">RIGHT OF ENTRY AND INSPECTION</span>
+              <p style="margin-bottom: 0.5rem;">
+                The Rental Company shall have the right to inspect the Equipment at any time during the rental term. You
+                shall make any and all arrangements necessary to permit a qualified employee of the Rental Company
+                access
+                to the location of the Equipment. If a breach of any of the provisions of the Rental Contract occurs,
+                the
+                Rental Company has the right to remove all of the Equipment without any liability to you, and without
+                prejudice to the Rental Company’s right to receive rent due or accrued to, including the date of removal
+                of the Equipment.
+              </p>
+
+              <span style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">INDEMNIFYING THE RENTAL HOUSE</span>
+              <p style="margin-bottom: 0.5rem;">
+                You agree to indemnify the Rental Company and to hold the Rental Company and its employees and agents
+                harmless from and against any and all losses, damages, claims, demand or liability of any kind or nature
+                whatsoever, including legal expenses, arising from the use, condition (including, without limitation,
+                latent and other defects) or operation of the Equipment, and by whosoever used or operated during the
+                rental term. This indemnification shall continue in full force and effect during and after the term of
+                the
+                rental for causes arising during the term of the rental.
+              </p>
+
+              <span style="font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem;">MISCELLANEOUS ASPECTS OF THE RENTAL
+              AGREEMENT</span>
+              <p style="margin-bottom: 1rem;">
+                THIS AGREEMENT SHALL BE GOVERNED BY THE LAWS OF THE STATE OF FLORIDA. The Rental Contract shall be
+                deemed
+                to have been made in the County of Orange, and shall be interpreted and the rights and liabilities of
+                the
+                parties determined, in accordance with the laws of the State of Florida.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                WHEN THE CUSTOMER IS A CORPORATION. The person executing the Rental Contract on behalf of such
+                corporation
+                warrants that he/she has full authority of such corporation to sign the Rental Contract and obligate the
+                corporation.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                DEFAULT AND BREACH OF TERMS: Each Rental Contract includes provisions for remedies in the event of
+                default
+                by you in payment of rent, or your breach of any terms of the Rental Contract, etc. Please read these
+                sections in the Rental Contract carefully to understand your rights.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                ENTIRE AGREEMENT. The signed Rental Contract and these Terms &amp; Conditions constitute the entire
+                agreement between you and the Rental Company. Any changes must be made in writing and agreed to by both
+                parties.
+              </p>
+              <oj-checkboxset label-hint="" id="aknldge" on-value-changed="[[$listeners.checkboxSetValue]]">
+                <oj-option value="true">I Agree</oj-option>
+              </oj-checkboxset>
+            </body>
+          </oj-collapsible>
+          <oj-collapsible class="oj-flex-item oj-sm-flex-initial" id="customer" style="width:100%"
+            expanded="{{ $variables.ackwnloedgeArray.length > 0 }}">
+            <h6 slot="header">Customer Details</h6>
+            <oj-validation-group id="customerDtls">
+              <oj-form-layout max-columns="3" label-edge="top" columns="3">
+                <oj-input-text label-hint="Customer Organization Name" required="true"
+                  on-value-changed="[[$listeners.inputTextValue]]"></oj-input-text>
+                <oj-input-text label-hint="Contact Name" required="true"
+                  on-value-changed="[[$listeners.inputTextValue7]]"></oj-input-text>
+                <oj-input-text virtual-keyboard="email"
+                  validators='[{"type":"regexp", "options":{"pattern":"([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})", "hint":"Enter an email address.", "messageDetail": "Value must be of the form xxx@xxx.xx"}}]'
+                  label-hint="Contact Email" required="true" on-value-changed="[[$listeners.inputTextValue6]]"></oj-input-text>
+                <oj-input-number converter='{"options":{"useGrouping":false},"type":"number"}'
+                  label-hint="Contact Mobile Number" value="{{ $variables.enterdCustomerMobileNumber }}"></oj-input-number>
+                <oj-input-text label-hint="Customer Site Address Line 1"
+                  on-value-changed="[[$listeners.inputTextValue2]]" required="true"></oj-input-text>
+                <oj-input-text label-hint="Customer Site Address Line 2"></oj-input-text>
+                <oj-input-text label-hint="City" required="true" on-value-changed="[[$listeners.inputTextValue8]]"></oj-input-text>
+                <oj-input-text label-hint="State" required="true" on-value-changed="[[$listeners.inputTextValue9]]"></oj-input-text>
+                <oj-input-number label-hint="Postal Code" required="true"
+                  converter='{"options":{"useGrouping":false},"type":"number"}'
+                  on-value-changed="[[$listeners.inputNumberValue]]"></oj-input-number>
+                <oj-input-text label-hint="Contract (Optional)" on-value-changed="[[$listeners.inputTextValue3]]"></oj-input-text>
+              </oj-form-layout>
+            </oj-validation-group>
+          </oj-collapsible>
+
+          <oj-collapsible class="oj-flex-item oj-sm-flex-initial" id="insurance" style="width:100%"
+            expanded="{{ $variables.ackwnloedgeArray.length > 0 }}">
+            <h6 slot="header">Insurance Details</h6>
+            <oj-form-layout columns="4" max-columns="4" label-edge="top">
+              <oj-input-text label-hint="Insurance Policy" on-value-changed="[[$listeners.inputTextValue4]]">
+              </oj-input-text>
+              <oj-input-text label-hint="Issue Agency" on-value-changed="[[$listeners.inputTextValue5]]">
+              </oj-input-text>
+              <oj-input-date label-hint="Start Date" on-value-changed="[[$listeners.inputDateValue]]"></oj-input-date>
+              <oj-input-date label-hint="End Date" on-value-changed="[[$listeners.inputDateValue2]]"></oj-input-date>
+            </oj-form-layout>
+
+          </oj-collapsible>
+
+        </div>
+      </div>
+      <div slot="footer">
+        <oj-button on-oj-action="[[$listeners.buttonAction5]]">Cancel</oj-button>
+        <oj-button chroming="callToAction" disabled="[[ !$variables.ackwnloedgeArray.length > 0 ]]"
+          on-oj-action="[[$listeners.buttonAction9]]">Submit</oj-button>
+      </div>
+    </oj-dialog>
+
+    <oj-dialog dialog-title="" id="poDlg" style="width:70vw">
+
+      <div slot="body">
+        <div class="oj-flex-item oj-sm-margin-6x-top">
+          <h6>Create Purchase Requisition</h6>
+        </div>
+        <div class="oj-flex oj-sm-margin-3x-top">
+          <div class="oj-flex-item oj-sm-12 oj-md-12">
+            <oj-form-layout columns="4" max-columns="4" label-edge="top">
+              <oj-select-single label-hint="Business Unit" value="{{ $variables.CreatePoObj.bu }}"
+                data="[[ $variables.BuADP ]]" item-text="business_unit_name"
+                on-value-item-changed="[[$listeners.selectValueItem3]]"></oj-select-single>
+              <oj-select-single label-hint="Preparer" data="[[ $variables.PersonNameADP ]]" item-text="person_name"
+                value="{{ $variables.CreatePoObj.preparer }}" on-value-item-changed="[[$listeners.selectValueItem6]]">
+              </oj-select-single>
+              <oj-select-single label-hint="Requestor Name" value="{{ $variables.CreatePoObj.requestor }}"
+                data="[[$variables.PersonNameADP]]" item-text="person_name"
+                on-value-item-changed="[[$listeners.selectValueItem4]]">
+              </oj-select-single>
+              <oj-select-single label-hint="Line Types" value="{{ $variables.CreatePoObj.lineType }}"
+                data="[[$variables.lineTypesListSDP]]" item-text="linetype">
+              </oj-select-single>
+              <oj-select-single label-hint="Item Number" value="{{ $variables.CreatePoObj.item_number }}"
+                data="[[$variables.itemNumberADP]]" item-text="item_number"
+                on-value-item-changed="[[$listeners.selectValueItem7]]">
+              </oj-select-single>
+              <oj-input-text label-hint="Item Description" value="{{ $variables.CreatePoObj.item_description }}"
+                readonly="true"></oj-input-text>
+
+              <oj-input-text label-hint="UOM" value="{{ $variables.CreatePoObj.uom }}" readonly="true"></oj-input-text>
+
+              <oj-input-text label-hint="Currency Code" value="{{ $variables.CreatePoObj.CurrencyCode }}"
+                readonly="true">
+                <!-- <oj-button slot="end" display="icons" chroming="callToAction">
+                  Search
+                  <span slot="endIcon" class="oj-ux-ico-email"></span>
+                </oj-button> -->
+              </oj-input-text>
+              <oj-input-number label-hint="Price" value="{{ $variables.CreatePoObj.price }}"></oj-input-number>
+              <oj-select-single label-hint="Item Category" value="{{ $variables.CreatePoObj.itemcategory }}"
+                data="[[$variables.rentItemCategoriesListSDP]]" item-text="category_code">
+              </oj-select-single>
+              <oj-select-single label-hint="Destination" value="{{ $variables.CreatePoObj.orgName }}"
+                data="[[$variables.rentInventoryOrgbyBUListSDP]]" item-text="organization_name"
+                on-value-item-changed="[[$listeners.selectValueItem5]]">
+              </oj-select-single>
+              <!-- <oj-select-single label-hint="Destination Code" value="{{ $variables.CreatePoObj.Desticode }}"
+                data="[[$variables.rentInventoryOrgbyBUListSDP2]]" item-text="organization_code">
+              </oj-select-single> -->
+              <oj-input-number label-hint="Quantity" value="{{ $variables.CreatePoObj.quantity }}"></oj-input-number>
+            </oj-form-layout>
+          </div>
+
+        </div>
+      </div>
+      <div slot="footer">
+        <oj-button on-oj-action="[[$listeners.buttonAction7]]">Cancel</oj-button>
+        <oj-button chroming="callToAction" on-oj-action="[[$listeners.buttonAction8]]">Create</oj-button>
+      </div>
+    </oj-dialog>
+
+
+    <div class="oj-flex-item">
+      <oj-bind-if test="[[ !$variables.iscart ]]">
+        <oj-bind-for-each data="[[ $variables.EquipmentADP.data]]">
+          <template>
+            <div class="oj-panel oj-flex oj-sm-flex-direction-row oj-sm-margin-2x-top oj-panel-shadow-lg"
+              style="background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);">
+              <div class="oj-flex-item oj-flex oj-sm-flex-direction-row">
+                <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-end">
+                  <img :src="[[ $current.data.file_content ]]" alt="Equipment Image" style="width: 150px; height: 150px; object-fit: cover;" />
+                </div>
+
+                <div class="oj-flex-item oj-flex oj-sm-flex-direction-column">
+                  <div class="oj-flex oj-sm-flex-direction-row">
+                    <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-end">
+                      <span style="font-size:16px;margin-top:15px" class="oj-color-invert"><oj-bind-text value="[[ 'Number: ' + $current.data.equipment_number ]]"></oj-bind-text></span>
+                    </div>
+                    <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-end">
+                      <oj-bind-if test="[[ $current.data.availability === 'G' ]]">
+                        <span class="oj-badge oj-badge-success">Available</span>
+                      </oj-bind-if>
+                    </div>
+                  </div>
+                  <span style="font-weight:bold;font-size:22px;margin-top:15px" class="oj-color-invert"><oj-bind-text value="[[ $current.data.equipment_name ]]"></oj-bind-text></span>
+
+                  <!-- <div style="margin-top:15px">
+                    <span style="margin-right: 20px; cursor: default; color: white;">
+    <span style="font-weight: bold; color: white;">$ 
+      <oj-bind-text value="[[ $current.data.bill_rate ? $current.data.bill_rate : 0 ]]"></oj-bind-text>
+    </span>
+                    <span style="color: white;"> /day</span>
+                    </span>
+
+                    <span style="margin-right: 20px; cursor: default; color: white;">
+    <span style="font-weight: bold; color: white;">$ 
+      <oj-bind-text value="[[ $functions.calculateWeeklyAndMonthly($current.data.bill_rate).perWeek ]]"></oj-bind-text>
+    </span>
+                    <span style="color: white;"> /week</span>
+                    </span>
+
+                    <span style="cursor: default; color: white;">
+    <span style="font-weight: bold; color: white;">$ 
+      <oj-bind-text value="[[ $functions.calculateWeeklyAndMonthly($current.data.bill_rate).perMonth ]]"></oj-bind-text>
+    </span>
+                    <span style="color: white;"> /month</span>
+                    </span>
+                  </div> -->
+
+
+                </div>
+              </div>
+              <div class="oj-flex-item oj-flex oj-sm-justify-content-flex-end oj-sm-margin-2x-start">
+                <div class="oj-flex oj-sm-flex-direction-column">
+                  <div class="oj-flex-item">
+                    <oj-button label="Add to Cart" class="oj-button-lg oj-color-invert"
+                      on-oj-action="[[$listeners.buttonAction]]">
+                    </oj-button>
+                  </div>
+                  <div class="oj-flex-item oj-sm-margin-2x-top">
+                    <oj-button label="View Details" class="oj-button-lg oj-color-invert"
+                      on-oj-action="[[$listeners.buttonAction6]]">
+                    </oj-button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </template>
+        </oj-bind-for-each>
+      </oj-bind-if>
+
+      <oj-bind-if test="[[ $variables.iscart ]]">
+        <!-- <oj-bind-for-each data="[[ $flow.variables.syncCartArray ]]">
+          <template>
+            <div class=" oj-panel oj-flex oj-sm-flex-direction-row oj-sm-margin-2x-top">
+              <div class="oj-flex-item oj-flex oj-sm-flex-direction-row">
+                <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-end">
+                  <img :src="[[ $current.data.file_content ]]" alt="Equipment Image" style="width: 150px; height: 150px; object-fit: cover;" />
+
+                </div>
+
+                <div class="oj-flex-item oj-flex oj-sm-flex-direction-column">
+                  <span style="font-size:16px"><oj-bind-text value="[[ 'Id: ' + $current.data.equipment_number ]]"></oj-bind-text></span>
+                  <span style="font-weight:bold;font-size:22px"><oj-bind-text value="[[ $current.data.equipment_name ]]"></oj-bind-text></span>
+                </div>
+              </div>
+              <div class="oj-flex-item oj-flex oj-sm-justify-content-flex-end oj-sm-margin-2x-start">
+                <div class="oj-flex oj-sm-flex-direction-column">
+                  <div class="oj-flex-item">
+                    <oj-button label="Remove From Cart" class="oj-button-lg"
+                      on-oj-action="[[$listeners.buttonAction3]]">
+                    </oj-button>
+                  </div>
+                  <div class="oj-flex-item oj-sm-margin-2x-top">
+                    <oj-button label="View Details" class="oj-button-lg"></oj-button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </template>
+        </oj-bind-for-each> -->
+        <oj-bind-for-each data="[[ $flow.variables.syncCartArray ]]">
+          <template>
+
+            <div class="oj-panel oj-flex oj-sm-flex-direction-row oj-sm-margin-2x-top"
+              style="background-color: white; border-radius: 8px; padding: 16px;">
+
+
+              <!-- Left: Image and Info -->
+              <div class="oj-flex-item oj-flex oj-sm-flex-direction-row">
+                <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-end">
+                  <img :src="[[ $current.data.file_content ]]" alt="Equipment Image"
+            style="width: 150px; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid #fff;" />
+                </div>
+
+                <div class="oj-flex-item oj-flex oj-sm-flex-direction-column oj-sm-justify-content-center">
+                  <span style="font-size: 16px;">
+            <oj-bind-text value="[[ 'Id: ' + $current.data.equipment_number ]]"></oj-bind-text>
+          </span>
+                  <span style="font-weight: bold; font-size: 22px;">
+            <oj-bind-text value="[[ $current.data.equipment_name ]]"></oj-bind-text>
+          </span>
+
+                  <!-- Billing Rates -->
+                  <!-- <div style="margin-top: 15px;">
+                    <span style="margin-right: 20px;">
+              <span style="font-weight: bold;">$
+                <oj-bind-text value="[[ $current.data.bill_rate ? $current.data.bill_rate : 0 ]]"></oj-bind-text>
+              </span>
+                    <span> /day</span>
+                    </span>
+
+                    <span style="margin-right: 20px;">
+              <span style="font-weight: bold; "">$
+                <oj-bind-text value="[[ $functions.calculateWeeklyAndMonthly($current.data.bill_rate).perWeek ]]"></oj-bind-text>
+              </span>
+                    <span> /week</span>
+                    </span>
+
+                    <span>
+              <span style="font-weight: bold;">$
+                <oj-bind-text value="[[ $functions.calculateWeeklyAndMonthly($current.data.bill_rate).perMonth ]]"></oj-bind-text>
+              </span>
+                    <span> /month</span>
+                    </span>
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- Right: Action Buttons -->
+              <div class="oj-flex-item oj-flex oj-sm-justify-content-flex-end oj-sm-margin-2x-start">
+                <div class="oj-flex oj-sm-flex-direction-column">
+                  <div class="oj-flex-item">
+                    <oj-button label="Remove From Cart" class="oj-button-lg oj-button-danger"
+                      on-oj-action="[[$listeners.buttonAction3]]">
+                    </oj-button>
+                  </div>
+                  <div class="oj-flex-item oj-sm-margin-2x-top">
+                    <oj-button label="View Details" class="oj-button-lg oj-button-primary"
+                      on-oj-action="[[$listeners.buttonAction12]]">
+                    </oj-button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </template>
+        </oj-bind-for-each>
+
+      </oj-bind-if>
+    </div>
+
+  </div>
+  <oj-dialog dialog-title="Reservation Confirmation" id="oj-dialog--2006186978-1" cancel-behavior="escape">
+    <div slot="body" style="border-bottom:2px solid black;">
+      <div class="oj-flex">
+        <h5 class="oj-header oj-flex-item oj-sm-12 oj-md-12">Reservation Successful</h5>
+      </div>
+    </div>
+    <div style="padding-top: 12px;">
+      <h6 class="oj-header">
+        <oj-bind-text value='[[ "Your Reservation Number: " + $flow.variables.rentalReservationNumber ]]'>
+        </oj-bind-text>
+      </h6>
+      <oj-bind-text
+        value="Thank you for your reservation. A quote will be sent to the contact details you provided. Please keep your reservation number safe for future reference.">
+      </oj-bind-text>
+    </div>
+    <div class="oj-flex" slot="footer">
+      <div class="oj-flex-item oj-sm-12 oj-md-10"></div>
+      <div class="oj-flex-item oj-sm-12 oj-md-2">
+        <oj-button label="Close" chroming="callToAction" on-oj-action="[[$listeners.buttonAction10]]"></oj-button>
+      </div>
+    </div>
+  </oj-dialog>
+
+
+
+
+
+</oj-sp-welcome-page>

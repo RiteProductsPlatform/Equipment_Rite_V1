@@ -1,0 +1,25 @@
+{
+         "p_crewsetup_id" :  4,
+        "p_crewsetup_eqp_line_id" : 3,
+        "p_equipment_name" : "Heavy Vehicles",
+        "p_expenditure_type" : "Equipment",
+        "p_unit_of_measure" : "HOURS",
+        "p_rate" : "200",
+        "p_project_number" : "900R-437PUEN",
+        "p_task_name" : "Design Review",
+        "p_effective_start_date" :  null,
+        "p_effective_end_date" :  null,
+        "p_mon_quantity" :  "8",
+        "p_tue_quantity" :  null,
+        "p_wed_quantity" :  "8",
+        "p_thu_quantity" : null,
+        "p_fri_quantity" : null,
+        "p_start_date" : null,
+        "p_end_date" : null,
+        "p_contract_id" :  null,
+        "p_project_id" : null,
+        "p_equipment_id" :  null,
+        "p_task_id" : null,
+        "p_customer_id" : null
+
+}

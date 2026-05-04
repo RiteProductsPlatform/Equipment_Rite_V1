@@ -1,0 +1,20 @@
+{
+  "root": "resetVariablesSelectedCrewId",
+  "description": "",
+  "actions": {
+    "resetVariablesSelectedCrewId": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.selectedCrewId",
+          "$page.variables.SelectedDate",
+          "$page.variables.selectedResource",
+          "$page.variables.columns",
+          "$page.variables.selectedMonth",
+          "$page.variables.DetailsTableADP.data",
+          "$page.variables.resourceobj"
+        ]
+      }
+    }
+  }
+}

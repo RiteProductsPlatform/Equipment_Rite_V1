@@ -1,0 +1,490 @@
+{
+  "title": "customer billing workbench",
+  "description": "",
+  "variables": {
+    "contractAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getEQPRent_BillingWorkbench_RN",
+        "keyAttributes": "contract_number",
+        "textFilterAttributes": [
+          "contract_number"
+        ]
+      }
+    },
+    "getAdminContractLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getAdminContractLOV",
+        "keyAttributes": "contract_number",
+        "itemsPath": "items",
+        "responseType": "getAdminContractLOVResponse",
+        "uriParameters": {
+          "PARTY_NAME": "{{ $variables.headerobj.customer }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "contract_number"
+          ]
+        }
+      }
+    },
+    "getAdminCustomerLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getAdminCustomerLOV",
+        "keyAttributes": "party_name",
+        "itemsPath": "items",
+        "responseType": "getAdminCustomerLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "party_name"
+          ]
+        }
+      }
+    },
+    "getEQPRentBillingWorkbenchListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEQPRent_BillingWorkbench",
+        "keyAttributes": "equipment_name",
+        "itemsPath": "items",
+        "responseType": "getEQPRentBillingWorkbenchResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_name"
+          ]
+        }
+      }
+    },
+    "getEQPRentBillingWorkbenchListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEQPRent_BillingWorkbench",
+        "keyAttributes": "contract_number",
+        "itemsPath": "items",
+        "responseType": "getEQPRentBillingWorkbenchResponse2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "contract_number"
+          ]
+        }
+      }
+    },
+    "getEQPRentBillingWorkbenchListSDP3": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEQPRent_BillingWorkbench",
+        "keyAttributes": "reservation_number",
+        "itemsPath": "items",
+        "responseType": "getEQPRentBillingWorkbenchResponse3",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "reservation_number"
+          ]
+        }
+      }
+    },
+    "getEQPRentBillingWorkbenchRNListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEQPRent_BillingWorkbench_RN",
+        "keyAttributes": "reservation_number",
+        "itemsPath": "items",
+        "responseType": "getEQPRentBillingWorkbenchRNResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "reservation_number"
+          ]
+        }
+      }
+    },
+    "getEQPRentBillingWorkbenchRNListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEQPRent_BillingWorkbench_RN",
+        "keyAttributes": "contract_number",
+        "itemsPath": "items",
+        "responseType": "getEQPRentBillingWorkbenchRNResponse2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "contract_number"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentClassLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentClassLOV",
+        "keyAttributes": "equipment_class",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentClassLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_class"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentLOV",
+        "keyAttributes": "lkpvalue",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentLOVResponse",
+        "uriParameters": {
+          "pClass": "{{ $variables.headerobj.eqpclass }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "lkpvalue"
+          ]
+        }
+      }
+    },
+    "headerobj": {
+      "type": {
+        "billdate": "string",
+        "contract": "string",
+        "customer": "string",
+        "eqpclass": "string",
+        "eqpname": "string",
+        "reservation_number": "string"
+      }
+    },
+    "illustrationBackground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-bg-01.png"
+    },
+    "illustrationForeground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-fg-01.png"
+    },
+    "imageStretch": {
+      "type": "string",
+      "defaultValue": "none"
+    },
+    "mobileImage": {
+      "type": "string",
+      "defaultValue": "on"
+    },
+    "reseAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getEQPRent_BillingWorkbench_RN",
+        "textFilterAttributes": [
+          "reservation_number"
+        ],
+        "keyAttributes": "reservation_number"
+      }
+    },
+    "tableADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getEQPRent_BillingWorkbench",
+        "keyAttributes": "@index"
+      }
+    },
+    "tableData": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getEQPRent_BillingWorkbench",
+        "keyAttributes": "@index"
+      }
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getAdminContractLOVResponse": {
+      "endpoint": "getAdminContractLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getAdminCustomerLOVResponse": {
+      "endpoint": "getAdminCustomerLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEQPRent_BillingWorkbench": {
+      "endpoint": "getEQPRent_BillingWorkbench",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getEQPRent_BillingWorkbench_RN": {
+      "endpoint": "getEQPRent_BillingWorkbench_RN",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getEQPRentBillingWorkbenchResponse": {
+      "endpoint": "getEQPRent_BillingWorkbench",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEQPRentBillingWorkbenchResponse2": {
+      "endpoint": "getEQPRent_BillingWorkbench",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEQPRentBillingWorkbenchResponse3": {
+      "endpoint": "getEQPRent_BillingWorkbench",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEQPRentBillingWorkbenchRNResponse": {
+      "endpoint": "getEQPRent_BillingWorkbench_RN",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEQPRentBillingWorkbenchRNResponse2": {
+      "endpoint": "getEQPRent_BillingWorkbench_RN",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENT_RITEEQP_CONTRA_SUMMAR_BILLIN_WB1_0GetContracts": {
+      "endpoint": "getEQUIPMENT_RITEEQP_CONTRA_SUMMAR_BILLIN_WB1_0GetContracts",
+      "service": "getContractSummary",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentClassLOVResponse": {
+      "endpoint": "getGetEquipmentClassLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentLOVResponse": {
+      "endpoint": "getGetEquipmentLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "getAdminContractLOVResponse": {
+      "items": [
+        {
+          "contract_number": "string"
+        }
+      ]
+    },
+    "getAdminCustomerLOVResponse": {
+      "items": [
+        {
+          "party_id": "number",
+          "party_name": "string",
+          "party_number": "string"
+        }
+      ]
+    },
+    "getEQPRent_BillingWorkbench": {
+      "billin_workbench_id": "number",
+      "billing_frequency": "string",
+      "contract_id": "any",
+      "contract_name": "any",
+      "contract_number": "string",
+      "duration_billed": "string",
+      "duration_remaning": "string",
+      "end_date": "string",
+      "equipment_class": "any",
+      "equipment_id": "any",
+      "equipment_name": "any",
+      "equipment_number": "any",
+      "invoiced_amount": "string",
+      "payment_amount_received": "any",
+      "pending_invoice_amount": "string",
+      "reservation_number": "string",
+      "start_date": "string"
+    },
+    "getEQPRent_BillingWorkbench_RN": {
+      "contract_number": "string",
+      "reservation_number": "string"
+    },
+    "getEQPRentBillingWorkbenchResponse": {
+      "items": [
+        {
+          "equipment_name": "any"
+        }
+      ]
+    },
+    "getEQPRentBillingWorkbenchResponse2": {
+      "items": [
+        {
+          "contract_number": "string"
+        }
+      ]
+    },
+    "getEQPRentBillingWorkbenchResponse3": {
+      "items": [
+        {
+          "reservation_number": "string"
+        }
+      ]
+    },
+    "getEQPRentBillingWorkbenchRNResponse": {
+      "items": [
+        {
+          "contract_number": "string",
+          "reservation_number": "string"
+        }
+      ]
+    },
+    "getEQPRentBillingWorkbenchRNResponse2": {
+      "items": [
+        {
+          "contract_number": "string",
+          "reservation_number": "string"
+        }
+      ]
+    },
+    "getEQUIPMENT_RITEEQP_CONTRA_SUMMAR_BILLIN_WB1_0GetContracts": {
+      "CONTRACT_OVERVIEW": [
+        {
+          "AMOUNT": "string",
+          "CONTRACT_NUMBER": "string",
+          "CONTRACT_TYPE": "string",
+          "CURRENCY": "string",
+          "CUSTOMER_NAME": "string",
+          "CUSTOMER_NUMBER": "string",
+          "END_DATE": "string",
+          "ID": "string",
+          "START_DATE": "string",
+          "STATUS": "string",
+          "SUPPLIER_NAME": "string",
+          "SUPPLIER_NUMBER": "string"
+        }
+      ]
+    },
+    "getGetEquipmentClassLOVResponse": {
+      "items": [
+        {
+          "equipment_class": "string"
+        }
+      ]
+    },
+    "getGetEquipmentLOVResponse": {
+      "items": [
+        {
+          "default_location": "string",
+          "equipment_number": "string",
+          "lkpid": "number",
+          "lkpvalue": "string"
+        }
+      ]
+    },
+    "type1": {
+      "Billing Frequency": "string",
+      "Contract Number": "string",
+      "Duration Billed": "string",
+      "Duration Pending Billed": "string",
+      "End Date": "string",
+      "Equipment Name": "string",
+      "Invoiced Amount": "string",
+      "Payments Amount Received": "string",
+      "Reservation Number": "string",
+      "Start Date": "string"
+    }
+
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "resetbuttonactionchain"
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "searchbuttobn"
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem3": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain2",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "switchValue2": {
+      "chains": [
+        {
+          "chain": "SwitchValueChangeChain1",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}"
+          }
+        }
+      ]
+    },
+    "traceSwitchValue": {
+      "chains": [
+        {
+          "chain": "SwitchValueChangeChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "parameters": {},
+          "chain": "vbEnterListener"
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-date": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-label": {
+        "path": "ojs/ojlabel"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      },
+      "oj-switch": {
+        "path": "ojs/ojswitch"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      }
+
+   }
+  }
+}

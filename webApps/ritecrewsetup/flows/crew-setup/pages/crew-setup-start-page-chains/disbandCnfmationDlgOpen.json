@@ -1,0 +1,13 @@
+{
+  "root": "callComponentDisbandAppDialogOpen",
+  "description": "",
+  "actions": {
+    "callComponentDisbandAppDialogOpen": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('disbandAppDialog') }}",
+        "method": "open"
+      }
+    }
+  }
+}

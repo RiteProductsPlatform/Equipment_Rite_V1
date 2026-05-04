@@ -1,0 +1,67 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value=""></oj-vb-fragment-param>
+  <template slot="actions">
+  </template>
+</oj-vb-fragment>
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.responsive-padding="on" page-title="User Role" background-color="dark-pebble">
+  <div class="oj-panel" style="margin-top:-47px">
+    <div class="oj-helper-text-align-end">
+      <oj-button label="Reset Password" chroming="callToAction" class="oj-button-sm">
+      </oj-button>
+      <oj-button label="Edit" chroming="callToAction" class="oj-button-sm">
+      </oj-button>
+      <oj-button label="Done" class="oj-button-sm" chroming="callToAction" on-oj-action="[[$listeners.buttonAction2]]">
+      </oj-button>
+    </div>
+    <oj-validation-group valid="{{ $variables.isvalid }}" id="uservalidation">
+      <oj-form-layout columns="3" max-columns="3" label-edge="top">
+        <oj-select-single label-hint="User" value="{{ $variables.headerobj.user }}" required="true"
+          data="[[ $variables.usersADP ]]" item-text="name"></oj-select-single>
+        <div style="margin-top:20px">
+          <oj-button label="Search" class="oj-button-sm" chroming="callToAction"
+            on-oj-action="[[$listeners.buttonAction]]" disabled="[[ !$variables.headerobj.user ]]">
+            <span class="oj-ux-ico-search" slot="startIcon"></span>
+          </oj-button>
+        </div>
+      </oj-form-layout>
+    </oj-validation-group>
+
+    <div class="oj-helper-text-align-end">
+      <oj-button chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction3]]"
+        disabled="[[ !$variables.headerobj.user ]]">
+        Add Role
+      </oj-button>
+    </div>
+    <!-- </oj-bind-if> -->
+    <oj-table style="width:100%" display="grid" columns='[{"headerText":"SNo","field":"id","width":"120","template":"idtemp"},
+      {"headerText":"Role Name","field":"role_name","template":"role"},
+      {"headerText":"Role Code","field":"role_code"},
+      {"headerText":"Enable Flag","field":"enable_flag"}]' selection-mode.row="single"
+      data="[[ $variables.RolesTableADP]]" on-oj-before-row-edit="[[$listeners.tableBeforeRowEdit]]"
+      on-oj-before-row-edit-end="[[$listeners.tableBeforeRowEditEnd]]">
+      <template slot="role">
+        <oj-bind-if test='[[$current.mode=="navigation"]]'>
+          <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+        </oj-bind-if>
+        <oj-bind-if test='[[$current.mode=="edit"]]'>
+          <oj-select-single aria-label="rolename" value="{{ $variables.editRoleVariables.role_name }}" item-text="name"
+            data="[[ $variables.roleNameADP ]]" on-value-item-changed="[[$listeners.selectValueItem]]">
+          </oj-select-single>
+        </oj-bind-if>
+      </template>
+
+    </oj-table>
+    <template slot="idtemp">
+      <span><oj-bind-text value="[[ $current.index+1 ]]"></oj-bind-text></span>
+    </template>
+    </oj-table>
+    <div class="oj-helper-text-align-end">
+      <oj-button chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction4]]">
+        Save
+      </oj-button>
+    </div>
+
+  </div>
+</oj-sp-welcome-page>

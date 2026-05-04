@@ -1,0 +1,43 @@
+{
+    "items": [
+        {
+            "class_settings_id": 1,
+            "equipment_class": null,
+            "equipment_sub_class": "Rotators",
+            "inspection_yard_check_out": "1",
+            "inspection_site_check_in": "1",
+            "inspection_yard_check_in": "1",
+            "attribute1": null,
+            "attribute2": null,
+            "attribute3": null,
+            "attribute4": null,
+            "attribute5": null,
+            "creation_date": "2025-10-22T07:11:46Z",
+            "created_by": "john.dunbar",
+            "last_updated_by": "john.dunbar",
+            "last_update_date": "2025-10-22T07:11:46Z"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_ClassSettings"
+        },
+        {
+            "rel": "edit",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_ClassSettings"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_ClassSettings"
+        }
+    ]
+}

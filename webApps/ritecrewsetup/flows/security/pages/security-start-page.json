@@ -1,0 +1,216 @@
+{
+  "title": "security",
+  "description": "",
+  "variables": {
+    "editRoleVariables": {
+      "type": "RolesTblType"
+    },
+    "headerobj": {
+      "type": {
+        "user": "string"
+      }
+    },
+    "illustrationBackground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-bg-01.png"
+    },
+    "illustrationForeground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-fg-01.png"
+    },
+    "isvalid": {
+      "type": "string"
+    },
+    "roleNameADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "roledtls",
+        "keyAttributes": "name"
+      }
+    },
+    "RolesTableADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "RolesTblType",
+        "keyAttributes": "role_id"
+      }
+    },
+    "usersADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "userNames",
+        "keyAttributes": "name"
+      }
+    },
+    "editRoleVariables_copy": {
+      "type": "RolesTblType"
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.roledtls": {
+      "endpoint": "getEQUIPMENT_RITEEQPROLESDETAILS1_0GetRoleDetails",
+      "service": "getContractSummary",
+      "path": "response-_-Roles[0]"
+    },
+    "@decorators.RolesTblType": {
+      "endpoint": "getEQPRite_SecuritySubmit",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.userNames": {
+      "endpoint": "getEQUIPMENT_RITEEQPUSERROLEDETAILS1_0GetUserRolesDetails",
+      "service": "getContractSummary",
+      "path": "response-_-userNames[0]"
+    },
+    "roledtls": {
+      "name": "string",
+      "roleDescription": "string",
+      "roleId": "string",
+      "rolename": "string"
+    },
+    "RolesTblType": {
+      "application_name": "string",
+      "created_by": "string",
+      "creation_date": "string",
+      "email_address": "any",
+      "enable_flag": "string",
+      "last_update_date": "string",
+      "last_updated_by": "string",
+      "role_code": "string",
+      "role_id": "number",
+      "role_name": "string",
+      "security_id": "number",
+      "user_id": "any",
+      "user_name": "string"
+    },
+    "roleType": {
+      "assignable": "string",
+      "auto": "string",
+      "id": "number",
+      "rolecode": "string",
+      "roleId": "string",
+      "rolename": "string"
+    },
+    "userNames": {
+      "name": "string"
+    }
+
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "srchactionChain"
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "AddNewRoleActionChain"
+        }
+      ]
+    },
+    "buttonAction3": {
+      "chains": [
+        {
+          "chain": "AddNewRoleActionChain"
+        }
+      ]
+    },
+    "buttonAction4": {
+      "chains": [
+        {
+          "chain": "SaveButtonActionChain"
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "RoleValueItemChangeChain",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "tableBeforeRowEdit": {
+      "chains": [
+        {
+          "chain": "TableBeforeRowEditChain",
+          "parameters": {
+            "rowKey": "{{$event.detail.rowContext.status.rowKey}}",
+            "rowIndex": "{{$event.detail.rowContext.status.rowIndex}}",
+            "rowData": "{{$event.detail.rowContext.componentElement.getDataForVisibleRow($event.detail.rowContext.status.rowIndex).data}}"
+          }
+        }
+      ]
+    },
+    "tableBeforeRowEditEnd": {
+      "chains": [
+        {
+          "chain": "TableBeforeRowEditEndChain",
+          "parameters": {
+            "cancelEdit": "{{$event.detail.cancelEdit}}",
+            "rowKey": "{{$event.detail.rowContext.status.rowKey}}",
+            "rowIndex": "{{$event.detail.rowContext.status.rowIndex}}",
+            "rowData": "{{$event.detail.rowContext.componentElement.getDataForVisibleRow($event.detail.rowContext.status.rowIndex).data}}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "chain": "PageVbEnterChain"
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-checkboxset": {
+        "path": "ojs/ojcheckboxset"
+      },
+      "oj-collapsible": {
+        "path": "ojs/ojcollapsible"
+      },
+      "oj-date-picker": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-option": {
+        "path": "ojs/ojoption"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-validation-group": {
+        "path": "ojs/ojvalidationgroup"
+      }
+
+   }
+  }
+}

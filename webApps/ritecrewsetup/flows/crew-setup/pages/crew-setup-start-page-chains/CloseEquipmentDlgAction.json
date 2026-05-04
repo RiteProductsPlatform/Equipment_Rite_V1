@@ -1,0 +1,24 @@
+{
+  "root": "resetVariablesLinesObj",
+  "description": "",
+  "actions": {
+    "callComponentEquipmentDialogClose": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('equipmentDialog') }}",
+        "method": "close"
+      }
+    },
+    "resetVariablesLinesObj": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.linesObj"
+        ]
+      },
+      "outcomes": {
+        "success": "callComponentEquipmentDialogClose"
+      }
+    }
+  }
+}

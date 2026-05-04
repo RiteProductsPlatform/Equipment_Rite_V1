@@ -1,0 +1,121 @@
+{
+  "id": "rate-schedule",
+  "description": "Flow main",
+  "defaultPage": "rate-schedule-search",
+  "services": {},
+  "types": {
+    "@decorators.eqpBillRateSchedulesLookup": {
+      "endpoint": "eqpBillRateSchedulesLookup",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]-_-lookupCodes[0]"
+    },
+    "@decorators.getAllUOM": {
+      "endpoint": "getAllUOM",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getCurrenciesLOV": {
+      "endpoint": "getCurrenciesLOV",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]"
+    },
+    "eqpBillRateSchedulesLookup": {
+      "Description": "string",
+      "LookupCode": "string",
+      "Meaning": "string"
+    },
+    "getAllUOM": {
+      "StandardConversion": "number",
+      "UOM": "string",
+      "UOMClass": "string",
+      "UOMClassCode": "string",
+      "UOMClassName": "string",
+      "UOMCode": "string",
+      "UOMId": "number",
+      "UOMPluralDescription": "any",
+      "UOMReciprocalDescription": "any"
+    },
+    "getCurrenciesLOV": {
+      "ActiveDate": "any",
+      "CurrencyCode": "string",
+      "CurrencyFlag": "string",
+      "CurrencyFormat": "string",
+      "CurrencyFormatWithCode": "string",
+      "CurrencyFormatWithSymbol": "string",
+      "Description": "string",
+      "EnabledFlag": "string",
+      "EndDateActive": "string",
+      "ExtendedPrecision": "number",
+      "IssuingTerritoryCode": "string",
+      "Name": "string",
+      "Precision": "number",
+      "StartDateActive": "string",
+      "Symbol": "string"
+    }
+  },
+  "variables": {
+    "currencyAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getCurrenciesLOV",
+        "keyAttributes": "CurrencyCode",
+        "textFilterAttributes": [
+          "CurrencyCode"
+        ]
+      }
+    },
+    "eqpClassAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "eqpBillRateSchedulesLookup",
+        "keyAttributes": "Meaning",
+        "textFilterAttributes": [
+          "Meaning"
+        ]
+      }
+    },
+    "eqpHoursTypeAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "eqpBillRateSchedulesLookup",
+        "keyAttributes": "Meaning",
+        "textFilterAttributes": [
+          "Meaning"
+        ]
+      }
+    },
+    "eqpRateScheduleAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "eqpBillRateSchedulesLookup",
+        "keyAttributes": "Meaning",
+        "textFilterAttributes": [
+          "Meaning"
+        ]
+      }
+    },
+    "uomAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getAllUOM",
+        "keyAttributes": "UOM",
+        "textFilterAttributes": [
+          "UOM"
+        ]
+      }
+    },
+    "variable1": {
+      "type": "string"
+    }
+  },
+  "eventListeners": {
+    "vbEnter": {
+      "chains": [
+        {
+          "parameters": {},
+          "chain": "vbEnterListener"
+        }
+      ]
+    }
+  }
+}

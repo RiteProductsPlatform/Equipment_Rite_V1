@@ -1,0 +1,54 @@
+{
+    "items": [
+        {
+            "agreement_id": 1,
+            "agreement_number": "EQP-REN-01",
+            "agreement_name": "EQP-REN-01",
+            "agreement_description": "EQP-REN-01",
+            "agreement_type": "Equipment Rental",
+            "agreement_type_code": "Equipment Rental",
+            "customer_id": null,
+            "customer_number": null,
+            "customer_name": null,
+            "customer_site_id": null,
+            "customer_account_id": null,
+            "account_number": null,
+            "account_name": null,
+            "customer_account_site_id": null,
+            "owner_entity_code": null,
+            "warehouse_code": null,
+            "payment_terms_code": "30 Net",
+            "currency_code": "USD",
+            "bill_to_address": null,
+            "start_date": "2026-03-11T00:00:00Z",
+            "end_date": "2026-03-27T00:00:00Z",
+            "status_code": "DRAFT",
+            "created_by": null,
+            "created_date": "2026-03-11T12:04:08Z",
+            "updated_by": null,
+            "updated_date": null
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_AgreementHeaders"
+        },
+        {
+            "rel": "edit",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_AgreementHeaders"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_AgreementHeaders"
+        }
+    ]
+}

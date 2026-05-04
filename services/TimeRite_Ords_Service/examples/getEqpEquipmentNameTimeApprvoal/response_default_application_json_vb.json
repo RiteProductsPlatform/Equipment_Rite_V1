@@ -1,0 +1,46 @@
+{
+    "items": [
+        {
+            "equipment_name": "Concrete Mixers 1011"
+        },
+        {
+            "equipment_name": "Crushers 1033"
+        },
+        {
+            "equipment_name": "Isurus ROV 1034"
+        },
+        {
+            "equipment_name": "JCB 121082DD"
+        },
+        {
+            "equipment_name": "JCB 1ADD09"
+        },
+        {
+            "equipment_name": "Millennium Plus ROV 1033"
+        },
+        {
+            "equipment_name": "Nexxus ROV-1031"
+        },
+        {
+            "equipment_name": "Road Roller 1AB24"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 8,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpEquipmentNameTimeApprvoal"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpEquipmentNameTimeApprvoal"
+        }
+    ]
+}

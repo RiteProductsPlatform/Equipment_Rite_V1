@@ -1,0 +1,75 @@
+{
+  "root": "resetVariablesScheduleMainADP",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestGetEqpSchEquipmentSearch.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestGetEqpSchEquipmentSearch": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getEqpSchEquipmentSearch",
+        "uriParams": {
+          "p_crewsetup_id": "{{ $page.variables.crewSetupId }}",
+          "p_requestor_name": "{{ $page.variables.requestor_name ? $page.variables.requestor_name : '' }}",
+          "p_project_id": "{{ $page.variables.selectedParams.projectNameId ? $page.variables.selectedParams.projectNameId : '' }}",
+          "p_equipment_resource_class": "{{ $page.variables.selectedEquipmentClass ? $page.variables.selectedEquipmentClass : '' }}",
+          "p_access_type": "{{ $page.variables.url_access_type }}"
+        },
+        "requestTransformOptions": {
+          "filter": {
+            "op": "$eq",
+            "attribute": "equipment_name",
+            "value": "{{ $page.variables.selectedEquipmentName }}"
+          }
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesScheduleMainADP",
+        "failure": "fireNotification"
+      }
+    },
+    "callFunctionAlterResp": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "alterResp",
+        "params": [
+          "{{ $chain.results.callRestGetEqpSchEquipmentSearch.body.items }}"
+        ]
+      }
+    },
+    "assignVariablesScheduleMainADP": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.scheduleMainADP": {
+          "source": {
+            "data": "{{ $chain.results.callRestGetEqpSchEquipmentSearch.body.items }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      },
+      "outcomes": {
+        "success": "callFunctionAlterResp"
+      }
+    },
+    "resetVariablesScheduleMainADP": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.scheduleMainADP"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestGetEqpSchEquipmentSearch"
+      }
+    }
+  }
+}

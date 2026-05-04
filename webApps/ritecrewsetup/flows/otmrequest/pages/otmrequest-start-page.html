@@ -1,0 +1,30 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value=""></oj-vb-fragment-param>
+</oj-vb-fragment>
+<br>
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Equipment OTM Request" background-color="dark-pebble">
+  <div class="oj-flex oj-sm-flex-direction-column oj-panel oj-panel-shadow-md" style="margin-top:-48px">
+    <div class="oj-flex-item">
+      <oj-form-layout max-columns="4" columns="4" label-edge="top">
+        <oj-select-single label-hint="Equipment Name"></oj-select-single>
+        <oj-input-text label-hint="Equipment Number"></oj-input-text>
+        <oj-input-text label-hint="Equipment Type Gid"></oj-input-text>
+        <oj-input-text label-hint="Equipment Initial"></oj-input-text>
+        <oj-input-text label-hint="Equipment Initial Number"></oj-input-text>
+        <oj-input-text label-hint="Aar Car Type"></oj-input-text>
+        <oj-input-text label-hint="License Plate"></oj-input-text>
+        <oj-input-text label-hint="Inter change Recv Location Gid"></oj-input-text>
+        <oj-input-text label-hint="Current Chassis Initial"></oj-input-text>
+        <oj-input-text label-hint="Current Chassis Number"></oj-input-text>
+        <oj-input-text label-hint="Assigned Product"></oj-input-text>
+        <oj-input-text label-hint="Car Destination Location Gid"></oj-input-text>
+        <oj-input-date label-hint="Car Destination Eta Date"></oj-input-date>
+      </oj-form-layout>
+
+    </div>
+  </div>
+</oj-sp-welcome-page>

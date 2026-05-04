@@ -1,0 +1,32 @@
+{
+    "items": [
+        {
+            "project_number": "PCS10008",
+            "effective_start_date": "2024-08-01T00:00:00Z",
+            "effective_end_date": "2024-08-20T00:00:00Z"
+        },
+        {
+            "project_number": "PCS10008",
+            "effective_start_date": "2024-08-01T00:00:00Z",
+            "effective_end_date": "2024-08-20T00:00:00Z"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 2,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getAllocationData"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getAllocationData"
+        }
+    ]
+}

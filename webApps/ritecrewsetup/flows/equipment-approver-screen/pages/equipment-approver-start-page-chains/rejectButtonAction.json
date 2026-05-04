@@ -1,0 +1,79 @@
+{
+  "root": "forEachInFilteredData",
+  "description": "",
+  "actions": {
+    "forEachInFilteredData": {
+      "module": "vb/action/builtin/forEachAction",
+      "parameters": {
+        "items": "{{ $page.variables.FilteredData }}",
+        "actionId": "callFunctionCreateRejectReq"
+      },
+      "outcomes": {
+        "success": "fireNotification2"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPutEqpSubmitTimeEntry.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestPutEqpSubmitTimeEntry": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/putEqpSubmitTimeEntry",
+        "body": "{{ $chain.results.callFunctionCreateRejectReq }}"
+      },
+      "outcomes": {
+        "failure": "fireNotification",
+        "success": "callRestPostEXTPPMIMPNONLBATPERP1Impnonlbrcost"
+      }
+    },
+    "callFunctionCreateRejectReq": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "createRejectReq",
+        "params": [
+          "{{ $current.data }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPutEqpSubmitTimeEntry"
+      }
+    },
+    "fireNotification2": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Reject is Success",
+        "displayMode": "transient",
+        "type": "confirmation"
+      }
+    },
+    "fireNotification3": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPostEXTPPMIMPNONLBATPERP1Impnonlbrcost.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestPostEXTPPMIMPNONLBATPERP1Impnonlbrcost": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "ApprRejOIC/postEXT_PPM_IMP_NONLB_ATP_ERP1_0Impnonlbrcost",
+        "uriParams": {
+          "batch_id": "{{ $current.data.batch_id }}"
+        }
+      },
+      "outcomes": {
+        "failure": "fireNotification3"
+      }
+    }
+  }
+}

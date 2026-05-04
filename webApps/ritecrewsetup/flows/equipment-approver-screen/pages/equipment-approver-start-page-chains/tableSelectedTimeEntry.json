@@ -1,0 +1,40 @@
+{
+  "root": "callFunctionFilterData",
+  "description": "",
+  "variables": {
+    "keys": {
+      "type": "object[]",
+      "input": "fromCaller"
+    },
+    "selected": {
+      "type": "any",
+      "input": "fromCaller"
+    }
+  },
+  "actions": {
+    "callFunctionFilterData": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "filterData",
+        "params": [
+          "{{ $variables.selected }}",
+          "{{ $page.variables.approverMainTableADP.data }}",
+          "{{ $variables.keys }}",
+          "{{ $page.variables.isAdd }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesFilteredData"
+      }
+    },
+    "assignVariablesFilteredData": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.FilteredData": {
+          "source": "{{ $chain.results.callFunctionFilterData }}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+
+  "p_template_name": "Excavator Test",
+  "p_template_description": "Template for heavy construction equipment",
+  "p_template_code": "EQP_TEMP_005",
+  "p_status": "ACTIVE",
+  "p_start_date": "01-Dec-2025",
+  "p_end_date": "31-Dec-2025",
+  "p_created_by": "ADMIN",
+  "p_last_updated_by": "ADMIN"
+}

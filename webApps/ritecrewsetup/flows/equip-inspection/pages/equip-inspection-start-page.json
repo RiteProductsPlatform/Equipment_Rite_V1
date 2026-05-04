@@ -1,0 +1,324 @@
+{
+  "title": "Equipment Inspection",
+  "description": "",
+  "variables": {
+    "equp_conditionArray": {
+      "type": "object[]",
+      "defaultValue": [
+        {
+          "key": 1,
+          "data": "Excellent - Like new condition",
+          "metadata": "Excellent"
+        },
+        {
+          "key": 2,
+          "data": "Fair - Some wear, may need minor repairs",
+          "metadata": "Fair"
+        },
+        {
+          "key": 3,
+          "data": "Good - Minor wear, fully functional",
+          "metadata": "Good"
+        },
+        {
+          "key": 4,
+          "data": "Poor - Significant wear, needs major repairs",
+          "metadata": "Poor"
+        }
+      ]
+    },
+    "groupedAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "type1",
+        "keyAttributes": "section",
+        "textFilterAttributes": [
+          "section"
+        ]
+      }
+    },
+    "inspection_adp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "ChecklistSearchType",
+        "keyAttributes": "check_list_id"
+      }
+    },
+    "certifyArray": {
+      "type": "string[]"
+    },
+    "eqp_cond_adp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "{{ $variables.equp_conditionArray }}",
+        "itemType": "equp_cond",
+        "keyAttributes": "data"
+      }
+    },
+    "illustrationBackground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-bg-01.png"
+    },
+    "illustrationForeground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-fg-01.png"
+    },
+    "imageStretch": {
+      "type": "string",
+      "defaultValue": "none"
+    },
+    "inspectionTypeListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "businessObjects/getall_InspectionType",
+        "keyAttributes": "inspectiontype",
+        "itemsPath": "items",
+        "responseType": "getallInspectionTypeResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "inspectiontype"
+          ]
+        },
+        "filterCriterion": {
+          "op": "$eq",
+          "attribute": "page",
+          "value": "eqpInspection"
+        }
+      }
+    },
+    "iscomponentAssesment": {
+      "type": "boolean"
+    },
+    "label": {
+      "type": "string",
+      "input": "fromCaller"
+    },
+    "mobileImage": {
+      "type": "string",
+      "defaultValue": "on"
+    },
+    "pushObj": {
+      "type": {
+        "date": "string",
+        "type": "string"
+      },
+      "defaultValue": {
+        "date": "[[new Date().toISOString()]]",
+        "type": "Eqp Manager - Check Out"
+      }
+    },
+    "rowData": {
+      "type": "ChecklistSearchType"
+    },
+    "selectedrow": {
+      "type": "object",
+      "input": "fromCaller"
+    }
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getallInspectionTypeResponse": {
+      "endpoint": "getall_InspectionType",
+      "service": "businessObjects",
+      "path": "response"
+    },
+    "equp_cond": {
+      "data": "string",
+      "key": "string",
+      "metadata": "string"
+    },
+    "ChecklistSearchType": {
+      "agreed_status": "any",
+      "check_list_id": "number",
+      "check_list_name": "string",
+      "created_by": "string",
+      "creation_date": "string",
+      "customer_id": "any",
+      "equipment_class": "string",
+      "equipment_id": "number",
+      "equipment_name": "string",
+      "equipment_number": "string",
+      "file_content": "any",
+      "file_name": "string",
+      "file_type": "string",
+      "inspection_value": "string",
+      "last_update_login": "any",
+      "last_updated_by": "string",
+      "last_updated_date": "string",
+      "notes": "any",
+      "section": "string",
+      "uid": "number"
+    },
+    "getallInspectionTypeResponse": {
+      "items": [
+        {
+          "inspectiontype": "string"
+        }
+      ]
+    },
+    "type1": {
+      "items": [
+        {
+          "check_list_id": "any",
+          "check_list_name": "string",
+          "equipment_class": "string"
+        }
+      ],
+      "section": "string"
+    }
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "saveBtnAction"
+        }
+      ]
+    },
+    "checkboxSetValue": {
+      "chains": [
+        {
+          "chain": "certificateValueChangeAction",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "filePickerSelect": {
+      "chains": [
+        {
+          "chain": "fileuploadselectionListener",
+          "parameters": {
+            "files": "[[ Array.prototype.slice.call($event.detail.files) ]]",
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "iconClick": {
+      "chains": [
+        {
+          "chain": "CheckedIconClickAction",
+          "parameters": {
+            "current": "[[ $current.data ]]"
+          }
+        }
+      ]
+    },
+    "ojSpWp1SpPrimaryAction": {
+      "chains": [
+        {
+          "chain": "primarybackBtnAction"
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "CheckListNamevalueChangeAction",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "tableBeforeRowEdit": {
+      "chains": [
+        {
+          "chain": "TaleBeforeRowEditAction",
+          "parameters": {
+            "rowKey": "{{$event.detail.rowContext.status.rowKey}}",
+            "rowIndex": "{{$event.detail.rowContext.status.rowIndex}}",
+            "rowData": "{{$event.detail.rowContext.componentElement.getDataForVisibleRow($event.detail.rowContext.status.rowIndex).data}}"
+          }
+        }
+      ]
+    },
+    "tableBeforeRowEditEnd": {
+      "chains": [
+        {
+          "chain": "TablebeforeRowEditEnd",
+          "parameters": {
+            "cancelEdit": "{{$event.detail.cancelEdit}}",
+            "rowKey": "{{$event.detail.rowContext.status.rowKey}}",
+            "rowIndex": "{{$event.detail.rowContext.status.rowIndex}}",
+            "rowData": "{{$event.detail.rowContext.componentElement.getDataForVisibleRow($event.detail.rowContext.status.rowIndex).data}}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "parameters": {},
+          "chain": "fetchAssesmentsAction"
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-checkboxset": {
+        "path": "ojs/ojcheckboxset"
+      },
+      "oj-collapsible": {
+        "path": "ojs/ojcollapsible"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-file-picker": {
+        "path": "ojs/ojfilepicker"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-date": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-option": {
+        "path": "ojs/ojoption"
+      },
+      "oj-progress-bar": {
+        "path": "ojs/ojprogress-bar"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-text-area": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      },
+      "oj-validation-group": {
+        "path": "ojs/ojvalidationgroup"
+      }
+    },
+    "modules": {
+      "ojValidationDateTime": {
+        "path": "ojs/ojvalidation-datetime"
+      }
+    }
+  },
+  "@dt": {
+    "iconClass": "vbdt-dynamic-icon-89-icoWelcomePageTemplate48Svg"
+  }
+}

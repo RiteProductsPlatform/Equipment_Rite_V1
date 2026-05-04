@@ -1,0 +1,21 @@
+{
+    "items": [],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_InspectionView?p_equipment_request_id=900&p_eqp_request_number=857"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_InspectionView?p_equipment_request_id=900&p_eqp_request_number=857"
+        }
+    ]
+}

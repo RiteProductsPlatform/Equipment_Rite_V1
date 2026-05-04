@@ -1,0 +1,73 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value=""></oj-vb-fragment-param>
+</oj-vb-fragment>
+
+
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Customer Billing Workbench" background-color="dark-pebble">
+  <div class="oj-flex oj-sm-flex-direction-column oj-panel oj-panel-shadow-md" style="margin-top:-48px">
+    <div class="oj-flex-item">
+      <oj-form-layout max-columns="5" columns="5" label-edge="top">
+        <oj-select-single label-hint="Request Number" item-text="request_number"
+          data="[[$variables.getEQPRentBillingDetailsListSDP]]" on-value-item-changed="[[$listeners.selectValueItem3]]"></oj-select-single>
+        <oj-select-single label-hint="Customer" item-text="party_name"
+          data="[[$variables.getAdminCustomerLOVListSDP]]" on-value-item-changed="[[$listeners.selectValueItem]]"></oj-select-single>
+        <oj-select-single label-hint="Contract" data="[[$variables.getAdminContractLOVListSDP]]"
+          item-text="contract_number" on-value-item-changed="[[$listeners.selectValueItem4]]"></oj-select-single>
+        <oj-select-single label-hint="Equipment Class" data="[[$variables.getGetEquipmentClassLOVListSDP]]"
+          item-text="equipment_class" on-value-item-changed="[[$listeners.selectValueItem2]]"></oj-select-single>
+        <oj-select-single label-hint="Equipment Name" data="[[$variables.getGetEquipmentLOVListSDP]]"
+          item-text="lkpvalue" on-value-item-changed="[[$listeners.selectValueItem5]]"></oj-select-single>
+        <oj-input-date label-hint="Bill Date"></oj-input-date>
+      </oj-form-layout>
+      <oj-toolbar chroming="solid">
+        <oj-button label="Search" chroming="callToAction" class="oj-button-sm"
+          on-oj-action="[[$listeners.buttonAction]]">
+          <span class="oj-ux-ico-search" slot="startIcon"></span>
+        </oj-button>
+         <oj-button label="Reset" chroming="callToAction" class="oj-button-sm"
+           on-oj-action="[[$listeners.buttonAction2]]">
+          <span class="oj-ux-ico-reset-variable" slot="startIcon"></span>
+         </oj-button>
+      </oj-toolbar>
+      
+    </div>
+    <div class="oj-flex-item">
+      <oj-table scroll-policy="loadMoreOnScroll" display="grid" style="width:92vw;height:60vh"
+        selection-mode.row="multiple"
+        columns='[  {    "headerText": "Equipment Name",    "field": "equipment_name","template":"equipment_name"  },  {    "headerText": "Description",    "field": "description","template":"description"  },  {    "headerText": "Quantity",    "field": "quantity"  },  {    "headerText": "Duration",    "field": "duration"  },  {    "headerText": "Price",    "field": "price_per_month"  },  {    "headerText": "Start Date",    "field": "start_date",    "template": "Last Bill Date1"  },  {    "headerText": "Last Bill Date",    "field": "last_bill_date",    "template": "Last Bill Date1"  },  {    "headerText": "Months Left",    "field": "months_left"  },  {    "headerText": "Biiling Frequency",    "field": "billing_frequency"  },  {    "headerText": "Genarate Bill",    "field": "genarate_bill",   "template": "addNew",    "sortable": "disabled"    }]'
+        data="[[ $variables.tableData]]">
+        <template slot="Last Bill Date1">
+          <oj-input-date value='[[typeof $current.data === "string" ? $current.data : null]]' readonly="true"></oj-input-date>
+        </template>
+        <template slot="Last Bill Date">
+          <oj-input-date value='[[typeof $current.data === "string" ? $current.data : null]]' readonly="true"></oj-input-date>
+        </template>
+        <template slot="Duration">
+          <oj-input-number readonly="true" style="text-align: right;"></oj-input-number>
+        </template>
+          <template slot="addNew">
+              <span style="cursor:pointer;font-size:18px" class="oj-ux-ico-cash-in-transit"
+                on-click="[[$listeners.iconClick]]"></span>
+  </template>
+  <template slot="equipment_name">
+ 
+          <span :title="[[ $current.data ]]">
+  <oj-bind-text value="[[ $current.data ]]"></oj-bind-text>
+</span>
+ 
+        </template> 
+        <template slot="description">
+ 
+          <span :title="[[ $current.data ]]">
+  <oj-bind-text value="[[ $current.data ]]"></oj-bind-text>
+</span>
+ 
+        </template>   
+      </oj-table>
+    </div>
+  </div>
+</oj-sp-welcome-page>

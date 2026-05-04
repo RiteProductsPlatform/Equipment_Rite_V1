@@ -1,0 +1,35 @@
+{
+    "items": [
+        {
+            "inventoryItemId": "100003247514183",
+            "item_number": "00000000000000000021",
+            "name": "OAK_SI",
+            "description": "Portland cement (Type I/II)",
+            "longDescription": "Portland cement (Type I/II)",
+            "subinventory_code": "OAK_SI",
+            "inv_organization_id": "300001797359225",
+            "inv_organization_name": "OAK_VIRTUALPROJ_INV"
+        },
+        {
+            "inventoryItemId": "100003247514183",
+            "item_number": "00000000000000000021",
+            "name": "SUP_SUBINV",
+            "description": "Portland cement (Type I/II)",
+            "longDescription": "Portland cement (Type I/II)",
+            "subinventory_code": "COM_SUBINV",
+            "inv_organization_id": "300001690872060",
+            "inv_organization_name": "OAK PPM"
+        },
+        {
+            "inventoryItemId": "100003247514183",
+            "item_number": "00000000000000000021",
+            "name": "COM_SUBINV",
+            "description": "Portland cement (Type I/II)",
+            "longDescription": "Portland cement (Type I/II)",
+            "subinventory_code": "COM_SUBINV",
+            "inv_organization_id": "300001690872060",
+            "inv_organization_name": "OAK PPM"
+        }
+    ],
+    "count": 3
+}

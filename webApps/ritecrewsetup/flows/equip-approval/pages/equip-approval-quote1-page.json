@@ -1,0 +1,460 @@
+{
+  "title": "equip approval quote2",
+  "description": "",
+  "variables": {
+    "backgroundColor": {
+      "type": "string",
+      "defaultValue": "dark-ocean"
+    },
+    "billingFrequency": {
+      "type": "frequency[]",
+      "defaultValue": [
+        {
+          "frequency": "Day"
+        },
+        {
+          "frequency": "Weekly"
+        }
+      ]
+    },
+    "BillingFrequencyADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "{{ $variables.billingFrequency }}",
+        "itemType": "frequency",
+        "keyAttributes": "frequency"
+      }
+    },
+    "billingFrequencyListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+
+        "keyAttributes": "billFreq",
+        "itemsPath": "items",
+        "responseType": "getallBillingFrequencyResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "billFreq"
+          ]
+        },
+        "fetchChain": "getall_BillingFrequencyFetch"
+      }
+    },
+    "customerName": {
+      "type": "string"
+    },
+    "customerNumber": {
+      "type": "string"
+    },
+    "customerObject": {
+      "type": "object"
+    },
+    "get1113185HubOrganizationsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "CRMRestAPI/get11_13_18_05HubOrganizations",
+        "keyAttributes": "OrganizationName",
+        "itemsPath": "items",
+        "responseType": "get1113185HubOrganizationsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "OrganizationName"
+          ]
+        }
+      }
+    },
+    "get1113185HubOrganizationsListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "CRMRestAPI/get11_13_18_05HubOrganizations",
+        "keyAttributes": "PartyNumber",
+        "itemsPath": "items",
+        "responseType": "get1113185HubOrganizationsResponse2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "PartyNumber"
+          ]
+        }
+      }
+    },
+    "getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "getContractSummary/getEQUIPMENT_RITECONTRACTS_LOV_SUMMIT1_0GetCustomerNumber2",
+        "keyAttributes": "customerNumber",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2Response",
+        "uriParameters": {
+          "q": "{{ $variables.selectedCustomerNumber }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "customerNumber"
+          ]
+        }
+      }
+    },
+    "getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2ListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "getContractSummary/getEQUIPMENT_RITECONTRACTS_LOV_SUMMIT1_0GetCustomerNumber2",
+        "keyAttributes": "customerNumber",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2Response2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "customerNumber"
+          ]
+        }
+      }
+    },
+    "getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2ListSDP3": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "getContractSummary/getEQUIPMENT_RITECONTRACTS_LOV_SUMMIT1_0GetCustomerNumber2",
+        "keyAttributes": "customerNumber",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2Response3",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "customerNumber"
+          ]
+        }
+      }
+    },
+    "getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2ListSDP4": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "getContractSummary/getEQUIPMENT_RITECONTRACTS_LOV_SUMMIT1_0GetCustomerNumber2",
+        "keyAttributes": "customerName",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2Response4",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "customerName"
+          ]
+        }
+      }
+    },
+    "illustrationBackground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-bg-01.png"
+    },
+    "illustrationForeground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-fg-01.png"
+    },
+    "imageStretch": {
+      "type": "string",
+      "defaultValue": "none"
+    },
+    "mobileImage": {
+      "type": "string",
+      "defaultValue": "on"
+    },
+    "reserverdEquipmentDetails": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "reservedEqp"
+      }
+    },
+    "selectedContactEmail": {
+      "type": "string"
+    },
+    "selectedcontactname": {
+      "type": "string"
+    },
+    "selectedCustomerNumber": {
+      "type": "string"
+    },
+    "selectedEqpBillFreq": {
+      "type": "string"
+    },
+    "selectedEqpQuoteAmount": {
+      "type": "number"
+    },
+    "selectedEqpTaxAmount": {
+      "type": "number"
+    },
+    "selectedEquipment": {
+      "type": {
+        "equipment_id": "string",
+        "equipmentName": "string",
+        "equipmentNumber": "string"
+      }
+    },
+    "selectedEquipmentNumber": {
+      "type": "string"
+    },
+    "selectedorgname": {
+      "type": "string"
+    },
+    "updateQuote": {
+      "type": "object[]"
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.get1113185HubOrganizationsResponse": {
+      "endpoint": "get11_13_18_05HubOrganizations",
+      "service": "CRMRestAPI",
+      "path": "response"
+    },
+    "@decorators.get1113185HubOrganizationsResponse2": {
+      "endpoint": "get11_13_18_05HubOrganizations",
+      "service": "CRMRestAPI",
+      "path": "response"
+    },
+    "@decorators.getallBillingFrequencyResponse": {
+      "endpoint": "getall_BillingFrequency",
+      "service": "businessObjects",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2Response": {
+      "endpoint": "getEQUIPMENT_RITECONTRACTS_LOV_SUMMIT1_0GetCustomerNumber2",
+      "service": "getContractSummary",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2Response2": {
+      "endpoint": "getEQUIPMENT_RITECONTRACTS_LOV_SUMMIT1_0GetCustomerNumber2",
+      "service": "getContractSummary",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2Response3": {
+      "endpoint": "getEQUIPMENT_RITECONTRACTS_LOV_SUMMIT1_0GetCustomerNumber2",
+      "service": "getContractSummary",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2Response4": {
+      "endpoint": "getEQUIPMENT_RITECONTRACTS_LOV_SUMMIT1_0GetCustomerNumber2",
+      "service": "getContractSummary",
+      "path": "response"
+    },
+    "frequency": {
+      "frequency": "string"
+    },
+    "get1113185HubOrganizationsResponse": {
+      "items": [
+        {
+          "OrganizationName": "string"
+        }
+      ]
+    },
+    "get1113185HubOrganizationsResponse2": {
+      "items": [
+        {
+          "PartyNumber": "string"
+        }
+      ]
+    },
+    "getallBillingFrequencyResponse": {
+      "items": [
+        {
+          "billFreq": "string",
+          "id": "number"
+        }
+      ]
+    },
+    "getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2Response": {
+      "items": [
+        {
+          "customerName": "string",
+          "customerNumber": "string"
+        }
+      ]
+    },
+    "getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2Response2": {
+      "items": [
+        {
+          "customerName": "string",
+          "customerNumber": "string"
+        }
+      ]
+    },
+    "getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2Response3": {
+      "items": [
+        {
+          "customerName": "string",
+          "customerNumber": "string"
+        }
+      ]
+    },
+    "getEQUIPMENTRITECONTRACTSLOVSUMMIT1GetCustomerNumber2Response4": {
+      "items": [
+        {
+          "customerName": "string",
+          "customerNumber": "string"
+        }
+      ]
+    },
+    "reservedEqp": {
+      "customer_name": "string",
+      "customer_site": "string",
+      "end_date": "string",
+      "equipment_class": "string",
+      "equipment_id": "string",
+      "equipment_name": "string",
+      "equipment_number": "string",
+      "equipment_type": "string",
+      "field1": "string",
+      "insurance_end_date": "string",
+      "insurance_issue_agent": "string",
+      "insurance_policy": "string",
+      "insurance_start_date": "string",
+      "requestor_name": "string",
+      "start_date": "string"
+
+    }
+
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "AddRentalEstimate",
+          "parameters": {
+            "current": "[[ $current.data ]]"
+          }
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "saveQuoteAmount"
+        }
+      ]
+    },
+    "buttonAction3": {
+      "chains": [
+        {
+          "chain": "submitBtnAction"
+        }
+      ]
+    },
+    "buttonAction4": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain4"
+        }
+      ]
+    },
+    "inputNumberValue": {
+      "chains": [
+        {
+          "chain": "InputNumberValueChangeChain",
+          "parameters": {
+            "value": "[[ $event.detail.value ]]"
+          }
+        }
+      ]
+    },
+    "ojSpWp1SpPrimaryAction": {
+      "chains": [
+        {
+          "chain": "WelcomePageTemplateSpPrimaryActionChain"
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem2": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain1",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "switchValue": {
+      "chains": [
+        {
+          "chain": "SwitchValueChangeChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "parameters": {},
+          "chain": "AddRentalEstimate"
+        },
+        {
+          "chain": "PageVbEnterChain",
+          "parameters": {
+            "event": "{{$event}}"
+          }
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-highlight-text": {
+        "path": "ojs/ojhighlighttext"
+      },
+      "oj-input-number": {
+        "path": "ojs/ojinputnumber"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-label": {
+        "path": "ojs/ojlabel"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      },
+      "oj-switch": {
+        "path": "ojs/ojswitch"
+      }
+
+   },
+    "modules": {
+      "ojConverterNumber": {
+        "path": "ojs/ojconverter-number"
+      },
+      "ojValidationNumber": {
+        "path": "ojs/ojvalidation-number"
+      }
+
+    }
+  },
+  "@dt": {
+    "iconClass": "vbdt-dynamic-icon-90-icoWelcomePageTemplate48Svg"
+  }
+}

@@ -1,0 +1,42 @@
+<!-- Dynamic Container Templates -->
+
+<template id="template1">
+  <oj-sp-section section-title="[[$labelHint]]">
+    <div class="oj-panel oj-panel-shadow-lg oj-md-margin-3x">
+      <div class="oj-flex">
+        <div class="oj-flex-item oj-sm-12 oj-md-12">
+          <oj-form-layout columns="2" max-columns="2">
+            <oj-input-text class="oj-md-padding-3x" label-hint="Company Name" required="true" clear-icon="always"></oj-input-text>
+            <oj-input-text label-hint="Contact Name" class="oj-md-padding-3x" required="true" clear-icon="always"></oj-input-text>
+            <oj-input-text label-hint="Email Address" class="oj-md-padding-3x" required="true" clear-icon="always"></oj-input-text>
+            <oj-input-text label-hint="Mobile" class="oj-md-padding-3x" required="true" clear-icon="always"></oj-input-text>
+          </oj-form-layout>
+        </div>
+      </div>
+      <div class="oj-flex">
+        <div class="oj-flex-item oj-sm-12 oj-md-12">
+          <oj-form-layout class="oj-formlayout-full-width">
+            <oj-input-text label-hint="Street Address" clear-icon="always" class="oj-md-padding-3x"></oj-input-text>
+          </oj-form-layout>
+        </div>
+      </div>
+      <div class="oj-flex">
+        <div class="oj-flex-item oj-sm-12 oj-md-12">
+          <oj-form-layout columns="3" max-columns="3" class="oj-formlayout-full-width">
+            <oj-input-text label-hint="City" class="oj-md-padding-3x"></oj-input-text>
+            <oj-input-text label-hint="State" class="oj-md-padding-3x"></oj-input-text>
+            <oj-input-text label-hint="Zip" class="oj-md-padding-3x"></oj-input-text>
+          </oj-form-layout>
+        </div>
+      </div>
+    </div>
+  </oj-sp-section>
+</template>
+
+<template id="template2">
+  <oj-sp-section section-title="[[$labelHint]]">
+    <div class="oj-panel oj-panel-shadow-lg oj-md-margin-3x">
+      <div class="oj-flex"></div>
+    </div>
+  </oj-sp-section>
+</template>

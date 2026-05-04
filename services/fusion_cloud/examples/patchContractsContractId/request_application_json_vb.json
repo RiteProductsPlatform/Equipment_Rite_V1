@@ -1,0 +1,23 @@
+{
+    "ContractId": 300001766003983,
+    "ContractLine": [
+        {
+            "LineNumber": "1",
+            "LineId": 300001766003988,
+            "BillPlan": "Eqp Test05",
+            "RevenuePlan": "ER_Revenue_PlanTEST05"
+        },
+        {
+            "LineNumber": "2",
+            "LineId": 300001766003990,
+            "BillPlan": "Eqp Test05",
+            "RevenuePlan": "ER_Revenue_PlanTEST05"
+        },
+        {
+            "LineNumber": "3",
+            "LineId": 300001766003992,
+            "BillPlan": "Eqp Test05",
+            "RevenuePlan": "ER_Revenue_PlanTEST05"
+        }
+    ]
+}

@@ -1,0 +1,496 @@
+{
+    "items": [
+        {
+            "LookupType": "EQPRITE_CLASS",
+            "ViewApplicationId": 3,
+            "ApplicationShortName": "AU",
+            "ApplicationId": 3,
+            "ModuleId": "6FCFB65E08E3778BE0533380F50A88EF",
+            "Meaning": "Equipment Rite Class",
+            "Description": "Equipment Rite Class",
+            "CustomizationLevel": "U",
+            "RestAccessSecured": "SECURE",
+            "CreatedBy": "DNeredu@oceaneering.com",
+            "CreationDate": "2025-09-17T08:06:08.383+00:00",
+            "LastUpdateDate": "2025-09-17T08:06:31.018+00:00",
+            "LastUpdateLogin": "3E1E83582BCEE6A7E063B35C310ACC0A",
+            "LastUpdatedBy": "DNeredu@oceaneering.com",
+            "BossAppPackageName": null,
+            "BossAppPackageVersion": null,
+            "BossModuleName": null,
+            "BossIdentifier": null,
+            "lookupCodes": [
+                {
+                    "LookupCode": "CONSUMABLES",
+                    "ViewApplicationId": 3,
+                    "Meaning": "CONSUMABLES",
+                    "Description": "CONSUMABLES",
+                    "EnabledFlag": "Y",
+                    "StartDateActive": null,
+                    "EndDateActive": null,
+                    "DisplaySequence": 1,
+                    "Tag": null,
+                    "CreatedBy": "DNeredu@oceaneering.com",
+                    "CreationDate": "2025-09-17T08:08:17.246+00:00",
+                    "LastUpdateDate": "2025-09-17T08:08:37.738+00:00",
+                    "LastUpdateLogin": "3E1E83582BCEE6A7E063B35C310ACC0A",
+                    "LastUpdatedBy": "DNeredu@oceaneering.com",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/CONSUMABLES",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "canonical",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/CONSUMABLES",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "parent",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003",
+                            "name": "genericLookups",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/CONSUMABLES/child/lookupsDFF",
+                            "name": "lookupsDFF",
+                            "kind": "collection"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/CONSUMABLES/child/translations",
+                            "name": "translations",
+                            "kind": "collection"
+                        }
+                    ]
+                },
+                {
+                    "LookupCode": "BULK ITEMS",
+                    "ViewApplicationId": 3,
+                    "Meaning": "BULK ITEMS",
+                    "Description": "BULK ITEMS",
+                    "EnabledFlag": "Y",
+                    "StartDateActive": null,
+                    "EndDateActive": null,
+                    "DisplaySequence": 2,
+                    "Tag": null,
+                    "CreatedBy": "DNeredu@oceaneering.com",
+                    "CreationDate": "2025-09-17T08:08:06.428+00:00",
+                    "LastUpdateDate": "2025-09-17T08:08:37.733+00:00",
+                    "LastUpdateLogin": "3E1E83582BCEE6A7E063B35C310ACC0A",
+                    "LastUpdatedBy": "DNeredu@oceaneering.com",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/BULK%20ITEMS",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "canonical",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/BULK%20ITEMS",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "parent",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003",
+                            "name": "genericLookups",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/BULK%20ITEMS/child/lookupsDFF",
+                            "name": "lookupsDFF",
+                            "kind": "collection"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/BULK%20ITEMS/child/translations",
+                            "name": "translations",
+                            "kind": "collection"
+                        }
+                    ]
+                },
+                {
+                    "LookupCode": "ROV",
+                    "ViewApplicationId": 3,
+                    "Meaning": "ROV",
+                    "Description": "ROV",
+                    "EnabledFlag": "Y",
+                    "StartDateActive": null,
+                    "EndDateActive": null,
+                    "DisplaySequence": 3,
+                    "Tag": null,
+                    "CreatedBy": "DNeredu@oceaneering.com",
+                    "CreationDate": "2025-09-17T08:07:55.068+00:00",
+                    "LastUpdateDate": "2025-09-17T08:08:37.728+00:00",
+                    "LastUpdateLogin": "3E1E83582BCEE6A7E063B35C310ACC0A",
+                    "LastUpdatedBy": "DNeredu@oceaneering.com",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/ROV",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "canonical",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/ROV",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "parent",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003",
+                            "name": "genericLookups",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/ROV/child/lookupsDFF",
+                            "name": "lookupsDFF",
+                            "kind": "collection"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/ROV/child/translations",
+                            "name": "translations",
+                            "kind": "collection"
+                        }
+                    ]
+                },
+                {
+                    "LookupCode": "FLEET TRUCK",
+                    "ViewApplicationId": 3,
+                    "Meaning": "FLEET TRUCK",
+                    "Description": "FLEET TRUCK",
+                    "EnabledFlag": "Y",
+                    "StartDateActive": null,
+                    "EndDateActive": null,
+                    "DisplaySequence": 4,
+                    "Tag": null,
+                    "CreatedBy": "DNeredu@oceaneering.com",
+                    "CreationDate": "2025-09-17T08:07:41.530+00:00",
+                    "LastUpdateDate": "2025-09-17T08:08:37.723+00:00",
+                    "LastUpdateLogin": "3E1E83582BCEE6A7E063B35C310ACC0A",
+                    "LastUpdatedBy": "DNeredu@oceaneering.com",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/FLEET%20TRUCK",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "canonical",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/FLEET%20TRUCK",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "parent",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003",
+                            "name": "genericLookups",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/FLEET%20TRUCK/child/lookupsDFF",
+                            "name": "lookupsDFF",
+                            "kind": "collection"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/FLEET%20TRUCK/child/translations",
+                            "name": "translations",
+                            "kind": "collection"
+                        }
+                    ]
+                },
+                {
+                    "LookupCode": "CONSTRUCTION",
+                    "ViewApplicationId": 3,
+                    "Meaning": "CONSTRUCTION",
+                    "Description": "CONSTRUCTION",
+                    "EnabledFlag": "Y",
+                    "StartDateActive": null,
+                    "EndDateActive": null,
+                    "DisplaySequence": 5,
+                    "Tag": null,
+                    "CreatedBy": "DNeredu@oceaneering.com",
+                    "CreationDate": "2025-09-17T08:07:27.676+00:00",
+                    "LastUpdateDate": "2025-09-17T08:08:37.717+00:00",
+                    "LastUpdateLogin": "3E1E83582BCEE6A7E063B35C310ACC0A",
+                    "LastUpdatedBy": "DNeredu@oceaneering.com",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/CONSTRUCTION",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "canonical",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/CONSTRUCTION",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "parent",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003",
+                            "name": "genericLookups",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/CONSTRUCTION/child/lookupsDFF",
+                            "name": "lookupsDFF",
+                            "kind": "collection"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/CONSTRUCTION/child/translations",
+                            "name": "translations",
+                            "kind": "collection"
+                        }
+                    ]
+                },
+                {
+                    "LookupCode": "SMALL TOOLS",
+                    "ViewApplicationId": 3,
+                    "Meaning": "SMALL TOOLS",
+                    "Description": "SMALL TOOLS",
+                    "EnabledFlag": "Y",
+                    "StartDateActive": null,
+                    "EndDateActive": null,
+                    "DisplaySequence": 6,
+                    "Tag": null,
+                    "CreatedBy": "DNeredu@oceaneering.com",
+                    "CreationDate": "2025-09-17T08:07:16.286+00:00",
+                    "LastUpdateDate": "2025-09-17T08:08:37.712+00:00",
+                    "LastUpdateLogin": "3E1E83582BCEE6A7E063B35C310ACC0A",
+                    "LastUpdatedBy": "DNeredu@oceaneering.com",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/SMALL%20TOOLS",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "canonical",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/SMALL%20TOOLS",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "parent",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003",
+                            "name": "genericLookups",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/SMALL%20TOOLS/child/lookupsDFF",
+                            "name": "lookupsDFF",
+                            "kind": "collection"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/SMALL%20TOOLS/child/translations",
+                            "name": "translations",
+                            "kind": "collection"
+                        }
+                    ]
+                },
+                {
+                    "LookupCode": "CRAWLER CRANE",
+                    "ViewApplicationId": 3,
+                    "Meaning": "CRAWLER CRANE",
+                    "Description": "CRAWLER CRANE",
+                    "EnabledFlag": "Y",
+                    "StartDateActive": null,
+                    "EndDateActive": null,
+                    "DisplaySequence": 7,
+                    "Tag": null,
+                    "CreatedBy": "DNeredu@oceaneering.com",
+                    "CreationDate": "2025-09-17T08:07:05.051+00:00",
+                    "LastUpdateDate": "2025-09-17T08:08:37.707+00:00",
+                    "LastUpdateLogin": "3E1E83582BCEE6A7E063B35C310ACC0A",
+                    "LastUpdatedBy": "DNeredu@oceaneering.com",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/CRAWLER%20CRANE",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "canonical",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/CRAWLER%20CRANE",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "parent",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003",
+                            "name": "genericLookups",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/CRAWLER%20CRANE/child/lookupsDFF",
+                            "name": "lookupsDFF",
+                            "kind": "collection"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/CRAWLER%20CRANE/child/translations",
+                            "name": "translations",
+                            "kind": "collection"
+                        }
+                    ]
+                },
+                {
+                    "LookupCode": "EXCAVATOR",
+                    "ViewApplicationId": 3,
+                    "Meaning": "EXCAVATOR",
+                    "Description": "EXCAVATOR",
+                    "EnabledFlag": "Y",
+                    "StartDateActive": null,
+                    "EndDateActive": null,
+                    "DisplaySequence": 8,
+                    "Tag": null,
+                    "CreatedBy": "DNeredu@oceaneering.com",
+                    "CreationDate": "2025-09-17T08:06:49.437+00:00",
+                    "LastUpdateDate": "2025-09-17T08:08:37.701+00:00",
+                    "LastUpdateLogin": "3E1E83582BCEE6A7E063B35C310ACC0A",
+                    "LastUpdatedBy": "DNeredu@oceaneering.com",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/EXCAVATOR",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "canonical",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/EXCAVATOR",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "parent",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003",
+                            "name": "genericLookups",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/EXCAVATOR/child/lookupsDFF",
+                            "name": "lookupsDFF",
+                            "kind": "collection"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/EXCAVATOR/child/translations",
+                            "name": "translations",
+                            "kind": "collection"
+                        }
+                    ]
+                },
+                {
+                    "LookupCode": "HEAVY HAULING",
+                    "ViewApplicationId": 3,
+                    "Meaning": "HEAVY HAULING",
+                    "Description": "HEAVY HAULING",
+                    "EnabledFlag": "Y",
+                    "StartDateActive": null,
+                    "EndDateActive": null,
+                    "DisplaySequence": 9,
+                    "Tag": null,
+                    "CreatedBy": "DNeredu@oceaneering.com",
+                    "CreationDate": "2025-09-17T08:06:33.561+00:00",
+                    "LastUpdateDate": "2025-09-17T08:08:37.693+00:00",
+                    "LastUpdateLogin": "3E1E83582BCEE6A7E063B35C310ACC0A",
+                    "LastUpdatedBy": "DNeredu@oceaneering.com",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/HEAVY%20HAULING",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "canonical",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/HEAVY%20HAULING",
+                            "name": "lookupCodes",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "parent",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003",
+                            "name": "genericLookups",
+                            "kind": "item"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/HEAVY%20HAULING/child/lookupsDFF",
+                            "name": "lookupsDFF",
+                            "kind": "collection"
+                        },
+                        {
+                            "rel": "child",
+                            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes/HEAVY%20HAULING/child/translations",
+                            "name": "translations",
+                            "kind": "collection"
+                        }
+                    ]
+                }
+            ],
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003",
+                    "name": "genericLookups",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003",
+                    "name": "genericLookups",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/lookupCodes",
+                    "name": "lookupCodes",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/00020000000D455150524954455F434C4153530000000EACED000577080000000000000003/child/translations",
+                    "name": "translations",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 1,
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/genericLookups",
+            "name": "genericLookups",
+            "kind": "collection"
+        }
+    ]
+}

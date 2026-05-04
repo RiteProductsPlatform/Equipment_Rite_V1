@@ -1,0 +1,28 @@
+{
+  "root": "callRestGetMaxWeekid",
+  "description": "",
+  "actions": {
+
+    "callRestGetMaxWeekid": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/GetMaxWeekid",
+        "uriParams": {
+          "crewsetup_id": "{{ $page.variables.searchobj.crewSetup_id }}",
+          "crew_week": "{{ $page.variables.searchobj.dateRange }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesMaxweekid"
+      }
+    },
+    "assignVariablesMaxweekid": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.maxweekid": {
+          "source": "{{ $chain.results.callRestGetMaxWeekid.body.items[0].weekid === null || typeof $chain.results.callRestGetMaxWeekid.body.items[0].weekid === \"undefined\" ? 1 : $chain.results.callRestGetMaxWeekid.body.items[0].weekid }}"
+        }
+      }
+    }
+  }
+}

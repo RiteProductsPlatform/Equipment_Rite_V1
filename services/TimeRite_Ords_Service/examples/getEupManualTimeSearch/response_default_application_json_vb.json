@@ -1,0 +1,201 @@
+{
+    "items": [
+        {
+            "equipment_id": 190,
+            "equipment_number": "1031",
+            "equipment_name": "Nexxus ROV-1031",
+            "equipment_class": "ROV",
+            "default_location": "California"
+        },
+        {
+            "equipment_id": 191,
+            "equipment_number": "1032",
+            "equipment_name": "Magnum Plus ROV 1032",
+            "equipment_class": "ROV",
+            "default_location": "California"
+        },
+        {
+            "equipment_id": 193,
+            "equipment_number": "1034",
+            "equipment_name": "Isurus ROV 1034",
+            "equipment_class": "ROV",
+            "default_location": "California"
+        },
+        {
+            "equipment_id": 264,
+            "equipment_number": "AF445",
+            "equipment_name": "Waste Management Truck",
+            "equipment_class": "FLEET TRUCKS",
+            "default_location": "Washington, DC"
+        },
+        {
+            "equipment_id": 195,
+            "equipment_number": "1035",
+            "equipment_name": "eNovus ROV 1035",
+            "equipment_class": "ROV",
+            "default_location": "California"
+        },
+        {
+            "equipment_id": 188,
+            "equipment_number": "1ADD09",
+            "equipment_name": "JCB 1ADD09",
+            "equipment_class": "DIGGER",
+            "default_location": "Huston"
+        },
+        {
+            "equipment_id": 196,
+            "equipment_number": "1036",
+            "equipment_name": "Freedom ROV 1036",
+            "equipment_class": "ROV",
+            "default_location": "California"
+        },
+        {
+            "equipment_id": 241,
+            "equipment_number": "1943",
+            "equipment_name": "GMC Truck 1943",
+            "equipment_class": "ROV",
+            "default_location": "Houston"
+        },
+        {
+            "equipment_id": 87,
+            "equipment_number": "1210824B",
+            "equipment_name": "JCB 1210824B",
+            "equipment_class": "DIGGER",
+            "default_location": "Huston"
+        },
+        {
+            "equipment_id": 198,
+            "equipment_number": "1037",
+            "equipment_name": "Liberty Resident System 1037",
+            "equipment_class": "ROV",
+            "default_location": "California"
+        },
+        {
+            "equipment_id": 111,
+            "equipment_number": "1210834E",
+            "equipment_name": "JCB 1210834E",
+            "equipment_class": "DIGGER",
+            "default_location": "Huston"
+        },
+        {
+            "equipment_id": 114,
+            "equipment_number": "5GVFGCC",
+            "equipment_name": "Excavators 5GVFGCC",
+            "equipment_class": "EXCAVATORS",
+            "default_location": "New York"
+        },
+        {
+            "equipment_id": 242,
+            "equipment_number": "10455",
+            "equipment_name": "MG Heavy Vehical 10455",
+            "equipment_class": "FLEET TRUCKS",
+            "default_location": "Huston"
+        },
+        {
+            "equipment_id": 281,
+            "equipment_number": "1999",
+            "equipment_name": "Ford F-250 Super Duty - TKW1999",
+            "equipment_class": "FLEET TRUCKS",
+            "default_location": "Houston"
+        },
+        {
+            "equipment_id": 282,
+            "equipment_number": "1890",
+            "equipment_name": "Ford F-150 Crew cab 1890",
+            "equipment_class": "FLEET TRUCKS",
+            "default_location": "Houston"
+        },
+        {
+            "equipment_id": 185,
+            "equipment_number": "1027",
+            "equipment_name": "JCB Cement Mixer 1027",
+            "equipment_class": "DIGGER",
+            "default_location": "California"
+        },
+        {
+            "equipment_id": 186,
+            "equipment_number": "JCB_1234",
+            "equipment_name": "JCB Test",
+            "equipment_class": "DIGGER",
+            "default_location": "Hyderabad"
+        },
+        {
+            "equipment_id": 187,
+            "equipment_number": "HNKK568",
+            "equipment_name": "JCB V2",
+            "equipment_class": "DRIVERS",
+            "default_location": "Host"
+        },
+        {
+            "equipment_id": 261,
+            "equipment_number": "1533AD",
+            "equipment_name": "Mobile Donation Collection Vehicle",
+            "equipment_class": "FLEET TRUCKS",
+            "default_location": "California"
+        },
+        {
+            "equipment_id": 189,
+            "equipment_number": "5577",
+            "equipment_name": "Land Digger 5577",
+            "equipment_class": "DIGGER",
+            "default_location": "California"
+        },
+        {
+            "equipment_id": 110,
+            "equipment_number": "121082DD",
+            "equipment_name": "JCB 121082DD",
+            "equipment_class": "DIGGER",
+            "default_location": "New York"
+        },
+        {
+            "equipment_id": 192,
+            "equipment_number": "1033",
+            "equipment_name": "Millennium Plus ROV 1033",
+            "equipment_class": "ROV",
+            "default_location": "California"
+        },
+        {
+            "equipment_id": 109,
+            "equipment_number": "1210829C",
+            "equipment_name": "JCB 1210829C",
+            "equipment_class": "DIGGER",
+            "default_location": "California"
+        },
+        {
+            "equipment_id": 112,
+            "equipment_number": "2BVFGAA",
+            "equipment_name": "Excavators 2BVFGAA",
+            "equipment_class": "EXCAVATORS",
+            "default_location": "Houston"
+        },
+        {
+            "equipment_id": 113,
+            "equipment_number": "4AVFGBB",
+            "equipment_name": "Excavators 4AVFGBB",
+            "equipment_class": "EXCAVATORS",
+            "default_location": "California"
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EupManualTimeSearch"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EupManualTimeSearch"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EupManualTimeSearch?offset=25"
+        }
+    ]
+}

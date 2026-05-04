@@ -1,0 +1,31 @@
+{
+  "root": "callFunctionPopulateDateRangeJS",
+  "description": "",
+  "actions": {
+    "callFunctionPopulateDateRangeJS": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "populateDateRangeJS"
+      },
+      "outcomes": {
+        "success": "assignVariablesCurrentWeek"
+      }
+    },
+    "assignVariablesCurrentWeek": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$application.variables.CurrentWeek": {
+          "source": "{{ $chain.results.callFunctionPopulateDateRangeJS.week }}"
+        },
+        "$application.variables.dateRangeADP": {
+          "source": {
+            "data": "{{ $chain.results.callFunctionPopulateDateRangeJS.dateRange }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      }
+    }
+  }
+}

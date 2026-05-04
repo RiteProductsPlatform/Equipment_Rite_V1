@@ -1,0 +1,53 @@
+{
+    "items": [
+        {
+            "nonLaborResourceId": "300000302543657",
+            "name": "OAK_EQUIPMENT",
+            "expendituretypeid": "300000302543654",
+            "expendituretypename": "OAK_NON_LABOUR",
+            "organization": "OAK_FIN",
+            "organizationid": "300000301890759"
+        },
+        {
+            "nonLaborResourceId": "300001801119099",
+            "name": "OAK_HEAVY HAULING",
+            "expendituretypeid": "300000302543654",
+            "expendituretypename": "OAK_NON_LABOUR",
+            "organization": "OAK PPM",
+            "organizationid": "300000301890664"
+        },
+        {
+            "nonLaborResourceId": "300000302543657",
+            "name": "OAK_EQUIPMENT",
+            "expendituretypeid": "300000302543654",
+            "expendituretypename": "OAK_NON_LABOUR",
+            "organization": "OAK PPM",
+            "organizationid": "300000301890664"
+        },
+        {
+            "nonLaborResourceId": "300000302543657",
+            "name": "OAK_EQUIPMENT",
+            "expendituretypeid": "300000302543654",
+            "expendituretypename": "OAK_NON_LABOUR",
+            "organization": "OAK Purchasing",
+            "organizationid": "300000301890854"
+        },
+        {
+            "nonLaborResourceId": "300001801119044",
+            "name": "OAK_CONSTRUCTION",
+            "expendituretypeid": "300000302543654",
+            "expendituretypename": "OAK_NON_LABOUR",
+            "organization": "OAK PPM",
+            "organizationid": "300000301890664"
+        },
+        {
+            "nonLaborResourceId": "300001801119101",
+            "name": "OAK_FLEET TRUCK",
+            "expendituretypeid": "300000302543654",
+            "expendituretypename": "OAK_NON_LABOUR",
+            "organization": "OAK PPM",
+            "organizationid": "300000301890664"
+        }
+    ],
+    "count": 6
+}

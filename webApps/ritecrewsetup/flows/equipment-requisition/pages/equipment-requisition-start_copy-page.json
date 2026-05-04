@@ -1,0 +1,1981 @@
+{
+  "title": "Equipment Requisitions",
+  "description": "",
+  "variables": {
+    "addressline1": {
+      "type": "string"
+    },
+    "addressline2": {
+      "type": "string"
+    },
+    "agrArray": {
+      "type": "object[]",
+      "input": "fromCaller"
+    },
+    "availableQuantity": {
+      "type": "number"
+    },
+       "backgroundColor": {
+      "type": "string",
+      "defaultValue": "dark-ocean"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "effortsPerDay": {
+      "type": "number"
+    },
+    "enteredNotes": {
+      "type": "string"
+    },
+    "enteredQuantity": {
+      "type": "number"
+    },
+    "FrequencyADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "{{ $variables.FrequencyArray }}",
+        "keyAttributes": "label"
+      }
+    },
+    "FrequencyArray": {
+      "type": "object[]",
+      "defaultValue": [
+        {
+          "label": "Daily"
+        },
+        {
+          "label": "Weekly"
+        },
+        {
+          "label": "Monthly"
+        }
+      ]
+    },
+    "get1113185ProjectsProjectIdChildTasks2ListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "projectNameList/get11_13_18_05ProjectsProjectIdChildTasks2",
+        "keyAttributes": "TaskNumber",
+        "itemsPath": "items",
+        "responseType": "get1113185ProjectsProjectIdChildTasks2Response2",
+        "uriParameters": {
+          "ProjectId": "{{ $variables.requestObj.projectId }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "TaskNumber"
+          ]
+        }
+      }
+    },
+    "get1113185ProjectsProjectIdChildTasks2ListSDP3": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "projectNameList/get11_13_18_05ProjectsProjectIdChildTasks2",
+        "keyAttributes": "TaskName",
+        "itemsPath": "items",
+        "responseType": "get1113185ProjectsProjectIdChildTasks2Response3",
+        "uriParameters": {
+          "ProjectId": "{{ $variables.selectedRow.project_id }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "TaskName"
+          ]
+        }
+      }
+    },
+    "getCrewTimeProjectTaskPWAListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getCrewTimeProjectTaskPWA",
+        "keyAttributes": "task_name",
+        "itemsPath": "items",
+        "responseType": "getCrewTimeProjectTaskPWAResponse",
+        "uriParameters": {
+          "project_id": "{{ $variables.selectedRow.project_id }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "task_name"
+          ]
+        }
+      }
+    },
+    "getEqpReqApproverPrjListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEqpReqApproverPrj",
+        "keyAttributes": "project_name",
+        "itemsPath": "items",
+        "responseType": "getEqpReqApproverPrjResponse"
+      }
+    },
+    "getEQPRiteCRTemplateDetailsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEQPRite_CRTemplateDetails",
+        "keyAttributes": "template_name",
+        "itemsPath": "items",
+        "responseType": "getEQPRiteCRTemplateDetailsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "template_name"
+          ]
+        }
+      }
+    },
+    "getEQUIPMENTRITEEQPINVORGLOCATION1GetInvLocationsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+
+        "keyAttributes": "name",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITEEQPINVORGLOCATION1GetInvLocationsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "name"
+          ]
+        },
+        "fetchChain": "getEQUIPMENT_RITEEQP_INV_ORG_LOCATION1_0GetInvLocationsFetch"
+      },
+      "input": "fromCaller"
+    },
+    "getEQUIPMENTRITEPROJECTSLOV1GetProjects2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+
+        "keyAttributes": "name",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "name"
+          ]
+        },
+        "fetchChain": "getEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects2Fetch"
+      }
+    },
+    "getEQUIPMENTRITEPROJECTSLOV1GetProjects2ListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "getContractSummary/getEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects2",
+        "keyAttributes": "projectName",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "name"
+          ]
+        }
+      }
+    },
+    "getEQUIPMENTRITEPROJECTSLOV1GetProjects2ListSDP3": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "EQUIPMENT_RITE_OIC/getEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects2",
+        "keyAttributes": "name",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response3",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "name"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentClassesListSDP3": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+
+        "keyAttributes": "eqp_class_details",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentClassesResponse3",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "eqp_class_details"
+          ]
+        },
+        "fetchChain": "getGetEquipmentClassesFetch"
+      }
+    },
+    "getProjectsProjectIdChildTasksListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "fusion_cloud/getProjectsProjectIdChildTasks",
+        "keyAttributes": "TaskNumber",
+        "itemsPath": "items",
+        "responseType": "getProjectsProjectIdChildTasksResponse",
+        "uriParameters": {
+          "ProjectId": "{{ $variables.requestObj.projectId }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "TaskNumber"
+          ]
+        }
+      }
+    },
+    "getRequestNamesLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getRequestNamesLOV",
+        "keyAttributes": "equipment_name",
+        "itemsPath": "items",
+        "responseType": "getRequestNamesLOVResponse",
+        "uriParameters": {
+          "p_equipment_class": "{{ $variables.SearchObj.EquipmentClass }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_name"
+          ]
+        }
+      }
+    },
+    "getRequestNamesLOVListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getRequestNamesLOV",
+        "keyAttributes": "equipment_name",
+        "itemsPath": "items",
+        "responseType": "getRequestNamesLOVResponse2",
+        "uriParameters": {
+          "p_equipment_class": "{{ $variables.SearchObj.EquipmentClass?$variables.SearchObj.EquipmentClass:'' }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_name"
+          ]
+        }
+      }
+    },
+    "getRequestNamesLOVListSDP3": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getRequestNamesLOV",
+        "keyAttributes": "equipment_name",
+        "itemsPath": "items",
+        "responseType": "getRequestNamesLOVResponse3",
+        "uriParameters": {
+          "p_equipment_class": "{{ $variables.SearchObj.EquipmentClass }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_name"
+          ]
+        }
+      }
+    },
+    "illustrationBackground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-bg-01.png"
+    },
+    "illustrationForeground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-fg-01.png"
+    },
+    "imageStretch": {
+      "type": "string",
+      "defaultValue": "none"
+    },
+    "invLocationObj": {
+      "type": "getEQUIPMENT_RITEEQP_INV_ORG_LOCATION1_0GetInvLocations"
+    },
+    "isAddEquipment": {
+      "type": "string"
+    },
+    "isBulkInsert": {
+      "type": "object[]"
+    },
+    "isEquipment": {
+      "type": "boolean",
+      "defaultValue": false,
+      "input": "fromCaller"
+    },
+    "isMap": {
+      "type": "boolean"
+    },
+    "isSoftReservation": {
+      "type": "string"
+    },
+    "isSubmittable": {
+      "type": "boolean",
+      "defaultValue": true
+    },
+    "istableenable": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "mobileImage": {
+      "type": "string",
+      "defaultValue": "on"
+    },
+    "Distaince": {
+      "type": "string"
+    },
+    "eqpId": {
+      "type": "string"
+    },
+    "EqpMasterWorkOrderADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "EqpMasterWorkOrderype",
+        "keyAttributes": "@index"
+      }
+    },
+    "equipmentADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getGetEquipmentNames",
+        "keyAttributes": "equipment_id"
+      }
+    },
+    "equplatitude": {
+      "type": "string"
+    },
+    "equplongitude": {
+      "type": "string"
+    },
+    "fileContent": {
+      "type": "string"
+    },
+    "fileNamePopup": {
+      "type": "string"
+    },
+    "fileObj": {
+      "type": {
+        "file_attachment": "any",
+        "file_content": "any",
+        "file_name": "string",
+        "file_type": "string"
+
+      }
+    },
+    "get1113185HubOrganizationsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "CRMRestAPI/get11_13_18_05HubOrganizations",
+        "itemsPath": "items",
+        "responseType": "get1113185HubOrganizationsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "OrganizationName"
+          ]
+        },
+        "keyAttributes": "PartyId"
+      }
+    },
+    "get1113185ProjectsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "projectNameList/get11_13_18_05Projects",
+        "keyAttributes": "ProjectName",
+        "itemsPath": "items",
+        "responseType": "get1113185ProjectsResponse2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "ProjectName"
+          ]
+        }
+      }
+    },
+    "get1113185ProjectsProjectIdChildTasks2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "projectNameList/get11_13_18_05ProjectsProjectIdChildTasks2",
+        "itemsPath": "items",
+        "responseType": "get1113185ProjectsProjectIdChildTasks2Response",
+        "uriParameters": {
+          "ProjectId": "{{ $variables.selectedRow.project_id }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "TaskName"
+          ]
+        },
+        "keyAttributes": "TaskName"
+      }
+    },
+    "getEqpRequestNumberLovListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEqpRequestNumberLov",
+        "keyAttributes": "request_number",
+        "itemsPath": "items",
+        "responseType": "getEqpRequestNumberLovResponse",
+        "uriParameters": {
+          "page_name": "equipment-requisition"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "request_number"
+          ]
+        }
+      }
+    },
+    "getEqpRequestStatusListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEqpRequestStatus",
+        "keyAttributes": "status",
+        "itemsPath": "items",
+        "responseType": "getEqpRequestStatusResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "status"
+          ]
+        }
+      }
+    },
+    "getGetAllocationDataListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetAllocationData",
+        "keyAttributes": "project_number",
+        "itemsPath": "items",
+        "responseType": "getGetAllocationDataResponse",
+        "headers": {
+          "p_start_date": "{{ $variables.selectedRow.start_date }}",
+          "p_end_date": "{{ $variables.selectedRow.end_date }}",
+          "p_equipment_id": "{{ $variables.selectedRow.equipment_id }}"
+        }
+      }
+    },
+    "getGetCrewNameLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetCrewNameLOV",
+        "keyAttributes": "crewsetup_id",
+        "itemsPath": "items",
+        "responseType": "getGetCrewNameLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "crew_name"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentClassesListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentClasses",
+        "keyAttributes": "equipment_resource_class",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentClassesResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_resource_class"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentClassesListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentClasses",
+        "keyAttributes": "equipment_resource_class",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentClassesResponse2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_resource_class"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentClassLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentClassLOV",
+        "keyAttributes": "equipment_class",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentClassLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_class"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentClassLOVListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentClassLOV",
+        "keyAttributes": "equipment_class",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentClassLOVResponse2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_class"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentLOV",
+        "keyAttributes": "lkpid",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "lkpvalue"
+          ]
+        },
+        "headers": {
+          "pClass": "{{ $variables.SearchObj.EquipmentClass }}"
+        },
+        "uriParameters": {
+          "pClass": "{{ $variables.SearchObj.EquipmentClass }}"
+        }
+      }
+    },
+    "getGetEquipmentRequesitionStatusListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentRequesitionStatus",
+        "keyAttributes": "crewsetup_id",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentRequesitionStatusResponse",
+        "headers": {
+          "pName": "{{ $application.user.fullName }}"
+        },
+        "filterCriterion": {
+          "op": "$or",
+          "criteria": [
+            {
+              "op": "$co",
+              "attribute": "status",
+              "value": "{{ $variables.SearchStatusObj.Status }}"
+            },
+            {
+              "op": "$co",
+              "attribute": "equipment_resource_class",
+              "value": "{{ $variables.SearchStatusObj.EquipmentClass }}"
+            }
+          ]
+        }
+      }
+    },
+    "getHubCustomerSitesSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "CRMRestAPI/get11_13_18_05HubOrganizationsPartyNumberChildAddress",
+        "responseType": "get11_13_18_05HubOrganizationsPartyNumberChildAddress",
+        "itemsPath": "items",
+        "uriParameters": {
+          "PartyNumber": "{{ $variables.selectedRow.customerSiteFetchId ? $variables.selectedRow.customerSiteFetchId : '' }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "PartySiteName"
+          ]
+        },
+        "keyAttributes": "AddressId"
+      }
+    },
+    "infoSelectRow": {
+      "type": "any"
+    },
+    "name": {
+      "type": "string",
+      "defaultValue": "Oak"
+    },
+    "navigatefrom": {
+      "type": "string",
+      "input": "fromCaller"
+    },
+    "nlrResource": {
+      "type": "string"
+    },
+    "nlrResourceOrg": {
+      "type": "string"
+    },
+    "payloadADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "payload",
+        "keyAttributes": "@index"
+      }
+    },
+    "popUpEqpName": {
+      "type": "string"
+    },
+    "projectname": {
+      "type": "any"
+    },
+    "projectName": {
+      "type": "string"
+    },
+    "projectnamevariable": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "ProjectDetailsPWA",
+        "keyAttributes": "project_name",
+        "textFilterAttributes": [
+          "project_name"
+        ]
+      }
+    },
+    "ProjectObject": {
+      "type": "object"
+    },
+    "ProjectsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "{{ $variables.ProjectsArray }}",
+        "keyAttributes": "label"
+      }
+    },
+    "ProjectsArray": {
+      "type": "object[]",
+      "defaultValue": [
+        {
+          "label": "Project"
+        },
+        {
+          "label": "Customer"
+        }
+      ]
+    },
+    "reqNumber": {
+      "type": "string"
+    },
+    "request_type": {
+      "type": "string",
+      "defaultValue": "Project"
+    },
+    "requestObj": {
+      "type": {
+        "eqpName": "string",
+        "projectId": "string",
+        "projectNumber": "string",
+        "taskId": "string",
+        "taskname": "any",
+        "taskNumber": "string"
+
+      },
+      "input": "fromCaller"
+    },
+    "RequstProjectSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "projectNameList/get11_13_18_05Projects",
+        "keyAttributes": "ProjectId",
+        "itemsPath": "items",
+        "responseType": "get1113185ProjectsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "ProjectName"
+          ]
+        },
+        "uriParameters": {
+          "q": "BusinessUnitName= \"US1 Business Unit\""
+        }
+      }
+    },
+    "response": {
+      "type": "boolean",
+      "defaultValue": false
+    },
+    "responseAPIMaster": {
+      "type": "object"
+    },
+    "searchEqpClass": {
+      "type": "string"
+    },
+    "SearchObj": {
+      "type": "EquipmentSearchType",
+      "persisted": "none",
+      "input": "fromCaller"
+    },
+    "searchStatus": {
+      "type": "string"
+    },
+    "SearchStatusObj": {
+      "type": "EquipmentStatusSearchType"
+    },
+    "selectedBuid": {
+      "type": "any"
+    },
+    "selectedbuname": {
+      "type": "any"
+    },
+    "selectedCrewId": {
+      "type": "string"
+    },
+    "selectedCrewName": {
+      "type": "string"
+    },
+    "selectedEquipmentId": {
+      "type": "number"
+    },
+    "selectedProjectName": {
+      "type": "any"
+    },
+    "selectedRow": {
+      "type": "EquipmentRequestType",
+      "defaultValue": {
+        "requestor_name": "oak",
+        "request_type": "Project",
+        "utilization": "[[ $application.functions.getUtilization($variables.selectedRow.efforts_per_day) ]]"
+      }
+    },
+    "selectedTaskName": {
+      "type": "any"
+    },
+    "tableADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "rowType"
+      }
+    },
+    "TaskLovADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "taskObjType",
+        "keyAttributes": "TaskName"
+      }
+    },
+    "utilization": {
+      "type": "number"
+    },
+    "variable1": {
+      "type": "string"
+    },
+    "zipCode": {
+      "type": "string"
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.EqpMasterWorkOrderype": {
+      "endpoint": "getEqpMasterWorkOrder",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.EquipmentRequestType": {
+      "endpoint": "getGetEquipmentNames",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.get11_13_18_05HubOrganizationsPartyNumberChildAddress": {
+      "endpoint": "get11_13_18_05HubOrganizationsPartyNumberChildAddress",
+      "service": "CRMRestAPI",
+      "path": "response"
+    },
+    "@decorators.get1113185HubOrganizationsResponse": {
+      "endpoint": "get11_13_18_05HubOrganizations",
+      "service": "CRMRestAPI",
+      "path": "response"
+    },
+    "@decorators.get1113185ProjectsProjectIdChildTasks2Response": {
+      "endpoint": "get11_13_18_05ProjectsProjectIdChildTasks2",
+      "service": "projectNameList",
+      "path": "response"
+    },
+    "@decorators.get1113185ProjectsProjectIdChildTasks2Response2": {
+      "endpoint": "get11_13_18_05ProjectsProjectIdChildTasks2",
+      "service": "projectNameList",
+      "path": "response"
+    },
+    "@decorators.get1113185ProjectsProjectIdChildTasks2Response3": {
+      "endpoint": "get11_13_18_05ProjectsProjectIdChildTasks2",
+      "service": "projectNameList",
+      "path": "response"
+    },
+    "@decorators.get1113185ProjectsResponse": {
+      "endpoint": "get11_13_18_05Projects",
+      "service": "projectNameList",
+      "path": "response"
+    },
+    "@decorators.get1113185ProjectsResponse2": {
+      "endpoint": "get11_13_18_05Projects",
+      "service": "projectNameList",
+      "path": "response"
+    },
+    "@decorators.getCrewTimeProjectTaskPWAResponse": {
+      "endpoint": "getCrewTimeProjectTaskPWA",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEqpReqApproverPrjResponse": {
+      "endpoint": "getEqpReqApproverPrj",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEqpRequestNumberLovResponse": {
+      "endpoint": "getEqpRequestNumberLov",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEqpRequestStatusResponse": {
+      "endpoint": "getEqpRequestStatus",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEQPRiteCRTemplateDetailsResponse": {
+      "endpoint": "getEQPRite_CRTemplateDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENT_RITEEQP_INV_ORG_LOCATION1_0GetInvLocations": {
+      "endpoint": "getEQUIPMENT_RITEEQP_INV_ORG_LOCATION1_0GetInvLocations",
+      "service": "EQUIPMENT_RITE_OIC",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getEQUIPMENTRITEEQPINVORGLOCATION1GetInvLocationsResponse": {
+      "endpoint": "getEQUIPMENT_RITEEQP_INV_ORG_LOCATION1_0GetInvLocations",
+      "service": "EQUIPMENT_RITE_OIC",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response": {
+      "endpoint": "getEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects2",
+      "service": "getContractSummary",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response2": {
+      "endpoint": "getEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects2",
+      "service": "getContractSummary",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response3": {
+      "endpoint": "getEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects2",
+      "service": "EQUIPMENT_RITE_OIC",
+      "path": "response"
+    },
+    "@decorators.getGetAllocationDataResponse": {
+      "endpoint": "getGetAllocationData",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetCrewNameLOVResponse": {
+      "endpoint": "getGetCrewNameLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEqpMasterByEqpID": {
+      "endpoint": "getGetEqpMasterByEqpID",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentClassesResponse": {
+      "endpoint": "getGetEquipmentClasses",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentClassesResponse2": {
+      "endpoint": "getGetEquipmentClasses",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentClassesResponse3": {
+      "endpoint": "getGetEquipmentClasses",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentClassLOVResponse": {
+      "endpoint": "getGetEquipmentClassLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentClassLOVResponse2": {
+      "endpoint": "getGetEquipmentClassLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentLOVResponse": {
+      "endpoint": "getGetEquipmentLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentNames": {
+      "endpoint": "getGetEquipmentNames",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getGetEquipmentRequesitionStatusResponse": {
+      "endpoint": "getGetEquipmentRequesitionStatus",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getProjectsProjectIdChildTasksResponse": {
+      "endpoint": "getProjectsProjectIdChildTasks",
+      "service": "fusion_cloud",
+      "path": "response"
+    },
+    "@decorators.getRequestNamesLOVResponse": {
+      "endpoint": "getRequestNamesLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getRequestNamesLOVResponse2": {
+      "endpoint": "getRequestNamesLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getRequestNamesLOVResponse3": {
+      "endpoint": "getRequestNamesLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.ProjectDetailsPWA": {
+      "endpoint": "ProjectDetailsPWA",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "EqpMasterWorkOrderype": {
+      "asset_number": "string",
+      "equipment_name": "string",
+      "forecast_duedate": "string",
+      "workorder_number": "string"
+    },
+    "EquipmentRequestType": {
+      "city": "string",
+      "country": "string",
+      "equip_req_quantity": "any",
+      "equipment_class": "string",
+      "equipment_id": "number",
+      "equipment_name": "string",
+      "equipment_number": "string",
+      "equipment_type": "string",
+      "latitude": "any",
+      "location": "string",
+      "longitude": "any",
+      "project_id": "number",
+      "project_name": "string",
+      "project_number": "any",
+      "schedule_cost_rate": "string",
+      "task_id": "number",
+      "task_name": "string",
+      "task_number": "any",
+      "addressline1": "any",
+      "addressline2": "any",
+      "crew_id": "number",
+      "crew_name": "string",
+      "customer": "any",
+      "customer_id": "any",
+      "customer_site": "any",
+      "customer_site_id": "any",
+      "customerSiteFetchId": "any",
+      "efforts_per_day": "number",
+      "rate_basis": "string",
+      "request_type": "string",
+      "requestor_name": "string",
+      "bill_rate": "number",
+      "site_name": "any",
+      "start_date": "string",
+      "end_date": "string",
+      "utilization": "number",
+      "zipcode": "any",
+      "margin": "string"
+
+    },
+    "EquipmentSearchType": {
+      "EndDate": "string",
+      "EquipmentClass": "string",
+      "EquipmentId": "number",
+      "frequency": "string",
+      "requestnumber": "string",
+      "StartDate": "string",
+      "template": "string",
+      "template_id": "any"
+
+    },
+    "EquipmentStatusSearchType": {
+      "EquipmentClass": "string",
+      "requestnumber": "string",
+      "Status": "string"
+
+    },
+    "get11_13_18_05HubOrganizationsPartyNumberChildAddress": {
+      "items": [
+        {
+          "AddressId": "number",
+          "AddressNumber": "string",
+          "PartyId": "number",
+          "PartyNumber": "string",
+          "PartySiteEO_XSD_c": "any",
+          "PartySiteName": "any"
+        }
+      ]
+    },
+    "get1113185HubOrganizationsResponse": {
+      "items": [
+        {
+          "OrganizationName": "string",
+          "PartyId": "number",
+          "PartyNumber": "string"
+        }
+      ]
+    },
+    "get1113185ProjectsProjectIdChildTasks2Response": {
+      "items": [
+        {
+          "TaskId": "number",
+          "TaskName": "string",
+          "TaskNumber": "string"
+        }
+      ]
+    },
+    "get1113185ProjectsProjectIdChildTasks2Response2": {
+      "items": [
+        {
+          "TaskId": "number",
+          "TaskName": "string",
+          "TaskNumber": "string"
+        }
+      ]
+    },
+    "get1113185ProjectsProjectIdChildTasks2Response3": {
+      "items": [
+        {
+          "TaskId": "number",
+          "TaskName": "string",
+          "TaskNumber": "string"
+        }
+      ]
+    },
+    "get1113185ProjectsResponse": {
+      "items": [
+        {
+          "ProjectId": "number",
+          "ProjectName": "string",
+          "ProjectNumber": "string"
+        }
+      ]
+    },
+    "get1113185ProjectsResponse2": {
+      "items": [
+        {
+          "ProjectId": "number",
+          "ProjectName": "string",
+          "ProjectNumber": "string"
+        }
+      ]
+    },
+    "getCrewTimeProjectTaskPWAResponse": {
+      "items": [
+        {
+          "project_id": "number",
+          "task_id": "number",
+          "task_name": "string",
+          "task_number": "string"
+        }
+      ]
+    },
+    "getEqpReqApproverPrjResponse": {
+      "items": [
+        {
+          "project_id": "number",
+          "project_name": "string"
+        }
+      ]
+    },
+    "getEqpRequestNumberLovResponse": {
+      "items": [
+        {
+          "request_number": "string"
+        }
+      ]
+    },
+    "getEqpRequestStatusResponse": {
+      "items": [
+        {
+          "status": "string"
+        }
+      ]
+    },
+    "getEQPRiteCRTemplateDetailsResponse": {
+      "items": [
+        {
+          "template_id": "number",
+          "template_name": "string"
+        }
+      ]
+    },
+    "getEQUIPMENT_RITEEQP_INV_ORG_LOCATION1_0GetInvLocations": {
+      "ADDRESS_LINE_1": "string",
+      "ADDRESS_LINE_2": "string",
+      "BUSINESS_UNIT_NAME": "string",
+      "COUNTRY": "string",
+      "LEGAL_ENTITY": "string",
+      "LOCATION_ID": "string",
+      "name": "string",
+      "ORGANIZATION_CODE": "string",
+      "ORGANIZATION_ID": "string",
+      "ORGANIZATION_NAME": "string",
+      "POSTAL_CODE": "string",
+      "TOWN_OR_CITY": "string",
+      "LEGAL_ENTITY_NAME": "string"
+
+    },
+    "getEQUIPMENTRITEEQPINVORGLOCATION1GetInvLocationsResponse": {
+      "items": [
+        {
+          "ADDRESS_LINE_1": "string",
+          "ADDRESS_LINE_2": "string",
+          "BUSINESS_UNIT_NAME": "string",
+          "COUNTRY": "string",
+          "LEGAL_ENTITY": "string",
+          "LOCATION_ID": "string",
+          "name": "string",
+          "ORGANIZATION_CODE": "string",
+          "ORGANIZATION_ID": "string",
+          "ORGANIZATION_NAME": "string",
+          "POSTAL_CODE": "string",
+          "TOWN_OR_CITY": "string",
+          "LEGAL_ENTITY_NAME": "string"
+
+        }
+      ]
+    },
+    "getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response": {
+      "items": [
+        {
+          "businessUnitName": "string",
+          "completionDate": "string",
+          "enabledFlag": "string",
+          "name": "string",
+          "number": "string",
+          "orgId": "string",
+          "projectId": "string",
+          "projectName": "string",
+          "projectStatusCode": "string",
+          "projectTypeId": "string",
+          "startDate": "string"
+        }
+      ]
+    },
+    "getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response2": {
+      "items": [
+        {
+          "businessUnitName": "string",
+          "completionDate": "string",
+          "enabledFlag": "string",
+          "name": "string",
+          "number": "string",
+          "orgId": "string",
+          "projectId": "string",
+          "projectName": "string",
+          "projectStatusCode": "string",
+          "projectTypeId": "string",
+          "startDate": "string"
+        }
+      ]
+    },
+    "getEQUIPMENTRITEPROJECTSLOV1GetProjects2Response3": {
+      "items": [
+        {
+          "businessUnitName": "string",
+          "completionDate": "string",
+          "enabledFlag": "string",
+          "name": "string",
+          "number": "string",
+          "orgId": "string",
+          "projectId": "string",
+          "projectName": "string",
+          "projectStatusCode": "string",
+          "projectTypeId": "string",
+          "startDate": "string"
+        }
+      ]
+    },
+    "getGetAllocationDataResponse": {
+      "items": [
+        {
+          "effective_end_date": "string",
+          "effective_start_date": "string",
+          "project_number": "string"
+        }
+      ]
+    },
+    "getGetCrewNameLOVResponse": {
+      "items": [
+        {
+          "crew_name": "string",
+          "crewsetup_id": "number"
+        }
+      ]
+    },
+    "getGetEqpMasterByEqpID": {
+      "items": [
+        {
+          "address_line1": "any",
+          "address_line2": "any",
+          "asset_number": "string",
+          "ast_date_in_service": "string",
+          "ast_insured_by": "string",
+          "ast_insured_policy": "string",
+          "billing_category": "string",
+          "city": "string",
+          "country": "string",
+          "default_location": "string",
+          "expenditure_org_name": "string",
+          "inventory_item": "string",
+          "manufacturer": "string",
+          "mf_fuel_type": "string",
+          "mf_license_expiry": "string",
+          "mf_license_number": "any",
+          "mf_license_state": "string",
+          "mf_model_number": "any",
+          "mf_model_year": "number",
+          "mf_serial_number": "string",
+          "mf_warranty_code": "string",
+          "mf_weight": "number",
+          "person_number": "string",
+          "purchase_order": "string",
+          "zip": "any"
+        }
+      ]
+    },
+    "getGetEquipmentClassesResponse": {
+      "items": [
+        {
+          "equipment_resource_class": "string"
+        }
+      ]
+    },
+    "getGetEquipmentClassesResponse2": {
+      "items": [
+        {
+          "equipment_resource_class": "string"
+        }
+      ]
+    },
+    "getGetEquipmentClassesResponse3": {
+      "items": [
+        {
+          "eqp_class_details": "string"
+        }
+      ]
+    },
+    "getGetEquipmentClassLOVResponse": {
+      "items": [
+        {
+          "equipment_class": "string"
+        }
+      ]
+    },
+    "getGetEquipmentClassLOVResponse2": {
+      "items": [
+        {
+          "equipment_class": "string"
+        }
+      ]
+    },
+    "getGetEquipmentLOVResponse": {
+      "items": [
+        {
+          "lkpid": "number",
+          "lkpvalue": "string"
+        }
+      ]
+    },
+    "getGetEquipmentNames": {
+
+      "availability": "string",
+      "bill_rate": "any",
+      "equipment_class": "string",
+      "equipment_id": "number",
+      "equipment_name": "string",
+      "equipment_number": "string",
+      "equipment_type": "string",
+      "file_attachment": "any",
+      "file_content": "string",
+      "file_name": "string",
+      "file_type": "string",
+      "inventory_item": "string",
+      "latitude": "string",
+      "longitude": "string",
+      "non_labor_resource": "string",
+      "non_labor_resource_org": "string",
+      "project_id": "number",
+      "project_name": "string",
+      "project_number": "any",
+      "schedule_cost_rate": "string"
+
+    },
+    "getGetEquipmentRequesitionStatusResponse": {
+      "items": [
+        {
+          "comments": "string",
+          "crewsetup_id": "number",
+          "end_date": "string",
+          "equipment_name": "string",
+          "equipment_resource_class": "string",
+          "file_content": "string",
+          "file_name": "string",
+          "latitude": "any",
+          "longitude": "any",
+          "project_name": "string",
+          "rate": "any",
+          "requestor_name": "string",
+          "start_date": "string",
+          "status": "string",
+          "task_name": "string"
+        }
+      ]
+    },
+    "getProjectsProjectIdChildTasksResponse": {
+      "items": [
+        {
+          "TaskId": "number",
+          "TaskName": "string",
+          "TaskNumber": "string"
+        }
+      ]
+    },
+    "getRequestNamesLOVResponse": {
+      "items": [
+        {
+          "equipment_count": "number",
+          "equipment_name": "string"
+        }
+      ]
+    },
+    "getRequestNamesLOVResponse2": {
+      "items": [
+        {
+          "equipment_count": "number",
+          "equipment_name": "string"
+        }
+      ]
+    },
+    "getRequestNamesLOVResponse3": {
+      "items": [
+        {
+          "equipment_count": "number",
+          "equipment_name": "string",
+          "non_labor_resource": "string",
+          "non_labor_resource_org": "string"
+        }
+      ]
+    },
+    "payload": {
+      "addressline1": "string",
+      "addressline2": "string",
+      "business_unit_id": "any",
+      "business_unit_name": "any",
+      "city": "string",
+      "country": "string",
+      "crew_id": "string",
+      "crew_name": "string",
+      "efforts_per_day": "string",
+      "end_date": "string",
+      "eqp_request_number": "string",
+      "equip_req_quantity": "string",
+      "equipment_class": "string",
+      "equipment_name": "string",
+      "equipment_number": "string",
+      "equipment_type": "string",
+      "file_attachment": "string",
+      "inventory_org": "any",
+      "inventory_org_id": "any",
+      "latitude": "string",
+      "location": "string",
+      "location_id": "any",
+      "longitude": "string",
+      "non_labor_resource": "string",
+      "non_labor_resource_org": "string",
+      "project_id": "string",
+      "project_name": "string",
+      "project_number": "string",
+      "request_type": "string",
+      "requestor_name": "string",
+      "schedule_cost_rate": "string",
+      "soft_reservation": "string",
+      "start_date": "string",
+      "task_id": "string",
+      "task_name": "string",
+      "task_number": "string",
+      "utilization": "string",
+      "zipcode": "string"
+
+    },
+    "ProjectDetailsPWA": {
+      "project_id": "number",
+      "project_name": "string",
+      "project_number": "string"
+    },
+    "rowType": {
+      "bill_rate": "string",
+      "comments": "string",
+      "end_date": "string",
+      "eqp_request_number": "any",
+      "equipment_name": "string",
+      "equipment_resource_class": "string",
+      "latitude": "string",
+      "longitude": "string",
+      "project_name": "string",
+      "project_number": "string",
+      "requestor_name": "string",
+      "requestor_number": "string",
+      "start_date": "string",
+      "status": "string",
+      "task_name": "string"
+
+    },
+    "taskObjType": {
+      "TaskId": "string",
+      "TaskName": "string",
+      "TaskNumber": "string"
+    }
+
+  },
+  "eventListeners": {
+    "actionIconAction": {
+      "chains": [
+        {
+          "chain": "RequestBtnAction",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "badgeClick": {
+      "chains": [
+        {
+          "chain": "BadgeClickChain",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "badgeClick2": {
+      "chains": [
+        {
+          "chain": "BadgeClickChain1",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "badgeClick3": {
+      "chains": [
+        {
+          "chain": "BadgeClickChain2",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "SearchBtnAction"
+        }
+      ]
+    },
+    "buttonAction10": {
+      "chains": [
+        {
+          "chain": "ScheduleviewClickAction"
+        }
+      ]
+    },
+    "buttonAction11": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction12": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain1"
+        }
+      ]
+    },
+    "buttonAction13": {
+      "chains": [
+        {
+          "chain": "AddEquipmentButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction14": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain7"
+        }
+      ]
+    },
+    "buttonAction15": {
+      "chains": [
+        {
+          "chain": "TablerowDeleteActionChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}",
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "CancelSubmitRequestDlgAction"
+        }
+      ]
+    },
+    "buttonAction3": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain3"
+        }
+      ]
+    },
+    "buttonAction4": {
+      "chains": [
+        {
+          "chain": "SubmitBtnAction"
+        }
+      ]
+    },
+    "buttonAction5": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain5"
+        }
+      ]
+    },
+    "buttonAction6": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain6"
+        }
+      ]
+    },
+    "buttonAction7": {
+      "chains": [
+        {
+          "chain": "RequestsSearchBtnAction"
+        }
+      ]
+    },
+    "buttonAction8": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain4"
+        }
+      ]
+    },
+    "buttonAction9": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain8"
+        }
+      ]
+    },
+    "cameraFilePickerSelect": {
+      "chains": [
+        {
+          "chain": "FilePickerSelectChain",
+          "parameters": {
+            "files": "[[ Array.prototype.slice.call($event.detail.files) ]]"
+          }
+        }
+      ]
+    },
+    "hyperlinkClick": {
+      "chains": [
+        {
+          "chain": "MaintenanceClicAction"
+        }
+      ]
+    },
+    "iconClick": {
+      "chains": [
+        {
+          "chain": "DetailsIconClickAction",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "inputNumberValue": {
+      "chains": [
+        {
+          "chain": "effortsperdayActionChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "ProjectNameValueChangeChain",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem10": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain8",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem11": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain9",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem12": {
+      "chains": [
+        {
+          "chain": "LocationSelectValueItemChangeChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{$event.detail.value}}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}",
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "valueItem": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem13": {
+      "chains": [
+        {
+          "chain": "templateSelectValueItemChangeChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{$event.detail.value}}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}",
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "valueItem": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem2": {
+      "chains": [
+        {
+          "chain": "TaskValueChangeAction",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem3": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain2",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem4": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain3",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem5": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain4",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem6": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain5",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem7": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain6",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem8": {
+      "chains": [
+        {
+          "chain": "ProjectValueChange",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem9": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain7",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "spanClick": {
+      "chains": [
+        {
+          "chain": "navigateClickChain"
+        }
+      ]
+    },
+    "switchValue": {
+      "chains": [
+        {
+          "chain": "SwitchValueChangeChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}"
+          }
+        }
+      ]
+    },
+    "switchValue2": {
+      "chains": [
+        {
+          "chain": "EquipmentSwitchValueChangeChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}"
+          }
+        }
+      ]
+    },
+    "switchValue3": {
+      "chains": [
+        {
+          "chain": "SwitchValueChangeChain1",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}"
+          }
+        }
+      ]
+    },
+    "tableFirstSelectedRow": {
+      "chains": [
+        {
+          "chain": "TableFirstSelectedRowChangeChain",
+          "parameters": {
+            "rowKey": "{{$event.detail.value.key}}",
+            "rowData": "{{$event.detail.value.data}}"
+          }
+        }
+      ]
+    },
+    "textAreaClick": {
+      "chains": [
+        {
+          "chain": "TextAreaValueChangeChain"
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "chain": "PageVbEnterChain"
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-accordion": {
+        "path": "ojs/ojaccordion"
+      },
+      "oj-avatar": {
+        "path": "ojs/ojavatar"
+      },
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-checkboxset": {
+        "path": "ojs/ojcheckboxset"
+      },
+      "oj-collapsible": {
+        "path": "ojs/ojcollapsible"
+      },
+      "oj-combobox-one": {
+        "path": "ojs/ojselectcombobox"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-file-picker": {
+        "path": "ojs/ojfilepicker"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-highlight-text": {
+        "path": "ojs/ojhighlighttext"
+      },
+      "oj-input-date": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-input-date-time": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-input-number": {
+        "path": "ojs/ojinputnumber"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-label": {
+        "path": "ojs/ojlabel"
+      },
+      "oj-option": {
+        "path": "ojs/ojoption"
+      },
+      "oj-picto-chart": {
+        "path": "ojs/ojpictochart"
+      },
+      "oj-picto-chart-item": {
+        "path": "ojs/ojpictochart"
+      },
+      "oj-popup": {
+        "path": "ojs/ojpopup"
+      },
+      "oj-progress-bar": {
+        "path": "ojs/ojprogress-bar"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      },
+      "oj-switch": {
+        "path": "ojs/ojswitch"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-text-area": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      },
+      "oj-validation-group": {
+        "path": "ojs/ojvalidationgroup"
+      }
+
+    },
+    "modules": {
+      "ojConverterNumber": {
+        "path": "ojs/ojconverter-number"
+      },
+      "ojValidationDateTime": {
+        "path": "ojs/ojvalidation-datetime"
+      },
+      "ojValidationNumber": {
+        "path": "ojs/ojvalidation-number"
+      }
+
+    }
+  }
+}

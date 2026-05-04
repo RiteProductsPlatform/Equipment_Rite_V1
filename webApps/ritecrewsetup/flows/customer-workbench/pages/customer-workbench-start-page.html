@@ -1,0 +1,177 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value=""></oj-vb-fragment-param>
+</oj-vb-fragment>
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Customer Request Workbench" background-color="dark-pebble">
+  <oj-popup id="actionpopup" position.collision="flipfit" style="width:170px">
+    <oj-form-layout columns="1" max-columns="1" label-edge="top">
+      <oj-button label="Inspection" chroming="callToAction" class="oj-button-sm"
+        on-oj-action="[[$listeners.buttonAction6]]"
+        disabled='[[ $variables.currentRow.rowData.status!="Quote Accepted"||!$variables.currentRow.rowData.contractnumber ]]'>
+        <span class="oj-ux-ico-smart-filter-and-search-template" slot="startIcon"></span>
+      </oj-button>
+      
+      <oj-button label="Rental Estimate" chroming="callToAction" class="oj-button-sm"
+        on-oj-action="[[$listeners.buttonAction4]]">
+        <span style="cursor:pointer;font-size:18px" class="oj-ux-ico-quote-file" slot="startIcon"
+                              ></span>
+      </oj-button>
+      <oj-button label="Rental Contract" chroming="callToAction" class="oj-button-sm"
+        disabled='[[ $variables.currentRow.rowData.status !== "Quote Accepted"||$variables.currentRow.rowData.contractnumber ]]'
+        on-oj-action="[[$listeners.buttonAction8]]">
+        <span class="oj-ux-ico-folder-accepted" slot="startIcon">
+                <!-- <oj-bind-text value="[[$current.data]]"></oj-bind-text> -->
+              </span>
+      </oj-button>
+    </oj-form-layout>
+  </oj-popup>
+  <oj-dialog dialog-title="Dialog" id="salesContract">
+    <div slot="body">
+     <h6>Rental Contract</h6>
+      <!-- <div class="oj-flex"> -->
+        <oj-form-layout columns="3" max-columns="3" label-edge="top">
+  <oj-input-text label-hint="Contract Number" value="{{ $variables.salescontractobj.ContractNumber }}"></oj-input-text>
+  
+  <oj-select-single label-hint="Organization Name" value="{{ $variables.salescontractobj.OrgName }}" item-text="Name"
+    on-value-item-changed="[[$listeners.selectValueItem]]" data="[[ $variables.orgADP ]]"></oj-select-single>
+    
+      <oj-select-single label-hint="Legal Entity Name" item-text="Name"
+        value="{{ $variables.salescontractobj.LegalEntityName }}" data="[[ $variables.legalentityADP ]]"></oj-select-single>
+         <oj-select-single label-hint="Contract Type Name" value="{{ $variables.salescontractobj.ContractTypeName }}"></oj-select-single>
+         <oj-input-text label-hint="Cognomen" value="{{ $variables.salescontractobj.Cognomen }}"></oj-input-text>
+         <oj-select-single label-hint="Currency Code" value="{{ $variables.salescontractobj.CurrencyCode }}"
+           item-text="CurrencyCode" data="[[ $variables.currencyCodeADP ]]"></oj-select-single>
+         <oj-select-single label-hint="InvOrgName" value="{{ $variables.salescontractobj.InvOrgName }}"
+           data="[[ $variables.inventoryorgADP ]]" item-text="OrganizationName"></oj-select-single>
+         <oj-input-text label-hint="Line Number" value="{{ $variables.salescontractobj.LineNumber }}"></oj-input-text>
+          <oj-select-single label-hint="Line Type Name" value="{{ $variables.salescontractobj.LineTypeName }}"></oj-select-single>
+         <oj-select-single label-hint="Item Name" value="{{ $variables.salescontractobj.ItemName }}"></oj-select-single>
+         <oj-input-text label-hint="Item NameTxt" value="{{ $variables.salescontractobj.ItemNameTxt }}">
+         </oj-input-text>
+         <oj-input-text label-hint="Item Description" value="{{ $variables.salescontractobj.ItemDescription }}">
+         </oj-input-text>
+        </oj-form-layout>
+      <!-- </div> -->
+    </div>
+    <div slot="footer">
+      <oj-button label="Create Rental Contract" chroming="callToAction" class="oj-button-sm">
+      </oj-button>
+      <oj-button chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction9]]">Close</oj-button>
+    </div>
+  </oj-dialog>
+  
+  <oj-dialog dialog-title="" id="loadingDialog" class="myloader" style="width: 350px">
+    <div slot="body">
+      <div class="oj-flex-item">
+        <span style="font-size:20px;color:#006AA2;font-weight:600;margin-top:-2vh">Loading .....</span>
+        <br />
+        <oj-progress-bar value="-1" class="oj-sm-margin-3x-top"></oj-progress-bar>
+      </div>
+    </div>
+  </oj-dialog>
+  <oj-dialog dialog-title="Dialog" id="oj-dialog-488045790-1" style="width:65%;height:52vh;">
+
+    <div slot="body">
+      <h6>Generated Quotes</h6>
+      <oj-table scroll-policy="loadMoreOnScroll" style="width:900px;height:32vh"
+        columns='[{"headerText":"Reservation Number","field":"rental_reservation_number","frozenEdge":"start"},{"headerText":"Equipment Number","field":"equipment_number"},{"headerText":"Equipment Type","field":"equipment_type"},{"headerText":"Equipment Class","field":"equipment_class"},{"headerText":"Customer Name","field":"customer_name"},{"headerText":"Requestor Name","field":"requestor_name"},{"headerText":"Quote Amount","field":"quote_amount"}]'
+        display="grid" data="[[$variables.getManagerApprovedQuotesListSDP]]">
+        <template slot="Quote Amount">
+          <oj-input-number value='[[typeof $current.data === "number" ? $current.data : null]]' readonly="true"
+            style="text-align: right;" converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'>
+          </oj-input-number>
+        </template>
+        <template slot="Tax Amount">
+          <oj-input-number value='[[typeof $current.data === "number" ? $current.data : null]]' readonly="true"
+            style="text-align: right;" converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'>
+          </oj-input-number>
+        </template>
+      </oj-table>
+    </div>
+    <div slot="footer">
+      <oj-button label="View Customer Details" class="oj-button-sm"></oj-button>
+      <oj-button chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction2]]">Close
+      </oj-button>
+    </div>
+  </oj-dialog>
+  <div class="oj-flex oj-panel oj-panel-shadow-md" style="margin-top:-48px">
+    <div class="oj-flex-item oj-flex oj-sm-margin-3x-top oj-sm-flex-direction-column">
+      <oj-form-layout columns="5" max-columns="5" label-edge="top">
+        <oj-select-single label-hint="Reservation Number" item-text="rental_reservation_number"
+          value="{{ $variables.headerobj.reservation }}" data="[[ $variables.reservationADP ]]"></oj-select-single>
+        <oj-select-single label-hint="Customer Name" item-text="customer_name"
+          value="{{ $variables.headerobj.customer }}" data="[[ $variables.cutomernameADP ]]"></oj-select-single>
+        <oj-input-date label-hint="Start Date" value="{{ $variables.headerobj.startDate }}"></oj-input-date>
+        <oj-input-date label-hint="End Date" value="{{ $variables.headerobj.endDate }}"></oj-input-date>
+        <!-- <div style="margin-top:18px"> -->
+          <!-- <oj-toolbar> -->
+            <div style="margin-top:18px">
+        <oj-button chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction5]]"
+          label="Search">
+          <span class="oj-ux-ico-search" slot="startIcon"></span>
+        </oj-button>
+        <oj-button label="Reset" chroming="callToAction" class="oj-button-sm"
+          on-oj-action="[[$listeners.buttonAction7]]">
+          <span class="oj-ux-ico-reset-variable" slot="startIcon"></span>
+        </oj-button>
+            </div>
+        <!-- </div> -->
+          <!-- </oj-toolbar> -->
+      </oj-form-layout>
+      <!-- <oj-form-layout columns="4" max-columns="4"> -->
+        <!-- <div style="margin-top:18px"> -->
+        <!-- <oj-toolbar> -->
+        <!--  -->
+        <!--  -->
+        <!-- </oj-toolbar> -->
+        <!-- </div> -->
+      <!-- </oj-form-layout> -->
+    </div>
+    <oj-toolbar>
+          <div class="oj-flex oj-sm-align-items-center">
+
+                    <div class="oj-flex-item">
+                      <oj-switch label-hint="Enable Trace" value="[[$application.variables.enableTrace]]"
+                        on-value-changed="[[$listeners.switchValue]]">
+                      </oj-switch>
+                    </div>
+
+                    <div>
+                      <oj-label>Trace ID:</oj-label>
+                    </div>
+
+                    <div class="oj-flex-item oj-sm-margin-1x-start">
+                      <oj-bind-text value="[[$application.variables.traceIdDisplay]]"></oj-bind-text>
+                    </div>
+
+                  </div>
+    </oj-toolbar>
+    <!-- <div tyle="margin-top:-45px"> -->
+    <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12"
+      data="[[ $variables.workbenchADP ]]"
+      columns='[{"headerText":"Actions","field":"","frozenEdge":"start","template":"act"},{"headerText":"Reservation Number","field":"rental_reservation_number"},{"headerText":"Customer Name","field":"customer_name"},{"headerText":"Start Date","field":"start_date"},{"headerText":"End Date","field":"end_date"},{"headerText":"Customer Email Address","field":"requestor_name"},{"headerText":"Contract Number","field":"contractnumber"},{"headerText":"Status","field":"status","width":135}]'
+      display="grid" style="height:380px;width:93vw" columns-default.resizable="enabled"
+      on-first-selected-row-changed="[[$listeners.tableFirstSelectedRow]]" selection-mode.row="single"
+      vertical-grid-visible="enabled" draggable="auto">
+
+      <template slot="act">
+        <oj-button chroming="borderless" display="icons" class="oj-helper-justify-content-center oj-button-sm"
+          on-oj-action="[[$listeners.buttonAction3]]">
+
+          <span
+  class="oj-ux-ico-action"
+  style="cursor: pointer; font-size: 18px; color: #007bff; background-color: #e6f0ff; padding: 6px 10px; border-radius: 4px;"
+  title="Action Icon">
+</span>
+
+        </oj-button>
+      </template>
+
+    </oj-table>
+  </div>
+
+  <!-- </div> -->
+</oj-sp-welcome-page>

@@ -1,0 +1,39 @@
+{
+  "root": "callFunctionCreateLeasingReq",
+  "description": "",
+  "actions": {
+    "callFunctionCreateLeasingReq": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "createLeasingReq",
+        "params": [
+          "{{ $page.variables.LeasingTabObj }}",
+          "{{ $page.variables.createdEquipID }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPutLeasingDetails"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPutLeasingDetails.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestPutLeasingDetails": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/PutLeasingDetails",
+        "body": "{{ $chain.results.callFunctionCreateLeasingReq }}"
+      },
+      "outcomes": {
+        "failure": "fireNotification"
+      }
+    }
+  }
+}

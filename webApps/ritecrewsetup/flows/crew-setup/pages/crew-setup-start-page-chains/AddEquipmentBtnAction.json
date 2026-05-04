@@ -1,0 +1,27 @@
+{
+  "root": "resetVariablesLinesObj",
+  "description": "",
+  "actions": {
+    "callComponentEquipmentDialogOpen": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('equipmentDialog') }}",
+        "method": "open"
+      }
+    },
+    "resetVariablesLinesObj": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.linesObj",
+          "$page.variables.linesObj.project_number",
+          "$page.variables.distinctProjDetailsSDP",
+          "$page.variables.selectedHoursType"
+        ]
+      },
+      "outcomes": {
+        "success": "callComponentEquipmentDialogOpen"
+      }
+    }
+  }
+}

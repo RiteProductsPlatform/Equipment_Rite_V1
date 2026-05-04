@@ -1,0 +1,238 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title"></oj-vb-fragment-param>
+  <!-- <template slot="actions">
+  </template> -->
+</oj-vb-fragment>
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Material Request Details" background-color="dark-pebble">
+  <div class="oj-panel" style="margin-top:-48px">
+    <oj-validation-group valid="{{ $variables.isvalid }}">
+      <oj-form-layout columns="4" label-edge="top">
+        <oj-select-single label-hint="Project" item-text="project_name"
+          on-value-item-changed="[[$listeners.selectValueItem]]" value="{{ $variables.headerobj.project_name }}"
+          data="[[$variables.getEQPRiteMaterialProjectListSDP3]]">
+          <template slot="itemTemplate">
+            <oj-highlight-text text='[[$current.data.project_name + " - " + $current.data.project_number]]'>
+            </oj-highlight-text>
+          </template>
+        </oj-select-single>
+        <div style="margin-top:20px">
+          <oj-button class="oj-button-sm" chroming="callToAction" label="Search"
+            on-oj-action="[[$listeners.buttonAction7]]">
+            <span class="oj-ux-ico-search" slot="startIcon"></span>
+          </oj-button>
+          <oj-button label="Reset" chroming="callToAction" class="oj-button-sm"
+            on-oj-action="[[$listeners.buttonAction8]]">
+            <span class="oj-ux-ico-reset-variable" slot="startIcon"></span>
+          </oj-button>
+        </div>
+      </oj-form-layout>
+    </oj-validation-group>
+    <div class="oj-flex-item oj-sm-12 oj-md-6 oj-lg-6 oj-sm-align-self-center">
+      <span class="headingclass"></span>
+    </div>
+    <div style="margin-top:20px">
+      <!-- <div class="oj-helper-text-align-end"> -->
+      <!-- <oj-button label="Create" chroming="callToAction" class="oj-button-sm"
+          on-oj-action="[[$listeners.buttonAction]]"></oj-button> -->
+
+      <!-- </div> -->
+      <div class="oj-flex-item" style="width:100%">
+        <div class="oj-helper-text-align-end">
+          <oj-button label="Create" chroming="callToAction" class="oj-button-sm"
+            on-oj-action="[[$listeners.buttonAction]]"></oj-button>
+        </div>
+        <!-- {"headerText":"Supplier","field":"supplier","width":150},{"headerText":"WO Number","field":"workorder_number"},{"headerText":"PO Number","field":"po_number"}, -->
+        <oj-table scroll-policy="loadMoreOnScroll" data="[[ $variables.FTOADP ]]" style="width:93vw;height:60vh;"
+          columns='[{"headerText":"Project Number","field":"project_number"},{"headerText":"Project Name","field":"project_name"},{"headerText":"Task Name","field":"task_name"},{"headerText":"Task Number","field":"task_number"},{"headerText":"Item","field":"item_description"},{"headerText":"Quantity","field":"quantity"},{"headerText":"UOM","field":"uom"},{"headerText":"Comments","field":"comments","width":180}]'
+          display="grid">
+        </oj-table>
+      </div>
+      <!-- </div> -->
+    </div>
+    <!-- </div> -->
+  </div>
+</oj-sp-welcome-page>
+<oj-dialog dialog-title="Dialog" id="oj-dialog--2077968578-1" style="height:70vh; width: 1400px;">
+  <div slot="body">
+    <div class="oj-flex">
+      <h6>
+        Create Material Request
+      </h6>
+      <!-- {"headerText":"PO Number","field":"po_number","template":"ponumbertemplate"},{"headerText":"Supplier","field":"supplier","template":"suppliertemplate"},{"headerText":"WO Number","field":"workorder_number","template":"wonumbertemplate"}, -->
+      <oj-table data="[[ $variables.FTOdlgADP ]]" style="width:100%" columns='[{"headerText":"Action","field":"","template":"act"},
+        {"headerText":"Project Name","field":"project_name","template":"projecttemplate"},
+        {"headerText":"Task","field":"task_name","template":"tasktemplate"},
+        {"headerText":"Organization","field":"organization_name","template":"orgtemplate"},
+        {"headerText":"Item","field":"item_description","template":"sourcedesctemplate"},
+        {"headerText":"Sub Inventory","field":"sub_inventory","template":"subinventorytemplate"},{"headerText":"Quantity","field":"quantity","template":"quantitytemplate"},
+        {"headerText":"UOM","field":"uom","template":"uomtemplate"},
+        {"headerText":"Comments","field":"comments","template":"comments"}]' edit-mode="rowEdit"
+        selection-mode.row="single" on-oj-before-row-edit="[[$listeners.tableBeforeRowEdit]]"
+        on-oj-before-row-edit-end="[[$listeners.tableBeforeRowEditEnd]]" display="grid">
+        <template slot="act">
+          <oj-button chroming="borderless" on-oj-action="[[$listeners.buttonAction2]]" class="oj-button-sm">
+            <span class="oj-ux-ico-action" slot="startIcon"></span>
+          </oj-button>
+        </template>
+
+
+        <template slot="tasktemplate">
+          <oj-bind-if test='[[ $current.mode === "navigation"]]'>
+            <oj-bind-text value='[[ $current.data ]]'></oj-bind-text>
+          </oj-bind-if>
+          <oj-bind-if test='[[ $current.mode === "edit"]]'>
+            <oj-select-single aria-label="Week Start Day" value="{{ $variables.ftorowData.task_name }}"
+              data="[[$variables.get1113185ProjectsProjectIdChildTasks2ListSDP]]" item-text="TaskName"
+              on-value-item-changed="[[$listeners.selectValueItem3]]">
+              <template slot="itemTemplate">
+                <oj-highlight-text text='[[$current.data.TaskNumber + " - " + $current.data.TaskName]]'>
+                </oj-highlight-text>
+              </template>
+            </oj-select-single>
+          </oj-bind-if>
+        </template>
+        <template slot="projecttemplate">
+          <oj-bind-if test='[[ $current.mode === "navigation"]]'>
+            <oj-bind-text value='[[ $current.data ]]'></oj-bind-text>
+          </oj-bind-if>
+          <oj-bind-if test='[[ $current.mode === "edit"]]'>
+            <oj-select-single item-text="ProjectName" value="{{ $variables.ftorowData.project_name }}"
+              data="[[ $variables.projectADP ]]" on-value-item-changed="[[$listeners.selectValueItem2]]">
+            </oj-select-single>
+          </oj-bind-if>
+        </template>
+
+        <template slot="orgtemplate">
+          <oj-bind-if test='[[ $current.mode === "navigation"]]'>
+            <oj-bind-text value='[[ $current.data ]]'></oj-bind-text>
+          </oj-bind-if>
+          <oj-bind-if test='[[ $current.mode === "edit"]]'>
+            <!-- <oj-input-text value="{{ $variables.ftorowData.item_description}}"></oj-input-text> -->
+            <oj-select-single aria-label="itemdesc" value="{{ $variables.ftorowData.organization_name}}"
+              data="[[ $variables.OrganizationADP ]]" item-text="OrganizationName"
+              on-value-item-changed="[[$listeners.selectValueItem4]]"></oj-select-single>
+          </oj-bind-if>
+        </template>
+        <template slot="sourcedesctemplate">
+          <oj-bind-if test='[[ $current.mode === "navigation"]]'>
+            <oj-bind-text value='[[ $current.data ]]'></oj-bind-text>
+          </oj-bind-if>
+          <oj-bind-if test='[[ $current.mode === "edit"]]'>
+            <!-- <oj-input-text value="{{ $variables.ftorowData.item_description}}"></oj-input-text> -->
+            <oj-select-single aria-label="itemdesc" value="{{ $variables.ftorowData.item_description}}"
+              data="[[$variables.ItemNumberADP]]" item-text="ItemDescription"
+              on-value-item-changed="[[$listeners.selectValueItem5]]"></oj-select-single>
+          </oj-bind-if>
+        </template>
+
+        <template slot="subinventorytemplate">
+          <oj-bind-if test='[[ $current.mode === "navigation"]]'>
+            <oj-bind-text value='[[ $current.data ]]'></oj-bind-text>
+          </oj-bind-if>
+          <oj-bind-if test='[[ $current.mode === "edit"]]'>
+            <!-- <oj-input-text value="{{ $variables.ftorowData.item_description}}"></oj-input-text> -->
+            <oj-select-single aria-label="itemdesc" value="{{ $variables.ftorowData.sub_inventory}}"
+              data="[[$variables.subinventoryItemsListSDP]]" item-text="SourceSubinventory"
+              on-value-item-changed="[[$listeners.selectValueItem6]]"></oj-select-single>
+          </oj-bind-if>
+        </template>
+        <template slot="suppliertemplate">
+          <oj-bind-if test='[[ $current.mode === "navigation"]]'>
+            <oj-bind-text value='[[ $current.data ]]'></oj-bind-text>
+          </oj-bind-if>
+          <oj-bind-if test='[[ $current.mode === "edit"]]'>
+            <oj-select-single aria-label="Number" value="{{ $variables.ftorowData.supplier }}" item-text="Supplier"
+              data="[[$variables.getSuppliersListSDP]]">
+            </oj-select-single>
+
+          </oj-bind-if>
+        </template>
+        <template slot="uomtemplate">
+          <oj-bind-if test='[[ $current.mode === "navigation"]]'>
+            <oj-bind-text value='[[ $current.data ]]'></oj-bind-text>
+          </oj-bind-if>
+          <oj-bind-if test='[[ $current.mode === "edit"]]'>
+            <oj-input-text aria-label="Number" value="{{ $variables.ftorowData.uom }}">
+            </oj-input-text>
+          </oj-bind-if>
+        </template>
+        <template slot="quantitytemplate">
+          <oj-bind-if test='[[ $current.mode === "navigation"]]'>
+            <oj-bind-text value='[[ $current.data ]]'></oj-bind-text>
+          </oj-bind-if>
+          <oj-bind-if test='[[ $current.mode === "edit"]]'>
+            <oj-input-text aria-label="Number" value="{{ $variables.ftorowData.quantity }}">
+            </oj-input-text>
+          </oj-bind-if>
+        </template>
+        <template slot="comments">
+          <oj-bind-if test='[[ $current.mode === "navigation"]]'>
+            <oj-bind-text value='[[ $current.data ]]'></oj-bind-text>
+          </oj-bind-if>
+          <oj-bind-if test='[[ $current.mode === "edit"]]'>
+            <oj-input-text aria-label="Number" value="{{ $variables.ftorowData.comments }}">
+            </oj-input-text>
+          </oj-bind-if>
+        </template>
+        <template slot="ponumbertemplate">
+          <oj-bind-if test='[[ $current.mode === "navigation"]]'>
+            <oj-bind-text value='[[ $current.data ]]'></oj-bind-text>
+          </oj-bind-if>
+          <oj-bind-if test='[[ $current.mode === "edit"]]'>
+            <oj-select-single aria-label="Number" value="{{ $variables.ftorowData.po_number }}" item-text="OrderNumber"
+              data="[[$variables.getPurchaseOrdersListSDP]]">
+            </oj-select-single>
+          </oj-bind-if>
+        </template>
+        <template slot="wonumbertemplate">
+          <oj-bind-if test='[[ $current.mode === "navigation"]]'>
+            <oj-bind-text value='[[ $current.data ]]'></oj-bind-text>
+          </oj-bind-if>
+          <oj-bind-if test='[[ $current.mode === "edit"]]'>
+            <oj-select-single aria-label="Number" value="{{ $variables.ftorowData.workorder_number }}"
+              item-text="work_order_number" data="[[$variables.getWorkordersListSDP]]">
+            </oj-select-single>
+          </oj-bind-if>
+        </template>
+      </oj-table>
+    </div>
+  </div>
+  <div slot="footer">
+    <oj-button chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction6]]">Save</oj-button>
+    <oj-button chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction3]]">Close
+    </oj-button>
+    <!-- <oj-button label="Add" on-oj-action="[[$listeners.buttonAction9]]">
+    </oj-button> -->
+  </div>
+</oj-dialog>
+
+<oj-dialog dialog-title="" id="loadingDialog" class="" style="width: 300px; height: 80px;" cancel-behavior="icon">
+  <div slot="body">
+    <div class="oj-flex-item oj-sm-margin-5x-top">
+
+
+      <span style="font-size:18px;color:#006AA2;font-weight:600">Loading .....</span>
+
+      <br />
+      <oj-progress-bar value="-1" class="oj-sm-margin-3x-top"></oj-progress-bar>
+    </div>
+  </div>
+</oj-dialog>
+<div class="oj-flex">
+  <oj-popup class="oj-flex-item oj-sm-12 oj-md-2" id="Actionpopup" style="width:170px">
+    <oj-form-layout columns="1" label-edge="top">
+      <oj-button label="Add Line" chroming="callToAction" class="oj-button-sm"
+        on-oj-action="[[$listeners.buttonAction4]]">
+        <span class="oj-ux-ico-plus" slot="startIcon"></span>
+      </oj-button>
+      <oj-button label="Delete Line" chroming="callToAction" class="oj-button-sm"
+        on-oj-action="[[$listeners.buttonAction5]]">
+        <span class="oj-ux-ico-trash" slot="startIcon"></span>
+      </oj-button>
+    </oj-form-layout>
+  </oj-popup>
+</div>

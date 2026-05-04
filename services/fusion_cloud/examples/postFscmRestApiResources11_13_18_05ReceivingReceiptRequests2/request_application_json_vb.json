@@ -1,0 +1,16 @@
+{
+  "ReceiptSourceCode": "TRANSFER ORDER",
+   "FromOrganizationCode": "OAK_PPM",
+   "InsertAndProcessFlag":"true",
+   "ShipmentNumber": "145202",
+    "lines": [
+    {
+         "ShipmentNumber": "145202",
+        "ItemNumber":"TSTLT001",
+    "DocumentLineNumber": 1,
+    "Quantity": 1,
+    "UnitOfMeasure": "Ea"
+
+    }
+  ]
+}

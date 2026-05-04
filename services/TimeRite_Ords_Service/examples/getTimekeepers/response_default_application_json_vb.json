@@ -1,0 +1,151 @@
+{
+    "items": [
+        {
+            "person_name": null,
+            "person_number": "1788",
+            "person_id": 300000087953873
+        },
+        {
+            "person_name": null,
+            "person_number": "1827",
+            "person_id": 300000087956813
+        },
+        {
+            "person_name": null,
+            "person_number": "5503",
+            "person_id": 100000469760797
+        },
+        {
+            "person_name": null,
+            "person_number": "1638",
+            "person_id": 300000085848892
+        },
+        {
+            "person_name": null,
+            "person_number": "1770",
+            "person_id": 300000087952971
+        },
+        {
+            "person_name": null,
+            "person_number": "1769",
+            "person_id": 300000087952921
+        },
+        {
+            "person_name": null,
+            "person_number": "4635",
+            "person_id": 300000194769406
+        },
+        {
+            "person_name": null,
+            "person_number": "1735",
+            "person_id": 300000087892555
+        },
+        {
+            "person_name": null,
+            "person_number": "1173",
+            "person_id": 300000076218681
+        },
+        {
+            "person_name": null,
+            "person_number": "1176",
+            "person_id": 300000076218797
+        },
+        {
+            "person_name": null,
+            "person_number": "1807",
+            "person_id": 300000087954818
+        },
+        {
+            "person_name": null,
+            "person_number": "1809",
+            "person_id": 300000087954917
+        },
+        {
+            "person_name": null,
+            "person_number": "5307",
+            "person_id": 100000549558683
+        },
+        {
+            "person_name": null,
+            "person_number": "1808",
+            "person_id": 300000087954868
+        },
+        {
+            "person_name": null,
+            "person_number": "1787",
+            "person_id": 300000087953824
+        },
+        {
+            "person_name": null,
+            "person_number": "1640",
+            "person_id": 300000085849019
+        },
+        {
+            "person_name": null,
+            "person_number": "1759",
+            "person_id": 300000087952464
+        },
+        {
+            "person_name": null,
+            "person_number": "5309",
+            "person_id": 100000549558693
+        },
+        {
+            "person_name": null,
+            "person_number": "1168",
+            "person_id": 300000076211497
+        },
+        {
+            "person_name": null,
+            "person_number": "1171",
+            "person_id": 300000076218623
+        },
+        {
+            "person_name": null,
+            "person_number": "1310",
+            "person_id": 300000077081386
+        },
+        {
+            "person_name": null,
+            "person_number": "1757",
+            "person_id": 300000087952366
+        },
+        {
+            "person_name": null,
+            "person_number": "1794",
+            "person_id": 300000087954171
+        },
+        {
+            "person_name": null,
+            "person_number": "1793",
+            "person_id": 300000087954122
+        },
+        {
+            "person_name": null,
+            "person_number": "1180",
+            "person_id": 300000076218913
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/Timekeepers"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/Timekeepers"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/Timekeepers?offset=25"
+        }
+    ]
+}

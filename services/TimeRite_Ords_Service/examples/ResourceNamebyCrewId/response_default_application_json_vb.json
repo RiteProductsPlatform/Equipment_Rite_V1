@@ -1,0 +1,47 @@
+{
+    "items": [
+        {
+            "resource_name": "Test3",
+            "resource_id": null,
+            "resource_number": "125"
+        },
+        {
+            "resource_name": "Test4",
+            "resource_id": null,
+            "resource_number": "126"
+        },
+        {
+            "resource_name": "Test2",
+            "resource_id": null,
+            "resource_number": "124"
+        },
+        {
+            "resource_name": "Santos, Antonio",
+            "resource_id": 300000066861968,
+            "resource_number": "1006"
+        },
+        {
+            "resource_name": "Test1",
+            "resource_id": null,
+            "resource_number": "123"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 5,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/ResourceNamebyCrewId?crewsetup_id=131"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/ResourceNamebyCrewId?crewsetup_id=131"
+        }
+    ]
+}

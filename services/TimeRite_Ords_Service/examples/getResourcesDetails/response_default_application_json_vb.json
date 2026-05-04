@@ -1,0 +1,226 @@
+{
+    "items": [
+        {
+            "resource_number": "05-35208",
+            "resource_name": "Homer 05-Meyers",
+            "resource_job": null,
+            "resource_location": null,
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1",
+            "resource_name": "Mélanie Duval",
+            "resource_job": null,
+            "resource_location": "Paris",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "10",
+            "resource_name": "Mandy Steward",
+            "resource_job": null,
+            "resource_location": "Redwood City",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "100",
+            "resource_name": "Brian Joseph",
+            "resource_job": null,
+            "resource_location": "Atlanta",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1006",
+            "resource_name": "Antonio Santos",
+            "resource_job": null,
+            "resource_location": "New York",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1007",
+            "resource_name": "Christelle Stevenson",
+            "resource_job": null,
+            "resource_location": "Redwood City",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1009",
+            "resource_name": "Daryl Reese",
+            "resource_job": null,
+            "resource_location": "New York",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "101",
+            "resource_name": "Curtis Feitty",
+            "resource_job": null,
+            "resource_location": "Chicago",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1010",
+            "resource_name": "Edmund Donohue",
+            "resource_job": null,
+            "resource_location": "Redwood City",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1011",
+            "resource_name": "Mei Lee",
+            "resource_job": null,
+            "resource_location": "Redwood City",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1012",
+            "resource_name": "Shawn Quilligan",
+            "resource_job": null,
+            "resource_location": "Redwood City",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1013",
+            "resource_name": "Vicki Zinn",
+            "resource_job": null,
+            "resource_location": "New York",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1014",
+            "resource_name": "Jordin Cook",
+            "resource_job": null,
+            "resource_location": "Chicago",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1015",
+            "resource_name": "Scott Grace",
+            "resource_job": null,
+            "resource_location": "Chicago",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1016",
+            "resource_name": "Tom Velez",
+            "resource_job": null,
+            "resource_location": "Redwood City",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1017",
+            "resource_name": "Jake Ladet",
+            "resource_job": null,
+            "resource_location": "Pittsburgh",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "102",
+            "resource_name": "Donald Gray",
+            "resource_job": null,
+            "resource_location": "Atlanta",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1028",
+            "resource_name": "Heejun Park",
+            "resource_job": null,
+            "resource_location": "Seattle",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1029",
+            "resource_name": "Skylar Finch",
+            "resource_job": null,
+            "resource_location": "Redwood City",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1030",
+            "resource_name": "Perry Rosado",
+            "resource_job": null,
+            "resource_location": "Louisville",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1031",
+            "resource_name": "Phillip McArthur",
+            "resource_job": null,
+            "resource_location": "Headquarters",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1032",
+            "resource_name": "Erika Sanchez",
+            "resource_job": null,
+            "resource_location": "New York",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1033",
+            "resource_name": "Jermaine Johnson",
+            "resource_job": null,
+            "resource_location": "New York",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1034",
+            "resource_name": "Colton Daly",
+            "resource_job": null,
+            "resource_location": "Chicago",
+            "project_assigned": "N",
+            "project_id": null
+        },
+        {
+            "resource_number": "1035",
+            "resource_name": "Anoop Raj",
+            "resource_job": null,
+            "resource_location": "Seattle",
+            "project_assigned": "N",
+            "project_id": null
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/resourcesDetails"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/resourcesDetails"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/resourcesDetails?offset=25"
+        }
+    ]
+}

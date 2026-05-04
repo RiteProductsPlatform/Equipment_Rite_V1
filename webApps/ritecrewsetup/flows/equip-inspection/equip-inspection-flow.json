@@ -1,0 +1,60 @@
+{
+  "id": "equip-inspection",
+  "description": "Flow main",
+  "defaultPage": "equipment-reservations-start",
+  "services": {},
+  "types": {
+    "@decorators.getAllUOM": {
+      "endpoint": "getAllUOM",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getinspectionLookup": {
+      "endpoint": "getinspectionLookup",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]"
+    },
+    "getAllUOM": {
+      "UOM": "string",
+      "UOMCode": "string"
+    },
+    "getinspectionLookup": {
+      "Description": "string",
+      "LookupType": "string",
+      "Meaning": "string"
+    }
+
+  },
+  "variables": {
+    "eqpInspectionAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getinspectionLookup",
+        "keyAttributes": "Meaning",
+        "textFilterAttributes": [
+          "Meaning"
+        ]
+      }
+    },
+    "uomAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getAllUOM",
+        "keyAttributes": "UOM",
+        "textFilterAttributes": [
+          "UOM"
+        ]
+      }
+    }
+  },
+  "eventListeners": {
+    "vbEnter": {
+      "chains": [
+        {
+          "parameters": {},
+          "chain": "vbEnterListener"
+        }
+      ]
+    }
+  }
+}

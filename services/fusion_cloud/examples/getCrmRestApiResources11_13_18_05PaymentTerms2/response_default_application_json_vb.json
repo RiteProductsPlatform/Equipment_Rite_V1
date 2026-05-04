@@ -1,0 +1,877 @@
+{
+    "items": [
+        {
+            "TermId": 300001696308561,
+            "Name": "15 Days",
+            "Description": "15 Days",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001696308561",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001696308561",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000047311514,
+            "Name": "2/10, Net 30",
+            "Description": "2% discount earned if paid within 10 days.  Payment terms can include a discount % for early payment and you can assign multiple discounts to each payment term line.",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047311514",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047311514",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000131630304,
+            "Name": "2/20, Net 30",
+            "Description": "2% discount earned if paid within 20 days.",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000131630304",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000131630304",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000324571400,
+            "Name": "3/10 Net 45 RS",
+            "Description": "3/10 Net 45 RS",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000324571400",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000324571400",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001696308588,
+            "Name": "30 Days",
+            "Description": "30 Days",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001696308588",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001696308588",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 4,
+            "Name": "30 Net",
+            "Description": "Payment of the transaction balance is due within 30 days of the transaction date.",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/4",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/4",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000047311516,
+            "Name": "30/60/90",
+            "Description": "1/3 in due 30 days, 1/3 due in 60 dayss, 1/3 due in 90 days.",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047311516",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047311516",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001696308591,
+            "Name": "45 Days",
+            "Description": "45 Days",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001696308591",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001696308591",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001696308592,
+            "Name": "60 Days",
+            "Description": "60 Days",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001696308592",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001696308592",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001444203652,
+            "Name": "ANAND_IMMEDIATE",
+            "Description": null,
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001444203652",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001444203652",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001389344268,
+            "Name": "APPU_IMMEDIATE",
+            "Description": "APPU_IMMEDIATE",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001389344268",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001389344268",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001517566136,
+            "Name": "BOULT AUDIO PAY",
+            "Description": "BOULT AUDIO PAY SET",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001517566136",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001517566136",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001517120465,
+            "Name": "CELLO PAY TERMS",
+            "Description": "CELLO PAYMENT TERMS",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001517120465",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001517120465",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000321485947,
+            "Name": "Charan PT",
+            "Description": "Charan PT",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000321485947",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000321485947",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000047311521,
+            "Name": "Due 10th (BFB)",
+            "Description": "Cutoff day is 25th, invoices received before the 25th are due on the 10th of next month (PROXIMA term). Used for Balance Forward Billing Cycle.",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047311521",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047311521",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000101112105,
+            "Name": "End Next Month",
+            "Description": "Paid on end of next month.This is an example of 'Proxima' terms.The cutoff day is end of this month, invoices recorded before the end of this month are due at of the end of next month. (BFB)",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000101112105",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000101112105",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000311877433,
+            "Name": "IBM 2/15 net 30",
+            "Description": "IBM 2/15 net 30",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000311877433",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000311877433",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001695573275,
+            "Name": "IMMEDIATE",
+            "Description": "IMMEDIATE",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001695573275",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001695573275",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 5,
+            "Name": "Immediate",
+            "Description": "Payment of the transaction balance is due on the transaction date.",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/5",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/5",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001698348854,
+            "Name": "JMD Immediate",
+            "Description": "JMD Immediate",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001698348854",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001698348854",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000310698552,
+            "Name": "KMM 2/10 Net 30",
+            "Description": "KMM 2/10 Net 30",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000310698552",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000310698552",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001444147133,
+            "Name": "LALU_IMMEDIATE",
+            "Description": "LALU_IMMEDIATE",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001444147133",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001444147133",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001771779797,
+            "Name": "LIC-BFB-NET15",
+            "Description": null,
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001771779797",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001771779797",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001690207495,
+            "Name": "MMX 2/10 Net 30",
+            "Description": "2% discount earned if paid within 10 days.  Payment terms can include a discount % for early payment and you can assign multiple discounts to each payment term line.",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001690207495",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001690207495",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001690207502,
+            "Name": "MMX 3/10 Net45",
+            "Description": "MMX 3/10 Net45",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001690207502",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001690207502",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001690207493,
+            "Name": "MMX Immediate",
+            "Description": "Payment of the transaction balance is due on the transaction date.",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001690207493",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001690207493",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001690700163,
+            "Name": "MMX REC PAY",
+            "Description": "MMX REC PAY",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001690700163",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001690700163",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000312583744,
+            "Name": "Mohan 2/10 -30",
+            "Description": "Mohan Payments",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000312583744",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000312583744",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000047311518,
+            "Name": "Net 15",
+            "Description": "Net due in 15 days",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047311518",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047311518",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000047423441,
+            "Name": "Net 30",
+            "Description": "Payment of the transaction balance is due within 30 days of the transaction date.",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047423441",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047423441",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000399476026,
+            "Name": "Net 30 ",
+            "Description": null,
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000399476026",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000399476026",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000047311522,
+            "Name": "Net 30 (BFB)",
+            "Description": "Net Due in 30 Days. Used for Balance Forward Billing Cycle.",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047311522",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047311522",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001694916445,
+            "Name": "Net 30 - Byjus",
+            "Description": "Net 30 - Byjus",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001694916445",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001694916445",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000304130321,
+            "Name": "Net 30/60 ",
+            "Description": "Net 30/60 ",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000304130321",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000304130321",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 6,
+            "Name": "ORA_HES",
+            "Description": "Payment term for HES balance forward billing.",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/6",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/6",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300000047311517,
+            "Name": "Prepayment",
+            "Description": "Prepayment",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047311517",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300000047311517",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001496436386,
+            "Name": "T_IMMEDIATE",
+            "Description": "T_IMMEDIATE",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001496436386",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001496436386",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001776631722,
+            "Name": "Vasavi B P term",
+            "Description": null,
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001776631722",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001776631722",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001775760751,
+            "Name": "Vasavi Immediat",
+            "Description": null,
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001775760751",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001775760751",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001643801758,
+            "Name": "ZEPTO PAY TERMS",
+            "Description": "ZEPTO PAY TERMS",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001643801758",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001643801758",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "TermId": 300001690134783,
+            "Name": "ZEPTO REC PAY ",
+            "Description": "ZEPO REC PAY",
+            "SetId": 0,
+            "EndDateActive": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001690134783",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms/300001690134783",
+                    "name": "paymentTerms",
+                    "kind": "item"
+                }
+            ]
+        }
+    ],
+    "count": 41,
+    "hasMore": false,
+    "limit": 500,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/crmRestApi/resources/11.13.18.05/paymentTerms",
+            "name": "paymentTerms",
+            "kind": "collection"
+        }
+    ]
+}

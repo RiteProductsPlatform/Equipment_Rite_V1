@@ -1,0 +1,37 @@
+{
+    "items": [
+        {
+            "customer_id": 100000000395803,
+            "contract_id": 100002510075445,
+            "project_id": 300000322436882,
+            "projec_number": "RS-999",
+            "project_name": "RS-PPM-Testing",
+            "task_id": 100002471920509,
+            "task_number": "2.1",
+            "task_name": "Permits and Purchases",
+            "resource_number": null,
+            "resource_name": null,
+            "resource_type": null,
+            "resource_role": null,
+            "resource_location": null
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/setUpProjectDeatils?contract_number=PHW42"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/setUpProjectDeatils?contract_number=PHW42"
+        }
+    ]
+}

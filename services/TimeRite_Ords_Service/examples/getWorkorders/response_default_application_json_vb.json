@@ -1,0 +1,151 @@
+{
+    "items": [
+        {
+            "asset_number": "25502",
+            "work_order_number": "OAK1169",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "11887",
+            "work_order_number": "OAK1164",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "25502",
+            "work_order_number": "OAK1163",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "76543469",
+            "work_order_number": "OAK1155",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "76543468",
+            "work_order_number": "OAK1145",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "76543467",
+            "work_order_number": "OAK1143",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "76543466",
+            "work_order_number": "OAK1136",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "76543465",
+            "work_order_number": "OAK1131",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "76543465",
+            "work_order_number": "OAK1127",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "1000163",
+            "work_order_number": "OAK1124",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "1000154",
+            "work_order_number": "OAK1112",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "1000153",
+            "work_order_number": "OAK1104",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "1000142",
+            "work_order_number": "OAK1097",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "1000141",
+            "work_order_number": "OAK1093",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "1000114",
+            "work_order_number": "OAK1089",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "1000113",
+            "work_order_number": "OAK1080",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "1000112",
+            "work_order_number": "OAK1077",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "1000133",
+            "work_order_number": "OAK1064",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "1000120",
+            "work_order_number": "OAK1044",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "1000120",
+            "work_order_number": "OAK1040",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "1000103",
+            "work_order_number": "OAK1038",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "1000103",
+            "work_order_number": "OAK1032",
+            "unit_cost": "7000"
+        },
+        {
+            "asset_number": "44734",
+            "work_order_number": "OAK1166",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "25503",
+            "work_order_number": "OAK1162",
+            "unit_cost": null
+        },
+        {
+            "asset_number": "25501",
+            "work_order_number": "OAK1161",
+            "unit_cost": null
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/workorders"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/workorders"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/workorders?offset=25"
+        }
+    ]
+}

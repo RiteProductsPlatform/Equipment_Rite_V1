@@ -1,0 +1,251 @@
+{
+    "items": [
+        {
+            "lkpvalue": "Skid-steer loader-100000315",
+            "lkpid": 1008,
+            "equipment_name": "Skid-steer loader",
+            "equipment_number": "100000315",
+            "default_location": null,
+            "equipment_type": "Company-Owned",
+            "equipment_class": "CONSUMABLES"
+        },
+        {
+            "lkpvalue": "Compact Track Loader-99956",
+            "lkpid": 988,
+            "equipment_name": "Compact Track Loader",
+            "equipment_number": "99956",
+            "default_location": null,
+            "equipment_type": "Company-Owned",
+            "equipment_class": "CONSUMABLES"
+        },
+        {
+            "lkpvalue": "Mini Wheel Loade-8956",
+            "lkpid": 987,
+            "equipment_name": "Mini Wheel Loade",
+            "equipment_number": "8956",
+            "default_location": "New York",
+            "equipment_type": "Company-Owned",
+            "equipment_class": "CONSUMABLES"
+        },
+        {
+            "lkpvalue": "Safety signs-12356",
+            "lkpid": 986,
+            "equipment_name": "Safety signs",
+            "equipment_number": "12356",
+            "default_location": "New York",
+            "equipment_type": "Company-Owned",
+            "equipment_class": "CONSUMABLES"
+        },
+        {
+            "lkpvalue": "Barricade tape-78546",
+            "lkpid": 985,
+            "equipment_name": "Barricade tape",
+            "equipment_number": "78546",
+            "default_location": "New York",
+            "equipment_type": "Company-Owned",
+            "equipment_class": "CONSUMABLES"
+        },
+        {
+            "lkpvalue": "Caulk (painters)-896523",
+            "lkpid": 984,
+            "equipment_name": "Caulk (painters)",
+            "equipment_number": "896523",
+            "default_location": "New York",
+            "equipment_type": "Company-Owned",
+            "equipment_class": "SMALL TOOLS"
+        },
+        {
+            "lkpvalue": "Rebar tie wire-852362",
+            "lkpid": 983,
+            "equipment_name": "Rebar tie wire",
+            "equipment_number": "852362",
+            "default_location": "New York",
+            "equipment_type": "Company-Owned",
+            "equipment_class": "SMALL TOOLS"
+        },
+        {
+            "lkpvalue": "axles-000054-axles",
+            "lkpid": 968,
+            "equipment_name": "axles",
+            "equipment_number": "000054-axles",
+            "default_location": null,
+            "equipment_type": "Company-Owned",
+            "equipment_class": "SMALL TOOLS"
+        },
+        {
+            "lkpvalue": "Portland cement (Type I/II)-Portland cement (Type I/II)- 021",
+            "lkpid": 965,
+            "equipment_name": "Portland cement (Type I/II)",
+            "equipment_number": "Portland cement (Type I/II)- 021",
+            "default_location": null,
+            "equipment_type": "Company-Owned",
+            "equipment_class": "SMALL TOOLS"
+        },
+        {
+            "lkpvalue": "Portland cement (Type I/II)-7852963",
+            "lkpid": 964,
+            "equipment_name": "Portland cement (Type I/II)",
+            "equipment_number": "7852963",
+            "default_location": "Texas",
+            "equipment_type": "Company-Owned",
+            "equipment_class": "CONSUMABLES"
+        },
+        {
+            "lkpvalue": "Vibratory roller-100000324",
+            "lkpid": 957,
+            "equipment_name": "Vibratory roller",
+            "equipment_number": "100000324",
+            "default_location": "Texas",
+            "equipment_type": "Company-Owned",
+            "equipment_class": "HEAVY HAULING"
+        },
+        {
+            "lkpvalue": "Light towers-100000327",
+            "lkpid": 956,
+            "equipment_name": "Light towers",
+            "equipment_number": "100000327",
+            "default_location": "Texas",
+            "equipment_type": "Company-Owned",
+            "equipment_class": "EXCAVATOR"
+        },
+        {
+            "lkpvalue": "Welders (engine-driven)-100000326",
+            "lkpid": 955,
+            "equipment_name": "Welders (engine-driven)",
+            "equipment_number": "100000326",
+            "default_location": "1st Floor Abrar Building",
+            "equipment_type": "Company-Owned",
+            "equipment_class": "CONSUMABLES"
+        },
+        {
+            "lkpvalue": "Trenchers-100000325",
+            "lkpid": 954,
+            "equipment_name": "Trenchers",
+            "equipment_number": "100000325",
+            "default_location": "Texas",
+            "equipment_type": "Company-Owned",
+            "equipment_class": "EXCAVATOR"
+        },
+        {
+            "lkpvalue": "Bulldozer-100000313",
+            "lkpid": 953,
+            "equipment_name": "Bulldozer",
+            "equipment_number": "100000313",
+            "default_location": "Texas",
+            "equipment_type": "Company-Owned",
+            "equipment_class": "HEAVY HAULING"
+        },
+        {
+            "lkpvalue": "Concrete mixer truck-100000312",
+            "lkpid": 952,
+            "equipment_name": "Concrete mixer truck",
+            "equipment_number": "100000312",
+            "default_location": null,
+            "equipment_type": "Company-Owned",
+            "equipment_class": "HEAVY HAULING"
+        },
+        {
+            "lkpvalue": "OFC1000-CRAWLER CRANE-PRD_OFFI_201",
+            "lkpid": 951,
+            "equipment_name": "OFC1000-CRAWLER CRANE",
+            "equipment_number": "PRD_OFFI_201",
+            "default_location": null,
+            "equipment_type": "Company-Owned",
+            "equipment_class": "CRAWLER CRANE"
+        },
+        {
+            "lkpvalue": "Robot System AG-CRAWLER CRANE-RS-04",
+            "lkpid": 950,
+            "equipment_name": "Robot System AG-CRAWLER CRANE",
+            "equipment_number": "RS-04",
+            "default_location": null,
+            "equipment_type": null,
+            "equipment_class": "CRAWLER CRANE"
+        },
+        {
+            "lkpvalue": "IMM001-CRAWLER CRANE-SIMM_405-1",
+            "lkpid": 949,
+            "equipment_name": "IMM001-CRAWLER CRANE",
+            "equipment_number": "SIMM_405-1",
+            "default_location": null,
+            "equipment_type": null,
+            "equipment_class": "CRAWLER CRANE"
+        },
+        {
+            "lkpvalue": "IMM001-EXCAVATOR-SIMM_405-1",
+            "lkpid": 948,
+            "equipment_name": "IMM001-EXCAVATOR",
+            "equipment_number": "SIMM_405-1",
+            "default_location": null,
+            "equipment_type": null,
+            "equipment_class": "EXCAVATOR"
+        },
+        {
+            "lkpvalue": "IMM001-CONSTRUCTION-SIMM_405-1",
+            "lkpid": 947,
+            "equipment_name": "IMM001-CONSTRUCTION",
+            "equipment_number": "SIMM_405-1",
+            "default_location": null,
+            "equipment_type": null,
+            "equipment_class": "CONSTRUCTION"
+        },
+        {
+            "lkpvalue": "HEAVY HAULING-WP-01",
+            "lkpid": 946,
+            "equipment_name": "HEAVY HAULING",
+            "equipment_number": "WP-01",
+            "default_location": null,
+            "equipment_type": null,
+            "equipment_class": "HEAVY HAULING"
+        },
+        {
+            "lkpvalue": "EXCAVATOR1-EXCAVATOR-SIMM_405-1",
+            "lkpid": 945,
+            "equipment_name": "EXCAVATOR1-EXCAVATOR",
+            "equipment_number": "SIMM_405-1",
+            "default_location": null,
+            "equipment_type": null,
+            "equipment_class": "EXCAVATOR"
+        },
+        {
+            "lkpvalue": "ROV1-SIMM_405-1",
+            "lkpid": 944,
+            "equipment_name": "ROV1",
+            "equipment_number": "SIMM_405-1",
+            "default_location": null,
+            "equipment_type": null,
+            "equipment_class": "ROV"
+        },
+        {
+            "lkpvalue": "ROV-PickingAGV",
+            "lkpid": 933,
+            "equipment_name": "ROV",
+            "equipment_number": "PickingAGV",
+            "default_location": null,
+            "equipment_type": "Company-Owned",
+            "equipment_class": "ROV"
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getEquipmentLOV"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getEquipmentLOV"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getEquipmentLOV?offset=25"
+        }
+    ]
+}

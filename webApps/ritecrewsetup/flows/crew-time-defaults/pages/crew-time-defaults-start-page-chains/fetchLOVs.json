@@ -1,0 +1,45 @@
+{
+  "root": "assignVariablesYesorNoADP",
+  "description": "",
+  "actions": {
+    "assignVariablesYesorNoADP": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.YesorNoADP": {
+          "source": {
+            "data": [
+              {
+                "value": "Yes"
+              },
+              {
+                "value": "No"
+              }
+            ]
+          },
+          "reset": "none",
+          "auto": "always"
+        },
+        "$page.variables.ERPSystemADP": {
+          "source": {
+            "data": [
+              {
+                "value": "Oracle EBS"
+              },
+              {
+                "value": "SAP"
+              },
+              {
+                "value": "Oracle Cloud"
+              },
+              {
+                "value": "Salesforce"
+              }
+            ]
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      }
+    }
+  }
+}

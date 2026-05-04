@@ -1,0 +1,89 @@
+{
+  "title": "Report Cost Transaction",
+  "description": "Report Cost Transaction",
+  "variables": {
+    "gridLayout": {
+      "type": "string",
+      "defaultValue": "above-fold"
+    },
+    "kpisADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "{{ $page.variables.kpisArray }}",
+        "itemType": "object",
+        "keyAttributes": "id"
+      }
+    },
+    "kpisArray": {
+      "type": "object[]",
+      "defaultValue": [
+        {
+          "id": "KPI_1_id",
+          "title": "KPI_1_title",
+          "metric": "KPI_1_metric",
+          "meta": "KPI_1_meta"
+        },
+        {
+          "id": "KPI_2_id",
+          "title": "KPI_2_title",
+          "metric": "KPI_2_metric",
+          "meta": "KPI_2_meta"
+        }
+      ]
+    },
+    "primaryAction": {
+      "type": "actionType"
+    },
+    "selectedKpi": {
+      "type": "string",
+      "defaultValue": "KPI_1_id"
+    }
+  },
+  "metadata": {},
+  "types": {
+    "actionType": {
+      "label": "string",
+      "display": "string"
+    }
+  },
+  "eventListeners": {
+    "vbEnter": {
+      "chains": [
+        {
+          "chain": "loadKpisDataChain",
+          "parameters": {}
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-defer": {
+        "path": "ojs/ojdefer"
+      },
+      "oj-sp-dashboard-grid": {
+        "path": "oj-sp/dashboard-grid/loader"
+      },
+      "oj-sp-dashboard-landing-page": {
+        "path": "oj-sp/dashboard-landing-page/loader"
+      },
+      "oj-sp-dashboard-panel": {
+        "path": "oj-sp/dashboard-panel/loader"
+      },
+      "oj-sp-scoreboard": {
+        "path": "oj-sp/scoreboard/loader"
+      },
+      "oj-switcher": {
+        "path": "ojs/ojswitcher"
+      }
+   }
+  },
+  "@dt": {
+    "iconClass": "vbdt-dynamic-icon-4-dashboardLandingPageTemplateSvg"
+  },
+  "security": {
+    "access": {
+      "requiresAuthentication": false
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "root": "forEachInFilteredData",
+  "description": "",
+  "actions": {
+    "forEachInFilteredData": {
+      "module": "vb/action/builtin/forEachAction",
+      "parameters": {
+        "items": "{{ $page.variables.FilteredData }}",
+        "actionId": "callFunctionDateFormatter"
+      },
+      "outcomes": {
+        "success": "assignVariablesIsAdd"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Time Sheet submitted Successfully",
+        "displayMode": "transient",
+        "type": "confirmation"
+      },
+      "outcomes": {
+        "success": "callChainSearchActionBtn"
+      }
+    },
+    "callFunctionGetsysdate": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "getsysdate"
+      }
+    },
+    "assignVariablesSuccessVar": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.SuccessVar": {
+          "source": "{{ $page.variables.SuccessVar + 1 }}"
+        }
+      }
+    },
+    "callFunctionDateFormatter": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dateFormatter",
+        "params": [
+          "{{ $page.variables.FilteredData[0].week_start_date }}",
+          "{{ $page.variables.FilteredData[0].week_end_date }}",
+          "{{ $page.variables.searchobj.crewdate }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callFunctionPayloadGenerator"
+      }
+    },
+    "callFunctionPayloadGenerator": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "payloadGenerator",
+        "params": [
+          "{{ $page.variables.FilteredData[$current.index] }}",
+          "{{ $application.user.email }}",
+          "{{ $chain.results.callFunctionDateFormatter.startDate }}",
+          "{{ $chain.results.callFunctionDateFormatter.endDate }}",
+          "{{ $page.variables.searchobj.dateRange }}",
+          "{{ $chain.results.callFunctionDateFormatter.crewDate }}",
+          "{{ $page.variables.searchobj.specific }}",
+          "{{ $page.variables.maxweekid }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPutEqpSubmitTimeEntry"
+      }
+    },
+    "assignVariablesIsAdd": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.isAdd": {
+          "source": false
+        },
+        "$page.variables.IsApprove": {
+          "source": true
+        }
+      },
+      "outcomes": {
+        "success": "resetVariablesUpdateTimeSheet"
+      }
+    },
+    "resetVariablesUpdateTimeSheet": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.updateTimeSheet"
+        ]
+      },
+      "outcomes": {
+        "success": "fireNotification"
+      }
+    },
+    "callChainSearchActionBtn": {
+      "module": "vb/action/builtin/callChainAction",
+      "parameters": {
+        "id": "searchActionBtn"
+      }
+    },
+    "callRestPutEqpSubmitTimeEntry": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/putEqpSubmitTimeEntry"
+      },
+      "outcomes": {
+        "failure": "callFunctionGetsysdate",
+        "success": "assignVariablesSuccessVar"
+      }
+    }
+  },
+  "variables": {
+    "label": {
+      "type": "string",
+      "input": "fromCaller"
+    }
+  }
+}

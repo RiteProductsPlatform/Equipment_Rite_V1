@@ -1,0 +1,151 @@
+{
+  "root": "forEachInFilteredData",
+  "description": "",
+  "actions": {
+    "forEachInFilteredData": {
+      "module": "vb/action/builtin/forEachAction",
+      "parameters": {
+        "items": "{{ $page.variables.FilteredData }}",
+        "actionId": "callFunctionDateFormatter"
+      },
+      "outcomes": {
+        "success": "assignVariablesIsAdd"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Time Sheet submitted Successfully",
+        "displayMode": "transient",
+        "type": "confirmation"
+      },
+      "outcomes": {
+        "success": "forEachInFilteredData2"
+      }
+    },
+    "callFunctionGetsysdate": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "getsysdate"
+      }
+    },
+    "assignVariablesSuccessVar": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.SuccessVar": {
+          "source": "{{ $page.variables.SuccessVar + 1 }}"
+        }
+      }
+    },
+    "callFunctionDateFormatter": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dateFormatter",
+        "params": [
+          "{{ $page.variables.FilteredData[0].week_start_date }}",
+          "{{ $page.variables.FilteredData[0].week_end_date }}",
+          "{{ $page.variables.searchobj.crewdate }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callFunctionPayloadGenerator"
+      }
+    },
+    "callFunctionPayloadGenerator": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "payloadGenerator",
+        "params": [
+          "{{ $page.variables.FilteredData[$current.index] }}",
+          "{{ $application.user.email }}",
+          "{{ $chain.results.callFunctionDateFormatter.startDate }}",
+          "{{ $chain.results.callFunctionDateFormatter.endDate }}",
+          "{{ $page.variables.searchobj.dateRange1 }}",
+          "{{ $chain.results.callFunctionDateFormatter.crewDate }}",
+          "{{ $page.variables.searchobj.specific }}",
+          "{{ $page.variables.maxweekid }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPostEqpSubmitTimeEntry"
+      }
+    },
+    "assignVariablesIsAdd": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.isAdd": {
+          "source": false
+        },
+        "$page.variables.IsApprove": {
+          "source": true
+        }
+      },
+      "outcomes": {
+        "success": "resetVariablesUpdateTimeSheet"
+      }
+    },
+    "resetVariablesUpdateTimeSheet": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.updateTimeSheet"
+        ]
+      },
+      "outcomes": {
+        "success": "fireNotification"
+      }
+    },
+    "callRestPostEqpSubmitTimeEntry": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/postEqpSubmitTimeEntry",
+        "body": "{{ $chain.results.callFunctionPayloadGenerator }}"
+      },
+      "outcomes": {
+        "failure": "callFunctionGetsysdate",
+        "success": "assignVariablesSuccessVar"
+      }
+    },
+    "callFunctionNotification": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "notification",
+        "params": [
+          "{{ $application.variables.user }}",
+          "{{ $current.data.eqp_request_number }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPostEQPORACLEWORKLIPOPUPNOTIFI1Report"
+      }
+    },
+    "callRestPostEQPORACLEWORKLIPOPUPNOTIFI1Report": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "EQUIPMENT_RITE_OIC/postEQP_ORACLE_WORKLI_POPUP_NOTIFI1_0Report",
+        "body": "{{ $chain.results.callFunctionNotification }}"
+      }
+    },
+    "forEachInFilteredData2": {
+      "module": "vb/action/builtin/forEachAction",
+      "parameters": {
+        "actionId": "callFunctionNotification",
+        "items": "{{ $page.variables.FilteredData }}"
+      }
+    },
+    "fireNotification2": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestGetEqpTimeEntrySearch.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    }
+  }
+}

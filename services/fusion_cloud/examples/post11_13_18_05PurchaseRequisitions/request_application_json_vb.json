@@ -1,0 +1,78 @@
+{
+
+    "RequisitioningBU": "US1 Business Unit",
+
+    "PreparerId": 100000754124444,
+
+    "ExternallyManagedFlag": "false",
+
+    "lines": [
+
+        {
+
+            "LineNumber": 1,
+
+            "LineTypeCode": "Goods",
+
+            "CategoryName": "Software.Server",
+
+            "ItemDescription": "Alliance 7 Pro",
+
+            "Item": "AS00106",
+
+            "Quantity": 3,
+
+            "Price": 20,
+
+            "CurrencyCode": "USD",
+
+            "UOM": "Ea",
+
+            "RequesterId": 300001690698681,
+
+            "DestinationType": "Expense",
+
+            "DestinationOrganizationId": 300000047274444,
+
+            "DeliverToLocationCode": "Seattle",
+
+            "NegotiatedByPreparerFlag": "true",
+
+            "RequestedDeliveryDate": "2026-05-29T00:00:00Z",
+
+            "distributions": [
+
+                {
+
+                    "Quantity": 3,
+
+                    "DistributionNumber": 1,
+
+                    "projectDFF": [
+
+                        {
+
+                            "_PROJECT_ID": 300001700251956,
+
+                            "__FLEX_Context": "POR_Requisition",
+
+                            "_ORGANIZATION_ID": 300000047013645,
+
+                            "_TASK_ID": "100002950551966",
+
+                            "_EXPENDITURE_TYPE_ID": "300000047429509"
+
+                        }
+
+                    ]
+
+                }
+
+            ]
+
+        }
+
+    ]
+
+}
+ 

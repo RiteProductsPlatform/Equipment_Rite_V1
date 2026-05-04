@@ -1,0 +1,489 @@
+{
+    "items": [
+        {
+            "rental_reservation_number": "RR-20260418110610681",
+            "customer_name": "BROWN & ROOT INDUSTRIAL SERVICES, IN",
+            "requestor_name": "BROWNROOT12@GMAIL.COM",
+            "start_date": "04/18/2026",
+            "end_date": "04/21/2026",
+            "status": "Quote Accepted",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260410050552148",
+            "customer_name": "YGHDY1234R",
+            "requestor_name": "rajesh12@gmail.com",
+            "start_date": null,
+            "end_date": null,
+            "status": "Quote Requested",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260409125330821",
+            "customer_name": "restaurent",
+            "requestor_name": "restaurent@hote.in",
+            "start_date": null,
+            "end_date": null,
+            "status": "Quote Requested",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260408101251471",
+            "customer_name": "BROWN & ROOT INDUSTRIAL SERVICES, IN",
+            "requestor_name": "BROWN@GMAIL.COM",
+            "start_date": "04/13/2026",
+            "end_date": "04/15/2026",
+            "status": "Quote Accepted",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260408101245738",
+            "customer_name": "BROWN & ROOT INDUSTRIAL SERVICES, IN",
+            "requestor_name": "BROWN@GMAIL.COM",
+            "start_date": "04/13/2026",
+            "end_date": "04/15/2026",
+            "status": "Quote Requested",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260406102944702",
+            "customer_name": "YGHDY1234R",
+            "requestor_name": "rajesh12@gmail.com",
+            "start_date": null,
+            "end_date": null,
+            "status": "Quote Requested",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260402124037357",
+            "customer_name": "shivani organisation",
+            "requestor_name": "shivani@yopmail.com",
+            "start_date": null,
+            "end_date": null,
+            "status": "Quote Requested",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260327051047151",
+            "customer_name": "BROWN & ROOT INDUSTRIAL SERVICES, IN",
+            "requestor_name": "BROWN@GMAIL.COM",
+            "start_date": "03/27/2026",
+            "end_date": "03/30/2026",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20260327112417"
+        },
+        {
+            "rental_reservation_number": "RR-20260325133410974",
+            "customer_name": "BROWN & ROOT INDUSTRIAL SERVICES, IN",
+            "requestor_name": "BROWN@GMAIL.COM",
+            "start_date": "04/01/2026",
+            "end_date": "04/05/2026",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20260325190631"
+        },
+        {
+            "rental_reservation_number": "RR-20260325031839494",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "Tulsa@engineering.com",
+            "start_date": "03/16/2026",
+            "end_date": "03/26/2026",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20260325085117"
+        },
+        {
+            "rental_reservation_number": "RR-20260325010118256",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "Rahul@tulsa.com",
+            "start_date": null,
+            "end_date": null,
+            "status": "Quote Accepted",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260324113018094",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "Tulsa@engineering.com",
+            "start_date": "03/24/2026",
+            "end_date": "03/27/2026",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20260324170147"
+        },
+        {
+            "rental_reservation_number": "RR-20260324091406522",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "Tulsa@engineering.com",
+            "start_date": null,
+            "end_date": null,
+            "status": "Quote Accepted",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260324054403974",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "Tulsa@engineering.com",
+            "start_date": "03/22/2026",
+            "end_date": "03/30/2026",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20260324111850"
+        },
+        {
+            "rental_reservation_number": "RR-20260324050112998",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "Tulsa@gmail.com",
+            "start_date": "03/24/2026",
+            "end_date": "03/27/2026",
+            "status": "Quote Accepted",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260318060751878",
+            "customer_name": "Tulsa Engineering ",
+            "requestor_name": "Tulsa@engineering.com",
+            "start_date": "03/18/2026",
+            "end_date": "03/31/2026",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20260318135533"
+        },
+        {
+            "rental_reservation_number": "RR-20260317120358260",
+            "customer_name": "Deloitte Cust",
+            "requestor_name": "rathod@mm.com",
+            "start_date": "03/17/2026",
+            "end_date": "03/31/2026",
+            "status": "Quote Accepted",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260317105340904",
+            "customer_name": "Tulsa Engineering ",
+            "requestor_name": "KTC@NMM.COM",
+            "start_date": "03/01/2026",
+            "end_date": "03/31/2026",
+            "status": "Quote Accepted",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260317063206852",
+            "customer_name": "test",
+            "requestor_name": "raja@mail.com",
+            "start_date": "03/01/2026",
+            "end_date": "03/17/2026",
+            "status": "Quote Requested",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260317060048230",
+            "customer_name": "Tulsa Engineering ",
+            "requestor_name": "KTC@NMM.COM",
+            "start_date": "04/01/2026",
+            "end_date": "04/10/2026",
+            "status": "Quote Requested",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260316115033492",
+            "customer_name": "OAK_Hospitals",
+            "requestor_name": "KTC@NMM.COM",
+            "start_date": "03/01/2026",
+            "end_date": "03/31/2026",
+            "status": "Quote Accepted",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20260316075153377",
+            "customer_name": "OAK_Hospitals",
+            "requestor_name": "KTC@NMM.COM",
+            "start_date": "03/16/2026",
+            "end_date": "03/19/2026",
+            "status": "Quote Requested",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250820222230814",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "william@gmail.com",
+            "start_date": "08/21/2025",
+            "end_date": "08/27/2025",
+            "status": "Quote Accepted",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250806133702504",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "TulsaEngineering@gmail.com",
+            "start_date": "07/01/2025",
+            "end_date": "07/15/2025",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250806191013"
+        },
+        {
+            "rental_reservation_number": "RR-20250806094804539",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "TulsaEngineering@gmail.com",
+            "start_date": "07/01/2025",
+            "end_date": "07/15/2025",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250806152121"
+        },
+        {
+            "rental_reservation_number": "RR-20250805214616417",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "sandeep@tulsa.com",
+            "start_date": "08/05/2025",
+            "end_date": "08/12/2025",
+            "status": "Quote Requested",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250731162241630",
+            "customer_name": "Test",
+            "requestor_name": "teet@gmail.com",
+            "start_date": "07/30/2025",
+            "end_date": "07/30/2025",
+            "status": "Quote Requested",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250723150035462",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "TulsaEngineering@gmail.com",
+            "start_date": "08/01/2025",
+            "end_date": "08/31/2025",
+            "status": "Quote Generated",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250723143150307",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "TulsaEngineering@gmail.com",
+            "start_date": "08/01/2025",
+            "end_date": "07/31/2025",
+            "status": "Quote Accepted",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250723071745523",
+            "customer_name": "R. C. Stevens Construction Co",
+            "requestor_name": "rcsinfo@rcstevens.com",
+            "start_date": "07/30/2025",
+            "end_date": "08/15/2025",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250723080118"
+        },
+        {
+            "rental_reservation_number": "RR-20250722232204525",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "rajeev@tulsa.com",
+            "start_date": "06/01/2025",
+            "end_date": "06/30/2025",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250722182429"
+        },
+        {
+            "rental_reservation_number": "RR-20250722221153490",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "Kayla@tulsa.com",
+            "start_date": "08/05/2025",
+            "end_date": "08/29/2025",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250722174637"
+        },
+        {
+            "rental_reservation_number": "RR-20250722151118904",
+            "customer_name": "AZ Crop",
+            "requestor_name": "ckoury@azna.org",
+            "start_date": "07/24/2025",
+            "end_date": "08/15/2025",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250722204626"
+        },
+        {
+            "rental_reservation_number": "RR-20250722144642475",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "Robert@tulsa.com",
+            "start_date": "07/23/2025",
+            "end_date": "07/30/2025",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250722100259"
+        },
+        {
+            "rental_reservation_number": "RR-20250722093737476",
+            "customer_name": "StarCon",
+            "requestor_name": "starcon@outlook.com",
+            "start_date": "07/26/2025",
+            "end_date": "08/09/2025",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250722151451"
+        },
+        {
+            "rental_reservation_number": "RR-20250722032736816",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "Cathy@gmail.com",
+            "start_date": "07/22/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Accepted",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250722024814525",
+            "customer_name": "Tulsa Engineering",
+            "requestor_name": "William@gmail.com",
+            "start_date": "07/22/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Accepted",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250714060403790",
+            "customer_name": "RIte UK Organization",
+            "requestor_name": "RiteUK@gmail.com",
+            "start_date": "07/14/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250723150129"
+        },
+        {
+            "rental_reservation_number": "RR-20250714060036323",
+            "customer_name": "RIte UK Organization",
+            "requestor_name": "RiteUK@gmail.com",
+            "start_date": "07/14/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Requested",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250713025744340",
+            "customer_name": "Rite Jamica Organization",
+            "requestor_name": "Jamica@gmail.com",
+            "start_date": "07/13/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250722124542"
+        },
+        {
+            "rental_reservation_number": "RR-20250711101822018",
+            "customer_name": "RITE USA",
+            "requestor_name": "NIKHI@Gmail.com",
+            "start_date": "07/11/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250722144622"
+        },
+        {
+            "rental_reservation_number": "RR-20250627212117002",
+            "customer_name": "Rite",
+            "requestor_name": "sandeepreddy@gmaaail.com",
+            "start_date": "06/27/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250723140259"
+        },
+        {
+            "rental_reservation_number": "RR-20250626160102763",
+            "customer_name": "Rite Pvt Customer",
+            "requestor_name": "dinesh.neredu@gmail.com",
+            "start_date": "06/26/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250722175835"
+        },
+        {
+            "rental_reservation_number": "RR-20250626075056710",
+            "customer_name": "Dilmah Tea",
+            "requestor_name": "dilshan@Dilmah.com",
+            "start_date": "06/26/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250722150843"
+        },
+        {
+            "rental_reservation_number": "RR-20250626062232410",
+            "customer_name": "Kiwis International",
+            "requestor_name": "bmccullum@kiwis.com",
+            "start_date": "06/26/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Requested",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250626061634157",
+            "customer_name": "Luxsoft Solutions",
+            "requestor_name": "bmcullum@luxsoft.com",
+            "start_date": "06/26/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Generated",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250626060622965",
+            "customer_name": "Rite Organization",
+            "requestor_name": "Rite@email.com",
+            "start_date": "06/26/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Accepted",
+            "contractnumber": "CB-Sell-20250723200928"
+        },
+        {
+            "rental_reservation_number": "RR-20250626050235178",
+            "customer_name": "transportationCorp",
+            "requestor_name": "rentas@transportationCorp.com",
+            "start_date": "06/26/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Generated",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250625203026674",
+            "customer_name": "Loyola Industries",
+            "requestor_name": "rentals@loyolaindustries.com",
+            "start_date": "06/25/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Requested",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250625195401439",
+            "customer_name": "Popeyes Construction",
+            "requestor_name": "rental@popeyeconstruction.com",
+            "start_date": "06/25/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Generated",
+            "contractnumber": null
+        },
+        {
+            "rental_reservation_number": "RR-20250625193917784",
+            "customer_name": "Acme",
+            "requestor_name": "eqp-procuremnent@acme.com",
+            "start_date": "06/25/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Generated",
+            "contractnumber": null
+        }
+    ],
+    "hasMore": true,
+    "limit": 51,
+    "offset": 0,
+    "count": 51,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/EquipmentRite/getManagerQuoteDetails?p_start_date=04%2F13%2F2026&p_end_date=04%2F20%2F2026"
+        },
+        {
+            "rel": "edit",
+            "href": "http://129.158.228.138:8080/ords/timerite/EquipmentRite/getManagerQuoteDetails?p_start_date=04%2F13%2F2026&p_end_date=04%2F20%2F2026"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/EquipmentRite/getManagerQuoteDetails?p_start_date=04%2F13%2F2026&p_end_date=04%2F20%2F2026"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/EquipmentRite/getManagerQuoteDetails?p_start_date=04%2F13%2F2026&p_end_date=04%2F20%2F2026&offset=51"
+        }
+    ]
+}

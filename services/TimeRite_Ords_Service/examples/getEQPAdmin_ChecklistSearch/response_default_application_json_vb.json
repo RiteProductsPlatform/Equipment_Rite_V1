@@ -1,0 +1,66 @@
+{
+    "items": [
+        {
+            "check_list_id": 484,
+            "equipment_id": 763,
+            "equipment_number": "COG WHEEL G2-56",
+            "equipment_name": "-COG WHEEL G2-56",
+            "equipment_class": "ROV EQUIPMENT",
+            "equipment_sub_class": null,
+            "check_list_name": "No Dents or Cracks",
+            "section": "Exterior Inspection"
+        },
+        {
+            "check_list_id": 485,
+            "equipment_id": null,
+            "equipment_number": null,
+            "equipment_name": "-",
+            "equipment_class": "ROV EQUIPMENT",
+            "equipment_sub_class": null,
+            "check_list_name": "Lights are functional",
+            "section": "Exterior Inspection"
+        },
+        {
+            "check_list_id": 486,
+            "equipment_id": null,
+            "equipment_number": null,
+            "equipment_name": "-",
+            "equipment_class": "ROV EQUIPMENT",
+            "equipment_sub_class": null,
+            "check_list_name": "Control Panel Check",
+            "section": "Interior Inspection"
+        },
+        {
+            "check_list_id": 487,
+            "equipment_id": null,
+            "equipment_number": null,
+            "equipment_name": "-",
+            "equipment_class": "ROV EQUIPMENT",
+            "equipment_sub_class": null,
+            "check_list_name": "Meter Readings Legible and Recorded",
+            "section": "Interior Inspection"
+        }
+    ],
+    "hasMore": false,
+    "limit": 2000,
+    "offset": 0,
+    "count": 4,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPAdmin_ChecklistSearch?p_equipment_class=ROV+EQUIPMENT"
+        },
+        {
+            "rel": "edit",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPAdmin_ChecklistSearch?p_equipment_class=ROV+EQUIPMENT"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPAdmin_ChecklistSearch?p_equipment_class=ROV+EQUIPMENT&limit=2000"
+        }
+    ]
+}

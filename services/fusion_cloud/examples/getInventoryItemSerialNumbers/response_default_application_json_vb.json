@@ -1,0 +1,1816 @@
+{
+    "items": [
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10293",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323933",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323933",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323933/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323933/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323933/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10261",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323631",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323631",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323631/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323631/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323631/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10292",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323932",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323932",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323932/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323932/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323932/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10260",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323630",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323630",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323630/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323630/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323630/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10291",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323931",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323931",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323931/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323931/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323931/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10290",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323930",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323930",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323930/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323930/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323930/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10259",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323539",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323539",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323539/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323539/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323539/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10258",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323538",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323538",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323538/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323538/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323538/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10289",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323839",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323839",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323839/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323839/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323839/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10257",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323537",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323537",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323537/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323537/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323537/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10288",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323838",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323838",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323838/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323838/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323838/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10256",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323536",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323536",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323536/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323536/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323536/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10287",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323837",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323837",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323837/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323837/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323837/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10255",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323535",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323535",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323535/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323535/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323535/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10286",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323836",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323836",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323836/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323836/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323836/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10254",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323534",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323534",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323534/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323534/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323534/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10285",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323835",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323835",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323835/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323835/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323835/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10253",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323533",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323533",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323533/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323533/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323533/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10284",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323834",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323834",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323834/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323834/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323834/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10252",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323532",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323532",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323532/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323532/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323532/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10283",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323833",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323833",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323833/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323833/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323833/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10251",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323531",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323531",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323531/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323531/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323531/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10282",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323832",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323832",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323832/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323832/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323832/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10250",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323530",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323530",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323530/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323530/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323530/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "InventoryItemId": 300001690801154,
+            "ItemNumber": "Stainless Steel",
+            "ItemDescription": "Stainless Steel",
+            "SerialNumber": "SN10281",
+            "SubinventoryCode": "Quarantine",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": null,
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2024-12-09T06:37:09+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "ReservationId": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "OwningEntityId": 300000047274444,
+            "OwningEntityType": 2,
+            "ElectronicRecordId": null,
+            "ElectronicRecordApprovalStatus": null,
+            "UpdateSourceCode": null,
+            "AllocatedFlag": false,
+            "LPNId": null,
+            "LicensePlateNumber": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323831",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323831",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323831/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323831/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CC0000000EACED00057708000110D99636540200000007534E3130323831/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 25,
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers",
+            "name": "inventoryItemSerialNumbers",
+            "kind": "collection"
+        }
+    ]
+}

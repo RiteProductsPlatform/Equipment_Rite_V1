@@ -1,0 +1,65 @@
+{
+    "items": [
+        {
+            "EXPTYPECLASSNAME": "Miscellaneous Transaction",
+            "name": "Conversion_Benefits",
+            "EXPENDITURE_TYPE_ID": "300000007550391",
+            "DESCRIPTION": "Conversion_Benefits"
+        },
+        {
+            "EXPTYPECLASSNAME": "Miscellaneous Transaction",
+            "name": "Conversion_Equipment",
+            "EXPENDITURE_TYPE_ID": "300000007550419",
+            "DESCRIPTION": "Conversion_Equipment"
+        },
+        {
+            "EXPTYPECLASSNAME": "Miscellaneous Transaction",
+            "name": "Conversion_Labor",
+            "EXPENDITURE_TYPE_ID": "300000007550416",
+            "DESCRIPTION": "Conversion_Labor"
+        },
+        {
+            "EXPTYPECLASSNAME": "Miscellaneous Transaction",
+            "name": "Conversion_Materials",
+            "EXPENDITURE_TYPE_ID": "300000007550407",
+            "DESCRIPTION": "Conversion_Materials"
+        },
+        {
+            "EXPTYPECLASSNAME": "Miscellaneous Transaction",
+            "name": "Conversion_Other Expenses",
+            "EXPENDITURE_TYPE_ID": "300000007550411",
+            "DESCRIPTION": "Conversion_Other Expenses"
+        },
+        {
+            "EXPTYPECLASSNAME": "Miscellaneous Transaction",
+            "name": "Conversion_Travel & Entertainment",
+            "EXPENDITURE_TYPE_ID": "300000007550399",
+            "DESCRIPTION": "Conversion_Travel & Entertainment"
+        },
+        {
+            "EXPTYPECLASSNAME": "Miscellaneous Transaction",
+            "name": "Miscellaneous Transaction",
+            "EXPENDITURE_TYPE_ID": "300000020204453",
+            "DESCRIPTION": "Miscellaneous Transaction"
+        },
+        {
+            "EXPTYPECLASSNAME": "Miscellaneous Transaction",
+            "name": "OII_Project_Equip_Miscellaneous_Charges",
+            "EXPENDITURE_TYPE_ID": "300000020204479",
+            "DESCRIPTION": "OII_Project_Equip_Miscellaneous_Charges"
+        },
+        {
+            "EXPTYPECLASSNAME": "Miscellaneous Transaction",
+            "name": "OII_Project_Equip_Miscellaneous_Charges 1",
+            "EXPENDITURE_TYPE_ID": "300000020204612",
+            "DESCRIPTION": "OII_Project_Equip_Miscellaneous_Charges 1"
+        },
+        {
+            "EXPTYPECLASSNAME": "Miscellaneous Transaction",
+            "name": "OII_Project_Equipment_Usage_Charges",
+            "EXPENDITURE_TYPE_ID": "300000019363821",
+            "DESCRIPTION": "OII_Project_Equipment_Usage_Charges"
+        }
+    ],
+    "count": 10
+}

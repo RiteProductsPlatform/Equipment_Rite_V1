@@ -1,0 +1,126 @@
+{
+    "items": [
+        {
+            "eqp_rate_row_id": 41,
+            "rate_schedule": "Rate Schedule - US Excavators"
+        },
+        {
+            "eqp_rate_row_id": 81,
+            "rate_schedule": "JCB Cement Mixer Rate Schedule"
+        },
+        {
+            "eqp_rate_row_id": 121,
+            "rate_schedule": "US Construction 2024 Rate Schedule"
+        },
+        {
+            "eqp_rate_row_id": 141,
+            "rate_schedule": "US Trucks Rate Schedule 2024"
+        },
+        {
+            "eqp_rate_row_id": 169,
+            "rate_schedule": "US Small Tools Rate Schedule - 2025"
+        },
+        {
+            "eqp_rate_row_id": 32,
+            "rate_schedule": "Rate Schedule - OKC"
+        },
+        {
+            "eqp_rate_row_id": 86,
+            "rate_schedule": "JCB Class for USA OU"
+        },
+        {
+            "eqp_rate_row_id": 87,
+            "rate_schedule": "JCB Class for USA OU"
+        },
+        {
+            "eqp_rate_row_id": 88,
+            "rate_schedule": "JCB Class for USA OU"
+        },
+        {
+            "eqp_rate_row_id": 93,
+            "rate_schedule": "US ROV 2024 Rate Schedule"
+        },
+        {
+            "eqp_rate_row_id": 162,
+            "rate_schedule": "US Crawler Crane Rate Schedule - 2025"
+        },
+        {
+            "eqp_rate_row_id": 164,
+            "rate_schedule": "US Heavy Hauling Rate Schedule - 2025"
+        },
+        {
+            "eqp_rate_row_id": 165,
+            "rate_schedule": "US ROV Rate Schedule - 2025"
+        },
+        {
+            "eqp_rate_row_id": 302,
+            "rate_schedule": "Small Tools Rate Schedule"
+        },
+        {
+            "eqp_rate_row_id": 33,
+            "rate_schedule": "Rate Schedule - Baton Rouge"
+        },
+        {
+            "eqp_rate_row_id": 61,
+            "rate_schedule": "Rate Schedule- US Road Roller Org"
+        },
+        {
+            "eqp_rate_row_id": 301,
+            "rate_schedule": "US Construction 2025 Rate Schedule"
+        },
+        {
+            "eqp_rate_row_id": 30,
+            "rate_schedule": "Rate Schedule- US Crane Org"
+        },
+        {
+            "eqp_rate_row_id": 31,
+            "rate_schedule": "Rate Schedule- US JCB Org"
+        },
+        {
+            "eqp_rate_row_id": 161,
+            "rate_schedule": "US Fleet Truck Rate Schedule - 2025"
+        },
+        {
+            "eqp_rate_row_id": 163,
+            "rate_schedule": "US Excavator Rate Schedule - 2025"
+        },
+        {
+            "eqp_rate_row_id": 321,
+            "rate_schedule": "US Bulk Items Rate Schedule- 2025"
+        },
+        {
+            "eqp_rate_row_id": 422,
+            "rate_schedule": "ROVTEST1"
+        },
+        {
+            "eqp_rate_row_id": 402,
+            "rate_schedule": "Crawler Crane "
+        },
+        {
+            "eqp_rate_row_id": 343,
+            "rate_schedule": "Rate 1"
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getRateSchNames"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getRateSchNames"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getRateSchNames?offset=25"
+        }
+    ]
+}

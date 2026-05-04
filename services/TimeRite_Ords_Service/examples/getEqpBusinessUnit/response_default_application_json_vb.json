@@ -1,0 +1,126 @@
+{
+    "items": [
+        {
+            "business_unit": "Pro_Inc",
+            "organization_id": 1
+        },
+        {
+            "business_unit": "OKC:300000047498175",
+            "organization_id": 2
+        },
+        {
+            "business_unit": "OKC:300000046987012",
+            "organization_id": 3
+        },
+        {
+            "business_unit": "OKC:300000047568131",
+            "organization_id": 100000005459167
+        },
+        {
+            "business_unit": "Manufacturing GM Union",
+            "organization_id": 100000289002940
+        },
+        {
+            "business_unit": "Manufacturing Union",
+            "organization_id": 100000289002944
+        },
+        {
+            "business_unit": "Food & Commercial Workers Union ",
+            "organization_id": 100000289002947
+        },
+        {
+            "business_unit": "N California ER Nurses Union",
+            "organization_id": 100000289002950
+        },
+        {
+            "business_unit": "US1 Legal Entity",
+            "organization_id": 300000046974965
+        },
+        {
+            "business_unit": "US2 Legal Entity",
+            "organization_id": 300000046974972
+        },
+        {
+            "business_unit": "US1 Business Unit",
+            "organization_id": 300000046987012
+        },
+        {
+            "business_unit": "Accounting US",
+            "organization_id": 300000047013600
+        },
+        {
+            "business_unit": "Americas Divisional",
+            "organization_id": 300000047013605
+        },
+        {
+            "business_unit": "Applications and Services",
+            "organization_id": 300000047013610
+        },
+        {
+            "business_unit": "Assembly US",
+            "organization_id": 300000047013615
+        },
+        {
+            "business_unit": "Benefits US",
+            "organization_id": 300000047013620
+        },
+        {
+            "business_unit": "Compensation US",
+            "organization_id": 300000047013625
+        },
+        {
+            "business_unit": "Consulting East US",
+            "organization_id": 300000047013630
+        },
+        {
+            "business_unit": "Consulting North US",
+            "organization_id": 300000047013635
+        },
+        {
+            "business_unit": "Consulting South US",
+            "organization_id": 300000047013640
+        },
+        {
+            "business_unit": "Consulting US",
+            "organization_id": 300000047013645
+        },
+        {
+            "business_unit": "Consulting West US",
+            "organization_id": 300000047013650
+        },
+        {
+            "business_unit": "Corporate Marketing",
+            "organization_id": 300000047013655
+        },
+        {
+            "business_unit": "Data Center Operations",
+            "organization_id": 300000047013660
+        },
+        {
+            "business_unit": "Direct Sales US",
+            "organization_id": 300000047013665
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpBusinessUnit"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpBusinessUnit"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpBusinessUnit?offset=25"
+        }
+    ]
+}

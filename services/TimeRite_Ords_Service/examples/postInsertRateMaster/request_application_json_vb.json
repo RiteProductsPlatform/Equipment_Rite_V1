@@ -1,0 +1,15 @@
+{
+    "rate_schedule":"testAPI",
+    "rs_description":"",
+    "bill_rate_schedule_level":"",
+    "multi_currency_enabled":"",
+    "allow_location_based_diff":"",
+    "allow_hours_type_rate_diff":"",
+    "active_flag":"",
+    "default_flag":"",
+    "start_date":"",
+    "end_date":"",
+    "contract":"",
+    "project_number":"",
+    "task_number":""
+}

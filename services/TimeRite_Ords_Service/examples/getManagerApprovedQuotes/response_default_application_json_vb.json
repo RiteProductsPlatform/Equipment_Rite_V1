@@ -1,0 +1,62 @@
+{
+    "items": [
+        {
+            "rental_reservation_number": "RR-20250625195401439",
+            "equipment_number": "TM-8",
+            "equipment_class": "CONSTRUCTION",
+            "equipment_type": "Company-Owned",
+            "customer_name": "Popeyes Construction",
+            "requestor_name": "rental@popeyeconstruction.com",
+            "quote_amount": 10000,
+            "tax_amount": 825
+        },
+        {
+            "rental_reservation_number": "RR-20250625195401439",
+            "equipment_number": "CE 336-2",
+            "equipment_class": "EXCAVATOR",
+            "equipment_type": "Company-Owned",
+            "customer_name": "Popeyes Construction",
+            "requestor_name": "rental@popeyeconstruction.com",
+            "quote_amount": 20000,
+            "tax_amount": 1650
+        },
+        {
+            "rental_reservation_number": "RR-20250625195401439",
+            "equipment_number": "TM-12",
+            "equipment_class": "CONSTRUCTION",
+            "equipment_type": "Company-Owned",
+            "customer_name": "Popeyes Construction",
+            "requestor_name": "rental@popeyeconstruction.com",
+            "quote_amount": 40000,
+            "tax_amount": 3300
+        },
+        {
+            "rental_reservation_number": "RR-20250625195401439",
+            "equipment_number": "EX 336-1",
+            "equipment_class": "EXCAVATOR",
+            "equipment_type": "Company-Owned",
+            "customer_name": "Popeyes Construction",
+            "requestor_name": "rental@popeyeconstruction.com",
+            "quote_amount": 120000,
+            "tax_amount": 9900
+        }
+    ],
+    "hasMore": false,
+    "limit": 500,
+    "offset": 0,
+    "count": 4,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/managerApprovedQuotes?p_res_number=RR-20250625195401439"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/managerApprovedQuotes?p_res_number=RR-20250625195401439"
+        }
+    ]
+}

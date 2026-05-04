@@ -1,0 +1,102 @@
+{
+    "items": [
+        {
+            "eqp_substitute_id": 896,
+            "equipment_id": 512,
+            "equipment_number": "HH Truck 725",
+            "equipment_name": "Caterpillar 1 ton Rack Truck 725",
+            "serial_number": null,
+            "linked_to_parent": "Y",
+            "parent_equipment_id": 947,
+            "parent_equipment_number": "SIMM_405-1",
+            "parent_equipment_name": "IMM001-CONSTRUCTION",
+            "created_by": "nikhil.kolisetty@rite.digital",
+            "creation_date": "2026-01-07T07:14:25Z",
+            "last_updated_date": "2026-01-07T07:14:25Z",
+            "last_updated_by": "nikhil.kolisetty@rite.digital",
+            "type": null,
+            "quantity": "1",
+            "unit_of_measure": "Each",
+            "priority": "45%"
+        },
+        {
+            "eqp_substitute_id": 897,
+            "equipment_id": 506,
+            "equipment_number": "F150 XL-4750103048",
+            "equipment_name": "Ford F250 Super Duty",
+            "serial_number": null,
+            "linked_to_parent": "Y",
+            "parent_equipment_id": 947,
+            "parent_equipment_number": "SIMM_405-1",
+            "parent_equipment_name": "IMM001-CONSTRUCTION",
+            "created_by": "nikhil.kolisetty@rite.digital",
+            "creation_date": "2026-01-07T07:14:26Z",
+            "last_updated_date": "2026-01-07T07:14:26Z",
+            "last_updated_by": "nikhil.kolisetty@rite.digital",
+            "type": null,
+            "quantity": "9",
+            "unit_of_measure": "Each",
+            "priority": "100%"
+        },
+        {
+            "eqp_substitute_id": 898,
+            "equipment_id": 741,
+            "equipment_number": "BT-25501",
+            "equipment_name": "Mack Bucket Truck #25501",
+            "serial_number": null,
+            "linked_to_parent": "Y",
+            "parent_equipment_id": 947,
+            "parent_equipment_number": "SIMM_405-1",
+            "parent_equipment_name": "IMM001-CONSTRUCTION",
+            "created_by": "nikhil.kolisetty@rite.digital",
+            "creation_date": "2026-01-07T07:14:26Z",
+            "last_updated_date": "2026-01-07T07:14:26Z",
+            "last_updated_by": "nikhil.kolisetty@rite.digital",
+            "type": null,
+            "quantity": "6",
+            "unit_of_measure": "Each",
+            "priority": "87%"
+        },
+        {
+            "eqp_substitute_id": 899,
+            "equipment_id": 533,
+            "equipment_number": "SRL_4750103143",
+            "equipment_name": "Manitowac Crawler Crane MLC90A-1",
+            "serial_number": null,
+            "linked_to_parent": "Y",
+            "parent_equipment_id": 947,
+            "parent_equipment_number": "SIMM_405-1",
+            "parent_equipment_name": "IMM001-CONSTRUCTION",
+            "created_by": "nikhil.kolisetty@rite.digital",
+            "creation_date": "2026-01-07T07:14:26Z",
+            "last_updated_date": "2026-01-07T07:14:26Z",
+            "last_updated_by": "nikhil.kolisetty@rite.digital",
+            "type": null,
+            "quantity": "4",
+            "unit_of_measure": "Each",
+            "priority": "24%"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 4,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_SubstituteDetails?p_parent_equipment_id=947"
+        },
+        {
+            "rel": "edit",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_SubstituteDetails?p_parent_equipment_id=947"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_SubstituteDetails?p_parent_equipment_id=947"
+        }
+    ]
+}

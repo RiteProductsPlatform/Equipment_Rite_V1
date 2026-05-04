@@ -1,0 +1,101 @@
+{
+    "items": [
+        {
+            "equipment_name": "ASL Non Labor Resource"
+        },
+        {
+            "equipment_name": "Bending Machine-1469"
+        },
+        {
+            "equipment_name": "Cement Mixers-1724"
+        },
+        {
+            "equipment_name": "Cutting Machine-1357"
+        },
+        {
+            "equipment_name": "Data Center Usage"
+        },
+        {
+            "equipment_name": "Drill Machine-1689"
+        },
+        {
+            "equipment_name": "Duplication"
+        },
+        {
+            "equipment_name": "Electric Tools-1446"
+        },
+        {
+            "equipment_name": "Equipment"
+        },
+        {
+            "equipment_name": "Facilities Use"
+        },
+        {
+            "equipment_name": "Fax"
+        },
+        {
+            "equipment_name": "Fleet Truck-2 Ton"
+        },
+        {
+            "equipment_name": "Fleet Truck-4 Ton"
+        },
+        {
+            "equipment_name": "Forklifts-1827"
+        },
+        {
+            "equipment_name": "Freedom ROV"
+        },
+        {
+            "equipment_name": "Grindering Machine-1763"
+        },
+        {
+            "equipment_name": "Heavy Vehicles"
+        },
+        {
+            "equipment_name": "Hydraulic Rock Breaker Machine-1523"
+        },
+        {
+            "equipment_name": "INTELLI_COMPUTERS"
+        },
+        {
+            "equipment_name": "Isurus ROV"
+        },
+        {
+            "equipment_name": "JCB Z1056"
+        },
+        {
+            "equipment_name": "Jackhammers-2313"
+        },
+        {
+            "equipment_name": "Lab Equipment"
+        },
+        {
+            "equipment_name": "Liberty Resident System"
+        },
+        {
+            "equipment_name": "Magnum Plus ROV"
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/NonLaborResource"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/NonLaborResource"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/NonLaborResource?offset=25"
+        }
+    ]
+}

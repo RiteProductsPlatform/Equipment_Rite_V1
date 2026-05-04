@@ -1,0 +1,186 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value=""></oj-vb-fragment-param>
+</oj-vb-fragment>
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Equipment Rental" background-color="dark-pebble">
+<!-- Search Fields -->
+
+
+<oj-form-layout slot="search" columns="5" max-columns="5" label-edge="top">
+
+  <!-- Customer Dropdown -->
+  <oj-select-single
+    label-hint="Customer"
+    value="{{ $variables.searchObj.customer }}"
+    data="[[$variables.getSetUpCustomerDetailsListSDP]]"
+    item-text="customer_name">
+  </oj-select-single>
+
+  <!-- Location -->
+  <oj-text-area
+    label-hint="Location"
+    value="{{ $variables.locationDetails.p_city }}"
+    on-click="[[$listeners.textAreaValue]]">
+  </oj-text-area>
+
+  <!-- From Date -->
+  <oj-input-date
+    label-hint="From Date"
+    value="{{ $variables.searchObj.fromdate }}"
+    max="[[ $variables.searchObj.todate ]]"
+    on-value-changed="[[$listeners.inputDateValue]]">
+  </oj-input-date>
+
+  <!-- To Date -->
+  <oj-input-date
+    label-hint="To Date"
+    value="{{ $variables.searchObj.todate }}"
+    min="[[ $variables.searchObj.fromdate ]]"
+    on-value-changed="[[$listeners.inputDateValue2]]">
+  </oj-input-date>
+
+  <!-- Search Button -->
+  <oj-button
+    label="Search"
+    chroming="callToAction"
+    class="oj-button-sm"
+    style="margin-top:24px"
+    on-oj-action="[[$listeners.buttonAction]]">
+  </oj-button>
+<oj-form-layout columns="1" max-columns="1">
+
+    <!-- switch -->
+    <oj-switch label-hint="Enable Trace"
+      value="[[$application.variables.enableTrace]]" on-value-changed="[[$listeners.switchValue]]">
+    </oj-switch>
+
+<span>
+     <oj-label class="oj-lg-margin-5x-end">Trace ID:</oj-label>
+   <oj-bind-text value="[[ $application.variables.traceIdDisplay ]]"></oj-bind-text>
+</span>
+
+  </oj-form-layout>
+</oj-form-layout>
+
+  <div class="oj-flex oj-panel oj-panel-shadow-md" style="margin-top:-50px;">
+  
+
+    <div class="oj-flex-item oj-sm-margin-2x-end" style="width:25%;background-color:rgb(246, 245, 245)">
+
+      <oj-navigation-list drill-mode="collapsible" item.selectable="[[ $functions.itemSelectable ]]"
+        id="tree-navigation" data="[[ $variables.navTree ]]"
+        on-selection-changed="[[$listeners.treeNavigationSelection2]]">
+        <template slot="itemTemplate" data-oj-as="item">
+          <li>
+            <a style="cursor: pointer">
+              <oj-bind-if test="[[item.data.attr.node]]">
+                <oj-bind-text value="[[item.data.attr.name]]"></oj-bind-text>
+              </oj-bind-if>
+              <oj-bind-if test="[[!item.data.attr.node]]">
+                <span class="oj-typography-body-md">
+              <oj-bind-text value="[[item.data.attr.name]]"></oj-bind-text>
+              </span>
+              </oj-bind-if>
+              <oj-bind-if test="[[item.data.attr.badge]]">
+                <span class="oj-badge oj-navigationlist-item-end" style="color:aqua" ><oj-bind-text value="[[item.data.attr.badge]]"></oj-bind-text></span>
+              </oj-bind-if>
+            </a>
+          </li>
+        </template>
+      </oj-navigation-list>
+    </div>
+    <div class=" oj-panel" style="width:70%;display: flex; flex-wrap: wrap; justify-content: flex-start;">
+      <oj-bind-for-each data="[[ $variables.EquipmentADP.data ]]" class="oj-sm-align-self-flex-end">
+        <template>
+          <div onmouseover="this.style.border='2px solid black'"
+            onmouseout="this.style.border='1px solid #ddd';this.style.cursor='pointer';"
+            style="width: 300px; margin: 12px; background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);border-radius: 8px"
+            on-click="[[$listeners.divClick]]">
+
+            <oj-card class="oj-sm-margin-2x oj-flex-item" style="width: 200px;  color: white; border-radius: 12px;">
+
+              <div style="position: absolute; top: 1px; right: 1px; cursor: pointer; color: white; font-size: 35px;">
+                <span title="Additional information about this equipment" aria-label="Information" role="tooltip">
+      &#8505; <!-- Unicode info icon ℹ -->
+    </span>
+              </div>
+
+              <div style="font-weight:600; font-size:17px; color:#0077b6; margin-bottom:90px; text-align: center;">
+                <a class="oj-color-invert">
+                  <oj-bind-text value="[[ $current.data.equipment_class ]]"></oj-bind-text>
+                </a>
+              </div>
+              <img alt="Equipment Image"
+                          style="width: 100%; height: 150px; object-fit: cover; margin-top: 20px;"
+            :src="[[ $current.data.file_text ]]"
+               >
+
+            </oj-card>
+          </div>
+        </template>
+      </oj-bind-for-each>
+
+      <!-- <oj-bind-for-each data="[[ $variables.EquipmentClassADP.data ]]" class="oj-sm-align-self-flex-end"> -->
+      <!-- <template>
+         <div
+           style="width: 220px; margin: 12px; background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);border-radius: 8px"
+           on-click="[[$listeners.divClick5]]"
+          
+           
+           >
+      <oj-card class="oj-sm-margin-2x oj-flex-item" style="width: 200px;  color: white; border-radius: 12px;">
+       
+        <div class="oj-card-content">
+          <h6 class="oj-header oj-color-invert"><oj-bind-text value="[[ $current.data.equipment_class ]]"></oj-bind-text></h6>
+          <img alt="Equipment Image" style="width: 100%; height: 150px; object-fit: cover;"
+            :src="[[ $current.data.file_text ]]"
+               >
+
+    
+          </div>
+      </oj-card>
+      </div>
+    </template> -->
+      </oj-bind-for-each>
+
+
+
+    </div>
+
+    <oj-dialog dialog-title="Dialog" id="oj-dialog--1239369820-3" style="">
+      <div slot="body">
+        <div class="oj-flex">
+          <div id="map" style="width:550px;height:330px;margin-top:10px"></div>
+        </div>
+        <div class="oj-flex">
+          <oj-bind-text value="[[ $variables.Distaince ]]">
+          </oj-bind-text>
+        </div>
+        <div>
+          <oj-form-layout columns="2" label-edge="top" >
+          <oj-input-text label-hint="Address 1" value="{{ $variables.locationDetails.p_addressline1 }}"></oj-input-text>
+          <oj-input-text label-hint="Address 2" value="{{ $variables.locationDetails.p_addressline2 }}"></oj-input-text>
+          <oj-input-text label-hint="City" value="{{ $variables.locationDetails.p_city }}"></oj-input-text>
+          <oj-input-text label-hint="Country" value="{{ $variables.locationDetails.p_country }}"></oj-input-text>
+          </oj-form-layout>
+        </div>
+      </div>
+      <div slot="footer">
+        <oj-button on-oj-action="[[$listeners.buttonAction2]]">Submit</oj-button>
+        <oj-button on-oj-action="[[$listeners.buttonAction2]]">Close</oj-button>
+
+      </div>
+    </oj-dialog>
+  </div>
+  <oj-dialog dialog-title="Dialog" id="oj-dialog--153275906-1">
+    <div slot="body">
+      <div class="oj-flex"></div>
+    </div>
+    <div slot="footer">
+      <oj-button>Button</oj-button>
+    </div>
+  </oj-dialog>
+</oj-sp-welcome-page>

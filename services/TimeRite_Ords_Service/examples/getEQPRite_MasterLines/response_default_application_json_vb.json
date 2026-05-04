@@ -1,0 +1,36 @@
+{
+    "items": [
+        {
+            "equipment_id": 870,
+            "non_labor_resource": "COG WHEEL ASSET Operational Tier1 DY",
+            "non_labor_resource_org": "OII_AUS_AUD_BU"
+        },
+        {
+            "equipment_id": 870,
+            "non_labor_resource": "COG WHEEL ASSET Operational DY",
+            "non_labor_resource_org": "OII_AUS_AUD_BU"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 2,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_MasterLines?p_equipment_id=870"
+        },
+        {
+            "rel": "edit",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_MasterLines?p_equipment_id=870"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_MasterLines?p_equipment_id=870"
+        }
+    ]
+}

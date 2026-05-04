@@ -1,0 +1,60 @@
+{
+  "root": "callFunctionCreateSystemReq",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPostEquipmentSettings.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestPostEquipmentSettings": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/postEquipmentSettings",
+        "body": "{{ $chain.results.callFunctionCreateSystemReq }}"
+      },
+      "outcomes": {
+        "success": "resetVariablesSearchobj",
+        "failure": "fireNotification"
+      }
+    },
+    "callFunctionCreateSystemReq": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "createSystemReq",
+        "params": [
+          "{{ $page.variables.searchObjParams }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPostEquipmentSettings"
+      }
+    },
+    "resetVariablesSearchobj": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.searchobj",
+          "$page.variables.searchObjParams"
+        ]
+      },
+      "outcomes": {
+        "success": "fireNotification3"
+      }
+    },
+    "fireNotification3": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Record Saved Successfully",
+        "type": "confirmation",
+        "displayMode": "transient"
+      }
+    }
+  }
+}

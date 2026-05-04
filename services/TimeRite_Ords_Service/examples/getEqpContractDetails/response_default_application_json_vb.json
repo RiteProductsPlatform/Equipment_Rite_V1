@@ -1,0 +1,74 @@
+{
+    "items": [
+        {
+            "contract_id": 100000310218702,
+            "contract_number": "Pinnacle Technologies SLSA"
+        },
+        {
+            "contract_id": 100000310218578,
+            "contract_number": "PHW42"
+        },
+        {
+            "contract_id": 100000369569747,
+            "contract_number": "MM443"
+        },
+        {
+            "contract_id": 100000310218625,
+            "contract_number": "G55049"
+        },
+        {
+            "contract_id": 100000601757521,
+            "contract_number": "Fax Paper Rolls Contract"
+        },
+        {
+            "contract_id": 100002765200025,
+            "contract_number": "C1066"
+        },
+        {
+            "contract_id": 100000731502131,
+            "contract_number": "C10080"
+        },
+        {
+            "contract_id": 100002817009719,
+            "contract_number": "C10004"
+        },
+        {
+            "contract_id": 100002796733636,
+            "contract_number": "BPA002"
+        },
+        {
+            "contract_id": 100000310218603,
+            "contract_number": "B445"
+        },
+        {
+            "contract_id": 100000368179822,
+            "contract_number": "18BSM"
+        },
+        {
+            "contract_id": 100002701888277,
+            "contract_number": "15000"
+        },
+        {
+            "contract_id": 100002708385314,
+            "contract_number": "1038"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 13,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpContractDetails"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpContractDetails"
+        }
+    ]
+}

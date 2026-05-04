@@ -1,0 +1,15 @@
+{
+  "id": "crew-time-entry",
+  "description": "Flow main",
+  "defaultPage": "crew-time-entry-start",
+  "services": {},
+  "types": {},
+  "variables": {},
+  "security": {
+    "access": {
+      "requiresAuthentication": false,
+      "roles": [
+      ]
+    }
+  }
+}

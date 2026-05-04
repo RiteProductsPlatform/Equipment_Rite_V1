@@ -1,0 +1,151 @@
+{
+    "items": [
+        {
+            "POLineId": 63532,
+            "POHeaderId": 8986,
+            "LineNumber": 1,
+            "OrderNumber": "701836",
+            "LineTypeId": 1,
+            "LineType": "Goods",
+            "ItemId": null,
+            "Item": null,
+            "ConsignmentLineFlag": false,
+            "ItemRevision": null,
+            "Description": "Shielded Cat5e Blue Ethernet Cable",
+            "SupplierItem": null,
+            "SupplierConfigurationId": null,
+            "CategoryId": 300000076308563,
+            "CategoryCode": "206.68",
+            "Category": "206.68 Peripherals",
+            "StatusCode": "CANCELED",
+            "Status": "Canceled",
+            "UOMCode": "zzm",
+            "UOM": "ft",
+            "Quantity": 0,
+            "BasePrice": 1,
+            "DiscountType": null,
+            "Discount": null,
+            "DiscountReason": null,
+            "Price": 1,
+            "NegotiatedFlag": false,
+            "CurrencyCode": "USD",
+            "Currency": "US Dollar",
+            "WorkOrderProduct": null,
+            "NoteToSupplier": null,
+            "UNNumberId": null,
+            "UNNumber": null,
+            "UNNumberDescription": null,
+            "UNNumberCode": null,
+            "HazardClassCode": null,
+            "HazardClassId": null,
+            "HazardClass": null,
+            "Ordered": 0,
+            "TotalTax": 0,
+            "Total": 0,
+            "SourceAgreementId": null,
+            "SourceAgreementNumber": null,
+            "SourceAgreementLineId": null,
+            "SourceAgreementLine": null,
+            "SourceAgreementTypeCode": null,
+            "SourceAgreementType": null,
+            "SourceAgreementProcurementBUId": null,
+            "SourceAgreementProcurementBU": null,
+            "MaximumRetainageAmount": null,
+            "Manufacturer": null,
+            "ManufacturerPartNumber": null,
+            "CreationDate": "2016-03-17T17:56:02+00:00",
+            "CreatedBy": "eleanor.white",
+            "LastUpdateDate": "2020-03-04T15:46:13.435+00:00",
+            "LastUpdatedBy": "eleanor.white",
+            "FundsStatusCode": "LIQUIDATED",
+            "PricingUOM": "ft",
+            "PricingUOMCode": "zzm",
+            "SecondaryUOM": null,
+            "SecondaryUOMCode": null,
+            "SecondaryQuantity": null,
+            "NegotiationId": null,
+            "Negotiation": null,
+            "NegotiationLine": null,
+            "CreditFlag": false,
+            "BidLineNumber": null,
+            "BidNumber": null,
+            "ConfiguredItemFlag": false,
+            "BaseModelId": null,
+            "BaseModel": null,
+            "BaseModelPrice": null,
+            "OptionsPrice": null,
+            "RecoverableTax": 0,
+            "NonRecoverableTax": 0,
+            "RecoverableInclusiveTax": 0,
+            "NonRecoverableInclusiveTax": 0,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/8986/child/lines/63532",
+                    "name": "lines",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/8986/child/lines/63532",
+                    "name": "lines",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/8986",
+                    "name": "purchaseOrders",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/8986/child/lines/63532/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/8986/child/lines/63532/child/attachments",
+                    "name": "attachments",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/8986/child/lines/63532/child/configurationComponents",
+                    "name": "configurationComponents",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/8986/child/lines/63532/child/schedules",
+                    "name": "schedules",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/8986/child/lines/63532/child/specialHandlingDFF",
+                    "name": "specialHandlingDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/8986/child/lines/63532/action/close",
+                    "name": "close",
+                    "kind": "other"
+                }
+            ]
+        }
+    ],
+    "count": 1,
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/8986/child/lines",
+            "name": "lines",
+            "kind": "collection"
+        }
+    ]
+}

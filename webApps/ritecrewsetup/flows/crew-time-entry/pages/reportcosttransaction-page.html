@@ -1,0 +1,17 @@
+<oj-sp-dashboard-landing-page id="oj-sp-dashboard-page-1" primary-action="[[ $page.variables.primaryAction]]"
+  page-title="Request -Cost " page-subtitle="Request -Cost ">
+  <oj-sp-scoreboard slot="kpi" id="oj-sp-scoreboard-1" data="[[$page.variables.kpisADP]]"
+    selection="{{ $page.variables.selectedKpi }}" selection-mode="single"></oj-sp-scoreboard>
+  <oj-switcher id="kpi-switcher" value="[[ $page.variables.selectedKpi ]]">
+    <oj-defer slot="KPI_1_id" >
+      <oj-sp-dashboard-grid grid-layout="[[ $page.variables.gridLayout ]]">
+        <oj-sp-dashboard-panel panel-title="Panel Title 1" slot=""></oj-sp-dashboard-panel>
+      </oj-sp-dashboard-grid>
+    </oj-defer>
+    <oj-defer slot="KPI_2_id" >
+      <oj-sp-dashboard-grid grid-layout="[[ $variables.gridLayout ]]">
+        <oj-sp-dashboard-panel panel-title="Panel Title 2" slot=""></oj-sp-dashboard-panel>
+      </oj-sp-dashboard-grid>
+    </oj-defer>
+  </oj-switcher>
+</oj-sp-dashboard-landing-page>

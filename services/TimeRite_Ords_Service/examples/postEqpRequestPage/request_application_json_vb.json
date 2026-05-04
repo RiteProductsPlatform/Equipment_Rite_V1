@@ -1,0 +1,19 @@
+{
+  "crew_id": 368,
+  "crew_name": "Plumbing 1100",
+  "efforts_per_day": 100,
+  "equipment_id": 113,
+  "equipment_name": "Excavators 4AVFGBB",
+  "equipment_number": "4AVFGBB",
+  "project_id": 300000058801204,
+  "project_name": "Stark Technology Upgrade ",
+  "project_number": "PCS10020",
+  "requestor_name": "Bala M",
+  "bill_rate": 10,
+  "start_date": "2024-08-01",
+  "end_date": "2024-08-31",
+  "task_id": 300000058801229,
+  "task_name": "Project Plan",
+  "task_number": "2.1",
+  "utilization": 0.18
+}

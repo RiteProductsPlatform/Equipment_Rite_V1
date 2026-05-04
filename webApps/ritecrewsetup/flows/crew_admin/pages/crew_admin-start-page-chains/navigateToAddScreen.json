@@ -1,0 +1,12 @@
+{
+  "root": "navigateToCrewAdminAddNewScreen",
+  "description": "",
+  "actions": {
+    "navigateToCrewAdminAddNewScreen": {
+      "module": "vb/action/builtin/navigateAction",
+      "parameters": {
+        "page": "crew_admin-add-new-screen"
+      }
+    }
+  }
+}

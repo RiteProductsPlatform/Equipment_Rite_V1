@@ -1,0 +1,39 @@
+{
+  "root": "callFunctionCreateAssetsReq",
+  "description": "",
+  "actions": {
+    "callFunctionCreateAssetsReq": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "createAssetsReq",
+        "params": [
+          "{{ $page.variables.AssetsTabObj }}",
+          "{{ $page.variables.createdEquipID }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPutAssetDetails"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPutAssetDetails.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestPutAssetDetails": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/PutAssetDetails",
+        "body": "{{ $chain.results.callFunctionCreateAssetsReq }}"
+      },
+      "outcomes": {
+        "failure": "fireNotification"
+      }
+    }
+  }
+}

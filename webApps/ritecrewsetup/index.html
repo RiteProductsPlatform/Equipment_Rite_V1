@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="preconnect" href="https://static.oracle.com">
+   <!-- <link rel="stylesheet" href="resources/css/schedulerpro.classic.css" type="text/css"/>
+   <link rel="stylesheet" href="resources/css/schedulerpro.stockholm.css" type="text/css"/> -->  
+ <script src = "https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.0/xlsx.full.min.js"></script>
+<script src="https://alcdn.msauth.net/browser/2.38.0/js/msal-browser.min.js"></script>
+<script src="resources/js/mapbox-gl.js"></script>
+    <!-- <script src="resources/js/mapboxsearch.js"></script>  -->
+ 
+ 
+  
+   <title>Equipment Rite</title>
+  <!-- vb:inject id="headContent" theme="resources/css/dt.theme.redwood" -->
+  <!-- vb:inject id="headContent" css="oracleImageGallery" -->
+</head>
+
+<body class="oj-web-applayout-body vb-web-applayout-body">
+
+<oj-vb-content config="[[vbApplication]]"></oj-vb-content>
+
+<!-- visualBuilderScripts -->
+
+<link id="favicon-light" rel="icon" href="resources/images/favicon-light.ico" type="image/ico">
+<link id="favicon-dark" rel="icon" href="resources/images/favicon-dark.ico" type="image/ico">
+<script nonce="rAnd0m">
+  const lightIcon = document.getElementById('favicon-light');
+  const darkIcon = document.getElementById('favicon-dark');
+  const matcher = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function switchIcon() {
+    if (matcher.matches) {
+      darkIcon.remove();
+      document.head.append(lightIcon);
+    } else {
+      lightIcon.remove();
+      document.head.append(darkIcon);
+    }
+  }
+
+  if (matcher.addEventListener) {
+    matcher.addEventListener('change', switchIcon);
+  }
+  switchIcon();
+</script>
+</body>
+
+</html>

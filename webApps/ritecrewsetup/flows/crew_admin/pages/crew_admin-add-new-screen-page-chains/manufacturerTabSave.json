@@ -1,0 +1,39 @@
+{
+  "root": "callFunctionCreateManufReq",
+  "description": "",
+  "actions": {
+    "callFunctionCreateManufReq": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "createManufReq",
+        "params": [
+          "{{ $page.variables.ManufacturerTabObj }}",
+          "{{ $page.variables.createdEquipID }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPutManufacturerDetails"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPutManufacturerDetails.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestPutManufacturerDetails": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/PutManufacturerDetails",
+        "body": "{{ $chain.results.callFunctionCreateManufReq }}"
+      },
+      "outcomes": {
+        "failure": "fireNotification"
+      }
+    }
+  }
+}

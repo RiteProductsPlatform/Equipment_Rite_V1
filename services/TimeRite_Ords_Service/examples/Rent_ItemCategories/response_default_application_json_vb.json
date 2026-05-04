@@ -1,0 +1,82 @@
+{
+    "items": [
+        {
+            "item_number": "0006204H",
+            "inventory_item_id": "300001690532219",
+            "category_code": "New.Misc",
+            "organization_id": "300000047274447"
+        },
+        {
+            "item_number": "0006204H",
+            "inventory_item_id": "300001690532219",
+            "category_code": "Order_Category_Default",
+            "organization_id": "300000047274441"
+        },
+        {
+            "item_number": "0006204H",
+            "inventory_item_id": "300001690532219",
+            "category_code": "100",
+            "organization_id": "300000047274441"
+        },
+        {
+            "item_number": "0006204H",
+            "inventory_item_id": "300001690532219",
+            "category_code": "100",
+            "organization_id": "300000047274447"
+        },
+        {
+            "item_number": "0006204H",
+            "inventory_item_id": "300001690532219",
+            "category_code": "99000",
+            "organization_id": "300000047274447"
+        },
+        {
+            "item_number": "0006204H",
+            "inventory_item_id": "300001690532219",
+            "category_code": "Order_Category_Default",
+            "organization_id": "300000047274447"
+        },
+        {
+            "item_number": "0006204H",
+            "inventory_item_id": "300001690532219",
+            "category_code": "Misc.Misc",
+            "organization_id": "300000047274447"
+        },
+        {
+            "item_number": "0006204H",
+            "inventory_item_id": "300001690532219",
+            "category_code": "Misc.Misc",
+            "organization_id": "300000047274441"
+        },
+        {
+            "item_number": "0006204H",
+            "inventory_item_id": "300001690532219",
+            "category_code": "99000",
+            "organization_id": "300000047274441"
+        },
+        {
+            "item_number": "0006204H",
+            "inventory_item_id": "300001690532219",
+            "category_code": "New.Misc",
+            "organization_id": "300000047274441"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 10,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRent_ItemCategories?p_item_number=0006204H"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRent_ItemCategories?p_item_number=0006204H"
+        }
+    ]
+}

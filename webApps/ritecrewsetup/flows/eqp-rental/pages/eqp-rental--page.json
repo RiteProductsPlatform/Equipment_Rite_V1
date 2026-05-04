@@ -1,0 +1,164 @@
+{
+  "title": "eqp rental ",
+  "description": "",
+  "variables": {
+    "backgroundColor": {
+      "type": "string",
+      "defaultValue": "dark-ocean"
+    },
+    "EqpRentalClassObjectVar": {
+      "type": "EqpRentalClassObject"
+    },
+    "EquipmentClassADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "eqpRentalObject"
+      }
+    },
+    "EquipmentClassesADP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetRentalEquipmentClasses",
+        "responseType": "getGetRentalEquipmentClasses",
+        "itemsPath": "items",
+        "itemType": "eqpRentalObject"
+      }
+    },
+    "illustrationBackground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-bg-01.png"
+    },
+    "illustrationForeground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-fg-01.png"
+    },
+    "imageStretch": {
+      "type": "string",
+      "defaultValue": "none"
+    },
+    "mobileImage": {
+      "type": "string",
+      "defaultValue": "on"
+    },
+    "selectedEquipmentClass": {
+      "type": "string"
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getGetRentalEquipmentClasses": {
+      "endpoint": "getGetRentalEquipmentClasses",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "EqpRentalClassObject": "object",
+    "eqpRentalObject": {
+      "equipment_class": "string",
+      "file_text": "string"
+    },
+    "getGetRentalEquipmentClasses": {
+      "count": "number",
+      "hasMore": "boolean",
+      "items": [
+        {
+          "equipment_class": "string",
+          "file_text": "string"
+        }
+      ],
+      "limit": "number",
+      "links": [
+        {
+          "href": "string",
+          "rel": "string"
+        }
+      ],
+      "offset": "number"
+    }
+  },
+  "eventListeners": {
+    "divClick": {
+      "chains": [
+        {
+          "chain": "divClickChain1"
+        }
+      ]
+    },
+    "divClick2": {
+      "chains": [
+        {
+          "chain": "divClickChain1",
+          "parameters": {
+            "data": "[[ $event.detail ]]"
+          }
+        }
+      ]
+    },
+    "divClick3": {
+      "chains": [
+        {
+          "chain": "divClickChain2"
+        }
+      ]
+    },
+    "divClick4": {
+      "chains": [
+        {
+          "chain": "divClickChain1"
+        }
+      ]
+    },
+    "divClick5": {
+      "chains": [
+        {
+          "chain": "divClickChain"
+        }
+      ]
+    },
+    "divClick6": {
+      "chains": [
+        {
+          "chain": "divClickChain1"
+        }
+      ]
+    },
+    "ojCardClick": {
+      "chains": [
+        {
+          "chain": "ojCardClickChain"
+        }
+      ]
+    },
+    "ojCardClick2": {
+      "chains": [
+        {
+          "chain": "ojCardClickChain"
+        }
+      ]
+    },
+    "ojSpWp1SpInFlowBack": {
+      "chains": [
+        {
+          "chain": "WelcomePageTemplateSpInFlowBackChain"
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "chain": "PageVbEnterChain"
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      }
+   }
+  },
+  "@dt": {
+    "iconClass": "vbdt-dynamic-icon-91-icoWelcomePageTemplate48Svg"
+  }
+}

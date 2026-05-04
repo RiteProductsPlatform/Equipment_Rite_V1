@@ -1,0 +1,34 @@
+{
+  "Cognomen": "Equipment Rental Tulsa1234",
+  "ContractNumber": "TESTER108",
+  "LegalEntityName": "Oak RealEstate",
+  "OrgId": 300000301911646,
+  "PrimaryPartyId": 300001765935338,
+  "ContractTypeId": 300001765952731,
+  "OrgName": "Oak USA BU1",
+  "ContractTypeName": "Equipment Rental ContracT Type",
+  "PartyName": "Tulsa Engineering",
+  "StartDate": "2025-06-01",
+  "EndDate": "2025-12-01",
+  "CurrencyCode": "USD",
+  "ContractHeaderFlexfieldVA": [
+    {
+      "referenceNumber": "TESTER108",
+      "__FLEX_Context": null
+    }
+  ],
+  "ContractLine": [
+    {
+      "LineNumber": "1",
+      "LineTypeId": 300000000099381,
+      "LineTypeName": "Free-form, project",
+      "ItemNameTxt": "Equipment Rental Line",
+      "ItemDescription": null,
+      "StartDate": "2025-06-01",
+      "EndDate": "2025-12-01",
+      "LineStatus": "Active",
+      "LineValueAmount": 60000,
+      "ContractPuid": null
+    }
+  ]
+}

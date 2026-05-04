@@ -1,0 +1,14 @@
+{
+  "p_template_id": 1219,
+  "p_equipment_id": 2001,
+  "p_equipment_number": "EQP-001",
+  "p_equipment_name": "Excavator1111",
+  "p_equipment_class":"test equipment",
+  "p_eqp_serial_number": "EXC-2024-001",
+  "p_equip_req_quantity": "5",
+  "p_total_capacity_perday": "40",
+  "p_utilization": "80%",
+  "p_notes": "Required for foundation work",
+  "p_created_by": 101,
+  "p_last_updated_by": "ADMIN"
+}

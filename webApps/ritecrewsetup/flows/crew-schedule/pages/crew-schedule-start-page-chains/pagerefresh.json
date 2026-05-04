@@ -1,0 +1,13 @@
+{
+  "root": "callFunctionPageRefresh",
+  "description": "",
+  "actions": {
+    "callFunctionPageRefresh": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "pageRefresh"
+      }
+    }
+  }
+}

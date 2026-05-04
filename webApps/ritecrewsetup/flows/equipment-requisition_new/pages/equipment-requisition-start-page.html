@@ -1,0 +1,175 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value=""></oj-vb-fragment-param>
+</oj-vb-fragment>
+<br>
+
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Equipment Request" background-color="dark-pebble">
+
+  <div class="oj-flex" style="margin:3px;">
+    <div class="oj-flex-item oj-sm-12" style="text-align:right">
+      <oj-button label="Save" chroming="callToAction" on-oj-action="[[$listeners.buttonAction14]]"></oj-button>
+    </div>
+  </div>
+
+<div class="oj-flex" style="margin:3px;">
+  <oj-table data="[[ $variables.equipmentnewADP ]]" style="width:100%"
+    columns='[{"headerText":"Equipment Class","field":"equipment_class","template":"equclass"},
+    {"headerText":"Equipment Name","field":"equipment_name","template":"equname"},
+    {"headerText":"Project","field":"project","template":"project"},
+    {"headerText":"Task","field":"task","template":"task"},
+   
+    {"headerText":"Quantity","field":"quantity","template":"quantity"},
+    {"headerText":"Total Efforts/Day","field":"totalEfforts","template":"toteff"},
+    {"headerText":"Utilization","field":"utilization","template":"utilil"},
+     {"headerText":"Crew Name","field":"crewname","template":"crew"},
+    
+    {"headerText":"Start Date","field":"startdate","template":"startdate"},
+    {"headerText":"End Date","field":"enddate","template":"enddate"},
+     {"headerText":"Location","field":"location","template":"location"},
+    {"headerText":"Action","field":"","template":"act"}]'
+    edit-mode="rowEdit" selection-mode.row="single" display="grid"
+    on-oj-before-row-edit="[[$listeners.tableBeforeRowEdit2]]"
+    on-oj-before-row-edit-end="[[$listeners.tableBeforeRowEditEnd2]]">
+     <template slot="act">
+      <oj-button chroming="outlined" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction11]]">
+        + 
+      </oj-button>
+        <oj-button chroming="outlined" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction12]]">
+        - 
+      </oj-button>
+    </template> 
+
+    <template slot="equclass">
+      <oj-bind-if test='[[$current.mode=="navigation"]]'>
+        <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+      </oj-bind-if>
+      <oj-bind-if test='[[$current.mode=="edit"]]'>
+        <oj-select-single id="equclass" item-text="equipment_class"
+          value="{{ $variables.equpvariable.equipment_class }}" data="[[$variables.getGetEquipmentClassLOVListSDP]]">
+        </oj-select-single>
+      </oj-bind-if>
+    </template>
+     <template slot="crew">
+      <oj-bind-if test='[[$current.mode=="navigation"]]'>
+        <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+      </oj-bind-if>
+      <oj-bind-if test='[[$current.mode=="edit"]]'>
+        <oj-select-single id="crew_name" item-text="crew_name" value="{{ $variables.equpvariable.crewname }}"
+          data="[[$variables.getGetCrewNameLOVListSDP2]]" on-value-item-changed="[[$listeners.crewNameValueItem]]">
+        </oj-select-single>
+      </oj-bind-if>
+    </template>
+
+    <template slot="equname">
+      <oj-bind-if test='[[$current.mode=="navigation"]]'>
+        <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+      </oj-bind-if>
+      <oj-bind-if test='[[$current.mode=="edit"]]'>
+        <oj-select-single item-text="lkpvalue" value="{{ $variables.equpvariable.equipment_name}}"
+          data="[[$variables.getGetEquipmentLOVListSDP]]" on-value-item-changed="[[$listeners.selectValueItem11]]">
+        </oj-select-single>
+      </oj-bind-if>
+    </template>
+
+
+
+    <template slot="project">
+      <oj-bind-if test='[[$current.mode=="navigation"]]'>
+        <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+      </oj-bind-if>
+      <oj-bind-if test='[[$current.mode=="edit"]]'>
+        <oj-select-single item-text="project_name" value="{{ $variables.equpvariable.project }}"
+          data="[[$variables.projectnamevariable]]" on-value-item-changed="[[$listeners.selectValueItem9]]">
+        </oj-select-single>
+      </oj-bind-if>
+    </template>
+
+    <template slot="task">
+      <oj-bind-if test='[[$current.mode=="navigation"]]'>
+        <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+      </oj-bind-if>
+      <oj-bind-if test='[[$current.mode=="edit"]]'>
+        <oj-select-single item-text="task_name" value="{{ $variables.equpvariable.task }}"
+          data="[[$variables.getTasksListSDP]]" on-value-item-changed="[[$listeners.selectValueItem10]]"
+         >
+        </oj-select-single>
+      </oj-bind-if>
+    </template>
+
+     <template slot="location">
+      <div style="text-align:center;" on-click="[[$listeners.divClick]]"><oj-bind-text value="[[$current.data]]"></oj-bind-text><i class="oj-ux-ico-backtomap" style="color:green;font-size:25px;vertical-align:middle;"></i></div>
+    </template>
+
+    <template slot="quantity">
+      <oj-bind-if test='[[$current.mode=="navigation"]]'>
+        <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+      </oj-bind-if>
+      <oj-bind-if test='[[$current.mode=="edit"]]'>
+        <oj-input-text value="{{ $variables.equpvariable.quantity }}"></oj-input-text>
+      </oj-bind-if>
+    </template>
+    <template slot="utilil">
+      <oj-bind-if test='[[$current.mode=="navigation"]]'>
+        <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+      </oj-bind-if>
+      <oj-bind-if test='[[$current.mode=="edit"]]'>
+        <oj-input-text value="{{ $variables.equpvariable.utilization }}"></oj-input-text>
+      </oj-bind-if>
+    </template>
+
+<template slot="toteff">
+      <oj-bind-if test='[[$current.mode=="navigation"]]'>
+        <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+      </oj-bind-if>
+      <oj-bind-if test='[[$current.mode=="edit"]]'>
+        <oj-input-text value="{{ $variables.equpvariable.totalEfforts }}"></oj-input-text>
+      </oj-bind-if>
+    </template>
+
+    <template slot="startdate">
+      <oj-bind-if test='[[$current.mode=="navigation"]]'>
+        <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+      </oj-bind-if>
+      <oj-bind-if test='[[$current.mode=="edit"]]'>
+        <oj-input-date value="{{ $variables.equpvariable.startdate }}"
+          converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}' required="true"></oj-input-date>
+      </oj-bind-if>
+    </template>
+    <template slot="enddate">
+      <oj-bind-if test='[[$current.mode=="navigation"]]'>
+        <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+      </oj-bind-if>
+      <oj-bind-if test='[[$current.mode=="edit"]]'>
+        <oj-input-date value="{{ $variables.equpvariable.enddate }}"
+          converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}' required="true"></oj-input-date>
+      </oj-bind-if>
+    </template>
+
+  </oj-table>
+</div>
+
+
+
+
+
+
+  
+  
+</oj-sp-welcome-page>
+<oj-dialog dialog-title="Location" id="locationDialog">
+    <div slot="body">
+      <div class="oj-flex">
+         <div id="map" style="width:550px;height:330px;margin-top:10px"></div>
+      </div>
+    </div>
+     <div class="oj-flex">
+    <div id="loc"></div>
+     </div>
+    <div slot="footer">
+      <oj-button on-oj-action="[[$listeners.buttonAction13]]">Submit</oj-button>
+    </div>
+  </oj-dialog>

@@ -1,0 +1,57 @@
+{
+  "root": "resetVariablesLinesObj",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestGetEquipmentMaster.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "assignVariablesLinesObj": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.linesObj": {
+          "source": {
+            "expenditure_type_name": "{{ $chain.results.callRestGetEquipmentMaster.body.items[0].expenditure_org_name }}",
+            "equip_Schedule_Type": "{{ $chain.results.callRestGetEquipmentMaster.body.items[0].schedule_type }}",
+            "measure_of_units": "{{ $chain.results.callRestGetEquipmentMaster.body.items[0].unit_of_measure }}",
+            "bill_rate": "{{ $chain.results.callRestGetEquipmentMaster.body.items[0].rate_unit }}",
+            "non_labour_resource": "{{ $chain.results.callRestGetEquipmentMaster.body.items[0].non_labor_resource }}",
+            "equipment_number": "{{ $chain.results.callRestGetEquipmentMaster.body.items[0].equipment_number }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      }
+    },
+    "callRestGetEquipmentMaster": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getEquipmentMaster",
+        "uriParams": {
+          "p_equipment_name": "{{ $page.variables.linesObj.resource_name }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesLinesObj",
+        "failure": "fireNotification"
+      }
+    },
+    "resetVariablesLinesObj": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.linesObj.non_labour_resource",
+          "$page.variables.linesObj.equipment_number"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestGetEquipmentMaster"
+      }
+    }
+  }
+}

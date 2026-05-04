@@ -1,0 +1,91 @@
+{
+  "root": "callFunctionConsoleFunc",
+  "description": "",
+  "variables": {
+    "current": {
+      "type": "any",
+      "input": "fromCaller"
+    },
+    "value": {
+      "type": "object[]",
+      "input": "fromCaller"
+    },
+    "latestVal": {
+      "type": "any",
+      "input": "fromCaller"
+    }
+  },
+  "actions": {
+    "callFunctionCheckAllFunc": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "checkAllFunc",
+        "params": [
+          "{{ $page.variables.projectBasedTimesheetADP.data }}"
+        ]
+      },
+      "outcomes": {
+        "success": "fireDataProviderEventProjectBasedTimesheetADP2"
+      }
+    },
+    "callFunctionUncheckAll": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "uncheckAll",
+        "params": [
+          "{{ $page.variables.projectBasedTimesheetADP.data }}"
+        ]
+      },
+      "outcomes": {
+        "success": "fireDataProviderEventProjectBasedTimesheetADP"
+      }
+    },
+    "fireDataProviderEventProjectBasedTimesheetADP": {
+      "module": "vb/action/builtin/fireDataProviderEventAction",
+      "parameters": {
+        "target": "[[ $page.variables.projectBasedTimesheetADP ]]",
+        "update": {
+          "data": "{{ $chain.results.callFunctionUncheckAll }}"
+        }
+      }
+    },
+    "fireDataProviderEventProjectBasedTimesheetADP2": {
+      "module": "vb/action/builtin/fireDataProviderEventAction",
+      "parameters": {
+        "target": "[[ $page.variables.projectBasedTimesheetADP ]]",
+        "update": {
+          "data": "{{ $chain.results.callFunctionCheckAllFunc }}"
+        }
+      }
+    },
+    "callFunction": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {}
+    },
+    "callFunctionConsoleFunc": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "consoleFunc",
+        "params": [
+          "{{ $variables.latestVal }}"
+        ]
+      },
+      "outcomes": {
+        "success": "if"
+      }
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "true"
+      },
+      "outcomes": {
+        "true": "callFunctionCheckAllFunc",
+        "false": "callFunctionUncheckAll"
+      }
+    }
+  }
+}

@@ -1,0 +1,566 @@
+{
+    "items": [
+        {
+            "ExpenditureTypeName": "Intercompany Charge",
+            "SystemLinkageFunction": "ER",
+            "ExpenditureTypeId": 300000092852105,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Expense Reports",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000092852105",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000092852105",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Contract Services",
+            "SystemLinkageFunction": "VI",
+            "ExpenditureTypeId": 300000047429469,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Supplier Invoices",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000047429469",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000047429469",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Proceeds from Sale",
+            "SystemLinkageFunction": "PJ",
+            "ExpenditureTypeId": 300000047429539,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Miscellaneous Transaction",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000047429539",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000047429539",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Purchased Equipment",
+            "SystemLinkageFunction": "PJ",
+            "ExpenditureTypeId": 300000047429548,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Miscellaneous Transaction",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000047429548",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000047429548",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Faculty Salaries",
+            "SystemLinkageFunction": "ST",
+            "ExpenditureTypeId": 300000101276152,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Straight Time",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276152",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276152",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Staff Salaries",
+            "SystemLinkageFunction": "OT",
+            "ExpenditureTypeId": 300000101276156,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Overtime",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276156",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276156",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Surveyors Fees",
+            "SystemLinkageFunction": "VI",
+            "ExpenditureTypeId": 300000101276168,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Supplier Invoices",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276168",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276168",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Professional Services",
+            "SystemLinkageFunction": "PJ",
+            "ExpenditureTypeId": 300000101276176,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Miscellaneous Transaction",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276176",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276176",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Subcontract 2",
+            "SystemLinkageFunction": "PJ",
+            "ExpenditureTypeId": 300000101276184,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Miscellaneous Transaction",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276184",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276184",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Construction",
+            "SystemLinkageFunction": "VI",
+            "ExpenditureTypeId": 300000101276188,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Supplier Invoices",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276188",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276188",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Chemicals and Gasses",
+            "SystemLinkageFunction": "PJ",
+            "ExpenditureTypeId": 300000101276196,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Miscellaneous Transaction",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276196",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276196",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Minor Equipment",
+            "SystemLinkageFunction": "PJ",
+            "ExpenditureTypeId": 300000101276204,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Miscellaneous Transaction",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276204",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276204",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Electrical Works",
+            "SystemLinkageFunction": "VI",
+            "ExpenditureTypeId": 300000101276208,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Supplier Invoices",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276208",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276208",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Office Furniture",
+            "SystemLinkageFunction": "PJ",
+            "ExpenditureTypeId": 300000101276224,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": "2001-01-01",
+            "SystemLinkageFunctionName": "Miscellaneous Transaction",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276224",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276224",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Foreign Travel",
+            "SystemLinkageFunction": "VI",
+            "ExpenditureTypeId": 300000101276241,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Supplier Invoices",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276241",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000101276241",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Contractor Fees",
+            "SystemLinkageFunction": "VI",
+            "ExpenditureTypeId": 300000158409569,
+            "ExpenditureTypeStartActiveDate": "2010-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Supplier Invoices",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000158409569",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000158409569",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Heavy Equipment.Forklift",
+            "SystemLinkageFunction": "VI",
+            "ExpenditureTypeId": 300000195964669,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Supplier Invoices",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000195964669",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000195964669",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Air Compressor",
+            "SystemLinkageFunction": "INV",
+            "ExpenditureTypeId": 300000195964688,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Inventory",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000195964688",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000195964688",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Heavy Equipment.Crane",
+            "SystemLinkageFunction": "PJ",
+            "ExpenditureTypeId": 300000195964663,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Miscellaneous Transaction",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000195964663",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000195964663",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Heavy Equipment.Crane",
+            "SystemLinkageFunction": "VI",
+            "ExpenditureTypeId": 300000195964663,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Supplier Invoices",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000195964663",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000195964663",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Generator",
+            "SystemLinkageFunction": "VI",
+            "ExpenditureTypeId": 300000195964682,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Supplier Invoices",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000195964682",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000195964682",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Welding Supplies",
+            "SystemLinkageFunction": "VI",
+            "ExpenditureTypeId": 300000195964722,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Supplier Invoices",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000195964722",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000195964722",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Rent Allocation",
+            "SystemLinkageFunction": "PJ",
+            "ExpenditureTypeId": 300000224897789,
+            "ExpenditureTypeStartActiveDate": "2001-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Miscellaneous Transaction",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000224897789",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000224897789",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "PPM Airfare",
+            "SystemLinkageFunction": "VI",
+            "ExpenditureTypeId": 300000251791395,
+            "ExpenditureTypeStartActiveDate": "2022-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Supplier Invoices",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000251791395",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000251791395",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "ExpenditureTypeName": "Equipment Maintenance",
+            "SystemLinkageFunction": "ER",
+            "ExpenditureTypeId": 300000266781002,
+            "ExpenditureTypeStartActiveDate": "1951-01-01",
+            "ExpenditureTypeEndActiveDate": null,
+            "SystemLinkageFunctionName": "Expense Reports",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000266781002",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes/300000266781002",
+                    "name": "expenditureTypes",
+                    "kind": "item"
+                }
+            ]
+        }
+    ],
+    "count": 25,
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypes",
+            "name": "expenditureTypes",
+            "kind": "collection"
+        }
+    ]
+}

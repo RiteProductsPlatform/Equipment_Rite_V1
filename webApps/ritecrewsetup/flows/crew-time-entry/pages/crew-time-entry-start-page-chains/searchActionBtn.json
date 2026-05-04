@@ -1,0 +1,150 @@
+{
+  "root": "callFunctionValidateGroup",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestGetEqpTimeEntrySearch.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "assignVariablesProjectBasedTimesheetADP": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.projectBasedTimesheetADP": {
+          "source": {
+              "data": "{{ $chain.results.callRestGetEqpTimeEntrySearch.body.items }}"
+            },
+          "reset": "none",
+          "auto": "always"
+
+        }
+      },
+      "outcomes": {
+        "success": "if"
+      }
+    },
+    "resetVariablesProjectBasedTimesheetADP": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.projectBasedTimesheetADP",
+          "$page.variables.addBtnEnable",
+          "$page.variables.projectBasedTimesheetADP.data"
+        ]
+      },
+      "outcomes": {
+        "success": "callFunctionCreateUriParams"
+      }
+    },
+    "callRestGetEqpTimeEntrySearch": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getEqpTimeEntrySearch",
+        "uriParams": {
+
+          "p_crewsetup_id": "{{ \"\" }}",          
+          "p_crew_week": "{{ $page.variables.searchobj.dateRange1 ? $page.variables.searchobj.dateRange1 : \"\" }}",
+          "p_customer": "{{ $chain.results.callFunctionCreateUriParams.customerval }}",           
+          "p_equipment_name": "{{ $chain.results.callFunctionCreateUriParams.equipmentName }}",
+          "p_equipment_type": "{{ $chain.results.callFunctionCreateUriParams.equipmentType }}",
+          "p_project_number": "{{ $chain.results.callFunctionCreateUriParams.project }}",
+          "eqp_request_number": "{{ $page.variables.searchobj.requestnumber ? $page.variables.searchobj.requestnumber : \"\" }}",
+          "equipment_cart_number": "{{ $page.variables.cartNumber ? $page.variables.cartNumber:  \"\" }}"
+        }
+      },
+      "outcomes": {
+        "success": "callFunctionAdjustQuantities",
+        "failure": "fireNotification"
+      }
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callRestGetEqpTimeEntrySearch.body.items.length > 0 ]]"
+      },
+      "outcomes": {
+        "false": "assignVariablesAddBtnEnable"
+      }
+    },
+    "fireNotification3": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "No Data Found for this Selected Week. Please ADD and Proceed",
+        "displayMode": "transient",
+        "type": "error"
+      }
+    },
+    "assignVariablesAddBtnEnable": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.addBtnEnable": {
+          "source": false
+        }
+      },
+      "outcomes": {
+        "success": "fireNotification3"
+      }
+    },
+    "callFunctionValidateGroup": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "validateGroup",
+        "params": [
+          "SearchValidationgroup"
+        ]
+      },
+      "outcomes": {
+        "success": "if2"
+      }
+    },
+    "if2": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callFunctionValidateGroup === \"valid\" ]]"
+      },
+      "outcomes": {
+        "true": "resetVariablesProjectBasedTimesheetADP"
+      }
+    },
+    "callFunctionCreateUriParams": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "createUriParams",
+        "params": [
+          "{{ $page.variables.searchobj.project }}",
+          "{{ $page.variables.searchobj.dateRange1 }}",
+          "{{ $page.variables.searchobj.equipmentName }}",
+          "{{ $page.variables.searchobj.equipmentType }}",
+          "{{ $page.variables.searchobj.crewSetup_id }}",
+          "{{ $page.variables.searchobj.customerval }}",
+          "{{ $page.variables.searchobj.request_type }}"
+        ],
+        "returnType": "searchobject_type"
+      },
+      "outcomes": {
+        "success": "callRestGetEqpTimeEntrySearch"
+      }
+    },
+    "callFunctionAdjustQuantities": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "adjustQuantities",
+        "params": [
+          "{{ $chain.results.callRestGetEqpTimeEntrySearch.body.items }}",
+          "{{ $page.variables.searchobj.dateRange1 }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesProjectBasedTimesheetADP"
+      }
+    }
+  }
+}

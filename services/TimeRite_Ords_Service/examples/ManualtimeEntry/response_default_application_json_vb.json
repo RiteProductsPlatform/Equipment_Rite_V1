@@ -1,0 +1,65 @@
+{
+    "items": [
+        {
+            "batch_id": 1,
+            "expenditure_batch": null,
+            "crewsetup_id": null,
+            "crewsetup_eqp_header_id": null,
+            "time_keeper_id": null,
+            "secondary_timekeeper_id": null,
+            "supervisor_id": null,
+            "business_unit": "US1 Business Unit",
+            "eqp_request_number": null,
+            "equipment_resource_class": null,
+            "equipment_id": null,
+            "equipment_number": null,
+            "equipment_name": null,
+            "nonlabor_resource": null,
+            "nonlabor_resource_organization": null,
+            "project_id": null,
+            "project_number": null,
+            "project_name": null,
+            "task_id_1": null,
+            "task_number_1": null,
+            "task_name_1": null,
+            "task_id_2": null,
+            "task_number_2": null,
+            "task_name_2": null,
+            "task_id_3": null,
+            "task_number_3": null,
+            "task_name_3": null,
+            "task_id_4": null,
+            "task_number_4": null,
+            "task_name_4": null,
+            "entry_date": null,
+            "quantity": null,
+            "created_by": null,
+            "last_updated_by": null,
+            "creation_date": null,
+            "last_updated_date": null,
+            "last_update_login": null,
+            "task_hours_1": null,
+            "task_hours_2": null,
+            "task_hours_3": null,
+            "task_hours_4": null
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EquManualtimeEntry"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EquManualtimeEntry"
+        }
+    ]
+}

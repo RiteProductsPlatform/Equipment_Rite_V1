@@ -1,0 +1,245 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value=""></oj-vb-fragment-param>
+</oj-vb-fragment>
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Equipment Rental Search" primary-action.label="[[ $variables.pagetype]]"
+  secondary-actions='[{"id":"Back","label":"Back","display":"back"}]'
+  on-sp-secondary-action="[[$listeners.ojSpWp1SpSecondaryAction]]" background-color="dark-pebble"
+  on-sp-primary-action="[[$listeners.ojSpWp1SpPrimaryAction]]">
+  <div class="oj-flex oj-sm-flex-direction-column" style="margin-top:-48px">
+
+    <div class="oj-flex-item oj-flex oj-sm-flex-direction-row">
+      <div class="oj-flex-item oj-sm-margin-3x-top oj-sm-10 oj-md-8 oj-sm-margin-3x-end">
+        <div class="oj-flex-item oj-flex">
+          <h6 class="oj-header oj-flex-item oj-sm-margin-2x-start">Master</h6>
+          <div class="oj-flex-item oj-flex oj-sm-justify-content-flex-end">
+            <span class="oj-ux-ico-edit oj-sm-align-self-center" title="Edit Equipment Details"
+              style="font-size:18px;cursor:pointer" on-click="[[$listeners.iconClick]]"
+              ></span>
+          </div>
+        </div>
+        <oj-form-layout columns="5" max-columns="5" label-edge="top" class="oj-sm-margin-2x-top oj-sm-margin-2x-start">
+          <oj-input-text label-hint="Equipment Name" disabled="true" value="{{ $variables.RowData.equipment_name }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Equipment Number" disabled="true"
+            value="{{ $variables.RowData.equipment_number }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Equipment Description" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.equipment_description }}"></oj-input-text>
+          <oj-input-text label-hint="Non Labour Resource" disabled="true"
+            value="{{ $variables.RowData.non_labor_resource }}"></oj-input-text>
+          <oj-input-text label-hint="Equipment Type" disabled="true" value="{{ $variables.RowData.equipment_type }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Equipment Class" disabled="true" value="{{ $variables.RowData.equipment_class }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Equipment Sub Class" disabled="true"
+            value="{{ $variables.RowData.equipment_sub_class }}"></oj-input-text>
+        </oj-form-layout>
+        <h6 class="oj-header oj-flex-item oj-sm-12 oj-md-12 oj-sm-margin-2x-start"> Assets</h6>
+        <oj-form-layout columns="5" max-columns="5" label-edge="top" class="oj-sm-margin-2x-top oj-sm-margin-2x-start">
+          <oj-input-text label-hint="Asset Organization" disabled="true"
+            value="{{ $variables.RowData.asset_organization }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Asset Number" disabled="true" value="{{ $variables.RowData.asset_number }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Inventory Item" disabled="true" value="{{ $variables.RowData.inventory_item }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Purchase Order" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.purchase_order }}">
+          </oj-input-text>
+          <oj-bind-if test="[[ !$variables.isEdit ]]">
+            <oj-input-text label-hint="Project" disabled="true" value="{{ $variables.RowData.project_name }}">
+            </oj-input-text>
+          </oj-bind-if>
+          <oj-bind-if test="[[ $variables.isEdit ]]">
+            <oj-select-single label-hint="Project" value="{{ $variables.RowData.project_name }}"
+              data="[[$variables.ProjectsADP]]" item-text="ProjectName"
+              on-value-item-changed="[[$listeners.selectValueItem]]">
+            </oj-select-single>
+          </oj-bind-if>
+          <oj-bind-if test="[[ !$variables.isEdit ]]">
+            <oj-input-text label-hint="Task" disabled="true" value="{{ $variables.RowData.task_name }}">
+            </oj-input-text>
+          </oj-bind-if>
+          <oj-bind-if test="[[ $variables.isEdit ]]">
+            <oj-select-single label-hint="Task" value="{{ $variables.RowData.task_name }}"
+               data="[[$variables.TaskSDP]]"
+              item-text="TaskName" on-value-item-changed="[[$listeners.selectValueItem2]]">
+            </oj-select-single>
+          </oj-bind-if>
+          <oj-input-text label-hint="Person" disabled="true" value="{{ $variables.RowData.person_number }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Insured By" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.ast_insured_by }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Insured Policy" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.ast_insured_policy }}">
+          </oj-input-text>
+          <oj-input-date label-hint="Date In Service" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.ast_date_in_service }}"
+            converter='{"type": "datetime", "options": {"pattern":"dd/MM/yyyy"}}'>
+          </oj-input-date>
+          <oj-input-date label-hint="Retired Date" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.ast_retired_date }}"
+            converter='{"type": "datetime", "options": {"pattern":"dd/MM/yyyy"}}'>
+          </oj-input-date>
+        </oj-form-layout>
+        <h6 class="oj-header oj-flex-item oj-sm-12 oj-md-12 oj-sm-margin-2x-start">Manufacturer</h6>
+        <oj-form-layout columns="5" max-columns="5" label-edge="top" class="oj-sm-margin-2x-top oj-sm-margin-2x-start">
+          <oj-input-text label-hint="Manufacturer" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.manufacturer }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Model Year" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.mf_model_year }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Model Number" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.mf_model_number }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Color" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.mf_color }}"></oj-input-text>
+          <oj-input-text label-hint="License State" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.mf_license_state }}">
+          </oj-input-text>
+          <oj-input-text label-hint="License Number" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.mf_license_number }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Fuel Type" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.mf_fuel_type }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Seriel Number" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.mf_serial_number }}">
+          </oj-input-text>
+
+          <oj-input-date label-hint="License Expiry" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.mf_license_expiry }}"
+            converter='{"type": "datetime", "options": {"pattern":"dd/MM/yyyy"}}'>
+          </oj-input-date>
+
+          <oj-input-text label-hint="Weight" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.mf_weight }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Warranty Code" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.mf_warranty_code }}">
+          </oj-input-text>
+        </oj-form-layout>
+        <h6 class="oj-header oj-flex-item oj-sm-12 oj-md-12 oj-sm-margin-2x-start">Location</h6>
+        <oj-form-layout columns="5" max-columns="5" label-edge="top" class="oj-sm-margin-2x-top oj-sm-margin-2x-start">
+          <oj-input-text label-hint="Default Location" disabled="true"
+            value="{{ $variables.RowData.default_location }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Address Line 1" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.address_line1 }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Address Line 2" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.address_line2 }}">
+          </oj-input-text>
+          <oj-input-text label-hint="City" disabled="[[ !$variables.isEdit ]]" value="{{ $variables.RowData.city }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Country" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.country }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Zip" disabled="true" value="{{ $variables.RowData.zip }}">
+          </oj-input-text>
+        </oj-form-layout>
+        <h6 class="oj-header oj-flex-item oj-sm-12 oj-md-12 oj-sm-margin-2x-start">Costing</h6>
+        <oj-form-layout columns="5" max-columns="5" label-edge="top" class="oj-sm-margin-2x-top oj-sm-margin-2x-start">
+
+          <oj-input-text label-hint="Expenditure Organization" disabled="true"
+            value="{{ $variables.RowData.expenditure_org_name }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Billing Category" disabled="[[ !$variables.isEdit ]]"
+            value="{{ $variables.RowData.billing_category }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Purchase Order" disabled="true" value="{{ $variables.RowData.purchase_order }}">
+          </oj-input-text>
+        </oj-form-layout>
+      </div>
+      <div class="oj-flex-item oj-panel-shadow-sm oj-bg-neutral-170 oj-color-invert">
+        <div class="oj-flex-item oj-flex oj-sm-justify-content-center oj-sm-margin-2x-bottom">
+          <oj-avatar role="img" size="xl" src="{{$page.variables.RowData.file_content}}"
+            :aria-label="{{$page.variables.RowData.file_name}}" :title="{{$page.variables.RowData.file_name}}">
+          </oj-avatar>
+          <oj-bind-if test="[[ $variables.isEdit ]]">
+            <oj-file-picker class="oj-flex-item oj-sm-flex-initial" selection-mode="single" accept='["image/*"]'
+              capture="user" on-oj-select="[[$listeners.cameraFilePickerSelect]]" >
+              <oj-button slot='trigger' class="oj-button-sm" display="icons">
+                <span slot='startIcon' class="oj-ux-ico-image-custom" title="Update Image"></span>
+              </oj-button>
+            </oj-file-picker>
+          </oj-bind-if>
+        </div>
+        <oj-form-layout columns="3" max-columns="3" label-edge="top" class="oj-sm-margin-2x-top oj-sm-margin-2x-start">
+          <oj-input-text label-hint="Cost Rate" readonly="true" value="{{ $variables.RowData.cost_rate1 }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Bill Rate" readonly="true" value="{{ $variables.RowData.bill_rate }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Utilization Percentage" readonly="true"
+            value="{{ $variables.RowData.utilization_percentage }}"></oj-input-text>
+          <oj-input-text label-hint="Margin" readonly="true" value="{{ $variables.RowData.margin }}">
+          </oj-input-text>
+        </oj-form-layout>
+
+        <oj-bind-if test="[[ $variables.FACostArray.length > 0 ]]">
+          <hr>
+          <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-start">
+            <div class="oj-flex-item ">
+              <span style="font-weight:600;font-size:17px;">Fixed Asset Cost Details</span>
+            </div>
+            <oj-form-layout columns="3" max-columns="3" label-edge="top"
+              class="oj-sm-margin-2x-top oj-sm-margin-2x-start">
+              <oj-bind-for-each data="[[ $variables.FACostArray ]]">
+                <template>
+                  <oj-input-text aria-label='[[ $current.index+1 +". Work Order Number" ]]' label-hint="Initial Cost"
+                    readonly="true" value="{{ $current.data.initial_cost }}"></oj-input-text>
+                  <oj-input-text aria-label='[[ $current.index+1 +". deprn_amount" ]]' label-hint="Purchase Cost"
+                    readonly="true" value="{{ $current.data.deprn_amount  }}"> </oj-input-text>
+                  <oj-input-text aria-label='[[ $current.index+1 +". net_book_value" ]]'
+                    label-hint="Depreciation Amount" readonly="true" value="{{ $current.data.net_book_value }}">
+                  </oj-input-text>
+                </template>
+              </oj-bind-for-each>
+            </oj-form-layout>
+          </div>
+        </oj-bind-if>
+
+
+
+        <oj-bind-if test="[[ $variables.workordercostArray.length > 0 ]]">
+          <hr>
+          <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-start">
+            <div class="oj-flex-item ">
+              <span style="font-weight:600;font-size:17px;">Maintenance Cost Details</span>
+            </div>
+
+            <oj-form-layout columns="4" max-columns="4" label-edge="top"
+              class="oj-sm-margin-2x-top oj-sm-margin-2x-start">
+              <oj-bind-for-each data="[[ $variables.workordercostArray ]]">
+                <template>
+                  <oj-input-text aria-label='[[ $current.index+1 +". Work Order Number" ]]'
+                    label-hint="[[ 'Work Order Number ' + (Number($current.index)+1) ]]" readonly="true"
+                    value="{{ $current.data.work_order_number }}"></oj-input-text>
+
+                  <oj-input-text aria-label='[[ $current.index+1 +". Unit Cost" ]]'
+                    label-hint="[[ 'Unit Cost  ' + (Number($current.index)+1) ]]" readonly="true"
+                    value="{{ $current.data.unit_cost }}"> </oj-input-text>
+
+                  <oj-input-text aria-label='[[ $current.index+1 +". Work Order Date" ]]'
+                    label-hint="[[ 'Work Order Date  ' + (Number($current.index)+1) ]]" readonly="true"
+                    value="{{ $functions.getDateFormate($current.data.work_order_date) }}"> </oj-input-text>
+
+                  <div class="oj-flex-item oj-sm-margin-3x-top">
+                  </div>
+                </template>
+              </oj-bind-for-each>
+            </oj-form-layout>
+          </div>
+        </oj-bind-if>
+
+
+      </div>
+    </div>
+  </div>
+</oj-sp-welcome-page>

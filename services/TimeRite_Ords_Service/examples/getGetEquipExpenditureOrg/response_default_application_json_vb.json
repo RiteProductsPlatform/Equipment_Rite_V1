@@ -1,0 +1,181 @@
+{
+    "items": [
+        {
+            "organization": "Receivables HC US"
+        },
+        {
+            "organization": "Consulting East US"
+        },
+        {
+            "organization": "Nursing HC US"
+        },
+        {
+            "organization": "Information Technology HC US"
+        },
+        {
+            "organization": "Consulting South UK"
+        },
+        {
+            "organization": "Research HE US"
+        },
+        {
+            "organization": "India Applications and Services"
+        },
+        {
+            "organization": "Consulting East FR"
+        },
+        {
+            "organization": "Consulting South IN"
+        },
+        {
+            "organization": "Electrical Engineering HE US"
+        },
+        {
+            "organization": "Clinic 1 HC US PPM"
+        },
+        {
+            "organization": "Global Information Technologies"
+        },
+        {
+            "organization": "Facility Management HC US"
+        },
+        {
+            "organization": "Applications and Services"
+        },
+        {
+            "organization": "Health Services HE US"
+        },
+        {
+            "organization": "Consulting East UK"
+        },
+        {
+            "organization": "Consulting North FR"
+        },
+        {
+            "organization": "Finance HC US"
+        },
+        {
+            "organization": "Projects HC US PPM"
+        },
+        {
+            "organization": "Psychology HE US"
+        },
+        {
+            "organization": "Consulting West IN"
+        },
+        {
+            "organization": "Consulting FR"
+        },
+        {
+            "organization": "Aero Space Department HE US"
+        },
+        {
+            "organization": "Global Networks"
+        },
+        {
+            "organization": "Consulting South FR"
+        },
+        {
+            "organization": "Civil Engineering HE US"
+        },
+        {
+            "organization": "Consulting West FR"
+        },
+        {
+            "organization": "Chemical Engineering HE US"
+        },
+        {
+            "organization": "Nursing HE US"
+        },
+        {
+            "organization": "Bio Medical Engineering HC US PPM"
+        },
+        {
+            "organization": "Consulting US"
+        },
+        {
+            "organization": "India Data Center Operations"
+        },
+        {
+            "organization": "Consulting East IN"
+        },
+        {
+            "organization": "Consulting South US"
+        },
+        {
+            "organization": "Consulting North UK"
+        },
+        {
+            "organization": "Chemistry HE US"
+        },
+        {
+            "organization": "India IT"
+        },
+        {
+            "organization": "Data Center Operations"
+        },
+        {
+            "organization": "Accounting HC US"
+        },
+        {
+            "organization": "Engineering Prg US"
+        },
+        {
+            "organization": "Consulting North US"
+        },
+        {
+            "organization": "Consulting North IN"
+        },
+        {
+            "organization": "Biology HE US"
+        },
+        {
+            "organization": "Bio-Chemistry HE US"
+        },
+        {
+            "organization": "Consulting IN"
+        },
+        {
+            "organization": "Research & Development Prg US"
+        },
+        {
+            "organization": "India Networks"
+        },
+        {
+            "organization": "Consulting UK"
+        },
+        {
+            "organization": "Medical Services HC US"
+        },
+        {
+            "organization": "Consulting West US"
+        },
+        {
+            "organization": "Maintenance Prg US"
+        },
+        {
+            "organization": "Network, Hardware and Software HC US PPM"
+        },
+        {
+            "organization": "Consulting West UK"
+        }
+    ],
+    "hasMore": false,
+    "limit": 100,
+    "offset": 0,
+    "count": 53,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getEquipExpenditureOrg?p_equipment_name=Duplication"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getEquipExpenditureOrg?p_equipment_name=Duplication"
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+<div class="oj-contrast-marker vb-nav-drawer">
+  <oj-vb-fragment id="shell-header" bridge="[[vbBridge]]" name="shell-header-nav">
+  </oj-vb-fragment>
+  <oj-button class=" vb-nav-drawer-close-button oj-sm-float-end" style="margin-top:-6vh" display="icons"
+    chroming="callToAction" on-oj-action="[[$listeners.buttonAction]]">
+    <span slot="startIcon" class="oj-ux-ico-close"></span>
+  </oj-button>
+  <div
+    class="oj-md-hide oj-flex oj-sm-flex-direction-column oj-sm-flex-wrap-nowrap oj-sm-align-items-center oj-sm-margin-6x-vertical">
+    <oj-avatar id="drawer-avatar" role="img" icon-class="oj-ux-ico-contact" size="md" background="orange"
+      :aria-label="[[ $application.user.fullName ]]" :title="[[ $application.user.fullName ]]">
+    </oj-avatar>
+    <div class="oj-typography-body-lg">
+      <oj-bind-text value="[[ $application.user.fullName ]]"></oj-bind-text>
+    </div>
+  </div>
+  <!-- <oj-navigation-list edge="start"
+    on-click="[[$application.responsive.smOnly ? $fragment.functions.closeDrawer : undefined]]"
+    on-selection-changed="[[$listeners.onNavigation]]" data="[[ $application.variables.navigationADP ]]"
+    selection="{{ $variables.currentFlow }}" style="padding-right:40px !important;">
+    <template slot="itemTemplate">
+      <li>
+        <a href="#">
+          <span :class="[['oj-navigationlist-item-icon oj-typography-body-md oj-sm-padding-3x-horizontal ' + $current.data.iconClass]]"></span>
+          <oj-bind-text value="[[$current.data.name]]"></oj-bind-text>
+        </a>
+      </li>
+    </template>
+  </oj-navigation-list> -->
+  <!-- <oj-navigation-list data="[[ $functions.getNavigationContent($functions.getMetadata($application.variables.settingsEnabled)) ]]" -->
+  <!-- <oj-navigation-list data="[[ $variables.navTreedata ]]" root-label="[[ $application.user.email ]]" -->
+  <oj-navigation-list drill-mode="collapsible" item.selectable="[[ $application.functions.itemSelectable ]]"
+    id="tree-navigation" on-selection-changed="[[$listeners.onNavigation]]"
+    data="[[ $application.variables.restrictednavTree ]]">
+    <template slot="itemTemplate" data-oj-as="item">
+      <li>
+        <a style="cursor: pointer">
+          <oj-bind-if test="[[item.data.attr.node]]">
+            <i :class="[[ 'oj-navigationlist-item-icon oj-ux-ico-' + (item.data.attr.icon ? item.data.attr.icon : 'box')]]"></i>
+            <oj-bind-text value="[[item.data.attr.name]]"></oj-bind-text>
+          </oj-bind-if>
+          <oj-bind-if test="[[!item.data.attr.node]]">
+            <i :class="[[ 'oj-typography-body-md oj-navigationlist-item-icon oj-ux-ico-' + (item.data.attr.icon ? item.data.attr.icon : 'box') +  ' oj-sm-padding-1x-start']]"></i>
+            <span class="oj-typography-body-md">
+              <oj-bind-text value="[[item.data.attr.name]]"></oj-bind-text>
+              </span>
+          </oj-bind-if>
+          <oj-bind-if test="[[item.data.attr.badge]]">
+            <span class="oj-badge oj-navigationlist-item-end" style="color:aqua" ><oj-bind-text value="[[item.data.attr.badge]]"></oj-bind-text></span>
+          </oj-bind-if>
+        </a>
+      </li>
+    </template>
+  </oj-navigation-list>
+  <!-- 
+  <hr class="oj-md-hide">e
+
+  <oj-navigation-list class="oj-md-hide" edge="start" on-click="[[$fragment.functions.closeDrawer]]">
+    <ul>
+      <oj-bind-for-each data="[[ $application.variables.globalHeadersData ]]">
+        <template>
+          <li>
+            <oj-button chroming="borderless" class="oj-sm-flex-0">
+              <span :class="[[ 'oj-navigationlist-item-icon oj-typography-body-md ' + $current.data.iconClass ]]" slot="startIcon"></span>
+              <oj-bind-text value="[[ $current.data.name ]]"></oj-bind-text>
+            </oj-button>
+          </li>
+        </template>
+      </oj-bind-for-each>
+    </ul>
+  </oj-navigation-list>
+
+  <hr class="oj-md-hide">
+
+  <oj-navigation-list class="oj-md-hide" edge="start" on-click="[[$fragment.functions.closeDrawer]]">
+    <ul>
+      <oj-bind-for-each data="[[$application.variables.avatarItems]]">
+        <template>
+          <li>
+            <oj-button chroming="borderless" class="oj-sm-flex-0">
+              <span :class="[[ 'oj-navigationlist-item-icon oj-typography-body-md ' + $current.data.iconClass ]]" slot="startIcon"></span>
+              <oj-bind-text value="[[ $current.data.name ]]"></oj-bind-text>
+            </oj-button>
+          </li>
+        </template>
+      </oj-bind-for-each>
+    </ul>
+  </oj-navigation-list> -->
+</div>

@@ -1,0 +1,566 @@
+{
+    "items": [
+        {
+            "LegalEntityId": 300001548149995,
+            "Name": "0test_Legal_Entity",
+            "LegalEntityIdentifier": "0test_Legal_Entity",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300001548149996,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001548149995",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001548149995",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300001705376698,
+            "Name": "49K Trainers ",
+            "LegalEntityIdentifier": "098765",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300001705376699,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001705376698",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001705376698",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300000304087085,
+            "Name": "AA LEGAL ENTITY",
+            "LegalEntityIdentifier": "AA LEGAL ENTITY 1",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300000304087086,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000304087085",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000304087085",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300001695545882,
+            "Name": "AA_STALLION_LE",
+            "LegalEntityIdentifier": "AA_STALLION_LE",
+            "EffectiveFrom": "1941-01-01",
+            "EffectiveTo": null,
+            "PartyId": 300001695545900,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001695545882",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001695545882",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300000310292721,
+            "Name": "ABC LE",
+            "LegalEntityIdentifier": "ABC LE",
+            "EffectiveFrom": "2023-01-01",
+            "EffectiveTo": null,
+            "PartyId": 300000310292722,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000310292721",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000310292721",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300000324090366,
+            "Name": "ABC LEGAL ENTITY",
+            "LegalEntityIdentifier": "123456789",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300000324090368,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000324090366",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000324090366",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300001709159862,
+            "Name": "ACS LE",
+            "LegalEntityIdentifier": "ACS112233",
+            "EffectiveFrom": "2020-01-01",
+            "EffectiveTo": null,
+            "PartyId": 300001709159863,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001709159862",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001709159862",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300000287650742,
+            "Name": "ASL Canada",
+            "LegalEntityIdentifier": "CN0066544",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300000287650780,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000287650742",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000287650742",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300000287650741,
+            "Name": "ASL Pvt LTD",
+            "LegalEntityIdentifier": "US1041116",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300000287650772,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000287650741",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000287650741",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300000287650740,
+            "Name": "ASL RealEstate",
+            "LegalEntityIdentifier": "US1031115",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300000287650764,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000287650740",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000287650740",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300000219190421,
+            "Name": "AU  Council Legal Entity",
+            "LegalEntityIdentifier": "LE_AU_01",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300000219190429,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000219190421",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000219190421",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300001549875660,
+            "Name": "AVATAR LEGAL ENTITY",
+            "LegalEntityIdentifier": "AVATAR LEGAL ENTITY",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300001549875663,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001549875660",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001549875660",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300001383621533,
+            "Name": "Abc_motors",
+            "LegalEntityIdentifier": "Abc_motors",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300001383621534,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001383621533",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001383621533",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300001383621098,
+            "Name": "Abc_sw_ltd",
+            "LegalEntityIdentifier": "Abc_sw_ltd",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300001383621099,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001383621098",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001383621098",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300001383621555,
+            "Name": "Abc_tech",
+            "LegalEntityIdentifier": "Abc_tech",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300001383621559,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001383621555",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001383621555",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300000124170465,
+            "Name": "Algeria Legal Entity",
+            "LegalEntityIdentifier": "LE_DZ_1",
+            "EffectiveFrom": "1951-01-01",
+            "EffectiveTo": null,
+            "PartyId": 300000124170466,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000124170465",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000124170465",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300001549971785,
+            "Name": "Apple Legal Entity",
+            "LegalEntityIdentifier": "AP10001",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300001549971793,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001549971785",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001549971785",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300001021155752,
+            "Name": "Appu LE",
+            "LegalEntityIdentifier": "Appu@0001",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300001021155757,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001021155752",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001021155752",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300000123911408,
+            "Name": "Argentina Legal Entity",
+            "LegalEntityIdentifier": "LE_AR_1",
+            "EffectiveFrom": "1951-01-01",
+            "EffectiveTo": null,
+            "PartyId": 300000123911409,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000123911408",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000123911408",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300001516020256,
+            "Name": "Atmus LE",
+            "LegalEntityIdentifier": "Atmus LE ID",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300001516020257,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001516020256",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001516020256",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300001517601979,
+            "Name": "Atmus Legal Entity",
+            "LegalEntityIdentifier": "Atmus Legal Entity",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300001517601980,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001517601979",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300001517601979",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300000186855989,
+            "Name": "Australia HE Legal Entity",
+            "LegalEntityIdentifier": "LE_HE_AU",
+            "EffectiveFrom": "1951-01-01",
+            "EffectiveTo": null,
+            "PartyId": 300000186855990,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000186855989",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000186855989",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300000047836122,
+            "Name": "Australia Legal Entity",
+            "LegalEntityIdentifier": "LE_AU_1",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300000047836123,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000047836122",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000047836122",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300000116704122,
+            "Name": "Austria Legal Entity",
+            "LegalEntityIdentifier": "LE_AT_1",
+            "EffectiveFrom": "1951-01-01",
+            "EffectiveTo": null,
+            "PartyId": 300000116704123,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000116704122",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000116704122",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "LegalEntityId": 300000325926369,
+            "Name": "BAG US LEGAL ENTITY",
+            "LegalEntityIdentifier": "BAG US LEGAL ENTITY",
+            "EffectiveFrom": null,
+            "EffectiveTo": null,
+            "PartyId": 300000325926370,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000325926369",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV/300000325926369",
+                    "name": "legalEntitiesLOV",
+                    "kind": "item"
+                }
+            ]
+        }
+    ],
+    "count": 25,
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/legalEntitiesLOV",
+            "name": "legalEntitiesLOV",
+            "kind": "collection"
+        }
+    ]
+}

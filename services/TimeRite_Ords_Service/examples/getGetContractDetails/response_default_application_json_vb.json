@@ -1,0 +1,44 @@
+{
+    "items": [
+        {
+            "customer_number": "10010",
+            "customer_name": "Conifer International",
+            "contract_id": 300000391217183,
+            "contract_number": "3456789",
+            "week_start_day": "Monday",
+            "week_end_day": "Friday",
+            "no_of_days": 5,
+            "ot_allowed": "1",
+            "ot_threshold_measure": "Week",
+            "ot_threshold_limit": "40",
+            "active_flag": null,
+            "billing_frequency": "Day",
+            "ot_shift_name": null,
+            "time_entry_method": null,
+            "effective_start_date": "2024-03-01",
+            "effective_end_date": "2024-05-31",
+            "per_diem": "YES",
+            "per_diem_hours": 4,
+            "bonus": "YES",
+            "safety_bonus": "YES"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getContractDetails?CUSTOMER_NUMBER=10010"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getContractDetails?CUSTOMER_NUMBER=10010"
+        }
+    ]
+}

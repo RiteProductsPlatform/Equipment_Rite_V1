@@ -1,0 +1,120 @@
+{
+    "items": [
+        {
+            "equipment_class": "ROV",
+            "equipment_number": "8956",
+            "equipment_name": "Isurus ROV",
+            "equipment_id": "987",
+            "eqp_class_names": "Isurus ROV-8956"
+        },
+        {
+            "equipment_class": "ROV",
+            "equipment_number": "8956",
+            "equipment_name": "ROV",
+            "equipment_id": "987",
+            "eqp_class_names": "ROV-8956"
+        },
+        {
+            "equipment_class": "ROV",
+            "equipment_number": "8956",
+            "equipment_name": "eNovus ROV",
+            "equipment_id": "987",
+            "eqp_class_names": "eNovus ROV-8956"
+        },
+        {
+            "equipment_class": "ROV",
+            "equipment_number": "PICKINGAGV",
+            "equipment_name": "ROV",
+            "equipment_id": "933",
+            "eqp_class_names": "ROV-PICKINGAGV"
+        },
+        {
+            "equipment_class": "ROV",
+            "equipment_number": "PICKINGAGV 2",
+            "equipment_name": "ROV",
+            "equipment_id": "931",
+            "eqp_class_names": "ROV-PICKINGAGV 2"
+        },
+        {
+            "equipment_class": "ROV",
+            "equipment_number": "RS-04",
+            "equipment_name": "ROV",
+            "equipment_id": "932",
+            "eqp_class_names": "ROV-RS-04"
+        },
+        {
+            "equipment_class": "ROV",
+            "equipment_number": "SRL_76543465",
+            "equipment_name": "Nexxus ROV",
+            "equipment_id": "551",
+            "eqp_class_names": "Nexxus ROV-SRL_76543465"
+        },
+        {
+            "equipment_class": "ROV",
+            "equipment_number": "SRL_76543466",
+            "equipment_name": "Magnum Plus ROV",
+            "equipment_id": "552",
+            "eqp_class_names": "Magnum Plus ROV-SRL_76543466"
+        },
+        {
+            "equipment_class": "ROV",
+            "equipment_number": "SRL_76543466",
+            "equipment_name": "Nexxus ROV",
+            "equipment_id": "552",
+            "eqp_class_names": "Nexxus ROV-SRL_76543466"
+        },
+        {
+            "equipment_class": "ROV",
+            "equipment_number": "SRL_76543467",
+            "equipment_name": "Isurus ROV",
+            "equipment_id": "553",
+            "eqp_class_names": "Isurus ROV-SRL_76543467"
+        },
+        {
+            "equipment_class": "ROV",
+            "equipment_number": "SRL_76543468",
+            "equipment_name": "eNovus ROV",
+            "equipment_id": "554",
+            "eqp_class_names": "eNovus ROV-SRL_76543468"
+        },
+        {
+            "equipment_class": "ROV",
+            "equipment_number": "SRL_76543469",
+            "equipment_name": "Freedom ROV",
+            "equipment_id": "555",
+            "eqp_class_names": "Freedom ROV-SRL_76543469"
+        },
+        {
+            "equipment_class": "ROV",
+            "equipment_number": "WP-01",
+            "equipment_name": "Water Pump-ROV",
+            "equipment_id": "1123",
+            "eqp_class_names": "Water Pump-ROV-WP-01"
+        },
+        {
+            "equipment_class": "ROV",
+            "equipment_number": null,
+            "equipment_name": "ROV",
+            "equipment_id": null,
+            "eqp_class_names": "ROV-"
+        }
+    ],
+    "hasMore": false,
+    "limit": 51,
+    "offset": 0,
+    "count": 14,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/EquipmentRite/EQPRite_ClassEqpNames?page_name=crew-time-entry-start&p_equipment_class=ROV"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/EquipmentRite/EQPRite_ClassEqpNames?page_name=crew-time-entry-start&p_equipment_class=ROV"
+        }
+    ]
+}

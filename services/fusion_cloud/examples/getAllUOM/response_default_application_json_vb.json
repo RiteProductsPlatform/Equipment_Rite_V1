@@ -1,0 +1,871 @@
+{
+    "items": [
+        {
+            "UOMId": 300000183670797,
+            "UOMCode": "BI",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "Biannual",
+            "Description": "Biannual",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": null,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2019-05-29T17:34:53.084+00:00",
+            "LastUpdateDate": "2019-05-29T17:36:07.883+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/BI",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017372001B6F7261636C652E6A626F2E646F6D61696E2E4E756C6C56616C75655899C1C58DAABEEB02000149000A6D53514C54797065496478700000000C78"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/BI",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/BI/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/BI/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/BI/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300000047284477,
+            "UOMCode": "zzf",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "Day",
+            "Description": "Day",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": 24,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-10-29T20:24:04.963+00:00",
+            "LastUpdateDate": "2013-10-29T20:24:32.337+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzf",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzf",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzf/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzf/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzf/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300000356932426,
+            "UOMCode": "HRS",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "HOURS",
+            "Description": "HRS",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": null,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "ppmtestuser",
+            "CreationDate": "2024-03-15T06:31:51.810+00:00",
+            "LastUpdateDate": "2024-03-15T06:33:40.435+00:00",
+            "LastUpdatedBy": "ppmtestuser",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/HRS",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017372001B6F7261636C652E6A626F2E646F6D61696E2E4E756C6C56616C75655899C1C58DAABEEB02000149000A6D53514C54797065496478700000000C78"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/HRS",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/HRS/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/HRS/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/HRS/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300001517582952,
+            "UOMCode": "HR",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "Hour",
+            "Description": "Hour",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": 1,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "DD_user",
+            "CreationDate": "2024-09-19T06:37:47.740+00:00",
+            "LastUpdateDate": "2024-09-19T06:38:07.999+00:00",
+            "LastUpdatedBy": "DD_user",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/HR",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/HR",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/HR/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/HR/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/HR/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300000047284457,
+            "UOMCode": "zzt",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "Hr",
+            "Description": "Hour",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": true,
+            "DisableDate": null,
+            "StandardConversion": 1,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-10-29T18:41:41.974+00:00",
+            "LastUpdateDate": "2013-10-29T18:42:00.794+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzt",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzt",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzt/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzt/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzt/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300000307373891,
+            "UOMCode": "asd",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "Millisec",
+            "Description": "Millisecond",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": null,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "CASEY.BROWN",
+            "CreationDate": "2023-08-16T12:27:22.468+00:00",
+            "LastUpdateDate": "2023-08-16T12:29:14.295+00:00",
+            "LastUpdatedBy": "CASEY.BROWN",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/asd",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017372001B6F7261636C652E6A626F2E646F6D61696E2E4E756C6C56616C75655899C1C58DAABEEB02000149000A6D53514C54797065496478700000000C78"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/asd",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/asd/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/asd/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/asd/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300000047284476,
+            "UOMCode": "zzg",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "Min",
+            "Description": "Minute",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": 60,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-10-29T20:23:17.144+00:00",
+            "LastUpdateDate": "2013-10-29T20:23:59.363+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzg",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzg",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzg/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzg/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzg/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300000154525516,
+            "UOMCode": "MT",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "Mnth",
+            "Description": "Month",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": 730,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "JOHN.DUNBAR",
+            "CreationDate": "2017-09-28T20:26:03.199+00:00",
+            "LastUpdateDate": "2017-09-28T20:27:52.242+00:00",
+            "LastUpdatedBy": "JOHN.DUNBAR",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/MT",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/MT",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/MT/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/MT/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/MT/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300000156597723,
+            "UOMCode": "QTR",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "QTR",
+            "Description": "Quarter",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": 2190,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "AVA.CLARK",
+            "CreationDate": "2017-10-19T16:56:17.013+00:00",
+            "LastUpdateDate": "2017-10-19T16:58:21.131+00:00",
+            "LastUpdatedBy": "AVA.CLARK",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/QTR",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/QTR",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/QTR/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/QTR/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/QTR/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300000047284479,
+            "UOMCode": "zzd",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "Sec",
+            "Description": "Second",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": 3600,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-10-29T20:25:07.917+00:00",
+            "LastUpdateDate": "2013-10-29T20:25:22.171+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzd",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzd",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzd/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzd/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzd/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300000558569563,
+            "UOMCode": "TST",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "TST",
+            "Description": "Test",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": 5,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "CASEY.BROWN",
+            "CreationDate": "2024-04-18T03:39:13.001+00:00",
+            "LastUpdateDate": "2024-04-18T03:39:41.884+00:00",
+            "LastUpdatedBy": "CASEY.BROWN",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/TST",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/TST",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/TST/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/TST/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/TST/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300000047284478,
+            "UOMCode": "zze",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "Week",
+            "Description": "Week",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": 168,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-10-29T20:24:39.877+00:00",
+            "LastUpdateDate": "2013-10-29T20:24:54.459+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zze",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zze",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zze/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zze/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zze/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300000154525551,
+            "UOMCode": "YR",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "Year",
+            "Description": "Year",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": 8760,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "JOHN.DUNBAR",
+            "CreationDate": "2017-09-28T20:27:15.271+00:00",
+            "LastUpdateDate": "2017-09-28T20:27:52.352+00:00",
+            "LastUpdatedBy": "JOHN.DUNBAR",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/YR",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/YR",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/YR/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/YR/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/YR/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300000116443105,
+            "UOMCode": "zzQ",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "kWh",
+            "Description": "Kilowatt Hour",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": 1,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2015-12-04T16:21:41.985+00:00",
+            "LastUpdateDate": "2015-12-04T16:22:23.881+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzQ",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzQ",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzQ/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzQ/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/zzQ/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "UOMId": 300000194250217,
+            "UOMCode": "ns",
+            "UOMClass": "6",
+            "UOMClassCode": "6",
+            "UOMClassName": "Time",
+            "UOM": "ns",
+            "Description": "Nanosecond",
+            "UOMReciprocalDescription": null,
+            "UOMPluralDescription": null,
+            "BaseUnitFlag": false,
+            "DisableDate": null,
+            "StandardConversion": 2.7778e-13,
+            "StandardConversionEndDate": null,
+            "GlobalAttributeCategory": null,
+            "OkeiCode": null,
+            "DerivedUnitParentCode": null,
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2020-01-31T15:17:40.590+00:00",
+            "LastUpdateDate": "2020-01-31T15:26:16.607+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/ns",
+                    "name": "unitsOfMeasure",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/ns",
+                    "name": "unitsOfMeasure",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/ns/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/ns/child/intraclassConversions",
+                    "name": "intraclassConversions",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure/ns/child/translatedData",
+                    "name": "translatedData",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 15,
+    "hasMore": false,
+    "limit": 500,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/unitsOfMeasure",
+            "name": "unitsOfMeasure",
+            "kind": "collection"
+        }
+    ]
+}

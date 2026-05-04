@@ -1,0 +1,953 @@
+{
+    "items": [
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice",
+            "document_entry_name": "Nonrecoverable Tax"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Maintenance Work Order",
+            "document_entry_name": "Equipment Resource Cost"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Transfer Order Delivery",
+            "document_entry_name": "Nonrecoverable Tax Inclusive"
+        },
+        {
+            "txnSourceId": "300001782823250",
+            "name": "Usage_1",
+            "document_name": "Usage_1",
+            "document_entry_name": "Usage_1"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Purchase Receipt",
+            "document_entry_name": "Project Inventory Overhead"
+        },
+        {
+            "txnSourceId": "300000049854172",
+            "name": "External Time Entry System",
+            "document_name": "Timecard",
+            "document_entry_name": "Straight Time"
+        },
+        {
+            "txnSourceId": "300000049907111",
+            "name": "External Expense Reporting System",
+            "document_name": "Expense Report",
+            "document_entry_name": "Expense Item"
+        },
+        {
+            "txnSourceId": "300001782823256",
+            "name": "Miscellaneous",
+            "document_name": "Miscellaneous",
+            "document_entry_name": "Miscellaneous"
+        },
+        {
+            "txnSourceId": "300001782823264",
+            "name": "Usage_Misc",
+            "document_name": "Usage_Misc",
+            "document_entry_name": "Usage_Misc"
+        },
+        {
+            "txnSourceId": "300001771667992",
+            "name": "OCANNERING-USAGE-COST",
+            "document_name": "OCANNERING-USAGE-COST",
+            "document_entry_name": "OCANNERING-USAGE-COST"
+        },
+        {
+            "txnSourceId": "300000215846268",
+            "name": "Oracle Fusion Joint Venture Management",
+            "document_name": "JV Partner Reimbursements",
+            "document_entry_name": "Rebill"
+        },
+        {
+            "txnSourceId": "300000287507785",
+            "name": "INTELLI_SOURCE",
+            "document_name": "INTELLI_DOC",
+            "document_entry_name": "INTELLI_DOC_ENTRY_MISC"
+        },
+        {
+            "txnSourceId": "300000300242984",
+            "name": "PAVAN CO PROJECT SOURCE",
+            "document_name": "PAVAN CO PROJECT DOCUMENT",
+            "document_entry_name": "PAVAN CO LABOR"
+        },
+        {
+            "txnSourceId": "300000300242984",
+            "name": "PAVAN CO PROJECT SOURCE",
+            "document_name": "PAVAN CO PROJECT DOCUMENT",
+            "document_entry_name": "PAVAN CO MISC"
+        },
+        {
+            "txnSourceId": "300000307064247",
+            "name": "OAK_TRANSACTION_SOURCE",
+            "document_name": "OAK_Time_Card",
+            "document_entry_name": "OAK_TIME_CARD"
+        },
+        {
+            "txnSourceId": "300000309742297",
+            "name": "OAK_LABOUR_COST",
+            "document_name": "OAK_LABOUR_COST",
+            "document_entry_name": "OAK_LABOUR_COST"
+        },
+        {
+            "txnSourceId": "300000307064247",
+            "name": "OAK_TRANSACTION_SOURCE",
+            "document_name": "OAK_TRA_EXPENDITURE",
+            "document_entry_name": "OAK_MISC"
+        },
+        {
+            "txnSourceId": "300000307064247",
+            "name": "OAK_TRANSACTION_SOURCE",
+            "document_name": "OAK_USAGES",
+            "document_entry_name": "OAK_USAGES"
+        },
+        {
+            "txnSourceId": "300001690801274",
+            "name": "MMX Timecards",
+            "document_name": "MMX Timecards",
+            "document_entry_name": "MMX Timecards"
+        },
+        {
+            "txnSourceId": "300000000122899",
+            "name": "Oracle Fusion Projects",
+            "document_name": "Labor Distribution",
+            "document_entry_name": "Straight Time"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Sales Order Issue",
+            "document_entry_name": "Overhead"
+        },
+        {
+            "txnSourceId": "300000000122872",
+            "name": "Oracle Fusion Purchasing",
+            "document_name": "Purchase Order",
+            "document_entry_name": "Nonrecoverable Tax"
+        },
+        {
+            "txnSourceId": "300000000122899",
+            "name": "Oracle Fusion Projects",
+            "document_name": "Usage Expenditure",
+            "document_entry_name": "Usage Expenditure Item"
+        },
+        {
+            "txnSourceId": "300001496428281",
+            "name": "PPM Equipment Source",
+            "document_name": "Mobilization",
+            "document_entry_name": "Mobilization"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Purchase Receipt",
+            "document_entry_name": "Price Adjustment"
+        },
+        {
+            "txnSourceId": "300000000122899",
+            "name": "Oracle Fusion Projects",
+            "document_name": "Burden Expenditure",
+            "document_entry_name": "Burden Expenditure Item"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Payment",
+            "document_entry_name": "Tax Invoice Price Variance Discount"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Manufacturing Work Order",
+            "document_entry_name": "Item Cost"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice Commitment",
+            "document_entry_name": "Tax Invoice Price Variance"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Maintenance Work Order",
+            "document_entry_name": "Item Overhead"
+        },
+        {
+            "txnSourceId": "300001699958372",
+            "name": "MMX Equipment",
+            "document_name": "MMX Equipment Document",
+            "document_entry_name": "misc"
+        },
+        {
+            "txnSourceId": "300000253110462",
+            "name": "PPM Usages",
+            "document_name": "PPM Usages",
+            "document_entry_name": "PPM Usages"
+        },
+        {
+            "txnSourceId": "300001807164687",
+            "name": "INVERGY_Labour_Cost",
+            "document_name": "INVERGY_Labour_Cost_Doc",
+            "document_entry_name": "Employee"
+        },
+        {
+            "txnSourceId": "300000050031467",
+            "name": "Oracle Fusion Time and Labor",
+            "document_name": "Time Card",
+            "document_entry_name": "Straight Time"
+        },
+        {
+            "txnSourceId": "300000000122872",
+            "name": "Oracle Fusion Purchasing",
+            "document_name": "Purchase Order",
+            "document_entry_name": "Miscellaneous"
+        },
+        {
+            "txnSourceId": "300001495227689",
+            "name": "PPM Test",
+            "document_name": "PPM Test Document",
+            "document_entry_name": "PPM Test Document Entries"
+        },
+        {
+            "txnSourceId": "300001699958325",
+            "name": "MMX Equipment Pipe Cutting",
+            "document_name": "MMX Pipe Cutting Document",
+            "document_entry_name": "MMX Pipe Document Entry"
+        },
+        {
+            "txnSourceId": "300001699958372",
+            "name": "MMX Equipment",
+            "document_name": "MMX Equipment Document",
+            "document_entry_name": "MMX Equipment Document Entry"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Purchase Receipt",
+            "document_entry_name": "Tax Exchange Rate Variance"
+        },
+        {
+            "txnSourceId": "300000000122899",
+            "name": "Oracle Fusion Projects",
+            "document_name": "Time Card",
+            "document_entry_name": "Straight Time"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Expense Report",
+            "document_entry_name": "Item Cost"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Payment",
+            "document_entry_name": "Tax Exchange Rate Variance Discount"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice Commitment",
+            "document_entry_name": "Miscellaneous"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice",
+            "document_entry_name": "Tax Exchange Rate Variance"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice Commitment",
+            "document_entry_name": "Invoice Price Variance"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Manufacturing Work Order",
+            "document_entry_name": "Resource Overhead"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Maintenance Work Order",
+            "document_entry_name": "Item Cost"
+        },
+        {
+            "txnSourceId": "300001778515341",
+            "name": "Petrol",
+            "document_name": "Petrol",
+            "document_entry_name": "Petrol"
+        },
+        {
+            "txnSourceId": "300000049907116",
+            "name": "External Miscellaneous",
+            "document_name": "Miscellaneous",
+            "document_entry_name": "Miscellaneous"
+        },
+        {
+            "txnSourceId": "300000588735738",
+            "name": "VOLKS_Transaction_Source",
+            "document_name": "VOLKS_DOCUMENT",
+            "document_entry_name": "VOLKS_MISC"
+        },
+        {
+            "txnSourceId": "300000297458096",
+            "name": "ASL Source",
+            "document_name": "ASL Misc Document",
+            "document_entry_name": "ASL Misc Doc Entry"
+        },
+        {
+            "txnSourceId": "300000297458096",
+            "name": "ASL Source",
+            "document_name": "ASL Exp Document",
+            "document_entry_name": "ASL Exp Doc Entries"
+        },
+        {
+            "txnSourceId": "300000287507785",
+            "name": "INTELLI_SOURCE",
+            "document_name": "INTELLI_DOC",
+            "document_entry_name": "INTELLI_DOC_ENTRY_USAGES"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Transfer Order Delivery",
+            "document_entry_name": "Project Inventory Overhead"
+        },
+        {
+            "txnSourceId": "300001495227680",
+            "name": "PPM Transaction Source",
+            "document_name": "PPM Transaction Document",
+            "document_entry_name": "PPM Transaction Document Entry"
+        },
+        {
+            "txnSourceId": "300000194985968",
+            "name": "External Payroll System",
+            "document_name": "Payroll",
+            "document_entry_name": "External Payroll System"
+        },
+        {
+            "txnSourceId": "300000588735826",
+            "name": "VOLKS_THIRD_PARTY",
+            "document_name": "VOLKS_THIRD_PARTY",
+            "document_entry_name": "VOLKS_THIRD_PARTY"
+        },
+        {
+            "txnSourceId": "300000000122872",
+            "name": "Oracle Fusion Purchasing",
+            "document_name": "Purchase Requisition",
+            "document_entry_name": "Miscellaneous"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Purchase Receipt",
+            "document_entry_name": "Nonrecoverable Tax"
+        },
+        {
+            "txnSourceId": "300000000122899",
+            "name": "Oracle Fusion Projects",
+            "document_name": "Summarized Burden Expenditure",
+            "document_entry_name": "Summarized Burden Expenditure Item"
+        },
+        {
+            "txnSourceId": "300000000122899",
+            "name": "Oracle Fusion Projects",
+            "document_name": "Inventory Expenditure",
+            "document_entry_name": "Inventory Expenditure Item"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Payment",
+            "document_entry_name": "Tax Discount"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Intercompany Invoice",
+            "document_entry_name": "Nonrecoverable Tax"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice",
+            "document_entry_name": "Freight"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice",
+            "document_entry_name": "Tax Invoice Price Variance"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice Commitment",
+            "document_entry_name": "Nonrecoverable Tax"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice Commitment",
+            "document_entry_name": "Tax"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Manufacturing Work Order",
+            "document_entry_name": "Equipment Resource Cost"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Manufacturing Work Order",
+            "document_entry_name": "Item Overhead"
+        },
+        {
+            "txnSourceId": "300001786475038",
+            "name": "MISC-TRANS",
+            "document_name": "MISC-TRANS",
+            "document_entry_name": "MISC-TRANS"
+        },
+        {
+            "txnSourceId": "300000253109680",
+            "name": "PPM Expenditures",
+            "document_name": "PPM Expenditures",
+            "document_entry_name": "PPM Misc"
+        },
+        {
+            "txnSourceId": "300000253110459",
+            "name": "PPM Time Cards",
+            "document_name": "PPM Time Cards",
+            "document_entry_name": "PPM Time Cards"
+        },
+        {
+            "txnSourceId": "300000287507785",
+            "name": "INTELLI_SOURCE",
+            "document_name": "INTELLI_DOC",
+            "document_entry_name": "INTELLI_DOC_ENTRY_ST"
+        },
+        {
+            "txnSourceId": "300000588735738",
+            "name": "VOLKS_Transaction_Source",
+            "document_name": "VOLKS_DOCUMENT",
+            "document_entry_name": "VOLKS_LABOR"
+        },
+        {
+            "txnSourceId": "300000050031467",
+            "name": "Oracle Fusion Time and Labor",
+            "document_name": "Time Card",
+            "document_entry_name": "Overtime"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice",
+            "document_entry_name": "Tax"
+        },
+        {
+            "txnSourceId": "300000000122872",
+            "name": "Oracle Fusion Purchasing",
+            "document_name": "Purchase Requisition",
+            "document_entry_name": "Freight"
+        },
+        {
+            "txnSourceId": "300000000122872",
+            "name": "Oracle Fusion Purchasing",
+            "document_name": "Purchase Requisition",
+            "document_entry_name": "Item Cost"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Purchase Receipt",
+            "document_entry_name": "Exchange Rate Variance"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Purchase Receipt",
+            "document_entry_name": "Nonrecoverable Tax Price Adjustment"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Purchase Receipt",
+            "document_entry_name": "Tax Invoice Price Variance"
+        },
+        {
+            "txnSourceId": "300000000122899",
+            "name": "Oracle Fusion Projects",
+            "document_name": "Time Card",
+            "document_entry_name": "Overtime"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Expense Report",
+            "document_entry_name": "Nonrecoverable Tax"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice",
+            "document_entry_name": "Tax Rate Variance"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice Commitment",
+            "document_entry_name": "Freight"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Purchase Receipt",
+            "document_entry_name": "Project Inventory Item Cost"
+        },
+        {
+            "txnSourceId": "300001779370884",
+            "name": "Misc Trans",
+            "document_name": "Misc",
+            "document_entry_name": "Misc Trans"
+        },
+        {
+            "txnSourceId": "300001779735725",
+            "name": "Miscellaneous Transaction source",
+            "document_name": "Miscellaneous Transaction Source",
+            "document_entry_name": "Miscellaneous Transacation Source"
+        },
+        {
+            "txnSourceId": "300000253109685",
+            "name": "PPM Conversion",
+            "document_name": "PPM Conversion",
+            "document_entry_name": "PPM Conversion"
+        },
+        {
+            "txnSourceId": "300001444203725",
+            "name": "PPM Conv",
+            "document_name": "PPM Conv",
+            "document_entry_name": "PPM Conv"
+        },
+        {
+            "txnSourceId": "300000588735738",
+            "name": "VOLKS_Transaction_Source",
+            "document_name": "VOLKS_DOCUMENT",
+            "document_entry_name": "VOLKS_USAGE"
+        },
+        {
+            "txnSourceId": "300000000122872",
+            "name": "Oracle Fusion Purchasing",
+            "document_name": "Purchase Order",
+            "document_entry_name": "Freight"
+        },
+        {
+            "txnSourceId": "300001496428215",
+            "name": "Trans Con",
+            "document_name": "Trans Con",
+            "document_entry_name": "Trans Con Doc Entry"
+        },
+        {
+            "txnSourceId": "300001690941242",
+            "name": "MMX Supplier Expense",
+            "document_name": "MMX Supplier Expense",
+            "document_entry_name": "MMX Supplier Expense"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Purchase Receipt",
+            "document_entry_name": "Nonrecoverable Tax Price Inclusive Adjustment"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Miscellaneous Inventory",
+            "document_entry_name": "Overhead"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Purchase Receipt",
+            "document_entry_name": "Tax Rate Variance"
+        },
+        {
+            "txnSourceId": "300000000122899",
+            "name": "Oracle Fusion Projects",
+            "document_name": "Allocation Expenditure",
+            "document_entry_name": "Allocation Expenditure Item - Burden"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Interproject Invoice",
+            "document_entry_name": "Item Cost"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Payment",
+            "document_entry_name": "Exchange Rate Variance Discount"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice",
+            "document_entry_name": "Miscellaneous"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice Commitment",
+            "document_entry_name": "Tax Rate Variance"
+        },
+        {
+            "txnSourceId": "300000000122899",
+            "name": "Oracle Fusion Projects",
+            "document_name": "Work-in-Progress Expenditure",
+            "document_entry_name": "Work-in-Progress Expenditure Item"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Transfer Order",
+            "document_entry_name": "Item Cost"
+        },
+        {
+            "txnSourceId": "300001771667992",
+            "name": "OCANNERING-USAGE-COST",
+            "document_name": "OCANNERING-USAGE-COST",
+            "document_entry_name": "OCEANEERING MISC"
+        },
+        {
+            "txnSourceId": "300001779370884",
+            "name": "Misc Trans",
+            "document_name": "Misc Trans 1",
+            "document_entry_name": "Misc Trans 1"
+        },
+        {
+            "txnSourceId": "300000215846268",
+            "name": "Oracle Fusion Joint Venture Management",
+            "document_name": "JV Partner Reimbursements",
+            "document_entry_name": "Distribution Reversal"
+        },
+        {
+            "txnSourceId": "300000300242984",
+            "name": "PAVAN CO PROJECT SOURCE",
+            "document_name": "PAVAN CO PROJECT DOCUMENT",
+            "document_entry_name": "PAVAN CO BURDEN"
+        },
+        {
+            "txnSourceId": "300001496424945",
+            "name": "Trans C",
+            "document_name": "Trans C Doc",
+            "document_entry_name": "Trans C Doc Entry"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice Commitment",
+            "document_entry_name": "Item Cost"
+        },
+        {
+            "txnSourceId": "300001496428281",
+            "name": "PPM Equipment Source",
+            "document_name": "Usage",
+            "document_entry_name": "Usage"
+        },
+        {
+            "txnSourceId": "300001690801301",
+            "name": "MMX Expenditures",
+            "document_name": "MMX Expenditure",
+            "document_entry_name": "MMX Misc Expenditure"
+        },
+        {
+            "txnSourceId": "300001778515008",
+            "name": "Equip_exp_Source",
+            "document_name": "Equip_exp_Source",
+            "document_entry_name": "Equip_exp_Source"
+        },
+        {
+            "txnSourceId": "300001699958320",
+            "name": "MMX Equipment Transaction Source ",
+            "document_name": "MMX Equipment Document",
+            "document_entry_name": "MMX Equipment Document Entry"
+        },
+        {
+            "txnSourceId": "300000000122872",
+            "name": "Oracle Fusion Purchasing",
+            "document_name": "Purchase Order",
+            "document_entry_name": "Tax"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Purchase Receipt",
+            "document_entry_name": "Item Cost"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Payment",
+            "document_entry_name": "Invoice Price Variance Discount"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice",
+            "document_entry_name": "Exchange Rate Variance"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice",
+            "document_entry_name": "Invoice Price Variance"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice",
+            "document_entry_name": "Item Cost"
+        },
+        {
+            "txnSourceId": "300001800539411",
+            "name": "OAK_MISC",
+            "document_name": "OAK_MISC",
+            "document_entry_name": "OAK_MISC"
+        },
+        {
+            "txnSourceId": "300001778515341",
+            "name": "Petrol",
+            "document_name": "Petrol",
+            "document_entry_name": "Petrol1"
+        },
+        {
+            "txnSourceId": "300000049907119",
+            "name": "External Usage",
+            "document_name": "Usage",
+            "document_entry_name": "Usage"
+        },
+        {
+            "txnSourceId": "300000194985968",
+            "name": "External Payroll System",
+            "document_name": "Payroll",
+            "document_entry_name": "Payroll"
+        },
+        {
+            "txnSourceId": "300000297458096",
+            "name": "ASL Source",
+            "document_name": "ASL Labor Document",
+            "document_entry_name": "ASL Labor Doc Entry"
+        },
+        {
+            "txnSourceId": "300000000122872",
+            "name": "Oracle Fusion Purchasing",
+            "document_name": "Purchase Requisition",
+            "document_entry_name": "Tax"
+        },
+        {
+            "txnSourceId": "300001496428165",
+            "name": "Trans Co",
+            "document_name": "Trans Co Doc",
+            "document_entry_name": "Trans Co Doc Entry"
+        },
+        {
+            "txnSourceId": "300001690801301",
+            "name": "MMX Expenditures",
+            "document_name": "MMX Expenditure",
+            "document_entry_name": "MMX Usage Expenditures"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice Commitment",
+            "document_entry_name": "Tax Exchange Rate Variance"
+        },
+        {
+            "txnSourceId": "100002461336240",
+            "name": "Oracle Fusion Payroll",
+            "document_name": "Labor Distribution",
+            "document_entry_name": "Straight Time"
+        },
+        {
+            "txnSourceId": "300001496428281",
+            "name": "PPM Equipment Source",
+            "document_name": "Transportation",
+            "document_entry_name": "Transportation"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Miscellaneous Inventory",
+            "document_entry_name": "Item Cost"
+        },
+        {
+            "txnSourceId": "300000000122899",
+            "name": "Oracle Fusion Projects",
+            "document_name": "Allocation Expenditure",
+            "document_entry_name": "Allocation Expenditure Item - Miscellaneous"
+        },
+        {
+            "txnSourceId": "300000000122899",
+            "name": "Oracle Fusion Projects",
+            "document_name": "Capitalized Interest Expenditure",
+            "document_entry_name": "Capitalized Interest Expenditure Item"
+        },
+        {
+            "txnSourceId": "300000000122899",
+            "name": "Oracle Fusion Projects",
+            "document_name": "Miscellaneous Expenditure",
+            "document_entry_name": "Miscellaneous Expenditure Item"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Payment",
+            "document_entry_name": "Discount"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Manufacturing Work Order",
+            "document_entry_name": "Labor Resource Cost"
+        },
+        {
+            "txnSourceId": "300000000122872",
+            "name": "Oracle Fusion Purchasing",
+            "document_name": "Purchase Order",
+            "document_entry_name": "Item Cost"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Transfer Order Delivery",
+            "document_entry_name": "Item Cost"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Transfer Order Delivery",
+            "document_entry_name": "Nonrecoverable Tax"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Maintenance Work Order",
+            "document_entry_name": "Labor Resource Cost"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Maintenance Work Order",
+            "document_entry_name": "Resource Overhead"
+        },
+        {
+            "txnSourceId": "300000049854172",
+            "name": "External Time Entry System",
+            "document_name": "Timecard",
+            "document_entry_name": "Overtime"
+        },
+        {
+            "txnSourceId": "300001778515341",
+            "name": "Petrol",
+            "document_name": "Fuel",
+            "document_entry_name": "Fuel"
+        },
+        {
+            "txnSourceId": "300000215846268",
+            "name": "Oracle Fusion Joint Venture Management",
+            "document_name": "JV Partner Reimbursements",
+            "document_entry_name": "Distribution"
+        },
+        {
+            "txnSourceId": "300000300242984",
+            "name": "PAVAN CO PROJECT SOURCE",
+            "document_name": "PAVAN CO PROJECT DOCUMENT",
+            "document_entry_name": "PAVAN CO USAGES"
+        },
+        {
+            "txnSourceId": "300000300243256",
+            "name": "PAVAN CO ACCOUNTED SOURCE",
+            "document_name": "PAVAN ACCOUNTED",
+            "document_entry_name": "PAVAN CO MISC"
+        },
+        {
+            "txnSourceId": "300000307064252",
+            "name": "OAK_CONVERSION",
+            "document_name": "OAK_CONVERSION",
+            "document_entry_name": "OAK CONVERSION"
+        },
+        {
+            "txnSourceId": "300001488196756",
+            "name": "Retension Labor",
+            "document_name": "Retension Labor",
+            "document_entry_name": "Retension Labor"
+        },
+        {
+            "txnSourceId": "300001699958377",
+            "name": "MMX_Equipments",
+            "document_name": "MMX_Equipments_Document",
+            "document_entry_name": "MMX_Equipments_Document_Entry"
+        },
+        {
+            "txnSourceId": "300000000122835",
+            "name": "Oracle Fusion Payables",
+            "document_name": "Supplier Invoice Commitment",
+            "document_entry_name": "Exchange Rate Variance"
+        },
+        {
+            "txnSourceId": "300001496428281",
+            "name": "PPM Equipment Source",
+            "document_name": "Downtime",
+            "document_entry_name": "Downtime"
+        },
+        {
+            "txnSourceId": "300001496428281",
+            "name": "PPM Equipment Source",
+            "document_name": "PPM Equipment Document",
+            "document_entry_name": "PPM Equipment Document Entry"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Purchase Receipt",
+            "document_entry_name": "Nonrecoverable Tax Inclusive"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Sales Order Issue",
+            "document_entry_name": "Item Cost"
+        },
+        {
+            "txnSourceId": "300000000122872",
+            "name": "Oracle Fusion Purchasing",
+            "document_name": "Purchase Requisition",
+            "document_entry_name": "Nonrecoverable Tax"
+        },
+        {
+            "txnSourceId": "300000000122885",
+            "name": "Oracle Fusion Cost Management",
+            "document_name": "Purchase Receipt",
+            "document_entry_name": "Invoice Price Variance"
+        },
+        {
+            "txnSourceId": "300001699958325",
+            "name": "MMX Equipment Pipe Cutting",
+            "document_name": "MMX Pipe Cutting Document",
+            "document_entry_name": "MMX Pipe Cutting Document entry"
+        }
+    ],
+    "count": 158
+}

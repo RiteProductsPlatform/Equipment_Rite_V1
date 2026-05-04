@@ -1,0 +1,13 @@
+{
+  "root": "callFunctionShowSchedular",
+  "description": "",
+  "actions": {
+    "callFunctionShowSchedular": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "showSchedular"
+      }
+    }
+  }
+}

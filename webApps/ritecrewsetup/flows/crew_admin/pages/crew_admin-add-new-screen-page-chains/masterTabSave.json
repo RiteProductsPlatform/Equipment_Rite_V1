@@ -1,0 +1,89 @@
+{
+  "root": "callFunctionCreatePayloadMasterTab",
+  "description": "",
+  "actions": {
+    "callFunctionCreatePayloadMasterTab": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "createPayloadMasterTab",
+        "params": [
+          "{{ $page.variables.MasterTabObj }}",
+          "{{ $page.variables.AssetsTabObj }}"          ,
+          "{{ $page.variables.ManufacturerTabObj }}"          ,
+          "{{ $page.variables.LocationTabObj }}"          ,
+          "{{ $page.variables.LeasingTabObj }}"          ,
+          "{{ $page.variables.CostingTabObj }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPostGetEquipmentMasterDetail"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPostGetEquipmentMasterDetail.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestPostGetEquipmentMasterDetail": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/postGetEquipmentMasterDetail",
+        "body": "{{ $chain.results.callFunctionCreatePayloadMasterTab }}"
+      },
+      "outcomes": {
+        "success": "callRestGetGetEquipmentMasterDetail",
+        "failure": "fireNotification"
+      }
+    },
+    "fireNotification3": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Equipment Master Data Created",
+        "type": "confirmation",
+        "displayMode": "transient"
+      }
+    },
+    "fireNotification2": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestGetGetEquipmentMasterDetail.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestGetGetEquipmentMasterDetail": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentMasterDetail",
+        "uriParams": {
+          "p_equipment_name": "{{ $chain.results.callFunctionCreatePayloadMasterTab.p_EQUIPMENT_NAME }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesDispAllTabs",
+        "failure": "fireNotification2"
+      }
+    },
+    "assignVariablesDispAllTabs": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.dispAllTabs": {
+          "source": true
+        },
+        "$page.variables.createdEquipID": {
+          "source": "{{ $chain.results.callRestGetGetEquipmentMasterDetail.body.items[0].equipment_id }}"
+        }
+      },
+      "outcomes": {
+        "success": "fireNotification3"
+      }
+    }
+  }
+}

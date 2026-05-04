@@ -1,0 +1,19 @@
+{
+  "title": "material request details",
+  "description": "",
+  "variables": {},
+  "metadata": {},
+  "types": {},
+  "eventListeners": {
+    "vbEnter": {
+      "chains": [
+        {
+          "chain": "PageVbEnterChain"
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {}
+  }
+}

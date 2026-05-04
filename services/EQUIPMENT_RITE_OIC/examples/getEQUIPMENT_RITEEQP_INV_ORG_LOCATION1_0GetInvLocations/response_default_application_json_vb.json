@@ -1,0 +1,102 @@
+{
+    "items": [
+        {
+            "ORGANIZATION_CODE": "R0001",
+            "ORGANIZATION_NAME": "MG125",
+            "ORGANIZATION_ID": "300000009469337",
+            "name": "MG125 Qube Energy",
+            "ADDRESS_LINE_1": "Station",
+            "ADDRESS_LINE_2": "Road",
+            "TOWN_OR_CITY": "Joppa",
+            "POSTAL_CODE": "21085",
+            "COUNTRY": "US",
+            "BUSINESS_UNIT_NAME": "OII_AUS_AUD_BU",
+            "LEGAL_ENTITY": "300000003694171",
+            "LOCATION_ID": "300000009272281"
+        },
+        {
+            "ORGANIZATION_CODE": "R0002",
+            "ORGANIZATION_NAME": "MG162",
+            "ORGANIZATION_ID": "300000009469349",
+            "name": "MG162 Qube Energy",
+            "ADDRESS_LINE_1": "Station",
+            "ADDRESS_LINE_2": "Road",
+            "TOWN_OR_CITY": "Hyderabad",
+            "POSTAL_CODE": "500019",
+            "COUNTRY": "IN",
+            "BUSINESS_UNIT_NAME": "OII_AUS_AUD_BU",
+            "LEGAL_ENTITY": "300000003694171",
+            "LOCATION_ID": "300000009272383"
+        },
+        {
+            "ORGANIZATION_CODE": "R0003",
+            "ORGANIZATION_NAME": "MG224",
+            "ORGANIZATION_ID": "300000009469361",
+            "name": "MG224 Oceaneering Australia",
+            "ADDRESS_LINE_1": "Station",
+            "ADDRESS_LINE_2": "Road",
+            "TOWN_OR_CITY": "Severn",
+            "POSTAL_CODE": "21144",
+            "COUNTRY": "US",
+            "BUSINESS_UNIT_NAME": "OII_AUS_AUD_BU",
+            "LEGAL_ENTITY": "300000003694171",
+            "LOCATION_ID": "300000009272480"
+        },
+        {
+            "ORGANIZATION_CODE": "R0004",
+            "ORGANIZATION_NAME": "MG227",
+            "ORGANIZATION_ID": "300000009469373",
+            "name": "MG227 Qube Energy",
+            "ADDRESS_LINE_1": "Station",
+            "ADDRESS_LINE_2": "Road",
+            "TOWN_OR_CITY": "Cypress",
+            "POSTAL_CODE": "77433",
+            "COUNTRY": "US",
+            "BUSINESS_UNIT_NAME": "OII_AUS_AUD_BU",
+            "LEGAL_ENTITY": "300000003694171",
+            "LOCATION_ID": "300000009272577"
+        },
+        {
+            "ORGANIZATION_CODE": "R0006",
+            "ORGANIZATION_NAME": "ML090",
+            "ORGANIZATION_ID": "300000009469385",
+            "name": "ML090 Woodside Energy, Endurance King Bay Supply Base",
+            "ADDRESS_LINE_1": "Station",
+            "ADDRESS_LINE_2": "Road",
+            "TOWN_OR_CITY": "Wirral",
+            "POSTAL_CODE": "CH46 9QG",
+            "COUNTRY": "GB",
+            "BUSINESS_UNIT_NAME": "OII_AUS_AUD_BU",
+            "LEGAL_ENTITY": "300000003694171",
+            "LOCATION_ID": "300000009272674"
+        },
+        {
+            "ORGANIZATION_CODE": "R0007",
+            "ORGANIZATION_NAME": "ML128",
+            "ORGANIZATION_ID": "300000009469397",
+            "name": "ML128 Woodside Energy",
+            "ADDRESS_LINE_1": "Station",
+            "ADDRESS_LINE_2": "Road",
+            "TOWN_OR_CITY": "Stevensville",
+            "POSTAL_CODE": "21666",
+            "COUNTRY": "US",
+            "BUSINESS_UNIT_NAME": "OII_AUS_AUD_BU",
+            "LEGAL_ENTITY": "300000003694171",
+            "LOCATION_ID": "300000009272771"
+        },
+        {
+            "ORGANIZATION_CODE": "AUPERA",
+            "ORGANIZATION_NAME": "Perth_BUAUS",
+            "ORGANIZATION_ID": "300000003911542",
+            "name": "Perth Australia-Regional Headquarters",
+            "ADDRESS_LINE_1": "Station",
+            "ADDRESS_LINE_2": "Road",
+            "TOWN_OR_CITY": "Humble",
+            "POSTAL_CODE": "77338",
+            "COUNTRY": "US",
+            "BUSINESS_UNIT_NAME": "OII_AUS_AUD_BU",
+            "LEGAL_ENTITY": "300000003694171",
+            "LOCATION_ID": "300000008057851"
+        }
+    ]
+}

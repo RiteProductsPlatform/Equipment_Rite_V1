@@ -1,0 +1,186 @@
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Equipment Inspection " background-color="dark-pebble"
+  description-text='[[ "Equipment Name:"+" "+$variables.selectedrow.equipment_name ]]' primary-action.label="Back"
+  on-sp-primary-action="[[$listeners.ojSpWp1SpPrimaryAction]]">
+
+  <div class="oj-flex oj-sm-flex-direction-column oj-panel oj-panel-shadow-md" style="margin-top:-48px">
+
+
+    <oj-dialog dialog-title="" id="loadingDialog" class="myloader" style="width: 350px">
+      <div slot="body">
+        <div class="oj-flex-item">
+          <span style="font-size:20px;color:#006AA2;font-weight:600;margin-top:-2vh">Loading .....</span>
+          <br />
+          <oj-progress-bar value="-1" class="oj-sm-margin-3x-top"></oj-progress-bar>
+        </div>
+      </div>
+    </oj-dialog>
+    <div class="oj-panel">
+      <div class="oj-flex oj-sm-align-items-center">
+        <span class="oj-ux-ico-file-text" style="font-size:30px; color:#0066CC;"></span>
+        <h6 class="oj-flex-item ">Basic Information</h6>
+      </div>
+
+
+      <oj-validation-group id="headergroup">
+        <oj-form-layout columns="4" max-columns="4" label-edge="top">
+          <oj-input-date label-hint="Inspection Date" required="true" value="{{$variables.pushObj.date}}"
+            converter='{"type": "datetime", "options": {"formatType":"date","dateFormat":"short"}}'>
+          </oj-input-date>
+
+          <oj-input-text label-hint="Inspector Name" readonly="true" value="{{ $application.variables.user }}">
+          </oj-input-text>
+
+          <oj-select-single label-hint="Inspection Type" item-text="inspectiontype" required="true"
+            value="{{$variables.pushObj.type}}" data="[[$variables.inspectionTypeListSDP]]" disabled="true">
+          </oj-select-single>
+        </oj-form-layout>
+      </oj-validation-group>
+
+      <div class="oj-flex oj-sm-align-items-center">
+        <span class="oj-ux-ico-truck" style="font-size:30px; color:#0066CC;"></span>
+        <h6 class="oj-flex-item">Equipment Details</h6>
+      </div>
+      <oj-form-layout columns="4" max-columns="4" label-edge="top">
+        <oj-input-text label-hint="Equipment Class" readonly="true"
+          value="{{ $variables.selectedrow.equipment_resource_class }}">
+        </oj-input-text>
+        <oj-input-text label-hint="Equipment Name" readonly="true" value="{{ $variables.selectedrow.equipment_name }}">
+        </oj-input-text>
+      </oj-form-layout>
+
+      <div class="oj-flex oj-sm-align-items-center">
+        <span class="oj-ux-ico-bank-check" style="font-size:30px; color:#0066CC;"></span>
+        <h6 class="oj-flex-item">Inspection Parameters</h6>
+              <div class="oj-flex-item oj-flex oj-sm-justify-content-flex-end oj-sm-align-items-center">
+        <span style="color:red">Double-tap a record, edit, then click outside to save.</span>
+        </div>
+      </div>
+
+      <div class="oj-panel" style="max-height:400px; overflow:auto;">
+        <!-- <oj-bind-for-each data="[[ $variables.groupedAdp.data ]]">
+          <template data-oj-as="group">
+            <oj-collapsible>
+              <h6 slot="header">
+                <oj-bind-text value="[[ $current.data.section ]]"></oj-bind-text>
+              </h6>
+              <div>
+                <oj-bind-for-each data="[[group.data.items]]">
+                  <template data-oj-as="item">
+                    <oj-form-layout columns="4" max-columns="4" label-edge="top">
+                      <oj-select-single label-hint="[[item.data.check_list_name]]" item-text="data"
+                        value="{{item.data.inspection}}" data="[[ $variables.eqp_cond_adp ]]"
+                        on-value-item-changed="[[$listeners.selectValueItem]]">
+                      </oj-select-single>
+                      <oj-text-area label-hint="Notes" value="{{item.data.notes}}">
+                      </oj-text-area>
+                      <div class="oj-flex">
+                        <div class="oj-flex-item oj-flex oj-sm-flex-direction-column">
+                          <span>
+                          Image Upload
+                        </span>
+                          <div style="margin-top:6px">
+                            <oj-file-picker accept='[".img",".png",".jpeg",".pdf"]' selection-mode="single">
+                              <oj-button slot="trigger" chroming="borderless" display="icons">
+                                <span class="oj-ux-ico-attach-file" slot="startIcon"></span>
+                              </oj-button>
+                            </oj-file-picker>
+                          </div>
+                        </div>
+                      </div>
+                    </oj-form-layout>
+                  </template>
+                </oj-bind-for-each>
+              </div>
+            </oj-collapsible>
+          </template>
+        </oj-bind-for-each> -->
+        <oj-table scroll-policy="loadMoreOnScroll" data="[[ $variables.inspection_adp ]]" display="grid"
+          style="width:92vw" columns='[{"headerText":"Section","field":"section"},
+          {"headerText":"Parameter Name","field":"check_list_name","width":"25rem"},
+          {"headerText":"Parameter Value","field":"inspection_value","template":"inspectiontemp"},{"headerText":"Notes","field":"notes","template":"notes","width":"25rem"},
+          {"headerText":"File Name","field":"file_name","template":"filetemp"}]'
+          on-oj-before-row-edit="[[$listeners.tableBeforeRowEdit]]"
+          on-oj-before-row-edit-end="[[$listeners.tableBeforeRowEditEnd]]"
+          edit-mode="[[ $variables.label!== 'View' ? 'rowEdit' : 'none' ]]">
+
+
+
+
+          <template slot="filetemp" data-oj-as="cell">
+            <oj-bind-if test='[[cell.mode=="navigation"]]'>
+              <div style="display: flex; align-items: center; gap: 1rem;">
+                <span>
+    <oj-bind-text value="[[cell.data]]"></oj-bind-text>
+  </span>
+                <oj-bind-if test='[[ $variables.label !== "View" ]]'>
+                  <oj-file-picker accept='[".img",".png",".jpeg",".pdf"]' selection-mode="single"
+                    on-oj-select="[[$listeners.filePickerSelect]]">
+                    <oj-button slot="trigger" chroming="borderless" display="icons">
+                      <span class="oj-ux-ico-attach-file" slot="startIcon"></span>
+                    </oj-button>
+                  </oj-file-picker>
+                </oj-bind-if>
+              </div>
+
+            </oj-bind-if>
+            <oj-bind-if test='[[cell.mode=="edit"]]'>
+
+            </oj-bind-if>
+          </template>
+
+
+          <template slot="inspectiontemp" data-oj-as="cell">
+            <oj-bind-if test='[[cell.mode=="navigation"]]'>
+              <oj-bind-text value="[[cell.data]]"></oj-bind-text>
+            </oj-bind-if>
+            <oj-bind-if test='[[cell.mode=="edit"]]'>
+              <oj-select-single aria-label="Input Text" value="{{$variables.rowData.inspection_value}}" item-text="data"
+                data="[[ $variables.eqp_cond_adp ]]">
+              </oj-select-single>
+            </oj-bind-if>
+          </template>
+
+          <template slot="notes" data-oj-as="cell">
+            <oj-bind-if test='[[cell.mode=="navigation"]]'>
+              <oj-bind-text value="[[cell.data]]"></oj-bind-text>
+            </oj-bind-if>
+            <oj-bind-if test='[[cell.mode=="edit"]]'>
+
+
+              <oj-text-area aria-label="Text" value="{{$variables.rowData.notes}}">
+
+              </oj-text-area>
+            </oj-bind-if>
+          </template>
+
+        </oj-table>
+
+
+
+      </div>
+      <oj-bind-if test='[[ $variables.label !== "View" ]]'>
+        <oj-checkboxset on-value-changed="[[$listeners.checkboxSetValue]]">
+          <oj-option value="certify">I certify that this inspection is complete and accurate</oj-option>
+        </oj-checkboxset>
+
+        <div class="oj-flex oj-sm-justify-content-flex-end">
+
+          <oj-toolbar>
+
+            <!-- <oj-button label="Save As Draft" chroming="outlined" class="oj-button-sm"></oj-button> -->
+            <oj-button label="Save and ship out" chroming="callToAction" class="oj-button-sm"
+              on-oj-action="[[$listeners.buttonAction]]" disabled="[[ !$variables.certifyArray.length > 0 ]]">
+            </oj-button>
+
+          </oj-toolbar>
+
+        </div>
+      </oj-bind-if>
+    </div>
+  </div>
+
+</oj-sp-welcome-page>

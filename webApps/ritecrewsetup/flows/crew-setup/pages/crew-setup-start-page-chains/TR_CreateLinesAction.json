@@ -1,0 +1,175 @@
+{
+  "root": "callFunctionValidateGroup",
+  "description": "",
+  "actions": {
+
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Failed to Create resource",
+        "type": "error",
+        "displayMode": "transient"
+      }
+    },
+    "callRestPostGetCrewSetUpLines": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/postGetCrewSetUpLines",
+        "body": "{{ $page.variables.linesObj }}"
+      },
+      "outcomes": {
+        "success": "fireNotification3",
+        "failure": "fireNotification"
+      }
+    },
+    "fireNotification3": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Resource Added Successfully",
+        "displayMode": "transient",
+        "type": "confirmation"
+      },
+      "outcomes": {
+        "success": "callChainFetchHeadersLines"
+      }
+    },
+    "callFunctionDateFormatter": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dateFormatter",
+        "params": [
+          "{{ $page.variables.linesObj.effective_start_date_copy }}",
+          "{{ $page.variables.linesObj.effective_end_date_copy }}",
+          "{{ $page.variables.crewSetupHeaderObj.start_date }}"          ,
+          "{{ $page.variables.crewSetupHeaderObj.end_date }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesLinesObj"
+      }
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callFunctionTimeValidator.isValid ]]"
+      },
+      "outcomes": {
+        "true": "callFunctionDateFormatter",
+        "false": "fireNotification4"
+      }
+    },
+    "callFunctionTimeValidator": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "timeValidator",
+        "params": [
+          "{{ $page.variables.linesObj }}"
+        ]
+      },
+      "outcomes": {
+        "success": "if"
+      }
+    },
+    "callFunctionValidateGroup": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "validateGroup",
+        "params": [
+          "linesvalGroup"
+        ]
+      },
+      "outcomes": {
+        "success": "if3"
+      }
+    },
+    "if3": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callFunctionValidateGroup === 'valid' ]]"
+      },
+      "outcomes": {
+        "true": "callFunctionTimeValidator"
+      }
+    },
+    "assignVariablesLinesObj": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.linesObj": {
+          "source": {
+            "last_updated_date": "{{ $chain.results.callFunctionDateFormatter.sysdate }}",
+            "last_updated_by": "{{ $application.user.email }}",
+            "created_by": "{{ $application.user.email }}",
+            "effective_end_date": "{{ $chain.results.callFunctionDateFormatter.endDate }}",
+            "effective_start_date": "{{ $chain.results.callFunctionDateFormatter.startDate }}",
+            "po": "{{ \"\" }}",
+            "po_line": "{{ \"\" }}",
+            "crewsetup_id": "{{ $page.variables.crewSetupHeaderObj.crewsetup_id }}",
+            "customer_id": "{{ $page.variables.crewSetupHeaderObj.customer_id }}",
+            "contract_id": "{{ $page.variables.crewSetupHeaderObj.contract_id }}",
+            "resource_type": "EMPLOYEE",
+            "time_entry_mode": "CREATE",
+            "active_flag": "Y",
+            "assignment_number": "{{ \"E\"+ $page.variables.linesObj.resource_number }}",
+            "creation_date": "{{ $chain.results.callFunctionDateFormatter.sysdate }}",
+            "end_date": "{{ $chain.results.callFunctionDateFormatter.hend }}",
+            "start_date": "{{ $chain.results.callFunctionDateFormatter.hstart }}"
+          },
+          "auto": "always",
+          "reset": "none"
+        }
+      },
+      "outcomes": {
+        "success": "callRestPostGetCrewSetUpLines"
+      }
+    },
+    "fireNotification4": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callFunctionValidateGroup.msg ]]",
+        "displayMode": "transient"
+      }
+    },
+    "resetVariablesLinesObj": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.linesObj"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPostCREATEPROJECTRESFROMUI1Add"
+      }
+    },
+    "callComponentResourceDialogClose": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('resourceDialog') }}",
+        "method": "close"
+      },
+      "outcomes": {
+        "success": "resetVariablesLinesObj"
+      }
+    },
+    "callChainFetchHeadersLines": {
+      "module": "vb/action/builtin/callChainAction",
+      "parameters": {
+        "id": "TR_FetchHeadersLines"
+      },
+      "outcomes": {
+        "success": "callComponentResourceDialogClose"
+      }
+    },
+    "callRestPostCREATEPROJECTRESFROMUI1Add": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "icsEndpoint/postCREATEPROJECTRES_FROMUI1_0Add"
+      }
+    }
+  }
+}

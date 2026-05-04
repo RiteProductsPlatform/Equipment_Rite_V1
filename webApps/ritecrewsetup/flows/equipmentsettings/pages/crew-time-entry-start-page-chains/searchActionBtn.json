@@ -1,0 +1,51 @@
+{
+  "root": "resetVariablesProjectBasedTimesheetADP",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestGetEquipAssignmentData.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestGetEquipAssignmentData": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getEquipAssignmentData",
+        "uriParams": {
+          "p_project_number": "{{ $page.variables.searchobj.timecrew }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesProjectBasedTimesheetADP",
+        "failure": "fireNotification"
+      }
+    },
+    "assignVariablesProjectBasedTimesheetADP": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.projectBasedTimesheetADP": {
+          "source": {
+            "data": "{{ $chain.results.callRestGetEquipAssignmentData.body.items }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      }
+    },
+    "resetVariablesProjectBasedTimesheetADP": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.projectBasedTimesheetADP"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestGetEquipAssignmentData"
+      }
+    }
+  }
+}

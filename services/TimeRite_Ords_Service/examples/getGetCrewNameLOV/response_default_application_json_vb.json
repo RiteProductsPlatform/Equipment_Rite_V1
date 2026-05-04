@@ -1,0 +1,30 @@
+{
+    "items": [
+        {
+            "crewsetup_id": 132,
+            "crew_name": "AR CREW Quant"
+        },
+        {
+            "crewsetup_id": 131,
+            "crew_name": "AR CREW 1"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 2,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getCrewNameLOV"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getCrewNameLOV"
+        }
+    ]
+}

@@ -1,0 +1,754 @@
+{
+    "items": [
+        {
+            "asset_id": "100000076792019",
+            "asset_number": "100000076791147",
+            "name": "TT TEST JIG CLASS 1-4",
+            "parent_asset_number": "100000082176844"
+        },
+        {
+            "asset_id": "100000082248848",
+            "asset_number": "EMMAASSETNOV13",
+            "name": "CYLINDER ASSY HYDR TESTED DVLRS 250/125 - 1397 W/ CB VALVES",
+            "parent_asset_number": "EMMASVERYCOOLASSET001"
+        },
+        {
+            "asset_id": "300000027382448",
+            "asset_number": "EMMAASSETNOV14COPYOF13",
+            "name": "CYLINDER ASSY HYDR TESTED DVLRS 250/125 - 1397 W/ CB VALVES",
+            "parent_asset_number": "EMMASVERYCOOLASSET001"
+        },
+        {
+            "asset_id": "100000082177296",
+            "asset_number": "100000082176803",
+            "name": "EHPU",
+            "parent_asset_number": "ML128"
+        },
+        {
+            "asset_id": "100000082177330",
+            "asset_number": "100000082176837",
+            "name": "MAGNUM 224",
+            "parent_asset_number": "MG224"
+        },
+        {
+            "asset_id": "100000085399945",
+            "asset_number": "100000085399943",
+            "name": "KARAN TEST ASSET 002",
+            "parent_asset_number": "KARANASSET001"
+        },
+        {
+            "asset_id": "100000085399945",
+            "asset_number": "100000085399943",
+            "name": "KARAN TEST ASSET 002",
+            "parent_asset_number": "KARANASSET004"
+        },
+        {
+            "asset_id": "100000082177368",
+            "asset_number": "100000082176875",
+            "name": "EHPU",
+            "parent_asset_number": "MG227"
+        },
+        {
+            "asset_id": "100000082177370",
+            "asset_number": "100000082176877",
+            "name": "APU",
+            "parent_asset_number": "ML128"
+        },
+        {
+            "asset_id": "100000082177374",
+            "asset_number": "100000082176881",
+            "name": "SURFACE XFMR HV",
+            "parent_asset_number": "MG224"
+        },
+        {
+            "asset_id": "100000082177419",
+            "asset_number": "100000082176926",
+            "name": "SURFACE XFMR HV",
+            "parent_asset_number": "ML128"
+        },
+        {
+            "asset_id": "100000082177151",
+            "asset_number": "100000082176656",
+            "name": "ARM",
+            "parent_asset_number": "100000082176650"
+        },
+        {
+            "asset_id": "100000082177158",
+            "asset_number": "100000082176664",
+            "name": "MILLENNIUM 128",
+            "parent_asset_number": "ML128"
+        },
+        {
+            "asset_id": "100000082177164",
+            "asset_number": "100000082176670",
+            "name": "ARM",
+            "parent_asset_number": "100000082176966"
+        },
+        {
+            "asset_id": "100000082177182",
+            "asset_number": "100000082176689",
+            "name": "WINCH DRUM",
+            "parent_asset_number": "100000082176749"
+        },
+        {
+            "asset_id": "100000082177490",
+            "asset_number": "100000082176998",
+            "name": "SKID",
+            "parent_asset_number": "100000082176664"
+        },
+        {
+            "asset_id": "100000082177529",
+            "asset_number": "100000082177037",
+            "name": "ARM",
+            "parent_asset_number": "MG125"
+        },
+        {
+            "asset_id": "100000076792166",
+            "asset_number": "100000076791294",
+            "name": "Super Class 1-4 Torque Tool",
+            "parent_asset_number": "KARANASSET001"
+        },
+        {
+            "asset_id": "100000076792039",
+            "asset_number": "100000076791167",
+            "name": "18.75 FX HDRAULIC WELLHEAD CLT",
+            "parent_asset_number": "100000076791161"
+        },
+        {
+            "asset_id": "100000082177262",
+            "asset_number": "100000082176769",
+            "name": "SURFACE GUIDE",
+            "parent_asset_number": "MG162"
+        },
+        {
+            "asset_id": "100000082177279",
+            "asset_number": "100000082176786",
+            "name": "BULLET",
+            "parent_asset_number": "MG162"
+        },
+        {
+            "asset_id": "100000082177353",
+            "asset_number": "100000082176860",
+            "name": "WINCH",
+            "parent_asset_number": "MG224"
+        },
+        {
+            "asset_id": "100000082177364",
+            "asset_number": "100000082176871",
+            "name": "ARM",
+            "parent_asset_number": "100000082177050"
+        },
+        {
+            "asset_id": "100000086144647",
+            "asset_number": "100000086144647",
+            "name": "FEMALE COUPLING NITRONIC50HS UO-4-B-134-PK-PK2-C510-B",
+            "parent_asset_number": "100000092432363"
+        },
+        {
+            "asset_id": "100000082177057",
+            "asset_number": "100000082176562",
+            "name": "LEVELWIND",
+            "parent_asset_number": "MG227"
+        },
+        {
+            "asset_id": "100000082177381",
+            "asset_number": "100000082176888",
+            "name": "SURFACE XFMR HV",
+            "parent_asset_number": "MG125"
+        },
+        {
+            "asset_id": "100000082177159",
+            "asset_number": "100000082176665",
+            "name": "WINCH",
+            "parent_asset_number": "MG162"
+        },
+        {
+            "asset_id": "100000082177175",
+            "asset_number": "100000082176682",
+            "name": "APU",
+            "parent_asset_number": "MG227"
+        },
+        {
+            "asset_id": "100000082177201",
+            "asset_number": "100000082176708",
+            "name": "TMS",
+            "parent_asset_number": "ML128"
+        },
+        {
+            "asset_id": "100000082177529",
+            "asset_number": "100000082177037",
+            "name": "ARM",
+            "parent_asset_number": "100000082176602"
+        },
+        {
+            "asset_id": "100000082177233",
+            "asset_number": "100000082176740",
+            "name": "A-Frame",
+            "parent_asset_number": "MG227"
+        },
+        {
+            "asset_id": "100000076792150",
+            "asset_number": "100000076791278",
+            "name": "17D-Class 1-4 Torque Analyzer",
+            "parent_asset_number": "100000076791147"
+        },
+        {
+            "asset_id": "100000082177258",
+            "asset_number": "100000082176765",
+            "name": "SURFACE GUIDE",
+            "parent_asset_number": "100000082176785"
+        },
+        {
+            "asset_id": "100000082177264",
+            "asset_number": "100000082176771",
+            "name": "WINCH DRUM",
+            "parent_asset_number": "100000082176666"
+        },
+        {
+            "asset_id": "100000082177274",
+            "asset_number": "100000082176781",
+            "name": "CONTROL VAN",
+            "parent_asset_number": "MG125"
+        },
+        {
+            "asset_id": "100000085399946",
+            "asset_number": "100000085399944",
+            "name": "KARAN TEST ASSET 003",
+            "parent_asset_number": "KARANASSET001"
+        },
+        {
+            "asset_id": "100000085399946",
+            "asset_number": "100000085399944",
+            "name": "KARAN TEST ASSET 003",
+            "parent_asset_number": "100000085399943"
+        },
+        {
+            "asset_id": "100000086144648",
+            "asset_number": "100000086144648",
+            "name": "FEMALE COUPLING NITRONIC50HS UO-4-B-134-PK-PK2-C510-B",
+            "parent_asset_number": "100000092432363"
+        },
+        {
+            "asset_id": "100000086144650",
+            "asset_number": "100000086144650",
+            "name": "FEMALE COUPLING NITRONIC50HS UO-4-B-134-PK-PK2-C510-B",
+            "parent_asset_number": "100000092432363"
+        },
+        {
+            "asset_id": "100000082177420",
+            "asset_number": "100000082176927",
+            "name": "CONTROL VAN",
+            "parent_asset_number": "ML128"
+        },
+        {
+            "asset_id": "100000082177136",
+            "asset_number": "100000082176641",
+            "name": "TMS",
+            "parent_asset_number": "MG125"
+        },
+        {
+            "asset_id": "100000082177154",
+            "asset_number": "100000082176659",
+            "name": "LEVELWIND",
+            "parent_asset_number": "MG224"
+        },
+        {
+            "asset_id": "100000082177154",
+            "asset_number": "100000082176659",
+            "name": "LEVELWIND",
+            "parent_asset_number": "100000082176860"
+        },
+        {
+            "asset_id": "100000082177449",
+            "asset_number": "100000082176956",
+            "name": "UMBILICAL",
+            "parent_asset_number": "100000082176894"
+        },
+        {
+            "asset_id": "100000082177190",
+            "asset_number": "100000082176697",
+            "name": "SHEAVE WHEEL",
+            "parent_asset_number": "MG162"
+        },
+        {
+            "asset_id": "100000082177242",
+            "asset_number": "100000082176749",
+            "name": "WINCH",
+            "parent_asset_number": "MG125"
+        },
+        {
+            "asset_id": "100000092423270",
+            "asset_number": "100000092423270",
+            "name": "SOCKET SCREW DIN912 UNS-N07718 M10x90",
+            "parent_asset_number": "100000092408567"
+        },
+        {
+            "asset_id": "100000076792166",
+            "asset_number": "100000076791294",
+            "name": "Super Class 1-4 Torque Tool",
+            "parent_asset_number": "KARANASSET004"
+        },
+        {
+            "asset_id": "100000086144649",
+            "asset_number": "100000086144649",
+            "name": "FEMALE COUPLING NITRONIC50HS UO-4-B-134-PK-PK2-C510-B",
+            "parent_asset_number": "100000092432363"
+        },
+        {
+            "asset_id": "100000082177387",
+            "asset_number": "100000082176894",
+            "name": "WINCH DRUM",
+            "parent_asset_number": "100000082176865"
+        },
+        {
+            "asset_id": "100000082177144",
+            "asset_number": "100000082176649",
+            "name": "SURFACE XFMR HV",
+            "parent_asset_number": "MG227"
+        },
+        {
+            "asset_id": "100000082177157",
+            "asset_number": "100000082176663",
+            "name": "APU",
+            "parent_asset_number": "MG162"
+        },
+        {
+            "asset_id": "100000082177442",
+            "asset_number": "100000082176949",
+            "name": "UMBILICAL",
+            "parent_asset_number": "100000082176883"
+        },
+        {
+            "asset_id": "100000082177453",
+            "asset_number": "100000082176960",
+            "name": "17D-Class 1-4 Torque Analyzer",
+            "parent_asset_number": "100000082176844"
+        },
+        {
+            "asset_id": "100000082177453",
+            "asset_number": "100000082176960",
+            "name": "17D-Class 1-4 Torque Analyzer",
+            "parent_asset_number": "AMANDAASSET2"
+        },
+        {
+            "asset_id": "100000082177460",
+            "asset_number": "100000082176967",
+            "name": "WINCH DRUM",
+            "parent_asset_number": "100000082176855"
+        },
+        {
+            "asset_id": "100000082177178",
+            "asset_number": "100000082176685",
+            "name": "WORK VAN",
+            "parent_asset_number": "ML128"
+        },
+        {
+            "asset_id": "100000082177289",
+            "asset_number": "100000082176796",
+            "name": "UMBILICAL",
+            "parent_asset_number": "100000082176950"
+        },
+        {
+            "asset_id": "100000082177421",
+            "asset_number": "100000082176928",
+            "name": "TMS",
+            "parent_asset_number": "ML090"
+        },
+        {
+            "asset_id": "100000098527419",
+            "asset_number": "100000098527419",
+            "name": "DUMMY PLUG API-17H DUAL PORT",
+            "parent_asset_number": "100000098583222"
+        },
+        {
+            "asset_id": "100000094212134",
+            "asset_number": "100000094212134",
+            "name": "HCV151.11.11.12-3.2 AISI316",
+            "parent_asset_number": "100000094212308"
+        },
+        {
+            "asset_id": "100000099167522",
+            "asset_number": "100000099167522",
+            "name": "DUMMY PLUG API-17H DUAL PORT",
+            "parent_asset_number": "100000099169407"
+        },
+        {
+            "asset_id": "100000099167522",
+            "asset_number": "100000099167522",
+            "name": "DUMMY PLUG API-17H DUAL PORT",
+            "parent_asset_number": "100000099169410"
+        },
+        {
+            "asset_id": "100000076792038",
+            "asset_number": "100000076791166",
+            "name": "18.75 FX HDRAULIC WELLHEAD CLT",
+            "parent_asset_number": "100000076791161"
+        },
+        {
+            "asset_id": "100000078303502",
+            "asset_number": "100000078295004",
+            "name": "Pump Eaton.420 C Mount S 80 CC",
+            "parent_asset_number": "100000078295380"
+        },
+        {
+            "asset_id": "100000078303502",
+            "asset_number": "100000078295004",
+            "name": "Pump Eaton.420 C Mount S 80 CC",
+            "parent_asset_number": "100000078295005"
+        },
+        {
+            "asset_id": "100000082177255",
+            "asset_number": "100000082176762",
+            "name": "WORK VAN",
+            "parent_asset_number": "MG125"
+        },
+        {
+            "asset_id": "100000082177258",
+            "asset_number": "100000082176765",
+            "name": "SURFACE GUIDE",
+            "parent_asset_number": "ML090"
+        },
+        {
+            "asset_id": "100000082177280",
+            "asset_number": "100000082176787",
+            "name": "ARM",
+            "parent_asset_number": "100000082177050"
+        },
+        {
+            "asset_id": "100000082177356",
+            "asset_number": "100000082176863",
+            "name": "ARM",
+            "parent_asset_number": "100000082176664"
+        },
+        {
+            "asset_id": "100000082177357",
+            "asset_number": "100000082176864",
+            "name": "ARM",
+            "parent_asset_number": "100000082176730"
+        },
+        {
+            "asset_id": "100000082177148",
+            "asset_number": "100000082176653",
+            "name": "SKID",
+            "parent_asset_number": "100000082176730"
+        },
+        {
+            "asset_id": "100000082177152",
+            "asset_number": "100000082176657",
+            "name": "A-Frame",
+            "parent_asset_number": "MG224"
+        },
+        {
+            "asset_id": "100000082177479",
+            "asset_number": "100000082176987",
+            "name": "LEVELWIND",
+            "parent_asset_number": "100000082177051"
+        },
+        {
+            "asset_id": "100000082177177",
+            "asset_number": "100000082176684",
+            "name": "A-Frame",
+            "parent_asset_number": "ML128"
+        },
+        {
+            "asset_id": "100000082177212",
+            "asset_number": "100000082176719",
+            "name": "ARM",
+            "parent_asset_number": "100000082176966"
+        },
+        {
+            "asset_id": "100000082177247",
+            "asset_number": "100000082176754",
+            "name": "WINCH DRUM",
+            "parent_asset_number": "100000082176665"
+        },
+        {
+            "asset_id": "100000082177153",
+            "asset_number": "100000082176658",
+            "name": "EHPU",
+            "parent_asset_number": "MG224"
+        },
+        {
+            "asset_id": "100000078303503",
+            "asset_number": "100000078295005",
+            "name": "Pump Eaton.420 C Mount S 80 CC",
+            "parent_asset_number": "100000078295380"
+        },
+        {
+            "asset_id": "300000016790688",
+            "asset_number": "KARANASSET001",
+            "name": "Test Asset for SIT2",
+            "parent_asset_number": "KARANASSET004"
+        },
+        {
+            "asset_id": "100000082177259",
+            "asset_number": "100000082176766",
+            "name": "UMBILICAL",
+            "parent_asset_number": "100000082176855"
+        },
+        {
+            "asset_id": "100000082177352",
+            "asset_number": "100000082176859",
+            "name": "CONTROL VAN",
+            "parent_asset_number": "MG224"
+        },
+        {
+            "asset_id": "100000082177418",
+            "asset_number": "100000082176925",
+            "name": "LEVELWIND",
+            "parent_asset_number": "ML128"
+        },
+        {
+            "asset_id": "100000082177143",
+            "asset_number": "100000082176648",
+            "name": "APU",
+            "parent_asset_number": "MG125"
+        },
+        {
+            "asset_id": "100000082177150",
+            "asset_number": "100000082176655",
+            "name": "BULLET",
+            "parent_asset_number": "ML090"
+        },
+        {
+            "asset_id": "100000082177444",
+            "asset_number": "100000082176951",
+            "name": "LEVELWIND",
+            "parent_asset_number": "MG162"
+        },
+        {
+            "asset_id": "100000082177479",
+            "asset_number": "100000082176987",
+            "name": "LEVELWIND",
+            "parent_asset_number": "ML090"
+        },
+        {
+            "asset_id": "100000082177167",
+            "asset_number": "100000082176673",
+            "name": "UMBILICAL",
+            "parent_asset_number": "100000082176754"
+        },
+        {
+            "asset_id": "100000082177282",
+            "asset_number": "100000082176789",
+            "name": "ARM",
+            "parent_asset_number": "100000082176730"
+        },
+        {
+            "asset_id": "100000082177351",
+            "asset_number": "100000082176858",
+            "name": "WORK VAN",
+            "parent_asset_number": "MG224"
+        },
+        {
+            "asset_id": "100000082177358",
+            "asset_number": "100000082176865",
+            "name": "WINCH",
+            "parent_asset_number": "MG227"
+        },
+        {
+            "asset_id": "100000082177369",
+            "asset_number": "100000082176876",
+            "name": "CONTROL VAN",
+            "parent_asset_number": "MG227"
+        },
+        {
+            "asset_id": "100000082177421",
+            "asset_number": "100000082176928",
+            "name": "TMS",
+            "parent_asset_number": "100000082177051"
+        },
+        {
+            "asset_id": "100000092423268",
+            "asset_number": "100000092423268",
+            "name": "FLOW VALVE CTV-LF-15K/10K+",
+            "parent_asset_number": "100000092408567"
+        },
+        {
+            "asset_id": "100000076792119",
+            "asset_number": "100000076791247",
+            "name": "HP Jetting Pump Dynaset 520",
+            "parent_asset_number": "100000076791251"
+        },
+        {
+            "asset_id": "100000082177355",
+            "asset_number": "100000082176862",
+            "name": "ARM",
+            "parent_asset_number": "100000082176837"
+        },
+        {
+            "asset_id": "100000082177359",
+            "asset_number": "100000082176866",
+            "name": "UMBILICAL",
+            "parent_asset_number": "100000082176689"
+        },
+        {
+            "asset_id": "100000082177371",
+            "asset_number": "100000082176878",
+            "name": "WORK VAN",
+            "parent_asset_number": "MG227"
+        },
+        {
+            "asset_id": "100000082177161",
+            "asset_number": "100000082176667",
+            "name": "SKID",
+            "parent_asset_number": "100000082176837"
+        },
+        {
+            "asset_id": "100000082177446",
+            "asset_number": "100000082176953",
+            "name": "ARM",
+            "parent_asset_number": "100000082176837"
+        },
+        {
+            "asset_id": "100000082177456",
+            "asset_number": "100000082176963",
+            "name": "EHPU",
+            "parent_asset_number": "100000082176785"
+        },
+        {
+            "asset_id": "100000082177223",
+            "asset_number": "100000082176730",
+            "name": "MAGNUM 162",
+            "parent_asset_number": "MG162"
+        },
+        {
+            "asset_id": "100000082177543",
+            "asset_number": "100000082177051",
+            "name": "APU",
+            "parent_asset_number": "ML090"
+        },
+        {
+            "asset_id": "100000092394244",
+            "asset_number": "100000092394244",
+            "name": "SPINDLE 25CR-DUPLEX  183x13.55",
+            "parent_asset_number": "100000092395282"
+        },
+        {
+            "asset_id": "300000052731579",
+            "asset_number": "AMANDAASSET2",
+            "name": "AMANDAASSET2",
+            "parent_asset_number": "100000082176844"
+        },
+        {
+            "asset_id": "100000076792022",
+            "asset_number": "100000076791150",
+            "name": "TT TEST JIG CLASS 1-4",
+            "parent_asset_number": "100000076791251"
+        },
+        {
+            "asset_id": "100000076792038",
+            "asset_number": "100000076791166",
+            "name": "18.75 FX HDRAULIC WELLHEAD CLT",
+            "parent_asset_number": "100000076791167"
+        },
+        {
+            "asset_id": "100000082248848",
+            "asset_number": "EMMAASSETNOV13",
+            "name": "CYLINDER ASSY HYDR TESTED DVLRS 250/125 - 1397 W/ CB VALVES",
+            "parent_asset_number": "EMMAASSETNOV14COPYOF13"
+        },
+        {
+            "asset_id": "100000082177278",
+            "asset_number": "100000082176785",
+            "name": "SHEAVE WHEEL",
+            "parent_asset_number": "ML090"
+        },
+        {
+            "asset_id": "100000082177290",
+            "asset_number": "100000082176797",
+            "name": "ARM",
+            "parent_asset_number": "100000082176650"
+        },
+        {
+            "asset_id": "100000082177325",
+            "asset_number": "100000082176832",
+            "name": "APU",
+            "parent_asset_number": "MG224"
+        },
+        {
+            "asset_id": "100000082177097",
+            "asset_number": "100000082176602",
+            "name": "MAGNUM 125",
+            "parent_asset_number": "MG125"
+        },
+        {
+            "asset_id": "100000082177376",
+            "asset_number": "100000082176883",
+            "name": "WINCH DRUM",
+            "parent_asset_number": "100000082176860"
+        },
+        {
+            "asset_id": "100000082177108",
+            "asset_number": "100000082176613",
+            "name": "TMS",
+            "parent_asset_number": "MG227"
+        },
+        {
+            "asset_id": "100000082177145",
+            "asset_number": "100000082176650",
+            "name": "MILLENNIUM 090",
+            "parent_asset_number": "ML090"
+        },
+        {
+            "asset_id": "100000082177147",
+            "asset_number": "100000082176652",
+            "name": "ARM",
+            "parent_asset_number": "100000082176602"
+        },
+        {
+            "asset_id": "100000082177450",
+            "asset_number": "100000082176957",
+            "name": "ARM",
+            "parent_asset_number": "100000082176664"
+        },
+        {
+            "asset_id": "100000082177456",
+            "asset_number": "100000082176963",
+            "name": "EHPU",
+            "parent_asset_number": "ML090"
+        },
+        {
+            "asset_id": "100000082177459",
+            "asset_number": "100000082176966",
+            "name": "MAGNUM 227",
+            "parent_asset_number": "MG227"
+        },
+        {
+            "asset_id": "100000082177180",
+            "asset_number": "100000082176687",
+            "name": "TMS",
+            "parent_asset_number": "MG224"
+        },
+        {
+            "asset_id": "100000082177491",
+            "asset_number": "100000082176999",
+            "name": "SKID",
+            "parent_asset_number": "100000082176650"
+        },
+        {
+            "asset_id": "100000082177545",
+            "asset_number": "100000082177053",
+            "name": "TMS",
+            "parent_asset_number": "MG162"
+        },
+        {
+            "asset_id": "100000091042232",
+            "asset_number": "100000091042232",
+            "name": "ROUND BAR  UNS-S32750 25",
+            "parent_asset_number": "100000089545107"
+        },
+        {
+            "asset_id": "100000092456861",
+            "asset_number": "100000092456861",
+            "name": "CTV-LF-15K MASTER",
+            "parent_asset_number": "100000092432363"
+        },
+        {
+            "asset_id": "100000092423272",
+            "asset_number": "100000092423272",
+            "name": "PROXIMITY SWITCH AISI304 NBB0,6-4GM22-E2",
+            "parent_asset_number": "100000092408567"
+        }
+    ]
+}

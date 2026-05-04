@@ -1,0 +1,125 @@
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.responsive-padding="on" background-color="dark-pebble" page-title="Rental Quote"
+  description-text="[[ 'Reservation Number: ' + $flow.variables.rentalReservationNumber ]]">
+
+    <div class="oj-flex oj-sm-flex-wrap-nowrap"
+     style="height:100vh;  overflow-y: auto;">
+     <div class= "oj-md-margin-3x oj-flex-item oj-sm-12 oj-md-7">
+      <div class="oj-panel oj-panel-shadow-lg oj-md-margin-3x" style="flex:1; overflow-y:auto;">
+         <div
+           style="background: linear-gradient(145deg, #0f2027, #203a43, #2c5364); padding: 12px 16px; border-radius: 6px; font-weight: bold; font-size: 1.25em; margin-bottom: 16px;"
+           class="oj-color-invert">Customer Information</div>
+        <oj-form-layout class="oj-formlayout-full-width oj-md-margin-3x" max-columns="2" columns="2">
+          <oj-select-single label-hint="Customer Number" class="oj-md-padding-3x"></oj-select-single>
+          <oj-select-single label-hint="Customer Name" class="oj-md-padding-3x"></oj-select-single>
+        </oj-form-layout>
+        <div class="oj-flex">
+          <div class="oj-divider-top oj-flex-item oj-sm-12 oj-md-12"></div>
+        </div>
+        <div class="oj-flex">
+          <div class="oj-flex-item oj-sm-12 oj-md-12">
+            <oj-form-layout columns="2" max-columns="2">
+              <oj-input-text class="oj-md-padding-3x"
+                label-hint="Company Name" required="true" clear-icon="always"></oj-input-text>
+              <oj-input-text label-hint="Contact Name" class="oj-md-padding-3x" required="true" clear-icon="always"></oj-input-text>
+              <oj-input-text label-hint="Email Address" class="oj-md-padding-3x" required="true" clear-icon="always"></oj-input-text>
+              <oj-input-text label-hint="Mobile" class="oj-md-padding-3x" required="true" clear-icon="always"></oj-input-text>
+            </oj-form-layout>
+          </div>
+        </div>
+        <div class="oj-flex">
+          <div class="oj-flex-item oj-sm-12 oj-md-12">
+            <oj-form-layout class="oj-formlayout-full-width">
+              <oj-input-text label-hint="Street Address" clear-icon="always" class="oj-md-padding-3x"></oj-input-text>
+            </oj-form-layout>
+          </div>
+        </div>
+        <div class="oj-flex">
+          <div class="oj-flex-item oj-sm-12 oj-md-12">
+            <oj-form-layout columns="3" max-columns="3" class="oj-formlayout-full-width">
+              <oj-input-text label-hint="City" class="oj-md-padding-3x"></oj-input-text>
+              <oj-input-text label-hint="State" class="oj-md-padding-3x"></oj-input-text>
+              <oj-input-text label-hint="Zip" class="oj-md-padding-3x"></oj-input-text>
+            </oj-form-layout>
+          </div>
+        </div>
+      </div>
+            <div class="oj-panel oj-flex-item oj-md-margin-3x  " style="flex:1; overflow-y:auto;">
+                 <div
+           style="background: linear-gradient(145deg, #0f2027, #203a43, #2c5364); padding: 12px 16px; border-radius: 6px; font-weight: bold; font-size: 1.25em; margin-bottom: 16px;"
+           class="oj-color-invert">Equipments Reserved</div>
+
+<oj-bind-for-each data="[[ $variables.reservedEquipment.data ]]">
+  <template>
+    <!-- Responsive flex item: full width on phones, 4-col on desktop -->
+    <div class="oj-flex-item oj-sm-12 oj-md-12 oj-lg-12" style = "border-bottom:1px solid black;">
+      <oj-card class="oj-bg-neutral-0 oj-rounded-2xl oj-shadow-md oj-sm-padding-3x">
+        <!-- Header -->
+        <div class="oj-flex oj-sm-justify-content-between">
+  <h3 class="oj-typography-subheading-sm">
+  <oj-bind-text value="[[ $current.data.equipment_name ]]"></oj-bind-text>
+</h3>
+          <!-- Status chip -->
+          <oj-chip
+            chroming="borderless"
+            size="sm"
+            style="background-color:#e8f4ff;">
+            <oj-bind-text value="[[ $current.data.status ]]"></oj-bind-text>
+          </oj-chip>
+        </div>
+
+        <!-- Body -->
+<p class="oj-typography-body-sm oj-text-color-secondary">
+  <b>#</b>
+  <oj-bind-text value="[[ $current.data.equipment_number ]]"></oj-bind-text>
+  &nbsp;|&nbsp;
+  <b>Class:</b>
+  <oj-bind-text value="[[ $current.data.equipment_class ]]"></oj-bind-text>
+</p>
+
+
+
+<p class="oj-typography-body-sm">
+  <b>Type:</b>
+  <oj-bind-text value="[[ $current.data.equipment_type ]]"></oj-bind-text><br/>
+        </p>
+
+        <!-- Footer -->
+
+  <div>
+    <span class="oj-typography-caption" style="background:none; padding:0; margin-left:15px;">
+      <b>Start Date: </b>
+      <oj-bind-text value="[[ $current.data.start_date ]]"></oj-bind-text>
+    </span>
+    <span class="">
+      <b>End Date: </b>
+      <oj-bind-text value="[[ $current.data.end_date ]]"></oj-bind-text>
+    </span>
+  </div>
+
+
+      </oj-card>
+    </div>
+  </template>
+</oj-bind-for-each>
+      </div>
+                  <div class="oj-panel oj-flex-item oj-md-margin-3x  " style="flex:1; overflow-y:auto;">
+                 <div
+           style="background: linear-gradient(145deg, #0f2027, #203a43, #2c5364); padding: 12px 16px; border-radius: 6px; font-weight: bold; font-size: 1.25em; margin-bottom: 16px;"
+           class="oj-color-invert">Terms and Conditions</div>
+        <div class="oj-flex"></div>
+      </div>
+      </div>
+      <div class="oj-panel oj-flex-item oj-sm-12 oj-panel-shadow-lg oj-md-margin-3x oj-md-4" style="width:320px; position:sticky; top:20px; align-self:flex-start;">
+                 <div
+           style="background: linear-gradient(225deg, #fbbf24, #f97316); padding: 12px 16px; border-radius: 6px; font-weight: bold; font-size: 1.25em; margin-bottom: 16px;"
+           class="oj-color-invert">Quote Summary</div>
+        <div class="oj-flex" data-vb-layout-type="grid">
+        </div>
+      </div>
+      
+    </div>
+
+
+</oj-sp-welcome-page>

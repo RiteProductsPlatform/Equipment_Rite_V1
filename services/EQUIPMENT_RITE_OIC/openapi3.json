@@ -1,0 +1,2372 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "OICSERVICE",
+    "version": "1.0.0",
+    "x-vb": {
+      "transforms": {
+        "path": "../Transform.js"
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "vb-catalog://backends/OICSERVICE",
+      "description": "OICSERVICE"
+    }
+  ],
+  "paths": {
+    "/EQUIPMENT_RITE/EQP_FACOSTDETAILS_REST/1.0/TREQPFACostDetailsRest": {
+      "post": {
+        "operationId": "postEQUIPMENT_RITEEQP_FACOSTDETAILS_REST1_0TREQPFACostDetailsRest",
+        "responses": {},
+        "x-vb": {
+          "actionHint": "create"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_MAINTCOSTDETAILS_REST/1.0/TREQPMainCostDetailsREST  ": {
+      "post": {
+        "operationId": "postEQUIPMENT_RITEEQP_MAINTCOSTDETAILS_REST1_0TREQPMainCostDetailsREST",
+        "responses": {},
+        "x-vb": {
+          "actionHint": "create"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_USERS_JOB_ROLES/1.0/UsersJobRoles": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_USERS_JOB_ROLES1_0UsersJobRoles",
+        "parameters": [
+          {
+            "name": "p_username",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_USERS_JOB_ROLES1_0UsersJobRoles"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_USERS_JOB_ROLES1_0UsersJobRoles/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_CONTRA_SUMMAR_BILLIN_WB/1.0/getContracts": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_CONTRA_SUMMAR_BILLIN_WB1_0GetContracts",
+        "parameters": [
+          {
+            "name": "p_contract",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "p_customer",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "p_eqp_class",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "p_eqp_name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "p_res",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "p_bill_thru_date",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_CONTRA_SUMMAR_BILLIN_WB1_0GetContracts"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_CONTRA_SUMMAR_BILLIN_WB1_0GetContracts/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany",
+          "headers": {
+            "Authorization": "Basic c3Zjbl9PSUlfRVFfU1ZDX09JQzpSMHYjMzNyIW5nIzIwMjRieTIwMjY="
+          }
+        }
+      }
+    },
+     "/EQUIPMENT_RITE/CONTRACTS_LOV_SUMMIT/1.0/getCustomerNumber": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITECONTRACTS_LOV_SUMMIT1_0GetCustomerNumber2",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITECONTRACTS_LOV_SUMMIT1_0GetCustomerNumber"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITECONTRACTS_LOV_SUMMIT1_0GetCustomerNumber2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+     "/EQUIPMENT_RITE/EXP_ORG_LOV/1.0/getExpOrgsLov": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEXP_ORG_LOV1_0GetExpOrgsLov2",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEXP_ORG_LOV1_0GetExpOrgsLov"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEXP_ORG_LOV1_0GetExpOrgsLov2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        },
+        "parameters": [
+          {
+            "name": "p_business_unit_name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/EQUIPMENT_RITE/BUS_LOV/1.0/getExpOrgsLov": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEBUS_LOV1_0GetBUs",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEBUS_LOV1_0GetExpOrgsLov"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEBUS_LOV1_0GetBUs/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/TXN_SOURCES_LOV/1.0/getTxnSourcesLOV": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITETXN_SOURCES_LOV1_0GetTxnSourcesLOV2",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITETXN_SOURCES_LOV1_0GetTxnSourcesLOV"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITETXN_SOURCES_LOV1_0GetTxnSourcesLOV2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/NLR_LOV/1.0/getNlrValues": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITENLR_LOV1_0GetNlrValues2",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITENLR_LOV1_0GetNlrValues"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITENLR_LOV1_0GetNlrValues2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        },
+        "parameters": [
+{
+            "name": "P_ORG_NAME",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+     ]
+      }
+    },
+    "/EQUIPMENT_RITE/ITEMS_LOV/1.0/getItemValues": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEITEMS_LOV1_0GetItemValues",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEITEMS_LOV1_0GetItemValues"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEITEMS_LOV1_0GetItemValues/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        },
+        "parameters": [
+          {
+            "name": "p_organization_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/EQUIPMENT_RITE/PROJECTS_LOV/1.0/getProjects": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects2",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQPROLESDETAILS/1.0/getRoleDetails": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQPROLESDETAILS1_0GetRoleDetails",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQPROLESDETAILS1_0GetRoleDetails"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQPROLESDETAILS1_0GetRoleDetails/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQPUSERROLEDETAILS/1.0/getUserRolesDetails": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQPUSERROLEDETAILS1_0GetUserRolesDetails",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQPUSERROLEDETAILS1_0GetUserRolesDetails"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQPUSERROLEDETAILS1_0GetUserRolesDetails/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EXT_ADHOC_PPM_IMP_NONL_ATP_ERP/1.0/impnonlbrcost": {
+      "post": {
+        "operationId": "postEQUIPMENT_RITEEXT_ADHOC_PPM_IMP_NONL_ATP_ERP1_0Impnonlbrcost",
+        "parameters": [
+          {
+            "name": "batch_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "x-vb": {
+          "actionHint": "create",
+          "headers": {
+            "content-type": "application/json"
+          }
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/FA_LOV/1.0/getAssetsLOV": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEFA_LOV1_0GetAssetsLOV2",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEFA_LOV1_0GetAssetsLOV"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEFA_LOV1_0GetAssetsLOV2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_ASSETITEMMAINTEN/1.0/GetAssetItems": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_ASSETITEMMAINTEN1_0GetAssetItems2",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_ASSETITEMMAINTEN1_0GetAssetItems"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_ASSETITEMMAINTEN1_0GetAssetItems2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany",
+          "headers": {
+            "Authorization": "Basic c3Zjbl9PSUlfRVFfU1ZDX09JQzpSMHYjMzNyIW5nIzIwMjRieTIwMjY="
+          }
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_ASSETITEMMAINTENCE/1.0/getMaintenanceAssetNumbers": {
+      "get": {
+        "operationId": "getMaintenanceAssetNumbers",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_ASSETITEMMAINTENCE1_0GetMaintenanceAssetNumbers"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getMaintenanceAssetNumbers/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_FA_COSTDETAILS/1.0/getEQPFACostDetails": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_FA_COSTDETAILS1_0GetEQPFACostDetails2",
+        "parameters": [
+          {
+            "name": "p_asset_number",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_FA_COSTDETAILS1_0GetEQPFACostDetails"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_FA_COSTDETAILS1_0GetEQPFACostDetails2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_NONLABORRESOURCERATES/1.0/getNonLaborResourceRates": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_NONLABORRESOURCERATES1_0GetNonLaborResourceRates",
+        "responses": {},
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_MAINTENANCECOSTDETAILS/1.0/getMaintenanceCostDetails": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_MAINTENANCECOSTDETAILS1_0GetMaintenanceCostDetails2",
+        "parameters": [
+          {
+            "name": "p_asset_number",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_MAINTENANCECOSTDETAILS1_0GetMaintenanceCostDetails"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_MAINTENANCECOSTDETAILS1_0GetMaintenanceCostDetails2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EXT_PPM_IMP_NONL_ATP_ERP_V2/1.0/impnonlbrcost": {
+      "post": {
+        "operationId": "postEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V2_1_0Impnonlbrcost",
+        "parameters": [
+          {
+            "name": "batch_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Default response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V2_1_0ImpnonlbrcostResponse"
+                },
+                "examples": {
+                  "vb": {
+                    "externalValue": "./examples/postEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V2_1_0Impnonlbrcost/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+     },
+        "x-vb": {
+          "actionHint": "getMany"
+        },
+        "requestBody": {
+          "description": "Request for application/json",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V2_1_0ImpnonlbrcostRequest"
+              },
+              "examples": {
+                "vb": {
+                  "summary": "Example stored by VB User",
+                  "externalValue": "./examples/postEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V2_1_0Impnonlbrcost/request_application_json_vb.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_MAINTENANCEASSETSYNC/1.0/getMaintenanceAssetData": {
+      "get": {
+        "operationId": "postEQUIPMENT_RITEEQP_MAINTENANCEASSETSYNC1_0GetMaintenanceAssetData",
+        "responses": {},
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_NONLABORRESOURCESYNC/1.0/getNonlabourResourceData": {
+      "get": {
+        "operationId": "postEQUIPMENT_RITEEQP_NONLABORRESOURCESYNC1_0GetNonlabourResourceData",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "examples": {
+                "vb": {
+                  "externalValue": "./examples/postEQUIPMENT_RITEEQP_NONLABORRESOURCESYNC1_0GetNonlabourResourceData/request_application_json_vb.json"
+                }
+              }
+            }
+          }
+        },
+        "responses": {},
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EXT_PPM_IMP_NONL_ATP_ERP_V02/1.0/impnonlbrcost": {
+      "post": {
+        "operationId": "postEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V02_1_0Impnonlbrcost2",
+        "parameters": [
+          {
+            "name": "p_batch_name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V02_1_0ImpnonlbrcostRequest"
+              },
+              "examples": {
+                "vb": {
+                  "externalValue": "./examples/postEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V02_1_0Impnonlbrcost2/request_application_json_vb.json"
+                }
+              }
+            }
+
+          }
+          
+        },
+        "responses": {
+          "default": {
+            "description": "Default response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V02_1_0ImpnonlbrcostResponse"
+                },
+                "examples": {
+                  "vb": {
+                    "externalValue": "./examples/postEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V02_1_0Impnonlbrcost2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+     },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EXT_PPM_IMP_NONL_ATP_ERP_V02/1.0/impnonlbrcost": {
+      "post": {
+        "operationId": "postEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V02_1_0Impnonlbrcost",
+        "parameters": [
+          {
+            "name": "p_batch_name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Default response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V02_1_0ImpnonlbrcostResponse"
+                },
+                "examples": {
+                  "vb": {
+                    "externalValue": "./examples/postEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V02_1_0Impnonlbrcost/response_default_application_json_vb.json"
+                  }
+                }
+              },
+              "multipart/form-data": {},
+              "application/octet-stream": {}
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany",
+          "headers": {}
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V02_1_0ImpnonlbrcostRequest"
+              },
+              "examples": {
+                "vb": {
+                  "summary": "Example stored by VB User",
+                  "externalValue": "./examples/postEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V02_1_0Impnonlbrcost/request_application_json_vb.json"
+                }
+              }
+            },
+            "multipart/form-data": {},
+            "application/octet-stream": {}
+          }
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_EMAIL_NOTIFICATI/1.0/TriggerEmailNotification": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_EMAIL_NOTIFICATI1_0TriggerEmailNotification",
+        "parameters": [
+          {
+            "name": "p_request_number",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "pageId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_EMAIL_NOTIFICATI/1.0/TriggerEmailNotification": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_EMAIL_NOTIFICATI1_0TriggerEmailNotification",
+        "parameters": [
+          {
+            "name": "p_request_number",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "pageId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "USER_NAME",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_FA_COSTDETAILS/1.0/InsertDataintoDB": {
+      "post": {
+        "operationId": "postEQUIPMENT_RITEEQP_FA_COSTDETAILS1_0InsertDataintoDB",
+        "parameters": [
+{
+            "name": "p_maintenance_asset_number",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "R_TRACE_ID",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }          ,
+          {
+            "name": "R_PAGE_NAME",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }          ,
+          {
+            "name": "R_USER_NAME",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Default response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostEQUIPMENT_RITEEQP_FA_COSTDETAILS1_0InsertDataintoDBResponse"
+                },
+                "examples": {
+                  "vb": {
+                    "externalValue": "./examples/postEQUIPMENT_RITEEQP_FA_COSTDETAILS1_0InsertDataintoDB/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+     },
+        "x-vb": {
+          "actionHint": "getMany"
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostEQUIPMENT_RITEEQP_FA_COSTDETAILS1_0InsertDataintoDBRequest"
+              },
+              "examples": {
+                "vb": {
+                  "externalValue": "./examples/postEQUIPMENT_RITEEQP_FA_COSTDETAILS1_0InsertDataintoDB/request_application_json_vb.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_RENTAL_CUSTOMER_DETAILS/1.0/GetCustomerDetails": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_RENTAL_CUSTOMER_DETAILS1_0GetCustomerDetails",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_RENTAL_CUSTOMER_DETAILS1_0GetCustomerDetails"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_RENTAL_CUSTOMER_DETAILS1_0GetCustomerDetails/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        },
+        "parameters": [
+          {
+            "name": "p_party_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_PO_HEADER_DETAILS/1.0/GetPODetails": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_PO_HEADER_DETAILS1_0GetPODetails",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_PO_HEADER_DETAILS1_0GetPODetails"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_PO_HEADER_DETAILS1_0GetPODetails/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_CUSTOMER_DETAILS/1.0/GetCustomerDetails": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_CUSTOMER_DETAILS1_0GetCustomerDetails",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_CUSTOMER_DETAILS1_0GetCustomerDetails"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_CUSTOMER_DETAILS1_0GetCustomerDetails/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/SHIPMENTS/1.0/getExpOrgsLov": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITESHIPMENTS1_0GetExpOrgsLov2",
+        "parameters": [
+          {
+            "name": "orderNumber",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITESHIPMENTS1_0GetExpOrgsLov"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITESHIPMENTS1_0GetExpOrgsLov2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/TRANSFERORDERS/1.0/getExpOrgsLov": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITETRANSFERORDERS1_0GetExpOrgsLov2",
+        "parameters": [
+          {
+            "name": "refNumber",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITETRANSFERORDERS1_0GetExpOrgsLov"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITETRANSFERORDERS1_0GetExpOrgsLov2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_NONLABORRESOURCERATESOIC/1.0/getNonLaborResourceRates": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_NONLABORRESOURCERATESOIC1_0GetNonLaborResourceRates",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_NONLABORRESOURCERATESOIC1_0GetNonLaborResourceRates"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_NONLABORRESOURCERATESOIC1_0GetNonLaborResourceRates/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_INSPECTION_DETAILS/1.0/triggerTable": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_INSPECTION_DETAILS1_0TriggerTable",
+        "parameters": [
+          {
+            "name": "p_equipment_request_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_INSPECTION_DETAILS1_0TriggerTable"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_INSPECTION_DETAILS1_0TriggerTable/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_ORACLE_WORKLI_POPUP_NOTIFI/1.0/report": {
+      "post": {
+        "operationId": "postEQP_ORACLE_WORKLI_POPUP_NOTIFI1_0Report",
+        "requestBody": {
+          "description": "Request for application/json",
+          "content": {
+            "application/json": {
+              "examples": {
+                "vb": {
+                  "summary": "Example stored by VB User",
+                  "externalValue": "./examples/postEQP_ORACLE_WORKLI_POPUP_NOTIFI1_0Report/request_application_json_vb.json"
+                }
+              },
+              "schema": {
+                "$ref": "#/components/schemas/PostEQUIPMENT_RITEEQP_ORACLE_WORKLI_POPUP_NOTIFI1_0ReportRequest"
+              }
+            }
+          }
+        },
+        "responses": {},
+        "x-vb": {
+          "actionHint": "getMany"
+        },
+        "parameters": [
+          {
+            "name": "R_TRACE_ID",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "R_PAGE_NAME",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "R_USER_NAME",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/EQUIPMENT_RITE/EXPTYPES_LOV/1.0/getExpTypes": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEXPTYPES_LOV1_0GetExpTypes2",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEXPTYPES_LOV1_0GetExpTypes"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEXPTYPES_LOV1_0GetExpTypes2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_EXPENDITURETYPES/1.0/getExpTypes": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_EXPENDITURETYPES1_0GetExpTypes",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_EXPENDITURETYPES1_0GetExpTypes"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_EXPENDITURETYPES1_0GetExpTypes/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_INV_ORG_LOCATION/1.0/getInvLocations": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_INV_ORG_LOCATION1_0GetInvLocations",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_INV_ORG_LOCATION1_0GetInvLocations"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_INV_ORG_LOCATION1_0GetInvLocations/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        },
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_ASSETMAINTENANCE/1.0/getAssets": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_ASSETMAINTENANCE1_0GetAssets",
+        "parameters": [
+          {
+            "name": "p_asset_number",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_ASSETMAINTENANCE1_0GetAssets"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_ASSETMAINTENANCE1_0GetAssets/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_INV_SUBINVENTORY_DETAILS/1.0/getItemValues": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_INV_SUBINVENTORY_DETAILS1_0GetItemValues",
+        "parameters": [
+          {
+            "name": "p_inventory_item_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_INV_SUBINVENTORY_DETAILS1_0GetItemValues"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_INV_SUBINVENTORY_DETAILS1_0GetItemValues/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_INTERORGAN_LOV/1.0/getinterorg": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_INTERORGAN_LOV1_0Getinterorg",
+        "parameters": [
+          {
+            "name": "p_organization_name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_INTERORGAN_LOV1_0Getinterorg"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_INTERORGAN_LOV1_0Getinterorg/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_PJC_EXP_ORG_LOV/1.0/getprojectexpdetails": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_PJC_EXP_ORG_LOV1_0Getprojectexpdetails2",
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_PJC_EXP_ORG_LOV1_0Getprojectexpdetails"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_PJC_EXP_ORG_LOV1_0Getprojectexpdetails2/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_ASSET_GROUPS_LOV/1.0/GetAssetGroups": {},
+    "/EQUIPMENT_RITE/EQP_PO_RECEIPT_DETAILS/1.0/GetPOReceiptDetails": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITEEQP_PO_RECEIPT_DETAILS1_0GetPOReceiptDetails",
+        "parameters": [
+          {
+            "name": "p_po_number",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITEEQP_PO_RECEIPT_DETAILS1_0GetPOReceiptDetails"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITEEQP_PO_RECEIPT_DETAILS1_0GetPOReceiptDetails/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/TRANSFERORDERS/1.0/getExpOrgsLov?": {
+      "get": {
+        "operationId": "getEQUIPMENT_RITETRANSFERORDERS1_0GetExpOrgsLov",
+        "parameters": [
+          {
+            "name": "refNumber",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Response for default",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetEQUIPMENT_RITETRANSFERORDERS1_0GetExpOrgsLov"
+                },
+                "examples": {
+                  "vb": {
+                    "summary": "Example stored by VB User",
+                    "externalValue": "./examples/getEQUIPMENT_RITETRANSFERORDERS1_0GetExpOrgsLov/response_default_application_json_vb.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_MAINTENA_DATA_SYNC/1.0/EQPMaintenanceDataSync": {
+      "post": {
+        "operationId": "postEQUIPMENT_RITEEQP_MAINTENA_DATA_SYNC1_0EQPMaintenanceDataSync2",
+        "responses": {},
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/EQP_MAINTENANCECOSTDETAILS/1.0/maintcostdetailsintoDB": {
+      "post": {
+        "operationId": "postEQUIPMENT_RITEEQP_MAINTENANCECOSTDETAILS1_0MaintcostdetailsintoDB",
+        "responses": {},
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    },
+    "/EQUIPMENT_RITE/SHIPMENTS_TRANSFERORDER/1.0/Triggersupplyrequest": {
+      "post": {
+        "operationId": "postEQUIPMENT_RITESHIPMENTS_TRANSFERORDER1_0Triggersupplyrequest",
+        "responses": {},
+        "x-vb": {
+          "actionHint": "getMany"
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "GetEQUIPMENT_RITEEQP_USERS_JOB_ROLES1_0UsersJobRoles": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "role_id": {
+                  "type": "string"
+                },
+                "role_name": {
+                  "type": "string"
+                },
+                "role_common_name": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "userjobroles_pk": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_NONLABORRESOURCERATESOIC1_0GetNonLaborResourceRates": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "rate_schedule_name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "schedule_type": {
+                  "type": "string"
+                },
+                "rate_schedule_id": {
+                  "type": "string"
+                },
+                "schedule_line_id": {
+                  "type": "string"
+                },
+                "nl_res_organization_id": {
+                  "type": "string"
+                },
+                "nl_res_organization_name": {
+                  "type": "string"
+                },
+                "expenditure_type_id": {
+                  "type": "string"
+                },
+                "expenditure_type_name": {
+                  "type": "string"
+                },
+                "non_labor_resource_id": {
+                  "type": "string"
+                },
+                "non_labor_resource_name": {
+                  "type": "string"
+                },
+                "currency_code": {
+                  "type": "string"
+                },
+                "start_date_active": {
+                  "type": "string"
+                },
+                "rate_unit": {
+                  "type": "string"
+                },
+                "rate": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_INSPECTION_DETAILS1_0TriggerTable": {
+        "type": "object",
+        "properties": {
+          "pdfBase64": {
+            "type": "string"
+          }
+        }
+      },
+      "PostEQUIPMENT_RITEEQP_ORACLE_WORKLI_POPUP_NOTIFI1_0ReportRequest": {
+        "type": "object",
+        "properties": {
+          "Message": {
+            "type": "string"
+          },
+          "TaskCreator": {
+            "type": "string"
+          },
+          "Role_Name": {
+            "type": "string"
+          }
+        }
+      },
+      "PostEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V02_1_0ImpnonlbrcostRequest": {
+        "type": "object",
+        "properties": {
+          "dummy": {
+            "type": "string"
+          }
+        }
+      },
+      "PostEQUIPMENT_RITEEXT_PPM_IMP_NONL_ATP_ERP_V02_1_0ImpnonlbrcostResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEXPTYPES_LOV1_0GetExpTypes": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "EXPTYPECLASSNAME": {
+                  "type": "string"
+                },
+                "EXPENDITURE_TYPE_NAME": {
+                  "type": "string"
+                },
+                "EXPENDITURE_TYPE_ID": {
+                  "type": "string"
+                },
+                "DESCRIPTION": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_EXPENDITURETYPES1_0GetExpTypes": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "EXPTYPECLASSNAME": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "EXPENDITURE_TYPE_ID": {
+                  "type": "string"
+                },
+                "DESCRIPTION": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_INV_ORG_LOCATION1_0GetInvLocations": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ORGANIZATION_CODE": {
+                  "type": "string"
+                },
+                "ORGANIZATION_NAME": {
+                  "type": "string"
+                },
+                "ORGANIZATION_ID": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "ADDRESS_LINE_1": {
+                  "type": "string"
+                },
+                "ADDRESS_LINE_2": {
+                  "type": "string"
+                },
+                "TOWN_OR_CITY": {
+                  "type": "string"
+                },
+                "POSTAL_CODE": {
+                  "type": "string"
+                },
+                "COUNTRY": {
+                  "type": "string"
+                },
+                "BUSINESS_UNIT_NAME": {
+                  "type": "string"
+                },
+                "LEGAL_ENTITY": {
+                  "type": "string"
+                },
+                "LOCATION_ID": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_ASSETMAINTENANCE1_0GetAssets": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "asset_id": {
+                  "type": "string"
+                },
+                "asset_number": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "parent_asset_number": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_INV_SUBINVENTORY_DETAILS1_0GetItemValues": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "inventoryItemId": {
+                  "type": "string"
+                },
+                "item_number": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "longDescription": {
+                  "type": "string"
+                },
+                "subinventory_code": {
+                  "type": "string"
+                },
+                "inv_organization_id": {
+                  "type": "string"
+                },
+                "inv_organization_name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_INTERORGAN_LOV1_0Getinterorg": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "organization_code": {
+                  "type": "string"
+                },
+                "from_organization_code": {
+                  "type": "string"
+                },
+                "to_organization_code": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_PJC_EXP_ORG_LOV1_0Getprojectexpdetails": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "pjf_class_code": {
+                  "type": "string"
+                },
+                "hr_class_code": {
+                  "type": "string"
+                },
+                "organization_id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "effective_start_date": {
+                  "type": "string"
+                },
+                "effective_end_date": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_ASSET_GROUPS_LOV1_0GetAssetGroups": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "GROUP_NAME": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_PO_RECEIPT_DETAILS1_0GetPOReceiptDetails": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "po_number": {
+                  "type": "string"
+                },
+                "po_header_id": {
+                  "type": "string"
+                },
+                "po_line_number": {
+                  "type": "string"
+                },
+                "po_line_id": {
+                  "type": "string"
+                },
+                "unit_price": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "string"
+                },
+                "po_line_uom": {
+                  "type": "string"
+                },
+                "po_line_amount": {
+                  "type": "string"
+                },
+                "receipt_number": {
+                  "type": "string"
+                },
+                "shipment_header_id": {
+                  "type": "string"
+                },
+                "shipment_line_id": {
+                  "type": "string"
+                },
+                "quantity_received": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITETRANSFERORDERS1_0GetExpOrgsLov": {
+        "type": "object",
+        "properties": {
+          "TransferOrderNumber": {
+            "type": "string"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_ASSETITEMMAINTENCE1_0GetMaintenanceAssetNumbers": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "asset_id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "item_id": {
+                  "type": "string"
+                },
+                "item_organization_id": {
+                  "type": "string"
+                },
+                "serial_number": {
+                  "type": "string"
+                },
+                "location_type": {
+                  "type": "string"
+                },
+                "location_organization_id": {
+                  "type": "string"
+                },
+                "work_center_id": {
+                  "type": "string"
+                },
+                "work_center_code": {
+                  "type": "string"
+                },
+                "work_area_id": {
+                  "type": "string"
+                },
+                "work_area_code": {
+                  "type": "string"
+                },
+                "inventory_item_id": {
+                  "type": "string"
+                },
+                "item_description": {
+                  "type": "string"
+                },
+                "item_organization": {
+                  "type": "string"
+                },
+                "location_organization": {
+                  "type": "string"
+                },
+                "fa_asset_number": {
+                  "type": "string"
+                },
+                "fa_asset_id": {
+                  "type": "string"
+                },
+                "item_number": {
+                  "type": "string"
+                },
+                "asset_group": {
+                  "type": "string"
+                },
+                "Asset_org_code": {
+                  "type": "string"
+                },
+                "Asset_org_id": {
+                  "type": "string"
+                },
+                "Asset_organization": {
+                  "type": "string"
+                },
+                "MAINT_TRACKED": {
+                  "type": "string"
+                },
+                "FA_TRACKED": {
+                  "type": "string"
+                },
+                "INV_TRACKED": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEITEMS_LOV1_0GetItemValues": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "inventoryItemId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "longDescription": {
+                  "type": "string"
+                },
+                "subinventory": {
+                  "type": "string"
+                },
+                "inv_organization_id": {
+                  "type": "string"
+                },
+                "inv_organization_name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEFA_LOV1_0GetAssetsLOV": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "assetId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITENLR_LOV1_0GetNlrValues": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "nonLaborResourceId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "expendituretypeid": {
+                  "type": "string"
+                },
+                "expendituretypename": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": "string"
+                },
+                "organizationid": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_PO_HEADER_DETAILS1_0GetPODetails": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "po_header_id": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEPROJECTS_LOV1_0GetProjects": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "projectId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "number": {
+                  "type": "string"
+                },
+                "projectName": {
+                  "type": "string"
+                },
+                "projectTypeId": {
+                  "type": "string"
+                },
+                "projectStatusCode": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "completionDate": {
+                  "type": "string"
+                },
+                "enabledFlag": {
+                  "type": "string"
+                },
+                "orgId": {
+                  "type": "string"
+                },
+                "businessUnitName": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEBUS_LOV1_0GetExpOrgsLov": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "orgId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEXP_ORG_LOV1_0GetExpOrgsLov": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "orgId": {
+                  "type": "string"
+                },
+                "inventory_org_code": {
+                  "type": "string"
+                },
+                "business_unit_name": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITETXN_SOURCES_LOV1_0GetTxnSourcesLOV": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "txnSourceId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "document_name": {
+                  "type": "string"
+                },
+                "document_entry_name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_CUSTOMER_DETAILS1_0GetCustomerDetails": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "party_id": {
+                  "type": "string"
+                },
+                "party_number": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "customer_type": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      },
+      "GetEQUIPMENT_RITEEQP_RENTAL_CUSTOMER_DETAILS1_0GetCustomerDetails": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "customer_id": {
+                  "type": "string"
+                },
+                "customer_name": {
+                  "type": "string"
+                },
+                "customer_number": {
+                  "type": "string"
+                },
+                "account_number": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "party_site_number": {
+                  "type": "string"
+                },
+                "site_status": {
+                  "type": "string"
+                },
+                "site_use_code": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "string"
+                },
+                "primary_flag": {
+                  "type": "string"
+                },
+                "address1": {
+                  "type": "string"
+                },
+                "address2": {
+                  "type": "string"
+                },
+                "address3": {
+                  "type": "string"
+                },
+                "address4": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "postal_code": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "party_site_id": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

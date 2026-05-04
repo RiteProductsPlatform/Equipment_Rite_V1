@@ -1,0 +1,1566 @@
+{
+    "items": [
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000047274447,
+            "Name": "Atlanta",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047013190,
+            "OrganizationCode": "E9E4F6DD633D259EE0436204548CA18A 300000047274447 2013-10-29 16.46.55.003",
+            "Status": "A",
+            "CreationDate": "2013-10-29T16:46:55.003+00:00",
+            "LastUpdateDate": "2013-10-29T16:49:46.097+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CF0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CF0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CF0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CF0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CF0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CF0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CF0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000047655376,
+            "Name": "Bristol",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047597160,
+            "OrganizationCode": "EB9A9495B77F6F32E0436204548CBA94 300000047655376 2013-11-20 20.35.41.003",
+            "Status": "A",
+            "CreationDate": "2013-11-20T20:35:41.003+00:00",
+            "LastUpdateDate": "2013-11-20T20:38:14.266+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9D00000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9D00000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9D00000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9D00000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9D00000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9D00000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9D00000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000047274441,
+            "Name": "Operations",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": null,
+            "OrganizationCode": "E9E2F663F697259AE0436204548C2ECD 300000047274441 2013-10-29 16.25.20.789",
+            "Status": "A",
+            "CreationDate": "2013-10-29T16:25:20.789+00:00",
+            "LastUpdateDate": "2024-11-25T09:43:59.042+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019C90000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000271007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019C90000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019C90000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019C90000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019C90000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019C90000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019C90000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000047274450,
+            "Name": "Chicago",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047013180,
+            "OrganizationCode": "E9E50309C48D254AE0436204548C3BE9 300000047274450 2013-10-29 16.50.19.005",
+            "Status": "A",
+            "CreationDate": "2013-10-29T16:50:19.005+00:00",
+            "LastUpdateDate": "2013-10-29T16:51:49.878+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019D20000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019D20000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019D20000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019D20000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019D20000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019D20000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019D20000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000047274444,
+            "Name": "Seattle",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300001517208813,
+            "OrganizationCode": "E9E2F663F69D259AE0436204548C2ECD 300000047274444 2013-10-29 16.40.25.004",
+            "Status": "A",
+            "CreationDate": "2013-10-29T16:40:25.004+00:00",
+            "LastUpdateDate": "2026-03-02T05:29:10.044+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CC0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000271007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CC0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CC0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CC0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CC0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CC0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9344019CC0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000047398497,
+            "Name": "External Item Organization for LEG2",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047013180,
+            "OrganizationCode": "EA6BF0D0A35B1FF2E0436204548C92E0 300000047398497 2013-11-05 20.20.52.538",
+            "Status": "A",
+            "CreationDate": "2013-11-05T20:20:52.538+00:00",
+            "LastUpdateDate": "2013-11-05T20:22:14.724+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE610000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE610000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE610000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE610000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE610000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE610000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE610000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000047398500,
+            "Name": "External Item Organization for EBS1",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047013250,
+            "OrganizationCode": "EA6BF0D0A3611FF2E0436204548C92E0 300000047398500 2013-11-05 20.22.25.002",
+            "Status": "A",
+            "CreationDate": "2013-11-05T20:22:25.002+00:00",
+            "LastUpdateDate": "2013-11-05T20:23:51.575+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE640000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE640000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE640000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE640000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE640000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE640000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE640000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000047398503,
+            "Name": "External Item Organization for SAP1",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047013310,
+            "OrganizationCode": "EA6BF0D0A3671FF2E0436204548C92E0 300000047398503 2013-11-05 20.24.04.002",
+            "Status": "A",
+            "CreationDate": "2013-11-05T20:24:04.002+00:00",
+            "LastUpdateDate": "2013-11-05T20:25:08.178+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE670000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE670000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE670000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE670000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE670000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE670000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE670000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000047398506,
+            "Name": "External Item Organization for PSFT1",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047013230,
+            "OrganizationCode": "EA6BF0D0A36D1FF2E0436204548C92E0 300000047398506 2013-11-05 20.25.42.001",
+            "Status": "A",
+            "CreationDate": "2013-11-05T20:25:42.001+00:00",
+            "LastUpdateDate": "2013-11-05T20:26:38.324+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE6A0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE6A0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE6A0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE6A0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE6A0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE6A0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93441FE6A0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000047655373,
+            "Name": "Manchester",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047597140,
+            "OrganizationCode": "EB941ABDB17C6F3EE0436204548C3994 300000047655373 2013-11-20 20.27.24.003",
+            "Status": "A",
+            "CreationDate": "2013-11-20T20:27:24.003+00:00",
+            "LastUpdateDate": "2013-11-20T20:35:33.337+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9CD0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9CD0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9CD0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9CD0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9CD0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9CD0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93445E9CD0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000047919954,
+            "Name": "Marseille",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047826314,
+            "OrganizationCode": "EC17AD31A5C4264AE0436204548C9FAB 300000047919954 2013-11-26 22.14.25.002",
+            "Status": "A",
+            "CreationDate": "2013-11-26T22:14:25.002+00:00",
+            "LastUpdateDate": "2013-11-26T22:16:34.767+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3520000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3520000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3520000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3520000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3520000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3520000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3520000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000047919957,
+            "Name": "Bordeaux",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047826216,
+            "OrganizationCode": "EC17A8F8B1C82646E0436204548CCC3C 300000047919957 2013-11-26 22.17.17.003",
+            "Status": "A",
+            "CreationDate": "2013-11-26T22:17:17.003+00:00",
+            "LastUpdateDate": "2013-11-26T22:18:38.948+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3550000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3550000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3550000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3550000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3550000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3550000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93449F3550000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000076167649,
+            "Name": "Progress Operations",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000076167591,
+            "OrganizationCode": "FCD5645841590D63E0436204548CAEBC 300000076167649 2014-06-27 18.01.44.002",
+            "Status": "A",
+            "CreationDate": "2014-06-27T18:01:44.002+00:00",
+            "LastUpdateDate": "2014-06-27T18:07:02.672+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935F8F9E10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000378"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935F8F9E10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935F8F9E10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935F8F9E10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935F8F9E10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935F8F9E10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935F8F9E10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000075236542,
+            "Name": "Shanghai",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047902682,
+            "OrganizationCode": "F8C098D64795748CE0436204548C2415 300000075236542 2014-05-06 19.43.04.002",
+            "Status": "A",
+            "CreationDate": "2014-05-06T19:43:04.002+00:00",
+            "LastUpdateDate": "2014-05-06T19:45:19.472+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4BE0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4BE0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4BE0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4BE0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4BE0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4BE0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4BE0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000075236545,
+            "Name": "Shenzhen",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047902731,
+            "OrganizationCode": "F8C098D64797748CE0436204548C2415 300000075236545 2014-05-06 19.46.36.003",
+            "Status": "A",
+            "CreationDate": "2014-05-06T19:46:36.003+00:00",
+            "LastUpdateDate": "2014-05-06T19:48:00.915+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4C10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4C10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4C10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4C10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4C10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4C10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D935EAC4C10000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000094179228,
+            "Name": "Higher Education Operations",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047013170,
+            "OrganizationCode": "07C22DBAD6664431E0536204548CD8A0 300000094179228 2014-11-13 18.33.46.003",
+            "Status": "A",
+            "CreationDate": "2014-11-13T18:33:46.003+00:00",
+            "LastUpdateDate": "2014-11-13T18:41:23.626+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9370BCF9C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9370BCF9C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9370BCF9C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9370BCF9C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9370BCF9C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9370BCF9C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9370BCF9C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000101036136,
+            "Name": "Tokyo",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047903082,
+            "OrganizationCode": "12862F0628876B94E0536204548C2C8B 300000101036136 2015-03-30 17.54.08.003",
+            "Status": "A",
+            "CreationDate": "2015-03-30T17:54:08.003+00:00",
+            "LastUpdateDate": "2015-03-30T17:57:08.780+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9377470680000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9377470680000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9377470680000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9377470680000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9377470680000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9377470680000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9377470680000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000116228124,
+            "Name": "Wondercare General Hospital",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000163899077,
+            "OrganizationCode": "24FCF3F6EF654CE6E053790B548C42C8 300000116228124 2015-11-20 17.03.51.002",
+            "Status": "A",
+            "CreationDate": "2015-11-20T17:03:51.002+00:00",
+            "LastUpdateDate": "2018-03-02T19:56:59+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9385C401C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000271007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9385C401C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9385C401C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9385C401C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9385C401C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9385C401C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9385C401C0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000115539127,
+            "Name": "Milan",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000048716883,
+            "OrganizationCode": "2200F64CC0AB0D71E053790B548C556F 300000115539127 2015-10-13 17.41.02.427",
+            "Status": "A",
+            "CreationDate": "2015-10-13T17:41:02.427+00:00",
+            "LastUpdateDate": "2015-10-13T17:43:34.185+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93851BCB70000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93851BCB70000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93851BCB70000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93851BCB70000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93851BCB70000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93851BCB70000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93851BCB70000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000118783245,
+            "Name": "Boise",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047013270,
+            "OrganizationCode": "2D3B763C451B302FE053790B548C4493 300000118783245 2016-03-04 15.05.30.034",
+            "Status": "A",
+            "CreationDate": "2016-03-04T15:05:30.034+00:00",
+            "LastUpdateDate": "2016-03-07T21:02:46+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D0D0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000271007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D0D0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D0D0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D0D0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D0D0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D0D0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D0D0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000118783270,
+            "Name": "Dallas",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000094179144,
+            "OrganizationCode": "2D3B82CAC0032C77E053790B548C79E3 300000118783270 2016-03-04 15.09.30.002",
+            "Status": "A",
+            "CreationDate": "2016-03-04T15:09:30.002+00:00",
+            "LastUpdateDate": "2016-03-04T15:11:37.157+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D260000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D260000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D260000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D260000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D260000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D260000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D938833D260000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000118784047,
+            "Name": "DSHIP",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047013150,
+            "OrganizationCode": "2D3B881760C62C2DE053790B548CD68C 300000118784047 2016-03-04 15.18.16.005",
+            "Status": "A",
+            "CreationDate": "2016-03-04T15:18:16.005+00:00",
+            "LastUpdateDate": "2016-03-04T15:19:29.247+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93883402F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93883402F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93883402F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93883402F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93883402F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93883402F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93883402F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000130060415,
+            "Name": "Beijing",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000047902582,
+            "OrganizationCode": "34DC8C1615B04ADBE053CFFBE70AECFF 300000130060415 2016-06-09 17.12.25.003",
+            "Status": "A",
+            "CreationDate": "2016-06-09T17:12:25.003+00:00",
+            "LastUpdateDate": "2016-06-09T17:16:59.333+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9392F507F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9392F507F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9392F507F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9392F507F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9392F507F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9392F507F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9392F507F0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000131573115,
+            "Name": "Madrid",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000048716638,
+            "OrganizationCode": "3AE8C334F4E47DF8E0537AA3FD0A19E1 300000131573115 2016-08-25 16.19.44.002",
+            "Status": "A",
+            "CreationDate": "2016-08-25T16:19:44.002+00:00",
+            "LastUpdateDate": "2016-08-25T16:41:16.651+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93946657B0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93946657B0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93946657B0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93946657B0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93946657B0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93946657B0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D93946657B0000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "EffectiveStartDate": "0001-01-01",
+            "EffectiveEndDate": "4712-12-31",
+            "OrganizationId": 300000132160344,
+            "Name": "Montreal",
+            "Title": null,
+            "ClassificationCode": "INV",
+            "InternalAddressLine": null,
+            "LocationId": 300000050505388,
+            "OrganizationCode": "3D3135F65DBE3126E0537AA3FD0AEFFD 300000132160344 2016-09-23 17.33.03.123",
+            "Status": "A",
+            "CreationDate": "2016-09-23T17:33:03.123+00:00",
+            "LastUpdateDate": "2016-09-23T17:38:22.748+00:00",
+            "OrgCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9394F5B580000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9394F5B580000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078",
+                    "name": "organizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9394F5B580000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/OrgClassificationVA",
+                    "name": "OrgClassificationVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9394F5B580000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/LocationIdLOV",
+                    "name": "LocationIdLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9394F5B580000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/lov/StatusLOV",
+                    "name": "StatusLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9394F5B580000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/OrganizationDFF",
+                    "name": "OrganizationDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations/00020000000EACED00057708000110D9394F5B580000004AACED00057372000D6A6176612E73716C2E4461746514FA46683F3566970200007872000E6A6176612E7574696C2E44617465686A81014B597419030000787077080000019D4B7D5C0078/child/extraInformation",
+                    "name": "extraInformation",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 25,
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/11.13.18.05/organizations",
+            "name": "organizations",
+            "kind": "collection"
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+{
+  "root": "assignVariablesCrewTypeLOVADP",
+  "description": "",
+  "actions": {
+    "assignVariablesCrewTypeLOVADP": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.CrewTypeLOVADP": {
+          "source": {
+            "data": [
+              {
+                "type": "PERSON"
+              },
+              {
+                "type": "EQUIPMENT"
+              },
+              {
+                "type": "BOTH"
+              }
+            ]
+          },
+          "reset": "none",
+          "auto": "always"
+        },
+        "$page.variables.CrewScopeADP": {
+          "source": {
+            "data": [
+              {
+                "scope": "CUSTOMER"
+              },
+              {
+                "scope": "CONTRACT"
+              },
+              {
+                "scope": "PROJECT"
+              }
+            ]
+          },
+          "reset": "none",
+          "auto": "always"
+        },
+        "$page.variables.TimeEntrymethodADP": {
+          "source": {
+            "data": [
+              {
+                "method": "ONLINE"
+              },
+              {
+                "method": "OFFLINE"
+              }
+            ]
+          },
+          "reset": "none",
+          "auto": "always"
+        },
+        "$page.variables.WeekDaysADP": {
+          "source": {
+            "data": [
+              {
+                "day": "Monday"
+              },
+              {
+                "day": "Tuesday"
+              },
+              {
+                "day": "Wednesday"
+              },
+              {
+                "day": "Thursday"
+              },
+              {
+                "day": "Friday"
+              },
+              {
+                "day": "Saturday"
+              },
+              {
+                "day": "Sunday"
+              }
+            ]
+          },
+          "reset": "none",
+          "auto": "always"
+        },
+        "$page.variables.CrewSpecificADP": {
+          "source": {
+            "data": [
+                {
+                  "value": "YES"
+                },
+                {
+                  "value": "NO"
+                }
+              ]
+          },
+          "reset": "none",
+          "auto": "always"
+        },
+        "$page.variables.CrewMeasureADP": {
+          "source": {
+            "data": [
+                {
+                  "value": "TIME IN OUT"
+                },
+                {
+                  "value": "QUANTITY"
+                }
+              ]
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      },
+      "outcomes": {
+        "success": "ifAssignEnabled"
+      }
+    },
+    "ifAssignEnabled": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $page.variables.AssignEnabled ]]"
+      },
+      "outcomes": {
+        "true": "callChainTRFetchHeadersLines"
+      }
+    },
+    "callChainTRFetchHeadersLines": {
+      "module": "vb/action/builtin/callChainAction",
+      "parameters": {
+        "id": "TR_FetchHeadersLines"
+      }
+    }
+  }
+}

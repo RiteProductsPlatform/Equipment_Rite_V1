@@ -1,0 +1,81 @@
+{
+    "items": [
+        {
+            "crewsetup_id": 82,
+            "crew_name": "TimeRite Crew",
+            "crew_specific": null,
+            "crew_measure": null,
+            "crew_type": "PERSON",
+            "crew_scope": "CUSTOMER",
+            "time_entry_method": "ONLINE",
+            "primary_timekeeper_id": 300000107973309,
+            "secondary_timekeeper_id": 300000107973309,
+            "supervisor": "sup1",
+            "start_date": "2024-02-01T00:00:00Z",
+            "end_date": "2024-03-31T00:00:00Z",
+            "crew_start_week": "MONDAY",
+            "crew_end_week": "FRIDAY",
+            "customer_id": 100000000395803,
+            "contract_id": 300000333920129,
+            "project_id": 300000322436882,
+            "sun_in_time": "00:00",
+            "sun_out_time": "00:00",
+            "mon_in_time": "06:00",
+            "mon_out_time": "16:00",
+            "tue_in_time": "06:00",
+            "tue_out_time": "16:00",
+            "wed_in_time": "06:00",
+            "wed_out_time": "16:00",
+            "thu_in_time": "06:00",
+            "thu_out_time": "16:00",
+            "fri_in_time": "06:00",
+            "fri_out_time": "16:00",
+            "sat_in_time": "00:00",
+            "sat_out_time": "00:00",
+            "mon_quantity": null,
+            "tue_quantity": null,
+            "wed_quantity": null,
+            "thu_quantity": null,
+            "fri_quantity": null,
+            "sat_quantity": null,
+            "sun_quantity": null,
+            "customer_name": "Business World",
+            "contract_number": "234567",
+            "contract_amount": null,
+            "po_number": null,
+            "po_quantity": null,
+            "po_quantity_measure": null,
+            "project_number": "RS-999",
+            "project_type": null,
+            "project_start_date": null,
+            "project_close_date": null,
+            "week": null,
+            "last_updated_by": "maniteja.polnati@ritesoftware.com",
+            "last_update_date": "2024-03-22T12:50:20Z",
+            "created_by": "maniteja.polnati@ritesoftware.com",
+            "creation_date": "2024-03-22T12:50:20Z"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getCrewSetupHeader/?CREW_NAME=TimeRite+Crew"
+        },
+        {
+            "rel": "edit",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getCrewSetupHeader/?CREW_NAME=TimeRite+Crew"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/getCrewSetupHeader/"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getCrewSetupHeader/?CREW_NAME=TimeRite+Crew"
+        }
+    ]
+}

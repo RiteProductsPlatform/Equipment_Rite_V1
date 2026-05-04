@@ -1,0 +1,64 @@
+{
+    "items": [
+        {
+            "role_id": 300001725327804,
+            "role_name": "Equipment Time Entry Approver",
+            "role_common_name": "RT_EQP_TIME_APPROVER",
+            "username": "CASEY.BROWN",
+            "userjobroles_pk": "CASEY.BROWN_Equipment Time Entry Approver"
+        },
+        {
+            "role_id": 300001725327794,
+            "role_name": "Equipment Timekeeper",
+            "role_common_name": "RT_EQP_TIMEKEEPER",
+            "username": "CASEY.BROWN",
+            "userjobroles_pk": "CASEY.BROWN_Equipment Timekeeper"
+        },
+        {
+            "role_id": 300001725327764,
+            "role_name": "Equipment Administrator",
+            "role_common_name": "RT_EQP_ADMINISTRATOR",
+            "username": "CURTIS.FEITTY",
+            "userjobroles_pk": "CURTIS.FEITTY_Equipment Administrator"
+        },
+        {
+            "role_id": 300001725327764,
+            "role_name": "Equipment Administrator",
+            "role_common_name": "RT_EQP_ADMINISTRATOR",
+            "username": "OIC_USER3",
+            "userjobroles_pk": "Veera.Phanisri_Equipment Administrator"
+        },
+        {
+            "role_id": 300001725327784,
+            "role_name": "Equipment Manager",
+            "role_common_name": "RT_EQP_MANAGER",
+            "username": "SCM_IMPL",
+            "userjobroles_pk": "SCM_IMPL_Equipment Manager"
+        },
+        {
+            "role_id": 300001725327784,
+            "role_name": "Equipment Manager",
+            "role_common_name": "RT_EQP_MANAGER",
+            "username": "nikhil.kolisetty@rite.digital",
+            "userjobroles_pk": "nikhil.kolisetty@rite.digital_Equipment Manager"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 6,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_UserRoleDetails"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_UserRoleDetails"
+        }
+    ]
+}

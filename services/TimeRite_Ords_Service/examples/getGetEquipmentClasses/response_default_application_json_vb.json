@@ -1,0 +1,49 @@
+{
+    "items": [
+        {
+            "eqp_class_details": "BULK ITEMS"
+        },
+        {
+            "eqp_class_details": "CONSTRUCTION"
+        },
+        {
+            "eqp_class_details": "CONSUMABLES"
+        },
+        {
+            "eqp_class_details": "CRAWLER CRANE"
+        },
+        {
+            "eqp_class_details": "EXCAVATOR"
+        },
+        {
+            "eqp_class_details": "FLEET TRUCK"
+        },
+        {
+            "eqp_class_details": "HEAVY HAULING"
+        },
+        {
+            "eqp_class_details": "ROV"
+        },
+        {
+            "eqp_class_details": "SMALL TOOLS"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 9,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getEquipmentClasses?page_name=crew-time-entry-start"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getEquipmentClasses?page_name=crew-time-entry-start"
+        }
+    ]
+}

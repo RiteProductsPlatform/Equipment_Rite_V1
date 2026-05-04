@@ -1,0 +1,97 @@
+{
+    "items": [
+        {
+            "customer_id": 100000000395799,
+            "customer_number": "25750",
+            "customer_name": "ABC Corporation Worldwide",
+            "week_start_day": null,
+            "week_end_day": null,
+            "effective_start_date": null,
+            "effective_end_date": null,
+            "start_time": "08:00",
+            "end_time": "16:00",
+            "mon_in_time": "00:00",
+            "mon_out_time": "00:00",
+            "tue_in_time": "00:00",
+            "tue_out_time": "00:00",
+            "wed_in_time": "00:00",
+            "wed_out_time": "00:00",
+            "thu_in_time": "00:00",
+            "thu_out_time": "00:00",
+            "fri_in_time": "00:00",
+            "fri_out_time": "00:00",
+            "sat_in_time": "00:00",
+            "sat_out_time": "00:00",
+            "sun_in_time": "00:00",
+            "sun_out_time": "00:00"
+        },
+        {
+            "customer_id": 100000000395788,
+            "customer_number": "80010",
+            "customer_name": "Stark Industries",
+            "week_start_day": null,
+            "week_end_day": null,
+            "effective_start_date": null,
+            "effective_end_date": null,
+            "start_time": "08:00",
+            "end_time": "16:00",
+            "mon_in_time": "00:00",
+            "mon_out_time": "00:00",
+            "tue_in_time": "00:00",
+            "tue_out_time": "00:00",
+            "wed_in_time": "00:00",
+            "wed_out_time": "00:00",
+            "thu_in_time": "00:00",
+            "thu_out_time": "00:00",
+            "fri_in_time": "00:00",
+            "fri_out_time": "00:00",
+            "sat_in_time": "00:00",
+            "sat_out_time": "00:00",
+            "sun_in_time": "00:00",
+            "sun_out_time": "00:00"
+        },
+        {
+            "customer_id": 100000000395792,
+            "customer_number": "10010",
+            "customer_name": "Conifer International",
+            "week_start_day": "Monday",
+            "week_end_day": "Friday",
+            "effective_start_date": "2024-03-01T00:00:00Z",
+            "effective_end_date": "2024-05-31T00:00:00Z",
+            "start_time": "08:00",
+            "end_time": "16:00",
+            "mon_in_time": "08:00",
+            "mon_out_time": "16:00",
+            "tue_in_time": "08:00",
+            "tue_out_time": "16:00",
+            "wed_in_time": "08:00",
+            "wed_out_time": "16:00",
+            "thu_in_time": "08:00",
+            "thu_out_time": "16:00",
+            "fri_in_time": "08:00",
+            "fri_out_time": "16:00",
+            "sat_in_time": "00:00",
+            "sat_out_time": "00:00",
+            "sun_in_time": "00:00",
+            "sun_out_time": "00:00"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 3,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/setUpCustomerDetails"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/setUpCustomerDetails"
+        }
+    ]
+}

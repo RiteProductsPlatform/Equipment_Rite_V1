@@ -1,0 +1,12 @@
+{
+  "id": "customer-request",
+  "description": "Flow main",
+  "defaultPage": "equip-approval-start",
+  "services": {},
+  "types": {},
+  "variables": {
+    "selectedReservationNumber": {
+      "type": "string"
+    }
+  }
+}

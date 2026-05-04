@@ -1,0 +1,96 @@
+{
+  "root": "forEachInFilteredData",
+  "description": "",
+  "actions": {
+
+    "forEachInFilteredData": {
+      "module": "vb/action/builtin/forEachAction",
+      "parameters": {
+        "items": "{{ $page.variables.FilteredData }}",
+        "actionId": "ifSearchobj"
+      },
+      "outcomes": {
+        "success": "callChainTRFetchSearchSheetData"
+      }
+    },
+    "callFunctionUpdateEachPayloadGenerator": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "updateEachPayloadGenerator",
+        "params": [
+          "{{ $page.variables.searchobj.crewSetup_id }}",
+          "{{ $page.variables.searchobj.dateRange ? $page.variables.searchobj.dateRange : \"\" }}",
+          "{{ $page.variables.searchobj.specific === \"DAY\" ? $chain.results.callFunctionDateFormatter.crewDate : \"\" }}",
+          "{{ $page.variables.FilteredData[$current.index] }}",
+          "{{ $page.variables.updateTimeSheet }}",
+          "{{ $page.variables.searchobj.specific }}"          ,
+          "{{ $page.variables.WeekObj }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestSearchupdateAll"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Timesheet updated Successfully",
+        "displayMode": "transient",
+        "type": "confirmation"
+      }
+    },
+    "ifSearchobj": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $page.variables.searchobj.specific === \"DAY\" ]]"
+      },
+      "outcomes": {
+        "true": "callFunctionDateFormatter",
+        "false": "callFunctionUpdateEachPayloadGenerator"
+      }
+    },
+    "callFunctionDateFormatter": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dateFormatter",
+        "params": [
+          null,
+          null,
+          "{{ $page.variables.searchobj.crewdate }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callFunctionUpdateEachPayloadGenerator"
+      }
+    },
+    "callComponentTimesDialogClose": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('timesDialog') }}",
+        "method": "close"
+      },
+      "outcomes": {
+        "success": "fireNotification"
+      }
+    },
+    "callChainTRFetchSearchSheetData": {
+      "module": "vb/action/builtin/callChainAction",
+      "parameters": {
+        "id": "TR_fetchSearchSheetData"
+      },
+      "outcomes": {
+        "success": "callComponentTimesDialogClose"
+      }
+    },
+    "callRestSearchupdateAll": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/SearchupdateAll",
+        "body": "{{ $chain.results.callFunctionUpdateEachPayloadGenerator }}"
+      }
+    }
+  }
+}

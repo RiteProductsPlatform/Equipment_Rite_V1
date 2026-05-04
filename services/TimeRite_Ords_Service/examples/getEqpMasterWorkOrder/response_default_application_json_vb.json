@@ -1,0 +1,74 @@
+{
+    "items": [
+        {
+            "equipment_name": "Equpiment Final",
+            "asset_number": "ROLLER-1234",
+            "forecast_duedate": "2024-10-27T00:00:00Z",
+            "workorder_number": "RITEEQUIP-1000"
+        },
+        {
+            "equipment_name": "Equpiment Final",
+            "asset_number": "ROLLER-1234",
+            "forecast_duedate": "2024-11-03T00:00:00Z",
+            "workorder_number": "RITEEQUIP-1001"
+        },
+        {
+            "equipment_name": "Equpiment Final",
+            "asset_number": "ROLLER-1234",
+            "forecast_duedate": "2024-11-10T00:00:00Z",
+            "workorder_number": null
+        },
+        {
+            "equipment_name": "Equpiment Final",
+            "asset_number": "ROLLER-1234",
+            "forecast_duedate": "2024-11-17T00:00:00Z",
+            "workorder_number": null
+        },
+        {
+            "equipment_name": "Equpiment Final",
+            "asset_number": "ROLLER-1234",
+            "forecast_duedate": "2024-12-01T00:00:00Z",
+            "workorder_number": "RITEEQUIP-1002"
+        },
+        {
+            "equipment_name": "Equpiment Final",
+            "asset_number": "ROLLER-1234",
+            "forecast_duedate": "2024-12-08T00:00:00Z",
+            "workorder_number": "RITEEQUIP-1003"
+        },
+        {
+            "equipment_name": "Equpiment Final",
+            "asset_number": "ROLLER-1234",
+            "forecast_duedate": "2024-12-15T00:00:00Z",
+            "workorder_number": null
+        },
+        {
+            "equipment_name": "Equpiment Final",
+            "asset_number": "ROLLER-1234",
+            "forecast_duedate": "2024-12-22T00:00:00Z",
+            "workorder_number": null
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 8,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpMasterWorkOrder"
+        },
+        {
+            "rel": "edit",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpMasterWorkOrder"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpMasterWorkOrder"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "items": [
+        {
+            "misc_trans_id": 1,
+            "org_id": 300000003591251,
+            "business_unit": "OII_AUS_AUD_BU",
+            "costing": "Oracle Rate Schedule",
+            "week_end_day": "Saturday",
+            "eqp_exp_org_id": 300000003591251,
+            "equipment_owning_organization": "OII_AUS_AUD_BU",
+            "trx_source_id": 300000019363819,
+            "project_transaction_source": "OII_EQUIP_MISC_TRANS",
+            "project_transaction_document": "OII_EQUIP_MISC_TRANS",
+            "project_tran_doc_entry": "OII_EQUIP_MISC_TRANS",
+            "expenditure_batch_prefix": "OII",
+            "include_depreciation_cost": null,
+            "enable_adhoc_timesheet": null,
+            "attribute1": null,
+            "attribute2": null,
+            "attribute3": null,
+            "attribute4": null,
+            "attribute5": null,
+            "attribute6": null,
+            "attribute7": null,
+            "attribute8": null,
+            "attribute9": null,
+            "attribute10": null,
+            "attribute11": null,
+            "attribute12": null,
+            "attribute13": null,
+            "attribute14": null,
+            "attribute15": null,
+            "created_by": null,
+            "created_date": null,
+            "last_updated_by": null,
+            "last_update_date": null,
+            "shipping_doc_required": null
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_MISCTransactions"
+        },
+        {
+            "rel": "edit",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_MISCTransactions"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_MISCTransactions"
+        }
+    ]
+}

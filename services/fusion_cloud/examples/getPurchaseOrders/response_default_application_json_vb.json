@@ -1,0 +1,305 @@
+{
+    "items": [
+        {
+            "POHeaderId": 300001805291017,
+            "OrderNumber": "56",
+            "SoldToLegalEntityId": 300000299231310,
+            "SoldToLegalEntity": "Oak RealEstate",
+            "StatusCode": "OPEN",
+            "Status": "Open",
+            "ProcurementBUId": 300000301911646,
+            "ProcurementBU": "Oak USA BU1",
+            "RequisitioningBUId": 300000301911646,
+            "RequisitioningBU": "Oak USA BU1",
+            "BillToBUId": 300000301911646,
+            "BillToBU": "Oak USA BU1",
+            "Revision": 0,
+            "BuyerId": 300001776797564,
+            "Buyer": "user, rite",
+            "SupplierId": 300000309120350,
+            "Supplier": "OAK_SUPPLIER",
+            "SupplierPartyId": 300000309120348,
+            "SupplierSiteId": 300000309251792,
+            "SupplierSite": "OAK_NEW1",
+            "SupplierContactId": null,
+            "SupplierContact": null,
+            "BillToLocationId": 300000051347826,
+            "BillToLocation": "Sendai JP",
+            "ConversionRateType": null,
+            "Ordered": 1250,
+            "OrderedAmountBeforeAdjustments": 1250,
+            "CreditAmount": 0,
+            "DiscountAmount": 0,
+            "CurrencyCode": "USD",
+            "Currency": "US Dollar",
+            "TotalTax": 0,
+            "Total": 1250,
+            "Description": null,
+            "MasterContractId": null,
+            "MasterContractNumber": null,
+            "MasterContractTypeId": null,
+            "MasterContractType": null,
+            "RequiredAcknowledgmentCode": "N",
+            "RequiredAcknowledgment": "None",
+            "SupplierOrder": null,
+            "ReferenceNumber": null,
+            "AcknowledgmentDueDate": null,
+            "PaymentTermsId": 10001,
+            "PaymentTerms": "Immediate",
+            "CarrierId": null,
+            "Carrier": null,
+            "ModeOfTransportCode": null,
+            "ModeOfTransport": null,
+            "ServiceLevelCode": null,
+            "ServiceLevel": null,
+            "ShippingMethod": "",
+            "FreightTermsCode": null,
+            "FreightTerms": null,
+            "FOBCode": null,
+            "FOB": null,
+            "RequiresSignatureFlag": false,
+            "AcknowledgeWithinDays": null,
+            "BuyerManagedTransportFlag": false,
+            "PayOnReceiptFlag": false,
+            "ConfirmingOrderFlag": false,
+            "NoteToSupplier": null,
+            "NoteToReceiver": null,
+            "CurrentVersionId": 300001805291018,
+            "CreationDate": "2026-03-23T10:16:52+00:00",
+            "CreatedBy": "rite.user",
+            "LastUpdateDate": "2026-03-23T10:20:08.376+00:00",
+            "LastUpdatedBy": "rite.user",
+            "ImportSourceCode": null,
+            "OverridingApproverId": null,
+            "OverridingApprover": null,
+            "SupplierCommunicationMethodCode": "NONE",
+            "SupplierBccEmailAddress": null,
+            "SupplierEmailAddress": null,
+            "SupplierFax": null,
+            "SupplierCcEmailAddress": null,
+            "OverrideB2BCommunicationFlag": false,
+            "AdditionalContactEmail": null,
+            "SpecialHandlingType": null,
+            "SpecialHandlingTypeCode": null,
+            "ConversionRate": null,
+            "ConversionRateDate": null,
+            "Requisition": null,
+            "SourceAgreement": null,
+            "SalesOrder": null,
+            "Negotiation": null,
+            "ShipToLocationId": 300001776650518,
+            "ShipToLocationCode": "OAK PPM",
+            "ShipToLocationAddress": "OAK, Lees Summit, MO 64082, Jackson, United States",
+            "RequesterId": null,
+            "RequesterDisplayName": null,
+            "BuyerDisplayName": "rite user",
+            "SupplierCommunicationMethod": "None",
+            "SupplierContactDisplayName": null,
+            "DocumentStyleId": 1,
+            "ProgressPaymentFlag": false,
+            "PurchaseBasis": "GOODS_AND_SERVICES",
+            "DocumentStyle": "Purchase Order",
+            "OverridingApproverDisplayName": null,
+            "ConsignmentTermsFlag": false,
+            "FrozenFlag": null,
+            "FundsStatusCode": "NOT_APPLICABLE",
+            "BudgetControlEnabledFlag": true,
+            "OrderDate": "2026-03-23T10:20:08+00:00",
+            "DocumentFiscalClassificationCode": null,
+            "DocumentFiscalClassificationId": null,
+            "DocumentFiscalClassification": null,
+            "FirstPartyRegistrationId": null,
+            "FirstPartyRegistrationNumber": null,
+            "ThirdPartyRegistrationId": null,
+            "ThirdPartyRegistrationNumber": null,
+            "DefaultTaxationCountryCode": "US",
+            "DefaultTaxationCountry": "United States",
+            "BillToLocationAddress": "Japan, 980-0014, Miyagi, Honcho, Aoba-ku, 1-1-1",
+            "PendingResponseRole": null,
+            "FundsStatus": "Not Applicable",
+            "ConfigurationOrderingEnabledFlag": false,
+            "RecoverableTax": 0,
+            "NonRecoverableTax": 0,
+            "RecoverableInclusiveTax": 0,
+            "NonRecoverableInclusiveTax": 0,
+            "RequisitionHeaderId": null,
+            "NegotiationSupplierSiteId": null,
+            "RetainageFlag": false,
+            "WcEnabledFlag": false,
+            "ChecklistId": null,
+            "Checklist": null,
+            "OkcContractNumber": null,
+            "OkcContractId": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017",
+                    "name": "purchaseOrders",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017",
+                    "name": "purchaseOrders",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/child/DFF",
+                    "name": "DFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/child/attachments",
+                    "name": "attachments",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/child/contractDocuments",
+                    "name": "contractDocuments",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/child/globalDFFs",
+                    "name": "globalDFFs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/child/lines",
+                    "name": "lines",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/child/specialHandlingDFF",
+                    "name": "specialHandlingDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/child/supportingDocuments",
+                    "name": "supportingDocuments",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/child/templateUsages",
+                    "name": "templateUsages",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/generateHighlights",
+                    "name": "generateHighlights",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/viewPDF",
+                    "name": "viewPDF",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/viewMasterContract",
+                    "name": "viewMasterContract",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/submit",
+                    "name": "submit",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/renumberPO",
+                    "name": "renumberPO",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/acknowledge",
+                    "name": "acknowledge",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/close",
+                    "name": "close",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/cancel",
+                    "name": "cancel",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/communicate",
+                    "name": "communicate",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/duplicate",
+                    "name": "duplicate",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/hold",
+                    "name": "hold",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/removeHold",
+                    "name": "removeHold",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/reopen",
+                    "name": "reopen",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/communicateOnePurchaseOrder",
+                    "name": "communicateOnePurchaseOrder",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/freeze",
+                    "name": "freeze",
+                    "kind": "other"
+                },
+                {
+                    "rel": "action",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders/300001805291017/action/unfreeze",
+                    "name": "unfreeze",
+                    "kind": "other"
+                }
+            ]
+        }
+    ],
+    "count": 1,
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/purchaseOrders",
+            "name": "purchaseOrders",
+            "kind": "collection"
+        }
+    ]
+}

@@ -1,0 +1,241 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value=""></oj-vb-fragment-param>
+</oj-vb-fragment>
+<oj-sp-welcome-page id="oj-sp-wp1"
+  illustration-background="[[ require.toUrl($application.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($application.variables.illustrationForeground) ]]"
+  display-options.responsive-padding="on" page-title="Create Rate Schedule" background-color="dark-pebble">
+  <div class="oj-panel" style="margin-top:-48px">
+    <div class="oj-helper-text-align-end">
+      <oj-button label="Add Rate Schedules" on-oj-action="[[$listeners.buttonAction]]" class="oj-button-sm"
+        chroming="callToAction">
+        <span class="oj-ux-ico-playlist-add-check" slot="startIcon"></span>
+      </oj-button>
+      <!-- <oj-button label="Cancel" class="oj-button-sm" chroming="callToAction"
+            on-oj-action="[[$listeners.buttonAction8]]">
+          </oj-button> -->
+      <oj-button label="Cancel" chroming="callToAction" class="oj-button-sm"
+        on-oj-action="[[$listeners.buttonAction9]]">
+        <span class="oj-ux-ico-close" slot="endIcon"></span>
+      </oj-button>
+    </div>
+    <div>
+      <oj-validation-group id="headevalid">
+        <oj-form-layout class="oj-sm-margin-3x-top" max-columns="5" columns="5" label-edge="top">
+          <oj-input-text label-hint="Name" on-value-changed="[[$listeners.inputTextValue]]"
+            disabled="[[ !$variables.masterDetailsSaved ]]" required="true">
+          </oj-input-text>
+          <oj-input-text label-hint="Description" on-value-changed="[[$listeners.inputTextValue2]]"
+            disabled="[[ !$variables.masterDetailsSaved ]]"></oj-input-text>
+          <oj-select-single label-hint="Bill Rate Schedule Level" item-text="Meaning"
+            on-value-item-changed="[[$listeners.selectValueItem]]" disabled="[[ !$variables.masterDetailsSaved ]]"
+            data="[[ $flow.variables.eqpRateScheduleAdp ]]" required="true"></oj-select-single>
+          <oj-input-date label-hint="Start Date" disabled="[[ !$variables.masterDetailsSaved ]]"
+            on-value-changed="[[$listeners.inputDateValue9]]" required="true"></oj-input-date>
+          <oj-input-date label-hint="End Date" disabled="[[ !$variables.masterDetailsSaved ]]"
+            on-value-changed="[[$listeners.inputDateValue10]]" required="true"></oj-input-date>
+          <oj-select-single label-hint="Contract"
+            disabled="[[ $application.variables.billRateScheduleLevel!=='Contract' ]]"
+            on-value-item-changed="[[$listeners.selectValueItem10]]" data="[[$variables.get1113185ContractsListSDP]]"
+            item-text="ContractNumber" value="{{ $page.variables.contract }}"></oj-select-single>
+          <oj-select-single label-hint="Project"
+            disabled="[[ $application.variables.billRateScheduleLevel !== 'Project' && $application.variables.billRateScheduleLevel !== 'Task' ]]"
+            on-value-item-changed="[[$listeners.selectValueItem11]]" item-text="name"
+            data="[[$variables.getEQUIPMENTRITEPROJECTSLOV1GetProjects2ListSDP]]"></oj-select-single>
+
+          <oj-select-single label-hint="Task"
+            disabled="[[ $application.variables.billRateScheduleLevel !== 'Project' && $application.variables.billRateScheduleLevel !== 'Task' && $application.variables.billRateScheduleLevel !== '' ]]"
+            on-value-item-changed="[[$listeners.selectValueItem12]]" item-text="TaskName"
+            data="[[$variables.getFscmRestApiResources1113185ProjectsProjectIdChildTasks2ListSDP]]"></oj-select-single>
+          <oj-checkboxset aria-label="Checkbox Set" readonly="[[ !$variables.masterDetailsSaved ]]"
+            class="oj-sm-margin-3x-top" value="{{ $variables.activeFlag }}">
+            <oj-option value="Yes">Active Flag</oj-option>
+          </oj-checkboxset>
+        </oj-form-layout>
+      </oj-validation-group>
+    </div>
+  </div>
+  <oj-dialog dialog-title="Dialog" id="oj-dialog--1239369820-3" style="">
+    <div slot="body">
+      <div class="oj-flex">
+        <div id="map" style="width:550px;height:330px;margin-top:10px"></div>
+      </div>
+      <div class="oj-flex">
+        <oj-bind-text value="[[ $variables.Distance ]]">
+        </oj-bind-text>
+      </div>
+      <div style="margin-top:10px;">
+        <oj-form-layout columns="2" label-edge="top">
+          <oj-input-text label-hint="Address 1" value="{{ $variables.selectedRow.addressline1  }}"></oj-input-text>
+          <oj-input-text label-hint="Address 2" value="{{ $variables.selectedRow.addressline2  }}"></oj-input-text>
+          <oj-input-text label-hint="City" value="{{ $variables.selectedRow.city }}"></oj-input-text>
+          <oj-input-text label-hint="Country" value="{{ $variables.selectedRow.country }}"></oj-input-text>
+        </oj-form-layout>
+      </div>
+    </div>
+    <div slot="footer">
+      <oj-button on-oj-action="[[$listeners.buttonAction7]]">Submit</oj-button>
+      <oj-button on-oj-action="[[$listeners.buttonAction7]]">Close</oj-button>
+    </div>
+  </oj-dialog>
+  <oj-dialog dialog-title="Dialog" id="oj-dialog-1653737817-1" style="min-width: 75%;" drag-affordance="title-bar"
+    cancel-behavior="icon" resize-behavior="resizable">
+    <div slot="body">
+      <div>
+        <h6 class="oj-header">Enter Rate Schedules</h6>
+      </div>
+      <div class="oj-flex">
+        <div class="oj-flex-item oj-sm-12 oj-md-12">
+          <oj-form-layout class="" columns="5" max-columns="5" label-edge="top">
+            <oj-select-single label-hint="Equipment Class" item-text="Meaning"
+              value="{{ $variables.selectedEquipmentClass }}" data="[[ $flow.variables.eqpClassAdp ]]">
+            </oj-select-single>
+            <oj-select-single label-hint="Equipment" on-value-item-changed="[[$listeners.selectValueItem2]]"
+              item-text="lkpvalue" data="[[$variables.getGetEquipmentLOVListSDP]]"></oj-select-single>
+            <oj-text-area label-hint="Location" value="{{ $variables.selectedRow.location }}"
+              on-click="[[$listeners.textAreaValue]]"></oj-text-area>
+            <!-- <oj-input-text label-hint="Threshold Value">
+            </oj-input-text>
+            <oj-select-single label-hint="Rate Period" on-value-item-changed="[[$listeners.selectValueItem4]]"
+              item-text="UOM" data="[[ $flow.variables.uomAdp ]]"></oj-select-single> -->
+            <!-- <oj-select-single label-hint="Rounding Threshold" on-value-item-changed="[[$listeners.selectValueItem5]]"
+              data="[[$variables.roundingThresholdListSDP]]" item-text="roundingThreshold"></oj-select-single> -->
+          </oj-form-layout>
+        </div>
+      </div>
+
+      <div class="oj-flex-item oj-flex oj-sm-flex-direction-column ">
+        <div class="oj-flex-item oj-flex oj-sm-justify-content-flex-end oj-sm-margin-2x-top">
+          <oj-button label="+ Add Schedule" class="oj-button-sm" chroming="callToAction"
+            on-oj-action="[[$listeners.buttonAction4]]"></oj-button>
+        </div>
+        <div class="oj-flex-item oj-sm-margin-2x-top">
+          <oj-table scroll-policy="loadMoreOnScroll" display="grid" data="[[ $variables.scheduleTblADP ]]"
+            style="width:100%;max-height:30vh"
+            columns='[
+            {"headerText":"Hour Type","field":"hour_type","template":"hour_type"},
+            {"headerText":"Threshold Value","field":"threshold","template":"threshold"},
+            {"headerText":"Rate Period","field":"rate_period","template":"rate_period"},
+
+
+            {"headerText":"Cost Rate","field":"cost_rate","template":"cost_rate"},
+            {"headerText":"Bill Rate","field":"bill_rate","template":"bill_rate"},
+            {"headerText":"Currency","field":"currency","template":"currency"},
+            {"headerText":"Start Date","field":"start_date","template":"start_date"},
+            {"headerText":"End Date","field":"end_date","template":"end_date"},
+            {"headerText":"Delete","field":"","template":"delete"}]'
+            on-oj-before-row-edit="[[$listeners.tableBeforeRowEdit]]" edit-mode="rowEdit"
+            on-oj-before-row-edit-end="[[$listeners.tableBeforeRowEditEnd]]">
+
+             <template slot="threshold" data-oj-as="cell">
+              <oj-bind-if test='[[cell.mode==="navigation"]]'>
+                <oj-bind-text value="[[cell.data]]"></oj-bind-text>
+              </oj-bind-if>
+              <oj-bind-if test='[[cell.mode==="edit"]]'>
+                <oj-input-text value="{{$variables.scheduleBlankRowData.threshold}}"></oj-input-text>
+              </oj-bind-if>
+            </template>
+
+             <template slot="rate_period" data-oj-as="cell">
+              <oj-bind-if test='[[cell.mode==="navigation"]]'>
+                <oj-bind-text value="[[cell.data]]"></oj-bind-text>
+              </oj-bind-if>
+              <oj-bind-if test='[[cell.mode==="edit"]]'>
+             <oj-select-single aria-label="Rate Period" class="editable"
+               on-value-item-changed="[[$listeners.selectValueItem4]]" item-text="UOM"
+               value="{{$variables.scheduleBlankRowData.rate_period}}" data="[[ $flow.variables.uomAdp ]]"></oj-select-single>
+              </oj-bind-if>
+            </template>
+
+            <template slot="hour_type" data-oj-as="cell">
+              <oj-bind-if test='[[cell.mode==="navigation"]]'>
+                <oj-bind-text value="[[cell.data]]"></oj-bind-text>
+              </oj-bind-if>
+              <oj-bind-if test='[[cell.mode==="edit"]]'>
+                <oj-select-single aria-label="hourtype" value="{{$variables.scheduleBlankRowData.hour_type}}"
+                  class="editable" item-text="Meaning" data="[[ $variables.eqpHoursTypeAdp ]]">
+                </oj-select-single>
+              </oj-bind-if>
+            </template>
+            <template slot="cost_rate" data-oj-as="cell">
+              <oj-bind-if test='[[cell.mode==="navigation"]]'>
+                
+                <oj-bind-if test="[[ $current.data ]]">
+                <oj-bind-text value="[[ '$' + cell.data]]"></oj-bind-text>
+                </oj-bind-if>
+              </oj-bind-if>
+              <oj-bind-if test='[[cell.mode==="edit"]]'>
+                <oj-input-number aria-label="Cost Rate" value="{{ $variables.scheduleBlankRowData.cost_rate }}"
+                  converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'>
+                </oj-input-number>
+              </oj-bind-if>
+            </template>
+            <template slot="bill_rate" data-oj-as="cell">
+              <oj-bind-if test='[[cell.mode==="navigation"]]'>
+                <!-- <oj-bind-text value="[[ '$' + cell.data]]"></oj-bind-text> -->
+                  <oj-bind-if test="[[ $current.data ]]">
+                <oj-bind-text value="[[ '$' + cell.data]]"></oj-bind-text>
+                </oj-bind-if>
+              </oj-bind-if>
+              </oj-bind-if>
+              <oj-bind-if test='[[cell.mode==="edit"]]'>
+                <oj-input-number aria-label="bill Rate" value="{{$variables.scheduleBlankRowData.bill_rate}}"
+                  min="[[$variables.scheduleBlankRowData.cost_rate]]"
+                  converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'>
+                </oj-input-number>
+              </oj-bind-if>
+            </template>
+            <template slot="currency" data-oj-as="cell">
+              <oj-bind-if test='[[cell.mode==="navigation"]]'>
+                <oj-bind-text value="[[cell.data]]"></oj-bind-text>
+              </oj-bind-if>
+              <oj-bind-if test='[[cell.mode==="edit"]]'>
+                <oj-select-single aria-label="currency" value="{{$variables.scheduleBlankRowData.currency}}"
+                  class="editable" item-text="CurrencyCode" data="[[ $variables.currencyAdp ]]">
+                </oj-select-single>
+              </oj-bind-if>
+            </template>
+            <template slot="start_date" data-oj-as="cell">
+              <oj-bind-if test='[[cell.mode==="navigation"]]'>
+                <oj-bind-text value="[[cell.data]]"></oj-bind-text>
+              </oj-bind-if>
+              <oj-bind-if test='[[cell.mode==="edit"]]'>
+                <oj-input-date placeholder="mm/dd/yyyy" value="{{$variables.scheduleBlankRowData.start_date}}"
+                  min="[[ $application.variables.startandenddate.startdate ]]"
+                  max="[[ $application.variables.startandenddate.enddate ]]"
+                  on-value-changed="[[$listeners.inputDateValue11]]">
+                </oj-input-date>
+              </oj-bind-if>
+            </template>
+            <template slot="end_date" data-oj-as="cell">
+              <oj-bind-if test='[[cell.mode==="navigation"]]'>
+                <oj-bind-text value="[[cell.data]]"></oj-bind-text>
+              </oj-bind-if>
+              <oj-bind-if test='[[cell.mode==="edit"]]'>
+                <oj-input-date placeholder="mm/dd/yyyy" value="{{$variables.scheduleBlankRowData.end_date}}"
+                  max="[[ $application.variables.startandenddate.enddate ]]"
+                  min="[[ $variables.scheduleBlankRowData.caluculatedDate ]]">
+                </oj-input-date>
+              </oj-bind-if>
+            </template>
+            <template slot="delete">
+              <oj-button class="oj-button-sm" chroming="borderless" on-oj-action="[[$listeners.buttonAction10]]">
+                <span class="oj-ux-ico-trash" slot="startIcon" style="color:red"></span>
+              </oj-button>
+            </template>
+          </oj-table>
+        </div>
+      </div>
+    </div>
+    <div slot="footer">
+      <oj-button label="Submit" chroming="callToAction" class="oj-button-sm"
+        on-oj-action="[[$listeners.buttonAction5]]">
+        <span class="oj-ux-ico-save" slot="startIcon"></span>
+      </oj-button>
+      <!-- on-oj-action="[[$listeners.buttonAction2]]" -->
+      <oj-button on-oj-action="[[$listeners.buttonAction3]]" chroming="callToAction" class="oj-button-sm">
+        <span class="oj-ux-ico-close" slot="endIcon"></span>Close
+      </oj-button>
+    </div>
+  </oj-dialog>
+</oj-sp-welcome-page>

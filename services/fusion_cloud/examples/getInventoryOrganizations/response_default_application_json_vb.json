@@ -1,0 +1,1872 @@
+{
+    "items": [
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "ManagementBusinessUnitId": 300000046987012,
+            "ManagementBusinessUnitName": "US1 Business Unit",
+            "LegalEntityId": 300000046973970,
+            "LegalEntityName": "US1 Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000046987012,
+            "ProfitCenterBusinessUnitName": "US1 Business Unit",
+            "Status": "Active",
+            "LocationId": 300000047013190,
+            "LocationCode": "Atlanta",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": true,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": true,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000047274447,
+            "ItemDefinitionOrganizationCode": "002",
+            "ItemDefinitionOrganizationName": "Atlanta",
+            "ManufacturingParametersExistFlag": "true",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-10-29T16:46:55.003+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2013-10-29T16:49:46.097+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274447",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000C78"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274447",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274447/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274447/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274447/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274447/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274441,
+            "OrganizationCode": "000",
+            "OrganizationName": "Operations",
+            "ManagementBusinessUnitId": 300000046987012,
+            "ManagementBusinessUnitName": "US1 Business Unit",
+            "LegalEntityId": 300000046973970,
+            "LegalEntityName": "US1 Legal Entity",
+            "ProfitCenterBusinessUnitId": null,
+            "ProfitCenterBusinessUnitName": null,
+            "Status": "Active",
+            "LocationId": null,
+            "LocationCode": null,
+            "InventoryFlag": false,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": null,
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000047274441,
+            "ItemDefinitionOrganizationCode": "000",
+            "ItemDefinitionOrganizationName": "Operations",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-10-29T16:25:20.789+00:00",
+            "LastUpdatedBy": "vibhu",
+            "LastUpdateDate": "2024-11-25T09:43:59.042+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274441",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000027371007E00020000000678"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274441",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274441/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274441/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274441/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274441/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "ManagementBusinessUnitId": 300000046987012,
+            "ManagementBusinessUnitName": "US1 Business Unit",
+            "LegalEntityId": 300000046973970,
+            "LegalEntityName": "US1 Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000046987012,
+            "ProfitCenterBusinessUnitName": "US1 Business Unit",
+            "Status": "Active",
+            "LocationId": 300000047013200,
+            "LocationCode": "Seattle",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": true,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000047274444,
+            "ItemDefinitionOrganizationCode": "001",
+            "ItemDefinitionOrganizationName": "Seattle",
+            "ManufacturingParametersExistFlag": "true",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-10-29T16:40:25.004+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2013-10-29T16:46:44.478+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274444",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000E78"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274444",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274444/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274444/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274444/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274444/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274450,
+            "OrganizationCode": "003",
+            "OrganizationName": "Chicago",
+            "ManagementBusinessUnitId": 300000046987012,
+            "ManagementBusinessUnitName": "US1 Business Unit",
+            "LegalEntityId": 300000046973970,
+            "LegalEntityName": "US1 Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000046987012,
+            "ProfitCenterBusinessUnitName": "US1 Business Unit",
+            "Status": "Active",
+            "LocationId": 300000047013180,
+            "LocationCode": "Chicago",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000047274450,
+            "ItemDefinitionOrganizationCode": "003",
+            "ItemDefinitionOrganizationName": "Chicago",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-10-29T16:50:19.005+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2013-10-29T16:51:49.878+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274450",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000778"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274450",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274450/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274450/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274450/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047274450/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047398497,
+            "OrganizationCode": "999",
+            "OrganizationName": "External Item Organization for LEG2",
+            "ManagementBusinessUnitId": 300000046987012,
+            "ManagementBusinessUnitName": "US1 Business Unit",
+            "LegalEntityId": 300000046973970,
+            "LegalEntityName": "US1 Legal Entity",
+            "ProfitCenterBusinessUnitId": null,
+            "ProfitCenterBusinessUnitName": null,
+            "Status": "Active",
+            "LocationId": 300000047013180,
+            "LocationCode": "Chicago",
+            "InventoryFlag": false,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": null,
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000047398497,
+            "ItemDefinitionOrganizationCode": "999",
+            "ItemDefinitionOrganizationName": "External Item Organization for LEG2",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-11-05T20:20:52.538+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2013-11-05T20:22:14.724+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398497",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398497",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398497/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398497/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398497/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398497/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047398500,
+            "OrganizationCode": "998",
+            "OrganizationName": "External Item Organization for EBS1",
+            "ManagementBusinessUnitId": 300000046987012,
+            "ManagementBusinessUnitName": "US1 Business Unit",
+            "LegalEntityId": 300000046973970,
+            "LegalEntityName": "US1 Legal Entity",
+            "ProfitCenterBusinessUnitId": null,
+            "ProfitCenterBusinessUnitName": null,
+            "Status": "Active",
+            "LocationId": 300000047013250,
+            "LocationCode": "Pittsburgh",
+            "InventoryFlag": false,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": null,
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000047398500,
+            "ItemDefinitionOrganizationCode": "998",
+            "ItemDefinitionOrganizationName": "External Item Organization for EBS1",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-11-05T20:22:25.002+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2013-11-05T20:23:51.575+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398500",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398500",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398500/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398500/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398500/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398500/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047398503,
+            "OrganizationCode": "997",
+            "OrganizationName": "External Item Organization for SAP1",
+            "ManagementBusinessUnitId": 300000046987012,
+            "ManagementBusinessUnitName": "US1 Business Unit",
+            "LegalEntityId": 300000046973970,
+            "LegalEntityName": "US1 Legal Entity",
+            "ProfitCenterBusinessUnitId": null,
+            "ProfitCenterBusinessUnitName": null,
+            "Status": "Active",
+            "LocationId": 300000047013310,
+            "LocationCode": "Salt Lake City",
+            "InventoryFlag": false,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": null,
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000047398503,
+            "ItemDefinitionOrganizationCode": "997",
+            "ItemDefinitionOrganizationName": "External Item Organization for SAP1",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-11-05T20:24:04.002+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2013-11-05T20:25:08.178+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398503",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398503",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398503/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398503/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398503/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398503/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047398506,
+            "OrganizationCode": "996",
+            "OrganizationName": "External Item Organization for PSFT1",
+            "ManagementBusinessUnitId": 300000046987012,
+            "ManagementBusinessUnitName": "US1 Business Unit",
+            "LegalEntityId": 300000046973970,
+            "LegalEntityName": "US1 Legal Entity",
+            "ProfitCenterBusinessUnitId": null,
+            "ProfitCenterBusinessUnitName": null,
+            "Status": "Active",
+            "LocationId": 300000047013230,
+            "LocationCode": "New York",
+            "InventoryFlag": false,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": null,
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000047398506,
+            "ItemDefinitionOrganizationCode": "996",
+            "ItemDefinitionOrganizationName": "External Item Organization for PSFT1",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-11-05T20:25:42.001+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2013-11-05T20:26:38.324+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398506",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398506",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398506/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398506/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398506/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047398506/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047655376,
+            "OrganizationCode": "101",
+            "OrganizationName": "Bristol",
+            "ManagementBusinessUnitId": 300000047498175,
+            "ManagementBusinessUnitName": "UK Business Unit",
+            "LegalEntityId": 300000047483117,
+            "LegalEntityName": "UK Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000047498175,
+            "ProfitCenterBusinessUnitName": "UK Business Unit",
+            "Status": "Active",
+            "LocationId": 300000047597160,
+            "LocationCode": "Bristol",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000047655376,
+            "ItemDefinitionOrganizationCode": "101",
+            "ItemDefinitionOrganizationName": "Bristol",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-11-20T20:35:41.003+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2013-11-20T20:38:14.266+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047655376",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000778"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047655376",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047655376/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047655376/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047655376/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047655376/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047919954,
+            "OrganizationCode": "151",
+            "OrganizationName": "Marseille",
+            "ManagementBusinessUnitId": 300000047568131,
+            "ManagementBusinessUnitName": "France Business Unit",
+            "LegalEntityId": 300000047483130,
+            "LegalEntityName": "France Legal Entity",
+            "ProfitCenterBusinessUnitId": null,
+            "ProfitCenterBusinessUnitName": null,
+            "Status": "Active",
+            "LocationId": 300000047826314,
+            "LocationCode": "Marseille",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000047919954,
+            "ItemDefinitionOrganizationCode": "151",
+            "ItemDefinitionOrganizationName": "Marseille",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-11-26T22:14:25.002+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2013-11-26T22:16:34.767+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047919954",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000678"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047919954",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047919954/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047919954/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047919954/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047919954/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047919957,
+            "OrganizationCode": "150",
+            "OrganizationName": "Bordeaux",
+            "ManagementBusinessUnitId": 300000047568131,
+            "ManagementBusinessUnitName": "France Business Unit",
+            "LegalEntityId": 300000047483130,
+            "LegalEntityName": "France Legal Entity",
+            "ProfitCenterBusinessUnitId": null,
+            "ProfitCenterBusinessUnitName": null,
+            "Status": "Active",
+            "LocationId": 300000047826216,
+            "LocationCode": "Bordeaux",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000047919957,
+            "ItemDefinitionOrganizationCode": "150",
+            "ItemDefinitionOrganizationName": "Bordeaux",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-11-26T22:17:17.003+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2013-11-26T22:18:38.948+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047919957",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000578"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047919957",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047919957/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047919957/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047919957/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047919957/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047655373,
+            "OrganizationCode": "100",
+            "OrganizationName": "Manchester",
+            "ManagementBusinessUnitId": 300000047498175,
+            "ManagementBusinessUnitName": "UK Business Unit",
+            "LegalEntityId": 300000047483117,
+            "LegalEntityName": "UK Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000047498175,
+            "ProfitCenterBusinessUnitName": "UK Business Unit",
+            "Status": "Active",
+            "LocationId": 300000047597140,
+            "LocationCode": "Manchester",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000047655373,
+            "ItemDefinitionOrganizationCode": "100",
+            "ItemDefinitionOrganizationName": "Manchester",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2013-11-20T20:27:24.003+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2013-11-20T20:35:33.337+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047655373",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000878"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047655373",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047655373/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047655373/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047655373/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000047655373/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000075236542,
+            "OrganizationCode": "050",
+            "OrganizationName": "Shanghai",
+            "ManagementBusinessUnitId": 300000047826657,
+            "ManagementBusinessUnitName": "China Business Unit",
+            "LegalEntityId": 300000047836139,
+            "LegalEntityName": "China Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000047826657,
+            "ProfitCenterBusinessUnitName": "China Business Unit",
+            "Status": "Active",
+            "LocationId": 300000047902682,
+            "LocationCode": "Shanghai",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": true,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000075236542,
+            "ItemDefinitionOrganizationCode": "050",
+            "ItemDefinitionOrganizationName": "Shanghai",
+            "ManufacturingParametersExistFlag": "true",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2014-05-06T19:43:04.002+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2014-05-06T19:45:19.472+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000075236542",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000978"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000075236542",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000075236542/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000075236542/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000075236542/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000075236542/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000075236545,
+            "OrganizationCode": "051",
+            "OrganizationName": "Shenzhen",
+            "ManagementBusinessUnitId": 300000047826657,
+            "ManagementBusinessUnitName": "China Business Unit",
+            "LegalEntityId": 300000047836139,
+            "LegalEntityName": "China Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000047826657,
+            "ProfitCenterBusinessUnitName": "China Business Unit",
+            "Status": "Active",
+            "LocationId": 300000047902731,
+            "LocationCode": "Shenzhen",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": true,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000075236545,
+            "ItemDefinitionOrganizationCode": "051",
+            "ItemDefinitionOrganizationName": "Shenzhen",
+            "ManufacturingParametersExistFlag": "true",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2014-05-06T19:46:36.003+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2014-05-06T19:48:00.915+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000075236545",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000778"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000075236545",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000075236545/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000075236545/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000075236545/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000075236545/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000076167649,
+            "OrganizationCode": "PRG01",
+            "OrganizationName": "Progress Operations",
+            "ManagementBusinessUnitId": 300000075888561,
+            "ManagementBusinessUnitName": "Progress US Business Unit",
+            "LegalEntityId": 300000075886539,
+            "LegalEntityName": "Progress US Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000075888561,
+            "ProfitCenterBusinessUnitName": "Progress US Business Unit",
+            "Status": "Active",
+            "LocationId": 300000076167591,
+            "LocationCode": "Reston",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": true,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000076167649,
+            "ItemDefinitionOrganizationCode": "PRG01",
+            "ItemDefinitionOrganizationName": "Progress Operations",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2014-06-27T18:01:44.002+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2014-06-27T18:07:02.672+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000076167649",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000878"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000076167649",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000076167649/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000076167649/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000076167649/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000076167649/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000094179228,
+            "OrganizationCode": "HED01",
+            "OrganizationName": "Higher Education Operations",
+            "ManagementBusinessUnitId": 300000093962136,
+            "ManagementBusinessUnitName": "University US Business Unit",
+            "LegalEntityId": 300000094023106,
+            "LegalEntityName": "University US Legal Entity",
+            "ProfitCenterBusinessUnitId": null,
+            "ProfitCenterBusinessUnitName": null,
+            "Status": "Active",
+            "LocationId": 300000047013170,
+            "LocationCode": "Redwood City",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000094179228,
+            "ItemDefinitionOrganizationCode": "HED01",
+            "ItemDefinitionOrganizationName": "Higher Education Operations",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "FIN_IMPL",
+            "CreationDate": "2014-11-13T18:33:46.003+00:00",
+            "LastUpdatedBy": "FIN_IMPL",
+            "LastUpdateDate": "2014-11-13T18:41:23.626+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000094179228",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000578"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000094179228",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000094179228/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000094179228/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000094179228/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000094179228/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000101036136,
+            "OrganizationCode": "200",
+            "OrganizationName": "Tokyo",
+            "ManagementBusinessUnitId": 300000047826669,
+            "ManagementBusinessUnitName": "Japan Business Unit",
+            "LegalEntityId": 300000047836164,
+            "LegalEntityName": "Japan Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000047826669,
+            "ProfitCenterBusinessUnitName": "Japan Business Unit",
+            "Status": "Active",
+            "LocationId": 300000047903082,
+            "LocationCode": "Tokyo JP",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000101036136,
+            "ItemDefinitionOrganizationCode": "200",
+            "ItemDefinitionOrganizationName": "Tokyo",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2015-03-30T17:54:08.003+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2015-03-30T17:57:08.780+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000101036136",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000678"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000101036136",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000101036136/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000101036136/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000101036136/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000101036136/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000115539127,
+            "OrganizationCode": "170",
+            "OrganizationName": "Milan",
+            "ManagementBusinessUnitId": 300000048608417,
+            "ManagementBusinessUnitName": "Italy Business Unit",
+            "LegalEntityId": 300000048611122,
+            "LegalEntityName": "Italy Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000048608417,
+            "ProfitCenterBusinessUnitName": "Italy Business Unit",
+            "Status": "Active",
+            "LocationId": 300000048716883,
+            "LocationCode": "Milan",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000115539127,
+            "ItemDefinitionOrganizationCode": "170",
+            "ItemDefinitionOrganizationName": "Milan",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2015-10-13T17:41:02.427+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2015-10-13T17:43:34.185+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000115539127",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000378"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000115539127",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000115539127/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000115539127/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000115539127/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000115539127/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "OrganizationName": "Wondercare General Hospital",
+            "ManagementBusinessUnitId": 300000078974743,
+            "ManagementBusinessUnitName": "Healthcare US Business Unit",
+            "LegalEntityId": 300000078941541,
+            "LegalEntityName": "Healthcare US Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000078974743,
+            "ProfitCenterBusinessUnitName": "Healthcare US Business Unit",
+            "Status": "Active",
+            "LocationId": 300000163899077,
+            "LocationCode": "Wondercare General Hospital",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000116228124,
+            "ItemDefinitionOrganizationCode": "HC01",
+            "ItemDefinitionOrganizationName": "Wondercare General Hospital",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2015-11-20T17:03:51.002+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2018-03-02T19:56:59+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000116228124",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000027371007E00020000000A78"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000116228124",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000116228124/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000116228124/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000116228124/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000116228124/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000118783270,
+            "OrganizationCode": "005",
+            "OrganizationName": "Dallas",
+            "ManagementBusinessUnitId": 300000046987012,
+            "ManagementBusinessUnitName": "US1 Business Unit",
+            "LegalEntityId": 300000046973970,
+            "LegalEntityName": "US1 Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000046987012,
+            "ProfitCenterBusinessUnitName": "US1 Business Unit",
+            "Status": "Active",
+            "LocationId": 300000094179144,
+            "LocationCode": "Dallas",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": true,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000118783270,
+            "ItemDefinitionOrganizationCode": "005",
+            "ItemDefinitionOrganizationName": "Dallas",
+            "ManufacturingParametersExistFlag": "true",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2016-03-04T15:09:30.002+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2016-03-04T15:11:37.157+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118783270",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000578"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118783270",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118783270/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118783270/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118783270/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118783270/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000118784047,
+            "OrganizationCode": "DSHIP",
+            "OrganizationName": "DSHIP",
+            "ManagementBusinessUnitId": null,
+            "ManagementBusinessUnitName": null,
+            "LegalEntityId": null,
+            "LegalEntityName": null,
+            "ProfitCenterBusinessUnitId": null,
+            "ProfitCenterBusinessUnitName": null,
+            "Status": "Active",
+            "LocationId": 300000047013150,
+            "LocationCode": "Headquarters",
+            "InventoryFlag": false,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": null,
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000118784047,
+            "ItemDefinitionOrganizationCode": "DSHIP",
+            "ItemDefinitionOrganizationName": "DSHIP",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2016-03-04T15:18:16.005+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2016-03-04T15:19:29.247+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118784047",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000171007E000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118784047",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118784047/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118784047/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118784047/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118784047/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000118783245,
+            "OrganizationCode": "004",
+            "OrganizationName": "Boise",
+            "ManagementBusinessUnitId": 300000046987012,
+            "ManagementBusinessUnitName": "US1 Business Unit",
+            "LegalEntityId": 300000046973970,
+            "LegalEntityName": "US1 Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000046987012,
+            "ProfitCenterBusinessUnitName": "US1 Business Unit",
+            "Status": "Active",
+            "LocationId": 300000047013270,
+            "LocationCode": "Boise",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": true,
+            "ContractManufacturingFlag": true,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000118783245,
+            "ItemDefinitionOrganizationCode": "004",
+            "ItemDefinitionOrganizationName": "Boise",
+            "ManufacturingParametersExistFlag": "true",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2016-03-04T15:05:30.034+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2016-03-07T21:02:46+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118783245",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000027371007E00020000000578"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118783245",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118783245/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118783245/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118783245/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000118783245/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000136607858,
+            "OrganizationCode": "230",
+            "OrganizationName": "US Insurance",
+            "ManagementBusinessUnitId": 300000136439946,
+            "ManagementBusinessUnitName": "US INS Business Unit",
+            "LegalEntityId": 300000136274851,
+            "LegalEntityName": "US INS Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000136439946,
+            "ProfitCenterBusinessUnitName": "US INS Business Unit",
+            "Status": "Active",
+            "LocationId": 300000136439885,
+            "LocationCode": "US Insurance Location",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000136607858,
+            "ItemDefinitionOrganizationCode": "230",
+            "ItemDefinitionOrganizationName": "US Insurance",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2016-12-14T21:25:27.079+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2016-12-14T21:28:28.187+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000136607858",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000378"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000136607858",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000136607858/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000136607858/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000136607858/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000136607858/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000132904412,
+            "OrganizationCode": "020",
+            "OrganizationName": "Pittsburg Regional Distribution Center (LF)",
+            "ManagementBusinessUnitId": 300000046987012,
+            "ManagementBusinessUnitName": "US1 Business Unit",
+            "LegalEntityId": 300000046973970,
+            "LegalEntityName": "US1 Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000046987012,
+            "ProfitCenterBusinessUnitName": "US1 Business Unit",
+            "Status": "Active",
+            "LocationId": 300000047013250,
+            "LocationCode": "Pittsburgh",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": false,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000132904412,
+            "ItemDefinitionOrganizationCode": "020",
+            "ItemDefinitionOrganizationName": "Pittsburg Regional Distribution Center (LF)",
+            "ManufacturingParametersExistFlag": "false",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2016-10-17T19:36:30.002+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2016-10-17T19:41:13.325+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000132904412",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000378"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000132904412",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000132904412/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000132904412/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000132904412/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000132904412/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000181200224,
+            "OrganizationCode": "430",
+            "OrganizationName": "PLNT G",
+            "ManagementBusinessUnitId": 300000180010546,
+            "ManagementBusinessUnitName": "Supremo US Business Unit",
+            "LegalEntityId": 300000180008512,
+            "LegalEntityName": "Supremo US Legal Entity",
+            "ProfitCenterBusinessUnitId": 300000180010546,
+            "ProfitCenterBusinessUnitName": "Supremo US Business Unit",
+            "Status": "Active",
+            "LocationId": 300000181200183,
+            "LocationCode": "Process Mfg - Inventory Org",
+            "InventoryFlag": true,
+            "ManufacturingPlantFlag": true,
+            "ContractManufacturingFlag": false,
+            "MaintenanceEnabledFlag": false,
+            "MasterOrganizationId": 300000047274441,
+            "MasterOrganizationCode": "000",
+            "MasterOrganizationName": "Operations",
+            "IntegratedSystemType": "ORA_RCS_IS_INVMGMT",
+            "ItemGroupingCode": "ORA_RCS_IGB_DFTN",
+            "ItemDefinitionOrganizationId": 300000181200224,
+            "ItemDefinitionOrganizationCode": "430",
+            "ItemDefinitionOrganizationName": "PLNT G",
+            "ManufacturingParametersExistFlag": "true",
+            "CreatedBy": "SCM_IMPL",
+            "CreationDate": "2019-04-02T14:47:50.003+00:00",
+            "LastUpdatedBy": "SCM_IMPL",
+            "LastUpdateDate": "2019-04-02T14:59:56.301+00:00",
+            "FixedAssetCorporateBookTypeCode": null,
+            "MaintenanceTechnicianWorkbenchEnabledFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000181200224",
+                    "name": "inventoryOrganizations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000002770400000002737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E00020000000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000181200224",
+                    "name": "inventoryOrganizations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000181200224/lov/IntegratedSystemTypeLOV",
+                    "name": "IntegratedSystemTypeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000181200224/lov/itemGroupingCodeLOV",
+                    "name": "itemGroupingCodeLOV",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000181200224/child/invOrgParameters",
+                    "name": "invOrgParameters",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/300000181200224/child/plantParameters",
+                    "name": "plantParameters",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 25,
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations",
+            "name": "inventoryOrganizations",
+            "kind": "collection"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/action/copyInventoryOrganizations",
+            "name": "copyInventoryOrganizations",
+            "kind": "other"
+        }
+    ]
+}

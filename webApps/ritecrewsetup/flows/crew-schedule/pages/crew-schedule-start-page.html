@@ -1,0 +1,84 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value="Equipment Schedule"></oj-vb-fragment-param>
+</oj-vb-fragment>
+
+<div class="oj-flex oj-panel oj-panel-shadow-md">
+  <div class="oj-flex-item">
+
+    <oj-form-layout max-columns="5" label-edge="top" columns="5">
+
+      <oj-select-single label-hint="Requester Name" data="[[$variables.getRequesterNamesSDP]]"
+        item-text="requestor_name" id="requestor_name" value="{{ $variables.requestor_name }}">
+      </oj-select-single>
+
+      <oj-select-single label-hint="Project Name" value="{{ $variables.selectedParams.projectNameId }}"
+        item-text="project_name" data="[[$variables.getEqpReqApproverPrjListSDP2]]">
+      </oj-select-single>
+
+      <oj-select-single label-hint="Equipment Class" value="{{ $variables.selectedEquipmentClass }}"
+        data="[[$variables.getGetEquipmentClassesListSDP]]" item-text="eqp_class_details">
+      </oj-select-single>
+
+      <oj-select-single label-hint="Equipment Name" item-text="lkpvalue" data="[[$variables.getGetEquipmentLOVListSDP]]"
+        on-value-item-changed="[[$listeners.selectValueItem2]]">
+      </oj-select-single>
+
+    </oj-form-layout>
+
+
+    <oj-toolbar chroming="solid" class="oj-sm-margin-5x-top">
+
+      <oj-button chroming="callToAction" label="Search" id="searchbtn" class="oj-button-sm"
+        on-oj-action="[[$listeners.searchbtnAction]]">
+        <span class="oj-ux-ico-search" slot="startIcon"></span>
+      </oj-button>
+
+      <oj-button chroming="callToAction" label="Reset" id="resetbtn" class="oj-button-sm"
+        on-oj-action="[[$listeners.resetbtnAction3]]">
+        <span class="oj-ux-ico-reset-variable" slot="startIcon"></span>
+      </oj-button>
+
+
+      <span style="flex:1;"></span>
+
+
+      <oj-switch label-hint="Enable Trace" value="[[$application.variables.enableTrace]]"
+        on-value-changed="[[$listeners.switchValue2]]" class="oj-sm-margin-2x-end">
+      </oj-switch>
+
+      <div>
+        <oj-label>Trace ID:</oj-label>
+
+      </div>
+
+
+
+      <oj-bind-text value="[[$application.variables.traceIdDisplay]]"></oj-bind-text>
+
+    </oj-toolbar>
+
+  </div>
+</div>
+<!-- </oj-bind-if> -->
+
+<!-- <oj-bind-if test="[[ $variables.scheduleMainADP.data.length > 0 ]]"> -->
+<div class="oj-flex" style="margin-top:-40px">
+  <div id="main" style="height:80vh;width:800px;"></div>
+</div>
+<!-- </oj-bind-if> -->
+
+<!-- <oj-dialog dialog-title="Navigate to Equipment Assignment" id="oj-dialog-navigate">
+  <div slot="body">
+    <div class="oj-flex">
+      You will be Naviagted to the Assignment Screen
+    </div>
+  </div>
+  <div slot="footer">
+    <oj-button on-oj-action="[[$listeners.buttonAction4]]">Navigate</oj-button>
+    <oj-button on-oj-action="[[$listeners.buttonAction5]]">Cancel</oj-button>
+  </div>
+</oj-dialog> -->
+
+<div id="viewFlag" style="font-size:0px;" on-click="[[$listeners.viewFlagClick]]">
+  1
+</div>

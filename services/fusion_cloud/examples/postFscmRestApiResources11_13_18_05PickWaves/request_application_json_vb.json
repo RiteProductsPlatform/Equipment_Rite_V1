@@ -1,0 +1,20 @@
+{
+	"BatchPrefix": "RESTL",            
+	"ShipFromOrganizationCode": "OAK_PPM",  
+	"ReleaseStatus": "Unreleased",
+            "OrderTypeCode": "TRANSFER_ORDER",
+            "OrderType": "Transfer order",
+	"OrderNumber": "176065",
+	"StagingSubinventory": "SUP_SUBINV",            
+ 
+	"AutoPickConfirmFlag": false,
+	"TradeComplianceMethod": "NONE",
+	"ShipConfirmRule": "NONE",            
+	"CreateShipmentsFlag": "true",    
+	"ShipmentCreationCriteria": "Within an order",
+	"AutomaticallyPackFlag": "false",            
+	"AppendShipmentsFlag": "false",
+	"PickReleaseFlag": true,
+	"ReleaseMode": "ONLINE",
+        "SourceSystemName": "OPS"
+    }

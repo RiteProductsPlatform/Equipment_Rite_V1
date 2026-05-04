@@ -1,0 +1,145 @@
+{
+  "root": "callFunctionValidateGroup",
+  "description": "",
+  "actions": {
+    "forEachInFilteredData": {
+      "module": "vb/action/builtin/forEachAction",
+      "parameters": {
+        "items": "{{ $page.variables.FilteredData }}",
+        "actionId": "callFunctionCreateApproveReq"
+      },
+      "outcomes": {
+        "success": "fireNotification4"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPutEqpSubmitTimeEntry.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestPutEqpSubmitTimeEntry": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/putEqpSubmitTimeEntry",
+        "body": "{{ $chain.results.callFunctionCreateApproveReq }}"
+      },
+      "outcomes": {
+        "failure": "callComponentProgressDialogClose2",
+        "success": "callRestPostEXTPPMIMPNONLBATPERP1Impnonlbrcost"
+      }
+    },
+    "callFunctionCreateApproveReq": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "createApproveReq",
+        "params": [
+          "{{ $current.data }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPutEqpSubmitTimeEntry"
+      }
+    },
+    "callRestPostEXTPPMIMPNONLBATPERP1Impnonlbrcost": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "ApprRejOIC/postEXT_PPM_IMP_NONLB_ATP_ERP1_0Impnonlbrcost",
+        "uriParams": {
+          "batch_id": "{{ $current.data.batch_id }}"
+        },
+        "body": {
+          "dummy": ""
+        }
+      },
+      "outcomes": {
+        "failure": "callComponentProgressDialogClose3"
+      }
+    },
+    "callComponentProgressDialogOpen": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('progressDialog') }}",
+        "method": "open"
+      },
+      "outcomes": {
+        "success": "forEachInFilteredData"
+      }
+    },
+    "callComponentProgressDialogClose": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('progressDialog') }}",
+        "method": "close"
+      }
+    },
+    "callComponentProgressDialogClose2": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('progressDialog') }}",
+        "method": "close"
+      },
+      "outcomes": {
+        "success": "fireNotification"
+      }
+    },
+    "callComponentProgressDialogClose3": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('progressDialog') }}",
+        "method": "close"
+      },
+      "outcomes": {
+        "success": "fireNotification2"
+      }
+    },
+    "callFunctionValidateGroup": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "validateGroup",
+        "params": [
+          "SearchValidationgroup"
+        ]
+      },
+      "outcomes": {
+        "success": "if"
+      }
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callFunctionValidateGroup ==='valid' ]]"
+      },
+      "outcomes": {
+        "true": "callComponentProgressDialogOpen"
+      }
+    },
+    "fireNotification2": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPostEXTPPMIMPNONLBATPERP1Impnonlbrcost.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "fireNotification4": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Approved Successfully",
+        "displayMode": "transient",
+        "type": "confirmation"
+      },
+      "outcomes": {
+        "success": "callComponentProgressDialogClose"
+      }
+    }
+
+  }
+}

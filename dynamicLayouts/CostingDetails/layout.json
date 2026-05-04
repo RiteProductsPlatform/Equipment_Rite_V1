@@ -1,0 +1,39 @@
+{
+  "layoutTypes": {
+    "businessObjects": {
+      "kind": "operationRef",
+      "serviceId": "businessObjects",
+      "operations": [
+        "getall_CostingDetails"
+      ]
+    }
+  },
+  "layouts": {
+    "isDefault": {
+      "description": "Default Rule",
+      "type": "businessObjects",
+      "expression": "default"
+    },
+    "s": {
+      "type": "businessObjects",
+      "layoutType": "table",
+      "label": "s",
+      "description": "s",
+      "rules": [
+        "isDefault"
+      ],
+      "layouts": {
+        "default": {
+          "layoutType": "table",
+          "layout": {
+            "displayProperties": [
+              "createdBy",
+              "costingType",
+              "creationDate"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

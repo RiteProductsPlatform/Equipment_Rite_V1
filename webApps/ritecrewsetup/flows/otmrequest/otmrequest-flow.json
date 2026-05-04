@@ -1,0 +1,8 @@
+{
+  "id": "otmrequest",
+  "description": "Flow main",
+  "defaultPage": "otmrequest-start",
+  "services": {},
+  "types": {},
+  "variables": {}
+}

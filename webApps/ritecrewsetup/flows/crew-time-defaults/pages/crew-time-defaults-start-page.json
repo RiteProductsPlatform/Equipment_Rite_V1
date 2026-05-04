@@ -1,0 +1,1088 @@
+{
+  "title": "CrewTime Default",
+  "description": "",
+  "variables": {
+    "billingFrequency": {
+      "type": "object[]",
+      "defaultValue": [
+        {
+          "frequency": "Day"
+        },
+        {
+          "frequency": "Weekly"
+        }
+      ]
+    },
+    "billingFrequencyADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "{{ $variables.billingFrequency }}",
+        "keyAttributes": "frequency"
+      }
+    },
+    "contract_details": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getGetContractDetails",
+        "keyAttributes": "contract_number"
+      }
+    },
+    "contractsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "ContractDetailsType",
+        "keyAttributes": "contract_id"
+      }
+    },
+    "custDetailsObj": {
+      "type": "CustDetailsType",
+      "defaultValue": {
+        "start_time": "08:00",
+        "end_time": "16:00",
+        "per_diem_hours": 4
+      }
+    },
+    "defaultCheck": {
+      "type": "boolean",
+      "defaultValue": false
+    },
+    "defaultContracts": {
+      "type": "ContractDetailsType",
+      "defaultValue": {
+        "per_diem_hours": 4
+      }
+    },
+    "defaultProjects": {
+      "type": "ProjectDetailsTblType",
+      "defaultValue": {
+        "per_diem_hours": 4
+      }
+    },
+    "dialogLabel": {
+      "type": "string"
+    },
+    "ERPArray": {
+      "type": "object[]",
+      "defaultValue": [
+        {
+          "value": "Oracle EBS"
+        },
+        {
+          "value": "SAP"
+        },
+        {
+          "value": "Oracle Cloud"
+        },
+        {
+          "value": "Salesforce"
+        }
+      ]
+    },
+    "ERPSystemADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "genericLOVType",
+        "keyAttributes": "value"
+      }
+    },
+    "getSetUpCustomerDetailsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getSetUpCustomerDetails",
+        "keyAttributes": "customer_number",
+        "itemsPath": "items",
+        "responseType": "getSetUpCustomerDetailsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "customer_name"
+          ]
+        }
+      }
+    },
+    "localCustomerObj": {
+      "type": "customerType"
+    },
+    "localCustomerObj_backup": {
+      "type": "customerType"
+    },
+    "Navdata": {
+      "type": "object[]",
+      "defaultValue": [
+        {
+          "name": "Contracts",
+          "id": "Contracts",
+          "disabled": "false",
+          "iconClass": "oj-ux-ico-type-time-input"
+        },
+        {
+          "name": "Projects",
+          "id": "Projects",
+          "disabled": "true",
+          "iconClass": "oj-ux-ico-lookup-set"
+        }
+      ]
+    },
+    "NavDataADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "{{ $variables.Navdata }}",
+        "keyAttributes": "id"
+      }
+    },
+    "projectContractListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "businessObjects/getall_ProjectContract",
+        "keyAttributes": "id",
+        "itemsPath": "items",
+        "responseType": "getallProjectContractResponse"
+      }
+    },
+    "ProjectsTblADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "ProjectDetailsTblType",
+        "keyAttributes": [
+            "project_id",
+            "resource_number"
+          ]
+      }
+    },
+    "RowData": {
+      "type": "ProjectDetailsTblType"
+    },
+    "searchCustomer": {
+      "type": "string"
+    },
+    "threshholdLimit": {
+      "type": "object[]",
+      "defaultValue": [
+        {
+          "limit": "8"
+        },
+        {
+          "limit": "40"
+        }
+      ]
+    },
+    "threshholdLimitADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "{{ $variables.threshholdLimit }}",
+        "keyAttributes": "limit"
+      }
+    },
+    "threshholdMeasureADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "{{ $variables.threshholdMeasureArray }}",
+        "keyAttributes": "measure"
+      }
+    },
+    "threshholdMeasureArray": {
+      "type": "object[]",
+      "defaultValue": [
+        {
+          "measure": "Day"
+        },
+        {
+          "measure": "Week"
+        }
+      ]
+    },
+    "updateContracts": {
+      "type": "ContractDetailsType"
+    },
+    "updateProjects": {
+      "type": "ProjectDetailsTblType"
+    },
+    "varCustomerADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "customerType",
+        "keyAttributes": "CUSTOMER_ID"
+      }
+    },
+    "varLocalObj": {
+      "type": {
+        "activeFlag": "boolean",
+        "billingFrequency": "string",
+        "bonus": "string",
+        "clientERPSystem": "string",
+        "customerId": "string",
+        "customerNum": "string",
+        "effeEndDate": "string",
+        "effeStartDate": "string",
+        "email": "string",
+        "equiptmentModule": "boolean",
+        "ersEnabled": "boolean",
+        "materialUsage": "boolean",
+        "mobile": "string",
+        "noOfDays": "number",
+        "otAllowed": "boolean",
+        "otThreshold": "string",
+        "otThresholdLimit": "number",
+        "perDiem": "string",
+        "poEndDate": "string",
+        "poNumber": "string",
+        "poStartDate": "string",
+        "quantity": "number",
+        "safetyBonus": "string",
+        "searchCustomerName": "string",
+        "timeCardApprovalRequ": "boolean",
+        "timeCardBalancing": "boolean",
+        "timeCollation": "boolean",
+        "weekEndDay": "string",
+        "weekStartDay": "string"
+
+      }
+    },
+    "varLocalObj_backup": {
+      "type": {
+        "activeFlag": "boolean",
+        "billingFrequency": "string",
+        "bonus": "string",
+        "clientERPSystem": "string",
+        "customerId": "string",
+        "customerNum": "string",
+        "effeEndDate": "string",
+        "effeStartDate": "string",
+        "email": "string",
+        "equiptmentModule": "boolean",
+        "ersEnabled": "boolean",
+        "materialUsage": "boolean",
+        "mobile": "string",
+        "noOfDays": "number",
+        "otAllowed": "boolean",
+        "otThreshold": "string",
+        "otThresholdLimit": "number",
+        "perDiem": "string",
+        "poEndDate": "string",
+        "poNumber": "string",
+        "poStartDate": "string",
+        "quantity": "number",
+        "safetyBonus": "string",
+        "searchCustomerName": "string",
+        "timeCardApprovalRequ": "boolean",
+        "timeCardBalancing": "boolean",
+        "timeCollation": "boolean",
+        "weekEndDay": "string",
+        "weekStartDay": "string"
+      }
+    },
+    "varTabSelection": {
+      "type": "string",
+      "defaultValue": "Contracts"
+    },
+    "WeekdaysADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "{{ $variables.WeekdaysArray }}",
+        "keyAttributes": "day"
+      }
+    },
+    "WeekdaysArray": {
+      "type": "object[]",
+      "defaultValue": [
+        {
+          "day": "Monday"
+        },
+        {
+          "day": "Tuesday"
+        },
+        {
+          "day": "Wednesday"
+        },
+        {
+          "day": "Thursday"
+        },
+        {
+          "day": "Friday"
+        },
+        {
+          "day": "Saturday"
+        },
+        {
+          "day": "Sunday"
+        }
+      ]
+    },
+    "YesorNoADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "genericLOVType",
+        "keyAttributes": "value"
+      }
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.ContractDetailsType": {
+      "endpoint": "getGetContractDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.CustDetailsType": {
+      "endpoint": "CustDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.customerType": {
+      "endpoint": "postGET_SINGLE_TR_CUSTOMER_DETAILS1_0TR_CUSTOMER_DETAILS",
+      "service": "icsEndpoint",
+      "path": "response-_-Items[0]"
+    },
+    "@decorators.getallProjectContractResponse": {
+      "endpoint": "getall_ProjectContract",
+      "service": "businessObjects",
+      "path": "response"
+    },
+    "@decorators.getGetContractDetails": {
+      "endpoint": "getGetContractDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getSetUpCustomerDetailsResponse": {
+      "endpoint": "getSetUpCustomerDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.ProjectDetailsTblType": {
+      "endpoint": "getGetProjectDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.SetUpCustomerDetails": {
+      "endpoint": "getSetUpCustomerDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "ContractDetailsType": {
+      "active_flag": "boolean",
+      "billing_frequency": "string",
+      "bonus": "string",
+      "contract_id": "number",
+      "contract_number": "string",
+      "customer_name": "string",
+      "customer_number": "string",
+      "effective_end_date": "string",
+      "effective_start_date": "string",
+      "no_of_days": "number",
+      "ot_allowed": "boolean",
+      "ot_shift_name": "any",
+      "ot_threshold_limit": "string",
+      "ot_threshold_measure": "string",
+      "per_diem": "string",
+      "per_diem_hours": "number",
+      "safety_bonus": "string",
+      "time_entry_method": "any",
+      "week_end_day": "string",
+      "week_start_day": "string"
+
+    },
+    "CustDetailsType": {
+      "active_flag": "boolean",
+      "billing_frequency": "string",
+      "bonus": "string",
+      "client_erp_system": "string",
+      "client_ers_enabled": "string",
+      "cus_wrkweek_end_date": "any",
+      "cus_wrkweek_start_date": "any",
+      "customer_email_address": "string",
+      "customer_id": "number",
+      "customer_mobile_number": "string",
+      "customer_name": "string",
+      "customer_number": "string",
+      "effective_end_date": "string",
+      "effective_start_date": "string",
+      "end_time": "any",
+      "equipment_module": "string",
+      "material_usage": "string",
+      "no_of_days": "number",
+      "ot_allowed": "string",
+      "ot_threshold_limit": "string",
+      "ot_threshold_measure": "string",
+      "per_diem": "string",
+      "per_diem_hours": "number",
+      "po_end_date": "any",
+      "po_number": "any",
+      "po_start_date": "any",
+      "quantity": "any",
+      "safety_bonus": "any",
+      "start_time": "any",
+      "time_card_apr_req_flag": "string",
+      "timecard_balancing": "string",
+      "timecard_collation": "string",
+      "week_end_day": "string",
+      "week_start_day": "string"
+
+    },
+    "customerType": {
+      "ACTIVE_FLAG": "boolean",
+      "ATTRIBUTE1": "string",
+      "ATTRIBUTE10": "string",
+      "ATTRIBUTE2": "string",
+      "ATTRIBUTE3": "string",
+      "ATTRIBUTE4": "string",
+      "ATTRIBUTE5": "string",
+      "ATTRIBUTE6": "string",
+      "ATTRIBUTE7": "string",
+      "ATTRIBUTE8": "string",
+      "ATTRIBUTE9": "string",
+      "BILLING_FREQUENCY": "string",
+      "BONUS": "string",
+      "CLIENT_ERP_SYSTEM": "string",
+      "CLIENT_ERS_ENABLED": "string",
+      "CONTRACT_LINK": "string",
+      "CREATED_BY": "string",
+      "CREATION_DATE": "string",
+      "CUST_ROW_ID": "string",
+      "CUSTOMER_BATCH_ID": "string",
+      "CUSTOMER_BATCH_NUMBER": "string",
+      "CUSTOMER_EMAIL_ADDRESS": "string",
+      "CUSTOMER_ID": "string",
+      "CUSTOMER_MOBILE_NUMBER": "string",
+      "CUSTOMER_NAME": "string",
+      "CUSTOMER_NUMBER": "string",
+      "CUSTOMER_WORK_WEEK_END_DATE": "string",
+      "CUSTOMER_WORK_WEEK_START_DATE": "string",
+      "EFFECTIVE_END_DATE": "string",
+      "EFFECTIVE_START_DATE": "string",
+      "EQUIPMENT_MODULE": "string",
+      "LAST_UP_LOGIN": "string",
+      "LAST_UPD_BY": "string",
+      "LAST_UPDATE_DATE": "string",
+      "MATERIAL_USAGE": "string",
+      "NO_OF_DAYS": "number",
+      "OT_ALLOWED": "string",
+      "OT_THRESHOLD_LIMIT": "number",
+      "OT_THRESHOLD_MEASURE": "string",
+      "PER_DIEM": "string",
+      "PO_END_DATE": "string",
+      "PO_NUMBER": "string",
+      "PO_START_DATE": "string",
+      "PROJECT_LINK": "string",
+      "QUANTITY": "string",
+      "SAFETY_BONUS": "string",
+      "TIME_CARD_APPROVAL_REQUIRED_FLAG": "string",
+      "TIMECARD_BALANCING": "string",
+      "TIMECARD_COLLATION": "string"
+    },
+    "genericLOVType": {
+      "value": "string"
+    },
+    "getallProjectContractResponse": {
+      "items": [
+        {
+          "activeFlag": "string",
+          "billingFrequency": "string",
+          "bonus": "string",
+          "contractNumber": "number",
+          "createdBy": "string",
+          "creationDate": "string",
+          "customerName": "string",
+          "effectiveEndDate": "string",
+          "effectiveStartDate": "string",
+          "id": "number",
+          "lastUpdateDate": "string",
+          "lastUpdatedBy": "string",
+          "noOfDays": "number",
+          "oTAllowed": "string",
+          "oTShiftName": "string",
+          "oTThresholdLimit": "string",
+          "oTThresholdMeasure": "string",
+          "perDiem": "string",
+          "projectNumber": "string",
+          "safetyBonus": "string",
+          "timeEntryMethod": "number",
+          "weekEndDay": "string",
+          "weekStartDay": "string"
+        }
+      ]
+    },
+    "getGetContractDetails": [
+      {
+        "active_flag": "any",
+        "billing_frequency": "any",
+        "bonus": "any",
+        "contract_id": "any",
+        "contract_number": "string",
+        "customer_name": "string",
+        "customer_number": "string",
+        "effective_end_date": "any",
+        "effective_start_date": "any",
+        "no_of_days": "any",
+        "ot_allowed": "any",
+        "ot_shift_name": "any",
+        "ot_threshold_limit": "any",
+        "ot_threshold_measure": "any",
+        "per_diem": "any",
+        "safety_bonus": "any",
+        "time_entry_method": "any",
+        "week_end_day": "any",
+        "week_start_day": "any"
+      }
+    ],
+    "getSetUpCustomerDetailsResponse": {
+      "items": [
+        {
+          "customer_name": "string",
+          "customer_number": "string"
+        }
+      ]
+    },
+    "ProjectDetailsTblType": {
+      "active_flag": "boolean",
+      "billing_frequency": "string",
+      "bonus": "string",
+      "contract_end_date": "any",
+      "contract_id": "number",
+      "contract_number": "string",
+      "contract_start_date": "any",
+      "cost_rate": "any",
+      "customer_id": "number",
+      "customer_number": "string",
+      "effective_end_date": "string",
+      "effective_start_date": "string",
+      "no_of_days": "number",
+      "ot_allowed": "boolean",
+      "ot_shift_name": "any",
+      "ot_threshold_limit": "string",
+      "ot_threshold_measure": "string",
+      "per_diem": "string",
+      "per_diem_hours": "number",
+      "po_number": "any",
+      "projec_number": "string",
+      "project_id": "number",
+      "project_name": "string",
+      "project_unit_id": "number",
+      "quantity": "any",
+      "safety_bonus": "string",
+      "shift_enabled": "string",
+      "time_entry_method": "any",
+      "week_end_day": "string",
+      "week_start_day": "string",
+      "bill_rate_source": "any",
+      "bill_rate_source_type": "any",
+      "contract_link": "any",
+      "customer_link": "any",
+      "expenditure_type_id": "any",
+      "expenditure_type_name": "string",
+      "resource_name": "any",
+      "resource_number": "any",
+      "task_id": "number",
+      "task_name": "string",
+      "task_number": "string"
+
+    },
+    "SetUpCustomerDetails": {
+      "customer_id": "number",
+      "customer_name": "string",
+      "customer_number": "string"
+    }
+
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction10": {
+      "chains": [
+        {
+          "chain": "TR_editProjectsbtn",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current.row }}"
+          }
+        }
+      ]
+    },
+    "buttonAction11": {
+      "chains": [
+        {
+          "chain": "CloseEditProjectsDialog"
+        }
+      ]
+    },
+    "buttonAction12": {
+      "chains": [
+        {
+          "chain": "updateProjectsDataBtn"
+        }
+      ]
+    },
+    "buttonAction13": {
+      "chains": [
+        {
+          "chain": "TR_customerSearchLOvbtn"
+        }
+      ]
+    },
+    "buttonAction14": {
+      "chains": [
+        {
+          "chain": "custDetailsCloseBtn"
+        }
+      ]
+    },
+    "buttonAction15": {
+      "chains": [
+        {
+          "chain": "TR_SubmitbtnAction"
+        }
+      ]
+    },
+    "buttonAction16": {
+      "chains": [
+        {
+          "chain": "TR_DefaultContracts",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current.row }}"
+          }
+        }
+      ]
+    },
+    "buttonAction17": {
+      "chains": [
+        {
+          "chain": "DefaultContractsUpdateButton"
+        }
+      ]
+    },
+    "buttonAction18": {
+      "chains": [
+        {
+          "chain": "TR_DefaultProjectsButton",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current.row }}"
+          }
+        }
+      ]
+    },
+    "buttonAction19": {
+      "chains": [
+        {
+          "chain": "defaultProjectsUpdateButton"
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "customerInputTextValueChangeChain",
+          "parameters": {
+            "value": "null",
+            "updatedFrom": "internal"
+          }
+        }
+      ]
+    },
+    "buttonAction3": {
+      "chains": [
+        {
+          "chain": "selectButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction4": {
+      "chains": [
+        {
+          "chain": "resetButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction5": {
+      "chains": [
+        {
+          "chain": "submitButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction6": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain1"
+        }
+      ]
+    },
+    "buttonAction7": {
+      "chains": [
+        {
+          "chain": "TR_ContractsEditBtn",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current.row }}"
+          }
+        }
+      ]
+    },
+    "buttonAction8": {
+      "chains": [
+        {
+          "chain": "closeEditContractDialoge"
+        }
+      ]
+    },
+    "buttonAction9": {
+      "chains": [
+        {
+          "chain": "TR_updateContractDetailsbtn"
+        }
+      ]
+    },
+    "hyperlinkClick": {
+      "chains": [
+        {
+          "chain": "TR_ProjectsNavAction",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "hyperlinkClick2": {
+      "chains": [
+        {
+          "chain": "TR_ContractsClickAction"
+        }
+      ]
+    },
+    "iconClick": {
+      "chains": [
+        {
+          "chain": "TR_ContractsEditBtn",
+          "parameters": {
+            "current": "{{ $current.row }}",
+            "index": "{{ $current.index }}",
+            "key": "{{ $current.key }}"
+          }
+        }
+      ]
+    },
+    "iconClick2": {
+      "chains": [
+        {
+          "chain": "TR_DefaultContracts",
+          "parameters": {
+            "current": "{{ $current.row }}",
+            "index": "{{ $current.index }}",
+            "key": "{{ $current.key}}"
+          }
+        }
+      ]
+    },
+    "iconClick3": {
+      "chains": [
+        {
+          "chain": "TR_editProjectsbtn",
+          "parameters": {
+            "current": "{{ $current.row }}",
+            "index": "{{$current.index}}",
+            "key": "{{$current.key}}"
+          }
+        }
+      ]
+    },
+    "iconClick4": {
+      "chains": [
+        {
+          "chain": "TR_DefaultProjectsButton",
+          "parameters": {
+            "current": "{{ $current.row }}",
+            "index": "{{ $current.index }}",
+            "key": "{{ $current.key}}"
+          }
+        }
+      ]
+    },
+    "inputTextValue": {
+      "chains": [
+        {
+          "chain": "customerInputTextValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "[[ $event.detail.updatedFrom ]]"
+          }
+        }
+      ]
+    },
+    "navigationListSelection": {
+      "chains": [
+        {
+          "chain": "navigationAction",
+          "parameters": {
+            "selection": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "ojSwitcher18968157652Value": {
+      "chains": [
+        {
+          "chain": "SwitcherValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "TR_SearchCustomerValChangeAction",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem10": {
+      "chains": [
+        {
+          "chain": "TR_PROJECT_THRESHHOLD_LIMIT",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem11": {
+      "chains": [
+        {
+          "chain": "TR_PROJECTS_NO_OF_DAYS_AC",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem12": {
+      "chains": [
+        {
+          "chain": "TR_PROJECTS_WEEK_START_DAY_CHANGE_AC",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem2": {
+      "chains": [
+        {
+          "chain": "TR_SearchCustomerValChangeAction",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem3": {
+      "chains": [
+        {
+          "chain": "TR_SearchCustomerValChangeAction",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem4": {
+      "chains": [
+        {
+          "chain": "TR_Threshhold_measure_select",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem5": {
+      "chains": [
+        {
+          "chain": "tr_No_of_Days_Count",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem6": {
+      "chains": [
+        {
+          "chain": "tr_week_start_day_change",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem7": {
+      "chains": [
+        {
+          "chain": "TR_CONTRACT_NO_OF_DAYS_CHANGE_AC",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem8": {
+      "chains": [
+        {
+          "chain": "TR_CONTRACT_WEEK_START_DAY_CHANGE_AC",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem9": {
+      "chains": [
+        {
+          "chain": "TR_CONTRACT_THRESHHOLD_MEASURE",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "tableFirstSelectedRow": {
+      "chains": [
+        {
+          "chain": "CustomerTableFirstSelectedRowChangeChain",
+          "parameters": {
+            "rowKey": "{{$event.detail.value.key}}",
+            "rowData": "{{$event.detail.value.data}}"
+          }
+        }
+      ]
+    },
+    "toggleDrawer": {
+      "chains": [
+        {
+          "chain": "application:toggleDrawerHandler"
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "parameters": {},
+          "chainId": "fetchLOVs"
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-checkboxset": {
+        "path": "ojs/ojcheckboxset"
+      },
+      "oj-collapsible": {
+        "path": "ojs/ojcollapsible"
+      },
+      "oj-conveyor-belt": {
+        "path": "ojs/ojconveyorbelt"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-date": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-input-number": {
+        "path": "ojs/ojinputnumber"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-label": {
+        "path": "ojs/ojlabel"
+      },
+      "oj-legend": {
+        "path": "ojs/ojlegend"
+      },
+      "oj-navigation-list": {
+        "path": "ojs/ojnavigationlist"
+      },
+      "oj-option": {
+        "path": "ojs/ojoption"
+      },
+      "oj-progress-bar": {
+        "path": "ojs/ojprogress-bar"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-switch": {
+        "path": "ojs/ojswitch"
+      },
+      "oj-switcher": {
+        "path": "ojs/ojswitcher"
+      },
+      "oj-tab-bar": {
+        "path": "ojs/ojnavigationlist"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-validation-group": {
+        "path": "ojs/ojvalidationgroup"
+      }
+
+    },
+    "modules": {
+      "ojValidationBase": {
+        "path": "ojs/ojvalidation-base"
+      },
+      "ojValidationDateTime": {
+        "path": "ojs/ojvalidation-datetime"
+      }
+
+    }
+  }
+}

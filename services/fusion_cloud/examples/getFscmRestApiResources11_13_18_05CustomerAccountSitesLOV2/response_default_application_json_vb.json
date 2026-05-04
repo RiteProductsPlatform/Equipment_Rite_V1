@@ -1,0 +1,691 @@
+{
+    "items": [
+        {
+            "CustomerName": "ABC Application Software",
+            "AccountNumber": "26360",
+            "AccountDescription": "ABC Application Software",
+            "TaxpayerIdentificationNumber": "88-5694712",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368512,
+            "PartyNumber": "26360",
+            "SiteName": "Santa Clara",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047368516,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368516",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368516",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "ABC Application Software",
+            "AccountNumber": "26360",
+            "AccountDescription": "ABC Application Software",
+            "TaxpayerIdentificationNumber": "88-5694712",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368512,
+            "PartyNumber": "26360",
+            "SiteName": "Santa Clara",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047368517,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368517",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368517",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "ABC Application Software",
+            "AccountNumber": "26360",
+            "AccountDescription": "ABC Application Software",
+            "TaxpayerIdentificationNumber": "88-5694712",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368512,
+            "PartyNumber": "26360",
+            "SiteName": "Santa Clara",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047562111,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047562111",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047562111",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "ABC Telecommunications",
+            "AccountNumber": "26160",
+            "AccountDescription": "ABC Telecommunications",
+            "TaxpayerIdentificationNumber": "67-8314782",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368595,
+            "PartyNumber": "26160",
+            "SiteName": "Parsippany",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047368599,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368599",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368599",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "ABC Telecommunications",
+            "AccountNumber": "26160",
+            "AccountDescription": "ABC Telecommunications",
+            "TaxpayerIdentificationNumber": "67-8314782",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368595,
+            "PartyNumber": "26160",
+            "SiteName": "Parsippany",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047368600,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368600",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368600",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "Business World",
+            "AccountNumber": "16080",
+            "AccountDescription": "Business World",
+            "TaxpayerIdentificationNumber": "542185193",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368610,
+            "PartyNumber": "16080",
+            "SiteName": "New York",
+            "PrimarySite": "N",
+            "SiteUseId": 300000047368628,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368628",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368628",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "CDS Inc",
+            "AccountNumber": "80020",
+            "AccountDescription": "CDS Inc",
+            "TaxpayerIdentificationNumber": "68-4493752",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368631,
+            "PartyNumber": "80020",
+            "SiteName": "Rancho Palos Verdes",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047368635,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368635",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368635",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "CDS Inc",
+            "AccountNumber": "80020",
+            "AccountDescription": "CDS Inc",
+            "TaxpayerIdentificationNumber": "68-4493752",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368631,
+            "PartyNumber": "80020",
+            "SiteName": "Rancho Palos Verdes",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047368636,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368636",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368636",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "Computer Service and Rentals",
+            "AccountNumber": "10060",
+            "AccountDescription": "Computer Service and Rentals",
+            "TaxpayerIdentificationNumber": "59-5276547",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368646,
+            "PartyNumber": "10060",
+            "SiteName": "Atlanta",
+            "PrimarySite": "N",
+            "SiteUseId": 300000047368664,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368664",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368664",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "Consolidated Services",
+            "AccountNumber": "70010",
+            "AccountDescription": "ABC Application Software",
+            "TaxpayerIdentificationNumber": "48-9514537",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368686,
+            "PartyNumber": "70010",
+            "SiteName": "San Diego",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047368690,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368690",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368690",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "Consolidated Services",
+            "AccountNumber": "70010",
+            "AccountDescription": "ABC Application Software",
+            "TaxpayerIdentificationNumber": "48-9514537",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368686,
+            "PartyNumber": "70010",
+            "SiteName": "San Diego",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047368699,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368699",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368699",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "DJ Manufacturing",
+            "AccountNumber": "42420",
+            "AccountDescription": "DJ Manufacturing",
+            "TaxpayerIdentificationNumber": "55-1734985",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368730,
+            "PartyNumber": "42420",
+            "SiteName": "East Hartford",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047368734,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368734",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368734",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "DJ Manufacturing",
+            "AccountNumber": "42420",
+            "AccountDescription": "DJ Manufacturing",
+            "TaxpayerIdentificationNumber": "55-1734985",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368730,
+            "PartyNumber": "42420",
+            "SiteName": "East Hartford",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047368735,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368735",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368735",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "Ellis Cable",
+            "AccountNumber": "70050",
+            "AccountDescription": "Ellis Cable",
+            "TaxpayerIdentificationNumber": "62-1578622",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368745,
+            "PartyNumber": "70050",
+            "SiteName": "Denver",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047368749,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368749",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368749",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "Ellis Cable",
+            "AccountNumber": "70050",
+            "AccountDescription": "Ellis Cable",
+            "TaxpayerIdentificationNumber": "62-1578622",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047368745,
+            "PartyNumber": "70050",
+            "SiteName": "Denver",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047368750,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368750",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047368750",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "LAF Enterprises",
+            "AccountNumber": "64901",
+            "AccountDescription": "LAF Enterprises",
+            "TaxpayerIdentificationNumber": "37-1579435",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047394512,
+            "PartyNumber": "64901",
+            "SiteName": "Scottsdale",
+            "PrimarySite": "N",
+            "SiteUseId": 300000047394516,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394516",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394516",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "LAF Enterprises",
+            "AccountNumber": "64901",
+            "AccountDescription": "LAF Enterprises",
+            "TaxpayerIdentificationNumber": "37-1579435",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047394512,
+            "PartyNumber": "64901",
+            "SiteName": "Scottsdale",
+            "PrimarySite": "N",
+            "SiteUseId": 300000047394517,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394517",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394517",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "Specialty Distribution",
+            "AccountNumber": "55110",
+            "AccountDescription": "Specialty Distribution",
+            "TaxpayerIdentificationNumber": "35-9146735",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047394557,
+            "PartyNumber": "55110",
+            "SiteName": "Orlando",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047394561,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394561",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394561",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "Specialty Distribution",
+            "AccountNumber": "55110",
+            "AccountDescription": "Specialty Distribution",
+            "TaxpayerIdentificationNumber": "35-9146735",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047394557,
+            "PartyNumber": "55110",
+            "SiteName": "Orlando",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047394562,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394562",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394562",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "J B Hunt",
+            "AccountNumber": "10010",
+            "AccountDescription": "Conifer International",
+            "TaxpayerIdentificationNumber": null,
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047394603,
+            "PartyNumber": "10010",
+            "SiteName": "Newcastle",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047394607,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394607",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394607",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "J B Hunt",
+            "AccountNumber": "10010",
+            "AccountDescription": "Conifer International",
+            "TaxpayerIdentificationNumber": null,
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047394603,
+            "PartyNumber": "10010",
+            "SiteName": "Newcastle",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000167736735,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000167736735",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000167736735",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "J B Hunt",
+            "AccountNumber": "10010",
+            "AccountDescription": "Conifer International",
+            "TaxpayerIdentificationNumber": null,
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047394603,
+            "PartyNumber": "10010",
+            "SiteName": "Newcastle",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047394608,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394608",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394608",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "TNT",
+            "AccountNumber": "10020",
+            "AccountDescription": "Easy Solutions",
+            "TaxpayerIdentificationNumber": "99-7435971",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047394691,
+            "PartyNumber": "10020",
+            "SiteName": "Oakland",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047394695,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394695",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394695",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "TNT",
+            "AccountNumber": "10020",
+            "AccountDescription": "Easy Solutions",
+            "TaxpayerIdentificationNumber": "99-7435971",
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047394691,
+            "PartyNumber": "10020",
+            "SiteName": "Oakland",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047394696,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394696",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394696",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "CustomerName": "Charles Harrod",
+            "AccountNumber": "30020",
+            "AccountDescription": "Charles Harrod",
+            "TaxpayerIdentificationNumber": null,
+            "TaxRegistrationNumber": null,
+            "CustomerAccountId": 300000047394911,
+            "PartyNumber": "30020",
+            "SiteName": "Buffalo",
+            "PrimarySite": "Y",
+            "SiteUseId": 300000047394915,
+            "SetName": "Customer Site Set",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394915",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV/300000047394915",
+                    "name": "customerAccountSitesLOV",
+                    "kind": "item"
+                }
+            ]
+        }
+    ],
+    "count": 25,
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/customerAccountSitesLOV",
+            "name": "customerAccountSitesLOV",
+            "kind": "collection"
+        }
+    ]
+}

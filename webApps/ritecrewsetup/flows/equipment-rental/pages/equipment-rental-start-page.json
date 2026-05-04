@@ -1,0 +1,345 @@
+{
+  "title": "Equipment Rental",
+  "description": "",
+  "variables": {
+    "Distaince": {
+      "type": "string"
+    },
+    "EquipmentADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "RentMasterType",
+        "keyAttributes": "@index"
+      }
+    },
+    "equplatitude": {
+      "type": "string"
+    },
+    "equplongitude": {
+      "type": "string"
+    },
+    "getSetUpCustomerDetailsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getSetUpCustomerDetails",
+        "keyAttributes": "customer_name",
+        "itemsPath": "items",
+        "responseType": "getSetUpCustomerDetailsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "customer_name"
+          ]
+        }
+      }
+    },
+    "illustrationBackground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-bg-01.png"
+    },
+    "illustrationForeground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-fg-01.png"
+    },
+    "imageStretch": {
+      "type": "string",
+      "defaultValue": "none"
+    },
+    "locationDetails": {
+      "type": "postEQPRent_RequestDetails"
+    },
+    "mobileImage": {
+      "type": "string",
+      "defaultValue": "on"
+    },
+    "navTree": {
+      "type": "any"
+    },
+    "searchObj": {
+      "type": {
+        "customer": "string",
+        "fromdate": "string",
+        "location": "string",
+        "todate": "string"
+
+      }
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getSetUpCustomerDetailsResponse": {
+      "endpoint": "getSetUpCustomerDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.postEQPRent_RequestDetails": {
+      "endpoint": "postEQPRent_RequestDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "request"
+    },
+    "@decorators.RentMasterType": {
+      "endpoint": "Rent_MasterData",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "getSetUpCustomerDetailsResponse": {
+      "items": [
+        {
+          "customer_id": "number",
+          "customer_name": "string",
+          "customer_number": "string"
+        }
+      ]
+    },
+    "postEQPRent_RequestDetails": {
+      "p_addressline1": "string",
+      "p_addressline2": "string",
+      "p_asset_id": "number",
+      "p_city": "string",
+      "p_country": "string",
+      "p_currency_code": "string",
+      "p_customer_id": "number",
+      "p_duration_days": "number",
+      "p_equipment_id": "number",
+      "p_latitude": "string",
+      "p_location": "string",
+      "p_longitude": "string",
+      "p_project_id": "number",
+      "p_quantity": "number",
+      "p_rental_end_date": "string",
+      "p_rental_start_date": "string",
+      "p_return_date": "string",
+      "p_status": "string",
+      "p_total_amount": "string",
+      "p_unit_price": "number",
+      "p_zipcode": "string"
+    },
+    "RentMasterType": {
+      "address_line1": "string",
+      "address_line2": "string",
+      "asset_id": "any",
+      "asset_number": "string",
+      "asset_organization": "string",
+      "ast_date_in_service": "string",
+      "ast_insured_by": "string",
+      "ast_insured_policy": "string",
+      "ast_retired_date": "string",
+      "auto_costing_flag": "any",
+      "billing_category": "any",
+      "city": "string",
+      "cost_rate": "any",
+      "country": "string",
+      "county": "any",
+      "created_by": "any",
+      "creation_date": "string",
+      "default_location": "string",
+      "equip_req_quantity": "any",
+      "equipment_class": "string",
+      "equipment_description": "string",
+      "equipment_id": "number",
+      "equipment_name": "string",
+      "equipment_number": "string",
+      "equipment_sub_class": "string",
+      "equipment_type": "string",
+      "expenditure_org_id": "any",
+      "expenditure_org_name": "string",
+      "file_attachment": "any",
+      "file_name": "string",
+      "file_text": "string",
+      "file_type": "string",
+      "include_in_pm": "any",
+      "inventory_item": "string",
+      "inventory_item_id": "any",
+      "last_update_date": "string",
+      "last_updated_by": "any",
+      "latitude": "string",
+      "lease_end": "any",
+      "lease_rate": "any",
+      "lease_start": "any",
+      "legacy_equipment_num": "any",
+      "longitude": "string",
+      "manufacturer": "string",
+      "manufacturer_id": "any",
+      "mf_color": "any",
+      "mf_fuel_type": "string",
+      "mf_license_expiry": "string",
+      "mf_license_number": "any",
+      "mf_license_state": "any",
+      "mf_model_number": "any",
+      "mf_model_year": "number",
+      "mf_serial_number": "any",
+      "mf_warranty_code": "string",
+      "mf_weight": "number",
+      "non_labor_resource": "string",
+      "non_labor_resource_org": "string",
+      "organization_id": "any",
+      "organization_name": "any",
+      "owning_status": "any",
+      "person_first_name": "any",
+      "person_id": "any",
+      "person_last_name": "any",
+      "person_middle_name": "any",
+      "person_number": "any",
+      "pm_basis": "any",
+      "po_header_id": "any",
+      "project_id": "number",
+      "project_name": "string",
+      "project_number": "any",
+      "purchase_order": "string",
+      "record_mode": "any",
+      "request_id": "any",
+      "state": "any",
+      "status": "string",
+      "task_id": "number",
+      "task_name": "string",
+      "task_number": "any",
+      "total_capacity_perday": "any",
+      "vendor_id": "any",
+      "vendor_name": "any",
+      "zip": "string"
+
+    }
+
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "searchBtnAction"
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "SubmitAndCloseBtnAction"
+        }
+      ]
+    },
+    "divClick": {
+      "chains": [
+        {
+          "chain": "DivClickAction",
+          "parameters": {
+            "current": "[[ $current.data ]]",
+            "location": "[[ $variables.locationDetails ]]"
+          }
+        }
+      ]
+    },
+    "inputDateValue": {
+      "chains": [
+        {
+          "chain": "InputDateValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "inputDateValue2": {
+      "chains": [
+        {
+          "chain": "InputDateValueChangeChain1",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "switchValue": {
+      "chains": [
+        {
+          "chain": "SwitchValueChangeChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}"
+          }
+        }
+      ]
+    },
+    "textAreaValue": {
+      "chains": [
+        {
+          "chain": "TextAreaValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+{
+          "parameters": {},
+          "chain": "searchBtnAction"
+        },
+        {
+          "parameters": {},
+          "chain": "FetchTreeData"
+        }
+      ]
+    },
+    "treeNavigationSelection2": {
+      "chains": [
+        {
+          "chain": "NavSelectionAction",
+          "parameters": {
+            "selection": "{{ $event.detail.value }}",
+            "data": "[[ $event.detail ]]"
+          }
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-avatar": {
+        "path": "ojs/ojavatar"
+      },
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-date": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-input-search": {
+        "path": "ojs/ojinputsearch"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-label": {
+        "path": "ojs/ojlabel"
+      },
+      "oj-navigation-list": {
+        "path": "ojs/ojnavigationlist"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      },
+      "oj-switch": {
+        "path": "ojs/ojswitch"
+      },
+      "oj-text-area": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      }
+
+   }
+  }
+}

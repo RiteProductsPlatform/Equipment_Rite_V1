@@ -1,0 +1,14 @@
+{
+  "root": "assignVariablesIsEdit",
+  "description": "",
+  "actions": {
+    "assignVariablesIsEdit": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.IsEdit": {
+          "source": true
+        }
+      }
+    }
+  }
+}

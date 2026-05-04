@@ -1,0 +1,102 @@
+{
+    "items": [
+        {
+            "eqp_suggestion_id": 2,
+            "equipment_id": 531,
+            "equipment_number": "PID_4750103193",
+            "equipment_name": "Extension Cords 50' Heavy Duty",
+            "serial_number": null,
+            "linked_to_parent": "Y",
+            "parent_equipment_id": 949,
+            "parent_equipment_number": "SIMM_405-1",
+            "parent_equipment_name": "IMM001-CRAWLER CRANE",
+            "created_by": "nikhil.kolisetty@rite.digital",
+            "creation_date": "2026-01-07T11:44:38Z",
+            "last_updated_date": "2026-01-07T11:44:38Z",
+            "last_updated_by": "nikhil.kolisetty@rite.digital",
+            "type": null,
+            "quantity": null,
+            "unit_of_measure": null,
+            "priority": "3"
+        },
+        {
+            "eqp_suggestion_id": 1,
+            "equipment_id": 533,
+            "equipment_number": "SRL_4750103143",
+            "equipment_name": "Manitowac Crawler Crane MLC90A-1",
+            "serial_number": null,
+            "linked_to_parent": "Y",
+            "parent_equipment_id": 949,
+            "parent_equipment_number": "SIMM_405-1",
+            "parent_equipment_name": "IMM001-CRAWLER CRANE",
+            "created_by": "nikhil.kolisetty@rite.digital",
+            "creation_date": "2026-01-07T11:44:38Z",
+            "last_updated_date": "2026-01-07T11:44:38Z",
+            "last_updated_by": "nikhil.kolisetty@rite.digital",
+            "type": null,
+            "quantity": null,
+            "unit_of_measure": null,
+            "priority": "4"
+        },
+        {
+            "eqp_suggestion_id": 3,
+            "equipment_id": 761,
+            "equipment_number": "PKX007",
+            "equipment_name": "Pickaxe-12CP",
+            "serial_number": null,
+            "linked_to_parent": "Y",
+            "parent_equipment_id": 949,
+            "parent_equipment_number": "SIMM_405-1",
+            "parent_equipment_name": "IMM001-CRAWLER CRANE",
+            "created_by": "nikhil.kolisetty@rite.digital",
+            "creation_date": "2026-01-07T11:44:39Z",
+            "last_updated_date": "2026-01-07T11:44:39Z",
+            "last_updated_by": "nikhil.kolisetty@rite.digital",
+            "type": null,
+            "quantity": null,
+            "unit_of_measure": null,
+            "priority": "1"
+        },
+        {
+            "eqp_suggestion_id": 4,
+            "equipment_id": 529,
+            "equipment_number": "PID_4750103184",
+            "equipment_name": "Welding Lead 50' ",
+            "serial_number": null,
+            "linked_to_parent": "Y",
+            "parent_equipment_id": 949,
+            "parent_equipment_number": "SIMM_405-1",
+            "parent_equipment_name": "IMM001-CRAWLER CRANE",
+            "created_by": "nikhil.kolisetty@rite.digital",
+            "creation_date": "2026-01-07T11:44:39Z",
+            "last_updated_date": "2026-01-07T11:44:39Z",
+            "last_updated_by": "nikhil.kolisetty@rite.digital",
+            "type": null,
+            "quantity": null,
+            "unit_of_measure": null,
+            "priority": "2"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 4,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_SuggestionDetails?p_parent_equipment_id=949"
+        },
+        {
+            "rel": "edit",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_SuggestionDetails?p_parent_equipment_id=949"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_SuggestionDetails?p_parent_equipment_id=949"
+        }
+    ]
+}

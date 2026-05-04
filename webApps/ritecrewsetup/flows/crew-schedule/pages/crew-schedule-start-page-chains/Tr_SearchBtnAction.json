@@ -1,0 +1,136 @@
+{
+  "root": "resetVariablesColumns3",
+  "description": "",
+  "actions": {
+
+    "assignVariablesColumns": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.columns": {
+          "source": "{{ $chain.results.callFunctionGetDatesandvalues }}"
+        }
+      }
+    },
+    "callRestGetFetchcrewSechedule": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getFetchcrewSechedule",
+        "uriParams": {
+          "crewId": "{{ $page.variables.selectedCrewId }}",
+          "crewDate": "{{ $chain.results.callFunctionDateFormatter.date }}",
+          "resourceId": "{{ $page.variables.selectedResource ? $page.variables.selectedResource :\"\" }}"
+        },
+        "requestTransformOptions": {
+          "paginate": {
+            "maxSize": 10000
+          }
+        }
+      },
+      "outcomes": {
+        "success": "if3"
+      }
+    },
+    "callFunctionGetDatesandvalues": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "getDatesandvalues",
+        "params": [
+          "{{ $chain.results.callRestGetFetchcrewSechedule.body.items }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesColumns"
+      }
+    },
+    "callFunctionDateFormatter": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dateFormatter",
+        "params": [
+          "{{ $page.variables.SelectedDate }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesSelectedMonth"
+      }
+    },
+    "callFunctionValidateGroup": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "validateGroup",
+        "params": [
+          "fetchValidator"
+        ]
+      },
+      "outcomes": {
+        "success": "if"
+      }
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callFunctionValidateGroup === 'valid' ]]"
+      },
+      "outcomes": {
+        "true": "callFunctionDateFormatter"
+      }
+    },
+    "if3": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callRestGetFetchcrewSechedule.body.items.length > 0 ]]"
+      },
+      "outcomes": {
+        "true": "callFunctionGetDatesandvalues",
+        "false": "resetVariablesColumns"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "No Details Found",
+        "displayMode": "transient"
+      }
+    },
+    "resetVariablesColumns": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.columns"
+        ]
+      },
+      "outcomes": {
+        "success": "fireNotification"
+      }
+    },
+    "assignVariablesSelectedMonth": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.selectedMonth": {
+          "source": "{{ $chain.results.callFunctionDateFormatter.month }}"
+        }
+      },
+      "outcomes": {
+        "success": "callRestGetFetchcrewSechedule"
+      }
+    },
+    "resetVariablesColumns3": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.columns",
+          "$page.variables.selectedMonth",
+          "$page.variables.DetailsTableADP.data",
+          "$page.variables.resourceobj"
+        ]
+      },
+      "outcomes": {
+        "success": "callFunctionValidateGroup"
+      }
+    }
+  }
+}

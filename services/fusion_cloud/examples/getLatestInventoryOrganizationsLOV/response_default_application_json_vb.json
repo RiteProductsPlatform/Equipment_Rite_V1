@@ -1,0 +1,2130 @@
+{
+    "items": [
+        {
+            "OrganizationId": 300000852264901,
+            "OrganizationCode": "564",
+            "OrganizationName": "001TEST Inv Org",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000347908156,
+            "OrganizationCode": "112",
+            "OrganizationName": "112",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000347908266,
+            "OrganizationCode": "112_INV",
+            "OrganizationName": "112_INV",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001289995761,
+            "OrganizationCode": "CHILD1",
+            "OrganizationName": "301",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001289995916,
+            "OrganizationCode": "CHILD2",
+            "OrganizationName": "302",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001716049587,
+            "OrganizationCode": "49KD",
+            "OrganizationName": "49K Delhi",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001716048865,
+            "OrganizationCode": "49KH",
+            "OrganizationName": "49k Hyd org",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001711436364,
+            "OrganizationCode": "49KMST",
+            "OrganizationName": "49k Item Master org",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001044315004,
+            "OrganizationCode": "777",
+            "OrganizationName": "777",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000308293031,
+            "OrganizationCode": "ACCIMO",
+            "OrganizationName": "ACCIMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000308293096,
+            "OrganizationCode": "ACCINVORG1",
+            "OrganizationName": "ACCINVORG1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000308293204,
+            "OrganizationCode": "ACCINVORG2",
+            "OrganizationName": "ACCINVORG2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000308338844,
+            "OrganizationCode": "ACCINVORG3",
+            "OrganizationName": "ACCINVORG3",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000308338978,
+            "OrganizationCode": "ACCINVORG4",
+            "OrganizationName": "ACCINVORG4",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517108674,
+            "OrganizationCode": "AMGREENKKD",
+            "OrganizationName": "AMGreen Kakinada Plant",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517102419,
+            "OrganizationCode": "AMGREENPM",
+            "OrganizationName": "AMGreen Kakinada Plant Maintance",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000914674065,
+            "OrganizationCode": "ANAND_IMO",
+            "OrganizationName": "ANAND_IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000914674130,
+            "OrganizationCode": "ANAND_INV1",
+            "OrganizationName": "ANAND_INV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000914674195,
+            "OrganizationCode": "ANAND_INV2",
+            "OrganizationName": "ANAND_INV2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001431090529,
+            "OrganizationCode": "ANAND_INV3",
+            "OrganizationName": "ANAND_INV3",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001001711244,
+            "OrganizationCode": "ANKUR",
+            "OrganizationName": "ANKUR",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001027437484,
+            "OrganizationCode": "APPU_IMO",
+            "OrganizationName": "APPU_IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001694499980,
+            "OrganizationCode": "APPU_INV",
+            "OrganizationName": "APPU_INV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001027437549,
+            "OrganizationCode": "APPU_INV1",
+            "OrganizationName": "APPU_INV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001030205614,
+            "OrganizationCode": "APPU_INV2",
+            "OrganizationName": "APPU_INV2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000132160554,
+            "OrganizationCode": "280",
+            "OrganizationName": "Amsterdam",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001548151410,
+            "OrganizationCode": "BAINV1",
+            "OrganizationName": "BOULT AUDIO INVENTORY ORG 1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001548146190,
+            "OrganizationCode": "BAINOG",
+            "OrganizationName": "BOULT AUDIO INVENTORY ORGANISATION",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001548146107,
+            "OrganizationCode": "BAIO",
+            "OrganizationName": "BOULT AUDIO ITEM ORAGANISATION",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517586257,
+            "OrganizationCode": "808",
+            "OrganizationName": "BOULT AUDIO ITEM Organisation",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000614075080,
+            "OrganizationCode": "BU3_INV_ORG",
+            "OrganizationName": "BU3 INV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000914525594,
+            "OrganizationCode": "BU3_INV_ORG2",
+            "OrganizationName": "BU3 INV2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000614075015,
+            "OrganizationCode": "BU3_MAS_ORG",
+            "OrganizationName": "BU3 MASTER",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000130060415,
+            "OrganizationCode": "053",
+            "OrganizationName": "Beijing",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000162746853,
+            "OrganizationCode": "190",
+            "OrganizationName": "Berlin",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000118783245,
+            "OrganizationCode": "004",
+            "OrganizationName": "Boise",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000047919957,
+            "OrganizationCode": "150",
+            "OrganizationName": "Bordeaux",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001440284567,
+            "OrganizationCode": "BG",
+            "OrganizationName": "Bright Grid",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000130885118,
+            "OrganizationCode": "250",
+            "OrganizationName": "Brisbane",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000047655376,
+            "OrganizationCode": "101",
+            "OrganizationName": "Bristol",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001157520838,
+            "OrganizationCode": "CAUSTIN2",
+            "OrganizationName": "CAUSTIN2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001157520750,
+            "OrganizationCode": "CAUSTIN_1",
+            "OrganizationName": "CAUSTIN_1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001157520677,
+            "OrganizationCode": "CAUSTIN_IMO",
+            "OrganizationName": "CAUSTIN_IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517109199,
+            "OrganizationCode": "INDIA",
+            "OrganizationName": "CELLO INV",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517141334,
+            "OrganizationCode": "CELLO",
+            "OrganizationName": "CELLO ITEM MATERIAL Organisation",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000914107192,
+            "OrganizationCode": "COSTING_CHILD_1",
+            "OrganizationName": "COSTING_CHILD_1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000914107327,
+            "OrganizationCode": "COSTING_CHILD_2",
+            "OrganizationName": "COSTING_CHILD_2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000914107013,
+            "OrganizationCode": "COSTING_ITEM_MASTE",
+            "OrganizationName": "COSTING_ITEM_MASTER",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000322187628,
+            "OrganizationCode": "CHARANINVENTORYORG",
+            "OrganizationName": "Charan INV ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000047274450,
+            "OrganizationCode": "003",
+            "OrganizationName": "Chicago",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000187686226,
+            "OrganizationCode": "500",
+            "OrganizationName": "DC 1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000178584248,
+            "OrganizationCode": "510",
+            "OrganizationName": "DC 2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001516109248,
+            "OrganizationCode": "DD_IMO",
+            "OrganizationName": "DD_IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001516109313,
+            "OrganizationCode": "DD_INV1",
+            "OrganizationName": "DD_INV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001516109491,
+            "OrganizationCode": "DD_INV2",
+            "OrganizationName": "DD_INV2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517576791,
+            "OrganizationCode": "DD_INV3",
+            "OrganizationName": "DD_INV3",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001548122366,
+            "OrganizationCode": "DD_INV4",
+            "OrganizationName": "DD_INV4",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001548122497,
+            "OrganizationCode": "DD_INV5",
+            "OrganizationName": "DD_INV5",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001548122562,
+            "OrganizationCode": "DD_INV6",
+            "OrganizationName": "DD_INV6",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001548188528,
+            "OrganizationCode": "DD_INV7",
+            "OrganizationName": "DD_INV7",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001548188593,
+            "OrganizationCode": "DD_INV8",
+            "OrganizationName": "DD_INV8",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001020012771,
+            "OrganizationCode": "DEMO_ITEM_ORG1",
+            "OrganizationName": "DEMO ITEM ORG1",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001020012600,
+            "OrganizationCode": "DMEO_ITEM_ORG",
+            "OrganizationName": "DEMO Item Org",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001005121785,
+            "OrganizationCode": "DEMOINRINV",
+            "OrganizationName": "DEMO-INR-INVENTORY",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001020012876,
+            "OrganizationCode": "DEMOINVORG_1",
+            "OrganizationName": "DEMOINVORG_1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001020012941,
+            "OrganizationCode": "888",
+            "OrganizationName": "DEMO_IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001020013018,
+            "OrganizationCode": "666",
+            "OrganizationName": "DEMO_INV_ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000118784047,
+            "OrganizationCode": "DSHIP",
+            "OrganizationName": "DSHIP",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000306867794,
+            "OrganizationCode": "DVBHI",
+            "OrganizationName": "DVBHoustonInventory",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000305666879,
+            "OrganizationCode": "DVB",
+            "OrganizationName": "DVB_BusinessUnit1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000305666933,
+            "OrganizationCode": "DVBIMO",
+            "OrganizationName": "DVB_Item Master Organization",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000118783270,
+            "OrganizationCode": "005",
+            "OrganizationName": "Dallas",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000181131857,
+            "OrganizationCode": "920",
+            "OrganizationName": "Defective Parts Warehouse",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000301891196,
+            "OrganizationCode": "DELL_INV_ORG1",
+            "OrganizationName": "Dell Inv Org1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000301103240,
+            "OrganizationCode": "DELL_ITEM_ORG",
+            "OrganizationName": "Dell Item Org",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000186778591,
+            "OrganizationCode": "315",
+            "OrganizationName": "Denver Maintenance",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000186778582,
+            "OrganizationCode": "310",
+            "OrganizationName": "Denver Manufacturing",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517216744,
+            "OrganizationCode": "ESM_INV",
+            "OrganizationName": "ESM_INV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000142100857,
+            "OrganizationCode": "103",
+            "OrganizationName": "Edinburgh",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000047398500,
+            "OrganizationCode": "998",
+            "OrganizationName": "External Item Organization for EBS1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000047398497,
+            "OrganizationCode": "999",
+            "OrganizationName": "External Item Organization for LEG2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000047398506,
+            "OrganizationCode": "996",
+            "OrganizationName": "External Item Organization for PSFT1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000047398503,
+            "OrganizationCode": "997",
+            "OrganizationName": "External Item Organization for SAP1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001698414353,
+            "OrganizationCode": "FDR_ITEM_ORG",
+            "OrganizationName": "FDR_ITEM_ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001698414549,
+            "OrganizationCode": "FDR_NY_ORG",
+            "OrganizationName": "FDR_NY_ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001696400496,
+            "OrganizationCode": "FDR_US_INV_ORG",
+            "OrganizationName": "FDR_US_INV_ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001700886783,
+            "OrganizationCode": "FDR_WASHINGTON_INV",
+            "OrganizationName": "FDR_WASHINGTON_INV_ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000180500796,
+            "OrganizationCode": "915",
+            "OrganizationName": "Field Service Technicians",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000136204876,
+            "OrganizationCode": "220",
+            "OrganizationName": "Fin Svcs UK Location 1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000136204851,
+            "OrganizationCode": "210",
+            "OrganizationName": "Fin Svcs US Location 1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000304170611,
+            "OrganizationCode": "007",
+            "OrganizationName": "Finished Goods",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001695534835,
+            "OrganizationCode": "GLOBAL_ERP_IND_BAN",
+            "OrganizationName": "GLOBAL_ERP_IND_BANINV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001695534705,
+            "OrganizationCode": "GLOBAL_ERP_IND_CHE",
+            "OrganizationName": "GLOBAL_ERP_IND_CHEINV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001695534770,
+            "OrganizationCode": "GLOBAL_ERP_IND_HYD",
+            "OrganizationName": "GLOBAL_ERP_IND_HYDINV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001695528445,
+            "OrganizationCode": "GLOBAL_ERP_ITEMORG",
+            "OrganizationName": "GLOBAL_ERP_ITEM_ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001695534640,
+            "OrganizationCode": "GLOBAL_ERP_UAE_INV",
+            "OrganizationName": "GLOBAL_ERP_UAE_INV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001695528575,
+            "OrganizationCode": "GLOBAL_ERP_UK_INV",
+            "OrganizationName": "GLOBAL_ERP_UK_INV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001695528510,
+            "OrganizationCode": "GLOBAL_ERP_US_INV",
+            "OrganizationName": "GLOBAL_ERP_US_INV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517217197,
+            "OrganizationCode": "HYDRA_INDIA_INV",
+            "OrganizationName": "HYDRA India Inventory",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517217132,
+            "OrganizationCode": "HYDRA_IOM",
+            "OrganizationName": "HYDRA Item Master",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517217061,
+            "OrganizationCode": "HYDRA_HQ",
+            "OrganizationName": "HYDRA_HQ",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001384211701,
+            "OrganizationCode": "HYD_NCC_NEW",
+            "OrganizationName": "HYD_NCC",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001472414821,
+            "OrganizationCode": "HYD_NCC_BG",
+            "OrganizationName": "HYD_NCC_BG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001697218144,
+            "OrganizationCode": "456",
+            "OrganizationName": "Hal_inv_org",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001697218079,
+            "OrganizationCode": "123",
+            "OrganizationName": "Hal_item_org",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000094179228,
+            "OrganizationCode": "HED01",
+            "OrganizationName": "Higher Education Operations",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000312120385,
+            "OrganizationCode": "IBMINVORG",
+            "OrganizationName": "IBM INV ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000365451274,
+            "OrganizationCode": "IKEAINVORG",
+            "OrganizationName": "IKEA INV ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517217547,
+            "OrganizationCode": "IIO",
+            "OrganizationName": "IPHONE INVENTORY ORGANISATION",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000868691390,
+            "OrganizationCode": "ITC_INV_ORG1",
+            "OrganizationName": "ITC_INV_ORG1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000868691285,
+            "OrganizationCode": "ITC_ITE_ORG",
+            "OrganizationName": "ITC_ITE_ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001698270239,
+            "OrganizationCode": "IV_INV1",
+            "OrganizationName": "IV_INV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000167740435,
+            "OrganizationCode": "300",
+            "OrganizationName": "Instanbul Anadolu Ofis",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001296704868,
+            "OrganizationCode": "JIO_INVENTORY_ORG",
+            "OrganizationName": "JIO_INVENTORY_ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001296704803,
+            "OrganizationCode": "JIO_MASTER_INVENTO",
+            "OrganizationName": "JIO_MASTER_INVENTORY",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000592315421,
+            "OrganizationCode": "KAAPAN_IMO",
+            "OrganizationName": "KAAPAN_IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000592315489,
+            "OrganizationCode": "KAAPAN_INV1",
+            "OrganizationName": "KAAPAN_INV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000592315554,
+            "OrganizationCode": "KAAPAN_INV2",
+            "OrganizationName": "KAAPAN_INV2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001724149139,
+            "OrganizationCode": "KIAMOTORORG",
+            "OrganizationName": "KIAMOTOR",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001515334379,
+            "OrganizationCode": "KK_IMO",
+            "OrganizationName": "KK Enterprise Global Item Master",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001515334444,
+            "OrganizationCode": "KK_INV1",
+            "OrganizationName": "KK_INV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001515334510,
+            "OrganizationCode": "KK_INV2",
+            "OrganizationName": "KK_INV2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000310758038,
+            "OrganizationCode": "KMMINVORG",
+            "OrganizationName": "KMM INV ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001563543100,
+            "OrganizationCode": "KORADA_IMO",
+            "OrganizationName": "KORADA_IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001563543175,
+            "OrganizationCode": "KORADA_INV",
+            "OrganizationName": "KORADA_INV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001769569535,
+            "OrganizationCode": "KPNMWKE",
+            "OrganizationName": "KPN Main Warehouse (Karnataka)",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001769569389,
+            "OrganizationCode": "KPNMWTE",
+            "OrganizationName": "KPN Main Warehouse (Telangana)",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001769845600,
+            "OrganizationCode": "KPNOLBLR",
+            "OrganizationName": "KPN Outlet (Bangalore)",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001769569470,
+            "OrganizationCode": "KPNOLHYD",
+            "OrganizationName": "KPN Outlet (Hyderabad)",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000868659153,
+            "OrganizationCode": "LALU_UK_IMO",
+            "OrganizationName": "LALU UK IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000868659088,
+            "OrganizationCode": "LALU_US_IMO",
+            "OrganizationName": "LALU US IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000868690883,
+            "OrganizationCode": "LALU_US_INV1",
+            "OrganizationName": "LALU_US_INV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000868733298,
+            "OrganizationCode": "LALU_US_INV2",
+            "OrganizationName": "LALU_US_INV2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001549974908,
+            "OrganizationCode": "MK_INV1",
+            "OrganizationName": "MK_INV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001549975038,
+            "OrganizationCode": "MK_INV2",
+            "OrganizationName": "MK_INV2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001690449343,
+            "OrganizationCode": "MMXBGLRINV",
+            "OrganizationName": "MMX INDIA DISTRIBUTION",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001690456773,
+            "OrganizationCode": "MMXHYDMFGMAIN",
+            "OrganizationName": "MMX INDIA MANUFACTURING",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001690234427,
+            "OrganizationCode": "MMX000",
+            "OrganizationName": "MMX ITEM MASTER",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001690449408,
+            "OrganizationCode": "MMXHUSINV",
+            "OrganizationName": "MMX US DISTRIBUTION",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001690449475,
+            "OrganizationCode": "MMXMAMFG",
+            "OrganizationName": "MMX US MANUFACTURING",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001719940680,
+            "OrganizationCode": "MMX2_HYD_INV",
+            "OrganizationName": "MMX2_HYD_INV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001719490415,
+            "OrganizationCode": "MMX2_INDIA_IMO",
+            "OrganizationName": "MMX2_INDIA_IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001719941572,
+            "OrganizationCode": "MMX2_HYD_INV1",
+            "OrganizationName": "MMX2_IND_HYD_INV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001770390109,
+            "OrganizationCode": "CHINV",
+            "OrganizationName": "MMX_CHN_INV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001690872125,
+            "OrganizationCode": "MMX_INORG",
+            "OrganizationName": "MMX_INORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000187686197,
+            "OrganizationCode": "412",
+            "OrganizationName": "MNT A",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000178582578,
+            "OrganizationCode": "411",
+            "OrganizationName": "MNT B",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001516070567,
+            "OrganizationCode": "MSM_INV_ORG1",
+            "OrganizationName": "MSM_INV_ORG1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001516108632,
+            "OrganizationCode": "MSM_INV_ORG2",
+            "OrganizationName": "MSM_INV_ORG2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001516070456,
+            "OrganizationCode": "MSM_ITEM_MASTER",
+            "OrganizationName": "MSM_ITEM_MASTER",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000131573115,
+            "OrganizationCode": "260",
+            "OrganizationName": "Madrid",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000047655373,
+            "OrganizationCode": "100",
+            "OrganizationName": "Manchester",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000047919954,
+            "OrganizationCode": "151",
+            "OrganizationName": "Marseille",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000852264833,
+            "OrganizationCode": "897",
+            "OrganizationName": "MasterTestRite",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001368849736,
+            "OrganizationCode": "1404",
+            "OrganizationName": "Maxx Austin (Source)",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001368849671,
+            "OrganizationCode": "1206",
+            "OrganizationName": "Maxx Dallas(Destination)",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000115539127,
+            "OrganizationCode": "170",
+            "OrganizationName": "Milan",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001549974948,
+            "OrganizationCode": "MK_IMO",
+            "OrganizationName": "Mk_IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000312589901,
+            "OrganizationCode": "MOHANINVORG",
+            "OrganizationName": "Mohan INV ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000132160344,
+            "OrganizationCode": "270",
+            "OrganizationName": "Montreal",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001459448410,
+            "OrganizationCode": "NCC_SMART",
+            "OrganizationName": "NCC_SMART",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000195728942,
+            "OrganizationCode": "930",
+            "OrganizationName": "National Depot Repair",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000180500778,
+            "OrganizationCode": "900",
+            "OrganizationName": "National Parts Warehouse",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000132904477,
+            "OrganizationCode": "030",
+            "OrganizationName": "New York Retail Store (LF)",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000142100870,
+            "OrganizationCode": "102",
+            "OrganizationName": "Norwich",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000186778600,
+            "OrganizationCode": "105",
+            "OrganizationName": "Norwich Maintenance",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001690872060,
+            "OrganizationCode": "OAK_PPM",
+            "OrganizationName": "OAK PPM",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000309233990,
+            "OrganizationCode": "OAK_ITEM_MASTER",
+            "OrganizationName": "OAK_ITEM_MASTER",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000309234055,
+            "OrganizationCode": "OAK_US_INV_ORG",
+            "OrganizationName": "OAK_US_INVENTORY_ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765901481,
+            "OrganizationCode": "ONEPLUSINVORG",
+            "OrganizationName": "ONEPLUSINVORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001697218014,
+            "OrganizationCode": "895",
+            "OrganizationName": "Operation_Inv_Org",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001697217949,
+            "OrganizationCode": "857",
+            "OrganizationName": "Operation_Test",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000047274441,
+            "OrganizationCode": "000",
+            "OrganizationName": "Operations",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000303414606,
+            "OrganizationCode": "PAVAN_CO_INV_ORG",
+            "OrganizationName": "PAVAN CO INVENTORY ORGANIZATION",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000187686185,
+            "OrganizationCode": "400",
+            "OrganizationName": "PLNT A",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000178327892,
+            "OrganizationCode": "410",
+            "OrganizationName": "PLNT B",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000187686209,
+            "OrganizationCode": "405",
+            "OrganizationName": "PLNT D",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000178582642,
+            "OrganizationCode": "415",
+            "OrganizationName": "PLNT E",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000181200224,
+            "OrganizationCode": "430",
+            "OrganizationName": "PLNT G",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000185708767,
+            "OrganizationCode": "440",
+            "OrganizationName": "PLNT I",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000252955086,
+            "OrganizationCode": "PPM_INV_ORG",
+            "OrganizationName": "PPM Inv Org",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000132904412,
+            "OrganizationCode": "020",
+            "OrganizationName": "Pittsburg Regional Distribution Center (LF)",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000076167649,
+            "OrganizationCode": "PRG01",
+            "OrganizationName": "Progress Operations",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000223789273,
+            "OrganizationCode": "PRGUK01",
+            "OrganizationName": "Progress UK Operations",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000314773061,
+            "OrganizationCode": "RAM_INV_ORG1",
+            "OrganizationName": "RAM_INV_ORG1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000434876386,
+            "OrganizationCode": "RAM_INV_ORG_2",
+            "OrganizationName": "RAM_INV_ORG_2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000314772991,
+            "OrganizationCode": "RAM_ITEM_MASTER",
+            "OrganizationName": "RAM_ITEM_MASTER",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765890398,
+            "OrganizationCode": "REDMIITM",
+            "OrganizationName": "REDMIITM",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765890463,
+            "OrganizationCode": "REDMI_INVORG",
+            "OrganizationName": "REDMI_INVORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000310790675,
+            "OrganizationCode": "RITE_BGR_INV",
+            "OrganizationName": "RITE BGR INV ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001597158229,
+            "OrganizationCode": "RITE_EQUIPMENT",
+            "OrganizationName": "RITE EQUIPMENT MAINTENANCE",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000310790600,
+            "OrganizationCode": "RITE_HYD_INV",
+            "OrganizationName": "RITE HYD INV ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000310758415,
+            "OrganizationCode": "RMO",
+            "OrganizationName": "RITE-MASTER ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000307032611,
+            "OrganizationCode": "RITE10_CIO",
+            "OrganizationName": "RITE10_CIO",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000307061582,
+            "OrganizationCode": "RITE_10_COSTING",
+            "OrganizationName": "RITE_10_COSTING_ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001701009864,
+            "OrganizationCode": "RITE_IND_INV_ORG",
+            "OrganizationName": "RITE_IND_INV_ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001701009799,
+            "OrganizationCode": "RITE_IND_MASTER_OR",
+            "OrganizationName": "RITE_IND_MASTER_ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001701001395,
+            "OrganizationCode": "RITE_US_INV_ORG",
+            "OrganizationName": "RITE_US_INV_ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001701001330,
+            "OrganizationCode": "RITE_US_MASTER_ORG",
+            "OrganizationName": "RITE_US_MASTER_ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001731498661,
+            "OrganizationCode": "RS_IN_INV_ORG",
+            "OrganizationName": "RS IN INV ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001731580354,
+            "OrganizationCode": "RS_IN_LLP_INV_ORG",
+            "OrganizationName": "RS IN LLP INV ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001729431596,
+            "OrganizationCode": "RS_IN_ITEM_MASTER",
+            "OrganizationName": "RS_IN_ITEM_MASTER",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001731580257,
+            "OrganizationCode": "RS_IN_LLP_ITEM_MAS",
+            "OrganizationName": "RS_IN_LLP_ITEM_MAS",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000180500787,
+            "OrganizationCode": "910",
+            "OrganizationName": "Regional Parts Warehouse - East",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000221298530,
+            "OrganizationCode": "USFED01",
+            "OrganizationName": "Reston-USFED",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001698269679,
+            "OrganizationCode": "B",
+            "OrganizationName": "Rice_Inv_Org",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001698269598,
+            "OrganizationCode": "A",
+            "OrganizationName": "Rice_item_org",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000306971546,
+            "OrganizationCode": "RITE10_MIO",
+            "OrganizationName": "Rite10_MIO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001696304486,
+            "OrganizationCode": "0000",
+            "OrganizationName": "Rite_IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000846848498,
+            "OrganizationCode": "234",
+            "OrganizationName": "Rite_IndiaSouthInv",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000866189920,
+            "OrganizationCode": "543",
+            "OrganizationName": "Rite_Inv_org",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000846848433,
+            "OrganizationCode": "321",
+            "OrganizationName": "Rite_MasOrg",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000866189840,
+            "OrganizationCode": "432",
+            "OrganizationName": "Rite_Master_Org",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000306970781,
+            "OrganizationCode": "RITE01",
+            "OrganizationName": "Rite_child_1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765884279,
+            "OrganizationCode": "SAMINVORG",
+            "OrganizationName": "SAMINVORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765884214,
+            "OrganizationCode": "SAMITM",
+            "OrganizationName": "SAMITM",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000347908334,
+            "OrganizationCode": "SAN",
+            "OrganizationName": "SAN",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517563771,
+            "OrganizationCode": "SCM_INV_ORG_1",
+            "OrganizationName": "SCM_INV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001516112424,
+            "OrganizationCode": "SCM_INV_ORG",
+            "OrganizationName": "SCM_INV_ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001516112358,
+            "OrganizationCode": "SCM_ITEM_ORG",
+            "OrganizationName": "SCM_ITEM_ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001698489494,
+            "OrganizationCode": "SCOOPS_INV_ORG",
+            "OrganizationName": "SCOOPS_INV_ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001698489559,
+            "OrganizationCode": "SCOOPS_INV_ORG_HYD",
+            "OrganizationName": "SCOOPS_INV_ORG_HYD",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001698489389,
+            "OrganizationCode": "SCOOPS_ITEM_ORG",
+            "OrganizationName": "SCOOPS_ITEM_ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765880876,
+            "OrganizationCode": "SSPDCENINV",
+            "OrganizationName": "SSPDCENINV",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001771145519,
+            "OrganizationCode": "STEST_1020",
+            "OrganizationName": "STEST_INV",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001735789501,
+            "OrganizationCode": "SVIMO",
+            "OrganizationName": "SVIMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001739005623,
+            "OrganizationCode": "SVINV1",
+            "OrganizationName": "SVINV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001770554552,
+            "OrganizationCode": "SV_IMO",
+            "OrganizationName": "SVK_IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001770621514,
+            "OrganizationCode": "SVK_INV1",
+            "OrganizationName": "SVK_INV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001770621579,
+            "OrganizationCode": "SVK_INV2",
+            "OrganizationName": "SVK_INV2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000396511053,
+            "OrganizationCode": "SYNCINVORG",
+            "OrganizationName": "SYNC INV ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001697320213,
+            "OrganizationCode": "222",
+            "OrganizationName": "Sal_Inv_Org",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001697320148,
+            "OrganizationCode": "111",
+            "OrganizationName": "Sal_item_org",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000047274444,
+            "OrganizationCode": "001",
+            "OrganizationName": "Seattle",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000152243516,
+            "OrganizationCode": "M001",
+            "OrganizationName": "Seattle Maintenance",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000075236542,
+            "OrganizationCode": "050",
+            "OrganizationName": "Shanghai",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000075236545,
+            "OrganizationCode": "051",
+            "OrganizationName": "Shenzhen",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000137771247,
+            "OrganizationCode": "240",
+            "OrganizationName": "Stockholm",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000595998844,
+            "OrganizationCode": "TANDON1_INV",
+            "OrganizationName": "TANDON1_INV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000595998779,
+            "OrganizationCode": "TANDON_INV",
+            "OrganizationName": "TANDON_INV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000596012159,
+            "OrganizationCode": "TARA_INV1",
+            "OrganizationName": "TARA_INV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000596012242,
+            "OrganizationCode": "TARA_INV2_LOC",
+            "OrganizationName": "TARA_INV2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000359107074,
+            "OrganizationCode": "TCSINVORG",
+            "OrganizationName": "TCS INV ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001690952095,
+            "OrganizationCode": "TIM",
+            "OrganizationName": "TCS Item Master",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001690952562,
+            "OrganizationCode": "TCSUSA",
+            "OrganizationName": "TCS USA INVENTORY",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765873845,
+            "OrganizationCode": "TE03INV1",
+            "OrganizationName": "TE03INV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765368662,
+            "OrganizationCode": "TE03ITM",
+            "OrganizationName": "TE03ITM",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765909605,
+            "OrganizationCode": "TE04INVORG",
+            "OrganizationName": "TE04INVORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765907540,
+            "OrganizationCode": "TE04ITM",
+            "OrganizationName": "TE04ITM",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765912183,
+            "OrganizationCode": "TE05INVORG",
+            "OrganizationName": "TE05INVORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765912118,
+            "OrganizationCode": "TE05ITM",
+            "OrganizationName": "TE05ITM",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001767676064,
+            "OrganizationCode": "TE06ITM",
+            "OrganizationName": "TE06ITM",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765883738,
+            "OrganizationCode": "TESTINV1",
+            "OrganizationName": "TESTINV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000554907494,
+            "OrganizationCode": "T_INV",
+            "OrganizationName": "T_INV",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000573133491,
+            "OrganizationCode": "T_INV2",
+            "OrganizationName": "T_INV2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000592315302,
+            "OrganizationCode": "T_INV3",
+            "OrganizationName": "T_INV3",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001691566045,
+            "OrganizationCode": "TESTRESTSERVINVORG",
+            "OrganizationName": "TestRestServInvOrg",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000324861598,
+            "OrganizationCode": "TESTRITEINVORG",
+            "OrganizationName": "TestRite INV ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000342376520,
+            "OrganizationCode": "T_IMO",
+            "OrganizationName": "Thanvi_IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000101036136,
+            "OrganizationCode": "200",
+            "OrganizationName": "Tokyo",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000846779662,
+            "OrganizationCode": "UAE_ORG",
+            "OrganizationName": "UAE ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000136607858,
+            "OrganizationCode": "230",
+            "OrganizationName": "US Insurance",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517175548,
+            "OrganizationCode": "00011",
+            "OrganizationName": "US1 INV ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517217442,
+            "OrganizationCode": "IPHONE",
+            "OrganizationName": "US1 ITEM MASTER ORGANISATION",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517208699,
+            "OrganizationCode": "000111",
+            "OrganizationName": "US1 ITEM ORG",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001692853077,
+            "OrganizationCode": "VARA_IMO",
+            "OrganizationName": "VARA_IMO",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001692853161,
+            "OrganizationCode": "VARA_INV1",
+            "OrganizationName": "VARA_INV1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000846837055,
+            "OrganizationCode": "VOLKS_INVETORY_ORG",
+            "OrganizationName": "VOLKS_INVETORY_ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001380077366,
+            "OrganizationCode": "VOLKS_INV_ORG",
+            "OrganizationName": "VOLKS_INV_ORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000846836990,
+            "OrganizationCode": "VOLKS_MASTER_INVEN",
+            "OrganizationName": "VOLKS_MASTER_INVENTORY",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001390334549,
+            "OrganizationCode": "VOLKS_NEW_INVENTOR",
+            "OrganizationName": "VOLKS_NEW_INVENTORY",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000132384101,
+            "OrganizationCode": "290",
+            "OrganizationName": "Vilvoorde",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000173036076,
+            "OrganizationCode": "PL001",
+            "OrganizationName": "Warsaw",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000158241034,
+            "OrganizationCode": "HC02",
+            "OrganizationName": "Wondercare Childrens Hospital",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "OrganizationName": "Wondercare General Hospital",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000219226615,
+            "OrganizationCode": "HC01M",
+            "OrganizationName": "Wondercare Hospital Maintenance",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000158241043,
+            "OrganizationCode": "HC03",
+            "OrganizationName": "Wondercare Outpatient Clinic",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000173370209,
+            "OrganizationCode": "SW001",
+            "OrganizationName": "Zurich",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517166896,
+            "OrganizationCode": "DA_IMO",
+            "OrganizationName": "da_imo",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517166961,
+            "OrganizationCode": "DA_INV1",
+            "OrganizationName": "da_inv1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517167026,
+            "OrganizationCode": "DA_INV2",
+            "OrganizationName": "da_inv2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001515514044,
+            "OrganizationCode": "DVK_INV1",
+            "OrganizationName": "dvk_inv1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000868721714,
+            "OrganizationCode": "HAM_CHILD2",
+            "OrganizationName": "hameed_child2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000868712520,
+            "OrganizationCode": "H011",
+            "OrganizationName": "hameed_child_1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000868712341,
+            "OrganizationCode": "H010",
+            "OrganizationName": "hameed_master_org",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300000347907662,
+            "OrganizationCode": "T_1",
+            "OrganizationName": "inv_1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001698270174,
+            "OrganizationCode": "IV_IMO",
+            "OrganizationName": "iv_imo",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765879675,
+            "OrganizationCode": "SSPCENINV",
+            "OrganizationName": "sspceninv",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765879610,
+            "OrganizationCode": "SSPITM01",
+            "OrganizationName": "sspitm",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001755841652,
+            "OrganizationCode": "TE01INV01",
+            "OrganizationName": "te01_inv1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001754009587,
+            "OrganizationCode": "TE01ITM",
+            "OrganizationName": "te01itemmaster",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001764299325,
+            "OrganizationCode": "TE02ITM",
+            "OrganizationName": "te02ITM",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001764299390,
+            "OrganizationCode": "TE02ORG",
+            "OrganizationName": "te02org",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001765368727,
+            "OrganizationCode": "TE03INVORG",
+            "OrganizationName": "te03INVORG",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001767676129,
+            "OrganizationCode": "TE06INVORG",
+            "OrganizationName": "te06invorg",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001496584416,
+            "OrganizationCode": "TT_IMO",
+            "OrganizationName": "tt_imo",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001496584481,
+            "OrganizationCode": "TT_INV1",
+            "OrganizationName": "tt_inv1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001497323443,
+            "OrganizationCode": "TT_INV2",
+            "OrganizationName": "tt_inv2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517130369,
+            "OrganizationCode": "VK_IMO",
+            "OrganizationName": "vk_imo",
+            "MasterOrganizationFlag": true,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517130438,
+            "OrganizationCode": "VK_INV1",
+            "OrganizationName": "vk_inv1",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        },
+        {
+            "OrganizationId": 300001517134836,
+            "OrganizationCode": "VK_INV2",
+            "OrganizationName": "vk_inv2",
+            "MasterOrganizationFlag": false,
+            "Status": "Active"
+        }
+    ],
+    "count": 302,
+    "hasMore": false,
+    "limit": 500,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizationsLOV",
+            "name": "inventoryOrganizationsLOV",
+            "kind": "collection"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "root": "navigateToCrewSetupStart",
+  "description": "",
+  "actions": {
+
+    "navigateToCrewSetupStart": {
+      "module": "vb/action/builtin/navigateAction",
+      "parameters": {
+        "page": "/shell/crew-setup/crew-setup-start",
+        "params": {
+          "AssignEnabled": true,
+          "searchCrew": "{{ $page.variables.resourceobj.crewName }}",
+          "searchresourceid": "{{ $page.variables.resourceobj.id }}",
+          "effstarDate": "{{ $page.variables.resourceobj.fulldate }}"
+        }
+      }
+    }
+  }
+}

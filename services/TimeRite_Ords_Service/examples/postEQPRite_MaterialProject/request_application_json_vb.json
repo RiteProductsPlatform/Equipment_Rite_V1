@@ -1,0 +1,16 @@
+{
+  "p_project_id":12345,
+  "p_project_number": "PN-2025-001",
+  "p_project_name": "New Manufacturing Plant",
+  "p_task_id": 67890,
+  "p_task_number": "T-001",
+  "p_task_name": "Foundation Work",
+  "p_item_number": "ITEM98765",
+  "p_item_description": "High-strength Concrete Mix",
+  "p_quantity": 100,
+  "p_uom": "Cubic Meters",
+  "p_po_number": "PO-456789",
+  "p_supplier": "ABC Construction Supplies Ltd.",
+  "p_workorder_number": "WO-2025-321",
+  "p_comments": "Urgent delivery required before end of July"
+}

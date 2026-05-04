@@ -1,0 +1,8 @@
+{
+  "id": "analytics",
+  "description": "Flow main",
+  "defaultPage": "analytics-start",
+  "services": {},
+  "types": {},
+  "variables": {}
+}

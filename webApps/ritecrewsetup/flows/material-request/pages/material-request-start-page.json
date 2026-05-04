@@ -1,0 +1,955 @@
+{
+  "title": "Material Request",
+  "description": "",
+  "variables": {
+    "FTOADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getEQPRite_MaterialSearch",
+        "keyAttributes": "@index"
+      }
+    },
+    "ftoblankrowData": {
+      "type": "FTOType"
+    },
+    "FTOdlgADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "FTOType",
+        "keyAttributes": "@index"
+      }
+    },
+    "ftorowData": {
+      "type": "FTOType"
+    },
+    "get1113185ProjectsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "projectNameList/get11_13_18_05Projects",
+        "keyAttributes": "ProjectName",
+        "itemsPath": "items",
+        "responseType": "get1113185ProjectsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "ProjectName"
+          ]
+        }
+      }
+    },
+    "get1113185ProjectsProjectIdChildTasks2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "projectNameList/get11_13_18_05ProjectsProjectIdChildTasks2",
+        "keyAttributes": "TaskName",
+        "itemsPath": "items",
+        "responseType": "get1113185ProjectsProjectIdChildTasks2Response",
+        "uriParameters": {
+          "ProjectId": "{{ $variables.ftorowData.project_id }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "TaskName"
+          ]
+        }
+      }
+    },
+    "getCrewTimeProjectTaskPWAListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getCrewTimeProjectTaskPWA",
+        "keyAttributes": "task_name",
+        "itemsPath": "items",
+        "responseType": "getCrewTimeProjectTaskPWAResponse",
+        "uriParameters": {
+          "project_id": "{{ $variables.headerobj.project_id?$variables.headerobj.project_id:\"\" }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "task_name"
+          ]
+        }
+      }
+    },
+    "getEQPRiteMaterialProjectListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEQPRite_MaterialProject",
+        "keyAttributes": "project_name",
+        "itemsPath": "items",
+        "responseType": "getEQPRiteMaterialProjectResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "project_name"
+          ]
+        }
+      }
+    },
+    "getEQPRiteMaterialProjectListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEQPRite_MaterialProject",
+        "keyAttributes": "task_name",
+        "itemsPath": "items",
+        "responseType": "getEQPRiteMaterialProjectResponse2",
+        "uriParameters": {
+          "p_project_id": "{{ $variables.headerobj.project_id?$variables.headerobj.project_id:\"\" }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "task_name"
+          ]
+        }
+      }
+    },
+    "getEQPRiteMaterialProjectListSDP3": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEQPRite_MaterialProject",
+        "keyAttributes": "project_name",
+        "itemsPath": "items",
+        "responseType": "getEQPRiteMaterialProjectResponse3",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "project_name"
+          ]
+        }
+      }
+    },
+    "getItemNumberListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "projectNameList/getItemNumber",
+        "keyAttributes": "ItemNumber",
+        "itemsPath": "items",
+        "responseType": "getItemNumberResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "ItemDescription"
+          ]
+        }
+      }
+    },
+    "getPurchaseOrdersListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "Procurement_Module/getPurchaseOrders",
+        "keyAttributes": "OrderNumber",
+        "itemsPath": "items",
+        "responseType": "getPurchaseOrdersResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "OrderNumber"
+          ]
+        }
+      }
+    },
+    "getSuppliersListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "Procurement_Module/getSuppliers",
+        "keyAttributes": "Supplier",
+        "itemsPath": "items",
+        "responseType": "getSuppliersResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "Supplier"
+          ]
+        }
+      }
+    },
+    "getWorkordersListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getWorkorders",
+        "keyAttributes": "work_order_number",
+        "itemsPath": "items",
+        "responseType": "getWorkordersResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "work_order_number"
+          ]
+        }
+      }
+    },
+    "headerobj": {
+      "type": {
+        "project_id": "string",
+        "project_name": "string",
+        "project_number": "string",
+        "task_id": "string",
+        "task_name": "string",
+        "task_number": "string"
+      }
+    },
+    "illustrationBackground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-bg-01.png"
+    },
+    "illustrationForeground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-fg-01.png"
+    },
+    "imageStretch": {
+      "type": "string",
+      "defaultValue": "none"
+    },
+    "insertStatus": {
+      "type": "boolean",
+      "defaultValue": false
+    },
+    "isvalid": {
+      "type": "string"
+    },
+    "ItemNumberADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "ItemNumberType",
+        "keyAttributes": "ItemNumber",
+        "textFilterAttributes": [
+          "ItemDescription"
+        ]
+      }
+    },
+    "mobileImage": {
+      "type": "string",
+      "defaultValue": "on"
+    },
+    "OrganizationADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "OrganizationsLOVType",
+        "textFilterAttributes": [
+          "OrganizationName"
+        ],
+        "keyAttributes": "OrganizationName"
+      }
+    },
+    "projectADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "get11_13_18_05Projects",
+        "textFilterAttributes": [
+          "ProjectName"
+        ],
+        "keyAttributes": "ProjectName"
+      }
+    },
+    "projectDetailsPWAListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/ProjectDetailsPWA",
+        "keyAttributes": "project_name",
+        "itemsPath": "items",
+        "responseType": "projectDetailsPWAResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "project_name"
+          ]
+        }
+      }
+    },
+    "selectedRow": {
+      "type": {
+          "data": "object",
+          "index": "number"
+        }
+    },
+    "subinventoryItemsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "projectNameList/subinventoryItems",
+        "keyAttributes": "SourceSubinventory",
+        "itemsPath": "items",
+        "responseType": "subinventoryItemsResponse",
+        "uriParameters": {
+          "q": "{{ \"OrganizationCode<>'@@@';ItemNumber='\"+$variables.ftorowData.item_number+\"'\" }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "SourceSubinventory"
+          ]
+        }
+      }
+    },
+    "variable": {
+      "type": "string"
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.get11_13_18_05Projects": {
+      "endpoint": "get11_13_18_05Projects",
+      "service": "projectNameList",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.get1113185ProjectsProjectIdChildTasks2Response": {
+      "endpoint": "get11_13_18_05ProjectsProjectIdChildTasks2",
+      "service": "projectNameList",
+      "path": "response"
+    },
+    "@decorators.get1113185ProjectsResponse": {
+      "endpoint": "get11_13_18_05Projects",
+      "service": "projectNameList",
+      "path": "response"
+    },
+    "@decorators.getCrewTimeProjectTaskPWAResponse": {
+      "endpoint": "getCrewTimeProjectTaskPWA",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEQPRite_MaterialSearch": {
+      "endpoint": "getEQPRite_MaterialSearch",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getEQPRiteMaterialProjectResponse": {
+      "endpoint": "getEQPRite_MaterialProject",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEQPRiteMaterialProjectResponse2": {
+      "endpoint": "getEQPRite_MaterialProject",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEQPRiteMaterialProjectResponse3": {
+      "endpoint": "getEQPRite_MaterialProject",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getItemNumberResponse": {
+      "endpoint": "getItemNumber",
+      "service": "projectNameList",
+      "path": "response"
+    },
+    "@decorators.getPurchaseOrdersResponse": {
+      "endpoint": "getPurchaseOrders",
+      "service": "Procurement_Module",
+      "path": "response"
+    },
+    "@decorators.getSuppliersResponse": {
+      "endpoint": "getSuppliers",
+      "service": "Procurement_Module",
+      "path": "response"
+    },
+    "@decorators.getWorkordersResponse": {
+      "endpoint": "getWorkorders",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.ItemNumberType": {
+      "endpoint": "getItemNumber",
+      "service": "projectNameList",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.OrganizationsLOVType": {
+      "endpoint": "LatestInventoryOrganizationsLOV",
+      "service": "projectNameList",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.projectDetailsPWAResponse": {
+      "endpoint": "ProjectDetailsPWA",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.subinventoryItemsResponse": {
+      "endpoint": "subinventoryItems",
+      "service": "projectNameList",
+      "path": "response"
+    },
+    "FTOType": {
+      "comments": "string",
+      "item_description": "string",
+      "item_number": "string",
+      "organization_code": "string",
+      "organization_id": "number",
+      "organization_name": "string",
+      "po_number": "string",
+      "project_id": "number",
+      "project_name": "string",
+      "project_number": "string",
+      "quantity": "number",
+      "sub_inventory": "string",
+      "sub_inventory_id": "string",
+      "supplier": "string",
+      "task_id": "string",
+      "task_name": "string",
+      "task_number": "string",
+      "uom": "string",
+      "workorder_number": "string"
+
+    },
+    "get11_13_18_05Projects": {
+      "ProjectId": "number",
+      "ProjectName": "string",
+      "ProjectNumber": "string"
+    },
+    "get1113185ProjectsProjectIdChildTasks2Response": {
+      "items": [
+        {
+          "TaskId": "number",
+          "TaskName": "string",
+          "TaskNumber": "string"
+        }
+      ]
+    },
+    "get1113185ProjectsResponse": {
+      "items": [
+        {
+          "ProjectId": "number",
+          "ProjectName": "string",
+          "ProjectNumber": "string"
+        }
+      ]
+    },
+    "getCrewTimeProjectTaskPWAResponse": {
+      "items": [
+        {
+          "project_id": "number",
+          "task_id": "number",
+          "task_name": "string",
+          "task_number": "string"
+        }
+      ]
+    },
+    "getEQPRite_MaterialSearch": {
+      "comments": "string",
+      "item_description": "string",
+      "item_number": "string",
+      "material_req_id": "number",
+      "po_number": "string",
+      "project_id": "number",
+      "project_name": "string",
+      "project_number": "string",
+      "quantity": "number",
+      "supplier": "string",
+      "task_id": "number",
+      "task_name": "string",
+      "task_number": "string",
+      "uom": "string",
+      "workorder_number": "string"
+    },
+    "getEQPRiteMaterialProjectResponse": {
+      "items": [
+        {
+          "project_id": "number",
+          "project_name": "string",
+          "project_number": "string",
+          "task_id": "number",
+          "task_name": "string",
+          "task_number": "string"
+        }
+      ]
+    },
+    "getEQPRiteMaterialProjectResponse2": {
+      "items": [
+        {
+          "project_id": "number",
+          "project_name": "string",
+          "project_number": "string",
+          "task_id": "number",
+          "task_name": "string",
+          "task_number": "string"
+        }
+      ]
+    },
+    "getEQPRiteMaterialProjectResponse3": {
+      "items": [
+        {
+          "project_id": "number",
+          "project_name": "string",
+          "project_number": "string"
+        }
+      ]
+    },
+    "getItemNumberResponse": {
+      "items": [
+        {
+          "ItemClass": "string",
+          "ItemDescription": "string",
+          "ItemId": "number",
+          "ItemNumber": "string"
+        }
+      ]
+    },
+    "getPurchaseOrdersResponse": {
+      "items": [
+        {
+          "AcknowledgeWithinDays": "any",
+          "AcknowledgmentDueDate": "any",
+          "AdditionalContactEmail": "any",
+          "BillToBU": "string",
+          "BillToBUId": "number",
+          "BillToLocation": "string",
+          "BillToLocationId": "number",
+          "Buyer": "string",
+          "BuyerDisplayName": "string",
+          "BuyerId": "number",
+          "BuyerManagedTransportFlag": "boolean",
+          "Carrier": "string",
+          "CarrierId": "number",
+          "ConfirmingOrderFlag": "boolean",
+          "ConsignmentTermsFlag": "boolean",
+          "ConversionRate": "any",
+          "ConversionRateDate": "string",
+          "ConversionRateType": "any",
+          "CreatedBy": "string",
+          "CreationDate": "string",
+          "CreditAmount": "number",
+          "Currency": "string",
+          "CurrencyCode": "string",
+          "DefaultTaxationCountry": "string",
+          "DefaultTaxationCountryCode": "string",
+          "Description": "string",
+          "DiscountAmount": "number",
+          "DocumentFiscalClassification": "any",
+          "DocumentFiscalClassificationCode": "any",
+          "DocumentFiscalClassificationId": "any",
+          "DocumentStyle": "string",
+          "DocumentStyleId": "number",
+          "FirstPartyRegistrationId": "any",
+          "FirstPartyRegistrationNumber": "any",
+          "FOB": "string",
+          "FOBCode": "string",
+          "FreightTerms": "string",
+          "FreightTermsCode": "string",
+          "FrozenFlag": "any",
+          "ImportSourceCode": "string",
+          "LastUpdateDate": "string",
+          "LastUpdatedBy": "string",
+          "MasterContractId": "any",
+          "MasterContractNumber": "any",
+          "MasterContractType": "any",
+          "MasterContractTypeId": "any",
+          "ModeOfTransport": "any",
+          "ModeOfTransportCode": "any",
+          "Negotiation": "any",
+          "NoteToReceiver": "any",
+          "NoteToSupplier": "any",
+          "OrderDate": "string",
+          "Ordered": "number",
+          "OrderedAmountBeforeAdjustments": "number",
+          "OrderNumber": "string",
+          "OverrideB2BCommunicationFlag": "boolean",
+          "OverridingApprover": "any",
+          "OverridingApproverDisplayName": "any",
+          "OverridingApproverId": "any",
+          "PaymentTerms": "string",
+          "PaymentTermsId": "number",
+          "PayOnReceiptFlag": "boolean",
+          "POHeaderId": "number",
+          "ProcurementBU": "string",
+          "ProcurementBUId": "number",
+          "ProgressPaymentFlag": "boolean",
+          "PurchaseBasis": "string",
+          "ReferenceNumber": "any",
+          "RequesterDisplayName": "string",
+          "RequesterId": "number",
+          "RequiredAcknowledgment": "string",
+          "RequiredAcknowledgmentCode": "string",
+          "RequiresSignatureFlag": "boolean",
+          "Requisition": "string",
+          "RequisitioningBU": "string",
+          "RequisitioningBUId": "number",
+          "Revision": "number",
+          "SalesOrder": "any",
+          "ServiceLevel": "any",
+          "ServiceLevelCode": "any",
+          "ShippingMethod": "string",
+          "ShipToLocationAddress": "string",
+          "ShipToLocationCode": "string",
+          "ShipToLocationId": "number",
+          "SoldToLegalEntity": "string",
+          "SoldToLegalEntityId": "number",
+          "SourceAgreement": "string",
+          "SpecialHandlingType": "any",
+          "SpecialHandlingTypeCode": "any",
+          "Status": "string",
+          "StatusCode": "string",
+          "Supplier": "string",
+          "SupplierBccEmailAddress": "any",
+          "SupplierCcEmailAddress": "any",
+          "SupplierCommunicationMethod": "string",
+          "SupplierCommunicationMethodCode": "string",
+          "SupplierContact": "string",
+          "SupplierContactDisplayName": "string",
+          "SupplierContactId": "number",
+          "SupplierEmailAddress": "string",
+          "SupplierFax": "any",
+          "SupplierId": "number",
+          "SupplierOrder": "any",
+          "SupplierSite": "string",
+          "SupplierSiteId": "number",
+          "ThirdPartyRegistrationId": "any",
+          "ThirdPartyRegistrationNumber": "any",
+          "Total": "number",
+          "TotalTax": "number"
+        }
+      ]
+    },
+    "getSuppliersResponse": {
+      "items": [
+        {
+          "Alias": "string",
+          "AlternateName": "string",
+          "BusinessClassificationNotApplicableFlag": "any",
+          "BusinessRelationship": "string",
+          "BusinessRelationshipCode": "string",
+          "ChiefExecutiveName": "any",
+          "ChiefExecutiveTitle": "any",
+          "CorporateWebsite": "string",
+          "CreatedBy": "string",
+          "CreationDate": "string",
+          "CreationSource": "string",
+          "CreationSourceCode": "string",
+          "CurrentFiscalYearPotentialRevenue": "number",
+          "CustomerNumber": "any",
+          "DataFoxCompanyName": "any",
+          "DataFoxCompanyPrimaryURL": "any",
+          "DataFoxCountry": "any",
+          "DataFoxEIN": "any",
+          "DataFoxId": "string",
+          "DataFoxLastSyncDate": "string",
+          "DataFoxLegalName": "any",
+          "DataFoxNAICSCode": "any",
+          "DataFoxScore": "any",
+          "DataFoxScoringCriteria": "any",
+          "DUNSNumber": "string",
+          "FederalIncomeTaxType": "string",
+          "FederalIncomeTaxTypeCode": "string",
+          "FederalReportableFlag": "boolean",
+          "FiscalYearEndMonth": "string",
+          "FiscalYearEndMonthCode": "string",
+          "InactiveDate": "any",
+          "IndustryCategory": "any",
+          "IndustrySubcategory": "any",
+          "LastUpdateDate": "string",
+          "LastUpdatedBy": "string",
+          "MissionStatement": "any",
+          "NameControl": "any",
+          "NationalInsuranceNumber": "any",
+          "NationalInsuranceNumberExistsFlag": "boolean",
+          "OBNEnabledFlag": "any",
+          "OFACSources": "any",
+          "OneTimeSupplierFlag": "any",
+          "OnOFACListFlag": "string",
+          "ParentSupplier": "any",
+          "ParentSupplierId": "any",
+          "ParentSupplierNumber": "any",
+          "PreferredFunctionalCurrency": "any",
+          "PreferredFunctionalCurrencyCode": "any",
+          "PrincipalName": "any",
+          "PrincipalTitle": "any",
+          "RegistryId": "string",
+          "StandardIndustryClass": "string",
+          "StateReportableFlag": "boolean",
+          "Status": "string",
+          "Supplier": "string",
+          "SupplierId": "number",
+          "SupplierNumber": "string",
+          "SupplierPartyId": "number",
+          "SupplierType": "any",
+          "SupplierTypeCode": "any",
+          "TaxOrganizationType": "string",
+          "TaxOrganizationTypeCode": "string",
+          "TaxpayerCountry": "string",
+          "TaxpayerCountryCode": "string",
+          "TaxpayerId": "string",
+          "TaxpayerIdExistsFlag": "boolean",
+          "TaxRegistrationCountry": "string",
+          "TaxRegistrationCountryCode": "string",
+          "TaxRegistrationNumber": "string",
+          "TaxReportingName": "any",
+          "UseWithholdingTaxFlag": "boolean",
+          "VerificationDate": "any",
+          "WithholdingTaxGroup": "string",
+          "WithholdingTaxGroupId": "number",
+          "YearEstablished": "number",
+          "YearIncorporated": "number"
+        }
+      ]
+    },
+    "getWorkordersResponse": {
+      "items": [
+        {
+          "asset_number": "string",
+          "unit_cost": "string",
+          "work_order_number": "string"
+        }
+      ]
+    },
+    "ItemNumberType": {
+      "BuyerOrganizationValue": "any",
+      "DefaultShippingOrganizationValue": "any",
+      "FixedOrderQuantity": "any",
+      "InventoryAssetFlag": "boolean",
+      "InventoryItemFlag": "boolean",
+      "IssueUOMValue": "any",
+      "ItemClass": "string",
+      "ItemDescription": "string",
+      "ItemId": "number",
+      "ItemNumber": "string",
+      "MaximumMinmaxQuantity": "any",
+      "MaximumOrderQuantity": "any",
+      "MinimumLicenseQuantity": "any",
+      "MinimumMinmaxQuantity": "any",
+      "MinimumOrderQuantity": "any",
+      "OrderCost": "any",
+      "OrganizationCode": "string",
+      "OrganizationId": "number",
+      "PricingUOMValue": "string",
+      "PrimaryUOMValue": "string",
+      "SecondaryUOMValue": "any",
+      "SerialStartingNumber": "any",
+      "TrackingUOMValue": "string"
+    },
+    "OrganizationsLOVType": {
+      "OrganizationCode": "string",
+      "OrganizationId": "number",
+      "OrganizationName": "string",
+      "Status": "string"
+    },
+    "projectDetailsPWAResponse": {
+      "items": [
+        {
+          "project_id": "number",
+          "project_name": "string",
+          "project_number": "string"
+        }
+      ]
+    },
+    "subinventoryItemsResponse": {
+      "items": [
+        {
+          "SourceSubinventory": "string",
+          "SubinventoryItemId": "string"
+        }
+      ]
+    }
+
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "createButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "buttonAction3": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain1"
+        }
+      ]
+    },
+    "buttonAction4": {
+      "chains": [
+        {
+          "chain": "addLineActionChain"
+        }
+      ]
+    },
+    "buttonAction5": {
+      "chains": [
+        {
+          "chain": "deleteButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction6": {
+      "chains": [
+        {
+          "chain": "saveButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction7": {
+      "chains": [
+        {
+          "chain": "searchButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction8": {
+      "chains": [
+        {
+          "chain": "resetButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction9": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain3"
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem2": {
+      "chains": [
+        {
+          "chain": "projectselectionActionchain",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem3": {
+      "chains": [
+        {
+          "chain": "taskselectionActionChain",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem4": {
+      "chains": [
+        {
+          "chain": "organizationValueChangeAction",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem5": {
+      "chains": [
+        {
+          "chain": "itemNumberValueChangeAction",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem6": {
+      "chains": [
+        {
+          "chain": "subinventoryValueChange",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "tableBeforeRowEdit": {
+      "chains": [
+        {
+          "chain": "TableBeforeRowEditChain",
+          "parameters": {
+            "rowKey": "{{$event.detail.rowContext.status.rowKey}}",
+            "rowIndex": "{{$event.detail.rowContext.status.rowIndex}}",
+            "rowData": "{{$event.detail.rowContext.componentElement.getDataForVisibleRow($event.detail.rowContext.status.rowIndex).data}}"
+          }
+        }
+      ]
+    },
+    "tableBeforeRowEditEnd": {
+      "chains": [
+        {
+          "chain": "TableBeforeRowEditEndChain",
+          "parameters": {
+            "cancelEdit": "{{$event.detail.cancelEdit}}",
+            "rowKey": "{{$event.detail.rowContext.status.rowKey}}",
+            "rowIndex": "{{$event.detail.rowContext.status.rowIndex}}",
+            "rowData": "{{$event.detail.rowContext.componentElement.getDataForVisibleRow($event.detail.rowContext.status.rowIndex).data}}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "chain": "PageVbEnterChain"
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-highlight-text": {
+        "path": "ojs/ojhighlighttext"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-popup": {
+        "path": "ojs/ojpopup"
+      },
+      "oj-progress-bar": {
+        "path": "ojs/ojprogress-bar"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-validation-group": {
+        "path": "ojs/ojvalidationgroup"
+      }
+
+   }
+  }
+}

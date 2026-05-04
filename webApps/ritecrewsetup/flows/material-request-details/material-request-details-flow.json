@@ -1,0 +1,8 @@
+{
+  "id": "material-request-details",
+  "description": "Flow main",
+  "defaultPage": "material-request-details-start",
+  "services": {},
+  "types": {},
+  "variables": {}
+}

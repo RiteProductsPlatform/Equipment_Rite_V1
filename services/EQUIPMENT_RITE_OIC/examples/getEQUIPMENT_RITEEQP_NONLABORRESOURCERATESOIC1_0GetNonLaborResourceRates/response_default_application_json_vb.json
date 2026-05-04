@@ -1,0 +1,56 @@
+{
+    "items": [
+        {
+            "rate_schedule_name": "OII AU NONLABOR FREEDOM Rate",
+            "description": "OII AU NONLABOR FREEDOM Rate",
+            "schedule_type": "NON-LABOR",
+            "rate_schedule_id": "300000019661962",
+            "schedule_line_id": "300000019661963",
+            "nl_res_organization_id": "300000003591251",
+            "nl_res_organization_name": "OII_AUS_AUD_BU",
+            "expenditure_type_id": "300000019661953",
+            "expenditure_type_name": "OII_Project_Equip_Usage_Charge",
+            "non_labor_resource_id": "300000019661959",
+            "non_labor_resource_name": "Freedom ROV",
+            "currency_code": "AUD",
+            "start_date_active": "2025-01-01T00:00:00.000+00:00",
+            "rate_unit": "DY",
+            "rate": "700"
+        },
+        {
+            "rate_schedule_name": "OII AU NONLABOR MAGNUM Rate",
+            "description": "OII AU NONLABOR MAGNUM Rate",
+            "schedule_type": "NON-LABOR",
+            "rate_schedule_id": "300000019661956",
+            "schedule_line_id": "300000019661957",
+            "nl_res_organization_id": "300000003591251",
+            "nl_res_organization_name": "OII_AUS_AUD_BU",
+            "expenditure_type_id": "300000019661953",
+            "expenditure_type_name": "OII_Project_Equip_Usage_Charge",
+            "non_labor_resource_id": "300000019661958",
+            "non_labor_resource_name": "MAGNUM ROV",
+            "currency_code": "AUD",
+            "start_date_active": "2025-01-01T00:00:00.000+00:00",
+            "rate_unit": "DY",
+            "rate": "500"
+        },
+        {
+            "rate_schedule_name": "OII AU Non Labor Bill Rate Sch",
+            "description": "OII AU Non Labor Bill Rate Sch",
+            "schedule_type": "NON-LABOR",
+            "rate_schedule_id": "300000007468428",
+            "schedule_line_id": "300000019661952",
+            "nl_res_organization_id": "300000003591251",
+            "nl_res_organization_name": "OII_AUS_AUD_BU",
+            "expenditure_type_id": "300000019363821",
+            "expenditure_type_name": "OII_Project_Equipment_Usage_Charges",
+            "non_labor_resource_id": "300000019363829",
+            "non_labor_resource_name": "OII_ROV_Magnum_Resource",
+            "currency_code": "AUD",
+            "start_date_active": "2025-10-07T00:00:00.000+00:00",
+            "rate_unit": "HOURS",
+            "rate": ""
+        }
+    ],
+    "count": 3
+}

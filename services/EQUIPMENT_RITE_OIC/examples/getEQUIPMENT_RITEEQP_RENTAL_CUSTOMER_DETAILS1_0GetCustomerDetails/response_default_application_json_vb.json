@@ -1,0 +1,26 @@
+{
+    "items": [
+        {
+            "customer_id": "300001690603876",
+            "customer_name": " Adhunik Alloys & Power Ltd",
+            "customer_number": "15145354",
+            "account_number": "112136",
+            "name": "",
+            "party_site_number": "30506493",
+            "site_status": "A",
+            "site_use_code": "BILL_TO",
+            "location": "140266",
+            "primary_flag": "Y",
+            "address1": "",
+            "address2": "",
+            "address3": "",
+            "address4": "",
+            "city": "Los Angeles",
+            "postal_code": "",
+            "state": "CA",
+            "country": "US",
+            "party_site_id": "300001690603880"
+        }
+    ],
+    "count": 1
+}

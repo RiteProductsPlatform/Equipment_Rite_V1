@@ -1,0 +1,29 @@
+{
+  "id": "equipment-rental",
+  "description": "Flow main",
+  "defaultPage": "equipment-rental-start",
+  "services": {},
+  "types": {},
+  "variables": {
+    "dateobj": {
+      "type": {
+        "endDate": "any",
+        "startDate": "string"
+      }
+    },
+    "headerobj": {
+      "type": {
+        "fromDate": "string",
+        "location": "string",
+        "todate": "string"
+      }
+    },
+    "rentalReservationNumber": {
+      "type": "string"
+    },
+    "syncCartArray": {
+      "type": "object[]"
+    }
+
+  }
+}

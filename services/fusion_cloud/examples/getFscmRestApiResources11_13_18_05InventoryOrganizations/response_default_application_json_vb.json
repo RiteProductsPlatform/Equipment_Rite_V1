@@ -1,0 +1,115 @@
+{
+    "items": [
+        {
+            "OrganizationName": "Atlanta"
+        },
+        {
+            "OrganizationName": "Seattle"
+        },
+        {
+            "OrganizationName": "Progress Operations"
+        },
+        {
+            "OrganizationName": "DC 2"
+        },
+        {
+            "OrganizationName": "MNT B"
+        },
+        {
+            "OrganizationName": "PLNT E"
+        },
+        {
+            "OrganizationName": "Seattle Maintenance"
+        },
+        {
+            "OrganizationName": "Field Service Technicians"
+        },
+        {
+            "OrganizationName": "National Depot Repair"
+        },
+        {
+            "OrganizationName": "PLNT D"
+        },
+        {
+            "OrganizationName": "Denver Maintenance"
+        },
+        {
+            "OrganizationName": "PLNT A"
+        },
+        {
+            "OrganizationName": "MNT A"
+        },
+        {
+            "OrganizationName": "Norwich Maintenance"
+        },
+        {
+            "OrganizationName": "Wondercare Hospital Maintenance"
+        },
+        {
+            "OrganizationName": "RITE HYD INV ORG"
+        },
+        {
+            "OrganizationName": "Dell Inv Org1"
+        },
+        {
+            "OrganizationName": "RITE10_CIO"
+        },
+        {
+            "OrganizationName": "RITE EQUIPMENT MAINTENANCE"
+        },
+        {
+            "OrganizationName": "GLOBAL_ERP_UK_INV"
+        },
+        {
+            "OrganizationName": "GLOBAL_ERP_IND_HYDINV"
+        },
+        {
+            "OrganizationName": "GLOBAL_ERP_IND_BANINV"
+        },
+        {
+            "OrganizationName": "RITE-MASTER ORG"
+        },
+        {
+            "OrganizationName": "RITE BGR INV ORG"
+        },
+        {
+            "OrganizationName": "OAK PPM"
+        },
+        {
+            "OrganizationName": "MMX_INORG"
+        },
+        {
+            "OrganizationName": "GLOBAL_ERP_US_INV"
+        },
+        {
+            "OrganizationName": "GLOBAL_ERP_UAE_INV"
+        },
+        {
+            "OrganizationName": "GLOBAL_ERP_IND_CHEINV"
+        },
+        {
+            "OrganizationName": "Rite10_MIO"
+        },
+        {
+            "OrganizationName": "AMGreen Kakinada Plant Maintance"
+        }
+    ],
+    "count": 31,
+    "hasMore": false,
+    "limit": 50,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations",
+            "name": "inventoryOrganizations",
+            "kind": "collection"
+        },
+        {
+            "rel": "action",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryOrganizations/action/copyInventoryOrganizations",
+            "name": "copyInventoryOrganizations",
+            "kind": "other"
+        }
+    ]
+}

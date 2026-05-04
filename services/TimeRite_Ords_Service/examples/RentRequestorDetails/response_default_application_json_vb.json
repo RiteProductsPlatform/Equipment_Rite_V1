@@ -1,0 +1,176 @@
+{
+    "items": [
+        {
+            "user_name": "AJITH",
+            "person_number": "60154",
+            "person_name": "AJITH",
+            "person_id": 300001515299934
+        },
+        {
+            "user_name": "AMY.MARLIN",
+            "person_number": "2",
+            "person_name": "Amy Marlin",
+            "person_id": 300000047339511
+        },
+        {
+            "user_name": "April",
+            "person_number": "60031",
+            "person_name": "April",
+            "person_id": 300000548338339
+        },
+        {
+            "user_name": "AVA.CLARK",
+            "person_number": "2990",
+            "person_name": "Ava Clark",
+            "person_id": 300000122291010
+        },
+        {
+            "user_name": null,
+            "person_number": "60167",
+            "person_name": "CELLO",
+            "person_id": 300001517103929
+        },
+        {
+            "user_name": "CALVIN.ROTH",
+            "person_number": "3",
+            "person_name": "Calvin Roth",
+            "person_id": 300000047340498
+        },
+        {
+            "user_name": "CASEY.BROWN",
+            "person_number": "4",
+            "person_name": "Casey Brown",
+            "person_id": 300000047341483
+        },
+        {
+            "user_name": "Rite_User",
+            "person_number": "RITE_30",
+            "person_name": "Casey Brown",
+            "person_id": 100000754124444
+        },
+        {
+            "user_name": "DEMO-INR",
+            "person_number": "60108",
+            "person_name": "DEMO-INR",
+            "person_id": 300001001730418
+        },
+        {
+            "user_name": "INDIA-USER",
+            "person_number": "60169",
+            "person_name": "INDIA-USER",
+            "person_id": 300001517104194
+        },
+        {
+            "user_name": "JOHN.DUNBAR",
+            "person_number": "9",
+            "person_name": "John Dunbar",
+            "person_id": 300000047625111
+        },
+        {
+            "user_name": "KENGO.SAI",
+            "person_number": "3591",
+            "person_name": "Kengo Sai",
+            "person_id": 300000129923971
+        },
+        {
+            "user_name": "MAY.GEE",
+            "person_number": "15",
+            "person_name": "May Gee",
+            "person_id": 300000047633649
+        },
+        {
+            "user_name": "PRC07.STUDENT",
+            "person_number": "1357",
+            "person_name": "PRC07 Student",
+            "person_id": 300000078979111
+        },
+        {
+            "user_name": "RS-PPM",
+            "person_number": "60004",
+            "person_name": "RS-PPM",
+            "person_id": 300000322476169
+        },
+        {
+            "user_name": "RITE.DEVELOPER",
+            "person_number": "60198",
+            "person_name": "Rite Developer",
+            "person_id": 300001690698681
+        },
+        {
+            "user_name": "Hyd.Rite",
+            "person_number": "60013",
+            "person_name": "Rite Tech",
+            "person_id": 300000325319239
+        },
+        {
+            "user_name": "ROSARIO.ARRENDONDO",
+            "person_number": "303",
+            "person_name": "Rosario Arrendondo",
+            "person_id": 300000048631979
+        },
+        {
+            "user_name": "Sai.a.Kiran",
+            "person_number": "60065",
+            "person_name": "Saikiran Telangana",
+            "person_id": 300000735546639
+        },
+        {
+            "user_name": "SAVILLE.MILLER",
+            "person_number": "17",
+            "person_name": "Saville Miller",
+            "person_id": 300000047640648
+        },
+        {
+            "user_name": "Test_user",
+            "person_number": "60034",
+            "person_name": "Test_user",
+            "person_id": 300000548777374
+        },
+        {
+            "user_name": "TIFFANY.IRVING",
+            "person_number": "16",
+            "person_name": "Tiffany Irving",
+            "person_id": 300000047639648
+        },
+        {
+            "user_name": "US-USER",
+            "person_number": "60162",
+            "person_name": "US-USER",
+            "person_id": 300001516233290
+        },
+        {
+            "user_name": "HYDRA_IMPL_USER",
+            "person_number": "60161",
+            "person_name": "USER HYDRA",
+            "person_id": 300001516232562
+        },
+        {
+            "user_name": "brown.casey",
+            "person_number": "4891",
+            "person_name": "brown casey",
+            "person_id": 300000285819898
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRentRequestorDetails?p_proc_bu=US1+Business+Unit"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRentRequestorDetails?p_proc_bu=US1+Business+Unit"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRentRequestorDetails?p_proc_bu=US1+Business+Unit&offset=25"
+        }
+    ]
+}

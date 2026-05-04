@@ -1,0 +1,117 @@
+{
+  "root": "callFunctionValidateGroup",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "failed to initiate Disband",
+        "type": "error",
+        "displayMode": "transient"
+      }
+    },
+    "callRestDisbandCrew": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/DisbandCrew",
+        "body": "{{ $page.variables.disbandCrewObj }}"
+      },
+      "outcomes": {
+        "success": "fireNotification3",
+        "failure": "fireNotification"
+      }
+    },
+    "callFunctionDateFormatter": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dateFormatter",
+        "params": [
+          "{{ $page.variables.disbandCrewObj.crew_disband_date }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesDisbandCrewObj"
+      }
+    },
+    "assignVariablesDisbandCrewObj": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.disbandCrewObj": {
+          "source": {
+            "crew_disband_date": "{{ $chain.results.callFunctionDateFormatter.startDate }}",
+            "crewsetup_id": "{{ $page.variables.selectedCrewSetupid }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      },
+      "outcomes": {
+        "success": "callRestDisbandCrew"
+      }
+    },
+    "fireNotification3": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Disband Initiated Successfully",
+        "type": "confirmation",
+        "displayMode": "transient"
+      },
+      "outcomes": {
+        "success": "callChainTRFetchHeadersLines"
+      }
+    },
+    "callComponentDisbandDialogClose": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('disbandDialog') }}",
+        "method": "close"
+      },
+      "outcomes": {
+        "success": "resetVariablesDisbandCrewObj"
+      }
+    },
+    "resetVariablesDisbandCrewObj": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.disbandCrewObj"
+        ]
+      },
+      "outcomes": {}
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callFunctionValidateGroup === 'valid' ]]"
+      },
+      "outcomes": {
+        "true": "callFunctionDateFormatter"
+      }
+    },
+    "callFunctionValidateGroup": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "validateGroup",
+        "params": [
+          "disbandgroup"
+        ]
+      },
+      "outcomes": {
+        "success": "if"
+      }
+    },
+    "callChainTRFetchHeadersLines": {
+      "module": "vb/action/builtin/callChainAction",
+      "parameters": {
+        "id": "TR_FetchHeadersLines"
+      },
+      "outcomes": {
+        "success": "callComponentDisbandDialogClose"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "items": [
+        {
+            "non_labor_resource": "Freedom ROV",
+            "non_labor_resource_org": "OII_AUS_AUD_BU",
+            "expenditure_type_id": "300000019661953",
+            "expenditure_type_name": "OII_Project_Equip_Usage_Charge",
+            "expenditure_org_name": "OII_AUS_AUD_BU"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_MasterNonLaborDetails?p_equipment_id=823"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_MasterNonLaborDetails?p_equipment_id=823"
+        }
+    ]
+}

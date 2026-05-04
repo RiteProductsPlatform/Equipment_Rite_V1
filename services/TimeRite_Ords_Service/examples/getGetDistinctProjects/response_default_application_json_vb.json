@@ -1,0 +1,57 @@
+{
+    "items": [
+        {
+            "project_id": 300000231218495,
+            "projec_number": "PCS10080",
+            "project_name": "Business World Database Migration"
+        },
+        {
+            "project_id": 300000165934125,
+            "projec_number": "RITE2",
+            "project_name": "Training Updates"
+        },
+        {
+            "project_id": 300000325079025,
+            "projec_number": "900R-437PUEN",
+            "project_name": "1003558680"
+        },
+        {
+            "project_id": 300000185942318,
+            "projec_number": "PIN10006",
+            "project_name": "NGE FIN Upgrade"
+        },
+        {
+            "project_id": 300000227241738,
+            "projec_number": "PCS10048",
+            "project_name": "Business World ERP Implementation"
+        },
+        {
+            "project_id": 300000325079167,
+            "projec_number": "900R-55EJOHN",
+            "project_name": "1012184780"
+        },
+        {
+            "project_id": 300000277152389,
+            "projec_number": "RITE1",
+            "project_name": "Test_PM_Project"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 7,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getDistinctProjects"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getDistinctProjects"
+        }
+    ]
+}

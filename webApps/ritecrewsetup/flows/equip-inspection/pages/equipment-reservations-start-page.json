@@ -1,0 +1,1413 @@
+{
+  "title": "Equipment Inspection",
+  "description": "",
+  "variables": {
+
+    "cartBoolean": {
+      "type": "boolean",
+      "defaultValue": false
+    },
+    "cartNumber": {
+      "type": "any"
+    },
+    "checklistADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "ChecklistAcceptanceType",
+        "keyAttributes": "check_list_id"
+      }
+    },
+    "collapseDataSource": {
+      "type": "any"
+    },
+    "demobilizeobj": {
+      "type": {
+        "p_comments": "string",
+        "p_disband_date": "string",
+        "P_eqp_request_number": "string",
+        "p_equipment_class": "string",
+        "p_equipment_id": "string"
+
+      },
+      "defaultValue": {
+        "p_disband_date": "[[ $application.functions.getSysDate().sysdate ]]"
+      }
+    },
+    "EquipmentNamesDemobilizeSDP": {
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentNames",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentNamesResponse2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_name"
+          ]
+        },
+        "headers": {
+          "p_equipment_resource_class": "{{ $variables.demobilizeobj.p_equipment_class }}"
+        },
+        "keyAttributes": "equipment_id"
+      },
+      "type": "vb/ServiceDataProvider"
+    },
+    "getEQPCartNumberListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "keyAttributes": "cart_number",
+        "itemsPath": "items",
+        "responseType": "getEQPCartNumberResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "cart_number"
+          ]
+        },
+        "fetchChain": "getEQP_Cart_NumberFetch"
+      }
+    },
+    "getEQUIPMENTRITEEQPINTERORGANLOV1GetinterorgListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "EQUIPMENT_RITE_OIC/getEQUIPMENT_RITEEQP_INTERORGAN_LOV1_0Getinterorg",
+        "keyAttributes": "to_organization_code",
+        "itemsPath": "items",
+        "responseType": "getEQUIPMENTRITEEQPINTERORGANLOV1GetinterorgResponse",
+        "uriParameters": {
+          "p_organization_name": "{{ $variables.selectedrow.organization_name }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "to_organization_code"
+          ]
+        }
+      }
+    },
+    "illustrationBackground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-bg-01.png"
+    },
+    "illustrationForeground": {
+      "type": "string",
+      "defaultValue": "https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/illust-welcome-banner-fg-01.png"
+    },
+    "imageStretch": {
+      "type": "string",
+      "defaultValue": "none"
+    },
+    "inspectionheaderobj": {
+      "type": {
+        "filterfield": "string",
+        "searchfield": "string"
+
+      }
+    },
+    "inspectionobj": {
+      "type": {
+        "data": "object",
+        "index": "string",
+        "key": "string"
+      }
+    },
+    "mobileImage": {
+      "type": "string",
+      "defaultValue": "on"
+    },
+    "billplan": {
+      "type": "string"
+    },
+    "billplanId": {
+      "type": "string"
+    },
+    "billRateVar": {
+      "type": "number"
+    },
+    "childBillPlanListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "projectNameList/ChildBillPlan",
+        "keyAttributes": "BillPlanName",
+        "itemsPath": "items",
+        "responseType": "childBillPlanResponse",
+        "uriParameters": {
+          "contract_id": "{{ $variables.contractid }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "BillPlanName"
+          ]
+        }
+      }
+    },
+    "contract": {
+      "type": "string"
+    },
+    "contractid": {
+      "type": "string"
+    },
+    "currenthdr": {
+      "type": "any"
+    },
+
+    "customer_name": {
+      "type": "any",
+      "defaultValue": " "
+    },	    "EqpMasterWorkOrderADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "EqpMasterWorkOrderype",
+        "keyAttributes": "@index"
+      }
+    },
+    "customerColumns": {
+      "type": "object[]",
+      "defaultValue": [
+        {
+          "headerText": "Customer",
+          "field": "customer"
+        },
+        {
+          "headerText": "Customer Site",
+          "field": "customer_site"
+        }
+      ]
+    },
+    "defaultColumns": {
+      "type": "object[]",
+      "defaultValue": [
+        {
+          "headerText": "Request Number",
+          "field": "eqp_request_number",
+          "className": "oj-helper-text-align-end"
+        },
+        {
+          "headerText": "Equipment Name",
+          "field": "equipment_name",
+          "template": "equipment_name"
+        },
+        {
+          "headerText": "Equipment Number",
+          "field": "equipment_number",
+          "template": "equipment_number"
+        },
+        {
+          "headerText": "Quantity",
+          "field": "equip_req_quantity",
+          "template": "equip_req_quantity"
+        },
+        {
+          "headerText": "Class",
+          "field": "equipment_resource_class",
+          "template": "equipment_resource_class"
+        },
+        {
+          "headerText": "Type",
+          "field": "request_type"
+        },
+        {
+          "headerText": "Project Number",
+          "field": "project_number"
+        },
+        {
+          "headerText": "Project",
+          "field": "project_name",
+          "template": "project_name"
+        },
+        {
+          "headerText": "Task Name",
+          "field": "task_name",
+          "template": "task_name"
+        },
+        {
+          "headerText": "Bill Rate",
+          "field": "bill_rate",
+          "className": "oj-helper-text-align-end"
+        },
+        {
+          "headerText": "Expenditure Type",
+          "field": "expenditure_type"
+        },
+        {
+          "headerText": "Effective Start Date",
+          "field": "effective_start_date",
+          "template": "DateTemplate",
+          "width": "10rem"
+
+        },
+        {
+          "headerText": "Effective End Date",
+          "field": "effective_end_date",
+          "template": "DateTemplate",
+          "width": "10rem"
+        },
+        {
+          "headerText": "Status",
+          "field": "status",
+          "width": "12rem"
+        }        ,
+        {
+          "headerText": "Process Request",
+          "field": "",
+          "template": "action"
+        }
+      ]
+    },
+    "eqClass": {
+      "type": "string"
+    },
+    "eqpName": {
+      "type": "string"
+    },
+    "eqpOverride": {
+      "type": "boolean",
+      "defaultValue": false
+    },
+    "get1113185HubOrganizationsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEqpCustomerAcceptance",
+        "responseType": "getEqpCustomerAcceptance",
+        "itemsPath": "items",
+        "keyAttributes": "customer",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "customer"
+          ]
+        }
+      }
+    },
+    "get1113185ProjectsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "projectNameList/get11_13_18_05Projects",
+        "keyAttributes": "ProjectNumber",
+        "itemsPath": "items",
+        "responseType": "get1113185ProjectsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "ProjectNumber"
+          ]
+        }
+      }
+    },
+    "getEqpAcceptancePrjListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEqpAcceptancePrj",
+        "keyAttributes": "project_name",
+        "itemsPath": "items",
+        "responseType": "getEqpAcceptancePrjResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "project_name"
+          ]
+        }
+      }
+    },
+    "getEqpContractDetailsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEqpContractDetails",
+        "keyAttributes": "contract_number",
+        "itemsPath": "items",
+        "responseType": "getEqpContractDetailsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "contract_number"
+          ]
+        }
+      }
+    },
+    "getEqpRequestNumberLovListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+
+        "keyAttributes": "request_number",
+        "itemsPath": "items",
+        "responseType": "getEqpRequestNumberLovResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "request_number"
+          ]
+        },
+        "fetchChain": "getEqpRequestNumberLovFetch"
+      }
+    },
+    "getEqpRequestorNameListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getEqpRequestorName",
+        "keyAttributes": "requestor_name",
+        "itemsPath": "items",
+        "responseType": "getEqpRequestorNameResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "requestor_name"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentClassLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentClassLOV",
+        "keyAttributes": "equipment_class",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentClassLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_class"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentNamesListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentNames",
+        "keyAttributes": "equipment_name",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentNamesResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_name"
+          ]
+        }
+      }
+    },
+    "getGetEquipmentNamesListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentNames",
+        "keyAttributes": "equipment_name",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentNamesResponse2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_name"
+          ]
+        },
+        "headers": {
+          "p_equipment_resource_class": "{{ $variables.eqClass }}"
+        }
+      }
+    },
+    "getGetEquipmentNamesLOVFromRequestListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetEquipmentNamesLOVFromRequest",
+        "keyAttributes": "equipment_name",
+        "itemsPath": "items",
+        "responseType": "getGetEquipmentNamesLOVFromRequestResponse",
+        "uriParameters": {
+          "eqpClass": "{{ $variables.eqClass }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "equipment_name"
+          ]
+        }
+      }
+    },
+    "getGetReservationStatusListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "TimeRite_Ords_Service/getGetReservationStatus",
+        "keyAttributes": "task_name",
+        "itemsPath": "items",
+        "responseType": "getGetReservationStatusResponse"
+      }
+    },
+    "glID": {
+      "type": "string"
+    },
+    "hdrId": {
+      "type": "number"
+    },
+    "post": {
+      "type": "string"
+    },
+    "postchecklist": {
+      "type": "ChecklistAcceptanceType"
+    },
+    "projectId": {
+      "type": "string"
+    },
+    "projectName": {
+      "type": "string"
+    },
+    "projectNumber": {
+      "type": "string"
+    },
+    "reqName": {
+      "type": "string"
+    },
+    "request_type": {
+      "type": "string",
+      "defaultValue": "Project"
+    },
+    "requestnumber": {
+      "type": "string"
+    },
+    "requestNumberBoolean": {
+      "type": "boolean",
+      "defaultValue": false
+    },
+    "searchObj": {
+      "type": {
+        "checkincheckout": "string",
+        "filterobj": "string"
+      },
+      "defaultValue": {
+        "checkincheckout": "Eqp Manager Check Out"
+      }
+    },
+    "searchVar": {
+      "type": "string"
+    },
+    "selecedAcceptance": {
+      "type": "object"
+    },
+    "selectedCheckList": {
+      "type": "object[]"
+    },
+    "selectedrow": {
+      "type": "object"
+    },
+    "SelectedRows": {
+      "type": "object[]"
+    },
+    "shipoutObj": {
+      "type": {
+        "quantity": "any",
+        "transferOrg": "any",
+        "uom": "any"
+
+      }
+    },
+    "status": {
+      "type": "string"
+    },
+    "statusListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "businessObjects/getall_Status",
+        "keyAttributes": "status",
+        "itemsPath": "items",
+        "responseType": "getallStatusResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "status"
+          ]
+        }
+      }
+    },
+    "tableADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getGetReservationStatus",
+        "keyAttributes": "crewsetup_eqp_header_id"
+      }
+    },
+    "selectedClassesADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "equipmentClassType",
+        "keyAttributes": "equipment_class"
+      }
+    },
+    "transferOrder": {
+      "type": "string"
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.ChecklistAcceptanceType": {
+      "endpoint": "getEQP_ChecklistAcceptance",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.childBillPlanResponse": {
+      "endpoint": "ChildBillPlan",
+      "service": "projectNameList",
+      "path": "response"
+    },
+    "@decorators.get1113185ProjectsResponse": {
+      "endpoint": "get11_13_18_05Projects",
+      "service": "projectNameList",
+      "path": "response"
+    },
+    "@decorators.getallStatusResponse": {
+      "endpoint": "getall_Status",
+      "service": "businessObjects",
+      "path": "response"
+    },
+    "@decorators.GetCustomers": {
+      "endpoint": "GetCustomers",
+      "service": "CRMRestAPI",
+      "path": "response"
+    },
+    "@decorators.getEqpAcceptancePrjResponse": {
+      "endpoint": "getEqpAcceptancePrj",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEqpBillPlanDetailsResponse": {
+      "endpoint": "getEqpBillPlanDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEQPCartNumberResponse": {
+      "endpoint": "getEQP_Cart_Number",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEqpContractDetailsResponse": {
+      "endpoint": "getEqpContractDetails",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEqpCustomerAcceptance": {
+      "endpoint": "getEqpCustomerAcceptance",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEqpRequestNumberLovResponse": {
+      "endpoint": "getEqpRequestNumberLov",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEqpRequestorNameResponse": {
+      "endpoint": "getEqpRequestorName",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getEQUIPMENTRITEEQPINTERORGANLOV1GetinterorgResponse": {
+      "endpoint": "getEQUIPMENT_RITEEQP_INTERORGAN_LOV1_0Getinterorg",
+      "service": "EQUIPMENT_RITE_OIC",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentClassLOVResponse": {
+      "endpoint": "getGetEquipmentClassLOV",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentNamesLOVFromRequestResponse": {
+      "endpoint": "getGetEquipmentNamesLOVFromRequest",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentNamesResponse": {
+      "endpoint": "getGetEquipmentNames",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetEquipmentNamesResponse2": {
+      "endpoint": "getGetEquipmentNames",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "@decorators.getGetReservationStatus": {
+      "endpoint": "getGetReservationStatus",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getGetReservationStatusResponse": {
+      "endpoint": "getGetReservationStatus",
+      "service": "TimeRite_Ords_Service",
+      "path": "response"
+    },
+    "ChecklistAcceptanceType": {
+      "agreed_status": "any",
+      "check_list_id": "number",
+      "check_list_name": "string",
+      "created_by": "string",
+      "creation_date": "string",
+      "customer_id": "any",
+      "equipment_class": "string",
+      "equipment_id": "number",
+      "equipment_name": "string",
+      "equipment_number": "string",
+      "last_update_login": "any",
+      "last_updated_by": "string",
+      "last_updated_date": "string",
+      "notes": "string",
+      "section": "string",
+      "status": "string"
+    },
+    "childBillPlanResponse": {
+      "items": [
+        {
+          "BillPlanId": "number",
+          "BillPlanName": "string",
+          "links": [
+            {
+              "href": "string",
+              "kind": "string",
+              "name": "string",
+              "properties": {
+                "changeIndicator": "string"
+              },
+              "rel": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "equipmentClassType": {
+      "equipment_class": "string",
+      "id": "string"
+    },
+    "get1113185ProjectsResponse": {
+      "items": [
+        {
+          "ProjectId": "number",
+          "ProjectNumber": "string"
+        }
+      ]
+    },
+        "EqpMasterWorkOrderype": {
+      "asset_number": "string",
+      "equipment_name": "string",
+      "forecast_duedate": "string",
+      "workorder_number": "string"
+    },
+    "getallStatusResponse": {
+      "items": [
+        {
+          "status": "string"
+        }
+      ]
+    },
+    "GetCustomers": {
+      "items": [
+        {
+          "OrganizationName": "string",
+          "PartyId": "number",
+          "PartyNumber": "string"
+        }
+      ]
+    },
+    "getEqpAcceptancePrjResponse": {
+      "items": [
+        {
+          "project_id": "number",
+          "project_name": "string",
+          "project_number": "string"
+        }
+      ]
+    },
+    "getEqpBillPlanDetailsResponse": {
+      "items": [
+        {
+          "bill_plan_name": "string"
+        }
+      ]
+    },
+    "getEQPCartNumberResponse": {
+      "items": [
+        {
+          "cart_number": "string"
+        }
+      ]
+    },
+    "getEqpContractDetailsResponse": {
+      "items": [
+        {
+          "contract_id": "number",
+          "contract_number": "string"
+
+        }
+      ]
+    },
+    "getEqpCustomerAcceptance": {
+      "items": [
+        {
+          "customer": "string"
+        }
+      ]
+    },
+    "getEqpRequestNumberLovResponse": {
+      "items": [
+        {
+          "request_number": "string"
+        }
+      ]
+    },
+    "getEqpRequestorNameResponse": {
+      "items": [
+        {
+          "requestor_name": "string"
+        }
+      ]
+    },
+    "getEQUIPMENTRITEEQPINTERORGANLOV1GetinterorgResponse": {
+      "items": [
+        {
+          "from_organization_code": "string",
+          "name": "string",
+          "organization_code": "string",
+          "to_organization_code": "string"
+        }
+      ]
+    },
+    "getGetEquipmentClassLOVResponse": {
+      "items": [
+        {
+          "equipment_class": "string"
+        }
+      ]
+    },
+    "getGetEquipmentNamesLOVFromRequestResponse": {
+      "items": [
+        {
+          "equipment_name": "string"
+        }
+      ]
+    },
+    "getGetEquipmentNamesResponse": {
+      "items": [
+        {
+          "equipment_id": "number",
+          "equipment_name": "string"
+        }
+      ]
+    },
+    "getGetEquipmentNamesResponse2": {
+      "items": [
+        {
+          "equipment_id": "number",
+          "equipment_name": "string"
+
+        }
+      ]
+    },
+    "getGetReservationStatus": {
+      "approver_comments": "any",
+      "bill_plan_id": "any",
+      "bill_plan_name": "any",
+      "bill_rate": "string",
+      "contract_id": "any",
+      "contract_number": "any",
+      "cost_rate": "string",
+      "crewsetup_eqp_header_id": "number",
+      "customer": "any",
+      "customer_site": "any",
+      "effective_end_date": "string",
+      "effective_start_date": "string",
+      "eqp_request_number": "number",
+      "equip_req_quantity": "string",
+      "equipment_cart_number": "string",
+      "equipment_id": "number",
+      "equipment_name": "string",
+      "equipment_number": "string",
+      "equipment_request_id": "number",
+      "equipment_resource_class": "string",
+      "expenditure_type": "string",
+      "file_name": "any",
+      "file_type": "any",
+      "inspection_site_check_in": "string",
+      "inspection_yard_check_in": "string",
+      "inspection_yard_check_out": "string",
+      "inventory_item": "string",
+      "inventory_item_id": "string",
+      "inventory_org_id": "string",
+      "location": "string",
+      "location_id": "string",
+      "maintenance_asset_id": "any",
+      "maintenance_asset_number": "string",
+      "nonlabor_rate_override_id": "any",
+      "organization_id": "string",
+      "organization_name": "string",
+      "override_rate": "any",
+      "project_name": "string",
+      "project_number": "string",
+      "request_type": "string",
+      "status": "string",
+      "subinventory_code": "string",
+      "subinventory_name": "string",
+      "task_name": "string",
+      "file_attachment": "any",
+      "file_content": "any",
+      "shipping_doc_required": "any",
+      "track_inventory_item": "string",
+      "transfer_order_number": "string"
+
+    },
+    "getGetReservationStatusResponse": {
+      "items": [
+        {
+          "effective_end_date": "string",
+          "effective_start_date": "string",
+          "equipment_name": "string",
+          "equipment_resource_class": "string",
+          "expenditure_type": "string",
+          "project_number": "string",
+          "status": "string",
+          "task_name": "string"
+        }
+      ]
+    },
+    "tableRow": {
+      "crewsetup_eqp_header_id": "number",
+      "effective_end_date": "string",
+      "effective_start_date": "string",
+      "equipment_name": "string",
+      "equipment_resource_class": "string",
+      "expenditure_type": "string",
+      "project_name": "string",
+      "project_number": "string",
+      "status": "string",
+      "task_name": "string"
+
+    }
+
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "SearchBtnAction"
+        }
+      ]
+    },
+    "buttonAction10": {
+      "chains": [
+        {
+          "chain": "DemobiliozationNoBtnAction"
+        }
+      ]
+    },
+    "buttonAction11": {
+      "chains": [
+        {
+          "chain": "DemobilizieYesBtnAction"
+        }
+      ]
+    },
+    "buttonAction12": {
+      "chains": [
+        {
+          "chain": "DlgSubmitChecklistAction"
+        }
+      ]
+    },
+    "buttonAction13": {
+      "chains": [
+        {
+          "chain": "CancelCheckListDlgAction"
+        }
+      ]
+    },
+    "buttonAction14": {
+      "chains": [
+        {
+          "chain": "SearchBtnAction"
+        }
+      ]
+    },
+    "buttonAction15": {
+      "chains": [
+        {
+          "chain": "SearchBtnAction"
+        }
+      ]
+    },
+    "buttonAction16": {
+      "chains": [
+        {
+          "chain": "AcceptIconCliCkAction",
+          "parameters": {
+            "current": "{{ $current }}",
+            "index": "{{ $current.index }}",
+            "key": "{{ $current.key }}"
+          }
+        }
+      ]
+    },
+    "buttonAction17": {
+      "chains": [
+        {
+          "chain": "SaveandShipOutBtnAction"
+        }
+      ]
+    },
+    "buttonAction18": {
+      "chains": [
+        {
+          "chain": "ShipOutBtnAction",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}",
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "buttonAction19": {
+      "chains": [
+        {
+          "chain": "closeShipoutDialogButtonActionChain1",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}"
+          }
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "resetActionChain"
+        }
+      ]
+    },
+    "buttonAction20": {
+      "chains": [
+        {
+          "chain": "ShipoutSaveButtonActionChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}",
+            "current": "[[ $variables.selectedrow ]]"
+          }
+        }
+      ]
+    },
+    "buttonAction3": {
+      "chains": [
+        {
+          "chain": "NoApproveBtnAction"
+        }
+      ]
+    },
+    "buttonAction4": {
+      "chains": [
+        {
+          "chain": "ClosemaintenanceDlgAction"
+        }
+      ]
+    },
+    "buttonAction5": {
+      "chains": [
+        {
+          "chain": "OverrideOkBtnAction"
+        }
+      ]
+    },
+    "buttonAction6": {
+      "chains": [
+        {
+          "chain": "AllocatePopupOpenAction"
+        }
+      ]
+    },
+    "buttonAction7": {
+      "chains": [
+        {
+          "chain": "ApproveBtnAction"
+        }
+      ]
+    },
+    "buttonAction8": {
+      "chains": [
+        {
+          "chain": "CloseOverrideDlgAction"
+        }
+      ]
+    },
+    "buttonAction9": {
+      "chains": [
+        {
+          "chain": "DemobilizeDlgOpen"
+        }
+      ]
+    },
+    "combobox11Value": {
+      "chains": [
+        {
+          "chain": "ComboValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "comboValue": {
+      "chains": [
+        {
+          "chain": "ComboValueChangeChain1",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "comboValue2": {
+      "chains": [
+        {
+          "chain": "ComboValueChangeChain3",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "filePickerSelect": {
+      "chains": [
+        {
+          "chain": "FilePickerSelectChain",
+          "parameters": {
+            "files": "[[ Array.prototype.slice.call($event.detail.files) ]]",
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "hyperlinkClick": {
+      "chains": [
+        {
+          "chain": "MaintenanceClickAction"
+        }
+      ]
+    },
+    "iconClick": {
+      "chains": [
+        {
+          "chain": "AcceptIconCliCkAction",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "iconClick2": {
+      "chains": [
+        {
+          "chain": "MaintenanceClickActione",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "iconClick3": {
+      "chains": [
+        {
+          "chain": "SaveIconClickAction",
+          "parameters": {
+            "event": "{{$event}}",
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "inputSearchValueAction": {
+      "chains": [
+        {
+          "chain": "SearchValueChangeAction",
+          "parameters": {
+            "value": "{{$event.detail.value}}",
+            "itemContext": "{{$event.detail.itemContext}}"
+          }
+        }
+      ]
+    },
+    "radiosetValue": {
+      "chains": [
+        {
+          "chain": "RadiosetValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}",
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem2": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain1",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem3": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain2",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem4": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain3",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem5": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain4",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem6": {
+      "chains": [
+        {
+          "chain": "ContractValueChangeAction",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem7": {
+      "chains": [
+        {
+          "chain": "BillPlanValueChange",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem8": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain5",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem9": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain6",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "switchValue": {
+      "chains": [
+        {
+          "chain": "SwitchValueChangeChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}"
+          }
+        }
+      ]
+    },
+    "switchValue2": {
+      "chains": [
+        {
+          "chain": "SwitchValueChangeChain1",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{ $event.detail.value }}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}"
+          }
+        }
+      ]
+    },
+    "tableBeforeRowEdit": {
+      "chains": [
+        {
+          "chain": "TableBeforeRowEditChain",
+          "parameters": {
+            "rowKey": "{{$event.detail.rowContext.status.rowKey}}",
+            "rowIndex": "{{$event.detail.rowContext.status.rowIndex}}",
+            "rowData": "{{$event.detail.rowContext.componentElement.getDataForVisibleRow($event.detail.rowContext.status.rowIndex).data}}"
+          }
+        }
+      ]
+    },
+    "tableBeforeRowEditEnd": {
+      "chains": [
+        {
+          "chain": "TableBeforeRowEditEndChain",
+          "parameters": {
+            "cancelEdit": "{{$event.detail.cancelEdit}}",
+            "rowKey": "{{$event.detail.rowContext.status.rowKey}}",
+            "rowIndex": "{{$event.detail.rowContext.status.rowIndex}}",
+            "rowData": "{{$event.detail.rowContext.componentElement.getDataForVisibleRow($event.detail.rowContext.status.rowIndex).data}}"
+          }
+        }
+      ]
+    },
+    "tableFirstSelectedRow": {
+      "chains": [
+        {
+          "chain": "TableRowSelecionAction",
+          "parameters": {
+            "event": "{{$event}}",
+            "previousValue": "{{$event.detail.previousValue}}",
+            "value": "{{$event.detail.value}}",
+            "updatedFrom": "{{$event.detail.updatedFrom}}",
+            "rowKey": "{{$event.detail.value.key}}",
+            "rowData": "{{$event.detail.value.data}}",
+            "firstSelectedRow": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "tableSelected": {
+      "chains": [
+        {
+          "chain": "TableSelectedChangeChain",
+          "parameters": {
+            "keys": "{{ $event.detail.value.row.values ? Array.from($event.detail.value.row.values()) : [] }}",
+            "selected": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "parameters": {},
+          "chain": "SearchBtnAction"
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-buttonset-many": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-combobox-one": {
+        "path": "ojs/ojselectcombobox"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-file-picker": {
+        "path": "ojs/ojfilepicker"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-date": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-input-number": {
+        "path": "ojs/ojinputnumber"
+      },
+      "oj-input-search": {
+        "path": "ojs/ojinputsearch"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-label": {
+        "path": "ojs/ojlabel"
+      },
+      "oj-option": {
+        "path": "ojs/ojoption"
+      },
+      "oj-progress-bar": {
+        "path": "ojs/ojprogress-bar"
+      },
+      "oj-radioset": {
+        "path": "ojs/ojradioset"
+      },
+      "oj-row-expander": {
+        "path": "ojs/ojrowexpander"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      },
+      "oj-switch": {
+        "path": "ojs/ojswitch"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-text-area": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      },
+      "oj-validation-group": {
+        "path": "ojs/ojvalidationgroup"
+      }
+
+   },
+    "modules": {
+      "ojValidationDateTime": {
+        "path": "ojs/ojvalidation-datetime"
+      },
+      "ojValidationNumber": {
+        "path": "ojs/ojvalidation-number"
+      }
+    }
+  }
+}

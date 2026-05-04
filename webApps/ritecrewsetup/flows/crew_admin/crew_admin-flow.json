@@ -1,0 +1,83 @@
+{
+  "id": "crew_admin",
+  "description": "Flow main",
+  "defaultPage": "crew_admin-start",
+  "services": {},
+  "types": {
+    "@decorators.eqpBillRateSchedulesLookup": {
+      "endpoint": "eqpBillRateSchedulesLookup",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]-_-lookupCodes[0]"
+    },
+    "@decorators.getFscmRestApiResources11_13_18_05InventoryOrganizationsOpenLOV2": {
+      "endpoint": "getFscmRestApiResources11_13_18_05InventoryOrganizationsOpenLOV2",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]"
+    },
+    "eqpBillRateSchedulesLookup": {
+      "Description": "string",
+      "LookupCode": "string",
+      "Meaning": "string"
+    },
+    "getFscmRestApiResources11_13_18_05InventoryOrganizationsOpenLOV2": {
+      "MasterOrganizationFlag": "boolean",
+      "OrganizationCode": "string",
+      "OrganizationId": "number",
+      "OrganizationName": "string",
+      "Status": "string"
+    }
+  },
+  "variables": {
+    "eqpClassAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "eqpBillRateSchedulesLookup",
+        "keyAttributes": "Meaning",
+        "textFilterAttributes": [
+          "Meaning"
+        ]
+      }
+    },
+    "eqpSubClassADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "eqpBillRateSchedulesLookup",
+        "keyAttributes": "Meaning",
+        "textFilterAttributes": [
+          "Meaning"
+        ]
+      }
+    },
+    "eqpTypeADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "eqpBillRateSchedulesLookup",
+        "textFilterAttributes": [
+          "Meaning"
+        ],
+        "keyAttributes": "Meaning"
+      }
+    },
+    "invOrgsAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getFscmRestApiResources11_13_18_05InventoryOrganizationsOpenLOV2",
+        "keyAttributes": "OrganizationName",
+        "textFilterAttributes": [
+          "OrganizationName"
+        ]
+      }
+    }
+
+  },
+  "eventListeners": {
+    "vbEnter": {
+      "chains": [
+        {
+          "parameters": {},
+          "chain": "vbEnterListener"
+        }
+      ]
+    }
+  }
+}

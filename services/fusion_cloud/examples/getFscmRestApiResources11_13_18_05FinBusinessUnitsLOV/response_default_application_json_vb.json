@@ -1,0 +1,616 @@
+{
+    "items": [
+        {
+            "BusinessUnitId": 300000347908106,
+            "BusinessUnitName": "112BU",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300000735618061",
+            "LocationId": 300000325343746,
+            "ManagerId": null,
+            "LegalEntityId": "300000735618470",
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000347908106",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000347908106",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001708582685,
+            "BusinessUnitName": "49K IND BU",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300000310292715",
+            "LocationId": null,
+            "ManagerId": null,
+            "LegalEntityId": "300000310292721",
+            "ProfitCenterFlag": true,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001708582685",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001708582685",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001719941375,
+            "BusinessUnitName": "50 k unit",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": null,
+            "LocationId": null,
+            "ManagerId": null,
+            "LegalEntityId": null,
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001719941375",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001719941375",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001788939240,
+            "BusinessUnitName": "A-TATA_Business Unit",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300001788945649",
+            "LocationId": 300001788939245,
+            "ManagerId": null,
+            "LegalEntityId": "300001787252770",
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001788939240",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001788939240",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001789486972,
+            "BusinessUnitName": "A1_BU",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300000046975971",
+            "LocationId": null,
+            "ManagerId": null,
+            "LegalEntityId": "300000046973970",
+            "ProfitCenterFlag": true,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001789486972",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001789486972",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001695520413,
+            "BusinessUnitName": "AA_STALLION_BU",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300001695545924",
+            "LocationId": 300001695535536,
+            "ManagerId": null,
+            "LegalEntityId": "300001695545882",
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001695520413",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001695520413",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001695548083,
+            "BusinessUnitName": "AA_STALLION_BU2",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300001695545924",
+            "LocationId": 300001695535536,
+            "ManagerId": null,
+            "LegalEntityId": "300001695545882",
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001695548083",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001695548083",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300000310224221,
+            "BusinessUnitName": "ABC Business Unit",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300000310292715",
+            "LocationId": 300000310224076,
+            "ManagerId": null,
+            "LegalEntityId": "300000310292721",
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000310224221",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000310224221",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300000276171685,
+            "BusinessUnitName": "ABC1",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300000046975971",
+            "LocationId": null,
+            "ManagerId": null,
+            "LegalEntityId": "300000046973970",
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000276171685",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000276171685",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300000308250197,
+            "BusinessUnitName": "ACC_BUSINESSUNIT",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300000046975971",
+            "LocationId": 300000047902880,
+            "ManagerId": null,
+            "LegalEntityId": "300000046973970",
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000308250197",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000308250197",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001708582988,
+            "BusinessUnitName": "ACS BU",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": null,
+            "LocationId": null,
+            "ManagerId": null,
+            "LegalEntityId": null,
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001708582988",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001708582988",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001550014434,
+            "BusinessUnitName": "AIR BUSINESS UNIT",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": null,
+            "LocationId": 300001550014318,
+            "ManagerId": null,
+            "LegalEntityId": null,
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001550014434",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001550014434",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300000914674014,
+            "BusinessUnitName": "ANAND_BU",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300000914368695",
+            "LocationId": 300000914673682,
+            "ManagerId": null,
+            "LegalEntityId": "300000914368664",
+            "ProfitCenterFlag": true,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000914674014",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000914674014",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300000293108734,
+            "BusinessUnitName": "ASL Canada BU1",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300000287650803",
+            "LocationId": null,
+            "ManagerId": null,
+            "LegalEntityId": "300000287650742",
+            "ProfitCenterFlag": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000293108734",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000293108734",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300000293108728,
+            "BusinessUnitName": "ASL USA BU1",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300000287650802",
+            "LocationId": null,
+            "ManagerId": null,
+            "LegalEntityId": "300000287650740",
+            "ProfitCenterFlag": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000293108728",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000293108728",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300000293108731,
+            "BusinessUnitName": "ASL USA BU2",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300000287650802",
+            "LocationId": null,
+            "ManagerId": null,
+            "LegalEntityId": "300000287650741",
+            "ProfitCenterFlag": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000293108731",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000293108731",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300000219208529,
+            "BusinessUnitName": "AU Council Business Unit",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": "300000219190442",
+            "LocationId": null,
+            "ManagerId": null,
+            "LegalEntityId": "300000219190421",
+            "ProfitCenterFlag": true,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000219208529",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000219208529",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001385993198,
+            "BusinessUnitName": "Abc_am_bu3",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": null,
+            "LocationId": 300001385895155,
+            "ManagerId": null,
+            "LegalEntityId": null,
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001385993198",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001385993198",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001385992647,
+            "BusinessUnitName": "Abc_auto_bu1",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": null,
+            "LocationId": 300001385894634,
+            "ManagerId": null,
+            "LegalEntityId": null,
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001385992647",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001385992647",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001386263383,
+            "BusinessUnitName": "Abc_bank_bu4",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": null,
+            "LocationId": 300001386263267,
+            "ManagerId": null,
+            "LegalEntityId": null,
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001386263383",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001386263383",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001386263483,
+            "BusinessUnitName": "Abc_sw_bu6",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": null,
+            "LocationId": 300001386263267,
+            "ManagerId": null,
+            "LegalEntityId": null,
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001386263483",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001386263483",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001386263433,
+            "BusinessUnitName": "Abc_tech_bu5",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": null,
+            "LocationId": 300001386263267,
+            "ManagerId": null,
+            "LegalEntityId": null,
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001386263433",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001386263433",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001385993133,
+            "BusinessUnitName": "Abc_tx_bu2",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": null,
+            "LocationId": 300001385895038,
+            "ManagerId": null,
+            "LegalEntityId": null,
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001385993133",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001385993133",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300001498633695,
+            "BusinessUnitName": "Ajay Business Unit",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": null,
+            "LocationId": 300000116811072,
+            "ManagerId": null,
+            "LegalEntityId": null,
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001498633695",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300001498633695",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "BusinessUnitId": 300000124184209,
+            "BusinessUnitName": "Algeria Business Unit",
+            "ActiveFlag": true,
+            "PrimaryLedgerId": null,
+            "LocationId": null,
+            "ManagerId": null,
+            "LegalEntityId": null,
+            "ProfitCenterFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000124184209",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV/300000124184209",
+                    "name": "finBusinessUnitsLOV",
+                    "kind": "item"
+                }
+            ]
+        }
+    ],
+    "count": 25,
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/finBusinessUnitsLOV",
+            "name": "finBusinessUnitsLOV",
+            "kind": "collection"
+        }
+    ]
+}

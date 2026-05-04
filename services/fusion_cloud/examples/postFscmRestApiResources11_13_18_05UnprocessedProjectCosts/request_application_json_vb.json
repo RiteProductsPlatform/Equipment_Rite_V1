@@ -1,0 +1,26 @@
+{
+    "ExpenditureBatch": "EQP-01",
+    "BusinessUnit": "US1 Business Unit",
+    "TransactionSource": "OCANNERING-USAGE-COST",
+    "Document": "OCANNERING-USAGE-COST",
+    "DocumentEntry": "OCANNERING-USAGE-COST",
+    "OriginalTransactionReference": "TREQP-01",
+    "Quantity": 55,
+    "NonlaborResource": "OCEANEERING-NON-LABOUR",
+    "NonlaborResourceOrganization": "US1 Business Unit",
+    "RawCostInTransactionCurrency": 660,
+    "TransactionCurrency": "US Dollar",
+    "TransactionCurrencyCode": "USD",
+    "AccountingDate": "2025-10-09",
+    "RawCostRateInTransactionCurrency": 7.5,
+    "BurdenedCostRateInTransactionCurrency": 7.5,
+    "ProjectStandardCostCollectionFlexfields": [
+        {
+            "_EXPENDITURE_ITEM_DATE": "2025-10-09",
+            "_PROJECT_ID_Display": "2101",
+            "_TASK_ID_Display": "2.1",
+            "_EXPENDITURE_TYPE_ID_Display": "Equipment",
+            "_ORGANIZATION_ID_Display": "Consulting US"
+        }
+    ]
+}

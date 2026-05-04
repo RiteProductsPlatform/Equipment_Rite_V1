@@ -1,0 +1,51 @@
+{
+  "root": "ifMasterSearchObj",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestGetEquipmentStaticInfo.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestGetEquipmentStaticInfo": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getEquipmentStaticInfo",
+        "uriParams": {
+          "p_equipment_name": "{{ $page.variables.masterSearchObj.equipmentNameVal }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesMasterSearchObj",
+        "failure": "fireNotification"
+      }
+    },
+    "assignVariablesMasterSearchObj": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.masterSearchObj": {
+          "source": {
+            "expenditureTypeName": "{{ $chain.results.callRestGetEquipmentStaticInfo.body.items[0].expenditure_type_name }}",
+            "scheduleType": "{{ $chain.results.callRestGetEquipmentStaticInfo.body.items[0].schedule_type }}",
+            "startDate": "{{ $chain.results.callRestGetEquipmentStaticInfo.body.items[0].start_date_active }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      }
+    },
+    "ifMasterSearchObj": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $page.variables.masterSearchObj.equipmentNameVal ]]"
+      },
+      "outcomes": {
+        "true": "callRestGetEquipmentStaticInfo"
+      }
+    }
+  }
+}

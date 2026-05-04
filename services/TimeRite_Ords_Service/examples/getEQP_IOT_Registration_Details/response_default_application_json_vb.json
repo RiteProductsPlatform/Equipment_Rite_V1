@@ -1,0 +1,44 @@
+{
+    "items": [
+        {
+            "iot_registration_id": 63,
+            "iot_id": null,
+            "iot_number": "ASD123",
+            "iot_device_name": "LightSensor",
+            "coordinate1": "12.123",
+            "coordinate2": "12.123",
+            "coordinate3": "12.123",
+            "coordinate4": "12.123",
+            "coordinate5": "12.123",
+            "coordinate6": "12.123",
+            "coordinate7": "12.123",
+            "coordinate8": "12.123",
+            "creation_date": "2025-06-21T12:02:13Z",
+            "created_by": "nikhil.kolisetty@rite.digital",
+            "last_update_date": "2025-06-21T12:02:13Z",
+            "last_updated_by": "nikhil.kolisetty@rite.digital"
+        }
+    ],
+    "hasMore": false,
+    "limit": 2000,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQP_IOT_Registration_Details?p_iot_device_name=LightSensor"
+        },
+        {
+            "rel": "edit",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQP_IOT_Registration_Details?p_iot_device_name=LightSensor"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQP_IOT_Registration_Details?p_iot_device_name=LightSensor&limit=2000"
+        }
+    ]
+}

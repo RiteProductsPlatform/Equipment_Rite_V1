@@ -1,0 +1,29 @@
+define([
+  'vb/action/actionChain',
+  'vb/action/actions',
+  'vb/action/actionUtils',
+], (
+  ActionChain,
+  Actions,
+  ActionUtils
+) => {
+  'use strict';
+
+  class ComboValueChangeChain extends ActionChain {
+
+    /**
+     * @param {Object} context
+     * @param {Object} params
+     * @param {any} params.value 
+     */
+    async run(context, { value }) {
+      const { $page, $flow, $application, $constants, $variables, $functions } = context;
+      if (value) {
+        const updateDefaultCols = await $functions.updateDefaultCols($variables.defaultColumns, value);
+        $variables.defaultColumns = updateDefaultCols;
+      }
+    }
+  }
+
+  return ComboValueChangeChain;
+});

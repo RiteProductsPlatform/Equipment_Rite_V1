@@ -1,0 +1,41 @@
+{
+    "items": [
+        {
+            "CustomerSiteId": 300000134078620,
+            "CustomerSiteNumber": "30506493",
+            "CustomerSiteLocation": "300001690603881",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/collaborationCustomersLOV/300000132609077/child/sitesLOV/300000134078620",
+                    "name": "sitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/collaborationCustomersLOV/300000132609077/child/sitesLOV/300000134078620",
+                    "name": "sitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/collaborationCustomersLOV/300000132609077",
+                    "name": "collaborationCustomersLOV",
+                    "kind": "item"
+                }
+            ]
+        }
+    ],
+    "count": 1,
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/collaborationCustomersLOV/300000132609077/child/sitesLOV",
+            "name": "sitesLOV",
+            "kind": "collection"
+        }
+    ]
+}

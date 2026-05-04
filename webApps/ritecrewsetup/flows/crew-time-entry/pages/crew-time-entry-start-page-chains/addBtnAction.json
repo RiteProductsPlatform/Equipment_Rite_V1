@@ -1,0 +1,140 @@
+{
+  "root": "callFunctionValidateGroup",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "failed to fetch Equipment Details",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "resetVariablesProjectBasedTimesheetADP": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.projectBasedTimesheetADP",
+          "$page.variables.projectBasedTimesheetADP.data"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestGetEquipAssignmentData"
+      }
+    },
+    "assignVariablesProjectBasedTimesheetADP": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.projectBasedTimesheetADP": {
+          "source": {
+              "data": "{{ $chain.results.callFunctionAdjustQuantities }}"
+            },
+          "reset": "none",
+          "auto": "always"
+        }
+      },
+      "outcomes": {
+        "success": "callRestGetEqpTimeEntryWeek"
+      }
+    },
+    "callRestGetEquipAssignmentData": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getEquipAssignmentData",
+        "uriParams": {
+
+          "p_crewsetup_id": "368",
+          "customer": "{{ $page.variables.searchobj.customer ? $page.variables.searchobj.customer : \"\" }}",
+          "p_crew_week": "{{ $page.variables.searchobj.dateRange ? $page.variables.searchobj.dateRange : \"\" }}",
+          "p_equipment_name": "{{ $page.variables.searchobj.equipmentName ? $page.variables.searchobj.equipmentName : \"\" }}",
+          "p_equipment_resource_class": "{{ $page.variables.searchobj.eqClass ? $page.variables.searchobj.eqClass : \"\" }}",
+          "p_equipment_type": "{{ $page.variables.searchobj.equipmentType ? $page.variables.searchobj.equipmentType : \"\" }}",
+          "p_project_number": "{{ $page.variables.searchobj.project ? $page.variables.searchobj.project : \"\" }}",
+          "request_type": "{{ $page.variables.searchobj.request_type ? $page.variables.searchobj.request_type : \"\" }}",
+          "eqp_request_number": "{{ $page.variables.searchobj.requestnumber ? $page.variables.searchobj.requestnumber : \"\" }}"
+
+        }
+      },
+      "outcomes": {
+        "success": "callFunctionAdjustQuantities",
+        "failure": "fireNotification"
+      }
+    },
+    "callRestGetEqpTimeEntryWeek": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getEqpTimeEntryWeek",
+        "uriParams": {
+
+          "p_crew_week": "{{ $chain.results.callFunctionCreateUriParams.dateRange }}",
+          "p_project_number": "{{ $chain.results.callFunctionCreateUriParams.project }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesMaxweekid"
+      }
+    },
+    "assignVariablesMaxweekid": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.maxweekid": {
+          "source": "{{ $chain.results.callRestGetEqpTimeEntryWeek.body.items[0].weekid }}"
+        }
+      },
+      "outcomes": {}
+    },
+    "callFunctionValidateGroup": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "validateGroup",
+        "params": [
+          "addValidationgroup"
+        ]
+      },
+      "outcomes": {
+        "success": "if"
+      }
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callFunctionValidateGroup === \"valid\" ]]"
+      },
+      "outcomes": {
+        "true": "resetVariablesProjectBasedTimesheetADP"
+      }
+    },
+    "callFunctionAdjustQuantities": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "adjustQuantities",
+        "params": [
+          "{{ $chain.results.callRestGetEquipAssignmentData.body.items }}",
+          "{{ $page.variables.searchobj.dateRange }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesTableAdp"
+      }
+    },
+    "assignVariablesTableAdp": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.tableAdp": {
+          "source": {
+            "data": "{{ $chain.results.callFunctionAdjustQuantities }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesProjectBasedTimesheetADP"
+      }
+    }
+
+  }
+}

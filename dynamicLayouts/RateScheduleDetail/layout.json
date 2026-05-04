@@ -1,0 +1,44 @@
+{
+  "layoutTypes": {
+    "businessObjects": {
+      "kind": "operationRef",
+      "serviceId": "businessObjects",
+      "operations": [
+        "getall_RateScheduleDetail"
+      ]
+    }
+  },
+  "layouts": {
+    "isDefault": {
+      "description": "Default Rule",
+      "type": "businessObjects",
+      "expression": "default"
+    },
+    "detailTable": {
+      "type": "businessObjects",
+      "layoutType": "table",
+      "label": "detailTable",
+      "rules": [
+        "isDefault"
+      ],
+      "layouts": {
+        "default": {
+          "layoutType": "table",
+          "layout": {
+            "displayProperties": [
+              "nonLaborResource",
+              "expenditureType",
+              "location",
+              "hoursType",
+              "costRate",
+              "billRate",
+              "currency",
+              "startDate",
+              "endDate"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "ItemNumber": "TSTLT001",
+  "OrganizationId": 300001690872060,
+  "DemandSourceType": "Transfer order",
+  "DemandSourceHeaderNumber": "176067",
+  "DemandSourceLineNumber": "1",
+  "SupplySourceType": "On hand",
+  "SubinventoryCode": "COM_SUBINV",
+  "ReservationUnitOfMeasure": "Ea",
+  "ReservationQuantity": 1
+}

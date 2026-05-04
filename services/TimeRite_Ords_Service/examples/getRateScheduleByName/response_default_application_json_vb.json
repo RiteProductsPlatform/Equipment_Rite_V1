@@ -1,0 +1,63 @@
+{
+    "items": [
+        {
+            "eqp_rate_row_id": 1,
+            "rate_schedule": "rite_org",
+            "description": "Organization RiteSchedule",
+            "bill_rate_schedule_level": "Organization",
+            "multi_currency_enabled": "Yes",
+            "allow_location_based_diffrential": "Yes",
+            "allow_hours_type_rate_diffrential": "Yes",
+            "active_flag": "Yes",
+            "default_flag": "Yes",
+            "start_date": "2024-01-01T12:23:23Z",
+            "end_date": null,
+            "contract": null,
+            "project_number": null,
+            "task_number": null,
+            "non_labor_resource": null,
+            "location": null,
+            "uom": null,
+            "rounding_threshold": null,
+            "rate_types": null,
+            "cost_rate": null,
+            "bill_rate": null,
+            "currency": null,
+            "rate_type_start_date": null,
+            "rate_type_end_date": null,
+            "created_by": null,
+            "last_updated_by": null,
+            "creation_date": null,
+            "last_updated_date": null,
+            "last_update_login": null,
+            "attribute1": null,
+            "attribute2": null,
+            "attribute3": null,
+            "attribute4": null,
+            "attribute5": null,
+            "attribute6": null,
+            "attribute7": null,
+            "attribute8": null,
+            "attribute9": null,
+            "attribute10": null
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getRateScheduleByName?p_rate_schedule=rite_org"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getRateScheduleByName?p_rate_schedule=rite_org"
+        }
+    ]
+}

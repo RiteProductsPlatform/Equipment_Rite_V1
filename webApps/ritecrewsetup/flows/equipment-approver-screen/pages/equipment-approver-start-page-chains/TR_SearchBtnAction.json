@@ -1,0 +1,23 @@
+{
+  "root": "assignVariablesIsAdd",
+  "description": "",
+  "actions": {
+    "assignVariablesIsAdd": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.isAdd": {
+          "source": false
+        }
+      },
+      "outcomes": {
+        "success": "callChainTRSearchBtnAction"
+      }
+    },
+    "callChainTRSearchBtnAction": {
+      "module": "vb/action/builtin/callChainAction",
+      "parameters": {
+        "id": "TR_fetchSearchSheetData"
+      }
+    }
+  }
+}

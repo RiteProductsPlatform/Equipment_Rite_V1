@@ -1,0 +1,73 @@
+{
+    "items": [
+        {
+            "request_number": "570"
+        },
+        {
+            "request_number": "569"
+        },
+        {
+            "request_number": "568"
+        },
+        {
+            "request_number": "567"
+        },
+        {
+            "request_number": "562"
+        },
+        {
+            "request_number": "561"
+        },
+        {
+            "request_number": "546"
+        },
+        {
+            "request_number": "544"
+        },
+        {
+            "request_number": "543"
+        },
+        {
+            "request_number": "528"
+        },
+        {
+            "request_number": "527"
+        },
+        {
+            "request_number": "523"
+        },
+        {
+            "request_number": "522"
+        },
+        {
+            "request_number": "521"
+        },
+        {
+            "request_number": "509"
+        },
+        {
+            "request_number": "508"
+        },
+        {
+            "request_number": "507"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 17,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpRequestNumberLov?page_name=equip-approval"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EqpRequestNumberLov?page_name=equip-approval"
+        }
+    ]
+}

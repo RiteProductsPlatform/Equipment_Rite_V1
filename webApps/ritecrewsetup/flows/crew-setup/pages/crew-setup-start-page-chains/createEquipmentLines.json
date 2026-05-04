@@ -1,0 +1,125 @@
+{
+  "root": "forEachInSelectedHoursType",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPostEquipAssignmentData.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestPostEquipAssignmentData": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/postEquipAssignmentData",
+        "body": "{{ $chain.results.callFunctionCreateEquipLinesReq }}"
+      },
+      "outcomes": {
+        "failure": "fireNotification",
+        "success": "callFunctionCreateReqforPackage"
+      }
+    },
+    "callComponentEquipmentDialogClose": {
+      "module": "vb/action/builtin/callComponentMethodAction",
+      "parameters": {
+        "component": "{{ document.getElementById('equipmentDialog') }}",
+        "method": "close"
+      }
+    },
+    "callFunctionCreateEquipLinesReq": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "createEquipLinesReq",
+        "params": [
+          "{{ $page.variables.linesObj }}",
+          "{{ $page.variables.crewSetupHeaderObj }}",
+          "{{ $current.data }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPostEquipAssignmentData"
+      }
+    },
+    "fireNotification2": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestGetEquipAssignmentData.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestGetEquipAssignmentData": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getEquipAssignmentData",
+        "uriParams": {
+          "p_crewsetup_id": "{{ $page.variables.selectedCrewSetupid }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesEquipmentLines",
+        "failure": "fireNotification2"
+      }
+    },
+    "resetVariablesEquipmentLines": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.equipmentLines.data"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestGetEquipAssignmentData"
+      }
+    },
+    "assignVariablesEquipmentLines": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.equipmentLines": {
+          "source": {
+            "data": "{{ $chain.results.callRestGetEquipAssignmentData.body.items }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      },
+      "outcomes": {
+        "success": "callComponentEquipmentDialogClose"
+      }
+    },
+    "fireNotification3": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPostTrEqpAssignmentSplitPrc.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callFunctionCreateReqforPackage": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "createReqforPackage",
+        "params": [
+          "{{ $page.variables.crewSetupHeaderObj.crewsetup_id }}"
+        ]
+      }
+    },
+    "forEachInSelectedHoursType": {
+      "module": "vb/action/builtin/forEachAction",
+      "parameters": {
+        "actionId": "callFunctionCreateEquipLinesReq",
+        "items": "{{ $page.variables.selectedHoursType }}"
+      },
+      "outcomes": {
+        "success": "resetVariablesEquipmentLines"
+      }
+    }
+  }
+}

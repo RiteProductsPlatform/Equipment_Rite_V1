@@ -1,0 +1,39 @@
+{
+  "root": "callFunctionCreateCostingReq",
+  "description": "",
+  "actions": {
+    "callFunctionCreateCostingReq": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "createCostingReq",
+        "params": [
+          "{{ $page.variables.CostingTabObj }}",
+          "{{ $page.variables.createdEquipID }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPutCostingDetails"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPutCostingDetails.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestPutCostingDetails": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/PutCostingDetails",
+        "body": "{{ $chain.results.callFunctionCreateCostingReq }}"
+      },
+      "outcomes": {
+        "failure": "fireNotification"
+      }
+    }
+  }
+}

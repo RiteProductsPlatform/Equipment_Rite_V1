@@ -1,0 +1,202 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <!-- <oj-vb-fragment-param name="title" value="Analytics"></oj-vb-fragment-param>
+  <template slot="actions">
+  </template> -->
+</oj-vb-fragment>
+
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.responsive-padding="on" page-title="Analytics" background-color="dark-pebble">
+  <div style="margin-top:-47px">
+    <div class="oj-flex oj-panel" style="min-height:85vh">
+
+      <!-- <div class="oj-flex oj-flex-item oj-sm-flex-direction-column oj-sm-align-items-flex-end"
+        style="margin-right:2.0rem">
+
+        <oj-switch label-hint="Enable Trace" value="[[$application.variables.enableTrace]]"
+          on-value-changed="[[$listeners.switchValue]]">
+        </oj-switch>
+
+        <div class="oj-sm-margin-top-1x">
+          <oj-label class="oj-lg-margin-5x-end">Trace ID:</oj-label>
+          <oj-bind-text value="[[$application.variables.traceIdDisplay]]"></oj-bind-text>
+        </div>
+
+      </div> -->
+
+
+      <div class="oj-flex-item oj-md-12 oj-sm-12" style="max-height:90vh;box-shadow:5px 5px 5px #f1f1f1">
+        <oj-validation-group id="searchgroup">
+          <oj-form-layout columns="5" max-columns="5" label-edge="top">
+            <oj-select-single label-hint="Report" style="width:22vw" value="{{ $variables.searchObj.report }}"
+              data="[[ $variables.reportADP ]]"></oj-select-single>
+            <oj-bind-if test="[[$variables.searchObj.report!=='Equipment Ocean Utilization']]">
+              <oj-select-single label-hint="Equipment Resource Class" style="width:22vw"
+                value="{{ $variables.searchObj.class }}" data="[[$variables.getGetEquipmentClassesListSDP]]"
+                item-text="eqp_class_details"></oj-select-single>
+              <oj-select-single label-hint="Equipment Name" style="width:22vw"
+                data="[[$variables.getGetEquipmentLOVListSDP]]" item-text="lkpvalue"
+                on-value-item-changed="[[$listeners.selectValueItem]]"></oj-select-single>
+              <oj-input-date label-hint="From Date"
+                converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}'
+                value="{{ $variables.searchObj.from_date }}"
+                required="[[ $variables.searchObj.report === 'Equipment Utilization Report' ? true : false ]]">
+              </oj-input-date>
+              <oj-input-date label-hint="To Date" value="{{ $variables.searchObj.to_date }}"
+                required="[[ $variables.searchObj.report === 'Equipment Utilization Report' ? true : false ]]"
+                converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}'></oj-input-date>
+            </oj-bind-if>
+
+          </oj-form-layout>
+        </oj-validation-group>
+
+        <oj-toolbar chroming="solid">
+          <oj-button label="Search" chroming="callToAction" on-oj-action="[[$listeners.buttonAction]]"
+            class="oj-button-sm">
+          </oj-button>
+          <oj-button label="Reset" chroming="callToAction" on-oj-action="[[$listeners.buttonAction2]]"
+            class="oj-button-sm">
+          </oj-button>
+          <oj-bind-if test="[[ $variables.EquipmentTblADP.data.length > 0 ]]">
+            <oj-button label="Export" chroming="callToAction" on-oj-action="[[$listeners.buttonAction3]]"
+              class="oj-button-sm"></oj-button>
+          </oj-bind-if>
+          <oj-bind-if test="[[$variables.searchObj.report=='Equipment Ocean Utilization']]">
+            <span>
+              <oj-bind-text value="Hours"></oj-bind-text>
+              <oj-switch label-hint="" style="vertical-align:middle" on-value-changed="[[$listeners.switchValue]]"></oj-switch>
+              <oj-bind-text value="Days"></oj-bind-text>
+            </span>
+          </oj-bind-if>
+          <div class="oj-flex oj-sm-align-items-center oj-sm-margin-2x-start">
+
+            <div class="oj-flex-item">
+              <oj-switch label-hint="Enable Trace" value="[[$application.variables.enableTrace]]"
+                on-value-changed="[[$listeners.switchValue2]]">
+              </oj-switch>
+            </div>
+
+            <div class="oj-sm-margin-1x-start">
+              <oj-label>Trace ID:</oj-label>
+            </div>
+
+            <div class="oj-flex-item oj-sm-margin-1x-start">
+              <oj-bind-text value="[[$application.variables.traceIdDisplay]]"></oj-bind-text>
+            </div>
+
+          </div>
+
+        </oj-toolbar>
+
+      </div>
+
+
+
+
+      <oj-bind-if test="[[$variables.searchObj.report!=='Equipment Ocean Utilization']]">
+        <div class="oj-flex-item oj-md-9 oj-sm-9" style="max-height:90vh;box-shadow:5px 5px 5px #f1f1f1">
+
+          <oj-table scroll-policy="loadMoreOnScroll" data="[[ $variables.EquipmentTblADP ]]" display="grid"
+            style="width:100%;height:70vh" columns='{{$variables.columns}}'>
+
+            <template slot="date">
+              <oj-input-date aria-label="Date" value="[[$current.data]]"
+                converter='{"type": "datetime", "options": {"pattern":"dd-MM-yyyy"}}' readonly="true"></oj-input-date>
+            </template>
+          </oj-table>
+        </div>
+        <div class="oj-flex-item oj-sm-flex-initial  oj-md-3 oj-sm-2"
+          style="max-height:90vh;background-color:#faf9f9;box-shadow:5px 5px 5px #f1f1f1">
+          <oj-chart type="pie" class="oj-sm-flex-initial" style="height:35vh" animation-on-display="auto"
+            style-defaults.three-d-effect="on" data="[[ $variables.ChartADP ]]">
+            <template slot='itemTemplate' data-oj-as='item'>
+              <oj-chart-item value='[[item.data.value]]' group-id='[[[item.data.group] ]]'
+                series-id='[[item.data.series]]'>
+              </oj-chart-item>
+            </template>
+          </oj-chart>
+          <demo-chart-three-d-effect-control id="threeDControl" three-d-effect="on" aria-controls="pieChart">
+          </demo-chart-three-d-effect-control>
+
+          <oj-chart type="bar" class="oj-sm-flex-initial" style="height:35vh" animation-on-display="auto"
+            style-defaults.three-d-effect="on" data="[[ $variables.ChartADP ]]">
+            <template slot='itemTemplate' data-oj-as='item'>
+              <oj-chart-item value='[[item.data.value]]' group-id='[[[item.data.group] ]]'
+                series-id='[[item.data.series]]'>
+              </oj-chart-item>
+            </template>
+          </oj-chart>
+          <demo-chart-three-d-effect-control id="threeDControl" three-d-effect="on" aria-controls="pieChart">
+          </demo-chart-three-d-effect-control>
+          </oj-chart>
+
+        </div>
+      </oj-bind-if>
+      <oj-bind-if test="[[$variables.searchObj.report==='Equipment Ocean Utilization' && $variables.isRowExist]]">
+        <div class="oj-flex-item oj-md-9 oj-sm-9" style="max-height:90vh;box-shadow:5px 5px 5px #f1f1f1">
+          <oj-table scroll-policy="loadMoreOnScroll" id="oj-table-175486407-2" class="oj-table-stretch oj-flex-item"
+            data="[[ $variables.treeDP ]]" columns="[[ $variables.dynamicCols ]]" style="height:700px;width:100%"
+            :style.min-width="[[ $application.responsive.smOnly ? '300px' : '600px' ]]"
+            scroll-policy-options.max-count="200" selection-mode.row="single"
+            on-first-selected-row-changed="[[$listeners.ojTable1754864072FirstSelectedRow]]">
+
+            <template slot="treeCellTemplate" data-oj-as="cell">
+              <td>
+                <oj-row-expander context="[[cell]]"></oj-row-expander>
+                <oj-bind-text value="[[cell.data]]"></oj-bind-text>
+              </td>
+            </template>
+
+            <template slot="cellTemplate" data-oj-as="cell">
+              <td>
+                <oj-bind-text value="[[cell.data]]"></oj-bind-text>
+              </td>
+            </template>
+
+          </oj-table>
+        </div>
+        <div class="oj-flex-item oj-md-3 oj-sm-3">
+
+          <oj-chart type="pie" class="oj-sm-flex-initial" style="height:35vh" animation-on-display="auto"
+            style-defaults.three-d-effect="on" data="[[ $variables.utilsChartADP ]]">
+            <template slot='itemTemplate' data-oj-as='item'>
+              <oj-chart-item value='[[item.data.value]]' group-id='[[[item.data.group] ]]'
+                series-id='[[item.data.series]]'>
+              </oj-chart-item>
+            </template>
+          </oj-chart>
+          <demo-chart-three-d-effect-control id="threeDControl1" three-d-effect="on" aria-controls="pieChart">
+          </demo-chart-three-d-effect-control>
+
+
+          <oj-chart type="bar" class="oj-sm-flex-initial" style="height:35vh" animation-on-display="auto"
+            style-defaults.three-d-effect="on" data="[[ $variables.utilsChartADP ]]">
+            <template slot='itemTemplate' data-oj-as='item'>
+              <oj-chart-item value='[[item.data.value]]' group-id='[[[item.data.group] ]]'
+                series-id='[[item.data.series]]'>
+              </oj-chart-item>
+            </template>
+          </oj-chart>
+          <demo-chart-three-d-effect-control id="threeDControl" three-d-effect="on" aria-controls="pieChart">
+          </demo-chart-three-d-effect-control>
+          </oj-chart>
+
+        </div>
+
+
+      </oj-bind-if>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+  </div>
+  </div>
+</oj-sp-welcome-page>

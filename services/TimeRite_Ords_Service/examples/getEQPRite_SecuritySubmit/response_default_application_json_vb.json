@@ -1,0 +1,71 @@
+{
+    "items": [
+        {
+            "security_id": 1,
+            "application_name": "EquipRite",
+            "user_id": null,
+            "user_name": "TIMERITE.USER",
+            "email_address": null,
+            "role_id": 300000000557217,
+            "role_code": "FUSION_APPS_CRM_ADF_APPID",
+            "role_name": "Applications Development Framework Application Identity for CRM",
+            "enable_flag": "yes",
+            "creation_date": "2025-08-19T10:13:53Z",
+            "created_by": "madhu.renangi@rite.digital",
+            "last_updated_by": "madhu.renangi@rite.digital",
+            "last_update_date": "2025-08-19T10:13:53Z"
+        },
+        {
+            "security_id": 2,
+            "application_name": "EquipRite",
+            "user_id": null,
+            "user_name": "TIMERITE.USER",
+            "email_address": null,
+            "role_id": 300000000557218,
+            "role_code": "FUSION_APPS_CRM_ADF_BI_APPID",
+            "role_name": "Applications Development Framework Business Intelligence Application Identity for CRM",
+            "enable_flag": "yes",
+            "creation_date": "2025-08-19T10:13:55Z",
+            "created_by": "madhu.renangi@rite.digital",
+            "last_updated_by": "madhu.renangi@rite.digital",
+            "last_update_date": "2025-08-19T10:13:55Z"
+        },
+        {
+            "security_id": 3,
+            "application_name": "EquipRite",
+            "user_id": null,
+            "user_name": "TIMERITE.USER",
+            "email_address": null,
+            "role_id": 300001725327764,
+            "role_code": "RT_EQP_ADMINISTRATOR",
+            "role_name": "Equipment Administrator",
+            "enable_flag": "yes",
+            "creation_date": "2025-08-19T18:08:44Z",
+            "created_by": "dinesh.neredu@rite.digital",
+            "last_updated_by": "dinesh.neredu@rite.digital",
+            "last_update_date": "2025-08-19T18:08:44Z"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 3,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_SecuritySubmit?p_user_name=TIMERITE.USER"
+        },
+        {
+            "rel": "edit",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_SecuritySubmit?p_user_name=TIMERITE.USER"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_SecuritySubmit?p_user_name=TIMERITE.USER"
+        }
+    ]
+}

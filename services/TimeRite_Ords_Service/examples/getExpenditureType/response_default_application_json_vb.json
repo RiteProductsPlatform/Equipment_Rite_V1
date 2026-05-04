@@ -1,0 +1,126 @@
+{
+    "items": [
+        {
+            "expenditure_type_id": 300000110990105,
+            "expenditure_type_name": "Allocation"
+        },
+        {
+            "expenditure_type_id": 300000092852105,
+            "expenditure_type_name": "Intercompany Charge"
+        },
+        {
+            "expenditure_type_id": 300000047429469,
+            "expenditure_type_name": "Contract Services"
+        },
+        {
+            "expenditure_type_id": 300000047429535,
+            "expenditure_type_name": "Overhead"
+        },
+        {
+            "expenditure_type_id": 300000101276262,
+            "expenditure_type_name": "Other Expenses"
+        },
+        {
+            "expenditure_type_id": 300000047429530,
+            "expenditure_type_name": "Miscellaneous Labor"
+        },
+        {
+            "expenditure_type_id": 300000047429486,
+            "expenditure_type_name": "Hardware"
+        },
+        {
+            "expenditure_type_id": 300000047429553,
+            "expenditure_type_name": "Software"
+        },
+        {
+            "expenditure_type_id": 300000047429498,
+            "expenditure_type_name": "Interest"
+        },
+        {
+            "expenditure_type_id": 300000047429509,
+            "expenditure_type_name": "Material"
+        },
+        {
+            "expenditure_type_id": 300000047429519,
+            "expenditure_type_name": "Meals"
+        },
+        {
+            "expenditure_type_id": 300000047429455,
+            "expenditure_type_name": "Administrative Costs"
+        },
+        {
+            "expenditure_type_id": 300000047429482,
+            "expenditure_type_name": "Fringe"
+        },
+        {
+            "expenditure_type_id": 300000047429465,
+            "expenditure_type_name": "Computers"
+        },
+        {
+            "expenditure_type_id": 300000047429558,
+            "expenditure_type_name": "Supplies"
+        },
+        {
+            "expenditure_type_id": 300000047429515,
+            "expenditure_type_name": "Material Handling"
+        },
+        {
+            "expenditure_type_id": 300000047429491,
+            "expenditure_type_name": "Hotel"
+        },
+        {
+            "expenditure_type_id": 300000047429478,
+            "expenditure_type_name": "Fee"
+        },
+        {
+            "expenditure_type_id": 300000047429525,
+            "expenditure_type_name": "Miscellaneous"
+        },
+        {
+            "expenditure_type_id": 300000047429474,
+            "expenditure_type_name": "Equipment"
+        },
+        {
+            "expenditure_type_id": 300000047429459,
+            "expenditure_type_name": "Airfare"
+        },
+        {
+            "expenditure_type_id": 300000047429548,
+            "expenditure_type_name": "Purchased Equipment"
+        },
+        {
+            "expenditure_type_id": 300000224897789,
+            "expenditure_type_name": "Rent Allocation"
+        },
+        {
+            "expenditure_type_id": 300000047429539,
+            "expenditure_type_name": "Proceeds from Sale"
+        },
+        {
+            "expenditure_type_id": 300000047429543,
+            "expenditure_type_name": "Professional"
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/ExpenditureType"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/ExpenditureType"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/ExpenditureType?offset=25"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+  "root": "ifSearchCrew",
+  "description": "",
+  "actions": {
+    "ifSearchCrew": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $page.variables.searchCrew !== null ]]"
+      },
+      "outcomes": {
+        "true": "callChainTRFetchHeadersLines"
+      }
+    },
+    "callChainTRFetchHeadersLines": {
+      "module": "vb/action/builtin/callChainAction",
+      "parameters": {
+        "id": "TR_FetchHeadersLines"
+      }
+    }
+  }
+}

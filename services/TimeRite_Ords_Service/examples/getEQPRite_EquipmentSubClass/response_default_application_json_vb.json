@@ -1,0 +1,78 @@
+{
+    "items": [
+        {
+            "eqp_app_maintenance_id": 14,
+            "code": "EQP_SUB_CLASS",
+            "meaning": "Rotators",
+            "description": "Rotators",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T12:07:14Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T12:07:14Z"
+        },
+        {
+            "eqp_app_maintenance_id": 15,
+            "code": "EQP_SUB_CLASS",
+            "meaning": "Production",
+            "description": "Production",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T12:07:37Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T12:07:37Z"
+        },
+        {
+            "eqp_app_maintenance_id": 16,
+            "code": "EQP_SUB_CLASS",
+            "meaning": "Pyro Cutters",
+            "description": "Pyro Cutters",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T12:07:54Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T12:07:54Z"
+        },
+        {
+            "eqp_app_maintenance_id": 17,
+            "code": "EQP_SUB_CLASS",
+            "meaning": "Graders",
+            "description": "Graders",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T12:08:13Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T12:08:13Z"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 4,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.153.205.79:8080/ords/xxeq_oii/EquipmentRite/EQPRite_EquipmentSubClass"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.153.205.79:8080/ords/xxeq_oii/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.153.205.79:8080/ords/xxeq_oii/EquipmentRite/EQPRite_EquipmentSubClass"
+        }
+    ]
+}

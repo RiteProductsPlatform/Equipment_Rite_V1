@@ -1,0 +1,46 @@
+{
+  "userroles":[
+    {
+      "name": "AdminRole",
+      "description": "",
+      "id": "AdminRole",
+      "defaultMapping": {}
+    }    ,
+    {
+      "name": "Equipment Administrator",
+      "description": "Equipment Administrator",
+      "id": "Administrator",
+      "defaultMapping": {}
+    },
+    {
+      "name": "Approver",
+      "description": "",
+      "id": "Approver",
+      "defaultMapping": {}
+    }    ,
+    {
+      "name": "Equipment Manager",
+      "description": "Equipment Manager",
+      "id": "Equipment_Manager",
+      "defaultMapping": {}
+    },
+    {
+      "name": "Project Reviewer",
+      "description": "Equipment Project Reviewer",
+      "id": "Project_Reviewer",
+      "defaultMapping": {}
+    }    ,
+    {
+      "name": "Equipment Requestor",
+      "description": "Equipment Requestor",
+      "id": "Requestor",
+      "defaultMapping": {}
+    }    ,
+    {
+      "name": "Equipment Timekeeper",
+      "description": "Equipment Timekeeper",
+      "id": "Timekeeper",
+      "defaultMapping": {}
+    }
+  ]
+}

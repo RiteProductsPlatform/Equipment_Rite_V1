@@ -1,0 +1,226 @@
+{
+    "items": [
+        {
+            "day_date": "2024-11-18T00:00:00Z",
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2024-11-19T00:00:00Z",
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2024-11-20T00:00:00Z",
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2024-11-21T00:00:00Z",
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2024-11-22T00:00:00Z",
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2024-11-23T00:00:00Z",
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2024-11-24T00:00:00Z",
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2024-11-25T00:00:00Z",
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 2,
+            "used_equipment": 1,
+            "util_percent": 50
+        },
+        {
+            "day_date": "2024-11-26T00:00:00Z",
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 2,
+            "used_equipment": 0,
+            "util_percent": 0
+        },
+        {
+            "day_date": "2024-11-27T00:00:00Z",
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 2,
+            "used_equipment": 1,
+            "util_percent": 50
+        },
+        {
+            "day_date": "2024-11-28T00:00:00Z",
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 2,
+            "used_equipment": 0,
+            "util_percent": 0
+        },
+        {
+            "day_date": "2024-11-29T00:00:00Z",
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 2,
+            "used_equipment": 0,
+            "util_percent": 0
+        },
+        {
+            "day_date": "2024-11-30T00:00:00Z",
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 2,
+            "used_equipment": 0,
+            "util_percent": 0
+        },
+        {
+            "day_date": "2024-12-01T00:00:00Z",
+            "month_label": "DEC 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 2,
+            "used_equipment": 0,
+            "util_percent": 0
+        },
+        {
+            "day_date": "2025-01-06T00:00:00Z",
+            "month_label": "JAN 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2025-01-07T00:00:00Z",
+            "month_label": "JAN 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2025-01-08T00:00:00Z",
+            "month_label": "JAN 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2025-01-09T00:00:00Z",
+            "month_label": "JAN 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2025-01-10T00:00:00Z",
+            "month_label": "JAN 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2025-01-11T00:00:00Z",
+            "month_label": "JAN 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2025-01-12T00:00:00Z",
+            "month_label": "JAN 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 1,
+            "used_equipment": 1,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2025-01-27T00:00:00Z",
+            "month_label": "JAN 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 2,
+            "used_equipment": 2,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2025-01-28T00:00:00Z",
+            "month_label": "JAN 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 2,
+            "used_equipment": 2,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2025-01-29T00:00:00Z",
+            "month_label": "JAN 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 2,
+            "used_equipment": 2,
+            "util_percent": 100
+        },
+        {
+            "day_date": "2025-01-30T00:00:00Z",
+            "month_label": "JAN 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 2,
+            "used_equipment": 2,
+            "util_percent": 100
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/dayUtilization"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/dayUtilization"
+        },
+        {
+            "rel": "next",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/dayUtilization?offset=25"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "customer-billing-workbench",
+  "description": "Flow main",
+  "defaultPage": "customer-billing-workbench-start",
+  "services": {},
+  "types": {},
+  "variables": {}
+}

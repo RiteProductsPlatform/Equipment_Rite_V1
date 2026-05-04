@@ -1,0 +1,148 @@
+{
+    "items": [
+        {
+            "month_label": "APR 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 6,
+            "used_equipment": 6,
+            "util_percent": 100
+        },
+        {
+            "month_label": "AUG 25",
+            "business_unit": "Oak USA BU1",
+            "total_equipment": 48,
+            "used_equipment": 45,
+            "util_percent": 93.75
+        },
+        {
+            "month_label": "DEC 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 2,
+            "used_equipment": 0,
+            "util_percent": 0
+        },
+        {
+            "month_label": "FEB 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 67,
+            "used_equipment": 49,
+            "util_percent": 73.13
+        },
+        {
+            "month_label": "FEB 26",
+            "business_unit": "Oak USA BU1",
+            "total_equipment": 10,
+            "used_equipment": 5,
+            "util_percent": 50
+        },
+        {
+            "month_label": "JAN 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 17,
+            "used_equipment": 17,
+            "util_percent": 100
+        },
+        {
+            "month_label": "JAN 26",
+            "business_unit": "Oak USA BU1",
+            "total_equipment": 18,
+            "used_equipment": 5,
+            "util_percent": 27.78
+        },
+        {
+            "month_label": "JUL 25",
+            "business_unit": "Oak USA BU1",
+            "total_equipment": 36,
+            "used_equipment": 36,
+            "util_percent": 100
+        },
+        {
+            "month_label": "JUL 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 7,
+            "used_equipment": 7,
+            "util_percent": 100
+        },
+        {
+            "month_label": "JUN 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 42,
+            "used_equipment": 42,
+            "util_percent": 100
+        },
+        {
+            "month_label": "MAR 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 29,
+            "used_equipment": 29,
+            "util_percent": 100
+        },
+        {
+            "month_label": "MAR 26",
+            "business_unit": "Oak USA BU1",
+            "total_equipment": 14,
+            "used_equipment": 5,
+            "util_percent": 35.71
+        },
+        {
+            "month_label": "NOV 24",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 19,
+            "used_equipment": 9,
+            "util_percent": 47.37
+        },
+        {
+            "month_label": "OCT 25",
+            "business_unit": "Oak USA BU1",
+            "total_equipment": 20,
+            "used_equipment": 19,
+            "util_percent": 95
+        },
+        {
+            "month_label": "OCT 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 12,
+            "used_equipment": 12,
+            "util_percent": 100
+        },
+        {
+            "month_label": "SEP 25",
+            "business_unit": "Oak USA BU1",
+            "total_equipment": 22,
+            "used_equipment": 20,
+            "util_percent": 90.91
+        },
+        {
+            "month_label": "SEP 25",
+            "business_unit": "US1 Business Unit",
+            "total_equipment": 16,
+            "used_equipment": 16,
+            "util_percent": 100
+        },
+        {
+            "month_label": "SEP 25",
+            "business_unit": null,
+            "total_equipment": 7,
+            "used_equipment": 7,
+            "util_percent": 100
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 18,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/monthUtilization"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/monthUtilization"
+        }
+    ]
+}

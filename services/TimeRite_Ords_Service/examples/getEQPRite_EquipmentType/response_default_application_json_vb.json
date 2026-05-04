@@ -1,0 +1,78 @@
+{
+    "items": [
+        {
+            "eqp_app_maintenance_id": 10,
+            "code": "EQP_TYPE",
+            "meaning": "Others",
+            "description": "Others",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T12:03:19Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T12:03:19Z"
+        },
+        {
+            "eqp_app_maintenance_id": 11,
+            "code": "EQP_TYPE",
+            "meaning": "Company-Owned",
+            "description": "Company-Owned",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T12:03:39Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T12:03:39Z"
+        },
+        {
+            "eqp_app_maintenance_id": 12,
+            "code": "EQP_TYPE",
+            "meaning": "Rental",
+            "description": "Rental",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T12:03:55Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T12:03:55Z"
+        },
+        {
+            "eqp_app_maintenance_id": 13,
+            "code": "EQP_TYPE",
+            "meaning": "Leased",
+            "description": "Leased",
+            "enable_flag": "Y",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": null,
+            "tag": "+US",
+            "creation_date": "2025-09-16T12:04:07Z",
+            "created_by": "SYSTEM",
+            "last_updated_by": "SYSTEM",
+            "last_update_date": "2025-09-16T12:04:07Z"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 4,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.153.205.79:8080/ords/xxeq_oii/EquipmentRite/EQPRite_EquipmentType"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.153.205.79:8080/ords/xxeq_oii/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.153.205.79:8080/ords/xxeq_oii/EquipmentRite/EQPRite_EquipmentType"
+        }
+    ]
+}

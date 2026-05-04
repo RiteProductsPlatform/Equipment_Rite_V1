@@ -1,0 +1,782 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value="Equipment Master"></oj-vb-fragment-param>
+</oj-vb-fragment>
+<div class="oj-flex" style="margin-top:33px;">
+  <div class="oj-flex-item" role="navigation">
+    <oj-tab-bar edge="top" id="oj-tab-bar-630802595-1" class="oj-sm-12 oj-md-12" data="[[ $variables.navigationADP ]]"
+      on-selection-changed="[[$listeners.onNavigation]]" selection="{{ $variables.currentFlow }}">
+      <template slot="itemTemplate">
+        <li>
+          <a href="#">
+            <!-- <oj-input-text value="$variables.currentSelctedVal" style="display:none;"></oj-input-text> -->
+            <oj-bind-text value="[[ $current.data.name ]]"></oj-bind-text>
+          </a>
+        </li>
+      </template>
+    </oj-tab-bar>
+  </div>
+  <div class="oj-flex-item oj-sm-12">
+    <oj-bind-if test='[[ $variables.selectedVal === "page-core" ]]'>
+      <oj-form-layout columns="3" label-edge="top" class="oj-sm-12" style="margin-top: 30px">
+        <oj-select-single item-text="OrganizationName" label-hint="Organization Name"
+          on-value-item-changed="[[$listeners.selectValueItem14]]" value="{{ $variables.selectedorgValueObj.orgName }}"
+          required="true" data="[[ $flow.variables.invOrgsAdp ]]">
+        </oj-select-single>
+
+         <oj-select-single label-hint="Equipment Type" item-text="Meaning"
+          value="{{ $variables.MasterTabObj.equipment_Type }}" id="equipment-type"
+          on-value-item-changed="[[$listeners.equipmentTypeValueItem2]]" data="[[ $flow.variables.eqpTypeADP ]]">
+        </oj-select-single>
+
+        <oj-select-single label-hint="Equipment Class" required="true"
+          value="{{ $variables.MasterTabObj.equipment_Class }}" on-value-item-changed="[[$listeners.selectValueItem4]]"
+          item-text="Meaning" data="[[ $flow.variables.eqpClassAdp ]]"></oj-select-single>
+
+        <oj-select-single label-hint="Maintenance Asset" on-value-item-changed="[[$listeners.selectValueItem10]]"
+          value="{{ $variables.dummyMainanenencaName }}" item-text="name"
+          required='[[ $variables.MasterTabObj.equipment_Type === "Leased" ||    $variables.MasterTabObj.equipment_Type === "Rental"    ? false     : true ]]'
+          data="[[$variables.getMaintenanceAssetNumbersListSDP2]]"></oj-select-single>
+
+
+
+        <oj-bind-if test="[[$variables.dummyMainanenencaName]]">
+          <oj-input-text label-hint="Inventory Item" value="{{ $variables.AssetsTabObj.inventory_Item }}"
+            disabled="true"></oj-input-text>
+        </oj-bind-if>
+
+        <oj-bind-if test="[[!$variables.dummyMainanenencaName]]">
+          <oj-select-single label-hint="Inventory Item" item-text="name"
+            on-value-item-changed="[[$listeners.selectValueItem5]]" value="{{ $variables.AssetsTabObj.inventory_Item }}"
+            required='[[ $variables.MasterTabObj.equipment_Type === "Leased" ||    $variables.MasterTabObj.equipment_Type === "Rental"    ? false     : true ]]'
+            data="[[$variables.getEQUIPMENTRITEITEMSLOV1GetItemValuesListSDP4]]"></oj-select-single>
+        </oj-bind-if>
+
+
+        <oj-select-single label-hint="Sub Inventory"
+          data="[[$variables.getEQUIPMENTRITEEQPINVSUBINVENTORYDETAILS1GetItemValuesListSDP]]" item-text="name"
+          value="{{ $variables.MasterTabObj.subInvName }}" on-value-item-changed="[[$listeners.selectValueItem11]]"
+          required="true">
+        </oj-select-single>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <oj-select-single label-hint="FA Asset Number" value="{{ $variables.AssetsTabObj.assetNumber }}"
+          item-text="name" on-value-item-changed="[[$listeners.selectValueItem6]]"
+          required='[[ $variables.MasterTabObj.equipment_Type === "Leased" ||    $variables.MasterTabObj.equipment_Type === "Rental"    ? false     : true ]]'
+          data="[[$variables.getEQUIPMENTRITEFALOV1GetAssetsLOV2ListSDP3]]"></oj-select-single>
+
+        <oj-input-text label-hint="Serial Number" value="{{ $variables.ManufacturerTabObj.serial_Num }}"
+          on-value-changed="[[$listeners.inputTextValue4]]">
+        </oj-input-text>
+        <oj-input-text label-hint="Equipment Name" clear-icon="always" required="true"
+          value="{{ $variables.MasterTabObj.equipment_Name }}"></oj-input-text>
+        <oj-input-text label-hint="Equipment Number" clear-icon="always"
+          value="{{ $variables.MasterTabObj.equipment_Num }}" required="true"></oj-input-text>
+        <oj-input-text label-hint="Equipment Description" clear-icon="always"
+          value="{{ $variables.MasterTabObj.equipment_desc }}"></oj-input-text>
+        <!-- <oj-select-single label-hint="Non Labor Resource" required="true" item-text="name"
+          value="{{ $variables.MasterTabObj.nonLaborResource }}" on-value-item-changed="[[$listeners.selectValueItem8]]"
+          data="[[$variables.getEQUIPMENTRITENLRLOV1GetNlrValues2ListSDP2]]">
+        </oj-select-single> -->
+        
+        <oj-c-select-multiple label-hint="Non Labor Resource" item-text="name"
+          on-value-changed="[[$listeners.selectValue]]"  data="[[$variables.getEQUIPMENTRITENLRLOV1GetNlrValues2ListSDP2]]">
+        </oj-c-select-multiple>
+       
+
+        <!-- <oj-select-single label-hint="Equipment Class Owner" required="true"
+          value="{{ $variables.MasterTabObj.equipment_class_owner }}" data="[[$variables.eqClassListSDP2]]"
+          item-text="classOwner">
+        </oj-select-single> -->
+        <oj-select-single label-hint="Equipment Sub-Class" value="{{ $variables.MasterTabObj.equipment_Sub_Class }}"
+          item-text="Meaning" data="[[ $flow.variables.eqpSubClassADP ]]">
+        </oj-select-single>
+
+          <oj-select-single label-hint="Equipment Status" value="{{ $variables.MasterTabObj.equipment_status }}"
+          item-text="value" data="[[ $variables.equstatusADP ]]" readonly="true">
+         </oj-select-single>
+
+       
+        <oj-bind-if
+          test='[[ $variables.MasterTabObj.equipment_Class==="BULK ITEMS" || $variables.MasterTabObj.equipment_Class==="SMALL TOOLS" ||  $variables.MasterTabObj.equipment_Class==="CONSUMABLES" ]]'>
+          <oj-input-text label-hint="Quantity" value="{{ $variables.MasterTabObj.p_equip_req_quantity }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Life Of Equipment" value="{{ $variables.MasterTabObj.p_life_of_equipment }}">
+          </oj-input-text>
+        </oj-bind-if>
+
+        <!-- <oj-c-select-multiple label-hint="Equipment Substitute" data="[[$variables.getGetEquipmentLOVListSDP]]"
+          item-text="lkpvalue" on-value-changed="[[$listeners.selectValue2]]">
+        </oj-c-select-multiple> -->
+
+
+
+        <!-- <oj-select-single data="[[$variables.getGetEquipmentLOVListSDP]]" item-text="lkpvalue">
+        </oj-select-single> -->
+          
+           
+            <oj-switch label-hint="Surplus"
+            value="{{ $variables.AssetsTabObj.surplus_status === 'Y' ? true : false }}" 
+            class="oj-switch" on-value-changed="[[$listeners.switchValue2]]">
+          </oj-switch>
+           
+
+
+          <oj-switch style="font-size:11px;" label-hint="Is Maintenance Asset Track?"
+            value="{{ $variables.AssetsTabObj.isMaintenanceAsset === 'Y' ? true : false }}" disabled="true"
+            class="oj-switch">
+          </oj-switch>
+          
+
+          <!-- <oj-checkboxset disabled="true">
+            <oj-option>
+            </oj-option>
+          </oj-checkboxset> -->
+
+
+          <oj-switch label-hint="Is Fixed Asset Track?" 
+            value='{{ $variables.AssetsTabObj.isFixedAsset=== "Y" ? true : false }}' disabled="true" class="oj-switch">
+          </oj-switch>
+     
+          <oj-switch label-hint="Is inventory Track?"
+            value='{{ $variables.AssetsTabObj.isinventorystock=== "Y" ? true : false }}' disabled="true"
+            class="oj-switch">
+          </oj-switch>
+         
+          
+
+        
+
+        <div class="oj-flex oj-sm-flex-direction-row oj-sm-align-items-center oj-sm-wrap oj-sm-padding-2x"
+          style="width:100%; gap: 24px;">
+
+          <!-- <div class="oj-flex-item oj-sm-flex-initial" style="flex: 1;">
+            <oj-label>Track Inventory Item</oj-label>
+            <oj-switch value="{{ $variables.MasterTabObj.trackinvItem }}" ></oj-switch>
+          </div> -->
+          <div class="oj-flex-item oj-sm-flex-initial" style="flex: 1;">
+            <oj-label>Status</oj-label>
+            <oj-switch value="{{ $variables.MasterTabObj.status }}"></oj-switch>
+          </div>
+
+
+          <div class="oj-flex-item oj-sm-flex-initial" style="flex: 2;margin-top:-3vh">
+            <oj-label>Upload Image</oj-label>
+            <oj-file-picker selection-mode="single" accept='["image/*"]' on-oj-select="[[$listeners.filePickerSelect]]"
+              capture="user">
+              <oj-button slot="trigger" class="oj-button-sm">
+                <span slot="startIcon" class="oj-ux-ico-add-image" title="Add Image"></span>
+              </oj-button>
+            </oj-file-picker>
+            <oj-bind-text value="[[ $variables.fileObj.filename ]]"></oj-bind-text>
+          </div>
+        </div>
+
+      </oj-form-layout>
+
+      <div class="oj-flex oj-sm-justify-content-center">
+        <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-flex-initial">
+
+          <oj-button chroming="callToAction" class="oj-button-sm" label="Pairing"
+            on-oj-action="[[$listeners.buttonAction23]]">
+          </oj-button>
+
+          <oj-button chroming="callToAction" class="oj-button-sm" label="Substitute"
+            on-oj-action="[[$listeners.buttonAction8]]">
+          </oj-button>
+
+          <oj-button label="Next" class="oj-lg-down-web-padding-end oj-button-sm"
+            on-oj-action="[[$listeners.buttonAction10]]" chroming="callToAction">
+            <span class="oj-ux-ico-chevron-circle-right" slot="endIcon"></span>
+          </oj-button>
+
+          <oj-button label="Done" on-oj-action="[[$listeners.buttonAction]]" style="padding-left:10px;"
+            chroming="callToAction" class="oj-lg-down-web-padding-start oj-button-sm">
+
+          </oj-button>
+          <oj-bind-if test="[[ !$variables.RatesData.length > 0  && $variables.MasterTabObj.equipment_Class]]">
+            <oj-button label="Create bill rate" class="oj-lg-down-web-padding-end oj-button-sm" chroming="callToAction"
+              on-oj-action="[[$listeners.buttonAction20]]">
+            </oj-button>
+          </oj-bind-if>
+          <oj-bind-if test="[[ $variables.RatesData.length > 0 ]]">
+            <oj-button label="View Bill Rate" class="oj-lg-down-web-padding-end oj-button-sm" chroming="callToAction"
+              on-oj-action="[[$listeners.buttonAction18]]">
+            </oj-button>
+          </oj-bind-if>
+        </oj-toolbar>
+      </div>
+
+    </oj-bind-if>
+    <oj-bind-if test='[[ $variables.selectedVal === "page-assets" ]]'>
+      <oj-collapsible expanded="true">
+        <span slot="header"> Fixed Assets</span>
+        <oj-form-layout columns="4" label-edge="top" class="oj-sm-12" style="margin-top: 30px" max-columns="4">
+          <oj-select-single label-hint="Purchase Order" value="{{ $variables.AssetsTabObj.purchase_order }}"
+            data="[[ $variables.purchaseOrderADP ]]" item-text="OrderNumber"
+            on-value-item-changed="[[$listeners.selectValueItem15]]"></oj-select-single>
+          <oj-select-single label-hint="Purchase Order Line" value="{{ $variables.AssetsTabObj.purchase_order_line }}"
+            item-text="POLineId"
+            data="[[$variables.poLineADP]]">
+          </oj-select-single>
+
+
+          <oj-select-single label-hint="Project" value="{{ $variables.AssetsTabObj.project_id }}"
+            data="[[ $variables.projectNameADP ]]" item-text="ProjectName"
+            on-value-item-changed="[[$listeners.selectValueItem]]"></oj-select-single>
+          <oj-select-single label-hint="Task" value="{{ $variables.AssetsTabObj.task_id }}"
+            data="[[ $variables.getTaskDetailsADP ]]" disabled="[[ !$variables.AssetsTabObj.project_id ]]"
+            item-text="TaskName" on-value-item-changed="[[$listeners.selectValueItem2]]"></oj-select-single>
+          <oj-input-text label-hint="Person" value="{{ $variables.AssetsTabObj.person }}"
+            required='[[ $variables.MasterTabObj.equipment_Type === "Employee-Owned" ? true : false ]]'></oj-input-text>
+          <oj-input-text label-hint="Insured By" value="{{ $variables.AssetsTabObj.insured_by }}"></oj-input-text>
+          <oj-input-text label-hint="Insured Policy" value="{{ $variables.AssetsTabObj.insured_policy }}">
+          </oj-input-text>
+          <oj-input-date label-hint="Date In Service" value="{{ $variables.AssetsTabObj.dateInService }}">
+          </oj-input-date>
+          <oj-input-date label-hint="Retired Date" value="{{ $variables.AssetsTabObj.retriredDate }}"></oj-input-date>
+        </oj-form-layout>
+      </oj-collapsible>
+      <oj-collapsible expanded="true">
+        <span slot="header">Maintenance Assets</span>
+        <oj-form-layout columns="4" label-edge="top" class="oj-sm-12" style="margin-top: 30px" max-columns="4">
+          <oj-input-text label-hint="Serial Number" disabled="true" value="{{ $variables.assetobj.serial_number }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Maintenance Asset Number" disabled="true"
+            value="{{ $variables.assetobj.assetName }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Operating Organization" disabled="true"
+            value="{{ $variables.assetobj.item_organization }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Maintenance Organization" disabled="true"
+            value="{{ $variables.assetobj.item_organization }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Location Type" disabled="true" value="{{ $variables.assetobj.location_type }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Location Organization" disabled="true"
+            value="{{ $variables.assetobj.location_organization }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Work Center" disabled="true" value="{{ $variables.assetobj.work_center_code }}">
+          </oj-input-text>
+          <oj-input-text label-hint="Work Area" disabled="true" value="{{ $variables.assetobj.work_area_code }}">
+          </oj-input-text>
+
+          <oj-input-text label-hint="Asset Group" readonly="true">
+          </oj-input-text>
+
+        </oj-form-layout>
+      </oj-collapsible>
+      <div class="oj-flex">
+        <div class="oj-flex-item "></div>
+        <div class="oj-flex-item ">
+          <oj-button label="Next" on-oj-action="[[$listeners.buttonAction11]]" chroming="callToAction">
+            <span class="oj-ux-ico-chevron-circle-right" slot="endIcon"></span>
+          </oj-button>
+        </div>
+      </div>
+    </oj-bind-if>
+    <oj-bind-if test='[[ $variables.selectedVal === "page-manufaturer" ]]'>
+      <oj-form-layout columns="3" label-edge="top" class="oj-sm-12" style="margin-top: 30px">
+        <oj-select-single label-hint="Manufacturer"
+          required='[[$variables.MasterTabObj.equipment_Class !=="BULK ITEMS" && $variables.MasterTabObj.equipment_Class !=="SMALL TOOLS" &&  $variables.MasterTabObj.equipment_Class !=="CONSUMABLES"   ]]'
+          value="{{ $variables.ManufacturerTabObj.manufacturer }}" data="[[ $variables.manufacturersSDP ]]"
+          item-text="OrganizationName"></oj-select-single>
+        <oj-input-number label-hint="Model Year" value="{{ $variables.ManufacturerTabObj.modelYear }}"
+          converter='{"options":{"useGrouping":false},"type":"number"}'>
+        </oj-input-number>
+
+        <!-- <oj-input-text label-hint="Model Year" value="{{ $variables.ManufacturerTabObj.modelYear }}"></oj-input-text> -->
+        <oj-input-text label-hint="Model Number" value="{{ $variables.ManufacturerTabObj.modelNumber }}">
+        </oj-input-text>
+        <oj-input-text label-hint="Color" value="{{ $variables.ManufacturerTabObj.color}}"></oj-input-text>
+        <oj-input-text label-hint="License State" value="{{ $variables.ManufacturerTabObj.licenceState }}">
+        </oj-input-text>
+        <oj-input-text label-hint="License Number" value="{{ $variables.ManufacturerTabObj.licence_Number }}">
+        </oj-input-text>
+        <oj-input-text label-hint="Fuel Type" value="{{ $variables.ManufacturerTabObj.fuel_Type }}"></oj-input-text>
+        <oj-bind-if
+          test='[[ $variables.MasterTabObj.equipment_Class !=="BULK ITEMS" && $variables.MasterTabObj.equipment_Class !=="SMALL TOOLS" &&  $variables.MasterTabObj.equipment_Class !=="CONSUMABLES" ]]'>
+          <!-- <oj-input-text label-hint="Serial Number" value="{{ $variables.ManufacturerTabObj.serial_Num }}">
+          </oj-input-text> -->
+
+
+        </oj-bind-if>
+        <oj-input-date label-hint="License Expiry" value="{{ $variables.ManufacturerTabObj.licence_expiry }}">
+        </oj-input-date>
+        <oj-input-number label-hint="Weight" value="{{ $variables.ManufacturerTabObj.weight }}"></oj-input-number>
+        <oj-input-text label-hint="Warranty Code" value="{{ $variables.ManufacturerTabObj.warranty_code }}">
+        </oj-input-text>
+      </oj-form-layout>
+      <div class="oj-flex">
+        <div class="oj-flex-item"></div>
+        <div class="oj-flex-item">
+          <!-- <oj-button label="Save Details" class="oj-button-full-width"
+                        on-oj-action="[[$listeners.buttonAction6]]">
+                    </oj-button> -->
+          <oj-button label="Next" on-oj-action="[[$listeners.buttonAction12]]" chroming="callToAction">
+            <span class="oj-ux-ico-chevron-circle-right" slot="endIcon"></span>
+          </oj-button>
+        </div>
+      </div>
+    </oj-bind-if>
+    <oj-bind-if test='[[ $variables.selectedVal === "page-location"]]'>
+      <oj-form-layout columns="2" label-edge="top" class="oj-sm-12" style="margin-top: 30px" max-columns="2">
+        <oj-input-text label-hint="Default Location" clear-icon="always"
+          value="{{ $variables.LocationTabObj.p_default_location }}" on-click="[[$listeners.inputTextClick]]"
+          required="true">
+        </oj-input-text>
+        <oj-input-text label-hint="Address Line1" clear-icon="always"
+          value="{{ $variables.LocationTabObj.p_address_line1 }}"></oj-input-text>
+        <oj-input-text label-hint="Address Line2" clear-icon="always"
+          value="{{ $variables.LocationTabObj.p_address_line2 }}"></oj-input-text>
+        <oj-input-text label-hint="City" value="{{ $variables.LocationTabObj.p_city }}"></oj-input-text>
+        <oj-input-text label-hint="Country" value="{{ $variables.LocationTabObj.p_country }}"></oj-input-text>
+        <oj-input-text label-hint="Zip" value="{{ $variables.LocationTabObj.p_zip }}"></oj-input-text>
+      </oj-form-layout>
+      <div class="oj-flex">
+        <div class="oj-flex-item "></div>
+        <div class="oj-flex-item">
+          <!-- <oj-button label="Save Details" class="oj-button-full-width"
+                        on-oj-action="[[$listeners.buttonAction7]]">
+                    </oj-button> -->
+          <oj-button label="Next" on-oj-action="[[$listeners.buttonAction13]]" chroming="callToAction">
+            <span class="oj-ux-ico-chevron-circle-right" slot="endIcon"></span>
+          </oj-button>
+        </div>
+      </div>
+    </oj-bind-if>
+    <oj-bind-if test='[[ $variables.selectedVal === "page-leasing"]]'>
+      <oj-form-layout columns="2" label-edge="top" class="oj-sm-12" style="margin-top: 30px">
+        <oj-select-single label-hint="Vendor" value="{{ $variables.LeasingTabObj.vendor }}"
+          data="[[ $variables.vendorSDP ]]" item-text="Supplier"
+          on-value-item-changed="[[$listeners.selectValueItem7]]"></oj-select-single>
+        <oj-input-date label-hint="Lease Start Date" value="{{ $variables.LeasingTabObj.lease_start_date }}">
+        </oj-input-date>
+        <oj-input-date label-hint="Lease End Date" value="{{ $variables.LeasingTabObj.lease_end_date }}">
+        </oj-input-date>
+        <oj-input-text label-hint="Lease Rate" value="{{ $variables.LeasingTabObj.lease_rate }}"></oj-input-text>
+      </oj-form-layout>
+      <div class="oj-flex">
+
+        <div class="oj-flex-item">
+          <!-- <oj-button label="Save Details" class="oj-button-full-width"
+                        on-oj-action="[[$listeners.buttonAction5]]">
+                    </oj-button> -->
+          <oj-button label="Next" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction14]]"
+            chroming="callToAction">
+          </oj-button>
+        </div>
+      </div>
+    </oj-bind-if>
+    <oj-bind-if test='[[ $variables.selectedVal === "page-costing"]]'>
+      <oj-form-layout columns="3" label-edge="top" class="oj-sm-12" style="margin-top: 30px">
+        <!-- <oj-switch label-hint="Auto Costing Flag" value="{{ $variables.CostingTabObj.auto_Costing_flag }}"></oj-switch> -->
+        <oj-select-single label-hint="Expenditure Org" value="{{ $variables.CostingTabObj.expenditure_org }}"
+          data="[[ $variables.expenditureOrgSDP ]]" item-text="organization"></oj-select-single>
+        <oj-input-text label-hint="Billing Category" value="{{ $variables.CostingTabObj.billing_category }}">
+        </oj-input-text>
+        <oj-select-single label-hint="Rental Purchase Order" value="{{ $variables.CostingTabObj.purchase_order }}"
+          data="[[ $variables.purchaseOrderSDP ]]" item-text="OrderNumber"></oj-select-single>
+      </oj-form-layout>
+      <div class="oj-flex">
+        <div class="oj-flex-item"></div>
+        <div class="oj-flex-item">
+          <!-- <oj-button label="Save Details" class="oj-button-full-width"
+                        on-oj-action="[[$listeners.buttonAction4]]">
+                    </oj-button>                                        -->
+          <oj-button label="Save Details" on-oj-action="[[$listeners.buttonAction15]]" chroming="callToAction"
+            class="oj-button-sm">
+            <span class="oj-ux-ico-save" slot="startIcon"></span>
+          </oj-button>
+        </div>
+      </div>
+    </oj-bind-if>
+  </div>
+  <!-- <oj-table data="[[ $variables.eqpPairingAdp ]]" style="width:100%;height:40vh"
+      columns='[{"headerText":"Equipment Name","field":"lkpvalue"},{"headerText":"Priority","field":"priority","template":"priority"}]'
+      selection-mode.row="multiple" on-oj-before-row-edit="[[$listeners.tableBeforeRowEdit2]]" edit-mode="rowEdit"
+      on-oj-before-row-edit-end="[[$listeners.tableBeforeRowEditEnd2]]"
+      selected.row="{{ $variables.selectedEqpPairKey }}" on-selected-changed="[[$listeners.tableSelected2]]">
+
+      <template slot="priority">
+         <oj-bind-if test='[[$current.mode=="navigation"]]'>
+             <oj-bind-text value="[[ $current.data]]"></oj-bind-text>
+        </oj-bind-if>
+        <oj-bind-if test='[[$current.mode=="edit"]]'>
+          <oj-input-text value="{{ $variables.eqpPairing.priority }}">
+
+          </oj-input-text>
+        
+        </oj-bind-if>
+      </template>
+    </oj-table> -->
+</div>
+<oj-dialog dialog-title="" id="loadingDialog" class="myloader" style="width: 350px">
+  <div slot="body">
+    <div class="oj-flex-item">
+      <span style="font-size:20px;color:#006AA2;font-weight:600;margin-top:-2vh">Loading .....</span>
+      <br />
+      <oj-progress-bar value="-1" class="oj-sm-margin-3x-top"></oj-progress-bar>
+    </div>
+  </div>
+</oj-dialog>
+<oj-dialog dialog-title="Dialog" id="oj-dialog--1239369820-3" style="">
+  <div slot="body">
+    <div class="oj-flex">
+      <div id="map" style="width:550px;height:330px;margin-top:10px"></div>
+    </div>
+  </div>
+  <div slot="footer">
+    <oj-button on-oj-action="[[$listeners.buttonAction17]]">Submit</oj-button>
+  </div>
+</oj-dialog>
+
+
+<oj-dialog id="Substitute" style="width:55%;height:60vh">
+
+  <div slot="body">
+    <br>
+    <div class="oj-flex-item oj-flex oj-sm-justify-content-flex-end oj-sm-align-items-center">
+      <span style="color:red">Double-tap a record, edit, then click outside to save.</span>
+    </div>
+    <!-- <oj-table data="[[ $variables.eqpSubstituteAdp ]]" style="width:100%;height:45vh"
+      columns='[{"headerText":"Equipment Name","field":"lkpvalue"},{"headerText":"Qunatity","field":"qunatity","template":"quantity"},{"headerText":"UOM","field":"uom","template":"uom"},{"headerText":"Priority","field":"priority","template":"priority"}]'
+      selection-mode.column="none" columns-default.resizable="enabled" selection-mode.row="multiple"
+      on-oj-before-row-edit="[[$listeners.tableBeforeRowEdit]]" edit-mode="rowEdit"
+      on-oj-before-row-edit-end="[[$listeners.tableBeforeRowEditEnd]]" selected.row="{{ $variables.selectedKey }}"
+      on-selected-changed="[[$listeners.tableSelected]]">
+
+
+      <template slot="quantity">
+        <oj-bind-if test='[[$current.mode=="navigation"]]'>
+          <oj-bind-text value="[[ $current.data]]"></oj-bind-text>
+        </oj-bind-if>
+        <oj-bind-if test='[[$current.mode=="edit"]]'>
+          <oj-input-text value="{{ $variables.eqpSubstitute.qunatity }}">
+          </oj-input-text>
+        </oj-bind-if>
+      </template>
+
+      <template slot="priority">
+        <oj-bind-if test='[[$current.mode=="navigation"]]'>
+          <oj-bind-text value="[[ $current.data]]"></oj-bind-text>
+        </oj-bind-if>
+        <oj-bind-if test='[[$current.mode=="edit"]]'>
+          <oj-input-text value="{{ $variables.eqpSubstitute.priority }}">
+          </oj-input-text>
+        </oj-bind-if>
+      </template>
+
+
+      <template slot="uom">
+        <oj-bind-if test='[[$current.mode=="navigation"]]'>
+          <oj-bind-text value="[[ $current.data]]"></oj-bind-text>
+        </oj-bind-if>
+        <oj-bind-if test='[[$current.mode=="edit"]]'>
+          <oj-input-text value="{{ $variables.eqpSubstitute.uom }}">
+          </oj-input-text>
+        </oj-bind-if>
+      </template>
+
+    </oj-table> -->
+
+  <div class="oj-helper-text-align-end">
+    <oj-button class="oj-button-sm" label="ADD" chroming="callToAction" on-oj-action="[[$listeners.buttonAction27]]">
+        <span class="oj-ux-ico-plus" slot="startIcon"></span>
+    </oj-button>
+    </div>    
+    <oj-table data="[[ $variables.substituteADP ]]" style="width:100%;height:45vh"
+      columns='[{"headerText":"Equipment Name","field":"lkpvalue","template":"eqpName"},{"headerText":"Quantity","field":"qunatity","template":"quantity"},{"headerText":"UOM","field":"uom","template":"uom"},{"headerText":"Priority","field":"priority","template":"priority"}]'
+      edit-mode="rowEdit" on-oj-before-row-edit="[[$listeners.tableBeforeRowEdit4]]"
+      on-oj-before-row-edit-end="[[$listeners.tableBeforeRowEditEnd4]]">
+
+
+
+   <template slot="eqpName">
+        <oj-bind-if test='[[$current.mode=="navigation"]]'>
+          <oj-bind-text value="[[ $current.data]]"></oj-bind-text>
+        </oj-bind-if>
+        <oj-bind-if test='[[$current.mode=="edit"]]'>
+         <oj-select-single value="{{ $variables.eqpSubstitute.lkpvalue }}"
+           data="[[$variables.getGetEquipmentLOVListSDP3]]" item-text="lkpvalue"
+           on-value-item-changed="[[$listeners.selectValueItem13]]" > </oj-select-single>
+        </oj-bind-if>
+      </template>
+
+       <template slot="quantity">
+        <oj-bind-if test='[[$current.mode=="navigation"]]'>
+          <oj-bind-text value="[[ $current.data]]"></oj-bind-text>
+        </oj-bind-if>
+        <oj-bind-if test='[[$current.mode=="edit"]]'>
+          <oj-input-text value="{{ $variables.eqpSubstitute.qunatity }}">
+          </oj-input-text>
+        </oj-bind-if>
+      </template>
+
+      <template slot="priority">
+        <oj-bind-if test='[[$current.mode=="navigation"]]'>
+          <oj-bind-text value="[[ $current.data]]"></oj-bind-text>
+        </oj-bind-if>
+        <oj-bind-if test='[[$current.mode=="edit"]]'>
+          <oj-input-text value="{{ $variables.eqpSubstitute.priority }}">
+          </oj-input-text>
+        </oj-bind-if>
+      </template>
+
+
+      <template slot="uom">
+        <oj-bind-if test='[[$current.mode=="navigation"]]'>
+          <oj-bind-text value="[[ $current.data]]"></oj-bind-text>
+        </oj-bind-if>
+        <oj-bind-if test='[[$current.mode=="edit"]]'>
+          <oj-input-text value="{{ $variables.eqpSubstitute.uom }}">
+          </oj-input-text>
+        </oj-bind-if>
+      </template>
+
+      
+    </oj-table>
+  </div>
+
+  <div slot="footer">
+    <oj-button label="Save" chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction22]]">
+      <span class="oj-ux-ico-save" slot="startIcon"></span>
+    </oj-button>
+    <oj-button label="Close" chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction21]]">
+      <span class="oj-ux-ico-close" slot="endIcon"></span>
+    </oj-button>
+  </div>
+
+</oj-dialog>
+
+
+<oj-dialog id="pairing" style="width:45%;height:60vh">
+  <div slot="body">
+    <br>
+    <div class="oj-flex-item oj-flex oj-sm-justify-content-flex-end oj-sm-align-items-center">
+      <span style="color:red">Double-tap a record, edit, then click outside to save.</span>
+    </div>
+    <!-- <oj-table data="[[ $variables.eqpPairingAdp ]]" style="width:100%;height:40vh"
+      columns='[{"headerText":"Equipment Name","field":"lkpvalue"},{"headerText":"Priority","field":"priority","template":"priority"}]'
+      selection-mode.row="multiple" on-oj-before-row-edit="[[$listeners.tableBeforeRowEdit2]]" edit-mode="rowEdit"
+      on-oj-before-row-edit-end="[[$listeners.tableBeforeRowEditEnd2]]"
+      selected.row="{{ $variables.selectedEqpPairKey }}" on-selected-changed="[[$listeners.tableSelected2]]">
+
+      <template slot="priority">
+   <oj-bind-if test='[[$current.mode=="navigation"]]'>
+             <oj-bind-text value="[[ $current.data]]"></oj-bind-text>
+        </oj-bind-if>
+        <oj-bind-if test='[[$current.mode=="edit"]]'>
+          <oj-input-text value="{{ $variables.eqpPairing.priority }}">
+
+          </oj-input-text>
+        </oj-bind-if>
+      </template>
+    </oj-table> -->
+
+<div class="oj-helper-text-align-end" >
+   <oj-button label="ADD" chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction26]]">
+      <span class="oj-ux-ico-plus" slot="startIcon"></span>
+   </oj-button>
+</div>
+ 
+    <oj-table
+      columns='[{"headerText":"Equipment Name","field":"lkpvalue","template":"eqpName"},{"headerText":"Priority","field":"priority","template":"priority"}]'
+      style="width:100%;height:40vh" edit-mode="rowEdit" data="[[ $variables.paringADP ]]"
+      on-oj-before-row-edit="[[$listeners.tableBeforeRowEdit3]]"
+      on-oj-before-row-edit-end="[[$listeners.tableBeforeRowEditEnd3]]">
+
+    <template slot="eqpName">
+      <oj-bind-if test='[[$current.mode=="navigation"]]'>
+       <oj-bind-text value="[[ $current.data]]"></oj-bind-text>
+       </oj-bind-if>
+       <oj-bind-if test='[[$current.mode=="edit"]]'>
+        <oj-select-single value="{{ $variables.eqpPairing.lkpvalue }}" data="[[$variables.getGetEquipmentLOVListSDP2]]"
+          item-text="lkpvalue" on-value-item-changed="[[$listeners.selectValueItem12]]"></oj-select-single>
+       </oj-bind-if>
+    </template>
+
+      <template slot="priority">
+      <oj-bind-if test='[[$current.mode=="navigation"]]'>
+       <oj-bind-text value="[[ $current.data]]"></oj-bind-text>
+       </oj-bind-if>
+       <oj-bind-if test='[[$current.mode=="edit"]]'>
+         <oj-input-text  value="{{ $variables.eqpPairing.priority }}"></oj-input-text>
+       </oj-bind-if>
+    </template>
+
+
+    </oj-table>
+
+  </div>
+  <div slot="footer">
+
+    <oj-button label="Save" class="oj-button-sm" chroming="callToAction" on-oj-action="[[$listeners.buttonAction25]]">
+      <span class="oj-ux-ico-save" slot="startIcon"></span>
+    </oj-button>
+
+    <oj-button label="Close" chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction24]]">
+      <span class="oj-ux-ico-close" slot="endIcon"></span>
+    </oj-button>
+  </div>
+</oj-dialog>
+
+<oj-dialog dialog-title="Dialog" id="rateschedule" style="min-width: 75%;" drag-affordance="title-bar"
+  cancel-behavior="icon" resize-behavior="resizable">
+  <div slot="body">
+    <div>
+      <h6 class="oj-header">Rate Schedules</h6>
+    </div>
+
+    <oj-form-layout columns="6" max-columns="6"
+      class="oj-formlayout-full-width oj-bg-neutral-170 oj-color-invert oj-sm-margin-4x-top">
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom oj-sm-margin-2x-start">
+        <oj-highlight-text text="Hours Type" match-text="Highlight"></oj-highlight-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom ">
+        <oj-highlight-text text="Cost Rate" match-text="Highlight"></oj-highlight-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom ">
+        <oj-highlight-text text="Bill Rate" match-text="Highlight"></oj-highlight-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom ">
+        <oj-highlight-text text="Currency" match-text="Highlight"></oj-highlight-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom ">
+        <oj-highlight-text text="Start Date" match-text="Highlight"></oj-highlight-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom ">
+        <oj-highlight-text text="End Date" match-text="Highlight"></oj-highlight-text>
+      </div>
+    </oj-form-layout>
+
+
+
+    <oj-form-layout columns="6" max-columns="6" class="oj-formlayout-full-width">
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-highlight-text text="Downtime" match-text="Highlight"></oj-highlight-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-input-text readonly="true" aria-label="Cost Rate" value="{{ $variables.ratesObj.down_cost }}">
+        </oj-input-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-input-text readonly="true" aria-label="Bill Rate" value="{{ $variables.ratesObj.down_bill }}">
+        </oj-input-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+
+        <oj-select-single readonly="true" aria-label="$ (Dollar)" data="[[ $variables.CurrencyLOV ]]"
+          value="{{ $variables.ratesObj.down_currency }}">
+        </oj-select-single>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+
+        <oj-input-date readonly="true" aria-label="mm/dd/yyyy" value="{{ $variables.ratesObj.down_start_date }}">
+        </oj-input-date>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-input-date readonly="true" aria-label="mm/dd/yyyy" value="{{ $variables.ratesObj.down_end_date }}">
+        </oj-input-date>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+
+        <oj-highlight-text text="Mobilization" match-text="Highlight"></oj-highlight-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-input-text readonly="true" aria-label="Cost Rate" value="{{ $variables.ratesObj.mob_cost }}">
+        </oj-input-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+
+        <oj-input-text readonly="true" aria-label="Bill Rate" value="{{ $variables.ratesObj.mob_bill }}">
+        </oj-input-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-select-single readonly="true" aria-label="$ (Dollar)" data="[[ $variables.CurrencyLOV ]]"
+          value="{{ $variables.ratesObj.mob_currency }}">
+        </oj-select-single>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-input-date readonly="true" aria-label="mm/dd/yyyy" value="{{ $variables.ratesObj.mob_start_date }}">
+        </oj-input-date>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-input-date readonly="true" aria-label="mm/dd/yyyy" value="{{ $variables.ratesObj.mob_end_date }}">
+        </oj-input-date>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-highlight-text match-text="Highlight" text="Transport">
+        </oj-highlight-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-input-text readonly="true" aria-label="Cost Rate" value="{{ $variables.ratesObj.transp_cost }}">
+        </oj-input-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-input-text readonly="true" aria-label="Bill Rate" value="{{ $variables.ratesObj.transp_bill }}">
+        </oj-input-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-select-single readonly="true" aria-label="$ (Dollar)" data="[[ $variables.CurrencyLOV ]]"
+          value="{{ $variables.ratesObj.transp_currency }}">
+        </oj-select-single>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-input-date readonly="true" aria-label="mm/dd/yyyy" value="{{ $variables.ratesObj.transp_start_date }}">
+        </oj-input-date>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-input-date readonly="true" aria-label="mm/dd/yyyy" value="{{ $variables.ratesObj.transp_end_date }}">
+        </oj-input-date>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+
+        <oj-highlight-text text="Usage" match-text="Highlight"></oj-highlight-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-input-text readonly="true" aria-label="Cost Rate" value="{{ $variables.ratesObj.usage_cost }}">
+        </oj-input-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+
+        <oj-input-text readonly="true" aria-label="Bill Rate" value="{{ $variables.ratesObj.usage_bill }}">
+        </oj-input-text>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+
+        <oj-select-single readonly="true" aria-label="$ (Dollar)" data="[[ $variables.CurrencyLOV ]]"
+          value="{{ $variables.ratesObj.usage_currency }}">
+        </oj-select-single>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-input-date readonly="true" aria-label="mm/dd/yyyy" value="{{ $variables.ratesObj.usage_start_date }}">
+        </oj-input-date>
+      </div>
+      <div class="oj-flex-item oj-sm-margin-2x-top oj-sm-margin-2x-bottom">
+        <oj-input-date readonly="true" aria-label="mm/dd/yyyy" value="{{ $variables.ratesObj.usage_end_date }}">
+        </oj-input-date>
+      </div>
+    </oj-form-layout>
+  </div>
+  <div slot="footer">
+    <oj-button chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction19]]">Close
+    </oj-button>
+  </div>
+</oj-dialog>

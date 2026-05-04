@@ -1,0 +1,50 @@
+{
+    "items": [
+        {
+            "equipment_id": 626,
+            "equipment_number": "F150 XL-4750103044-626",
+            "equipment_name": "Ford F150 Crew Cab",
+            "eqp_number_label": "F150 XL-4750103044-626-Ford F150 Crew Cab",
+            "availability_status": "Not Available"
+        },
+        {
+            "equipment_id": 625,
+            "equipment_number": "F150 XL-4750103044-625",
+            "equipment_name": "Ford F150 Crew Cab",
+            "eqp_number_label": "F150 XL-4750103044-625-Ford F150 Crew Cab",
+            "availability_status": "Partially Available"
+        },
+        {
+            "equipment_id": 624,
+            "equipment_number": "F150 XL-4750103044-624",
+            "equipment_name": "Ford F150 Crew Cab",
+            "eqp_number_label": "F150 XL-4750103044-624-Ford F150 Crew Cab",
+            "availability_status": "Not Available"
+        },
+        {
+            "equipment_id": 505,
+            "equipment_number": "F150 XL-4750103044-505",
+            "equipment_name": "Ford F150 Crew Cab",
+            "eqp_number_label": "F150 XL-4750103044-505-Ford F150 Crew Cab",
+            "availability_status": "Not Available"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 4,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_EqpDetailSearch?p_equipment_name=Ford+F150+Crew+Cab&p_start_date=2025-08-13&p_end_date=2025-08-31&p_equipment_resource_class=FLEET+TRUCK"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_EqpDetailSearch?p_equipment_name=Ford+F150+Crew+Cab&p_start_date=2025-08-13&p_end_date=2025-08-31&p_equipment_resource_class=FLEET+TRUCK"
+        }
+    ]
+}

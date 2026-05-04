@@ -1,0 +1,283 @@
+{
+    "backends": {
+        "ics": {
+            "serviceType": "ics",
+            "description": "casey.brown",
+            "servers": [
+                {
+                    "url": "https://oicdev-axjuvjkpckuf-px.integration.us-phoenix-1.ocp.oraclecloud.com",
+                    "description": "Overridden Integration Server",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "forceProxy": "always",
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_96317d46-bf39-4e6c-b144-a45bccfd62e7"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_60213f6f-2dd0-4358-a718-5215f9edbc9e"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "TimeRite_Ords": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/EquipmentRite",
+                    "description": "Ords Timerite, timeritedemo , timerite",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                        }
+                    }
+                }
+            ]
+        },
+        "Default-APIs": {
+            "servers": [
+                {
+                    "url": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources",
+                    "description": "Default Server",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_222a0df8-2a69-4bee-9e78-bc4fcadf1c2b"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_b26fc642-2a78-45e9-bb5b-eabd34e6a01f"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "approveRejectOIC": {
+            "servers": [
+                {
+                    "url": "https://riteoicdev-idjm2yj32zav-ia.integration.us-ashburn-1.ocp.oraclecloud.com/ic/api/integration/v1/flows/rest",
+                    "description": "Ic Api",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "headers": {
+                     },
+                        "secureHeaders": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_966dc689-4559-4ba6-963e-abbf7a0938ef"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_376918f3-4490-433a-8a41-7242f116d0ba"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "CRM": {
+            "servers": [
+                {
+                    "url": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com/crmRestApi/resources",
+                    "description": "Default Server",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "headers": {
+                     },
+                        "secureHeaders": {
+                        },
+                        "forceProxy": "cors",
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_ce05078b-a6c9-4693-8bbc-58b1dc8b79a6"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_b46df0c3-e814-4d1c-b666-e0fc0de09803"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "OICSERVICE": {
+            "servers": [
+                {
+                    "url": "https://riteoicdev-idjm2yj32zav-ia.integration.us-ashburn-1.ocp.oraclecloud.com/ic/api/integration/v2/flows/rest/project",
+                    "description": "Ic Api",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_ac030d22-3551-4e42-9b8e-18d0f62eace0"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_44e4b438-59ac-4b5b-95c8-188d38c64f6a"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "SCM": {
+            "servers": [
+                {
+                    "url": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com/fscmRestApi/resources/11.13.18.05",
+                    "description": "FscmRestApi 11.13.18.05",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_ed1c58bc-8345-44d3-931a-c15f57e4f662"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_6a43747e-5a9f-4daa-99f2-006d36674f27"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "HCM_FusionRestApi": {
+            "servers": [
+                {
+                    "url": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com/hcmRestApi/resources/11.13.18.05",
+                    "description": "HcmRestApi 11.13.18.05",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_cf0d54a5-8dea-4c95-94f9-0231a2792802"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_1bf3d8f4-0173-4288-919b-463379cd46c9"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "HCM_Latest": {
+            "servers": [
+                {
+                    "url": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/hcmRestApi/resources/latest",
+                    "description": "HcmRestApi Latest",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_10d7317d-61e1-4caa-b2ea-cef0042293ab"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_369bdd50-3b64-44a4-8b03-b01125f8a7b2"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "Cloud": {
+            "servers": [
+                {
+                    "url": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com",
+                    "description": "fusion_cloud",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "authentication": {
+
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_ece65d5f-09c1-415f-b9c6-1dec547b44a9"
+                            },
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_4403acc2-d37f-4cf1-b6cd-30b2aa3babf4"
+                            }
+                        },
+                        "headers": {
+                        }
+                    }
+                }
+            ]
+        },
+        "ORDS": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/timerite",
+                    "description": "Ords Xxeq Oii"
+                }
+            ]
+        },
+        "Time_management": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080",
+                    "description": "129.158.228.138"
+                }
+            ]
+        },
+        "Equipment_template": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080",
+                    "description": "129.158.228.138"
+                }
+            ]
+        }
+      }
+}

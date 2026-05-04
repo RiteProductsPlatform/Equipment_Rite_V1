@@ -1,0 +1,130 @@
+{
+  "root": "resetVariablesCrewSetupHeaderObj",
+  "description": "",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Failed to fetch Headers",
+        "type": "error",
+        "displayMode": "transient"
+      }
+    },
+    "callRestGetGetCrewSetupHeader": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getGetCrewSetupHeader",
+        "uriParams": {
+          "CREW_NAME": "{{ $page.variables.searchCrew }}"
+        }
+      },
+      "outcomes": {
+        "success": "callFunctionCrewTypeCheck",
+        "failure": "fireNotification"
+      }
+    },
+    "assignVariablesCrewSetupHeaderObj": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.crewSetupHeaderObj": {
+          "source": "{{ $chain.results.callRestGetGetCrewSetupHeader.body.items[0] }}",
+          "auto": "always"
+        },
+        "$page.variables.IsSearch": {
+          "source": true
+        },
+        "$page.variables.resFlag": {
+          "source": "{{ $chain.results.callFunctionCrewTypeCheck.resFlag }}"
+        },
+        "$page.variables.perFlag": {
+          "source": "{{ $chain.results.callFunctionCrewTypeCheck.perFlag }}"
+        }
+      },
+      "outcomes": {
+        "success": "ifCrewSetupHeaderObj"
+      }
+    },
+    "fireNotification3": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Failed to fetch Lines",
+        "type": "error",
+        "displayMode": "transient"
+      }
+    },
+    "ifCrewSetupHeaderObj": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $page.variables.crewSetupHeaderObj.crewsetup_id ]]"
+      },
+      "outcomes": {
+        "true": "resetVariablesEquipmentLines"
+      }
+    },
+    "resetVariablesCrewSetupHeaderObj": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.crewSetupHeaderObj",
+          "$page.variables.resFlag"          ,
+          "$page.variables.perFlag"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestGetGetCrewSetupHeader"
+      }
+    },
+    "callRestGetEquipAssignmentData": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/getEquipAssignmentData",
+        "uriParams": {
+          "p_crewsetup_id": "{{ $chain.results.callRestGetGetCrewSetupHeader.body.items[0].crewsetup_id }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesEquipmentLines",
+        "failure": "fireNotification3"
+      }
+    },
+    "assignVariablesEquipmentLines": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.equipmentLines": {
+          "source": {
+            "data": "{{ $chain.results.callRestGetEquipAssignmentData.body.items }}"
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      }
+    },
+    "resetVariablesEquipmentLines": {
+      "module": "vb/action/builtin/resetVariablesAction",
+      "parameters": {
+        "variables": [
+          "$page.variables.equipmentLines.data",
+          "$page.variables.equipmentLines"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestGetEquipAssignmentData"
+      }
+    },
+    "callFunctionCrewTypeCheck": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "crewTypeCheck",
+        "params": [
+          "{{ $chain.results.callRestGetGetCrewSetupHeader.body.items }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesCrewSetupHeaderObj"
+      }
+    }
+  }
+}

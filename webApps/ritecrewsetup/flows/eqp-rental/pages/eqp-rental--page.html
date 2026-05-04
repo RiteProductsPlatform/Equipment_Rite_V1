@@ -1,0 +1,54 @@
+<oj-sp-welcome-page id="oj-sp-wp1" background-color="[[ $page.variables.backgroundColor ]]"
+  illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Equipment Rentals">
+<div class="oj-flex oj-sm-flex-wrap">
+  <oj-bind-for-each data="[[$variables.EquipmentClassADP.data ]]" class="oj-sm-align-self-flex-end">
+          <template>
+            <div onmouseover="this.style.border='2px solid black'"
+              onmouseout="this.style.border='1px solid #ddd';this.style.cursor='pointer';"
+              style="height:300px;width:260px;padding:20px;margin:16px;border:1px solid #ddd;border-radius:16px;box-shadow:0 4px 10px rgba(0,0,0,0.1);display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;transition:border 0.3s ease;background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);border-radius: 8px"
+              on-click="[[$listeners.divClick6]]"
+             >
+              <div style="font-weight:600; font-size:17px; color:#0077b6; margin-bottom:10px;">
+                <a class="oj-color-invert">
+                  <oj-bind-text value="[[ $current.data.equipment_class ]]"></oj-bind-text>
+                </a>
+              </div>
+              <!-- <div
+                style="height: 300px; padding: 0 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                <img :src="[[ $current.data.file_content ]]" alt="Equipment Image" style="height: 75%; width: auto; max-width: 100%;" />
+              </div> -->
+                <img alt="Equipment Image" style="width: 100%; height: 150px; object-fit: cover;"
+            :src="[[ $current.data.file_text ]]"
+               >
+            </div>
+          </template>
+        </oj-bind-for-each>
+  <!-- <oj-bind-for-each data="[[ $variables.EquipmentClassADP.data ]]" class="oj-sm-align-self-flex-end">
+    <template>
+         <div
+           style="width: 220px; margin: 12px; background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);border-radius: 8px"
+           on-click="[[$listeners.divClick5]]"
+          
+           
+           >
+      <oj-card class="oj-sm-margin-2x oj-flex-item" style="width: 200px;  color: white; border-radius: 12px;">
+       
+        <div class="oj-card-content">
+          <h6 class="oj-header oj-color-invert"><oj-bind-text value="[[ $current.data.equipment_class ]]"></oj-bind-text></h6>
+          <img alt="Equipment Image" style="width: 100%; height: 150px; object-fit: cover;"
+            :src="[[ $current.data.file_text ]]"
+               >
+
+    
+          </div>
+      </oj-card>
+      </div>
+    </template>
+  </oj-bind-for-each> -->
+
+</div>
+</oj-sp-welcome-page>

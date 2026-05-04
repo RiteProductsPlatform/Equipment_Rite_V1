@@ -1,0 +1,20 @@
+{
+  "root": "assignVariablesColumns",
+  "description": "",
+  "variables": {
+    "event": {
+      "type": "object",
+      "input": "fromCaller"
+    }
+  },
+  "actions": {
+    "assignVariablesColumns": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.Columns": {
+          "source": "{{ $variables.event.value.map(v=>$page.variables.columnOptions.find(i=>i.field === v)) }}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "root": "callFunctionValidateGroup",
+  "description": "",
+  "actions": {
+    "callFunctionValidateGroup": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $application.functions ]]",
+        "functionName": "validateGroup",
+        "params": [
+          "createformvalidation"
+        ]
+      },
+      "outcomes": {
+        "success": "if"
+      }
+    },
+    "if": {
+      "module": "vb/action/builtin/ifAction",
+      "parameters": {
+        "condition": "[[ $chain.results.callFunctionValidateGroup === 'valid' ]]"
+      },
+      "outcomes": {
+        "true": "callFunctionDateFormatter"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Failed to create headers",
+        "type": "error",
+        "displayMode": "transient"
+      }
+    },
+    "callRestPostCrewSetupHeader": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/postCrewSetupHeader",
+        "body": "{{ $page.variables.crewSetupHeaderObj }}"
+      },
+      "outcomes": {
+        "success": "assignVariablesIsSearch",
+        "failure": "fireNotification"
+      }
+    },
+    "assignVariablesCrewSetupHeaderObj": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.crewSetupHeaderObj": {
+          "source": {
+         
+            "created_by": "{{ $application.user.email }}",
+            "last_updated_by": "{{ $application.user.email }}",
+            "contract_amount": "{{ \"\" }}",
+            "crewsetup_id": "{{ \"\" }}",
+            "po_number": "{{ \"\" }}",
+            "po_quantity": 0,
+            "po_quantity_measure": "{{ \"\" }}",
+            "week": "{{ \"\" }}",
+            "end_date": "{{ $chain.results.callFunctionDateFormatter.endDate }}",
+            "start_date": "{{ $chain.results.callFunctionDateFormatter.startDate }}"
+            
+          },
+          "reset": "none",
+          "auto": "always"
+        }
+      },
+      "outcomes": {
+        "success": "callRestPostCrewSetupHeader"
+      }
+    },
+    "callFunctionDateFormatter": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "dateFormatter",
+        "params": [
+          "{{ $page.variables.crewSetupHeaderObj.start_date }}",
+          "{{ $page.variables.crewSetupHeaderObj.end_date }}"
+        ]
+      },
+      "outcomes": {
+        "success": "assignVariablesCrewSetupHeaderObj"
+      }
+    },
+    "fireNotification2": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Header Created Successfully",
+        "displayMode": "transient",
+        "type": "confirmation"
+      }
+    },
+    "assignVariablesIsSearch": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.IsSearch": {
+          "source": true
+        },
+        "$page.variables.searchCrew": {
+          "source": "{{ $page.variables.crewSetupHeaderObj.crew_name }}"
+        }
+      },
+      "outcomes": {
+        "success": "fireDataProviderEventGetGetCrewNameLOVListSDP"
+      }
+    },
+    "fireDataProviderEventGetGetCrewNameLOVListSDP": {
+      "module": "vb/action/builtin/fireDataProviderEventAction",
+      "parameters": {
+        "target": "[[ $page.variables.getGetCrewNameLOVListSDP ]]",
+        "refresh": null
+      },
+      "outcomes": {
+        "success": "callChainFetchHeadersLines"
+      }
+    },
+    "callChainFetchHeadersLines": {
+      "module": "vb/action/builtin/callChainAction",
+      "parameters": {
+        "id": "TR_FetchHeadersLines"
+      },
+      "outcomes": {
+        "success": "fireNotification2"
+      }
+    }
+  }
+}

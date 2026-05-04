@@ -1,0 +1,50 @@
+{
+  "id": "equipmentsettings",
+  "description": "Flow main",
+  "defaultPage": "crew-time-entry-start",
+  "services": {},
+  "types": {
+    "@decorators.getFscmRestApiResources11_13_18_05GenericLookups": {
+      "endpoint": "getFscmRestApiResources11_13_18_05GenericLookups",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]"
+    },
+    "getFscmRestApiResources11_13_18_05GenericLookups": {
+      "Description": "string",
+      "LookupType": "string",
+      "Meaning": "string"
+    }
+  },
+  "variables": {
+    "eqpClassAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getFscmRestApiResources11_13_18_05GenericLookups",
+        "keyAttributes": "Meaning",
+        "textFilterAttributes": [
+          "Meaning"
+        ]
+      }
+    },
+    "eqpsubclassAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getFscmRestApiResources11_13_18_05GenericLookups",
+        "keyAttributes": "Meaning",
+        "textFilterAttributes": [
+          "Meaning"
+        ]
+      }
+    }
+  },
+  "eventListeners": {
+    "vbEnter": {
+      "chains": [
+        {
+          "parameters": {},
+          "chain": "vbEnterListener"
+        }
+      ]
+    }
+  }
+}

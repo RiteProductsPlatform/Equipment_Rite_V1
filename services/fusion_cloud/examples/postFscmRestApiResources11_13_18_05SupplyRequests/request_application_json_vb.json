@@ -1,0 +1,31 @@
+{
+  "InterfaceSourceCode": "EXT",
+  "InterfaceBatchNumber": "OAK_CIANBRO_011",
+  "SupplyRequestStatus": "NEW",
+  "SupplyRequestDate": "2026-03-24T11:00:00.000+00:00",
+  "SupplyOrderSource": "EXT",
+  "SupplyOrderReferenceNumber": "OAK_CIANBRO_011",
+  "SupplyOrderReferenceId": 700,
+  "ProcessRequestFlag": "Y",
+  "supplyRequestLines": [
+    {
+      "InterfaceBatchNumber": "OAK_CIANBRO_011",
+      "InterfaceSourceCode": "EXT",
+      "SupplyOrderSource": "EXT",
+      "SupplyOrderReferenceLineNumber": "1",
+      "SupplyOrderReferenceLineId": 700,
+      "SourceOrganizationCode": "OAK_PPM",
+      "DestinationOrganizationCode": "OAK_PROJECT_SITES",
+      "ItemNumber": "ST-Ryobi 18 V-001",
+      "BackToBackFlag": "N",
+      "NeedByDate": "2026-04-05T23:59:59.000+00:00",
+      "Quantity": 1,
+      "UOMCode": "zzu",
+      "PreparerId": 300000307046815,
+      "DeliverToRequesterId": 300000307046815,
+      "SupplyType": "TRANSFER",
+      "SupplyOperation": "CREATE",
+      "DestinationTypeCode": "INVENTORY"
+    }
+  ]
+}

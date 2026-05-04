@@ -1,0 +1,82 @@
+{
+    "items": [
+        {
+            "template_id": 1001,
+            "equipment_id": 101,
+            "equipment_number": "EQ-101",
+            "equipment_name": "Excavator",
+            "equip_req_quantity": "2",
+            "efforts_per_day": "8",
+            "utilization": "75",
+            "notes": "Primary equipment"
+        },
+        {
+            "template_id": 1001,
+            "equipment_id": 2001,
+            "equipment_number": "EQP-001",
+            "equipment_name": "Excavator",
+            "equip_req_quantity": "5",
+            "efforts_per_day": "40",
+            "utilization": "80%",
+            "notes": "Required for foundation work"
+        },
+        {
+            "template_id": 1001,
+            "equipment_id": 2001,
+            "equipment_number": "EQP-001",
+            "equipment_name": "Excavator",
+            "equip_req_quantity": "5",
+            "efforts_per_day": "40",
+            "utilization": "80%",
+            "notes": "Required for foundation work"
+        },
+        {
+            "template_id": 1001,
+            "equipment_id": 2001,
+            "equipment_number": "EQP-001",
+            "equipment_name": "Excavator",
+            "equip_req_quantity": "5",
+            "efforts_per_day": "40",
+            "utilization": "80%",
+            "notes": "Required for foundation work"
+        },
+        {
+            "template_id": 1001,
+            "equipment_id": 2001,
+            "equipment_number": "EQP-001",
+            "equipment_name": "Excavator11",
+            "equip_req_quantity": "5",
+            "efforts_per_day": "40",
+            "utilization": "80%",
+            "notes": "Required for foundation work"
+        },
+        {
+            "template_id": 1001,
+            "equipment_id": 2001,
+            "equipment_number": "EQP-001",
+            "equipment_name": "Excavator1111",
+            "equip_req_quantity": "5",
+            "efforts_per_day": "40",
+            "utilization": "80%",
+            "notes": "Required for foundation work"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 6,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_CRTemplateLines?p_template_id=1001"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQPRite_CRTemplateLines?p_template_id=1001"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "items": [
+        {
+            "project_id": 300000325079133,
+            "project_number": "900R-282BARA",
+            "project_name": "1010391844"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/adminProjectLOV?CONTRACT_NUMBER=987654"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/adminProjectLOV?CONTRACT_NUMBER=987654"
+        }
+    ]
+}

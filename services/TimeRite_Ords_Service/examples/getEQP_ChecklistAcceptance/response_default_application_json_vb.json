@@ -1,0 +1,70 @@
+{
+    "items": [
+        {
+            "check_list_id": 49,
+            "equipment_id": 554,
+            "equipment_number": "SRL_76543468",
+            "equipment_name": "eNovus ROV",
+            "equipment_class": "ROV",
+            "customer_id": null,
+            "agreed_status": null,
+            "check_list_name": "Test all thrusters individually for responsiveness and vibration",
+            "created_by": "nikhil kolisetty",
+            "last_updated_by": "nikhil kolisetty",
+            "creation_date": "2025-06-24T06:58:44Z",
+            "last_updated_date": "2025-06-24T06:58:44Z",
+            "last_update_login": null,
+            "section": "Propulsion Systems"
+        },
+        {
+            "check_list_id": 47,
+            "equipment_id": 554,
+            "equipment_number": "SRL_76543468",
+            "equipment_name": "eNovus ROV",
+            "equipment_class": "ROV",
+            "customer_id": null,
+            "agreed_status": null,
+            "check_list_name": "Inspect outer shell for cracks, dents, or leaks",
+            "created_by": "nikhil kolisetty",
+            "last_updated_by": "nikhil kolisetty",
+            "creation_date": "2025-06-24T06:58:44Z",
+            "last_updated_date": "2025-06-24T06:58:44Z",
+            "last_update_login": null,
+            "section": "General Structure"
+        },
+        {
+            "check_list_id": 48,
+            "equipment_id": 554,
+            "equipment_number": "SRL_76543468",
+            "equipment_name": "eNovus ROV",
+            "equipment_class": "ROV",
+            "customer_id": null,
+            "agreed_status": null,
+            "check_list_name": "Check integrity of joints, mounts, and shock absorbers",
+            "created_by": "nikhil kolisetty",
+            "last_updated_by": "nikhil kolisetty",
+            "creation_date": "2025-06-24T06:58:44Z",
+            "last_updated_date": "2025-06-24T06:58:44Z",
+            "last_update_login": null,
+            "section": "General Structure"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 3,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQP_ChecklistAcceptance?p_equipment_id=554"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/EQP_ChecklistAcceptance?p_equipment_id=554"
+        }
+    ]
+}

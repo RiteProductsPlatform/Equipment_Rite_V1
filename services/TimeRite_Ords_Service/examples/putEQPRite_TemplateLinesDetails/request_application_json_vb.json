@@ -1,0 +1,13 @@
+{
+  "p_template_eqp_id": 1001,
+  "p_equipment_id": 200,
+  "p_equipment_number": "EQ-1232345",
+  "p_equipment_name": "Pump Aa TEST",
+  "p_eqp_serial_number": "SN-00111",
+  "p_equip_req_quantity": 10,
+  "p_total_capacity_perday": 500,
+  "p_utilization": 890,
+  "p_notes": "Updated from Postman",
+  "p_last_updated_by": "TEST_USER"
+}
+ 
